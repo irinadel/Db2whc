@@ -1,0 +1,24 @@
+<!-- Markdown Navigation -->
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
+Db2 Warehouse on Cloud
+
+	{: .navgroup id="learn"}
+	index.md
+    overview.md
+
+	{: .topicgroup}
+	Links relacionados
+        [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    {: .navgroup-end}
+
+	{: .navgroup id="reference"}
+    [API REST](http://ibm.biz/dashdb-api)
+	{: .navgroup-end}
+
+	{: .navgroup id="help"}
+	help.md
+	{: .navgroup-end}
+	
