@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2017
-lastupdated: "2017-07-17"
+lastupdated: "2017-07-27"
 
 ---
 
@@ -22,7 +22,7 @@ lastupdated: "2017-07-17"
 # Getting started with Db2 Warehouse on Cloud (formerly dashDB for Analytics)
 {: #getting_started}
 
-The {{site.data.keyword.IBM}} Db2 Warehouse on Cloud managed service is an SQL database provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
+The {{site.data.keyword.dashdblong}} managed service is an SQL database provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
 ## Interfaces
@@ -34,7 +34,7 @@ You can work with your warehouse database in the following ways:
    * From the web console
    * REST API
    * Connect applications or your favorite tools from your local computer
-   * Use Db2 Warehouse on Cloud as a data source for your Bluemix apps or services
+   * Use {{site.data.keyword.dashdbshort_notm}} as a data source for your Bluemix apps or services
 
 ### Web console
 {: #web_console}
@@ -47,13 +47,13 @@ The web console provides a graphical interface for everything that you need to u
 <!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
 You can access your web console in the following ways:
-   * From your {{site.data.keyword.Bluemix_notm}} dashboard - You can open the web console from the Service Details page for your Db2 Warehouse on Cloud service.
-   * Direct URL - You can bookmark the URL of the web console for your Db2 Warehouse on Cloud service.
+   * From your {{site.data.keyword.Bluemix_notm}} dashboard - You can open the web console from the Service Details page for your {{site.data.keyword.dashdbshort_notm}} service.
+   * Direct URL - You can bookmark the URL of the web console for your {{site.data.keyword.dashdbshort_notm}} service.
 
 ### REST API
 {: #api}
 
-With Db2 Warehouse on Cloud service plans, you can perform tasks related to file management, loading data, and running R scripts by using the [Db2 Warehouse on Cloud REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
+With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks related to file management, loading data, and running R scripts by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-api){:new_window}.
 {: shortdesc}
 
 ### Connect applications or your favorite tools from your local computer
@@ -69,12 +69,12 @@ Configure your local environment to connect to your Db2 warehouse database by co
 ### Use Db2 Warehouse on Cloud as a data source for your Bluemix apps or services
 {: #data_src}
 
-Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your Db2 Warehouse on Cloud database exactly the same way as your local applications connect to your Db2 Warehouse on Cloud database.
+Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.dashdbshort_notm}} database exactly the same way as your local applications connect to your {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
 When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take advantage of the `VCAP _SERVICES` environment variable to simplify the task of specifying database details and credentials:
-1. On your {{site.data.keyword.Bluemix_notm}} dashboard, in the **Connections** tab of the Service Details page for your Db2 Warehouse on Cloud service, click the **Create connection** button.
-2. Select the {{site.data.keyword.Bluemix_notm}} app to use with your Db2 Warehouse on Cloud database as a data source, and then click the **Connect** button.
+1. On your {{site.data.keyword.Bluemix_notm}} dashboard, in the **Connections** tab of the Service Details page for your {{site.data.keyword.dashdbshort_notm}} service, click the **Create connection** button.
+2. Select the {{site.data.keyword.Bluemix_notm}} app to use with your {{site.data.keyword.dashdbshort_notm}} database as a data source, and then click the **Connect** button.
 3. Update your application code to retrieve database details and credentials from the `VCAP_SERVICES` environment variable:
 
     **Example without `VCAP_SERVICES`**
@@ -119,7 +119,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 ## Samples
 {: #samples}
 
-Here are links to samples demonstrating how to connect to your Db2 Warehouse on Cloud database from applications in different languages:
+Here are links to samples demonstrating how to connect to your {{site.data.keyword.dashdbshort_notm}} database from applications in different languages:
 {: shortdesc}
 
    * [.NET ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
@@ -128,6 +128,6 @@ Here are links to samples demonstrating how to connect to your Db2 Warehouse on 
 <!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
    * [PHP ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
 <!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [Db2 Warehouse on Cloud samples on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+   * [{{site.data.keyword.dashdbshort_notm}} samples on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
 
