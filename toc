@@ -11,8 +11,12 @@ Db2 Warehouse on Cloud
 
 	{: .topicgroup}
 	Related links
-        [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    [Tutorial: SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
+	{: .navgroup-end}
 
 	{: .navgroup id="reference"}
     [REST API](http://ibm.biz/dashdb-api)
