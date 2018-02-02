@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-02"
 
 ---
 
@@ -42,7 +42,7 @@ You can work with your warehouse database in the following ways:
 The web console provides a graphical interface for everything that you need to use your database, including: load facilities, an SQL editor, driver downloads, and more.
 {: shortdesc}
 
-![View of the web console dashboard page](images/console_v2.png)
+![View of the web console dashboard page](images/console_v3.png)
 
 <!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
 
