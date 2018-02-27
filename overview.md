@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,8 +33,6 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 The fully managed service of {{site.data.keyword.dashdbshort_notm}} handles all of the software upgrades, operating system updates, and hardware maintenance. The service includes 24x7 health monitoring of the database and infrastructure. In the event of a hardware or software failure, the service is automatically restarted.
 {: shortdesc}
 
-For more information about the managed service aspects of {{site.data.keyword.dashdbshort_notm}}, see: [{{site.data.keyword.dashdbshort_notm}} managed service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html).
-
 ## Plans and configurations
 {: #plans_cfgs}
 
@@ -42,13 +40,14 @@ You can choose a {{site.data.keyword.dashdbshort_notm}} plan that is configured 
 {: shortdesc}
 
    * An entry plan to try things out
+   * A Flex Performance plan in which you can independently scale storage and compute resources
    * Small, medium, and large plans for production
    * MPP configurations for parallel processing
    * Plans configured for High Availability or for Oracle compatibility
    * And more ...
 
 View available plans in the {{site.data.keyword.Bluemix}} catalog:
-   * Plans configured for data warehouse and analytic (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * Plans configured for data warehouse and analytic (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 If you don't see a configuration in the catalog that you need, contact [{{site.data.keyword.IBM_notm}} Sales ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} to discuss other options.
