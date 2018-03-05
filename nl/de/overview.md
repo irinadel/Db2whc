@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-17"
+lastupdated: "2017-07-27"
 
 ---
 
@@ -16,29 +16,29 @@ lastupdated: "2017-07-17"
 # Informationen zu Db2 Warehouse on Cloud
 {: #overview}
 
-In den Db2 Warehouse on Cloud-Serviceplänen können Sie das Data-Warehouse zum Speichern relationaler Daten, einschließlich spezieller Datentypen, verwenden. Analysieren Sie eigene oder von anderen Cloud-Services geladene Daten unter Verwendung der integrierten Analysefunktionen oder durch Verbinden Ihrer eigenen Apps. Sie können die leistungsfähige, speicherinterne Datenbanktechnologie mit Spaltentabellen für analytische Workloads nutzen. Die Db2 Warehouse on Cloud-Webkonsole verarbeitet allgemeine Datenverwaltungstasks wie das Laden von Daten und Analysetasks wie das Ausführen von Abfragen und R-Scripts.
+In den Serviceplänen von {{site.data.keyword.dashdblong}} können Sie das Data-Warehouse zum Speichern relationaler Daten, einschließlich spezieller Datentypen, verwenden. Analysieren Sie eigene oder von anderen Cloud-Services geladene Daten unter Verwendung der integrierten Analysefunktionen oder durch Verbinden Ihrer eigenen Apps. Sie können die leistungsfähige, speicherinterne Datenbanktechnologie mit Spaltentabellen für analytische Workloads nutzen. Die {{site.data.keyword.dashdbshort_notm}}-Webkonsole verarbeitet allgemeine Datenverwaltungstasks wie das Laden von Daten und Analysetasks wie das Ausführen von Abfragen und R-Scripts.
 {: shortdesc}
 
-Sie können auch externe Anwendungen und Tools mit Db2 Warehouse on Cloud verbinden und diese zur weiteren Verwaltung und Analyse der Daten verwenden. Beispiele:
+Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.dashdbshort_notm}} verbinden und diese zur weiteren Verwaltung und Analyse der Daten verwenden. Beispiele:
    * Verbindung mit {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect für den Entwurf und die Bereitstellung des Datenbankschemas.
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
    * Verbindung mit einem {{site.data.keyword.IBM_notm}} Cognos®-Server zur Ausführung von Cognos-Berichten für Ihre Daten.
    * Verbindung mit SQL-basierten Tools wie Tableau, Microstrategy oder Microsoft Excel für die Datenbearbeitung oder -analyse.
    * Verbindung Ihrer {{site.data.keyword.Bluemix_short}}-Anwendungen, die eine Analysedatenbank benötigen.
-   * Verbindung mit Aginity Workbench für die Migration von Netezza®-Datenmodellen und -Daten in Db2 Warehouse on Cloud.
+   * Verbindung mit Aginity Workbench für die Migration von Netezza®-Datenmodellen und -Daten in {{site.data.keyword.dashdbshort_notm}}.
 
 ## Verwalteter Db2 Warehouse on Cloud-Service
 {: #managed_service}
 
-Der vollständig verwaltete Service von Db2 Warehouse on Cloud verarbeitet alle Software-Upgrades, Betriebssystemaktualisierungen und Hardwarewartungstasks. Der Service umfasst die 24x7-Statusüberwachung der Datenbank und der Infrastruktur. Beim Auftreten eines Hardware- oder Softwarefehlers wird der Service automatisch neu gestartet.
+Der vollständig verwaltete Service von {{site.data.keyword.dashdbshort_notm}} verarbeitet alle Software-Upgrades, Betriebssystemaktualisierungen und Hardwarewartungstasks. Der Service umfasst die 24x7-Statusüberwachung der Datenbank und der Infrastruktur. Beim Auftreten eines Hardware- oder Softwarefehlers wird der Service automatisch neu gestartet.
 {: shortdesc}
 
-Weitere Informationen zu den Aspekten eines verwalteten Service von Db2 Warehouse on Cloud finden Sie in [Verwalteter Db2 Warehouse on Cloud-Service![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html "Symbol für externen Link").
+Weitere Informationen zu den Aspekten eines verwalteten Service von {{site.data.keyword.dashdbshort_notm}} finden Sie in: [Verwalteter {{site.data.keyword.dashdbshort_notm}}-Service ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html).
 
 ## Pläne und Konfigurationen
 {: #plans_cfgs}
 
-Sie können einen Db2 Warehouse on Cloud-Plan auswählen, der für die jeweiligen Aufgaben konfiguriert und optimiert ist:
+Sie können einen {{site.data.keyword.dashdbshort_notm}}-Plan auswählen, der für die jeweiligen Aufgaben konfiguriert und optimiert ist:
 {: shortdesc}
 
    * Einstiegsplan zum Testen der Funktionen
@@ -48,18 +48,18 @@ Sie können einen Db2 Warehouse on Cloud-Plan auswählen, der für die jeweilige
    * Und mehr...
 
 Sie können die verfügbaren Pläne im {{site.data.keyword.Bluemix}}-Katalog anzeigen:
-   * Für Data-Warehouse- und Analyse-Workloads (OLAP) konfigurierte Pläne: [Db2 Warehouse on Cloud](https://console.ng.bluemix.net/catalog/services/dashdb-for-analytics){:new_window}
+   * Für Data-Warehouse- und Analyse-Workloads (OLAP) konfigurierte Pläne: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
-Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, [wenden Sie sich an {{site.data.keyword.IBM_notm}} Sales ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw "Symbol für externen Link"){:new_window}, um sich über weitere Optionen zu informieren.
+Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, wenden Sie sich an [{{site.data.keyword.IBM_notm}} Sales ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}, um sich über weitere Optionen zu informieren.
 
 ## Db2 Warehouse on Cloud bereitstellen
 {: #whse_provision}
 
-Das {{site.data.keyword.IBM_notm}} Db2 Warehouse on Cloud-Data-Warehouse kann in {{site.data.keyword.BluSoftlayer_full}} und für AWS bereitgestellt werden.
+Die {{site.data.keyword.dashdbshort_notm}}-Datenbank kann in {{site.data.keyword.BluSoftlayer_full}} und für AWS bereitgestellt werden.
 {: shortdesc}
 
-Wenn das Data-Warehouse für AWS bereitgestellt werden soll, wählen Sie den Plan **Db2 Warehouse on Cloud MPP Small for AWS** aus. 
+Wenn das Data-Warehouse für AWS bereitgestellt werden soll, wählen Sie den Plan **MPP Small for AWS** aus.
 
 <!-- If you want to have the data warehouse provisioned for AWS, select the **{{site.data.keyword.IBM_notm}} {{site.data.keyword.dashdbshort_notm}} for Analytics MPP Small for AWS** plan. -->
 

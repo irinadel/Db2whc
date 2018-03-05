@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-17"
+lastupdated: "2017-07-27"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2017-07-17"
 #ヘルプおよびサポート
 {: #help_support}
 
-{{site.data.keyword.Bluemix_short}} での Db2 Warehouse on Cloud の使用についてのよくある質問に対する回答を、以下に示します。
+{{site.data.keyword.dashdblong}} の使用についてのよくある質問に対する回答を、以下に示します。
 {: shortdesc}
 
 <!-- ##Cannot log in to RStudio
@@ -110,21 +110,21 @@ To resolve the problem, choose one of the following options:
 ## Db2 Warehouse on Cloud サービスが利用できない
 {: #outages}
 
-{{site.data.keyword.Bluemix_notm}} 内の Db2 Warehouse on Cloud サービスが使用不可になっている可能性がある。
+{{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスが使用不可である可能性があります。
 {: shortdesc}
 
 データウェアハウスを作成しようとしたが、500 エラーで失敗するか、SDP ロードが SQL エラーを報告する。
 {: tsSymptoms}
 
-{{site.data.keyword.Bluemix_notm}} 内の Db2 Warehouse on Cloud サービスで定期保守手順が実行されているか、既知の障害が発生した。
+{{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスで定期保守手順が実行されているか、既知の障害が発生しました。
 {: tsCauses}
 
-以下の状況ページを確認することにより、{{site.data.keyword.Bluemix_notm}} 内の Db2 Warehouse on Cloud サービスの状況を判別できます。
+以下の状況ページを確認することにより、{{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスの状況を判別できます。
 {: tsResolve}
 
-* [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/bluemix/support/#status "外部リンク・アイコン"){:new_window}
+* [{{site.data.keyword.Bluemix_notm}} サポート ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/bluemix/support/#status){:new_window}
 * 状況モニター:
-  * [すべての地域 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd "外部リンク・アイコン"){:new_window}
+  * [すべての地域 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
   <!--[US - South region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.ng.bluemix.net/internalstatus){:new_window}
   [Europe - United Kingdom region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.eu-gb.bluemix.net/internalstatus){:new_window}
   [Europe - Germany region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.eu-de.bluemix.net/internalstatus){:new_window}
@@ -134,13 +134,14 @@ To resolve the problem, choose one of the following options:
 ## Db2 Warehouse on Cloud のヘルプおよびサポートの利用
 {: #gettinghelp}
 
-Db2 Warehouse on Cloud を使用しているときに問題や質問がある場合は、情報を検索したり、フォーラムで質問したりして、ヘルプを利用することができます。また、サポート・チケットをオープンすることもできます。
+{{site.data.keyword.dashdbshort_notm}} を使用しているときに問題や質問がある場合は、情報を検索したり、フォーラムで質問したりして、
+ヘルプを利用することができます。 また、サポート・チケットをオープンすることもできます。
 {: shortdesc}
 
 フォーラムを使用して質問する場合は、{{site.data.keyword.Bluemix}} の開発チームの目に触れるように、質問にタグを付けます。
 
-* Db2 Warehouse on Cloud を使用したアプリの開発やデプロイについて技術的な質問がある場合は、質問を [Stack Overflow ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://stackoverflow.com/search?q=dashdb+bluemix "外部リンク・アイコン"){:new_window} に投稿し、質問に「bluemix」と「db2」のタグを付けます。
-* サービスや開始手順に関する質問については、[IBM developerWorks® dW Answers ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix "外部リンク・アイコン"){:new_window} フォーラムを使用します。「bluemix」と「db2」のタグを付けてください。
+* {{site.data.keyword.dashdbshort_notm}} を使用したアプリの開発やデプロイについて技術的な質問がある場合は、質問を [Stack Overflow ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} に投稿し、質問に「bluemix」と「db2」のタグを付けます。
+* サービスや開始手順に関する質問については、[IBM developerWorks® dW Answers ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window} フォーラムを使用します。 「bluemix」と「db2」のタグを付けてください。
 
 フォーラムの使用について詳しくは、[ヘルプの利用](/docs/support/index.html#getting-help){:new_window}を参照してください。
 

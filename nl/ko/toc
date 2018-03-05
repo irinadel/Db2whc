@@ -9,10 +9,13 @@ Db2 Warehouse on Cloud
 	index.md
     overview.md
 
-	{: .topicgroup}
-	관련 링크
-    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-    {: .navgroup-end}
+    [새로운 기능](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+	[자주 묻는 질문(FAQ)](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+	[보안 규제 준수](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+	[데이터 로드](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+	[Db2 데이터베이스에 연결](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+	[데이터 분석](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+	{: .navgroup-end}
 
     {: .navgroup id="howto"}
     [튜토리얼: Cloud 데이터용 SQL 데이터베이스](../../tutorials/sql-database.html#sql-database-for-cloud-data)

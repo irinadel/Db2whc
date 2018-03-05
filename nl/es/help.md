@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-17"
+lastupdated: "2017-07-27"
 
 ---
 
@@ -19,7 +19,7 @@ lastupdated: "2017-07-17"
 #Ayuda y soporte
 {: #help_support}
 
-A continuación encontrará las respuestas a preguntas comunes sobre cómo utilizar Db2 Warehouse on Cloud en {{site.data.keyword.Bluemix_short}}.
+A continuación encontrará las respuestas a preguntas comunes sobre cómo utilizar {{site.data.keyword.dashdblong}}.
 {: shortdesc}
 
 <!-- ##Cannot log in to RStudio
@@ -110,22 +110,27 @@ To resolve the problem, choose one of the following options:
 ## El servicio Db2 Warehouse on Cloud no está disponible
 {: #outages}
 
-Puede que no esté disponible el servicio Db2 Warehouse on Cloud en {{site.data.keyword.Bluemix_notm}}.
+Puede que no esté disponible el servicio de {{site.data.keyword.dashdbshort_notm}}
+en {{site.data.keyword.Bluemix_notm}}.
 {: shortdesc}
 
 Ha fallado un intento por crear un almacén de datos con un error 500,
 o una carga de SDP informa de un error de SQL.
 {: tsSymptoms}
 
-Al servicio Db2 Warehouse on Cloud en {{site.data.keyword.Bluemix_notm}} se le está realizando un procedimiento de mantenimiento planificado o se ha producido una caída conocida.
+Al servicio de {{site.data.keyword.dashdbshort_notm}}
+en {{site.data.keyword.Bluemix_notm}} se le está realizando
+un procedimiento de mantenimiento planificado o se ha producido una caída conocida.
 {: tsCauses}
 
-Puede determinar el estado del servicio Db2 Warehouse on Cloud en {{site.data.keyword.Bluemix_notm}} comprobando las siguientes páginas de estado:
+Puede determinar el estado del servicio de {{site.data.keyword.dashdbshort_notm}}
+en {{site.data.keyword.Bluemix_notm}} comprobando
+las siguientes páginas de estado:
 {: tsResolve}
 
-* [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/bluemix/support/#status "Icono de enlace externo"){:new_window}
+* [Soporte de {{site.data.keyword.Bluemix_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/bluemix/support/#status){:new_window}
 * Supervisión de estado:
-  * [Todas las regiones ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd "Icono de enlace externo"){:new_window}
+  * [Todas las regiones ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
   <!--[US - South region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.ng.bluemix.net/internalstatus){:new_window}
   [Europe - United Kingdom region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.eu-gb.bluemix.net/internalstatus){:new_window}
   [Europe - Germany region ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://estado.eu-de.bluemix.net/internalstatus){:new_window}
@@ -135,13 +140,13 @@ Puede determinar el estado del servicio Db2 Warehouse on Cloud en {{site.data.ke
 ## Obtención de ayuda y soporte para Db2 Warehouse on Cloud
 {: #gettinghelp}
 
-Si tiene problemas o preguntas sobre el uso de Db2 Warehouse on Cloud, puede obtener ayuda buscando información o formulando preguntas en un foro. También puede abrir una incidencia de soporte.
+Si tiene problemas o preguntas sobre el uso de {{site.data.keyword.dashdbshort_notm}}, puede obtener ayuda buscando información o formulando preguntas en un foro. También puede abrir una incidencia de soporte.
 {: shortdesc}
 
 Al utilizar los foros para formular una pregunta, etiquete la pregunta de forma que la puedan ver los equipos de desarrollo de {{site.data.keyword.Bluemix}}.
 
-* Si tiene preguntas técnicas sobre el desarrollo o el despliegue de una app con Db2 Warehouse on Cloud, publíquelas en [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://stackoverflow.com/search?q=dashdb+bluemix "Icono de enlace externo"){:new_window} y etiquételas con "bluemix" y "db2".
-* Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro de [IBM developerWorks® dW Answers ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix "Icono de enlace externo"){:new_window}. Incluya las etiquetas "bluemix" y "db2".
+* Si tiene preguntas técnicas sobre el desarrollo o el despliegue de una app con {{site.data.keyword.dashdbshort_notm}}, publíquelas en [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} y etiquételas con "bluemix" y "db2".
+* Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro de [IBM developerWorks® dW Answers ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Incluya las etiquetas "bluemix" y "db2".
 
 Consulte [Obtención de ayuda](/docs/support/index.html#getting-help){:new_window} para obtener más detalles sobre el uso de los foros.
 

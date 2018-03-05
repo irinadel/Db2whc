@@ -9,17 +9,20 @@ Db2 Warehouse on Cloud
 	index.md
     overview.md
 
-	{: .topicgroup}
-	Links relacionados
-    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
-    {: .navgroup-end}
+    [O que há de novo](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+	[Perguntas mais frequentes](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+	[Conformidades de segurança](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+	[Carregando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+	[Conectando ao seu banco de dados do Db2](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+	[Analisando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+	{: .navgroup-end}
 
     {: .navgroup id="howto"}
     [Tutorial: Banco de dados SQL para dados de nuvem](../../tutorials/sql-database.html#sql-database-for-cloud-data)
 	{: .navgroup-end}
 
 	{: .navgroup id="reference"}
-    [API REST](http://ibm.biz/dashdb-api)
+    [API do REST](http://ibm.biz/dashdb-api)
 	{: .navgroup-end}
 
 	{: .navgroup id="help"}
