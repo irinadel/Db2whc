@@ -5,27 +5,27 @@
 {: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    index.md
     overview.md
 
     [O que há de novo](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-	[Perguntas mais frequentes](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-	[Conformidades de segurança](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-	[Carregando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-	[Conectando ao seu banco de dados do Db2](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
-	[Analisando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
-	{: .navgroup-end}
+    [Perguntas mais frequentes](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [Conformidades de segurança](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [Carregando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+    [Conectando ao seu banco de dados do Db2](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    [Analisando os seus dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    {: .navgroup-end}
 
     {: .navgroup id="howto"}
     [Tutorial: Banco de dados SQL para dados de nuvem](../../tutorials/sql-database.html#sql-database-for-cloud-data)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
-	{: .navgroup id="reference"}
-    [API do REST](http://ibm.biz/dashdb-api)
-	{: .navgroup-end}
+    {: .navgroup id="reference"}
+    [API do REST](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/)
+    {: .navgroup-end}
 
-	{: .navgroup id="help"}
-	help.md
-	{: .navgroup-end}
+    {: .navgroup id="help"}
+    help.md
+    {: .navgroup-end}
 	

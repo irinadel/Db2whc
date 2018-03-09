@@ -5,27 +5,27 @@
 {: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    index.md
     overview.md
 
     [最新情報](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-	[よくあるご質問](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-	[セキュリティー・コンプライアンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-	[データのロード](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-	[DB2 データベースへの接続](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
-	[データの分析](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
-	{: .navgroup-end}
+    [よくあるご質問](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [セキュリティー・コンプライアンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [データのロード](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+    [DB2 データベースへの接続](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    [データの分析](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    {: .navgroup-end}
 
     {: .navgroup id="howto"}
     [チュートリアル: SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
-	{: .navgroup id="reference"}
-    [REST API](http://ibm.biz/dashdb-api)
-	{: .navgroup-end}
+    {: .navgroup id="reference"}
+    [REST API](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/)
+    {: .navgroup-end}
 
-	{: .navgroup id="help"}
-	help.md
-	{: .navgroup-end}
+    {: .navgroup id="help"}
+    help.md
+    {: .navgroup-end}
 	
