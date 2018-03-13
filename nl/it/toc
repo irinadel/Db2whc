@@ -9,9 +9,12 @@ Db2 Warehouse on Cloud
     index.md
     overview.md
 
-    {: .topicgroup}
-    Link correlati
-    [IBM Knowledge Center](http://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    [Novità](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+    [Domande frequenti](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [Conformità di sicurezza](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+    [Caricamento dei tuoi dati](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
+    [Collegamento al tuo database Db2](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
+    [Analisi dei tuoi dati](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -19,7 +22,7 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API REST](http://ibm.biz/dashdb-api)
+    [API REST](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
