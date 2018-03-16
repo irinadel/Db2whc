@@ -58,7 +58,7 @@ You can access your web console in the following ways:
 ### REST API
 {: #api}
 
-With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks related to file management, loading data, and running R scripts by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/){:new_window}.
+With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks related to file management, loading data, and running R scripts by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connect applications or your favorite tools from your local computer
