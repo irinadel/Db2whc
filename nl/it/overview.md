@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -41,8 +41,6 @@ Il servizio pienamente gestito di {{site.data.keyword.dashdbshort_notm}} gestisc
 gli aggiornamenti software, gli aggiornamenti del sistema operativo e la manutenzione hardware. Il servizio include un monitoraggio dell'integrità sette giorni alla settimana, 24 ore su 24. In caso di malfunzionamento hardware o software, il servizio viene riavviato automaticamente.
 {: shortdesc}
 
-Per ulteriori informazioni sugli aspetti del servizio gestito di {{site.data.keyword.dashdbshort_notm}}, vedi: [Servizio gestito da {{site.data.keyword.dashdbshort_notm}} ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html).
-
 ## Piani e configurazioni
 {: #plans_cfgs}
 
@@ -50,13 +48,14 @@ Puoi scegliere un piano {{site.data.keyword.dashdbshort_notm}} configurato e ott
 {: shortdesc}
 
    * Un piano d'ingresso per provare le funzionalità offerte
+   * Un piano Flex Performance in cui puoi indipendentemente ridimensionare le risorse di archiviazione e di calcolo
    * Piani piccoli, medi e grandi per la produzione
    * Configurazioni MPP per l'elaborazione parallela
    * Piani configurati per l'alta disponibilità o per la compatibilità Oracle
    * E altro ...
 
 Visualizza i piani disponibili nel catalogo {{site.data.keyword.Bluemix}}:
-   * Piani configurati per i carichi di lavoro di immagazzinamento (warehouse) e analisi dei dati (OLAP): [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * Piani configurati per i carichi di lavoro di immagazzinamento (warehouse) e analisi dei dati (OLAP): [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 Se nel catalogo non vedi una configurazione che risponda alle tue esigenze, contatta il settore Vendite di [{{site.data.keyword.IBM_notm}} ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} per discutere delle altre opzioni.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,8 +33,6 @@ lastupdated: "2017-07-27"
 {{site.data.keyword.dashdbshort_notm}} 的全面受管服务会处理所有软件升级、操作系统更新和硬件维护。该服务全天不间断监视数据库和基础架构的运行状况。当硬件或软件发生故障时，该服务将自动重新启动。
 {: shortdesc}
 
-有关 {{site.data.keyword.dashdbshort_notm}} 的受管服务方面的更多信息，请参阅：[{{site.data.keyword.dashdbshort_notm}} 受管服务 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)。
-
 ## 套餐和配置
 {: #plans_cfgs}
 
@@ -42,13 +40,14 @@ lastupdated: "2017-07-27"
 {: shortdesc}
 
    * 入门级套餐，进行尝试
+   * 可独立扩展存储和计算资源的 Flex Performance 套餐
    * 用于生产的小型、中型和大型套餐
    * 用于并行处理的 MPP 配置
    * 为高可用性或 Oracle 兼容性配置的套餐
    * 其他更多...
 
 在 {{site.data.keyword.Bluemix}} 目录中查看可用的套餐：
-   * 为数据仓库和分析 (OLAP) 工作负载配置的套餐：[{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * 为数据仓库和分析 (OLAP) 工作负载配置的套餐：[{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 如果您在目录中看不到所需的配置，请联系 [{{site.data.keyword.IBM_notm}} 销售人员 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}，以讨论其他选择。

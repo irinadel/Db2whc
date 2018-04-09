@@ -5,27 +5,39 @@
 {: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
-    {: .navgroup id="learn"}
-    index.md
-    overview.md
+	{: .navgroup id="learn"}
+	index.md
+    about.md
+    flex_scaling.md
+    br.md
+    ha_flex.md
+    ha_smp_mpp.md
+    user_mgmt.md
+    plans_cfgs.md
+    loading.md
+    connecting.md
+	[分析資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    local_dev_env.md
+    communities.md    
 
     [新增功能](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-    [常見問題](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-    [安全遵循](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-    [載入資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-    [連接至 Db2 資料庫](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
-    [分析資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
-    {: .navgroup-end}
+	[常見問題](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+	
+    {: .topicgroup}
+    安全
+        [遵循](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+        priv_net.md
+	{: .navgroup-end}
 
     {: .navgroup id="howto"}
     [指導教學：SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
-    {: .navgroup-end}
+	{: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [REST API](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/)
+    [REST API](http://ibm.biz/db2whc_api)
     {: .navgroup-end}
 
-    {: .navgroup id="help"}
-    help.md
-    {: .navgroup-end}
+	{: .navgroup id="help"}
+	help.md
+	{: .navgroup-end}
 	

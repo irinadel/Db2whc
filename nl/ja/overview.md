@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -35,8 +35,6 @@ lastupdated: "2017-07-27"
 {{site.data.keyword.dashdbshort_notm}} の完全マネージド・サービスは、すべてのソフトウェア・アップグレード、オペレーティング・システム更新、およびハードウェア保守を処理します。 このサービスには、データベースおよびインフラストラクチャーの 24 時間 365 日ヘルス・モニターが含まれています。 ハードウェアまたはソフトウェアの障害が発生した場合は、このサービスが自動的に再始動されます。
 {: shortdesc}
 
-{{site.data.keyword.dashdbshort_notm}} のマネージド・サービスの特徴について詳しくは、[{{site.data.keyword.dashdbshort_notm}} マネージド・サービス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html) を参照してください。
-
 ## プランおよび構成
 {: #plans_cfgs}
 
@@ -44,13 +42,14 @@ lastupdated: "2017-07-27"
 {: shortdesc}
 
    * 試行用のエントリー・プラン
+   * Flex Performance プラン。ストレージとコンピュートのリソースを個別に拡張可能
    * 実動用の小規模プラン、中規模プラン、および大規模プラン
    * 並列処理用の MPP 構成
    * 高可用性のために構成されたプラン、または、Oracle 互換性のために構成されたプラン
    * その他 ...
 
 {{site.data.keyword.Bluemix}} カタログで、使用可能なプランを確認してください。
-   * データウェアハウスおよび分析 (OLAP) ワークロード用に構成されたプラン: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * データウェアハウスおよび分析 (OLAP) ワークロード用に構成されたプラン: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 必要な構成がカタログにない場合は、[{{site.data.keyword.IBM_notm}} 営業担当員に連絡して ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}、他のオプションについて相談してください。

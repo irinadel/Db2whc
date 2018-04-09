@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,10 @@ O console da web fornece uma interface gráfica para tudo o que precisar para us
 ### API do REST
 {: #api}
 
-Com os planos de serviço do {{site.data.keyword.dashdbshort_notm}}, é possível executar tarefas relacionadas ao gerenciamento de arquivos, carregar dados e executar scripts R usando a [API de REST do {{site.data.keyword.dashdbshort_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/dashdb-api){:new_window}.
+Com os planos de serviço do {{site.data.keyword.dashdbshort_notm}}, é possível executar tarefas
+relacionadas ao gerenciamento de arquivos, ao carregamento de dados e à execução de scripts R usando a API de REST do
+[{{site.data.keyword.dashdbshort_notm}}
+![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local

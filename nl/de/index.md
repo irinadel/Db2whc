@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ Für den Zugriff auf die Webkonsole stehen Ihnen die folgenden Möglichkeiten zu
 ### REST-API
 {: #api}
 
-Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien, dem Laden von Daten und dem Ausführen von R-Scripts ausführen, indem Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/dashdb-api){:new_window} verwenden.
+Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien, dem Laden von Daten und dem Ausführen von R-Scripts ausführen, indem Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2whc_api){:new_window} verwenden.
 {: shortdesc}
 
 ### Herstellen einer Verbindung für Anwendungen oder bevorzugte Tools vom lokalen Computer

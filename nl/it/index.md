@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -28,7 +28,7 @@ Il servizio gestito da {{site.data.keyword.dashdblong}} è un database SQL di cu
 ## Versione di prova gratuita
 {: #freetrial}
 
-Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://console.bluemix.net/catalog/services/dashdb){:new_window} 
+Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
 
 ## Interfacce
 {: #interfaces}
@@ -58,7 +58,7 @@ Puoi accedere alla tua console web nei seguenti modi:
 ### API REST
 {: #api}
 
-Con i piani del servizio {{site.data.keyword.dashdbshort_notm}}, puoi eseguire le attività correlate alla gestione dei file, il caricamento dei dati e l'esecuzione di script R utilizzando la API REST [{{site.data.keyword.dashdbshort_notm}} ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](http://ibm.biz/dashdb-api){:new_window}.
+Con i piani del servizio {{site.data.keyword.dashdbshort_notm}}, puoi eseguire le attività correlate alla gestione dei file, il caricamento dei dati e l'esecuzione di script R utilizzando la API REST [{{site.data.keyword.dashdbshort_notm}} ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connetti le applicazioni o i tuoi strumenti preferiti dal tuo computer locale

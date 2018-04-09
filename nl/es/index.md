@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ Puede acceder a la consola web de los siguientes modos:
 ### API REST
 {: #api}
 
-Con los panes de servicio de {{site.data.keyword.dashdbshort_notm}}, puede realizar tareas relacionadas con la gestión de archivos, carga de datos y ejecución de scripts R utilizando la [API REST de {{site.data.keyword.dashdbshort_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/dashdb-api){:new_window}.
+Con los panes de servicio de {{site.data.keyword.dashdbshort_notm}}, puede realizar tareas relacionadas con la gestión de archivos, carga de datos y ejecución de scripts R utilizando la [API REST de {{site.data.keyword.dashdbshort_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Conecte aplicaciones o herramientas preferidas desde el sistema local
@@ -71,7 +71,7 @@ Configure el entorno local para conectar la base de datos de Db2 Warehouse on Cl
 2. [Instale el paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} en el sistema donde esté ejecutando las apps o las herramientas.
 3. [Configure los archivos de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para la base de datos de Db2 Warehouse.
 
-### Utilice Db2 Warehouse on Cloud como origen de datos para apps o servicios de {{site.data.keyword.Bluemix_notm}} 
+### Utilice Db2 Warehouse on Cloud como origen de datos para apps o servicios de {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 
 Las apps alojadas en {{site.data.keyword.Bluemix_notm}} pueden conectarse a la base de datos de {{site.data.keyword.dashdbshort_notm}} exactamente del mismo modo que pueden conectarse las aplicaciones locales a la base de datos de {{site.data.keyword.dashdbshort_notm}}.

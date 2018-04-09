@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/dashdb-api){:new_window}，执行文件管理、装入数据和运行 R 脚本的相关任务。
+使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2whc_api){:new_window}，执行文件管理、装入数据和运行 R 脚本的相关任务。
 {: shortdesc}
 
 ### 从本地计算机连接应用程序或喜爱的工具

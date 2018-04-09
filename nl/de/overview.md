@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,8 +33,6 @@ Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.dashdbsho
 Der vollständig verwaltete Service von {{site.data.keyword.dashdbshort_notm}} verarbeitet alle Software-Upgrades, Betriebssystemaktualisierungen und Hardwarewartungstasks. Der Service umfasst die 24x7-Statusüberwachung der Datenbank und der Infrastruktur. Beim Auftreten eines Hardware- oder Softwarefehlers wird der Service automatisch neu gestartet.
 {: shortdesc}
 
-Weitere Informationen zu den Aspekten eines verwalteten Service von {{site.data.keyword.dashdbshort_notm}} finden Sie in: [Verwalteter {{site.data.keyword.dashdbshort_notm}}-Service ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html).
-
 ## Pläne und Konfigurationen
 {: #plans_cfgs}
 
@@ -42,13 +40,14 @@ Sie können einen {{site.data.keyword.dashdbshort_notm}}-Plan auswählen, der f�
 {: shortdesc}
 
    * Einstiegsplan zum Testen der Funktionen
+   * Flex Performance-Plan mit unabhängiger Skalierung von Speicher- und Prozessorressourcen
    * Kleine, mittlere und große Pläne für die Produktion
    * MPP-Konfigurationen für die parallele Verarbeitung
    * Für die Hochverfügbarkeit oder für die Oracle-Kompatibilität konfigurierte Pläne
    * Und mehr...
 
 Sie können die verfügbaren Pläne im {{site.data.keyword.Bluemix}}-Katalog anzeigen:
-   * Für Data-Warehouse- und Analyse-Workloads (OLAP) konfigurierte Pläne: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * Für Data-Warehouse- und Analyse-Workloads (OLAP) konfigurierte Pläne: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, wenden Sie sich an [{{site.data.keyword.IBM_notm}} Sales ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}, um sich über weitere Optionen zu informieren.

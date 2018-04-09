@@ -16,7 +16,7 @@ lastupdated: "2017-07-27"
 {:screen: .screen}
 {:pre: .pre}
 
-#協助和支援
+# 協助和支援
 {: #help_support}
 
 以下是關於使用 {{site.data.keyword.dashdblong}} 的常見問題的回答。

@@ -5,27 +5,39 @@
 {: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
-    {: .navgroup id="learn"}
-    index.md
-    overview.md
+	{: .navgroup id="learn"}
+	index.md
+    about.md
+    flex_scaling.md
+    br.md
+    ha_flex.md
+    ha_smp_mpp.md
+    user_mgmt.md
+    plans_cfgs.md
+    loading.md
+    connecting.md
+	[Daten analysieren](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    local_dev_env.md
+    communities.md    
 
     [Neuerungen](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-    [Häufig gestellte Fragen](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-    [Einhaltung von Sicherheitsvorgaben](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-    [Daten laden](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_overview.html)
-    [Verbindung zur Db2-Datenbank herstellen](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_overview.html)
-    [Daten analysieren](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
-    {: .navgroup-end}
+	[Häufig gestellte Fragen](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+	
+    {: .topicgroup}
+    Sicherheit
+        [Einhaltung von Vorgaben](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+        priv_net.md
+	{: .navgroup-end}
 
     {: .navgroup id="howto"}
     [Lernprogramm: SQL-Datenbank für Cloud-Daten](../../tutorials/sql-database.html#sql-database-for-cloud-data)
-    {: .navgroup-end}
+	{: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [REST-API](https://developer.ibm.com/static/site-id/85/api/db2whc-v3/)
+    [REST-API](http://ibm.biz/db2whc_api)
     {: .navgroup-end}
 
-    {: .navgroup id="help"}
-    help.md
-    {: .navgroup-end}
+	{: .navgroup id="help"}
+	help.md
+	{: .navgroup-end}
 	

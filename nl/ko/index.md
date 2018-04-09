@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ lastupdated: "2018-02-09"
 ### REST API
 {: #api}
 
-{{site.data.keyword.dashdbshort_notm}} 서비스 플랜을 사용하는 경우 [{{site.data.keyword.dashdbshort_notm}} REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/dashdb-api){:new_window}를 사용하여 파일 관리, 데이터 로드 및 R 스크립트 실행과 관련된 태스크를 수행할 수 있습니다.
+{{site.data.keyword.dashdbshort_notm}} 서비스 플랜을 사용하는 경우 [{{site.data.keyword.dashdbshort_notm}} REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/db2whc_api){:new_window}를 사용하여 파일 관리, 데이터 로드 및 R 스크립트 실행과 관련된 태스크를 수행할 수 있습니다.
 {: shortdesc}
 
 ### 로컬 컴퓨터에서 애플리케이션 또는 선호하는 도구 연결

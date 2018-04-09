@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以執行檔案管理、載入資料等相關作業，以及透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/dashdb-api){:new_window} 來執行 R Script。
+使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以執行檔案管理、載入資料等相關作業，以及透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/db2whc_api){:new_window} 來執行 R Script。
 {: shortdesc}
 
 ### 連接本端電腦的應用程式或您最愛的工具

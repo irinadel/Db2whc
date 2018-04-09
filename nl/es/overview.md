@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,8 +33,6 @@ También puede conectar aplicaciones externas a {{site.data.keyword.dashdbshort_
 El servicio completamente gestionado de {{site.data.keyword.dashdbshort_notm}} maneja todas las actualizaciones de software, actualizaciones de sistema operativo y mantenimiento de hardware. El servicio incluye supervisión de estado de tipo 24x7 de la base de datos y de la infraestructura. En el caso de que se produzca un error de hardware o de software, el servicio se reinicia automáticamente.
 {: shortdesc}
 
-Para obtener más información sobre los aspectos del servicio gestionado de {{site.data.keyword.dashdbshort_notm}}, consulte: [servicio gestionado de {{site.data.keyword.dashdbshort_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html).
-
 ## Planes y configuraciones
 {: #plans_cfgs}
 
@@ -42,13 +40,14 @@ Puede elegir un plan {{site.data.keyword.dashdbshort_notm}} que está configurad
 {: shortdesc}
 
    * Un plan de entrada para realizar pruebas
+   * Un plan de Flex Performance para poder escalar el almacenamiento y calcular recursos de forma independiente
    * Planes pequeños, medianos y grandes para producción
    * Configuraciones MPP para procesamientos paralelos
    * Planes configurados para Alta disponibilidad o para compatibilidad con Oracle
    * Y más...
 
 Vea los planes disponibles en el catálogo {{site.data.keyword.Bluemix}}:
-   * Planes configurados para almacenes de datos y cargas de trabajo analíticas (OLAP): [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * Planes configurados para almacenes de datos y cargas de trabajo analíticas (OLAP): [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 Si no ve una configuración en el catálogo que necesita, [póngase en contacto con ventas de {{site.data.keyword.IBM_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} para hablar sobre otras opciones.

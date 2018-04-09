@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -28,7 +28,7 @@ lastupdated: "2018-02-09"
 ## 無料トライアル
 {: #freetrial}
 
-ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。[無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
 
 ## インターフェース
 {: #interfaces}
@@ -58,7 +58,7 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 ### REST API
 {: #api}
 
-{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理、データのロード、および R スクリプトの実行に関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/dashdb-api){:new_window} を使用して実行できます。
+{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理、データのロード、および R スクリプトの実行に関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2whc_api){:new_window} を使用して実行できます。
 {: shortdesc}
 
 ### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する

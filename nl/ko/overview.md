@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,8 +33,6 @@ lastupdated: "2017-07-27"
 {{site.data.keyword.dashdbshort_notm}}의 완전한 관리 서비스는 소프트웨어 업그레이드, 운영 체제 업데이트 및 하드웨어 유지보수 모두를 처리합니다. 서비스에는 데이터베이스 및 인프라의 24x7 상태 모니터링이 포함됩니다. 하드웨어 또는 소프트웨어 장애가 발생하는 경우 서비스는 자동으로 다시 시작됩니다.
 {: shortdesc}
 
-{{site.data.keyword.dashdbshort_notm}}의 관리 서비스 측면에 대한 자세한 정보는 [{{site.data.keyword.dashdbshort_notm}} 관리 서비스 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)를 참조하십시오.
-
 ## 플랜 및 구성
 {: #plans_cfgs}
 
@@ -42,13 +40,14 @@ lastupdated: "2017-07-27"
 {: shortdesc}
 
    * 테스트를 위한 엔트리 플랜
+   * 스토리지 및 컴퓨팅 리소스를 독립적으로 스케일링할 수 있는 Flex Performance 플랜
    * 프로덕션을 위한 소규모, 중간 규모, 대규모 플랜
    * 병렬 처리를 위한 MPP 구성
    * 고가용성 또는 Oracle 호환성을 위해 구성된 플랜
    * 기타...
 
 {{site.data.keyword.Bluemix}} 카탈로그에서 사용 가능한 플랜 보기:
-   * 데이터 웨어하우스 및 분석(OLAP) 워크로드에 대해 구성된 플랜: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * 데이터 웨어하우스 및 분석(OLAP) 워크로드에 대해 구성된 플랜: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 카탈로그에서 필요한 구성을 찾을 수 없는 경우 [{{site.data.keyword.IBM_notm}} 영업 팀 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}에 문의하여 다른 옵션에 대해 논의하십시오.

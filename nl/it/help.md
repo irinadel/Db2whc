@@ -16,7 +16,7 @@ lastupdated: "2017-07-27"
 {:screen: .screen}
 {:pre: .pre}
 
-#Aiuto e supporto
+# Aiuto e supporto
 {: #help_support}
 
 Qua troverai delle risposte alle domande comuni sull'utilizzo di {{site.data.keyword.dashdblong}}.

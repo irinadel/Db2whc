@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-02-09"
+lastupdated: "2018-03-15"
 
 ---
 
@@ -58,7 +58,7 @@ Vous pouvez accéder à la console Web de l'une des manières suivantes :
 ### API REST
 {: #api}
 
-Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers, au chargement de données et à l'exécution de scripts R à l'aide de l'[API REST {{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/dashdb-api){:new_window}.
+Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers, au chargement de données et à l'exécution de scripts R à l'aide de l'[API REST {{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connectez des applications ou vos outils préférés depuis votre ordinateur local
@@ -88,9 +88,9 @@ Lorsque vos applications utilisent la plateforme {{site.data.keyword.Bluemix_not
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
-    $database    = "BLUDB";         # Obtenez ces infos sur la base de données
-    $hostname    = "<Host-name>";   # à partir de la page Informations de connexion
-    $port        = 50000;           # la console Web.
+    $database    = "BLUDB";         # Get these database details from
+    $hostname    = "<Host-name>";   # the Connection info page of the
+    $port        = 50000;           # web console.
     $user        = "<User-ID >";    #
     $password    = "<Password>";    #
     $dsn         = "DATABASE=$database;" .

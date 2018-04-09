@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-02-27"
 
 ---
 
@@ -33,22 +33,21 @@ lastupdated: "2017-07-27"
 完整的 {{site.data.keyword.dashdbshort_notm}} 受管理服務處理所有軟體升級、作業系統更新，以及硬體維護。此服務包括全年無休的資料庫及基礎架構性能監視。在硬體故障或軟體失敗的情況下，此服務會自動重新啟動。
 {: shortdesc}
 
-如需 {{site.data.keyword.dashdbshort_notm}} 受管理服務方面的相關資訊，請參閱：[{{site.data.keyword.dashdbshort_notm}} 受管理服務 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)。
-
 ## 方案及配置
 {: #plans_cfgs}
 
-您可以選擇 {{site.data.keyword.dashdbshort_notm}} 方案，該方案已針對您需要執行的工作進行配置且最佳化：
+您可以選擇已針對您需要進行的工作配置和最佳化的 {{site.data.keyword.dashdbshort_notm}} 方案：
 {: shortdesc}
 
    * 嘗試各種事物的入門方案
+   * 彈性效能方案，您可以獨立地調整儲存空間及運算資源
    * 小型、中型及大型正式作業方案
    * 適用於平行處理的 MPP 配置
    * 針對高可用性或 Oracle 相容性所配置的方案
    * 以及其他 ...
 
 檢視 {{site.data.keyword.Bluemix}} 型錄中的可用方案：
-   * 針對資料倉儲和分析 (OLAP) 工作負載所配置的方案：[{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse-on-cloud?env_id=ibm:yp:us-south){:new_window}
+   * 針對資料倉儲和分析 (OLAP) 工作負載所配置的方案：[{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
 如果您在型錄中看不到所需要的配置，請與 [{{site.data.keyword.IBM_notm}} 銷售人員 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} 聯絡，來討論其他選項。
