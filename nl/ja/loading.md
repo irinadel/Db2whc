@@ -37,5 +37,3 @@ lastupdated: "2018-03-23"
            )
         )      
     ```
-
-<!-- [Loading data from Amazon S3 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/s3.html){:new_window} -->
