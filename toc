@@ -27,6 +27,7 @@ Db2 Warehouse on Cloud
     Security
         [Compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
         priv_net.md
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
 	{: .navgroup-end}
 
     {: .navgroup id="howto"}
