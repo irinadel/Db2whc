@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -142,9 +142,9 @@ When using the forums to ask a question, tag your question so that it is seen by
 * If you have technical questions about developing or deploying an app with {{site.data.keyword.dashdbshort_notm}}, post your question on [Stack Overflow ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} and tag your question with "bluemix" and "db2".
 * For questions about the service and getting started instructions, use the [IBM developerWorks® dW Answers ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window} forum. Include the "bluemix" and "db2" tags.
 
-See [Getting help](/docs/support/index.html#getting-help){:new_window} for more details about using the forums.
+See [Getting help](/docs/get-support/howtogetsupport.html#using-avatar){:new_window} for more details about using the forums.
 
-For information about opening an IBM support ticket, or about support levels and ticket severities, see: [Contacting support](/docs/support/index.html#contacting-support){:new_window}.
+For information about opening an IBM support ticket, or about support levels and ticket severities, see: [Opening a support ticket](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
 
 
 

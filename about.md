@@ -154,7 +154,7 @@ To connect local applications and tools to your Db2 database, you need to [confi
 You can use common programming languages to create applications that connect to a Db2 database.
 {: shortdesc}
 
-* [Java ![External link icon](../../icons/launch-glyph.svg "External link icon"){}{:new_window}
+* [Java ![External link icon](../../icons/launch-glyph.svg "External link icon")](){:new_window}
 * [JDBC ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
 * [ODBC ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}
 * [.NET ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}

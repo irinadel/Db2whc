@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # Loading data
 {: #load}
 
-You can load data from a data file in a delimited format such as CSV or TXT located on a local network, an object store (Amazon S3 or IBM Cloud Object Storage (formerly SoftLayer Swift)), or a Db2® server. You can also populate a database instance with data directly from a Cloudant® database or by performing a load process from an application such as InfoSphere® DataStage®.
+You can load data from a data file in a delimited format such as CSV or TXT located on a local network, an object store (Amazon S3 or IBM Cloud Object Storage), or a Db2® server. You can also populate a database instance with data directly from a Cloudant® database or by performing a load process from an application such as InfoSphere® DataStage®.
 {: shortdesc}
 
 * [Loading data from PureData System for Analytics (Netezza) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#docs){:new_window}
