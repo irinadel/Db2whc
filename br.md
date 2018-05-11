@@ -39,7 +39,7 @@ The retained backups are used exclusively by IBM for only system recovery purpos
 
 The last 7 daily backup snapshots are retained.
 
-You can schedule your backups to run when it's most convenient and you can restore your database from any of your retained backup snapshots at any time that you choose. The system goes down during the restore period. An email will be sent to notify you that the restore operation was completed.
+From the {{site.data.keyword.dashdbshort_notm}} console, you can schedule your backups to run when it's most convenient and you can restore your database from any of your retained backup snapshots at any time that you choose. The system goes down during the restore period. An email will be sent to notify you that the restore operation was completed.
 
 ![View of the web console backup and restore page](images/br.png)
 
