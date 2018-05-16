@@ -28,7 +28,7 @@ The {{site.data.keyword.dashdblong}} managed service is an SQL database provisio
 ## Free trial
 {: #freetrial}
 
-You can try the {{site.data.keyword.dashdbshort_notm}} Entry plan with up to 1 GB of storage without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+You can try the {{site.data.keyword.dashdbshort_notm}} Entry plan with up to 1 GB of storage without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Interfaces
 {: #interfaces}
