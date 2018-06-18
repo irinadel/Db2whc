@@ -11,13 +11,15 @@ Db2 Warehouse on Cloud
     about.md
     flex_scaling.md
     br.md
+    dr.md
     ha.md
 
     {: .topicgroup}
-    Migration
+    Loading your data
         dcw.md
         migration.md
-    
+        pda_db2whc_mdms.md
+
     connecting.md
     user_mgmt.md
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)

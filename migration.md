@@ -13,13 +13,13 @@ lastupdated: "2018-05-08"
 {:screen: .screen}
 {:pre: .pre}
 
-# Migration to IBM Cloud
+# Migrating data to IBM Cloud
 {: #migration}
 
 You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or IBM Cloud Object Storage) to {{site.data.keyword.dashdblong}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
 
-## Load data from object store
+## Loading data from object store
 {: #cos}
 
 To load data from Amazon S3, select one of the following methods:
@@ -50,17 +50,17 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Note:** For IBM Cloud Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-## Migrate data from on-premises system
+## Migrating data from on-premises system
 {: #onprem}
 
 To migrate your data from an on-premises system, choose one of the following methods depending on the size of your data set:
-* Less than 25 TB of data: [IBM Lift CLI](#lift)
-* 25 TB of data and greater: [IBM Cloud Mass Data Migration](#mdms)
+* Less than 25 TB of data: [IBM Lift](#lift)
+* 25 TB of data and greater: [IBM Cloud Mass Data Migration Service](#mdms)
 
-### Lift CLI
+### Lift
 {: #lift}
 
-The Lift CLI is an application that you can use without charge to migrate your data to the {{site.data.keyword.Bluemix_notm}} from the various data sources listed in Table 1. 
+The Lift is an application that you can use without charge to migrate your data to the {{site.data.keyword.Bluemix_notm}} from the various data sources listed in Table 1. 
 
 | Target database on IBM Cloud | Data source |
 |------------------------------|-------------|
@@ -73,16 +73,20 @@ The Lift CLI is an application that you can use without charge to migrate your d
 |                              | CSV file format |
 {: caption="Table 1. Migration data sources" caption-side="top"}
 
-To download and install Lift CLI, see: [Download Lift CLI ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#download){:new_window}.
+To download and install Lift, see: [Download Lift ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#download){:new_window}.
 
-For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift CLI, see: [Migrate data to IBM Db2 Warehouse on Cloud ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#docs){:new_window}.
+For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrating to Db2 Warehouse on Cloud](/docs/services/lift-cli/index.html#about-lift){:new_window}.
 
-### IBM Cloud Mass Data Migration
+### IBM Cloud Mass Data Migration Service
 {: #mdms}
 
-A fast, simple, secure way to physically transfer terabytes to petabytes of data to the {{site.data.keyword.Bluemix_notm}}. Mass Data Migration is a mobile storage device with 120 TB of usable storage capacity to accelerate moving data to the {{site.data.keyword.Bluemix_notm}}. Overcome common transfer challenges like high costs, long transfer times, and security concerns – all in a single service.
+The IBM Cloud Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully-managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
 
-![View of the Mass Data Migration device](images/mdms.svg)
+MDMS offers a fast, simple, secure way to physically transfer terabytes to petabytes of data to the {{site.data.keyword.Bluemix_notm}}. The MDMS is a mobile storage device with 120 TB of usable storage capacity. This device gives you the ability to overcome common transfer challenges like high costs, long transfer times, and security concerns – all in a single service.
 
-For more information about the Mass Data Migration device, see: [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+![View of the Mass Data Migration Service device](images/mdms.svg)
+
+For more information about the MDMS device, see: [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+
+For information about migrating your data from an IBM PureData System for Analytics (Netezza) database to an {{site.data.keyword.dashdblong}} database by using the MDMS device, see: [Migrating from IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html).
 
