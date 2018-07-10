@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -152,9 +152,9 @@ Si vous utilisez les forums pour poser une question, libellez votre question de 
 * Pour les questions liées au service et à la mise en route, utilisez le forum [IBM developerWorks® dW Answers ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Indiquez les étiquettes "bluemix" et "db2".
 
 Pour plus d'informations sur l'utilisation des forums, voir
-[Comment obtenir de l'aide](/docs/support/index.html#getting-help){:new_window}.
+[Comment obtenir de l'aide](/docs/get-support/howtogetsupport.html#using-avatar){:new_window}.
 
-Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Contacter le service de support](/docs/support/index.html#contacting-support){:new_window}.
+Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Ouverture d'un ticket de demande de service](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
 
 
 

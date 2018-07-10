@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # Collegamento
 {: #connect}
 
-Puoi collegare interfacce della riga di comando, strumenti o applicazioni di terze parti o di IBM® o applicazioni che hai creato nel tuo database Db2®.
+Puoi collegare interfacce della riga di comando, strumenti o applicazioni di terze parti o di IBM® o applicazioni che hai creato nel tuo database Db2®. 
 {: shortdesc}
 
 ## Prerequisiti
@@ -28,10 +28,10 @@ Prima di poterti collegare al tuo database del servizio gestito da Db2, completa
 ### Configurazione dell'ambiente
 {: #cfg_env}
 
-Per collegare gli strumenti e le applicazioni locali al tuo database Db2, devi [configurare il tuo ambiente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Per collegare gli strumenti e le applicazioni locali al tuo database Db2, devi [configurare il tuo ambiente ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
-## Collegamento in modo programmatico 
+## Collegamento in modo programmatico
 {: #conx_prgrm}
 
 Puoi utilizzare linguaggi di programmazione comuni per creare applicazioni che si collegano a un database Db2.

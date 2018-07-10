@@ -13,7 +13,7 @@ lastupdated: "2018-03-16"
 {:screen: .screen}
 {:pre: .pre}
 
-# Elevata disponibilità (HA): piano MPP 
+# Elevata disponibilità (HA): piano MPP
 {: #ha_smp_mpp}
 
 Il cluster del piano {{site.data.keyword.dashdblong}} MPP viene fornito con l'elevata disponibilità.  

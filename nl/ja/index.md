@@ -28,7 +28,7 @@ lastupdated: "2018-03-15"
 ## 無料トライアル
 {: #freetrial}
 
-ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## インターフェース
 {: #interfaces}
@@ -36,10 +36,10 @@ lastupdated: "2018-03-15"
 以下の方法で、ウェアハウス・データベースを使用した作業を行うことができます。
 {: shortdesc}
 
-* Web コンソールから
-* REST API
-* ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
-* {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして {{site.data.keyword.dashdbshort_notm}} を使用する
+   * Web コンソールから
+   * REST API
+   * ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
+   * {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして {{site.data.keyword.dashdbshort_notm}} を使用する
 
 ### Web コンソール
 {: #web_console}
@@ -49,9 +49,11 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 
 ![Web コンソールのダッシュボード・ページの表示](images/console_v3.png)
 
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+
 以下の方法で、Web コンソールにアクセスできます。
-* {{site.data.keyword.Bluemix_notm}} ダッシュボードから - {{site.data.keyword.dashdbshort_notm}} サービスの「サービス詳細」ページから Web コンソールを開くことができます。
-* ダイレクト URL - {{site.data.keyword.dashdbshort_notm}} サービスの Web コンソールの URL をブックマークできます。
+   * {{site.data.keyword.Bluemix_notm}} ダッシュボードから - {{site.data.keyword.dashdbshort_notm}} サービスの「サービス詳細」ページから Web コンソールを開くことができます。
+   * ダイレクト URL - {{site.data.keyword.dashdbshort_notm}} サービスの Web コンソールの URL をブックマークできます。
 
 ### REST API
 {: #api}
@@ -125,9 +127,12 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 各種の言語で作成されたアプリケーションから {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法を示すサンプルへのリンクは次のとおりです。
 {: shortdesc}
 
-* [.NET ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-* [JDBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-* [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-* [GitHub にある {{site.data.keyword.dashdbshort_notm}} サンプル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+   * [.NET ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
+<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
+   * [JDBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
+<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
+   * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
+<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
+   * [GitHub にある {{site.data.keyword.dashdbshort_notm}} サンプル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
 
 

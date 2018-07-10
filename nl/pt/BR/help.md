@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -142,9 +142,9 @@ Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela p
 * Se você tiver questões técnicas sobre como desenvolver ou implementar um app com o {{site.data.keyword.dashdbshort_notm}}, poste sua pergunta no [Stack Overflow ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} e identifique a sua pergunta com "bluemix" e "db2".
 * Para questões sobre o serviço e instruções para introdução, use o fórum [IBM developerWorks® dW Answers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Inclua as tags "bluemix" e "db2".
 
-Consulte [Obtendo ajuda](/docs/support/index.html#getting-help){:new_window} para obter mais detalhes sobre o uso dos fóruns.
+Consulte [Obtendo ajuda](/docs/get-support/howtogetsupport.html#using-avatar){:new_window} para obter mais detalhes sobre o uso dos fóruns.
 
-Para obter informações sobre como abrir um chamado de suporte da IBM ou sobre níveis de suporte e severidades de chamados, consulte [Entrando em contato com o suporte](/docs/support/index.html#contacting-support){:new_window}.
+Para obter informações sobre como abrir um chamado de suporte IBM ou sobre os níveis de suporte e as severidades de chamado, veja: [Abrindo um chamado de suporte](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
 
 
 

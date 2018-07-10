@@ -13,7 +13,7 @@ lastupdated: "2018-03-16"
 {:screen: .screen}
 {:pre: .pre}
 
-# Haute disponibilité (HA) : plan MPP
+# Haute disponibilité : plan MPP
 {: #ha_smp_mpp}
 
 Le cluster du plan {{site.data.keyword.dashdblong}} MPP est mis à disposition avec la haute disponibilité.  

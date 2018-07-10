@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # 装入数据
 {: #load}
 
-您可以从本地网络、对象存储（Amazon S3 或 IBM Cloud Object Storage（以前称为 SoftLayer Swift））或 Db2® 服务器上定界格式的数据文件（如 CSV 或 TXT）装入数据。您还可以直接从 Cloudant® 数据库或者通过从应用程序（如 InfoSphere® DataStage®）执行装入过程来为数据库实例填充数据。
+您可以从本地网络、对象存储（Amazon S3 或 IBM Cloud Object Storage）或 Db2® 服务器上定界格式（如 CSV 或 TXT）的数据文件装入数据。您还可以直接从 Cloudant® 数据库或者通过从应用程序（如 InfoSphere® DataStage®）执行装入过程来为数据库实例填充数据。
 {: shortdesc}
 
 * [从 PureData System for Analytics (Netezza) 装入数据 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/#docs){:new_window}
@@ -29,7 +29,7 @@ lastupdated: "2018-03-23"
     * 直接从外部表。以下是示例 SQL 语句：
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+            INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 

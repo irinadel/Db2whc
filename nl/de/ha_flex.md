@@ -16,19 +16,18 @@ lastupdated: "2018-03-15"
 # Hochverfügbarkeit (High Availability, HA): Flex Performance-Plan
 {: #ha_flex}
 
-Tritt ein nicht erwarteter Knotenfehler auf, wird die vollständige Kapazität des Flex Performance-MPP-Clusters nach einer kurzen Ausfallzeit wiederhergestellt, indem IBM Container Service (auf der Basis von Kubernetes) eingesetzt wird. Es werden Knoten aus einem Pool verwendet, um die fehlgeschlagenen Knotenentitäten zu verlagern.
+Tritt ein nicht erwarteter Knotenfehler auf, wird die vollständige Kapazität des Flex Performance-MPP-Clusters nach einer kurzen Ausfallzeit wiederhergestellt, indem IBM Container Service (auf der Basis von Kubernetes) eingesetzt wird. Es werden Knoten aus einem Pool verwendet, um die fehlgeschlagenen Knotenentitäten zu verlagern. 
 {: shortdesc}
 
-## Hochverfügbarkeit für Prozessorresourcen
+## Hochverfügbarkeit für Prozessorressourcen
 {: #compute_ha}
 
-Knotenfehler werden sofort vom Container-Service festgestellt. Die Container und Pods, die auf dem fehlgeschlagenen Knoten ausgeführt wurden, werden auf einem anderen Knoten terminiert, der aus einem Knotenpool zugeordnet wird. Das System erreicht nach einer kurzen Ausfallzeit wieder 100 % seiner normalen Betriebsleistung. 
+Knotenfehler werden sofort vom Container-Service festgestellt. Die Container und Pods, die auf dem fehlgeschlagenen Knoten ausgeführt wurden, werden auf einem anderen Knoten terminiert, der aus einem Knotenpool zugeordnet wird. Das System erreicht nach einer kurzen Ausfallzeit wieder 100 % seiner normalen Betriebsleistung.
 
 ## Hochverfügbarkeit für den Speicher
 {: #storage_ha}
 
 Der Speicher ist mit einer Dual-Parity-RAID6-Implementierung konfiguriert, die Schutz bei doppelten Datenträgerausfällen in derselben RAID-Gruppe und damit hohe Leistung und hohe Speicherverfügbarkeit für das System bietet.
-
 
 ## Hochverfügbarkeit für das Netz
 {: #net_ha}

@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # Chargement des données
 {: #load}
 
-Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local, depuis un magasin de données (Amazon S3 ou IBM Cloud Object Storage (anciennement SoftLayer Swift) ou un serveur Db2®. Vous pouvez également remplir une instance de base de données avec des données provenant directement d'une base de données Cloudant® ou en procédant au chargement à partir d'une application telle qu'InfoSphere® DataStage®.
+Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local, depuis un magasin de données (Amazon S3 ou IBM Cloud Object Storage) ou un serveur Db2®. Vous pouvez également remplir une instance de base de données avec des données provenant directement d'une base de données Cloudant® ou en procédant au chargement à partir d'une application telle qu'InfoSphere® DataStage®.
 {: shortdesc}
 
 * [Chargement des données à partir de PureData System for Analytics (Netezza) ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}

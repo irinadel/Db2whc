@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -19,12 +19,12 @@ lastupdated: "2018-03-16"
 Vous pouvez choisir un plan {{site.data.keyword.dashdbshort_notm}} configuré et optimisé pour le travail que vous devez effectuer :
 {: shortdesc}
 
-   * Un plan payant à l'essai
+   * Un plan d'entrée pour essayer le produit, qui propose un essai gratuit avec 1 Go de stockage maximum.
    * Un plan Flex Performance dans lequel vous pouvez mettre à l'échelle le stockage et les ressources de traitement de manière indépendante
-   * Des plans de tailles différentes (petit, moyen, important) pour la production
-   * Des configurations de traitement à parallélisme massif pour le traitement parallèle
-   * Des plans configurés pour la haute disponibilité ou pour la compatibilité avec Oracle
-   * Et plus encore...
+   * Des plans SMP de tailles variées (petits, moyens et grands) pour la production, proposant un seul noeud et une instance unique.
+   * Des configurations de cluster multi-noeud MPP pour un traitement parallèle et de hautes performances
+   * Des plans configurés pour la haute disponibilité
+   * Une compatibilité Oracle
 
 Affichez tous les plans {{site.data.keyword.dashdbshort_notm}} disponibles dans le [catalogue {{site.data.keyword.Bluemix}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->

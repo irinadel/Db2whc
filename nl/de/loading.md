@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # Daten laden
 {: #load}
 
-Sie können Daten aus einer Datendatei laden, die in einem Format mit Begrenzern, z. B. CSV oder TXT, vorliegt und sich in einem lokalen Netz befindet; oder Sie können Daten aus einem Objektspeicher (Amazon S3 oder IBM Cloud Object Storage (früher als SoftLayer Swift bezeichnet)) oder von einem Db2®-Server laden. Darüber hinaus können Sie eine Datenbankinstanz direkt über eine Cloudant®-Datenbank mit Daten füllen oder mithilfe eines Ladeprozesses über eine Anwendung wie z. B. InfoSphere® DataStage®.
+Sie können Daten aus einer Datendatei laden, die in einem Format mit Begrenzern, z. B. CSV oder TXT, vorliegt und sich in einem lokalen Netz befindet; oder Sie können Daten aus einem Objektspeicher (Amazon S3 oder IBM Cloud Object Storage) oder von einem Db2®-Server laden. Darüber hinaus können Sie eine Datenbankinstanz direkt über eine Cloudant®-Datenbank mit Daten füllen oder mithilfe eines Ladeprozesses über eine Anwendung wie z. B. InfoSphere® DataStage®.
 {: shortdesc}
 
 * [Daten aus PureData System for Analytics (Netezza) laden ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#docs){:new_window}

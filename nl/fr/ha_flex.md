@@ -13,10 +13,10 @@ lastupdated: "2018-03-15"
 {:screen: .screen}
 {:pre: .pre}
 
-# Haute disponibilité (HA) : plan Flex Performance
+# Haute disponibilité : plan Flex Performance
 {: #ha_flex}
 
-En cas de défaillance de noeud inattendue, le cluster Flex Performance MPP est ramené à sa pleine capacité après un bref temps d'indisponibilité lié à l'utilisation d'IBM Container Service (basé sur Kubernetes). Les noeuds d'un pool sont utilisés pour déplacer les entités de noeud défaillantes.
+En cas de défaillance de noeud inattendue, le cluster Flex Performance MPP est ramené à sa pleine capacité après un bref temps d'indisponibilité lié à l'utilisation d'IBM Container Service (basé sur Kubernetes). Les noeuds d'un pool sont utilisés pour déplacer les entités de noeud défaillantes. 
 {: shortdesc}
 
 ## Haute disponibilité de traitement
@@ -32,6 +32,6 @@ Votre stockage est configuré avec une implémentation RAID6 à double parité q
 ## Haute disponibilité du réseau
 {: #net_ha}
 
-Les connexions réseau sont hautement disponibles grâce à la mise à disposition de votre service avec une carte d'interface réseau redondante.  
+Les connexions réseau sont hautement disponibles grâce à la mise à disposition de votre service avec une carte d'interface réseau redondante. 
 
 Si le service de conteneur détecte un problème réseau, les pods et les conteneurs peuvent redémarrer automatiquement après un bref temps d'indisponibilité.

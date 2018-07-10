@@ -28,7 +28,7 @@ Il servizio gestito da {{site.data.keyword.dashdblong}} è un database SQL di cu
 ## Versione di prova gratuita
 {: #freetrial}
 
-Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Interfacce
 {: #interfaces}

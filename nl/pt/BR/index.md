@@ -28,7 +28,7 @@ O serviço gerenciado do {{site.data.keyword.dashdblong}} é um banco de dados S
 ## Trial gratuito
 {: #freetrial}
 
-Você pode experimentar o plano Entry do {{site.data.keyword.dashdbshort_notm}} com até 1 GB de armazenamento, sem encargos. [Avaliação grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+Você pode experimentar o plano Entry do {{site.data.keyword.dashdbshort_notm}} com até 1 GB de armazenamento, sem encargos. [Avaliação grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Interfaces
 {: #interfaces}

@@ -22,13 +22,13 @@ Puede conectar interfaces de línea de mandatos, aplicaciones de IBM® o de terc
 ## Requisitos previos
 {: #connect_prereq}
 
-Antes de poder conectarse a su base da datos de servicios gestionados de Db2, complete los requisitos previos  [ ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_applications_to_dashdb_database.html){:new_window}.
+Antes de poder conectarse a su base da datos de servicios gestionados de Db2, complete los [requisitos previos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connecting_applications_to_dashdb_database.html){:new_window}.
 {: shortdesc}
 
 ### Configuración del entorno
 {: #cfg_env}
 
-Para conectar herramientas y aplicaciones locales a su base de datos Db2, necesita  [configurar su entorno ![Icono de enlace externo](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
+Para conectar herramientas y aplicaciones locales a su base de datos Db2, necesita [configurar su entorno ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Conexión mediante programas

@@ -28,7 +28,7 @@ lastupdated: "2018-03-15"
 ## 무료 평가판
 {: #freetrial}
 
-최대 1GB의 저장 공간을 갖춘 {{site.data.keyword.dashdbshort_notm}} 엔트리 플랜을 무료로 사용할 수 있습니다. [무료 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+최대 1GB의 저장 공간을 갖춘 {{site.data.keyword.dashdbshort_notm}} 엔트리 플랜을 무료로 사용할 수 있습니다. [무료 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## 인터페이스
 {: #interfaces}

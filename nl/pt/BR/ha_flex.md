@@ -18,10 +18,10 @@ lastupdated: "2018-03-15"
 
 Se ocorrer uma falha de nó inesperada, o cluster do Flex Performance MPP será recuperado para capacidade total após um curto
 tempo de inatividade devido ao uso do IBM Container Service (baseado no Kubernetes). Nós de um conjunto são usados para mover as
-entidades do nó com falha.
+entidades do nó com falha. 
 {: shortdesc}
 
-## HA de cálculo 
+## HA de cálculo
 {: #compute_ha}
 
 Qualquer falha do nó é imediatamente detectada pelo serviço de contêiner. Os contêineres e os pods em execução no nó

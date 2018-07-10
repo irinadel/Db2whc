@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-05-01"
 
 ---
 
@@ -16,9 +16,34 @@ lastupdated: "2018-03-15"
 # Mise à l'échelle flexible
 {: #scale}
 
-Il est possible de mettre à l'échelle le stockage et les noeuds de traitement de manière indépendante.
-
-Avant de mettre à disposition votre système Flex Performance, vous pouvez ajuster vos capacités de stockage et les coeurs de traitement en anticipant vos besoins, puis soumettre vos choix.
+Le plan Flex Performance offre une mise à l'échelle du stockage et des coeurs de traitement, indépendante.
 {: shortdesc}
 
-Une fois le système mis à disposition, vous pouvez augmenter ou réduire les coeurs de traitement et réduire le stockage en fonction de l'évolution de vos besoins. La mémoire RAM est allouée de manière proportionnelle lorsque le nombre de coeurs est modifié. Un changement du nombre de coeurs de traitement entraîne un bref temps d'indisponibilité. Vous pouvez planifier ce temps d'indisponibilité à un moment qui vous convient ou lancer le changement des coeurs de traitement de manière immédiate. Les changements liés au stockage n'entraînent aucun temps d'indisponibilité. 
+Avant de mettre à disposition votre système Flex Performance, vous pouvez effectuer des ajustements initiaux en anticipant vos besoins en matière de stockage et de coeurs de traitement puis soumettre vos choix.
+
+Une fois le système mis à disposition, si vos besoins évoluent, vous pouvez modifier les exigences de stockage et de coeurs de traitement en lançant la page relative à l'instance de mise à l'échelle depuis la page de gestion du service et en utilisant les barres de curseur. 
+
+![Vue de la page des coeurs de traitement de la console Web](images/launch.png)
+
+![Vue de la page des coeurs de traitement de la console Web](images/scaling_full.png)
+
+
+## Coeurs de traitement
+{: #cores}
+
+Vous pouvez ajuster vos coeurs de traitement en les augmentant ou les diminuant. Un coeur de traitement change les résultats en cas de courte indisponibilité du système pouvant aller jusqu'à 45 minutes. Vous pouvez planifier ce temps d'indisponibilité à un moment qui vous convient ou lancer le changement des coeurs de traitement de manière immédiate.
+
+![Vue de la page des coeurs de traitement de la console Web](images/cores.png)
+
+## Stockage
+{: #storage}
+
+Vous pouvez augmenter votre stockage. Les changements liés au stockage n'entraînent aucun temps d'indisponibilité.
+
+![Vue de la page de stockage de la console Web](images/storage.png)
+
+## Mémoire
+{: #ram}
+
+La mémoire RAM est allouée proportionnellement avec un ratio fixe quand le nombre de coeurs de traitement est modifié.
+

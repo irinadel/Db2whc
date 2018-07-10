@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -19,12 +19,12 @@ lastupdated: "2018-03-16"
 您可以選擇 {{site.data.keyword.dashdbshort_notm}} 方案，該方案已針對您需要執行的工作進行配置且最佳化：
 {: shortdesc}
 
-   * 嘗試各種事物的入門方案
+   * 嘗試各種事物的入門方案。它是免費試用版，儲存空間高達 1 GB。
    * 彈性效能方案，您可以獨立地調整儲存空間及運算資源
-   * 小型、中型及大型正式作業方案
-   * 適用於平行處理的 MPP 配置
-   * 針對高可用性或 Oracle 相容性所配置的方案
-   * 以及其他 ...
+   * 正式作業之各種大小的 SMP 方案：小型、中型及大型，由單一節點及單一實例組成。
+   * MPP 多節點叢集配置，用於平行處理及取得高效能
+   * 針對高可用性配置的方案
+   * Oracle 相容性
 
 檢視 [{{site.data.keyword.Bluemix}} 型錄](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}中所有可用的 {{site.data.keyword.dashdbshort_notm}} 方案。
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->

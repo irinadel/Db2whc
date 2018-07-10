@@ -23,4 +23,4 @@ El rol de administrador de la base de datos gestiona los siguientes tipos de acc
 * Consola web. Desde la consola web, los usuarios puede ejecutar consultas contra la base de datos.
 * Base de datos. El administrador puede garantizar permisos de acceso granular a la base de datos, incluso solo permiso para acceder a determinadas tablas, esquemas, o incluso filas o columnas. 
 
-Para obtener más información acerca de la gestión del usuario, consulte [Gestión del usuario de la base de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+Para obtener más información sobre la gestión de usuarios, consulte: [Gestión de usuarios de base de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}

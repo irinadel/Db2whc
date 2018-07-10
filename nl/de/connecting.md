@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # Verbindung herstellen
 {: #connect}
 
-Sie können eine Verbindung von Befehlszeilenschnittstellen, von IBM® Anwendungen oder Tools, von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer Db2®-Datenbank herstellen.
+Sie können eine Verbindung von Befehlszeilenschnittstellen, von IBM® Anwendungen oder Tools, von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer Db2®-Datenbank herstellen. 
 {: shortdesc}
 
 ## Voraussetzungen
@@ -28,7 +28,7 @@ Bevor Sie eine Verbindung zu Ihrer Datenbank unter dem verwalteten Db2-Service h
 ### Umgebung konfigurieren
 {: #cfg_env}
 
-Wenn Sie lokale Anwendungen und Tools mit der Db2-Datenbank verbinden möchten, müssen Sie [die Umgebung konfigurieren![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Wenn Sie lokale Anwendungen und Tools mit der Db2-Datenbank verbinden möchten, müssen Sie [die Umgebung konfigurieren![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Programmgestützte Verbindungsherstellung

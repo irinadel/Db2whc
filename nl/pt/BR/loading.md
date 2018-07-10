@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # Carregando dados
 {: #load}
 
-É possível carregar dados de um arquivo de dados em um formato delimitado, como CSV ou TXT, localizado em uma rede local, um armazenamento de objeto (Amazon S3 ou IBM Cloud Object Storage (anteriormente Swift SoftLayer)) ou um servidor Db2®. Também é possível preencher uma instância de banco de dados com dados diretamente de um banco de dados Cloudant® ou executando um processo de carregamento por meio de um aplicativo como o InfoSphere® DataStage®.
+É possível carregar dados de um arquivo de dados em um formato delimitado, tal como CSV ou TXT, localizado em uma rede local, um armazenamento de objeto (Amazon S3 ou IBM Cloud Object Storage) ou um servidor Db2®. Também é possível preencher uma instância de banco de dados com dados diretamente de um banco de dados Cloudant® ou executando um processo de carregamento por meio de um aplicativo como o InfoSphere® DataStage®.
 {: shortdesc}
 
 * [Carregando dados do PureData System for Analytics (Netezza) ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://lift.ng.bluemix.net/#docs){:new_window}

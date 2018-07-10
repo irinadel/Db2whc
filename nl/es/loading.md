@@ -16,11 +16,10 @@ lastupdated: "2018-03-23"
 # Cargando datos
 {: #load}
 
-Puede cargar datos desde un archivo de datos en un formato delimitado como CSV o TXT ubicados en una red local, un almacén de objetos
-(Amazon S3 o IBM Cloud Object Storage (anteriormente SoftLayer Swift)), o un servidor Db2®. También puede llenar una instancia de base de datos directamente con datos de una base de datos Cloudant® o realizando un proceso de carga desde una aplicación como InfoSphere® DataStage®.
+Puede cargar datos desde un archivo de datos en un formato delimitado como CSV o TXT ubicados en una red local, un almacén de objetos (Amazon S3 o IBM Cloud Object Storage), o un servidor Db2®. También puede llenar una instancia de base de datos directamente con datos de una base de datos Cloudant® o realizando un proceso de carga desde una aplicación como InfoSphere® DataStage®.
 {: shortdesc}
 
-* [Carga de datos desde PureData System for Analytics (Netezza) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#docs){:new_window}
+* [Carga de datos desde PureData System for Analytics (Netezza) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://lift.ng.bluemix.net/#docs){:new_window}
 * [Carga de datos desde Oracle ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://lift.ng.bluemix.net/#docs){:new_window}
 * [Carga de datos desde SQL Server ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://lift.ng.bluemix.net/#docs){:new_window}
 * [Carga de un archivo CSV ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://lift.ng.bluemix.net/#docs){:new_window}

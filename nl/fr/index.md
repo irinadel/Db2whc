@@ -28,7 +28,7 @@ Le service géré {{site.data.keyword.dashdblong}} est une base de données SQL 
 ## Essai gratuit
 {: #freetrial}
 
-Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Interfaces
 {: #interfaces}

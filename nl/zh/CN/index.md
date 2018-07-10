@@ -28,7 +28,7 @@ lastupdated: "2018-03-15"
 ## 免费试用
 {: #freetrial}
 
-您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## 界面
 {: #interfaces}
@@ -100,8 +100,12 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
                    "UID=$user;" .
                    "PWD=$password;";
 
+    
+
     $conn_string = $driver . $dsn;
                                    
+    
+
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
     ```
@@ -116,6 +120,8 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];
 
     $conn_string = $driver . $dsn;
+                                   
+    
                                    
     $conn        = db2_connect( $conn_string, "", "" );
     ?>

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -142,9 +142,9 @@ Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag,
 * Wenn Sie technische Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.dashdbshort_notm}} haben, posten Sie die Fragen in [Stack Overflow ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} und kennzeichnen Sie die Frage mit den Tags "bluemix" und "db2".
 * Bei Fragen zum Service und zu den Anweisungen für den Einstieg verwenden Sie das Forum [IBM developerWorks® dW Answers ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Geben Sie die Tags "bluemix" und "db2" an.
 
-Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/support/index.html#getting-help){:new_window}.
+Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/get-support/howtogetsupport.html#using-avatar){:new_window}.
 
-Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Support kontaktieren](/docs/support/index.html#contacting-support){:new_window}.
+Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter: [Ein Support-Ticket öffnen](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
 
 
 

@@ -28,7 +28,7 @@ Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um ein
 ## Kostenfreier Test
 {: #freetrial}
 
-Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Schnittstellen
 {: #interfaces}

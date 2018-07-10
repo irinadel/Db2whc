@@ -28,7 +28,7 @@ lastupdated: "2018-03-15"
 ## 免費試用
 {: #freetrial}
 
-您可以嘗試 {{site.data.keyword.dashdbshort_notm}} 入門方案，免費使用高達 1 GB 的儲存空間。[免費試用 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/services/dashdb){:new_window}
+您可以嘗試 {{site.data.keyword.dashdbshort_notm}} 入門方案，免費使用高達 1 GB 的儲存空間。[免費試用 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## 介面
 {: #interfaces}
@@ -101,7 +101,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
                    "PWD=$password;";
 
     $conn_string = $driver . $dsn;
-                                   
+
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
     ```

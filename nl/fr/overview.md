@@ -25,7 +25,7 @@ Vous pouvez aussi connecter des outils et des applications externes à {{site.da
 et les utiliser pour gérer ou analyser vos données. Exemple :
    * Connectez {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect pour concevoir et déployer votre schéma de base de données.
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
-   * Connectez un serveur {{site.data.keyword.IBM_notm}} Cognos® afin de générer des rapports Cognos pour vos données.
+   * Connectez un serveur {{site.data.keyword.IBM_notm}} Cognos® pour exécuter des rapports Cognos avec vos données.
    * Connectez des outils s'appuyant sur SQL tels que Tableau, Microstrategy ou Microsoft Excel pour manipuler ou analyser vos données.
    * Connectez vos applications {{site.data.keyword.Bluemix_short}} qui nécessitent une base de données analytique.
    * Connectez Aginity Workbench pour migrer des données et des modèles de données Netezza® vers {{site.data.keyword.dashdbshort_notm}}.

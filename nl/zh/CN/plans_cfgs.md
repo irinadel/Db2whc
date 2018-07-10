@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -19,12 +19,12 @@ lastupdated: "2018-03-16"
 您可以选择针对您需要执行的工作所配置和优化的 {{site.data.keyword.dashdbshort_notm}} 套餐：
 {: shortdesc}
 
-   * 入门级套餐，进行尝试
+   * 用于试用的入门级套餐。最多可免费试用 1 GB 存储。
    * 可独立扩展存储和计算资源的 Flex Performance 套餐
-   * 用于生产的小型、中型和大型套餐
-   * 用于并行处理的 MPP 配置
-   * 为高可用性或 Oracle 兼容性配置的套餐
-   * 其他更多...
+   * 用于生产的各种规模的 SMP 套餐：小中大，包括单个节点和单个实例
+   * 针对并行处理和高性能的 MPP 多节点集群配置
+   * 针对高可用性配置的套餐
+   * Oracle 兼容性
 
 在 [{{site.data.keyword.Bluemix}} 目录](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}中查看所有可用的 {{site.data.keyword.dashdbshort_notm}} 套餐。
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->

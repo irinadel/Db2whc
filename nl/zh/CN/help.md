@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2017-07-27"
+lastupdated: "2018-04-30"
 
 ---
 
@@ -142,9 +142,9 @@ To resolve the problem, choose one of the following options:
 * 有关使用 {{site.data.keyword.dashdbshort_notm}} 开发或部署应用程序的技术问题，请将您的问题发布到 [Stack Overflow ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} 上，并使用“bluemix”和“db2”标记您的问题。
 * 有关服务的问题和入门指示信息，请使用 [IBM developerWorks® dW Answers ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window} 论坛。请包括“bluemix”和“db2”标记。
 
-有关使用论坛的更多详细信息，请参阅[获取帮助](/docs/support/index.html#getting-help){:new_window}。
+有关使用论坛的更多详细信息，请参阅[获取帮助](/docs/get-support/howtogetsupport.html#using-avatar){:new_window}。
 
-有关开具 IBM 支持凭单或支持级别和凭单严重性的信息，请参阅：[联系支持人员](/docs/support/index.html#contacting-support){:new_window}。
+有关开具 IBM 支持凭单或有关支持级别和凭单严重性的信息，请参阅：[提交支持凭单](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}。
 
 
 

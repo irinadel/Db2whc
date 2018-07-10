@@ -16,7 +16,7 @@ lastupdated: "2018-03-15"
 # Elevata disponibilità (HA): piano Flex Performance
 {: #ha_flex}
 
-Se si verifica un malfunzionamento non previsto con il nodo, il tuo cluster Flex Performance MPP viene riportato alla capacità completa dopo un breve tempo di inattività dovuto all'utilizzo del servizio IBM Container (basato su Kubernetes). I nodi da un pool sono utilizzati per spostare le entità del nodo in errore.
+Se si verifica un malfunzionamento non previsto con il nodo, il tuo cluster Flex Performance MPP viene riportato alla capacità completa dopo un breve tempo di inattività dovuto all'utilizzo del servizio IBM Container (basato su Kubernetes). I nodi da un pool sono utilizzati per spostare le entità del nodo in errore. 
 {: shortdesc}
 
 ## Calcolo HA
@@ -34,4 +34,4 @@ La tua archiviazione viene configurata con un'implementazione RAID6 a doppia par
 
 Le connessioni di rete sono rese altamente disponibili fornendo al tuo servizio una NIC (network interface card) ridondante. 
 
-Se il servizio contenitore rileva un problema di rete, i pod e i contenitori possono riavviarsi automaticamente dopo un breve tempo di inattività. 
+Se il servizio contenitore rileva un problema di rete, i pod e i contenitori possono riavviarsi automaticamente dopo un breve tempo di inattività.

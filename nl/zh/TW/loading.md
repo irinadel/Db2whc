@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # 載入資料
 {: #load}
 
-您可以從位於本端網路的定界格式資料檔案（例如 CSV 或 TXT）、物件儲存庫（Amazon S3 或 IBM Cloud Object Storage（先前稱為 SoftLayer Swift））或 Db2® 伺服器來載入資料。您也可以直接從 Cloudant® 資料庫將資料移入資料庫實例，或是從例如 InfoSphere® DataStage® 的應用程式執行載入處理程序。
+您可以從位於本端網路的定界格式資料檔案（例如 CSV 或 TXT）、物件儲存庫（Amazon S3 或 IBM Cloud Object Storage）或 Db2® 伺服器來載入資料。您也可以直接從 Cloudant® 資料庫將資料移入資料庫實例，或是從例如 InfoSphere® DataStage® 的應用程式執行載入處理程序。
 {: shortdesc}
 
 * [從 PureData System for Analytics (Netezza) 載入資料 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}
@@ -29,7 +29,7 @@ lastupdated: "2018-03-23"
     * 直接從外部表格。以下是範例 SQL 陳述式：
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+            INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 

@@ -16,7 +16,7 @@ lastupdated: "2018-03-21"
 # Connexion
 {: #connect}
 
-Vous pouvez connecter à votre base de données Db2® des interfaces de ligne de commande, des applications ou des outils tiers ou IBM®, ou des applications que vous créez.
+Vous pouvez connecter à votre base de données Db2® des interfaces de ligne de commande, des applications ou des outils tiers ou IBM®, ou des applications que vous créez. 
 {: shortdesc}
 
 ## Prérequis
@@ -28,7 +28,7 @@ Avant de vous connecter à votre base de données de service géré Db2, effectu
 ### Configuration de votre environnement
 {: #cfg_env}
 
-Pour connecter des applications et des outils locaux à votre base de données Db2, vous devez [configurer votre environnement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}.
+Pour connecter des applications et des outils locaux à votre base de données Db2, vous devez [configurer votre environnement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}. 
 {: shortdesc}
 
 ## Connexion à l'aide d'un programme

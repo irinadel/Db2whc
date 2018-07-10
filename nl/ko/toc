@@ -5,39 +5,48 @@
 {: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
-	{: .navgroup id="learn"}
-	index.md
+    {: .navgroup id="learn"}
+    index.md
+    plans_cfgs.md
     about.md
     flex_scaling.md
     br.md
-    ha_flex.md
-    ha_smp_mpp.md
-    user_mgmt.md
-    plans_cfgs.md
-    loading.md
+    dr.md
+    ha.md
+
+    {: .topicgroup}
+    사용자 데이터 로드
+        dcw.md
+        migration.md
+        pda_db2whc_mdms.md
+
     connecting.md
-	[데이터 분석](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    user_mgmt.md
+    [사용자 데이터 분석](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
     local_dev_env.md
     communities.md    
 
     [새로운 기능](https://www.ibm.com/support/docview.wss?uid=swg21961758)
-	[자주 묻는 질문(FAQ)](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
+    [자주 묻는 질문(FAQ)](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
 	
     {: .topicgroup}
     보안
         [규제 준수](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
         priv_net.md
-	{: .navgroup-end}
+    
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    {: .navgroup-end}
 
     {: .navgroup id="howto"}
     [튜토리얼: Cloud 데이터용 SQL 데이터베이스](../../tutorials/sql-database.html#sql-database-for-cloud-data)
-	{: .navgroup-end}
+    {: .navgroup-end}
 
     {: .navgroup id="reference"}
     [REST API](http://ibm.biz/db2whc_api)
+    [SQL 참조서](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     {: .navgroup-end}
 
-	{: .navgroup id="help"}
-	help.md
-	{: .navgroup-end}
+    {: .navgroup id="help"}
+    help.md
+    {: .navgroup-end}
 	

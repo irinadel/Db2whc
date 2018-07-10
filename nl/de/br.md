@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-16"
+lastupdated: "2018-05-10"
 
 ---
 
@@ -16,9 +16,30 @@ lastupdated: "2018-03-16"
 # Sicherung und Wiederherstellung
 {: #br}
 
-Eine verschlüsselte Sicherung für die vollständige {{site.data.keyword.dashdbshort_notm}}-Datenbank wird einmal pro Tag ausgeführt. Im Rahmen des Flex Performance-Plans werden die letzten 7 täglichen Sicherungsmomentaufnahmen aufbewahrt. Im Rahmen des SMP- und des MPP-Plans werden die letzten 2 täglichen Sicherungen aufbewahrt.
+Eine verschlüsselte Sicherung für die vollständige {{site.data.keyword.dashdbshort_notm}}-Datenbank wird einmal pro Tag ausgeführt.
 {: shortdesc}
 
-Im Rahmen des Flex Performance-Plans können Sie die Sicherungen so terminieren, dass sie zu dem am besten geeigneten Zeitpunkt ausgeführt werden, und Sie können die Datenbank auf der Basis jeder beliebigen aufbewahrten Sicherungsmomentaufnahme zu jedem beliebigen Zeitpunkt wiederherstellen. Das System ist während des Wiederherstellungszeitraums inaktiv. Sie erhalten eine Benachrichtigungs-E-Mail, wenn die Wiederherstellungsoperation abgeschlossen ist.
+| Plan              | Häufigkeit der Sicherung | Anzahl der aufbewahrten Backups | Sicherungsaufbewahrungszeitraum | Self-Service |
+|-------------------|------------------|----------------------------|---------------------------|--------------|
+| MPP               | 1 / Tag          | 2                          | 2 Tage; FIFO* Rollover   | Nein           |
+| Flex Performance  | 1 / Tag          | 7                          | 7 Tage; FIFO* Rollover   | Ja          |
+{: caption="Tabelle 1. Häufigkeit der Sicherung und Aufbewahrung" caption-side="top"}
 
-Im Rahmen des SMP- und des MPP-Plans werden die aufbewahrten Sicherungen ausschließlich von IBM verwendet, um im Falle einer Katastrophe oder eines Systemausfalls eine Systemwiederherstellung durchzuführen. Eine Anforderung zur Wiederherstellung Ihrer Datenbank wird nicht unterstützt. Sie können die Daten mithilfe von Db2-Tools wie IBM Data Studio oder mit dem Befehl **db2 export** exportieren. 
+*First in, First out
+
+## SMP- und MPP-Pläne
+{: #smp_mpp}
+
+Es werden die letzten 2 täglichen Sicherungen aufbewahrt.
+
+Es werden die aufbewahrten Sicherungen ausschließlich von IBM verwendet, um im Falle einer Katastrophe oder eines Systemausfalls eine Systemwiederherstellung durchzuführen. Eine Anforderung zur Wiederherstellung Ihrer Datenbank wird nicht unterstützt. Sie können die Daten mithilfe von Db2-Tools wie IBM Data Studio oder mit dem Befehl **db2 export** exportieren. 
+
+## Flex Performance-Plan
+{: #flex}
+
+Es werden die letzten 7 täglichen Sicherungsmomentaufnahmen aufbewahrt. 
+
+Mit der {{site.data.keyword.dashdbshort_notm}}-Konsole können Sie die Sicherungen so terminieren, dass sie zu dem am besten geeigneten Zeitpunkt ausgeführt werden, und Sie können die Datenbank auf der Basis jeder beliebigen aufbewahrten Sicherungsmomentaufnahme zu jedem beliebigen Zeitpunkt wiederherstellen. Das System ist während des Wiederherstellungszeitraums inaktiv. Sie erhalten eine Benachrichtigungs-E-Mail, wenn die Wiederherstellungsoperation abgeschlossen ist.
+
+![Ansicht der Seite für die Sicherung und Wiederherstellung der Webkonsole](images/br.png)
+
