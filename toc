@@ -21,6 +21,11 @@ Db2 Warehouse on Cloud
         pda_db2whc_mdms.md
 
     connecting.md
+
+    {: .topicgroup}
+    Connecting to another Db2 server
+        federation.md
+
     user_mgmt.md
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
     local_dev_env.md
