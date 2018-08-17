@@ -75,7 +75,7 @@ The Lift is an application that you can use without charge to migrate your data 
 
 To download and install Lift, see: [Download Lift ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#download){:new_window}.
 
-For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrating to Db2 Warehouse on Cloud](/docs/services/lift-cli/index.html#about-lift){:new_window}.
+For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrate data to {{site.data.keyword.dashdblong}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}
