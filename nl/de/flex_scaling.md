@@ -16,11 +16,10 @@ lastupdated: "2018-05-01"
 # Flexible Skalierung
 {: #scale}
 
-Der Flex Performance-Plan bietet eine unabhängige Skalierung von Speicher und Prozessorkernen.
+Der Flex Performance-Plan bietet eine unabhängige Skalierung von Speicher und Prozessorkernen. 
 {: shortdesc}
 
 Passen Sie vor der Bereitstellung des Flex Performance-Systems die voraussichtlich benötigten Speicherkapazitäten und Prozessorkerne an und übergeben Sie dann Ihre Auswahl.
-
 
 Wenn sich nach der Bereitstellung des Systems die Anforderungen ändern, können Sie die Prozessorkerne skalieren und die Speicherkapazität erhöhen, indem Sie **Instanz skalieren** auf der Service-Seite **Verwalten** den Schieberegler verwenden.
 

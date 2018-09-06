@@ -30,4 +30,3 @@ suas cargas de trabalho analíticas.
 O serviço totalmente gerenciado do {{site.data.keyword.dashdbshort_notm}} manipula de todos os upgrades de software, atualizações de sistema operacional e manutenção de hardware. O serviço inclui monitoramento de funcionamento 24x7 do banco de dados e da infraestrutura. No caso de falha de hardware ou software, o serviço é reiniciado automaticamente.
 {: shortdesc}
 
-

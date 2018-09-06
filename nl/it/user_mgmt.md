@@ -13,7 +13,7 @@ lastupdated: "2018-03-15"
 {:screen: .screen}
 {:pre: .pre}
 
-# Gestione degli utenti
+# Gestione utenti
 {: #user_mgmt}
 
 La gestione degli utenti a cui è stato fornito l'accesso al database è responsabilità esclusiva dell'utente o degli utenti con il ruolo di amministratore. L'amministratore ha la responsabilità di gestire come gli altri utenti nella tua organizzazione accedono al tuo database. Questa funzionalità non viene applicata al piano d'ingresso.

@@ -19,10 +19,10 @@ lastupdated: "2018-05-10"
 Un backup crittografato del database {{site.data.keyword.dashdbshort_notm}} completo viene eseguito una volta al giorno.
 {: shortdesc}
 
-| Piano             | Frequenza backup | Numero di backup conservati | Periodo di conservazione backup | Self service |
+| Piano              | Frequenza backup | Numero di backup conservati | Periodo di conservazione backup   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
-| MPP               | 1 / giorno       | 2                          | 2 giorni; rollover FIFO*         | No    |
-| Flex Performance  | 1 / giorno       | 7                          | 7 giorni; rollover FIFO*         | Sì    |
+| MPP               | 1 / giorno          | 2                          | 2 giorni; rollover FIFO*   | No           |
+| Flex Performance  | 1 / giorno          | 7                          | 7 giorni; rollover FIFO*   | Sì          |
 {: caption="Tabella 1. Frequenza e conservazione dei backup" caption-side="top"}
 
 *First in, first out

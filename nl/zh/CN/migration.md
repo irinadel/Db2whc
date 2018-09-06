@@ -27,7 +27,7 @@ lastupdated: "2018-05-08"
   * 直接从外部表。以下是示例 SQL 语句：
 
     ```
-          INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 
@@ -75,7 +75,7 @@ Lift 是可用于将数据从表 1 中列出的各个数据源迁移至 {{site.d
 
 要下载并安装 Lift，请参阅：[下载 Lift ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/#download){:new_window}。
 
-有关使用 Lift 将数据迁移至 {{site.data.keyword.Bluemix_notm}} 的逐步指示信息，请参阅：[迁移至 Db2 Warehouse on Cloud](/docs/services/lift-cli/index.html#about-lift){:new_window}。
+有关使用 Lift 将数据迁移至 {{site.data.keyword.Bluemix_notm}} 的逐步指示信息，请参阅：[将数据迁移至 {{site.data.keyword.dashdblong}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/#docs){:new_window}。
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}

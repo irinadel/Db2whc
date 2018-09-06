@@ -20,10 +20,10 @@ Um backup criptografado no banco de dados {{site.data.keyword.dashdbshort_notm}}
 dia.
 {: shortdesc}
 
-| Plano              | Frequência de backup | Número de backups retidos  | Período de retenção de backup | Autoatendimento   |
+| Plano              | Frequência de backup | Número de backups retidos | Período de retenção de backup   | Autoatendimento |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
-| MPP               | 1/dia          | 2                          | 2 dias; substituição FIFO*      | Não          |
-| Flex Performance  | 1/dia          | 7                          | 7 dias; substituição FIFO*      | Sim          |
+| MPP               | 1/dia          | 2                          | 2 dias; substituição FIFO*   | Não           |
+| Flex Performance  | 1/dia          | 7                          | 7 dias; substituição FIFO*   | Sim          |
 {: caption="Tabela 1. Frequência e retenção de backup" caption-side="top"}
 
 *Primeiro a entrar, primeiro a sair

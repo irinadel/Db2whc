@@ -21,8 +21,8 @@ Une sauvegarde chiffrée de la totalité de la base de données {{site.data.keyw
 
 | Plan              | Fréquence de sauvegarde | Nombre de sauvegardes conservées | Période de conservation des sauvegardes   | Libre service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
-| MPP               | 1 / jour         | 2                          | 2 jours ; FIFO*   | Non           |
-| Flex Performance  | 1 / jour         | 7                          | 7 jours ; FIFO*           | Oui          |
+| MPP               | 1 / jour          | 2                          | 2 jours ; FIFO*   | Non           |
+| Flex Performance  | 1 / jour          | 7                          | 7 jours ; FIFO*   | Oui          |
 {: caption="Tableau 1. Fréquence et conservation des sauvegardes" caption-side="top"}
 
 *First in, first out

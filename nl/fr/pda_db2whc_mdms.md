@@ -40,7 +40,7 @@ MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'i
 {: #create-req}
 
 1. Connectez-vous au portail [{{site.data.keyword.slportal}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){:new_window} en utilisant vos données d'identification uniques.
-2. Sélectionnez **Storage > Data Migration > Mass Data Migration** dans la barre de navigation pour accéder à la page d'arrivée MDMS. 
+2. Sélectionnez **Storage > Data Migration > Mass Data Migration** dans la barre de navigation pour accéder à la page d'arrivée MDMS.
 3. Cliquez sur **Request Device** afin d'ouvrir le formulaire de commande.
 4. Remplissez chaque zone du formulaire de commande **Mass Data Migration**.
    - **Shipping Address** : ce formulaire n'est pas prérempli et chaque zone est éditable. Indiquez le nom de la personne qui acceptera la livraison du périphérique dans la zone Attention. Quand vous sélectionnez le lieu de livraison, tenez compte du poids du périphérique (30 kg avec sa mallette) et de l'accessibilité. <br/> (**Remarque** : Le périphérique est équipé de roues et de poignées rétractables pour une meilleure maniabilité.)
@@ -114,7 +114,7 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
 
 6. Si l'adresse IP configurée pour Eth3 peut être atteinte via un navigateur `https://<your_Eth3_IP_Address>`, passez à l'étape suivante. 
 
-   Sinon, effectuez une connexion au port Eth1 (1GbE-B). Ouvrez votre navigateur et entrez `https://<your_Eth1_IP_Address>`. Entrez l'adresse IP Eth1 appropriée à votre configuration réseau.Acceptez l'exception de certificat.<br/>
+   Sinon, effectuez une connexion au port Eth1 (1GbE-B). Ouvrez votre navigateur et entrez `https://<your_Eth1_IP_Address>`. Entrez l'adresse IP Eth1 appropriée à votre configuration réseau. Acceptez l'exception de certificat.<br/>
    **Remarque** : si vous devez modifier un ou plusieurs paramètres IP pour Eth3 ou Eth1, voir la section [Configuration d'adresse IP](#ip_cfg).
 
 7. Utilisez le nom d'utilisateur et le mot de passe fournis pour vous connecter.<br/>

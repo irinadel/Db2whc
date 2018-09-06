@@ -16,7 +16,7 @@ lastupdated: "2018-05-01"
 # Ridimensionamento flessibile
 {: #scale}
 
-Il piano Flex Performance offre un ridimensionamento indipendente per i core di archiviazione e calcolo.
+Il piano Flex Performance offre un ridimensionamento indipendente per i core di archiviazione e calcolo. 
 {: shortdesc}
 
 Prima di eseguire il provisioning del tuo sistema Flex Performance, apporti le modifiche iniziali per soddisfare il tuo fabbisogno previsto di core di archiviazione e calcolo e inoltri quindi le tue scelte.

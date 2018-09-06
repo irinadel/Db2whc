@@ -29,7 +29,7 @@ lastupdated: "2018-03-23"
     * 외부 테이블에서 직접 로드하십시오. 다음은 예제 SQL문입니다.
 
     ```
-      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com',
         '<S3-access-key-ID>',
         '<S3-secret-access-key>',

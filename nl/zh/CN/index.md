@@ -88,6 +88,8 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
+    
+
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connection info page of the
     $port        = 50000;           # web console.
@@ -115,6 +117,8 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
     ```php
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
+
+    
 
     $vcap        = json_decode( getenv( "VCAP_SERVICES" ), true );
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];

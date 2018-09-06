@@ -16,7 +16,7 @@ lastupdated: "2018-05-01"
 # Ajuste de escala flexível
 {: #scale}
 
-O plano Flex Performance oferece ajuste de escala independente dos núcleos de armazenamento e de cálculo.
+O plano Flex Performance oferece ajuste de escala independente dos núcleos de armazenamento e de cálculo. 
 {: shortdesc}
 
 Antes de provisionar seu sistema Flex Performance, faça ajustes iniciais para atender aos seus requisitos antecipados para núcleos de armazenamento e de cálculo e, em seguida, envie suas opções.

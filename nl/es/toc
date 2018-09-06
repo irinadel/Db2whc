@@ -2,7 +2,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
@@ -21,6 +21,11 @@ Db2 Warehouse on Cloud
         pda_db2whc_mdms.md
 
     connecting.md
+
+    {: .topicgroup}
+    Conexión con otro servidor Db2
+        federation.md
+
     user_mgmt.md
     [Análisis de sus datos](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
     local_dev_env.md

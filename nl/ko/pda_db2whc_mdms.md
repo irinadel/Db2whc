@@ -33,7 +33,7 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
    - 정적 IP 주소
    - 넷마스크 
    - 사용자 인터페이스(UI)에 액세스하기 위한 기본 게이트웨이
-3. Cloud Object Storage 다운로드 대상<br/>
+3. Cloud Object Storage 다운로드 대상 <br/>
    **중요**: 요청 양식을 완료하려면 US Cross Region 또는 US South 위치에 하나 이상의 {{site.data.keyword.cos_full}} 계정 및 하나의 버킷이 있어야 합니다. 아직 {{site.data.keyword.cos_full_notm}}} 계정이 없는 경우, MDMS 디바이스를 요청하기 전에 먼저 계정을 작성하십시오. 자세한 정보는 [{{site.data.keyword.cos_full}} 정보](/docs/services/cloud-object-storage/about-cos.html){:new_window}를 참조하십시오.
 
 ## 1단계: 요청 작성
@@ -54,7 +54,7 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
 ## 2단계: 준비 및 발송
 {: #prep-ship}
 
-요청을 제출한 후에 요청 티켓의 상태는 *요청 처리 중*으로 표시됩니다. 요청이 처리되면 {{site.data.keyword.IBM}}에서 다음으로 사용 가능한 디바이스의 사전 구성을 시작하고 [요청 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/storage/mdms){:new_window} 그리드의 상태는 *디바이스 준비 중*을 표시하고 그 뒤에 *발송 대기 중*을 표시합니다. 요청이 *발송 대기 중* 상태가 되면 더 이상 취소할 수 없습니다.  
+요청을 제출한 후에 요청 티켓의 상태는 *요청 처리 중*으로 표시됩니다. 요청이 처리되면 {{site.data.keyword.IBM}}에서 다음으로 사용 가능한 디바이스의 사전 구성을 시작하고 [요청 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/storage/mdms){:new_window} 그리드의 상태는 *디바이스 준비 중*을 표시하고 그 뒤에 *발송 대기 중*을 표시합니다. 요청이 *발송 대기 중* 상태가 되면 더 이상 취소할 수 없습니다. 
 
 디바이스는 운송 업체에서 가져가서 사용자의 위치로 발송됩니다. 이 시점에서 요청 상태는 *디바이스가 발송됨*으로 업데이트됩니다. 추적 번호는 [요청 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/storage/mdms){:new_window} 그리드의 **주문 세부사항** 섹션에서 사용자와 공유됩니다.
 
@@ -234,7 +234,7 @@ IBM Cloud Object Storage에서 데이터를 가져오는 방법에 대한 안내
 
 ![LCD 디스플레이](/images/MDMSLCD.png)
 
-IP 주소 또는 서브넷 마스크를 편집할 때 **Enter**를 사용하면 한 번에 한 문자씩 앞으로 이동합니다. **Esc**를 사용하면 한 번에 한 문자씩 뒤로 이동합니다. **위로 화살표** 및 **아래로 화살표**는 선택한 위치에 대한 수 사이를 토글합니다. 
+IP 주소 또는 서브넷 마스크를 편집할 때 **Enter**를 사용하면 한 번에 한 문자씩 앞으로 이동합니다. **Esc**를 사용하면 한 번에 한 문자씩 뒤로 이동합니다. **위로 화살표** 및 **아래로 화살표**는 선택한 위치에 대한 수 사이를 토글합니다.
 
 이전 메뉴로 되돌아가려면 **Esc**를 사용하십시오.  
 

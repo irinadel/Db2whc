@@ -33,7 +33,7 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
    - Statische IP-Adresse
    - Netzmaske 
    - Standardgateway zum Zugreifen auf die Benutzerschnittstelle
-3. Download-Zieladresse für die Cloud Object Storage-Instanz<br/>
+3. Download-Zieladresse für die Cloud Object Storage-Instanz <br/>
    **Wichtig**: Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
 
 ## Schritt 1: Anfrageerstellung
@@ -95,7 +95,7 @@ Für beide Ports der Einheit werden RJ45- und CAT6A-Kabel mitgeliefert. SFP+-Kup
 
 - Eth3 (10GbE-B) wird für die Datenübertragung verwendet. Diese Verbindung muss sich entweder im selben Teilnetz wie die Quellendaten befinden oder kann bei Bedarf direkt mit dem Server verbunden sein.
 
-Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Sie den Konverter selbst bereitstellen. 
+Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Sie den Konverter selbst bereitstellen.
 
 ### Schritt-für-Schritt-Benutzeranweisungen
 
@@ -106,7 +106,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 3. Positionieren Sie die Einheit dort, wo sie verbunden werden soll. Sie kann während der Nutzung in der Transportverpackung bleiben. Stellen Sie sicher, dass der Standort Raumtemperatur besitzt und dass keine Kondensation vorhanden ist. Schließen Sie die Einheit an die Stromversorgung an, indem Sie das mitgelieferte Netzkabel unter dem Gehäusedeckel verwenden. Schalten Sie die Einheit ein.<br/>
     **Hinweis**: Es gibt zwei Netzschalter.
     ![Netzschalter](/images/MDMSPowerSwitch.png)
-    **Hinweis**: Die Einheit muss nicht aus der Transportverpackung genommen werden. 
+    **Hinweis**: Die Einheit muss nicht aus der Transportverpackung genommen werden.
 
 4. Nehmen Sie das CAT6A-Kabel aus dem Gehäusedeckel und schließen Sie es an den Eth3-Anschluss (10GbE-B) an, wie in der Abbildung dargestellt.
     ![Eth1- und Eth3-Anschlussposition](/images/MDMSNewEth1and3.png)
@@ -115,13 +115,13 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
 6. Wenn die IP-Adresse, die für Eth3 konfiguriert wurde, über einen Browser `https://<your_Eth3_IP_Address>` erreicht werden kann, fahren Sie mit dem nächsten Schritt fort. 
 
-   Stellen Sie anderenfalls eine Verbindung mit dem Eth1-Port (1GbE-B) her. Öffnen Sie Ihrem Browser und geben Sie Folgendes ein: `https://<your_Eth1_IP_Address>`. Geben Sie die Eth1-IP-Adresse für Ihre Netzkonfiguration ein. Akzeptieren Sie die Zertifikatsausnahme. <br/>
+   Stellen Sie anderenfalls eine Verbindung mit dem Eth1-Port (1GbE-B) her. Öffnen Sie Ihrem Browser und geben Sie Folgendes ein: `https://<your_Eth1_IP_Address>`. Geben Sie die Eth1-IP-Adresse für Ihre Netzkonfiguration ein. Akzeptieren Sie die Zertifikatsausnahme.<br/>
    **Hinweis**: Wenn Sie die IP-Einstellungen für Eth3 oder Eth1 ändern müssen, lesen Sie den Abschnitt [IP-Adresskonfiguration](#ip_cfg).
 
-7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden. <br/>
+7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden.<br/>
     ![Anmeldeseite](/images/Login.png)
 
-8. Der Workflow-Assistent bietet Zugriff auf die spezifischen Elemente, die normalerweise in der Reihenfolge von links nach rechts verwendet werden. <br/>
+8. Der Workflow-Assistent bietet Zugriff auf die spezifischen Elemente, die normalerweise in der Reihenfolge von links nach rechts verwendet werden.<br/>
     ![Workflow-Symbole](/images/workflow.png) <br/>
     **HINWEIS**: Der Workflow kann erneut geöffnet werden, indem oben links in der Benutzeroberfläche der **Workflow-Manager** verwendet wird.
 
@@ -130,7 +130,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
     - Geben Sie die Kennphrase Ihres Speicherpools ein und klicken Sie auf **OK**.
     ![Speicherpool aktivieren](/images/UnlockPool.png)
 
-10. Standardmäßig verfügt die Freigabe über NFS- und SMB-Protokolle, die ohne Zugriffsbeschränkungen für die Freigabe aktiviert sind. Um den Zugriff auf diese Freigabe (für NFS oder SMB) zu beschränken, klicken Sie mit der rechten Maustaste auf den Namen der Freigabe und wählen Sie das entsprechende Menüelement aus. <br/>
+10. Standardmäßig verfügt die Freigabe über NFS- und SMB-Protokolle, die ohne Zugriffsbeschränkungen für die Freigabe aktiviert sind. Um den Zugriff auf diese Freigabe (für NFS oder SMB) zu beschränken, klicken Sie mit der rechten Maustaste auf den Namen der Freigabe und wählen Sie das entsprechende Menüelement aus.<br/>
     ![Zugriff auf die Freigabe beschränken](/images/ShareControls.png)
 
 11. Wenn der Speicherpool aktiviert ist, kann die gemeinsam genutzte NFS-Ressource bereitgestellt werden. Klicken Sie im Workflow auf **Netzfreigabe anzeigen**, um die Netzfreigaben anzuzeigen. Schließen Sie den Workflow, klicken Sie mit der rechten Maustaste auf die Freigabe und wählen Sie auf **Mountbefehl anzeigen**, um den Freigabenamen und die Mountinformationen anzuzeigen. Hängen Sie die Freigabe an Ihren Quellenserver an. Stellen Sie sicher, dass die IP-Adresse des 10-GB-Links beim Anhängen der Freigabe angegeben wird.
@@ -173,7 +173,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 4. Wenn Sie das Kopieren beendet haben, schalten Sie das System ordnungsgemäß aus. Durch das Ausschalten der Einheit wird auch der Speicherpool gesperrt. Klicken Sie im Workflow auf **Einheit herunterfahren...**.  
     ![Schaltflächenposition zum Herunterfahren der Einheit](/images/Shutdown.png)
 
-5. Trennen Sie die Verbindung zur Einheit. Legen Sie das Netzkabel, das Ethernet-Kabel und den SFP+-Adapter wieder in die entsprechenden Aufbewahrungsorte unter dem Deckel zurück. 
+5. Trennen Sie die Verbindung zur Einheit. Legen Sie das Netzkabel, das Ethernet-Kabel und den SFP+-Adapter wieder in die entsprechenden Aufbewahrungsorte unter dem Deckel zurück.
 
 6. Bringen Sie das mitgelieferte Versandetikett an der Einheit an. Benachrichtigen Sie den Versender und senden Sie die Einheit an das {{site.data.keyword.BluSoftlayer_full}}-Rechenzentrum zurück. Nach der Ankunft im Rechenzentrum werden Ihre Daten in Ihr {{site.data.keyword.cos_full_notm}}-Bucket geladen.
 
@@ -203,7 +203,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Hinweise:** 
 * Stellen Sie sicher, dass Sie die gleichen `USING`-Klauseloptionen verwenden, die Sie zum Extrahieren der Daten aus Ihrer PureData System für Analytics-Datenbank (Netezza) mithilfe der Anweisung CREATE EXTERNAL TABLE verwendet haben.
-* Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an. 
+* Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
 Eine Anleitung zum Importieren von Daten aus IBM Cloud Object Storage finden Sie unter: [IBM Db2 Warehouse on Cloud geführte Demo: Laden von Daten erkunden ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
 

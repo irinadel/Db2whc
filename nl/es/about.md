@@ -27,4 +27,3 @@ Suministra una elasticidad verdadera con escala independiente de almacenamiento 
 El servicio completamente gestionado de {{site.data.keyword.dashdbshort_notm}} maneja todas las actualizaciones de software, actualizaciones de sistema operativo y mantenimiento de hardware. El servicio incluye supervisión de estado de tipo 24x7 de la base de datos y de la infraestructura. En el caso de que se produzca un error de hardware o de software, el servicio se reinicia automáticamente.
 {: shortdesc}
 
-

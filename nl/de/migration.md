@@ -48,7 +48,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Hinweis:** Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an. 
+**Hinweis:** Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
 ## Daten von einem lokalen System migrieren
 {: #onprem}
@@ -75,7 +75,7 @@ Lift ist eine Anwendung, die Sie gebührenfrei nutzen können, um Ihre Daten aus
 
 Weitere Informationen zum Herunterladen und Installieren von Lift finden Sie unter: [Lift herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#download){:new_window}.
 
-Schritt-für-Schritt-Anweisungen zum Migrieren Ihrer Daten zu {{site.data.keyword.Bluemix_notm}} mithilfe von Lift finden Sie unter: [Daten zu Db2 Warehouse on Cloud migrieren](/docs/services/lift-cli/index.html#about-lift){:new_window}.
+Schritt-für-Schritt-Anweisungen für die Migration von Daten auf {{site.data.keyword.Bluemix_notm}} mithilfe von Lift finden Sie hier: [Daten auf {{site.data.keyword.dashdblong}} migrieren ![für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}
@@ -83,7 +83,6 @@ Schritt-für-Schritt-Anweisungen zum Migrieren Ihrer Daten zu {{site.data.keywor
 Der IBM Mass Data Migration Service (MDMS) kann genutzt werden, um die Daten großer IBM PureData Systems for Analytik (Netezza)-Datenbanken mit ca. 25 TB und mehr in eine vollständig verwaltete {{site.data.keyword.dashdblong}}-Datenbank auf {{site.data.keyword.Bluemix_notm}} zu migrieren.
 
 MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Petabytes an Daten physisch auf {{site.data.keyword.Bluemix_notm}} zu übertragen. MDMS ist eine mobile Speichereinheit mit 120 TB nutzbarer Speicherkapazität. Mit dieser Einheit können Sie allgemeine Übertragungsprobleme wie hohe Kosten, lange Übertragungszeiten und hohe Sicherheitsrisiken mithilfe eines einzigen Services lösen.
-
 
 ![Ansicht der Mass Data Migration Service-Einheit](images/mdms.svg)
 

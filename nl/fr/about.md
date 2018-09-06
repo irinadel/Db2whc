@@ -28,4 +28,3 @@ Le service entièrement géré de {{site.data.keyword.dashdbshort_notm}} est en 
 niveau logicielles et mises à jour du système d'exploitation, ainsi que de la maintenance du matériel. Il surveille la santé de la base de données et de l'infrastructure, 24 heures sur 24, 7 jours sur 7. En cas de défaillance matérielle ou logicielle, il est redémarré automatiquement.
 {: shortdesc}
 
-

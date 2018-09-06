@@ -16,12 +16,12 @@ lastupdated: "2018-05-01"
 # Mise à l'échelle flexible
 {: #scale}
 
-Le plan Flex Performance offre une mise à l'échelle du stockage et des coeurs de traitement, indépendante.
+Le plan Flex Performance offre une mise à l'échelle du stockage et des coeurs de traitement, indépendante. 
 {: shortdesc}
 
 Avant de mettre à disposition votre système Flex Performance, vous pouvez effectuer des ajustements initiaux en anticipant vos besoins en matière de stockage et de coeurs de traitement puis soumettre vos choix.
 
-Une fois le système mis à disposition, si vos besoins évoluent, vous pouvez modifier les exigences de stockage et de coeurs de traitement en lançant la page relative à l'instance de mise à l'échelle depuis la page de gestion du service et en utilisant les barres de curseur. 
+Une fois le système mis à disposition, si vos besoins évoluent, vous pouvez modifier les exigences de stockage et de coeurs de traitement en lançant la page relative à l'instance de mise à l'échelle depuis la page de gestion du service et en utilisant les barres de curseur.
 
 ![Vue de la page des coeurs de traitement de la console Web](images/launch.png)
 

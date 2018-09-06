@@ -19,7 +19,7 @@ lastupdated: "2018-05-10"
 Eine verschlüsselte Sicherung für die vollständige {{site.data.keyword.dashdbshort_notm}}-Datenbank wird einmal pro Tag ausgeführt.
 {: shortdesc}
 
-| Plan              | Häufigkeit der Sicherung | Anzahl der aufbewahrten Backups | Sicherungsaufbewahrungszeitraum | Self-Service |
+| Plan              | Häufigkeit der Sicherung | Anzahl der aufbewahrten Backups | Sicherungsaufbewahrungszeitraum   | Self-Service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
 | MPP               | 1 / Tag          | 2                          | 2 Tage; FIFO* Rollover   | Nein           |
 | Flex Performance  | 1 / Tag          | 7                          | 7 Tage; FIFO* Rollover   | Ja          |
@@ -37,7 +37,7 @@ Es werden die aufbewahrten Sicherungen ausschließlich von IBM verwendet, um im 
 ## Flex Performance-Plan
 {: #flex}
 
-Es werden die letzten 7 täglichen Sicherungsmomentaufnahmen aufbewahrt. 
+Es werden die letzten 7 täglichen Sicherungsmomentaufnahmen aufbewahrt.
 
 Mit der {{site.data.keyword.dashdbshort_notm}}-Konsole können Sie die Sicherungen so terminieren, dass sie zu dem am besten geeigneten Zeitpunkt ausgeführt werden, und Sie können die Datenbank auf der Basis jeder beliebigen aufbewahrten Sicherungsmomentaufnahme zu jedem beliebigen Zeitpunkt wiederherstellen. Das System ist während des Wiederherstellungszeitraums inaktiv. Sie erhalten eine Benachrichtigungs-E-Mail, wenn die Wiederherstellungsoperation abgeschlossen ist.
 

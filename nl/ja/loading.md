@@ -16,7 +16,7 @@ lastupdated: "2018-03-23"
 # データのロード
 {: #load}
 
-ローカル・ネットワーク、オブジェクト・ストア (Amazon S3 または IBM Cloud Object Storage)、または DB2® サーバー上にある、区切り文字で区切られた形式の CSV や TXT などのデータ・ファイルのデータをロードできます。また、データベース・インスタンスに Cloudant® データベースから直接データを設定することも、InfoSphere® DataStage® などのアプリケーションからロード・プロセスを実行することで設定することもできます。
+ローカル・ネットワーク、オブジェクト・ストア (Amazon S3 または IBM Cloud Object Storage)、または DB2® サーバー上にある、区切り文字で区切られた形式の CSV や TXT などのデータ・ファイルのデータをロードできます。 また、データベース・インスタンスに Cloudant® データベースから直接データを設定することも、InfoSphere® DataStage® などのアプリケーションからロード・プロセスを実行することで設定することもできます。
 {: shortdesc}
 
 * [PureData System for Analytics (Netezza) からのデータのロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window}

@@ -62,7 +62,7 @@ Para migrar seus dados de um sistema no local, escolha um dos métodos a seguir,
 
 O Lift é um aplicativo que pode ser usado sem encargos para migrar os seus dados para o {{site.data.keyword.Bluemix_notm}} de várias origens de dados listadas na Tabela 1. 
 
-|Banco de dados de destino no IBM Cloud   | Fonte de dados |
+| Banco de dados de destino no IBM Cloud | Fonte de dados |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -75,7 +75,7 @@ O Lift é um aplicativo que pode ser usado sem encargos para migrar os seus dado
 
 Para fazer download e instalar o Lift, veja: [Fazer download do Lift ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://lift.ng.bluemix.net/#download){:new_window}.
 
-Para obter instruções passo a passo sobre como migrar seus dados para o {{site.data.keyword.Bluemix_notm}} usando o Lift, veja: [Migrando para o Db2 Warehouse on Cloud](/docs/services/lift-cli/index.html#about-lift){:new_window}.
+Para obter instruções passo a passo sobre a migração dos seus dados para o {{site.data.keyword.Bluemix_notm}} usando o Lift, consulte: [Migrar dados para o {{site.data.keyword.dashdblong}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://lift.ng.bluemix.net/#docs){:new_window}.
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}

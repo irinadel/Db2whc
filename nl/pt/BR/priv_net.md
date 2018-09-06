@@ -16,6 +16,6 @@ lastupdated: "2018-04-30"
 # Ambiente de rede privada
 {: #priv_net_env}
 
-É possível solicitar que o serviço do {{site.data.keyword.dashdbshort_notm}} seja implementado em um ambiente
-isolado por rede no {{site.data.keyword.Bluemix}}. Entre em contato com o [representante de vendas do {{site.data.keyword.IBM_notm}} Analytics ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
+É possível solicitar que o serviço do {{site.data.keyword.dashdbshort_notm}} seja implementado em um ambiente isolado por
+rede no {{site.data.keyword.Bluemix}}. Entre em contato com o [representante de vendas do {{site.data.keyword.IBM_notm}} Analytics ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
 {: shortdesc}

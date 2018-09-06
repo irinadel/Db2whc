@@ -20,8 +20,7 @@ lastupdated: "2018-04-30"
 {: shortdesc}
 
    * Um plano de entrada para experimentar as coisas. É uma avaliação grátis com até 1 GB de armazenamento.
-   * Um plano Flex Performance no qual é possível escalar de forma independente os recursos de armazenamento e
-cálculo
+   * Um plano Flex Performance no qual é possível escalar de forma independente os recursos de armazenamento e cálculo
    * Os planos SMP de vários tamanhos para produção: pequeno, médio e grande consistem em um único nó e uma única instância
    * Configurações de cluster com múltiplos nós MPP para processamento paralelo e alto desempenho
    * Planos configurados para Alta Disponibilidade

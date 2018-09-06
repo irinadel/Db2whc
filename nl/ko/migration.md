@@ -22,17 +22,17 @@ lastupdated: "2018-05-08"
 ## 오브젝트 저장소에서 데이터 로드
 {: #cos}
 
-Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 사용하십시오. 
+Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 사용하십시오.
   * {{site.data.keyword.dashdbshort_notm}} 웹 콘솔을 사용하십시오. **로드 > Amazon S3**를 선택하십시오. 
   * 외부 테이블에서 직접 로드하십시오. 다음은 예제 SQL문입니다.
 
     ```
-    INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-      (CCSID 1208 s3('s3.amazonaws.com',
-      '<S3-access-key-ID>',
-      '<S3-secret-access-key>',
-      '<my_bucket>'
-         )
+INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+        (CCSID 1208 s3('s3.amazonaws.com',
+        '<S3-access-key-ID>',
+        '<S3-secret-access-key>',
+        '<my_bucket>'
+           )
       )      
     ```
 
@@ -62,7 +62,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 Lift는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyword.Bluemix_notm}}로 데이터를 무료로 마이그레이션할 수 있는 애플리케이션입니다. 
 
-| IBM Cloud의 대상 데이터베이스| 데이터 소스 |
+| IBM Cloud의 대상 데이터베이스 | 데이터 소스 |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -75,7 +75,7 @@ Lift는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyword.
 
 Lift를 다운로드하고 설치하려면 [Lift 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#download){:new_window}를 참조하십시오.
 
-Lift를 사용하여 데이터를 {{site.data.keyword.Bluemix_notm}}로 마이그레이션하기 위한 단계별 지시사항을 보려면 [Db2 Warehouse on Cloud로 마이그레이션](/docs/services/lift-cli/index.html#about-lift){:new_window}을 참조하십시오.
+Lift를 사용하여 {{site.data.keyword.Bluemix_notm}}에 데이터를 마이그레이션하는 데 관한 단계별 지침은 [{{site.data.keyword.dashdblong}}로 데이터 마이그레이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}을 참조하십시오.
 
 ### IBM Cloud 대량 데이터 마이그레이션 서비스
 {: #mdms}

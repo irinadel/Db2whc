@@ -27,7 +27,7 @@ lastupdated: "2018-05-08"
   * 直接從外部表格。以下是範例 SQL 陳述式：
 
     ```
-          INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+      INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
         (CCSID 1208 s3('s3.amazonaws.com', 
         '<S3-access-key-ID>',
         '<S3-secret-access-key>', 
@@ -75,7 +75,7 @@ Lift 應用程式可供您免費用來將資料從「表 1」中列出的各種�
 
 若要下載並安裝 Lift，請參閱[下載 Lift ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#download){:new_window}。
 
-如需使用 Lift 將您的資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱：[移轉至 Db2 Warehouse on Cloud](/docs/services/lift-cli/index.html#about-lift){:new_window}。
+如需使用 Lift 將您的資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱 [Migrate data to {{site.data.keyword.dashdblong}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}。
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}

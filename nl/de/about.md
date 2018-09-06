@@ -27,4 +27,3 @@ Es bietet echte Elastizität mit unabhängiger Skalierung von Speicher- und Proz
 Der vollständig verwaltete Service von {{site.data.keyword.dashdbshort_notm}} verarbeitet alle Software-Upgrades, Betriebssystemaktualisierungen und Hardwarewartungstasks. Der Service umfasst die 24x7-Statusüberwachung der Datenbank und der Infrastruktur. Beim Auftreten eines Hardware- oder Softwarefehlers wird der Service automatisch neu gestartet.
 {: shortdesc}
 
-

@@ -27,4 +27,3 @@ lastupdated: "2018-03-15"
 {{site.data.keyword.dashdbshort_notm}} 的全面受管服务会处理所有软件升级、操作系统更新和硬件维护。该服务全天不间断监视数据库和基础架构的运行状况。当硬件或软件发生故障时，该服务将自动重新启动。
 {: shortdesc}
 
-

@@ -2,7 +2,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" href="/docs/services/Db2whc/index.html"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
@@ -21,6 +21,11 @@ Db2 Warehouse on Cloud
         pda_db2whc_mdms.md
 
     connecting.md
+
+    {: .topicgroup}
+    連接至另一台 Db2 伺服器
+        federation.md
+
     user_mgmt.md
     [分析資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
     local_dev_env.md
@@ -31,7 +36,7 @@ Db2 Warehouse on Cloud
 	
     {: .topicgroup}
     安全
-        [遵循](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
+        [規範](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
         priv_net.md
     
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
@@ -43,7 +48,7 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="reference"}
     [REST API](http://ibm.biz/db2whc_api)
-    [SQL 參照](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+    [SQL 參考資料](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

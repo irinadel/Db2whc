@@ -45,9 +45,9 @@ MDMS offre un modo sicuro, veloce e semplice per trasferire fisicamente terabyte
 4. Completa ogni campo nel modulo d'ordine di **Mass Data Migration**.
    - **Shipping Address**: questo modulo non è precompilato e ogni campo è modificabile. Fornisci il nome della persona che accetterà la consegna del dispositivo nel campo Attention. Quando scegli il luogo di consegna, considera il peso del dispositivo (30 chili, ossia 66 libbre, con la sua custodia) e l'accessibilità. <br/> (**Nota**: il dispositivo è dotato di ruote e maniglia a scomparsa per manovrarlo).
    - **Key Migration Contacts**: questo modulo non è precompilato. Ogni campo è modificabile. Può essere aggiunta più di una persona.
-   - **Data Center Network Configuration**:  fornisci i dettagli di configurazione di rete per il pre-provisioning della porta Eth3 sul dispositivo MDMS prima della spedizione.
+   - **Data Center Network Configuration**: fornisci i dettagli di configurazione di rete per il pre-provisioning della porta Eth3 sul dispositivo MDMS prima della spedizione.
    - **Data Offload Destination**: seleziona il tuo account di destinazione esistente dall'elenco.
-   - **Request Name**:  immetti un nome per aiutarti a tracciare il tuo ordine.
+   - **Request Name**: immetti un nome per aiutarti a tracciare il tuo ordine.
 5. Seleziona la casella di spunta **I have read and agree to the full terms of the Mass Data Migration Agreement** dopo aver letto ogni accordo di servizio che viene fornito.
 6. Fai clic su **Place Request** per inoltrare la richiesta. Fai clic su **Cancel** per abbandonare completamente il modulo e tornare alla pagina di destinazione di MDMS.
 
@@ -56,7 +56,7 @@ MDMS offre un modo sicuro, veloce e semplice per trasferire fisicamente terabyte
 
 Dopo l'inoltro della richiesta, lo stato del ticket di richiesta si presenta come *Processing Request*. Dopo che la tua richiesta è stata elaborata, {{site.data.keyword.IBM}} inizia a preconfigurare il successivo dispositivo disponibile e lo stato nella griglia [Requests ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/storage/mdms){:new_window} mostrerà *Prepping Device* seguito da *Awaiting Shipment*. Dopo essere passata allo stato *Awaiting Shipment*, la tua richiesta non può essere più annullata. 
 
- Il dispositivo viene prelevato dal corriere per essere inviato alla tua ubicazione. A questo punto, lo stato della richiesta viene aggiornato e diventa *Device Shipped*. Il numero di traccia viene condiviso con te nella sezione **Order Details** della griglia [Requests ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/storage/mdms){:new_window}.
+Il dispositivo viene prelevato dal corriere per essere inviato alla tua ubicazione. A questo punto, lo stato della richiesta viene aggiornato e diventa *Device Shipped*. Il numero di traccia viene condiviso con te nella sezione **Order Details** della griglia [Requests ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/storage/mdms){:new_window}.
 
 ## Passo 3: Ricezione e connessione
 {: #rec-con}
@@ -76,7 +76,7 @@ Dopo l'inoltro della richiesta, lo stato del ticket di richiesta si presenta com
 
 ### Panoramica
 
-Il dispositivo {{site.data.keyword.cloud}} Mass Data Migration  è un dispositivo di archiviazione portatile in grado di presentare condivisioni NFS (Network File system) o FileNet CFS (Content Federation Services) e viene gestito tramite un'interfaccia del browser web. Il dispositivo viene spedito al tuo data center, caricato con i dati in sito, restituito a un data center {{site.data.keyword.BluSoftlayer_full}} e i tuoi dati vengono caricati nel tuo account {{site.data.keyword.cos_full}}.
+Il dispositivo {{site.data.keyword.cloud}} Mass Data Migration è un dispositivo di archiviazione portatile in grado di presentare condivisioni NFS (Network File system) o FileNet CFS (Content Federation Services) e viene gestito tramite un'interfaccia del browser web. Il dispositivo viene spedito al tuo data center, caricato con i dati in sito, restituito a un data center {{site.data.keyword.BluSoftlayer_full}} e i tuoi dati vengono caricati nel tuo account {{site.data.keyword.cos_full}}.
 
 ### Alimentazione
 

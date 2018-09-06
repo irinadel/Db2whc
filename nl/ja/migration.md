@@ -16,7 +16,7 @@ lastupdated: "2018-05-08"
 # IBM Cloud へのデータのマイグレーション
 {: #migration}
 
-ローカル・ネットワーク上またはオブジェクト・ストア内 (Amazon S3 または IBM Cloud Object Storage) にある、区切り文字で区切られた形式 (CSV または TXT) のデータ・ファイルから {{site.data.keyword.dashdblong}} にデータをロードできます。オンプレミス・システムからデータをマイグレーションすることもできます。
+ローカル・ネットワーク上またはオブジェクト・ストア内 (Amazon S3 または IBM Cloud Object Storage) にある、区切り文字で区切られた形式 (CSV または TXT) のデータ・ファイルから {{site.data.keyword.dashdblong}} にデータをロードできます。 オンプレミス・システムからデータをマイグレーションすることもできます。
 {: shortdesc}
 
 ## オブジェクト・ストアからのデータのロード
@@ -62,7 +62,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 Lift は、表 1 にリストされている各種データ・ソースから {{site.data.keyword.Bluemix_notm}} にデータをマイグレーションするときに無料で使用できるアプリケーションです。 
 
-| IBM Cloud 上のターゲット DB  | データ・ソース |
+| IBM Cloud 上のターゲット DB | データ・ソース |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -75,14 +75,14 @@ Lift は、表 1 にリストされている各種データ・ソースから {{
 
 Lift のダウンロードとインストールについては、[Download Lift ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#download){:new_window} を参照してください。
 
-Lift を使用してデータを {{site.data.keyword.Bluemix_notm}} にマイグレーションする方法に関するステップバイステップの説明については、[Db2 Warehouse on Cloud へのマイグレーション (Migrating to Db2 Warehouse on Cloud)](/docs/services/lift-cli/index.html#about-lift){:new_window} を参照してください。
+Lift を使用してデータを {{site.data.keyword.Bluemix_notm}} にマイグレーションする方法に関するステップバイステップの説明については、[{{site.data.keyword.dashdblong}} へのデータ・マイグレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window}を参照してください。
 
 ### IBM Cloud Mass Data Migration Service
 {: #mdms}
 
 IBM Cloud Mass Data Migration Service (MDMS) を使用して、大規模な (約 25 TB 以上) IBM PureData Systems for Analytics (Netezza) データベースから、{{site.data.keyword.Bluemix_notm}} 上の完全管理された {{site.data.keyword.dashdblong}} データベースにデータをマイグレーションできます。
 
-MDMS は、テラバイト単位からペタバイト単位までのデータを {{site.data.keyword.Bluemix_notm}} に物理的に転送するための高速かつシンプルで安全な方法を提供します。MDMS は、120 TB の使用可能な記憶容量を備えたモバイル・ストレージ・デバイスです。このデバイスによって、高いコスト、長い転送時間、セキュリティー上の懸念など、転送に関わる一般的な課題を単一サービスですべて克服できます。
+MDMS は、テラバイト単位からペタバイト単位までのデータを {{site.data.keyword.Bluemix_notm}} に物理的に転送するための高速かつシンプルで安全な方法を提供します。 MDMS は、120 TB の使用可能な記憶容量を備えたモバイル・ストレージ・デバイスです。 このデバイスによって、高いコスト、長い転送時間、セキュリティー上の懸念など、転送に関わる一般的な課題を単一サービスですべて克服できます。
 
 ![Mass Data Migration Service デバイスの表示](images/mdms.svg)
 

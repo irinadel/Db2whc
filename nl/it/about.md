@@ -28,4 +28,3 @@ Il servizio pienamente gestito di {{site.data.keyword.dashdbshort_notm}} gestisc
 gli aggiornamenti software, gli aggiornamenti del sistema operativo e la manutenzione hardware. Il servizio include un monitoraggio dell'integrità sette giorni alla settimana, 24 ore su 24. In caso di malfunzionamento hardware o software, il servizio viene riavviato automaticamente.
 {: shortdesc}
 
-

@@ -193,9 +193,9 @@ Para carregar dados do IBM Cloud Object Storage usando tabelas externas diretame
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-  (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
+  (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net',
   '<S3-access-key-ID>',
-  '<S3-secret-access-key>', 
+  '<S3-secret-access-key>',
   '<my_bucket>'
      )
   )      
