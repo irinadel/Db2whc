@@ -24,7 +24,7 @@ Db2 Warehouse on Cloud
     connecting.md
 
     {: .topicgroup}
-    Connecting to another Db2 server
+    Connecting to another Db2 database
         federation.md
 
     user_mgmt.md
