@@ -7,6 +7,7 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
     index.md
+    iam.md
     plans_cfgs.md
     about.md
     flex_scaling.md
