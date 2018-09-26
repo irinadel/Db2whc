@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -64,12 +64,15 @@ With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks
 ### Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 
-Configure your local environment to connect to your Db2 warehouse database by completing the following steps:
+Configure your local environment to connect to your {site.data.keyword.dashdbshort_notm}} database by completing the following steps:
 {: shortdesc}
 
-1. Download the [driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} from the Db2 Warehouse on Cloud web console.
-2. [Install the driver package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} on the computer where your apps or tools are running.
-3. [Configure the driver files ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} for your Db2 warehouse database.
+1. Download the [driver package](connecting/driver_pkg.html) from the {{site.data.keyword.dashdbshort_notm}} web console.
+2. Install the driver package on the computer where your apps or tools are running:
+   - [Installing on Linux or PowerLinux](connecting/install_linux.html)
+   - [Installing on Mac OS X](connecting/install_mac.html)
+   - [Installing on Windows](connecting/install_win.html)
+3. [Configure the driver files](connecting/driver_pkg_cfg.html) for your {site.data.keyword.dashdbshort_notm}} database.
 
 ### Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
@@ -124,15 +127,14 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 ## Samples
 {: #samples}
 
-Here are links to samples demonstrating how to connect to your {{site.data.keyword.dashdbshort_notm}} database from applications in different languages:
+Here are links to samples demonstrating how to programmatically connect to your {{site.data.keyword.dashdbshort_notm}} database from applications in different languages:
 {: shortdesc}
 
-   * [.NET ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [{{site.data.keyword.dashdbshort_notm}} samples on GitHub ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows ODBC or CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC Data Source Administrator](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST API](connecting/rest_api.html)
 
 

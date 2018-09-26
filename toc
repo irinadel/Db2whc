@@ -21,7 +21,37 @@ Db2 Warehouse on Cloud
         migration.md
         pda_db2whc_mdms.md
 
-    connecting.md
+    {: .topicgroup}
+    Connecting
+        connecting/connecting.md
+        connecting/credentials.md
+        connecting/driver_pkg.md
+        connecting/install_linux.md
+        connecting/install_mac.md
+        connecting/install_win.md
+        connecting/driver_pkg_cfg.md
+        connecting/ssl.md
+        connecting/jdbc.md
+        connecting/net_apps.md
+        connecting/odbc_cli.md
+        connecting/odbc_data_source_admin.md
+        connecting/php.md
+        connecting/clpplus.md
+        connecting/rest_api.md
+        connecting/aginity_wb.md
+        connecting/cognos.md
+        connecting/data_studio.md
+        connecting/datastage.md
+        connecting/dsm.md
+        connecting/esri_arcgis.md
+        connecting/excel.md
+        connecting/ida.md
+        connecting/idr.md
+        connecting/r_dev_env.md
+        connecting/sas.md
+        connecting/spss_stats.md
+        connecting/tableau.md
+        connecting/watson_studio.md
 
     {: .topicgroup}
     Connecting to another Db2 database

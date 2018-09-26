@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-09-25"
 
 ---
 
@@ -35,10 +35,20 @@ The {{site.data.keyword.dashdbshort_notm}} database can be provisioned on {{site
 
 If you want to have the data warehouse provisioned for AWS, select the **MPP Small for AWS** plan. -->
 
-<!-- ## Data visualization
+## Data visualization
 {: #visualize}
 
-Connecting Looker to Db2 Warehouse
+You can analyze and visualize your analysis by connecting to the following applications:
+
+- [Esri ArcGIS for Desktop](connecting/esri_arcgis.html)
+- [IBM Cognos](connecting/cognos.html)
+- [Microsoft Excel](connecting/excel.html)
+- [SAS](connecting/sas.html)
+- [SPSS Statistics](connecting/spss_stats.html)
+- [Tableau](connecting/tableau.html)
+- [Watson Studio (formerly Data Science Experience)](connecting/watson_studio.html)
+
+<!-- Connecting Looker to Db2 Warehouse
 Connecting Tableau to Db2 Warehouse
 Connecting Watson Analytics...
 Connecting Cognos Analytics... -->

@@ -1,0 +1,75 @@
+---
+
+copyright:
+  years: 2014, 2018
+lastupdated: "2018-09-25"
+
+---
+
+<!-- Attribute definitions --> 
+{:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+
+# Connecting programmatically with ODBC or CLI
+
+Define a connection between a Microsoft Windows ODBC or CLI application and a {{site.data.keyword.dashdbshort_notm}} database.
+{: shortdesc}
+
+## Prerequisites
+
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+
+<!-- Before you can connect to your database, you must perform the following steps:
+
+- [Verify prerequisites](prereqs.html), including installing driver packages, configuring your local environment, and downloading SSL certificates (if needed)
+- Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
+
+## Procedure
+
+1. In a command shell on Linux operating systems, at the Windows command prompt, or in the Db2 command window on Windows operating systems, enter the following commands:
+
+   **Note**: These commands create new entries in the driver configuration file (`db2dsdriver.cfg`) on your computer and set the connection attributes. You need to do this step only one time.
+   
+   - For a connection with SSL:
+
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+
+   - For a connection without SSL:
+
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+
+   where:
+
+   `<hostname>` is the host name of the server
+
+   `<alias>` is a DSN alias that you choose
+    
+2. [*Optional*]: To test the connection to the database, run this command from the command prompt:
+
+   `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+   where:
+
+   `<alias>` is the DSN alias that you created with the **db2cli writecfg** command
+
+   `<user_id>` is from the connect credentials that you collected beforehand
+
+   `<password>` is from the connect credentials that you collected beforehand
+
+3. [*Optional*]: To register the data source name (DSN) with Microsoft ODBC Driver Manger and to work with Microsoft ODBC applications, run the following command. By default, the DSN is created as user DSN.
+
+   `db2cli registerdsn -add -dsn <alias>`
+
+   where:
+        
+   `<alias>` is the DSN alias that you created with the **db2cli writecfg** command
+
+
+
