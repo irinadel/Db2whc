@@ -20,13 +20,15 @@ To connect local applications and tools to your {{site.data.keyword.dashdbshort_
 
 ## Prerequisites
 
-1. Install the Db2 driver package for your operating system.
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+
+<!-- 1. Install the Db2 driver package for your operating system.
 
    - [Installing on Windows](install_win.html)
    - [Installing on Linux or PowerLinux](install_linux.html)
    - [Installing on Mac OS X](install_mac.html)
 2. Decide whether or not you will be using Secure Sockets Layer (SSL) to connect to your database.
-3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password.
+3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ## Procedure
 
