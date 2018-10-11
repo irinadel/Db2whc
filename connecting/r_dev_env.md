@@ -37,7 +37,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
     
 2. Create an ODBC driver connection between your R development environment and your {{site.data.keyword.dashdbshort_notm}} database:
         
-   a. [Set up your database as an ODBC data source](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html).
+   a. [Set up your database as an ODBC data source ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}.
         
    b. Open your locally installed R development environment.
         
