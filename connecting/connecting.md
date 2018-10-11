@@ -101,7 +101,7 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 - [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](esri_arcgis.html)
 - [InfoSphere Data Architect to design and deploy your database schema](ida.html)
 - [InfoSphere Data Replication](idr.html)
-- [Local R development environment](r_dev_env_.html)
+- [Local R development environment](r_dev_env.html)
 - [SAS](sas.html)
 - [SPSS Statistics](spss_stats.html)
 - Connect SQL-based tools to manipulate, analyze, or visualize your data:
