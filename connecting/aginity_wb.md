@@ -35,5 +35,5 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 3. Launch Aginity Workbench. If the database connection dialog box does not open automatically, open it by clicking **Connect** on the toolbar.
 
-4. [Establish a database connection ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}. Use the host name, user ID, and password from the connection information that you noted earlier.
+4. [Establish a database connection ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}. Use the host name, user ID, and password from the connection information that you noted earlier.
 

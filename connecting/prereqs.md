@@ -22,7 +22,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 1. Verify that a supported driver is installed
 
-   - If your application or tool already contains the [Db2 v11.1 IBM Data Server Driver Package ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/docview.wss?uid=swg21385217){:new_window}, then your application or tool is able to connect to your {{site.data.keyword.dashdbshort_notm}} database using that driver.
+   - If your application or tool already contains the [Db2 v11.1 IBM Data Server Driver Package ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/docview.wss?uid=swg21385217){:new_window}, then your application or tool is able to connect to your {{site.data.keyword.dashdbshort_notm}} database using that driver.
    - Otherwise, install the [Db2 driver package](driver_pkg.html), which you can download from the web console.
 2. Configure your environment
 

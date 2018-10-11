@@ -33,7 +33,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
         
 1. Download the [Db2 driver package](driver_pkg.html) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
-2. Use the [`odbc_connect` function ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.odbc-connect.php){:new_window} to connect to the BLUDB database.
+2. Use the [`odbc_connect` function ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.odbc-connect.php){:new_window} to connect to the BLUDB database.
     
    PHP code example:
 
@@ -96,7 +96,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
         
 3. In your IBM Cloud dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in IBM Cloud makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hard-coding the database details in your PHP App.)
         
-4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
+4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
         
    Example:
 

@@ -83,7 +83,7 @@ Complete the following steps to connect the Cognos server to a {{site.data.keywo
 
 Your Cognos server is now connected to your {{site.data.keyword.dashdbshort_notm}} database. Use your Cognos tools to create dynamic cubes and start generating reports. The following are resources from the Cognos documentation:
 
-- [Getting started with Cognos Cube Designer ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSEP7J_10.2.1/com.ibm.swg.ba.cognos.ug_cog_rlp.10.2.1.doc/c_ug_cog_rlp_get_started.html){:new_window}
+- [Getting started with Cognos Cube Designer ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSEP7J_10.2.1/com.ibm.swg.ba.cognos.ug_cog_rlp.10.2.1.doc/c_ug_cog_rlp_get_started.html){:new_window}
 
-- [Getting started with Report Studio ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSEP7J_10.2.1/com.ibm.swg.ba.cognos.ug_cr_rptstd.10.2.1.doc/c_understand_rs.html){:new_window}
+- [Getting started with Report Studio ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/knowledgecenter/SSEP7J_10.2.1/com.ibm.swg.ba.cognos.ug_cr_rptstd.10.2.1.doc/c_understand_rs.html){:new_window}
 

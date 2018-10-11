@@ -29,4 +29,4 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 ## Procedure
 
-For steps on how to connect from SAS to a {{site.data.keyword.dashdbshort_notm}} database, see the SAS documentation [SAS/ACCESS Interface to DB2® under UNIX and PC Hosts ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}.
+For steps on how to connect from SAS to a {{site.data.keyword.dashdbshort_notm}} database, see the SAS documentation [SAS/ACCESS Interface to DB2® under UNIX and PC Hosts ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}.
