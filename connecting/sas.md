@@ -15,7 +15,7 @@ lastupdated: "2018-09-25"
 
 # Connecting SAS
 
-These instructions explain how to create a connection from InfoSphere® Data Architect version 9.1.x to a {{site.data.keyword.dashdbshort_notm}} database.
+These instructions explain how to create a connection from SAS to a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
 ## Prerequisites
