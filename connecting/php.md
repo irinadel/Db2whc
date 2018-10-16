@@ -29,7 +29,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 ## Procedure
 
-### Scenario 1: Connecting from outside IBM Cloud™:
+### Scenario 1: Connecting from outside {{site.data.keyword.Bluemix_notm}}:
         
 1. Download the [Db2 driver package](driver_pkg.html) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
@@ -88,13 +88,13 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    Connection succeeded.
    ```
 
-### Scenario 2: Connecting from a PHP web app in IBM Cloud
+### Scenario 2: Connecting from a PHP web app in {{site.data.keyword.Bluemix_notm}}
 
-1. From the IBM Cloud catalog, create a new PHP App.
+1. From the {{site.data.keyword.Bluemix_notm}} catalog, create a new PHP App.
         
-2. From the "Getting Started" section of the new PHP App in your IBM Cloud dashboard, download the App starter code to your local work directory.
+2. From the "Getting Started" section of the new PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard, download the App starter code to your local work directory.
         
-3. In your IBM Cloud dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in IBM Cloud makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hard-coding the database details in your PHP App.)
+3. In your {{site.data.keyword.Bluemix_notm}} dashboard, create a new connection from your Db2 service to your new PHP App. (Creating this Connection in {{site.data.keyword.Bluemix_notm}} makes the `VCAP_SERVICES` environment variable available to your PHP App. The `VCAP_SERVICES` environment variable contains database details for your Db2 service. Using `VCAP_SERVICES` is more convenient than hard-coding the database details in your PHP App.)
         
 4. In your local working directory, update the `index.php` file to connect to the BLUDB database by using the [`db2_connect` function ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
         
@@ -145,6 +145,6 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    </html>
    ```
 
-5. From your local working directory, push the updates to IBM Cloud by following the instructions in the "Getting Started" section of the PHP App in your IBM Cloud dashboard. Then restart the App in IBM Cloud and view the App in a browser.
+5. From your local working directory, push the updates to {{site.data.keyword.Bluemix_notm}} by following the instructions in the "Getting Started" section of the PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard. Then restart the App in {{site.data.keyword.Bluemix_notm}} and view the App in a browser.
 
 

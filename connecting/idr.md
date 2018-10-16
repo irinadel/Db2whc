@@ -20,7 +20,7 @@ You can connect IBM® InfoSphere® Data Replication version 11.3.3.3-36 or later
 
 ## Overview
 
-Ideally, when you connect IBM InfoSphere Data Replication to {{site.data.keyword.dashdbshort_notm}}, IBM InfoSphere Data Replication is in the same IBM Cloud™ Data Center as {{site.data.keyword.dashdbshort_notm}} or is colocated with {{site.data.keyword.dashdbshort_notm}}. IBM InfoSphere Data Replication connects from a local server to the remote {{site.data.keyword.dashdbshort_notm}} instance.
+Ideally, when you connect IBM InfoSphere Data Replication to {{site.data.keyword.dashdbshort_notm}}, IBM InfoSphere Data Replication is in the same {{site.data.keyword.Bluemix_notm}} Data Center as {{site.data.keyword.dashdbshort_notm}} or is colocated with {{site.data.keyword.dashdbshort_notm}}. IBM InfoSphere Data Replication connects from a local server to the remote {{site.data.keyword.dashdbshort_notm}} instance.
 
 When you use {{site.data.keyword.dashdbshort_notm}} as a connection target, the performance of IBM InfoSphere Data Replication partly depends on the bandwidth of the network that separates its target engine from the {{site.data.keyword.dashdbshort_notm}} instance. Physical distance also affects performance: ideally, IBM InfoSphere Data Replication is as close as possible to the {{site.data.keyword.dashdbshort_notm}} instance. Network topology also affects performance. For example, ideally, the IBM InfoSphere Data Replication target engine runs on a VM in the same VPN (security domain) as the target instance. The fewer the network nodes (for example, firewalls or routers) to traverse, the better. 
 
@@ -167,7 +167,9 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
 
 ## What to do next
 
-Define a subscription and perform data replication. For information, see [Loading data from InfoSphere Data Replication ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:new_window}. 
+Define a subscription and perform data replication. For information, see:
+
+- [Loading data from InfoSphere Data Replication ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:new_window} 
 
 
 

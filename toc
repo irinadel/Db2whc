@@ -36,22 +36,13 @@ Db2 Warehouse on Cloud
         connecting/odbc_cli.md
         connecting/odbc_data_source_admin.md
         connecting/php.md
-        connecting/clpplus.md
         connecting/rest_api.md
-        connecting/aginity_wb.md
-        connecting/cognos.md
-        connecting/data_studio.md
-        connecting/datastage.md
-        connecting/dsm.md
-        connecting/esri_arcgis.md
-        connecting/excel.md
-        connecting/ida.md
-        connecting/idr.md
-        connecting/r_dev_env.md
-        connecting/sas.md
-        connecting/spss_stats.md
-        connecting/tableau.md
-        connecting/watson_studio.md
+
+    {: .topicgroup}
+    Integrations
+        connecting/data.md
+        connecting/vis_bi.md
+        connecting/data_sci.md
 
     {: .topicgroup}
     Connecting to another Db2 database

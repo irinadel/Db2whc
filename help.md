@@ -37,7 +37,7 @@ The {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemi
 You can determine the status of the {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} by checking the following status pages:
 {: tsResolve}
 
-* [{{site.data.keyword.Bluemix_notm}} Support ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/bluemix/support/#status){:new_window}
+* [IBM Cloud Support ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/bluemix/support/#status){:new_window}
 * Status monitoring:
   * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
 

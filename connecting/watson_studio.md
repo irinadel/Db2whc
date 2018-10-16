@@ -18,7 +18,7 @@ lastupdated: "2018-09-25"
 After you create a project in IBM Watson Studio (formerly Data Science Experience), you add data assets to it so that you can work with data. All the collaborators in the project are automatically authorized to access the data in the project.
 {: shortdesc}
 
-How you add data and from where you can add data differs between legacy and IBM Watson projects. IBM Watson projects use IBM Cloud Object Storage. The project is a legacy project if it uses Object Storage OpenStack Swift. 
+How you add data and from where you can add data differs between legacy and IBM Watson projects. IBM Watson projects use {{site.data.keyword.Bluemix_notm}} Object Storage. The project is a legacy project if it uses Object Storage OpenStack Swift. 
 
 ## To create a new connection in an IBM Watson project:
 
@@ -44,15 +44,15 @@ Watch this video to see how to create a connection and add connected data to a p
 
 3. Enter a name and description and choose a Service Category:
 
-   **Data Service** = IBM Cloud data service
+   **Data Service** = {{site.data.keyword.Bluemix_notm}} data service
 
-   When you choose **Data Service**, your existing IBM Cloud data services appear in the **Service Instance** list.
+   When you choose **Data Service**, your existing {{site.data.keyword.Bluemix_notm}} data services appear in the **Service Instance** list.
 
 4. Choose the service or database server from the list.
 
 5. Enter the connection information:
 
-   When you choose **Data Service**, your existing IBM Cloud data services appear in the **Service Instance** list.
+   When you choose **Data Service**, your existing {{site.data.keyword.Bluemix_notm}} data services appear in the **Service Instance** list.
     
 6. Click **Create**. The connection is available to all legacy projects.
     

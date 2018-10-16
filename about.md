@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-09-25"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -40,17 +40,13 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 
 You can analyze and visualize your analysis by connecting to the following applications:
 
-- [Esri ArcGIS for Desktop](connecting/esri_arcgis.html)
-- [IBM Cognos](connecting/cognos.html)
-- [Microsoft Excel](connecting/excel.html)
-- [SAS](connecting/sas.html)
-- [SPSS Statistics](connecting/spss_stats.html)
-- [Tableau](connecting/tableau.html)
-- [Watson Studio (formerly Data Science Experience)](connecting/watson_studio.html)
-
-<!-- Connecting Looker to Db2 Warehouse
-Connecting Tableau to Db2 Warehouse
-Connecting Watson Analytics...
-Connecting Cognos Analytics... -->
+- [Watson Studio (formerly Data Science Experience)](connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Looker ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Tableau](connecting/vis_bi.html#tableau)
+- [SPSS Statistics](connecting/data_sci.html#spss_stats)
+- [SAS](connecting/data_sci.html#sas)
+- [Microsoft Excel](connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
 
 

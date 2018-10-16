@@ -37,7 +37,7 @@ To verify that the driver package is already on your computer, or to determine t
 
 ## Downloading
 
-You can download the driver package for your operating system from the {{site.data.keyword.dashdbshort_notm}} web console.
+You can download the driver package for your operating system from the {{site.data.keyword.dashdbshort_notm}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.dashdbshort_notm}} service. Log in to your {{site.data.keyword.dashdbshort_notm}} web console.
 
 In the {{site.data.keyword.dashdbshort_notm}} web console, select **Connect > Connection info**. Select the tile representing your operating system to download the appropriate driver.
 

@@ -156,7 +156,7 @@ If a different form factor of Ethernet connection is required, you must provide 
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **Note:** If you used the `USING` clause options for data export, remember or save the clause options. The clause is reused later during the external table load process from IBM Cloud Object Storage.
+       **Note:** If you used the `USING` clause options for data export, remember or save the clause options. The clause is reused later during the external table load process from {{site.data.keyword.Bluemix_notm}} Object Storage.
 
        For more information about the SQL statement, see: [CREATE EXTERNAL TABLE statement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
 
@@ -186,10 +186,10 @@ During the data transfer process, the request status is displayed as *Offloading
 
 When the migration of your data into the Cloud Object Storage bucket has completed, you can proceed to [import your data into your {{site.data.keyword.dashdbshort_notm}} database](#import).
 
-## Step 6: Importing data from IBM Cloud Object Storage
+## Step 6: Importing data from {{site.data.keyword.Bluemix_notm}} Object Storage
 {: #import}
 
-To load data from IBM Cloud Object Storage by using External Tables directly, the following is an example SQL statement:
+To load data from {{site.data.keyword.Bluemix_notm}} Object Storage by using External Tables directly, the following is an example SQL statement:
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -203,9 +203,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Notes:** 
 * Be certain to use the same `USING` clause options that you used to extract the data from your PureData System for Analytics (Netezza) database by using the CREATE EXTERNAL TABLE statement.
-* For IBM Cloud Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
+* For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-For a guided tutorial about importing data fron IBM Cloud Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+For a guided tutorial about importing data fron {{site.data.keyword.Bluemix_notm}} Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
 
 ## Step 7: Erasing MDMS device
 {: #erase}

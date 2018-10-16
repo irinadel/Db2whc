@@ -114,4 +114,11 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
      where `<IP_address_of_BLUDB_database_server>` represents the IP address of the BLUDB database server, `<port_number_of_BLUDB_database>` represents the port number of the BLUDB database, `<BLUDB_db_name>` represents the BLUDB database name, `<nodename>` represents the name of the node, `<BLUDB_db_user_name>` represents the BLUDB database user name, and `<BLUDB_db_password>` represents the BLUDB database password.
 
-  3. Use the [connection information](credentials.html) that you collected beforehand to define a connection in the DataStage client. For details about defining a connection in DataStage, see the following DataStage documentation topic: [Creating a data connection object manually ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+  3. Use the [connection information](credentials.html) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+
+     For details about defining a connection in DataStage, see the following DataStage documentation topic: 
+     
+     - [Creating a data connection object manually ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+
+     
+

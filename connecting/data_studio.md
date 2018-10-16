@@ -43,3 +43,4 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 4. For an SSL connection, click the **Optional** tab, and then click **Add**. For the `sslConnection` property, specify `true`.
 
 5. [*Optional*]: Click **Test Connection** to verify that the connection succeeded.
+

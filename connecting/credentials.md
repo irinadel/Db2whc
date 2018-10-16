@@ -32,7 +32,7 @@ There are important database details needed for connecting applications and tool
 
 There are three types of credentials:
 
-- *IBMid* - If you use IBM Cloud, this is the ID you would use to log in to IBM Cloud. This is not what you use to connect applications or tools to your Db2 Warehouse on Cloud database.
+- *IBMid* - If you use {{site.data.keyword.Bluemix_notm}}, this is the ID you would use to log in to {{site.data.keyword.Bluemix_notm}}. This is not what you use to connect applications or tools to your Db2 Warehouse on Cloud database.
 - *Db2 database credentials* - Your service comes provisioned with a database user ID and password that can be used to connect applications and tools to your database.
 - *Administrator-created users* - Some {{site.data.keyword.dashdbshort_notm}} plans allow administrative users to create new users. These administrator-created user IDs and passwords can be used to log directly into the web console URL and to connect to the Db2 database from applications or tools.
 
@@ -42,7 +42,7 @@ You can collect this information from the following places:
 
 - *Your administrator* - If you are not the owner or administrator of your Db2 instance, you can get your database details and connect credentials from your administrator.
 - *Db2 web console* - Database details and credentials are available in the web console.
-- If you are using IBM Cloud: 
+- If you are using {{site.data.keyword.Bluemix_notm}}: 
    
-   - *IBM Cloud Dashboard* - When you view your service on your IBM Cloud dashboard, in the "Service credentials" area, you can view the database details as well as the database user ID and password.
-   - *`VCAP_SERVICES`* - `VCAP_SERVICES` is an environment variable in IBM Cloud that contains database details and credentials in JSON format. When you view the service credentials for your service in your IBM Cloud dashboard, the contents of `VCAP_SERVICES` is what is displayed. When you bind other IBM Cloud services or apps to your service, those other services or apps can access database details and credentials programmatically by reading `VCAP_SERVICES`.
+   - *{{site.data.keyword.Bluemix_notm}} Dashboard* - When you view your service on your {{site.data.keyword.Bluemix_notm}} dashboard, in the "Service credentials" area, you can view the database details as well as the database user ID and password.
+   - *`VCAP_SERVICES`* - `VCAP_SERVICES` is an environment variable in {{site.data.keyword.Bluemix_notm}} that contains database details and credentials in JSON format. When you view the service credentials for your service in your {{site.data.keyword.Bluemix_notm}} dashboard, the contents of `VCAP_SERVICES` is what is displayed. When you bind other {{site.data.keyword.Bluemix_notm}} services or apps to your service, those other services or apps can access database details and credentials programmatically by reading `VCAP_SERVICES`.

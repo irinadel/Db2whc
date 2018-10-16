@@ -59,3 +59,4 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 ## Results
 
 The ArcCatalog component of Esri ArcGIS for Desktop is now connected to your {{site.data.keyword.dashdbshort_notm}} database. 
+

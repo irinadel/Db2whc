@@ -37,3 +37,4 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 4. [Establish a database connection ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}. Use the host name, user ID, and password from the connection information that you noted earlier.
 
+
