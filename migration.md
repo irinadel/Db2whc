@@ -50,6 +50,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Note:** For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
+For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+
 ## Migrating data from on-premises system
 {: #onprem}
 
@@ -91,4 +93,11 @@ For more information about the MDMS device, see:
 
 For information about migrating your data from an IBM PureData System for Analytics (Netezza) database to an {{site.data.keyword.dashdblong}} database by using the MDMS device, see: 
 - [Migrating from IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+
+## Tutorial: Migrating data from on-premises relational databases
+{: #tutorial}
+
+This tutorial demonstrates how to migrate data from on-premises relational databases into {{site.data.keyword.dashdbshort_notm}} for business analytics applications. 
+
+[Hybrid data warehousing with {{site.data.keyword.dashdbshort_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
 

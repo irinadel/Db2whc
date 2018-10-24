@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -25,7 +25,11 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 You can run your IBM Cognos® reports against data in the cloud rather than the data in an on-premises database. After you load your data to a {{site.data.keyword.dashdbshort_notm}} database, you set up the JDBC driver, and then use the Cognos administration tools to create the database connection. <!--These instructions explain how to connect to the database from Cognos version 10.2.1.-->
 {: shortdesc}
 
-[Connecting Cognos Analytics ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+Watch this video to see how to create a connection.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+For more information, see [Connecting Cognos Analytics ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
 
 ## Looker
 {: #looker}
