@@ -17,6 +17,9 @@ lastupdated: "2018-10-24"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Getting started
@@ -145,7 +148,7 @@ Watch this video to see an introduction to {{site.data.keyword.dashdbshort_notm}
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Video: Introducing the Flex Performance plan
-{: #intro_vid}
+{: #intro_vid_flex}
 
 Watch this video to see an introduction to the {{site.data.keyword.dashdbshort_notm}} Flex Performance plan.
 
