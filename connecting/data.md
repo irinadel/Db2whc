@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-15"
+lastupdated: "2018-11-08"
 
 ---
 
@@ -53,7 +53,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
      `# /home/db2inst2> cd SSL`
 
-  2. In the Db2 console, download the SSL certificate from the Connect your applications to the database page.
+  2. In the {{site.data.keyword.dashdbshort_notm}} web console, download the SSL certificate from the **Connect your applications to the database** page.
 
      a. From the main menu, click **Connect**.
      
@@ -61,19 +61,19 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
      
      c. Save the `DigiCertGlobalRootCA.crt` certificate into the SSL directory that you made in step 1.
         
-  3. Create a client keystore database in the DataStage system by using the **gsk8capicmd** utility. This utility is included in the DB2® server installation.
+  3. Create a client keystore database in the DataStage system by using the **gsk8capicmd_64** utility.
 
-     `# /home/db2inst2/SSL> gsk8capicmd -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
      where `<keystore_db.kdb>` represents the client keystore database and `<ks_db_password>` represents the password for the client keystore database.
         
   4. Add the certificate to the client keystore database.
 
-     `# /home/db2inst2/SSL> gsk8capicmd -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
      where `<keystore_db.kdb>` represents the client keystore database and `<ks_db_password>` represents the password for the client keystore database.
     
-  5. Configure the DB2 client on the DataStage server.
+  5. Configure the Db2 client on the DataStage server.
             
      a. Update the SSL configuration parameters in the database manager.
 
@@ -87,40 +87,68 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
             
      b. Catalog the target node with the SSL security option and then the BLUDB database at that target node.
 
-     `# /home/db2inst2> db2 catalog tcpip node SSLCLOUD remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
+     `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     where `<IP_addr_of_BLUDB_database_server>` represents the IP address of the BLUDB database server,
+     where `<node_name>` represents your name for the target node and `<IP_addr_of_BLUDB_database_server>` represents the IP address of the BLUDB database server,
 
-     `# /home/db2inst2> db2 catalog db BLUDB as BLUDB_S at node SSLCLOUD`
+     `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     `# /home/db2inst2> db2 terminate`
+     where `<db_alias>` is your name for the {{site.data.keyword.dashdbshort_notm}} database.
 
   6. Add read and execute permissions on the files in the SSL directory for everyone. The DataStage user who runs the jobs needs to access these files to make SSL connections to the Db2 database.
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-  7. Restart the DataStage server.
+   7. Test the SSL connection in one of the following ways:
 
-- To create a connection without SSL, catalog the target Db2 database on the IBM InfoSphere DataStage server by completing the following steps:
+      - Test the connection by using CLP. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
 
-  1. Use a telnet client application such as PuTTY to connect to the DataStage server as the default instance owner (usually db2inst1).
-  2. Create a catalog of the target Db2 database by using the following DB2 commands:
+        `db2 connect to <db_alias> user <user_id>`
 
-     `db2 catalog tcpip node nodename remote <IP_address_of_BLUDB_database_server> <port_number_of_BLUDB_database>`
+        where `<db_alias>` is your name for the {{site.data.keyword.dashdbshort_notm}} database and `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID. You are prompted to enter your password.
+    
+      - Test the connection by using CLI. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
 
-     `db2 catalog db <BLUDB_db_name> at node <nodename>`
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-     `db2 connect to <BLUDB_db_name> user <BLUDB_db_user_name> using <BLUDB_db_password>`
+        where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID, and `<password>` is your {{site.data.keyword.dashdbshort_notm}} password.
 
-     `db2 list tables`
+- To create a connection without SSL, catalog the target {{site.data.keyword.dashdbshort_notm}} database by completing the following steps:
 
-     where `<IP_address_of_BLUDB_database_server>` represents the IP address of the BLUDB database server, `<port_number_of_BLUDB_database>` represents the port number of the BLUDB database, `<BLUDB_db_name>` represents the BLUDB database name, `<nodename>` represents the name of the node, `<BLUDB_db_user_name>` represents the BLUDB database user name, and `<BLUDB_db_password>` represents the BLUDB database password.
+  1. Catalog the target {{site.data.keyword.dashdbshort_notm}} node so that client applications can connect to it. Run the following CLP commands:
 
-  3. Use the [connection information](credentials.html) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+     `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
-     For details about defining a connection in DataStage, see the following DataStage documentation topic: 
+     where `<node_name>` represents your name for the node, `<IP_address_of_BLUDB_database_server>` represents the IP address of the BLUDB database server, and `<port_number_of_BLUDB_database>` represents the port number of the BLUDB database.
+
+  2. Catalog the remote {{site.data.keyword.dashdbshort_notm}} database so that client applications can connect to it. Run the following command:
+
+     `db2 catalog db BLUDB as <db_alias> at node <node_name>`
+
+     where `<db_alias>` represents your name for the {{site.data.keyword.dashdbshort_notm}} database and `<node_name>` represents your name for the node.
+
+  3. Test the non-SSL connection in one of the following ways:
+
+      - Test the connection by using CLP. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
+
+        `db2 connect to <db_alias> user <user_id>`
+
+        where `<db_alias>` is your name for the {{site.data.keyword.dashdbshort_notm}} database and `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID. You are prompted to enter your password.
+
+        `db2 list tables`
+
+      - Test the connection by using CLI. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
+
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+        where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID, and `<password>` is your {{site.data.keyword.dashdbshort_notm}} password.
+
+  4. Use the [connection information](credentials.html) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+
+     For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
      - [Creating a data connection object manually ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+     - [Configuring access to Db2 databases ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
