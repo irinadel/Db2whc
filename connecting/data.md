@@ -99,17 +99,17 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-   7. Test the SSL connection in one of the following ways:
+  7. Test the SSL connection in one of the following ways:
 
-      - Test the connection by using CLP. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
+     - Test the connection by using CLP. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
 
-        `db2 connect to <db_alias> user <user_id>`
+       `db2 connect to <db_alias> user <user_id>`
 
-        where `<db_alias>` is your name for the {{site.data.keyword.dashdbshort_notm}} database and `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID. You are prompted to enter your password.
+       where `<db_alias>` is your name for the {{site.data.keyword.dashdbshort_notm}} database and `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID. You are prompted to enter your password.
     
-      - Test the connection by using CLI. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
+     - Test the connection by using CLI. Issue the following command to connect to the {{site.data.keyword.dashdbshort_notm}} database:
 
-        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+       `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
         where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID, and `<password>` is your {{site.data.keyword.dashdbshort_notm}} password.
 
