@@ -21,5 +21,5 @@ lastupdated: "2018-03-15"
 
 전제조건 및 설치 지시사항을 보려면 자신의 운영 체제에 대한 링크를 선택하십시오. 
 
-* [Windows 및 Macintosh ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
-* [Linux ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}
+- [Windows 및 Macintosh ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
+- [Linux ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}

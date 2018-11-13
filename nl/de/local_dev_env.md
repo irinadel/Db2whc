@@ -21,5 +21,5 @@ Wenn Sie eine lokale Db2-Entwicklungsumgebung einrichten möchten, können Sie [
 
 Informationen zu den Voraussetzungen sowie Installationsanweisungen können Sie über den Link für das jeweilige Betriebssystem aufrufen: 
 
-* [Windows und Macintosh ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
-* [Linux ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}
+- [Windows und Macintosh ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
+- [Linux ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}

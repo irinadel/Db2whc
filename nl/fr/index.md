@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Initiation
@@ -64,12 +67,15 @@ Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez 
 ### Connectez des applications ou vos outils préférés depuis votre ordinateur local
 {: #connect_apps}
 
-Configurez votre environnement local afin qu'il se connecte à votre base de données d'entrepôt Db2 en procédant comme suit :
+Configurez votre environnement local pour qu'il se connecte à votre base de données {site.data.keyword.dashdbshort_notm}} comme suit :
 {: shortdesc}
 
-1. Téléchargez le [package de pilote ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} à partir de la console Web de Db2 Warehouse on Cloud.
-2. [Installez le package de pilote ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} sur l'ordinateur sur lequel vos applications ou vos outils sont exécutés.
-3. [Configurez les fichiers de pilote ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} pour votre base de données d'entrepôt Db2.
+1. Téléchargez le [module de pilote](connecting/driver_pkg.html) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
+2. Installez le module de pilote sur l'ordinateur sur lequel vos applications ou outils s'exécutent :
+   - [Installation sur Linux ou PowerLinux](connecting/install_linux.html)
+   - [Installation sur Mac OS X](connecting/install_mac.html)
+   - [Installation sur Windows](connecting/install_win.html)
+3. [Configuration des fichiers de pilote](connecting/driver_pkg_cfg.html) pour votre base de données {site.data.keyword.dashdbshort_notm}}.
 
 ### Utilisez Db2 Warehouse on Cloud comme source de données pour vos applications ou services {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
@@ -124,15 +130,43 @@ Lorsque vos applications utilisent la plateforme {{site.data.keyword.Bluemix_not
 ## Exemples
 {: #samples}
 
-Les liens suivants mènent à des exemples de démonstration indiquant comment se connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} à partir d'applications dans différents langages :
+Vous trouverez ici des liens vers des exemples montrant comment se connecter par programmation à votre base de données {{site.data.keyword.dashdbshort_notm}} à partir d'applications dans différents langages :
 {: shortdesc}
 
-   * [.NET ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [Exemples {{site.data.keyword.dashdbshort_notm}} sur GitHub ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows ODBC ou CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC Data Source Administrator](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [API REST](connecting/rest_api.html)
+
+## Vidéo : Présentation de Db2 Warehouse on Cloud
+{: #intro_vid}
+
+Regardez cette vidéo pour voir une introduction à {{site.data.keyword.dashdbshort_notm}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction à {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vidéo : Présentation du plan Flex Performance
+{: #intro_vid_flex}
+
+Regardez cette vidéo pour voir une introduction au plan Flex Performance de {{site.data.keyword.dashdbshort_notm}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Création d'une connexion depuis Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vidéo : Connexion d'une application d'analyse
+{: #cognos_vid}
+
+Regardez cette vidéo pour voir comment créer une connexion à partir de Cognos Analytics.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Création d'une connexion à partir de Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

@@ -13,10 +13,10 @@ lastupdated: "2018-05-08"
 {:screen: .screen}
 {:pre: .pre}
 
-# Daten zu IBM Cloud migrieren
+# Daten in {{site.data.keyword.Bluemix_notm}} migrieren
 {: #migration}
 
-Sie können Daten aus einer Datendatei in einem begrenzten Format (CSV oder TXT), die sich in einem lokalen Netzwerk oder in einem Objektspeicher (Amazon S3 oder IBM Cloud Object Storage) in {{site.data.keyword.dashdblong}} laden. Sie können Ihre Daten sogar von einem lokalen System migrieren.
+Sie können Daten aus einer Datendatei in einem Dateiformat mit Begrenzern (CSV oder TXT), die sich in einem lokalen Netzwerk oder in einem Objektspeicher (Amazon S3 oder {{site.data.keyword.Bluemix_notm}} Object Storage) befinden, in {{site.data.keyword.dashdblong}} laden. Sie können Ihre Daten sogar von einem lokalen System migrieren.
 {: shortdesc}
 
 ## Daten aus dem Objektspeicher laden
@@ -36,7 +36,7 @@ Um Daten von Amazon S3 zu laden, wählen Sie eine der folgenden Methoden aus:
       )      
     ```
 
-Um Daten aus IBM Cloud Object Storage mithilfe von externen Tabellen direkt zu laden, finden Sie hier eine Beispiel-SQL-Anweisung:
+Für das direkte Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage mithilfe von externen Tabellen finden Sie hier eine SQL-Beispielanweisung:
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -48,21 +48,23 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Hinweis:** Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
+**Hinweis:** Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
-## Daten von einem lokalen System migrieren
+Eine geführte Anleitung zum Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [Geführte {{site.data.keyword.dashdblong}}-Präsentation zum Laden von Daten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+
+## Daten eines lokalen Systems migrieren
 {: #onprem}
 
 Um Ihre Daten von einem lokalen System zu migrieren, wählen Sie abhängig von der Größe Ihres Datasets eine der folgenden Methoden:
 * Weniger als 25 TB Daten: [IBM Lift](#lift)
-* Mehr als 25 TB Daten: [IBM Cloud Mass Data Migration Service](#mdms)
+* Mehr als 25 TB Daten: [{{site.data.keyword.Bluemix_notm}} Mass Data Migration Service](#mdms)
 
 ### Lift
 {: #lift}
 
 Lift ist eine Anwendung, die Sie gebührenfrei nutzen können, um Ihre Daten aus verschiedenen Datenquellen, die in Tabelle 1 aufgelistet werden, zu {{site.data.keyword.Bluemix_notm}} zu migrieren. 
 
-| Zieldatenbank auf IBM Cloud | Datenquelle |
+|Zieldatenbank in {{site.data.keyword.Bluemix_notm}} | Datenquelle |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -77,16 +79,26 @@ Weitere Informationen zum Herunterladen und Installieren von Lift finden Sie unt
 
 Schritt-für-Schritt-Anweisungen für die Migration von Daten auf {{site.data.keyword.Bluemix_notm}} mithilfe von Lift finden Sie hier: [Daten auf {{site.data.keyword.dashdblong}} migrieren ![für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#docs){:new_window}.
 
-### IBM Cloud Mass Data Migration Service
+### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
 
-Der IBM Mass Data Migration Service (MDMS) kann genutzt werden, um die Daten großer IBM PureData Systems for Analytik (Netezza)-Datenbanken mit ca. 25 TB und mehr in eine vollständig verwaltete {{site.data.keyword.dashdblong}}-Datenbank auf {{site.data.keyword.Bluemix_notm}} zu migrieren.
+Der {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) kann genutzt werden, um die Daten großer IBM PureData Systems for Analytik (Netezza)-Datenbanken mit ca. 25 TB und mehr in eine vollständig verwaltete {{site.data.keyword.dashdblong}}-Datenbank auf {{site.data.keyword.Bluemix_notm}} zu migrieren.
 
 MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Petabytes an Daten physisch auf {{site.data.keyword.Bluemix_notm}} zu übertragen. MDMS ist eine mobile Speichereinheit mit 120 TB nutzbarer Speicherkapazität. Mit dieser Einheit können Sie allgemeine Übertragungsprobleme wie hohe Kosten, lange Übertragungszeiten und hohe Sicherheitsrisiken mithilfe eines einzigen Services lösen.
 
 ![Ansicht der Mass Data Migration Service-Einheit](images/mdms.svg)
 
-Weitere Informationen zur MDMS-Einheit finden Sie unter: [Einführung in IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Weitere Informationen zur MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen:  
+- [Einführung zu {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
-Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit finden Sie unter: [Von IBM PureData System for Analytics (Netezza) migrieren](/docs/services/Db2whc/pda_db2whc_mdms.html).
+Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen:  
+- [Daten aus IBM PureData System for Analytics (Netezza)-Datenbank migrieren](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+
+## Lernprogramm zur Migration von Daten aus lokalen relationalen Datenbanken
+
+{: #tutorial}
+
+In diesem Lernprogramm wird vermittelt, wie Daten aus lokalen relationalen Datenbanken für Business Analytics-Anwendungen in {{site.data.keyword.dashdbshort_notm}} migriert werden können.  
+
+[Lernprogramm zum Hybrid-Data-Warehousing mit {{site.data.keyword.dashdbshort_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
 

@@ -16,5 +16,5 @@ lastupdated: "2018-04-30"
 # Umgebung mit privatem Netz
 {: #priv_net_env}
 
-Sie können anfordern, dass Ihr {{site.data.keyword.dashdbshort_notm}}-Service in einer netzisolierten Umgebung in {{site.data.keyword.Bluemix}} bereitgestellt wird. Wenden Sie sich an Ihren [{{site.data.keyword.IBM_notm}} Analytics-Vertriebsbeauftragten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
+Sie können anfordern, dass Ihr {{site.data.keyword.dashdbshort_notm}}-Service in einer Umgebung mit Netzisolierung in {{site.data.keyword.Bluemix}} bereitgestellt wird. Wenden Sie sich an Ihren [{{site.data.keyword.IBM_notm}} Analytics-Vertriebsbeauftragten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
 {: shortdesc}

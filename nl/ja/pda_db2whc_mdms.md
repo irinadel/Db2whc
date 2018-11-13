@@ -156,7 +156,7 @@ MDMS デバイスは、標準的なすべての電力範囲に対応していま
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **注:** データ・エクスポート時に `USING` 節オプションを使用した場合、節オプションを覚えておくか、保存しておいてください。 後ほど、IBM Cloud Object Storage から外部表をロードするプロセスでその節を再利用します。
+       **注:** データ・エクスポート時に `USING` 節オプションを使用した場合、節オプションを覚えておくか、保存しておいてください。 後ほど、{{site.data.keyword.Bluemix_notm}} Object Storage から外部表をロードするプロセスでその節を再利用します。
 
        SQL ステートメントについて詳しくは、[CREATE EXTERNAL TABLE ステートメント ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window} を参照してください。 
 
@@ -186,10 +186,10 @@ MDMS デバイスは、標準的なすべての電力範囲に対応していま
 
 Cloud Object Storage バケットへのデータのマイグレーションが完了したら、[{{site.data.keyword.dashdbshort_notm}} データベースへのデータのインポート](#import)に進むことができます。
 
-## ステップ 6: IBM Cloud Object Storage からのデータのインポート
+## ステップ 6: {{site.data.keyword.Bluemix_notm}} Object Storage からのデータのインポート
 {: #import}
 
-外部表を使用して、IBM Cloud Object Storage から直接データをロードする場合、以下のサンプル SQL ステートメントを使用できます。
+外部表を使用して、{{site.data.keyword.Bluemix_notm}} Object Storage から直接データをロードする場合、以下のサンプル SQL ステートメントを使用できます。
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -203,9 +203,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **注:** 
 * CREATE EXTERNAL TABLE ステートメントを使用して PureData System for Analytics (Netezza) データベースからデータを抽出するときに使用したのと同じ `USING` 節オプションを必ず使用してください。
-* IBM Cloud Object Storage の場合、HMAC 資格情報を作成するために、新規サービス資格情報を作成する際、*「インラインの構成パラメーターの追加」*フィールドに {"HMAC:true"} を指定してください。
+* {{site.data.keyword.Bluemix_notm}} Object Storage の場合、HMAC 資格情報を作成するために、新規サービス資格情報を作成する際、*「インラインの構成パラメーターの追加」*フィールドに {"HMAC:true"} を指定してください。
 
-IBM Cloud Object Storage からデータをインポートする方法に関するガイド付きのチュートリアルについては、[IBM Db2 Warehouse on Cloud ガイド付きデモ: データ・ロード方法の探索 (IBM Db2 Warehouse on Cloud guided demo: Explore data loading) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window} を参照してください。
+{{site.data.keyword.Bluemix_notm}} Object Storage からデータをインポートする方法に関するガイド付きのチュートリアルについては、[IBM Db2 Warehouse on Cloud ガイド付きデモ: データ・ロード方法の探索 (IBM Db2 Warehouse on Cloud guided demo: Explore data loading) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window} を参照してください。
 
 ## ステップ 7: MDMS デバイスのデータ消去
 {: #erase}

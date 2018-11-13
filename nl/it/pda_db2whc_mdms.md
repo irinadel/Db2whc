@@ -156,7 +156,7 @@ Se è richiesto un fattore di forma differente della connessione Ethernet, devi 
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **Nota:** se hai utilizzato le opzioni di clausola `USING` per l'esportazione dei dati, ricorda o salva le opzioni di clausola. La clausola viene riutilizzata successivamente durante il processo di caricamento della tabella esterna da IBM Cloud Object Storage.
+       **Nota:** se hai utilizzato le opzioni di clausola `USING` per l'esportazione dei dati, ricorda o salva le opzioni di clausola. La clausola viene riutilizzata successivamente durante il processo di caricamento della tabella esterna da {{site.data.keyword.Bluemix_notm}} Object Storage.
 
        Per ulteriori informazioni sull'istruzione SQL, consulta: [CREATE EXTERNAL TABLE statement ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
 
@@ -186,10 +186,10 @@ Durante il processo di trasferimento dei dati, lo stato della richiesta viene vi
 
 Dopo che la migrazione dei tuoi dati nel bucket Cloud Object Storage sarà stata completata, puoi procedere a [importare i tuoi dati nel tuo database {{site.data.keyword.dashdbshort_notm}}](#import).
 
-## Passo 6: Importazione di dati da IBM Cloud Object Storage
+## Passo 6: Importazione di dati da {{site.data.keyword.Bluemix_notm}} Object Storage
 {: #import}
 
-Per caricare dati da IBM Cloud Object Storage utilizzando direttamente le tabelle esterne, viene qui di seguito riportata un'istruzione SQL di esempio:
+Per caricare dati da {{site.data.keyword.Bluemix_notm}} Object Storage utilizzando direttamente le tabelle esterne, viene qui di seguito riportata un'istruzione SQL di esempio:
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -203,9 +203,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Note:** 
 * Assicurati di utilizzare le stesse opzioni di clausola `USING` che hai utilizzato per estrarre i dati dal tuo database PureData System for Analytics (Netezza) utilizzando l'istruzione CREATE EXTERNAL TABLE.
-* Per IBM Cloud Object Storage, per creare le credenziali HMAC quando si creano nuove credenziali di servizio, specifica, {"HMAC:true"} nel campo *Aggiungi parametri di configurazione inline*.
+* Per {{site.data.keyword.Bluemix_notm}} Object Storage, per creare le credenziali HMAC quando si creano nuove credenziali di servizio, specifica, {"HMAC:true"} nel campo *Aggiungi parametri di configurazione inline*.
 
-Per un'esercitazione guidata sull'importazione dei dati da IBM Cloud Object Storage, consulta: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+Per un'esercitazione guidata sull'importazione dei dati da {{site.data.keyword.Bluemix_notm}} Object Storage, consulta: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
 
 ## Passo 7: Eliminazione dei dati sul dispositivo MDMS
 {: #erase}

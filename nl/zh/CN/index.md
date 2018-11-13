@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 入门
@@ -64,12 +67,15 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ### 从本地计算机连接应用程序或喜爱的工具
 {: #connect_apps}
 
-通过完成以下步骤，配置本地环境以连接到 Db2 Warehouse 数据库：
+通过完成以下步骤，配置本地环境以连接到 {site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-1. 从 Db2 Warehouse on Cloud Web 控制台下载[驱动程序包 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window}。
-2. 在运行应用程序和工具的计算机上[安装驱动程序包 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
-3. 为 Db2 Warehouse 数据库[配置驱动程序文件 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
+1. 通过 {{site.data.keyword.dashdbshort_notm}} Web 控制台下载[驱动程序包](connecting/driver_pkg.html)。
+2. 在运行应用程序或工具的计算机上安装驱动程序包：
+   - [在 Linux 或 PowerLinux 上安装](connecting/install_linux.html)
+   - [在 Mac OS X 上安装](connecting/install_mac.html)
+   - [在 Windows 上安装](connecting/install_win.html)
+3. 为 {site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](connecting/driver_pkg_cfg.html)。
 
 ### 使用 Db2 Warehouse on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}
@@ -134,15 +140,43 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ## 样本
 {: #samples}
 
-以下链接是演示在不同的语言中，如何从应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的样本：
+下面是一些样本的链接，这些样本演示了在不同的语言中，如何以编程方式从应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-   * [.NET ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [GitHub 上的 {{site.data.keyword.dashdbshort_notm}} 样本 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows ODBC 或 CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC 数据源管理器](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST API](connecting/rest_api.html)
+
+## 视频：Db2 Warehouse on Cloud 简介
+{: #intro_vid}
+
+观看以下视频以了解 {{site.data.keyword.dashdbshort_notm}} 简介。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="{{site.data.keyword.dashdbshort_notm}} 简介" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 视频：Flex Performance 套餐简介
+{: #intro_vid_flex}
+
+观看以下视频以了解 {{site.data.keyword.dashdbshort_notm}} Flex Performance 套餐简介。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="通过 Cognos Analytics 创建连接" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 视频：连接分析应用程序
+{: #cognos_vid}
+
+观看以下视频以了解如何通过 Cognos Analytics 创建连接。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="通过 Cognos Analytics 创建连接" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

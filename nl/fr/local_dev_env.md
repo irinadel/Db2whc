@@ -21,5 +21,5 @@ Si vous souhaitez configurer un environnement de développement Db2 local, vous 
 
 Pour obtenir les prérequis et les instructions d'installation, cliquez sur le lien correspondant à votre système d'exploitation : 
 
-* [Windows et Macintosh ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
-* [Linux ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}
+- [Windows et Macintosh ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
+- [Linux ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}

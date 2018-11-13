@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 概説
@@ -64,12 +67,15 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 ### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
 {: #connect_apps}
 
-以下の手順を実行して、Db2 ウェアハウス・データベースに接続するようにローカル環境を構成します。
+以下の手順を実行して、{site.data.keyword.dashdbshort_notm}} データベースに接続するようにローカル環境を構成します。
 {: shortdesc}
 
-1. Db2 Warehouse on Cloud Web コンソールから、[ドライバー・パッケージ ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} をダウンロードします。
-2. アプリまたはツールが実行されているコンピューターで [ドライバー・パッケージのインストール![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} を行います。
-3. Db2 ウェアハウス・データベース用に[ドライバー・ファイルの構成 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} を行います。
+1. [ ドライバー・パッケージ](connecting/driver_pkg.html)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
+2. アプリまたはツールが実行されているコンピューターにドライバー・パッケージをインストールします。
+   - [Linux または PowerLinux 上でのインストール](connecting/install_linux.html)
+   - [Mac OS X 上でのインストール](connecting/install_mac.html)
+   - [Windows 上でのインストール](connecting/install_win.html)
+3. {site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](connecting/driver_pkg_cfg.html)。
 
 ### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 Warehouse on Cloud を使用する
 {: #data_src}
@@ -124,15 +130,44 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 ## 例
 {: #samples}
 
-各種の言語で作成されたアプリケーションから {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法を示すサンプルへのリンクは次のとおりです。
+各種の言語で作成されたアプリケーションから {{site.data.keyword.dashdbshort_notm}} データベースへのプログラマチックな接続方法を示すサンプルへのリンクは次のとおりです。
 {: shortdesc}
 
-   * [.NET ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [GitHub にある {{site.data.keyword.dashdbshort_notm}} サンプル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC 
+](connecting/jdbc.html)
+- [Microsoft Windows ODBC または CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC データ ソース アドミニストレータ](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST API](connecting/rest_api.html)
+
+## ビデオ: Introducing Db2 Warehouse on Cloud
+{: #intro_vid}
+
+{{site.data.keyword.dashdbshort_notm}} の概要を確認するには、このビデオを視聴してください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## ビデオ: Introducing the Flex Performance plan
+{: #intro_vid_flex}
+
+{{site.data.keyword.dashdbshort_notm}} Flex Performance plan の概要を確認するには、このビデオを視聴してください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## ビデオ: Connecting an analytics application
+{: #cognos_vid}
+
+Cognos Analytics からの接続の作成方法を確認するには、このビデオを視聴してください。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

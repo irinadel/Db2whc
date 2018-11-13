@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -26,4 +26,27 @@ lastupdated: "2018-03-15"
 
 {{site.data.keyword.dashdbshort_notm}}의 완전한 관리 서비스는 소프트웨어 업그레이드, 운영 체제 업데이트 및 하드웨어 유지보수 모두를 처리합니다. 서비스에는 데이터베이스 및 인프라의 24x7 상태 모니터링이 포함됩니다. 하드웨어 또는 소프트웨어 장애가 발생하는 경우 서비스는 자동으로 다시 시작됩니다.
 {: shortdesc}
+
+<!-- ## Provisioning of Db2 Warehouse on Cloud
+{: #whse_provision}
+
+The {{site.data.keyword.dashdbshort_notm}} database can be provisioned on {{site.data.keyword.BluSoftlayer_full}} and for AWS.
+{: shortdesc}
+
+If you want to have the data warehouse provisioned for AWS, select the **MPP Small for AWS** plan. -->
+
+## 데이터 시각화
+{: #visualize}
+
+다음 애플리케이션에 연결하여 분석을 분석하고 시각화할 수 있습니다.
+
+- [Watson Studio(이전의 Data Science Experience)](connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Looker ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Tableau](connecting/vis_bi.html#tableau)
+- [SPSS Statistics](connecting/data_sci.html#spss_stats)
+- [SAS](connecting/data_sci.html#sas)
+- [Microsoft Excel](connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
+
 

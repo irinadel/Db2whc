@@ -13,10 +13,10 @@ lastupdated: "2018-05-08"
 {:screen: .screen}
 {:pre: .pre}
 
-# Migration de données vers IBM Cloud
+# Migration des données vers {{site.data.keyword.Bluemix_notm}}
 {: #migration}
 
-Vous pouvez charger des données à partir d'un fichier de données dans un format délimité tel que CSV ou TXT situé sur un réseau local ou dans un magasin de données (Amazon S3 ou IBM Cloud Object Storage) vers {{site.data.keyword.dashdblong}}. Vous pouvez même migrer vos données à partir d'un système sur site.
+Vous pouvez charger des données depuis un fichier de données dans un format délimité (CSV ou TXT) situé sur un réseau local ou dans un conteneur d'objets (Amazon S3 ou {{site.data.keyword.Bluemix_notm}} Object Storage) vers {{site.data.keyword.dashdblong}}. Vous pouvez même migrer vos données à partir d'un système sur site.
 {: shortdesc}
 
 ## Chargement de données depuis un conteneur d'objets
@@ -36,7 +36,7 @@ Pour charger des données depuis Amazon S3, sélectionnez l'une des méthodes su
       )      
     ```
 
-Pour charger les données depuis IBM Cloud Object Storage en utilisant directement des tables externes, prenez connaissance de l'instruction SQL exemple suivante :
+Pour charger les données depuis {{site.data.keyword.Bluemix_notm}} Object Storage en utilisant directement les tables externes, utilisez l'exemple d'instruction SQL ci-dessous :
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -48,21 +48,23 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Remarque :** pour IBM Cloud Object Storage, pour créer des données d'identification HMAC lors de la création de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+**Remarque :** Pour {{site.data.keyword.Bluemix_notm}} Object Storage, pour créer des données d'identification HMAC lorsque vous créez de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+
+Pour savoir comment charger les données depuis {{site.data.keyword.Bluemix_notm}} Object Storage, consultez le document [{{site.data.keyword.dashdblong}} guide : Explore data loading ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 
 ## Migration de données depuis un système sur site
 {: #onprem}
 
 Pour migrer vos données à partir d'un système sur site, choisissez l'une des méthodes suivantes selon la taille de votre jeu de données :
 * Moins de 25 To de données : [IBM Lift](#lift)
-* 25 To de données et plus : [IBM Cloud Mass Data Migration Service](#mdms)
+* 25 To de données et plus : [{{site.data.keyword.Bluemix_notm}} Mass Data Migration Service](#mdms)
 
 ### Lift
 {: #lift}
 
 Lift est une application gratuite que vous pouvez utiliser pour migrer vos données dans {{site.data.keyword.Bluemix_notm}} à partir des différentes sources de données, répertoriées dans le tableau 1. 
 
-| Base de données cible dans IBM Cloud | Source de données |
+| Base de données cible sur {{site.data.keyword.Bluemix_notm}} | Source de données |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -77,16 +79,25 @@ Pour télécharger et installer, voir : [Download Lift CLI![Icône de lien exter
 
 Pour des instructions pas à pas relatives à la migration de vos données dans {{site.data.keyword.Bluemix_notm}} en utilisant Lift, voir : [Migrate data to {{site.data.keyword.dashdblong}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}.
 
-### Périphérique IBM Cloud MDMS (Mass Data Migration Service)
+### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
 
-Le périphérique IBM Cloud MDMS (Mass Data Migration Service) peut-être utilisé pour migrer les données provenant de grosses bases de données IBM PureData Systems for Analytics (Netezza) de 25 To et plus vers une base de données {{site.data.keyword.dashdblong}} entièrement gérée sur {{site.data.keyword.Bluemix_notm}}.
+Le périphérique {{site.data.keyword.Bluemix_notm}} MDMS (Mass Data Migration Service) peut-être utilisé pour migrer les données provenant de grosses bases de données IBM PureData Systems for Analytics (Netezza) de 25 To et plus vers une base de données {{site.data.keyword.dashdblong}} sur {{site.data.keyword.Bluemix_notm}}.
 
 MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'importants volumes de données (mesurés en téraoctets ou pétaoctets) vers {{site.data.keyword.Bluemix_notm}}. MDMS est un périphérique de stockage mobile proposant 120 To de capacité de stockage utilisable. Il vous permet de relever les défis posés quotidiennement par le transfert de gros volumes d'informations : coûts élevés, temps de transfert longs et problèmes de sécurité – tout ceci, dans un seul et même service.
 
 ![Vue du périphérique Mass Data Migration Service](images/mdms.svg)
 
-Pour plus d'informations sur le périphérique MDMS, voir : [Getting started with IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Pour en savoir plus sur le périphérique MDMS, voir : 
+- [Initiation à {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
-Pour plus d'informations sur la migration de vos données entre une base de données IBM PureData System for Analytics (Netezza) et une base de données {{site.data.keyword.dashdblong}} en utilisant le périphérique MDMS, voir [Migration depuis IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html).
+Pour savoir comment faire migrer vos données d'une base de données IBM PureData System for Analytics (Netezza) vers une base de données {{site.data.keyword.dashdblong}} à l'aide du périphérique MDMS, voir : 
+- [Migration depuis IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+
+## Tutoriel : Migration des données depuis des bases de données relationnelles sur site
+{: #tutorial}
+
+Ce tutoriel indique comment faire migrer vos données d'une base de données relationnelle sur site vers {{site.data.keyword.dashdbshort_notm}} pour les applications d'analyse commerciale. 
+
+[Création d'entrepôts de données hybrides avec {{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
 

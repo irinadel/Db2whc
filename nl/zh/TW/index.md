@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 開始使用
@@ -64,12 +67,15 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 ### 連接本端電腦的應用程式或您最愛的工具
 {: #connect_apps}
 
-請完成下列步驟，配置本端環境以連接至 Db2 倉儲資料庫：
+請完成下列步驟，配置本端環境以連接至 {site.data.keyword.dashdbshort_notm}} 資料庫：
 {: shortdesc}
 
-1. 從 Db2 Warehouse on Cloud Web 主控台下載[驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window}。
-2. 在您的應用程式或工具執行所在的電腦上，[安裝驅動程式套件 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}。
-3. 為您的 Db2 倉儲資料庫[配置驅動程式檔案 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}。
+1. 從 {{site.data.keyword.dashdbshort_notm}} Web 主控台下載[驅動程式套件](connecting/driver_pkg.html)。
+2. 在您的應用程式或工具執行所在的電腦上，安裝驅動程式套件。
+   - [在 Linux 或 PowerLinux 上安裝](connecting/install_linux.html)
+   - [在 Mac OS X 上安裝](connecting/install_mac.html)
+   - [在 Windows 上安裝](connecting/install_win.html)
+3. 針對 {site.data.keyword.dashdbshort_notm}} 資料庫[配置驅動程式檔案](connecting/driver_pkg_cfg.html)。
 
 ### 將 Db2 Warehouse on Cloud 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
 {: #data_src}
@@ -124,15 +130,43 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 ## 範例
 {: #samples}
 
-以下鏈結範例示範如何從不同語言的應用程式連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
+以下鏈結範例示範如何從不同語言的應用程式以程式設計方式連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 {: shortdesc}
 
-   * [.NET ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [GitHub 上的 {{site.data.keyword.dashdbshort_notm}} 範例 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows ODBC 或 CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC 資料來源管理者](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST API](connecting/rest_api.html)
+
+## 視訊：簡介 Db2 Warehouse on Cloud
+{: #intro_vid}
+
+觀看此視訊，以查看 {{site.data.keyword.dashdbshort_notm}} 的簡介。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="簡介 {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 視訊：簡介彈性效能方案
+{: #intro_vid_flex}
+
+觀看此視訊，以查看「{{site.data.keyword.dashdbshort_notm}} 彈性效能」方案的簡介。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 視訊：連接分析應用程式
+{: #cognos_vid}
+
+觀看此視訊，以查看如何從 Cognos Analytics 建立連線。
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

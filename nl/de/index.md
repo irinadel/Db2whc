@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Einführung
@@ -28,7 +31,7 @@ Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um ein
 ## Kostenfreier Test
 {: #freetrial}
 
-Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
+Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
 
 ## Schnittstellen
 {: #interfaces}
@@ -64,12 +67,15 @@ Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Z
 ### Herstellen einer Verbindung für Anwendungen oder bevorzugte Tools vom lokalen Computer
 {: #connect_apps}
 
-Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur Db2 Warehouse-Datenbank zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur {site.data.keyword.dashdbshort_notm}}-Datenbank zu konfigurieren:
 {: shortdesc}
 
-1. Laden Sie das [Treiberpaket![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} von der Db2 Warehouse on Cloud-Webkonsole herunter.
-2. [Installieren Sie das Treiberpaket ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden.
-3. [Konfigurieren Sie die Treiberdateien![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} für die Db2 Warehouse-Datenbank.
+1. Laden Sie das [Treiberpaket](connecting/driver_pkg.html) über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunter. 
+2. Installieren Sie das Treiberpaket auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden:
+   - [Installation unter Linux oder PowerLinux](connecting/install_linux.html)
+   - [Installation unter Mac OS X](connecting/install_mac.html)
+   - [Installation unter Windows](connecting/install_win.html)
+3. [Konfigurieren Sie die Treiberdateien](connecting/driver_pkg_cfg.html) für Ihre {site.data.keyword.dashdbshort_notm}}-Datenbank. 
 
 ### Verwenden von Db2 Warehouse on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}
@@ -80,7 +86,7 @@ Für Apps, die per Hosting in {{site.data.keyword.Bluemix_notm}} bereitgestellt 
 Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, können Sie die Umgebungsvariable `VCAP _SERVICES` nutzen, um das Angeben von Datenbankdetails und -berechtigungsnachweisen zu vereinfachen:
 1. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard auf der Registerkarte **Verbindungen** der Servicedetailseite für Ihren {{site.data.keyword.dashdbshort_notm}}-Service auf die Schaltfläche **Verbindung erstellen**.
 2. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-App aus, die mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank als Datenquelle verwendet werden soll, und klicken Sie dann auf die Schaltfläche **Verbinden**.
-3. Aktualisieren Sie den Anwendungscode, um Datenbankdetails- und -berechtigungsnachweise aus der Umgebungsvariablen `VCAP_SERVICES` abzurufen.
+3. Aktualisieren Sie den Anwendungscode, um Datenbankdetails- und -berechtigungsnachweise aus der Umgebungsvariablen `VCAP_SERVICES` abzurufen: 
 
     **Beispiel ohne `VCAP_SERVICES`**
 
@@ -124,15 +130,43 @@ Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, könn
 ## Beispiele
 {: #samples}
 
-Über die folgenden Links können Sie Beispiele aufrufen, die veranschaulichen, wie Sie eine Verbindung von Anwendungen in verschiedenen Sprachen zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen:
+Über die folgenden Links können Sie Beispiele aufrufen, die veranschaulichen, wie Sie von Anwendungen in verschiedenen Sprachen aus eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank programmgestützt herstellen:
 {: shortdesc}
 
-   * [.NET ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [{{site.data.keyword.dashdbshort_notm}}-Beispiele in GitHub ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows-ODBC oder -Befehlszeilenschnittstelle](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC-Datenquellenadministrator](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST-API](connecting/rest_api.html)
+
+## Video mit Einführung zu Db2 Warehouse on Cloud
+{: #intro_vid}
+
+Sehen Sie sich das folgende Video an, um eine Einführung in {{site.data.keyword.dashdbshort_notm}} zu erhalten. 
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Video mit Einführung zum Flex Performance-Plan
+{: #intro_vid_flex}
+
+Das folgende Video enthält eine Einführung in den Flex Performance-Plan von {{site.data.keyword.dashdbshort_notm}}. 
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Video zum Herstellen einer Verbindung mit einer Analyseanwendung
+{: #cognos_vid}
+
+In dem folgenden Video erfahren Sie, wie Sie eine Verbindung von Cognos Analytics aus erstellen können. 
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

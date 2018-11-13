@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 시작하기
@@ -64,12 +67,15 @@ lastupdated: "2018-03-15"
 ### 로컬 컴퓨터에서 애플리케이션 또는 선호하는 도구 연결
 {: #connect_apps}
 
-다음 단계를 완료하여 Db2 웨어하우스 데이터베이스에 연결하기 위한 로컬 환경을 구성하십시오.
+다음 단계를 완료하여 {site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 위한 로컬 환경을 구성하십시오.
 {: shortdesc}
 
-1. Db2 Warehouse on Cloud 웹 콘솔에서 [드라이버 패키지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window}를 다운로드하십시오.
-2. 앱 또는 도구가 실행 중인 컴퓨터에서 [드라이버 패키지 설치 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window}를 수행하십시오.
-3. Db2 웨어하우스 데이터베이스에 대해 [드라이버 파일 구성 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window}을 수행하십시오.
+1. {{site.data.keyword.dashdbshort_notm}} 웹 콘솔에서 [드라이버 패키지](connecting/driver_pkg.html)를 다운로드하십시오.
+2. 앱 또는 도구가 실행 중인 컴퓨터에서 드라이버 패키지를 설치하십시오.
+   - [Linux 또는 PowerLinux에서 설치](connecting/install_linux.html)
+   - [Mac OS X에서 설치](connecting/install_mac.html)
+   - [Windows에서 설치](connecting/install_win.html)
+3. {site.data.keyword.dashdbshort_notm}} 데이터베이스에 대한 [드라이버 파일을 구성](connecting/driver_pkg_cfg.html)하십시오.
 
 ### {{site.data.keyword.Bluemix_notm}} 앱 또는 서비스의 데이터 소스로 Db2 Warehouse on Cloud 사용
 {: #data_src}
@@ -77,10 +83,10 @@ lastupdated: "2018-03-15"
 {{site.data.keyword.Bluemix_notm}}에서 호스팅되는 앱은 로컬 애플리케이션을 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 것과 동일한 방식으로 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할 수 있습니다.
 {: shortdesc}
 
-앱이 {{site.data.keyword.Bluemix_notm}} 플랫폼을 사용할 때 `VCAP _SERVICES` 환경 변수를 이용하여 데이터베이스 세부사항 및 신임 정보를 지정하는 태스크를 단순화할 수 있습니다.
+앱이 {{site.data.keyword.Bluemix_notm}} 플랫폼을 사용할 때 `VCAP _SERVICES` 환경 변수를 이용하여 데이터베이스 세부사항 및 인증 정보를 지정하는 태스크를 단순화할 수 있습니다.
 1. {{site.data.keyword.Bluemix_notm}} 대시보드에 있는 {{site.data.keyword.dashdbshort_notm}} 서비스를 위한 서비스 세부사항 페이지의 **연결** 탭에서 **연결 작성** 단추를 클릭하십시오.
 2. {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 데이터 소스로 사용할 {{site.data.keyword.Bluemix_notm}} 앱을 선택한 다음 **연결** 단추를 클릭하십시오.
-3. 애플리케이션 코드를 업데이트하여 `VCAP_SERVICES` 환경 변수에서 데이터베이스 세부사항 및 신임 정보를 검색하십시오.
+3. 애플리케이션 코드를 업데이트하여 `VCAP_SERVICES` 환경 변수에서 데이터베이스 세부사항 및 인증 정보를 검색하십시오.
 
     **`VCAP_SERVICES`가 없는 예제**
 
@@ -124,15 +130,43 @@ lastupdated: "2018-03-15"
 ## 샘플
 {: #samples}
 
-다음은 여러 언어로 된 애플리케이션에서 사용자의 {{site.data.keyword.dashdbshort_notm}} 데이터베이스로 연결하는 방법을 보여주는 샘플에 대한 링크입니다.
+다음은 여러 언어로 된 애플리케이션에서 프로그래밍 방식으로 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 방법을 보여주는 샘플에 대한 링크입니다.
 {: shortdesc}
 
-   * [.NET ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [GitHub의 {{site.data.keyword.dashdbshort_notm}} 샘플 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [Microsoft Windows ODBC 또는 CLI](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [ODBC 데이터 소스 관리자](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [REST API](connecting/rest_api.html)
+
+## 동영상: Db2 Warehouse on Cloud 소개
+{: #intro_vid}
+
+{{site.data.keyword.dashdbshort_notm}}에 대한 소개를 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="소개 - {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 동영상: Flex Performance 플랜 소개
+{: #intro_vid_flex}
+
+{{site.data.keyword.dashdbshort_notm}} Flex Performance 플랜에 대한 소개를 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## 동영상: 분석 애플리케이션 연결
+{: #cognos_vid}
+
+Cognos Analytics에서 연결을 작성하는 방법을 보려면 이 동영상을 시청하십시오.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

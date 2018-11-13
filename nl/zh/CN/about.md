@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -26,4 +26,27 @@ lastupdated: "2018-03-15"
 
 {{site.data.keyword.dashdbshort_notm}} 的全面受管服务会处理所有软件升级、操作系统更新和硬件维护。该服务全天不间断监视数据库和基础架构的运行状况。当硬件或软件发生故障时，该服务将自动重新启动。
 {: shortdesc}
+
+<!-- ## Provisioning of Db2 Warehouse on Cloud
+{: #whse_provision}
+
+The {{site.data.keyword.dashdbshort_notm}} database can be provisioned on {{site.data.keyword.BluSoftlayer_full}} and for AWS.
+{: shortdesc}
+
+If you want to have the data warehouse provisioned for AWS, select the **MPP Small for AWS** plan. -->
+
+## 数据可视化
+{: #visualize}
+
+您可以通过连接到以下应用程序，对您的分析内容进行分析并可视化：
+
+- [Watson Studio（原先的 Data Science Experience）](connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Looker ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Tableau](connecting/vis_bi.html#tableau)
+- [SPSS Statistics](connecting/data_sci.html#spss_stats)
+- [SAS](connecting/data_sci.html#sas)
+- [Microsoft Excel](connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
+
 

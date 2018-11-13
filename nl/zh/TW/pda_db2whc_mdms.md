@@ -155,7 +155,7 @@ MDMS 裝置接受所有標準電源範圍。![電源範圍](/images/PowerRating.
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **附註：**如果您已使用 `USING` 子句選項進行資料匯出，請記住或儲存子句選項。稍後在從 IBM Cloud Object Storage 進行外部表格載入處理程序期間會重複使用此子句。
+       **附註：**如果您已使用 `USING` 子句選項進行資料匯出，請記住或儲存子句選項。稍後在從 {{site.data.keyword.Bluemix_notm}} Object Storage 進行外部表格載入處理程序期間會重複使用此子句。
 
        如需 SQL 陳述式的相關資訊，請參閱：[CREATE EXTERNAL TABLE 陳述式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}。 
 
@@ -185,10 +185,10 @@ MDMS 裝置接受所有標準電源範圍。![電源範圍](/images/PowerRating.
 
 當您的資料移轉至 Cloud Object Storage 儲存區完成時，可以繼續[將您的資料匯入至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫](#import)。
 
-## 步驟 6：從 IBM Cloud Object Storage 匯入資料
+## 步驟 6：從 {{site.data.keyword.Bluemix_notm}} Object Storage 匯入資料
 {: #import}
 
-若要直接從 IBM Cloud Object Storage 使用「外部表格」來載入資料，下列是範例 SQL 陳述式：
+若要直接從 {{site.data.keyword.Bluemix_notm}} Object Storage 使用「外部表格」來載入資料，下列是範例 SQL 陳述式：
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -202,9 +202,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **附註：** 
 * 確定使用您已用來從 PureData System for Analytics (Netezza) 資料庫擷取資料的相同 `USING` 子句選項，方法為使用 CREATE EXTERNAL TABLE 陳述式。
-* 若為 IBM Cloud Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數*欄位中指定 {"HMAC:true"}。
+* 若為 {{site.data.keyword.Bluemix_notm}} Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數*欄位中指定 {"HMAC:true"}。
 
-如需從 IBM Cloud Object Storage 匯入資料的引導式指導教學，請參閱 [IBM Db2 Warehouse on Cloud 引導示範：探索資料載入 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}。
+如需從 {{site.data.keyword.Bluemix_notm}} Object Storage 匯入資料的引導式指導教學，請參閱 [IBM Db2 Warehouse on Cloud 引導示範：探索資料載入 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}。
 
 ## 步驟 7：消除 MDMS 裝置
 {: #erase}

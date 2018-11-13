@@ -44,7 +44,7 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
 3. Klicken Sie auf die Option zum **Anfordern der Einheit**, um das Bestellformular zu öffnen.
 4. Füllen Sie jedes Feld im Bestellformular für die **Mass Data Migration** aus.
    - **Versandadresse**: Dieses Formular ist nicht vorab ausgefüllt und jedes Feld ist bearbeitbar. Geben Sie im Hinweisfeld den Namen der Person an, die die Zustellung der Einheit annehmen soll. Berücksichtigen Sie bei der Auswahl des Lieferorts das Gewicht der Einheit (30 kg mit Verpackung) und die Zugangsmöglichkeiten. <br/> (**Hinweis**: Die Einheit ist mit Rädern und einem Kipphebel für eine leichtere Handhabung ausgestattet.)
-   - **Wichtige Kontakte für die Migration**: Dieses Formular ist nicht vorab ausgefüllt. Jedes Feld ist bearbeitbar. Es können mehrere Personen angegeben werden.
+   - **Wichtige Kontakte für die Migration**: Dieses Formular ist nicht vorab ausgefüllt. Jedes Feld ist bearbeitbar. Es können mehrere Personen hinzugefügt werden.
    - **Rechenzentrum-Netzkonfiguration**: Stellen Sie Netzkonfigurationsdetails für die vorherige Bereitstellung des Eth3-Ports auf der MDMS-Einheit vor dem Versand zur Verfügung.
    - **Daten-Offload-Zieladresse**: Wählen Sie aus der Liste Ihr vorhandenes Zielkonto aus.
    - **Anfragename**: Geben Sie einen Namen ein, damit Sie Ihre Bestellung verfolgen können.
@@ -156,7 +156,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **Hinweis:** Wenn Sie die Klauseloptionen `USING` für den Datenexport verwendet haben, notieren oder speichern Sie sich diese Klauseloptionen. Die Klausel wird später beim Laden der externen Tabelle von IBM Cloud Object Storage erneut verwendet.
+       **Hinweis:** Wenn Sie die Klauseloptionen `USING` für den Datenexport verwendet haben, notieren oder speichern Sie sich diese Klauseloptionen. Die Klausel wird später beim Laden der externen Tabelle von {{site.data.keyword.Bluemix_notm}} Object Storage erneut verwendet.
 
        Weitere Informationen zur SQL-Anweisung finden Sie unter: [Anweisung CREATE EXTERNAL TABLE ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
 
@@ -186,10 +186,10 @@ Während des Datenübertragungsprozesses wird der Anfragestatus als *Daten werde
 
 Wenn die Migration Ihrer Daten in den Cloud Object Storage-Bucket abgeschlossen ist, können Sie mit dem [Import Ihrer Daten in Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank fortfahren](#import).
 
-## Schritt 6: Datenimport aus IBM Cloud Object Storage
+## Schritt 6: Datenimport aus {{site.data.keyword.Bluemix_notm}} Object Storage
 {: #import}
 
-Um Daten aus IBM Cloud Object Storage mithilfe von externen Tabellen direkt zu laden, finden Sie hier eine Beispiel-SQL-Anweisung:
+Für das direkte Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage mithilfe von externen Tabellen finden Sie hier eine SQL-Beispielanweisung: 
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -203,14 +203,14 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Hinweise:** 
 * Stellen Sie sicher, dass Sie die gleichen `USING`-Klauseloptionen verwenden, die Sie zum Extrahieren der Daten aus Ihrer PureData System für Analytics-Datenbank (Netezza) mithilfe der Anweisung CREATE EXTERNAL TABLE verwendet haben.
-* Wenn Sie IBM Cloud Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
+* Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
-Eine Anleitung zum Importieren von Daten aus IBM Cloud Object Storage finden Sie unter: [IBM Db2 Warehouse on Cloud geführte Demo: Laden von Daten erkunden ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+Eine Anleitung zum Importieren von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [IBM Db2 Warehouse on Cloud geführte Demo: Laden von Daten erkunden ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
 
-## Schritt 7: Datenlöschung von der MDMS-Einheit
+## Schritt 7: Löschen von Daten der MDMS-Einheit
 {: #erase}
 
-{{site.data.keyword.IBM}} implementiert eine Datenbereinigung auf der Ebene der Anforderungen des US-Verteidigungsministeriums, um Ihre Daten dauerhaft von der MDMS-Einheit zu löschen. Wenn Sie fertig sind, wird Ihr Anfragestatus zu *Löschen abgeschlossen* geändert.
+{{site.data.keyword.IBM}} implementiert eine Datenbereinigung auf der Ebene der Anforderungen des US-Verteidigungsministeriums, um Ihre Daten dauerhaft von der MDMS-Einheit zu löschen. Wenn Sie fertig sind, wird Ihr Anfragestatus als *Löschen abgeschlossen* angezeigt. 
 
 ## Weitere Hinweise
 {: #notes}

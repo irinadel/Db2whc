@@ -14,10 +14,10 @@ lastupdated: "2018-07-18"
 {:tip: .tip}
 {:pre: .pre}
 
-# Virtualização de dados (Federação)
+# Virtualização de dados (federação)
 {: #overview}
 
-A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.dashdbshort_notm}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma de suas origens de dados do Db2 ou Informix, tanto na nuvem quanto no local.
+A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.dashdbshort_notm}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma de suas origens de dados do Db2 ou Informix, tanto na nuvem quanto no local. 
 {: shortdesc}
 
 Essa função é suportada em todas as versões do {{site.data.keyword.dashdbshort_notm}}, exceto para o plano de Entrada. No entanto, é possível usar o plano de Entrada como um destino do qual é possível puxar dados.

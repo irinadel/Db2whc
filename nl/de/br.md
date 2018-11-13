@@ -41,5 +41,5 @@ Es werden die letzten 7 täglichen Sicherungsmomentaufnahmen aufbewahrt.
 
 Mit der {{site.data.keyword.dashdbshort_notm}}-Konsole können Sie die Sicherungen so terminieren, dass sie zu dem am besten geeigneten Zeitpunkt ausgeführt werden, und Sie können die Datenbank auf der Basis jeder beliebigen aufbewahrten Sicherungsmomentaufnahme zu jedem beliebigen Zeitpunkt wiederherstellen. Das System ist während des Wiederherstellungszeitraums inaktiv. Sie erhalten eine Benachrichtigungs-E-Mail, wenn die Wiederherstellungsoperation abgeschlossen ist.
 
-![Ansicht der Seite für die Sicherung und Wiederherstellung der Webkonsole](images/br.png)
+![Ansicht der Webkonsolenseite für Sicherung und Wiederherstellung](images/br.png)
 

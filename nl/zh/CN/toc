@@ -2,11 +2,12 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html" path="services/Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
     index.md
+    iam.md
     plans_cfgs.md
     about.md
     flex_scaling.md
@@ -20,10 +21,31 @@ Db2 Warehouse on Cloud
         migration.md
         pda_db2whc_mdms.md
 
-    connecting.md
+    {: .topicgroup}
+    连接
+        connecting/connecting.md
+        connecting/credentials.md
+        connecting/driver_pkg.md
+        connecting/install_linux.md
+        connecting/install_mac.md
+        connecting/install_win.md
+        connecting/driver_pkg_cfg.md
+        connecting/ssl.md
+        connecting/jdbc.md
+        connecting/net_apps.md
+        connecting/odbc_cli.md
+        connecting/odbc_data_source_admin.md
+        connecting/php.md
+        connecting/rest_api.md
 
     {: .topicgroup}
-    连接到另一台 Db2 服务器
+    集成
+        connecting/data.md
+        connecting/vis_bi.md
+        connecting/data_sci.md
+
+    {: .topicgroup}
+    连接到另一个 Db2 数据库
         federation.md
 
     user_mgmt.md
@@ -43,7 +65,9 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    [指导式演示：从 IBM Cloud Object Storage 装入数据](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud)
     [教程：SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
+    [教程：从内部部署关系数据库迁移数据](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud)
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

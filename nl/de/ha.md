@@ -36,7 +36,7 @@ Tritt ein nicht erwarteter Knotenfehler auf, wird die vollständige Kapazität d
 ### Hochverfügbarkeit für Prozessorressourcen
 {: #compute_ha}
 
-Knotenfehler werden sofort vom Container-Service festgestellt. Die Container und Pods, die auf dem fehlgeschlagenen Knoten ausgeführt wurden, werden auf einem anderen Knoten terminiert, der aus einem Knotenpool zugeordnet wird. Das System erreicht nach einer kurzen Ausfallzeit wieder 100 % seiner normalen Betriebsleistung.
+Knotenfehler werden sofort vom Container-Service festgestellt. Die Container und Pods, die auf dem fehlgeschlagenen Knoten ausgeführt wurden, werden auf einem neuen Knoten terminiert, der aus einem Knotenpool zugeordnet wird. Das System erreicht nach einer kurzen Ausfallzeit wieder 100 % seiner normalen Betriebsleistung.
 
 ### Hochverfügbarkeit für den Speicher
 {: #storage_ha}

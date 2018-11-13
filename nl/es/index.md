@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Cómo empezar
@@ -64,12 +67,16 @@ Con los panes de servicio de {{site.data.keyword.dashdbshort_notm}}, puede reali
 ### Conecte aplicaciones o herramientas preferidas desde el sistema local
 {: #connect_apps}
 
-Configure el entorno local para conectar la base de datos de Db2 Warehouse on Cloud siguiendo estos pasos:
+Configure el entorno local para conectar la base de datos de {site.data.keyword.dashdbshort_notm}} siguiendo estos pasos:
 {: shortdesc}
 
-1. Descargue el [paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} desde la consola web de Db2 Warehouse on Cloud.
-2. [Instale el paquete de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} en el sistema donde esté ejecutando las apps o las herramientas.
-3. [Configure los archivos de controladores ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para la base de datos de Db2 Warehouse.
+1. Descargue el [paquete de controlador](connecting/driver_pkg.html) desde la consola web de {{site.data.keyword.dashdbshort_notm}}.
+2. Instale el paquete de controlador en el sistema en el que se ejecutan sus apps o herramientas:
+   - [Instalación en Linux o PowerLinux](connecting/install_linux.html)
+   - [Instalación en Mac OS X](connecting/install_mac.html)
+   - [Instalación en
+Windows](connecting/install_win.html)
+3. [Configure los archivos de controlador](connecting/driver_pkg_cfg.html) para la base de datos de {site.data.keyword.dashdbshort_notm}}.
 
 ### Utilice Db2 Warehouse on Cloud como origen de datos para apps o servicios de {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
@@ -124,15 +131,43 @@ Cuando las apps utilizan la plataforma de {{site.data.keyword.Bluemix_notm}}, pu
 ## Ejemplos
 {: #samples}
 
-Aquí tiene los enlaces a ejemplos que demuestran cómo conectarse a la base de datos de {{site.data.keyword.dashdbshort_notm}} desde aplicaciones en distintos idiomas:
+A continuación, se muestran los enlaces a ejemplos que demuestran cómo conectarse mediante programas a la base de datos de {{site.data.keyword.dashdbshort_notm}} desde aplicaciones en distintos idiomas:
 {: shortdesc}
 
-   * [.NET ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [Ejemplos de {{site.data.keyword.dashdbshort_notm}} en GitHub ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [JDBC](connecting/jdbc.html)
+- [ODBC o CLI de Microsoft Windows](connecting/odbc_cli.html)
+- [.NET](connecting/net_apps.html)
+- [administrador de orígenes de datos ODBC ](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [API REST](connecting/rest_api.html)
+
+## Vídeo: Introducción de Db2 Warehouse on Cloud
+{: #intro_vid}
+
+Vea el vídeo para ver una introducción a {{site.data.keyword.dashdbshort_notm}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introducción a {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Introducción al plan Flex Performance
+{: #intro_vid_flex}
+
+Vea este vídeo para ver una introducción al plan Flex Performance de {{site.data.keyword.dashdbshort_notm}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Conexión a una aplicación de análisis
+{: #cognos_vid}
+
+Vea este vídeo para saber cómo crear una conexión desde Cognos Analytics.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 

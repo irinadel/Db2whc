@@ -17,10 +17,10 @@ lastupdated: "2018-07-18"
 # Virtualisation des données (fédération)
 {: #overview}
 
-La virtualisation de données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.dashdbshort_notm}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site.
+La virtualisation de données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.dashdbshort_notm}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site. 
 {: shortdesc}
 
-Cette fonction est prise en charge sur toutes les versions de {{site.data.keyword.dashdbshort_notm}}, à l'exception du plan Entry. Toutefois, vous pouvez utiliser le plan Entry comme cible à partir de laquelle extraire des données. 
+Cette fonction est prise en charge sur toutes les versions de {{site.data.keyword.dashdbshort_notm}}, à l'exception du plan Entry. Toutefois, vous pouvez utiliser le plan Entry comme cible à partir de laquelle extraire des données.
 
 ## Cas d'utilisation
 {: #use_cases}

@@ -20,12 +20,12 @@ En los planes de servicio de {{site.data.keyword.dashdblong}}, utilice el almac�
 {: shortdesc}
 
 También puede conectar aplicaciones externas a {{site.data.keyword.dashdbshort_notm}} y utilizarlas para gestionar o analizar todavía más sus datos. Por ejemplo:
-   * Conecte {{site.data.keyword.IBM_notm}} InfoSphere Data Architect para diseñar y desplegar su esquema de base de datos.
+   * Conecte {{site.data.keyword.IBM_notm}} InfoSphere® Data Architect para diseñar y desplegar su esquema de base de datos.
 <!--   * Connect Esri ArcGIS to perform geospatial analytics and map publishing with your data. -->
-   * Conecte un servidor {{site.data.keyword.IBM_notm}} Cognos para ejecutar informes de Cognos de sus datos.
+   * Conecte un servidor {{site.data.keyword.IBM_notm}} Cognos® para ejecutar informes de Cognos de sus datos.
    * Conecte herramientas basadas en SQL, como Tableau, Microstrategy o Microsoft Excel para manipular o analizar sus datos.
    * Conecte sus aplicaciones {{site.data.keyword.Bluemix_short}} que necesitan una base de datos de análisis.
-   * Conecte Aginity Workbench para migrar modelos de datos y datos de Netezza a {{site.data.keyword.dashdbshort_notm}}.
+   * Conecte Aginity Workbench para migrar modelos de datos y datos de Netezza® a {{site.data.keyword.dashdbshort_notm}}.
 
 ## Servicio gestionado de Db2 Warehouse on Cloud
 {: #managed_service}

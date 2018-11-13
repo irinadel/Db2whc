@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -26,4 +26,27 @@ Suministra una elasticidad verdadera con escala independiente de almacenamiento 
 
 El servicio completamente gestionado de {{site.data.keyword.dashdbshort_notm}} maneja todas las actualizaciones de software, actualizaciones de sistema operativo y mantenimiento de hardware. El servicio incluye supervisión de estado de tipo 24x7 de la base de datos y de la infraestructura. En el caso de que se produzca un error de hardware o de software, el servicio se reinicia automáticamente.
 {: shortdesc}
+
+<!-- ## Provisioning of Db2 Warehouse on Cloud
+{: #whse_provision}
+
+The {{site.data.keyword.dashdbshort_notm}} database can be provisioned on {{site.data.keyword.BluSoftlayer_full}} and for AWS.
+{: shortdesc}
+
+If you want to have the data warehouse provisioned for AWS, select the **MPP Small for AWS** plan. -->
+
+## Visualización de datos
+{: #visualize}
+
+Puede analizar y visualizar el análisis conectándose a las aplicaciones siguientes:
+
+- [Watson Studio (anteriormente Data Science Experience)](connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Looker ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Tableau](connecting/vis_bi.html#tableau)
+- [SPSS Statistics](connecting/data_sci.html#spss_stats)
+- [SAS](connecting/data_sci.html#sas)
+- [Microsoft Excel](connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
+
 

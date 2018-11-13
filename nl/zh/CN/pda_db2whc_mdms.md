@@ -156,7 +156,7 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **注：**如果将 `USING` 子句选项用于数据导出，请记住或保存子句选项。在从 IBM Cloud Object Storage 执行的外部表装入过程中，将复用此子句。
+       **注：**如果将 `USING` 子句选项用于数据导出，请记住或保存子句选项。稍后在从 {{site.data.keyword.Bluemix_notm}} Object Storage 执行的外部表装入过程中，将复用此子句。
 
        有关 SQL 语句的更多信息，请参阅：[CREATE EXTERNAL TABLE 语句 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}。 
 
@@ -185,10 +185,10 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 
 在完成到 Cloud Object Storage 存储区的数据迁移后，您可以继续[将数据导入到 {{site.data.keyword.dashdbshort_notm}} 数据库](#import)。
 
-## 步骤 6：从 IBM Cloud Object Storage 导入数据
+## 步骤 6：从 {{site.data.keyword.Bluemix_notm}} Object Storage 导入数据
 {: #import}
 
-要直接使用“外部表”从 IBM Cloud Object Storage 装入数据，以下是示例 SQL 语句：
+要直接使用“外部表”从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据，以下是示例 SQL 语句：
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -202,9 +202,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **注：** 
 * 请务必使用通过 CREATE EXTERNAL TABLE 语句从 PureData System for Analytics (Netezza) 数据库抽取数据时所用的相同 `USING` 子句选项。
-* 对于 IBM Cloud Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
+* 对于 {{site.data.keyword.Bluemix_notm}} Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
 
-有关从 IBM Cloud Object Storage 导入数据的指导教程，请参阅：[IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}。
+有关从 {{site.data.keyword.Bluemix_notm}} Object Storage 导入数据的指导教程，请参阅：[IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}。
 
 ## 步骤 7：擦除 MDMS 设备
 {: #erase}

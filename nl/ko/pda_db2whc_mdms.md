@@ -39,7 +39,7 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
 ## 1단계: 요청 작성
 {: #create-req}
 
-1. 고유 신임 정보를 사용하여 [{{site.data.keyword.slportal}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){:new_window}에 로그인하십시오.
+1. 고유 인증 정보를 사용하여 [{{site.data.keyword.slportal}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){:new_window}에 로그인하십시오.
 2. 탐색줄에서 **스토리지 > 데이터 마이그레이션 > 대량 데이터 마이그레이션**을 선택하여 MDMS 랜딩 페이지에 액세스하십시오.
 3. **디바이스 요청**을 클릭하여 주문 양식을 여십시오.
 4. **대량 데이터 마이그레이션** 주문 양식에서 각 필드를 완료하십시오.
@@ -156,7 +156,7 @@ RJ45 및 CAT6A 케이블이 제공되므로 두 포트 모두 디바이스에서
 
        `CREATE EXTERNAL TABLE '<path_to_mdms_device>/<file_name>' SELECT * FROM <table name>`
 
-       **참고:** 데이터를 내보내기 위해 `USING` 절 옵션을 사용한 경우, 이 절 옵션을 기억해 두거나 저장하십시오. 나중에 IBM Cloud Object Storage에서 외부 테이블을 로드하는 프로세스 동안 이 절이 재사용됩니다.
+       **참고:** 데이터를 내보내기 위해 `USING` 절 옵션을 사용한 경우, 이 절 옵션을 기억해 두거나 저장하십시오. 나중에 {{site.data.keyword.Bluemix_notm}} Object Storage에서 외부 테이블을 로드하는 프로세스 중에 이 절이 재사용됩니다.
 
        SQL문에 대한 자세한 정보는 [CREATE EXTERNAL TABLE문 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}을 참조하십시오. 
 
@@ -186,10 +186,10 @@ RJ45 및 CAT6A 케이블이 제공되므로 두 포트 모두 디바이스에서
 
 데이터를 Cloud Object Storage 버킷에 마이그레이션하는 작업이 완료되면 [데이터를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스로 가져오기](#import)로 진행할 수 있습니다.
 
-## 6단계: IBM Cloud Object Storage에서 데이터 가져오기
+## 6단계: {{site.data.keyword.Bluemix_notm}} Object Storage에서 데이터 가져오기
 {: #import}
 
-외부 테이블을 직접 사용하여 IBM Cloud Object Storage에서 데이터를 로드하는 경우, 예제 SQL문은 다음과 같습니다.
+외부 테이블을 직접 사용하여 {{site.data.keyword.Bluemix_notm}} Object Storage에서 데이터를 로드하는 경우 예제 SQL문은 다음과 같습니다.
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -203,9 +203,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **참고:** 
 * CREATE EXTERNAL TABLE문을 사용하여 PureData System for Analytics(Netezza) 데이터베이스에서 데이터를 추출할 때 사용한 절과 동일한 `USING` 절을 사용해야 합니다.
-* IBM Cloud Object Storage의 경우, 새 서비스 신임 정보를 작성할 때 HMAC 신임 정보를 작성하려면 *인라인 구성 매개변수* 필드에서 {"HMAC:true"}를 지정하십시오.
+* {{site.data.keyword.Bluemix_notm}} Object Storage의 경우, 새 서비스 인증 정보를 작성할 때 HMAC 인증 정보를 작성하려면 *인라인 구성 매개변수 추가* 필드에 {"HMAC:true"}를 지정하십시오.
 
-IBM Cloud Object Storage에서 데이터를 가져오는 방법에 대한 안내 튜토리얼을 보려면 [IBM Db2 Warehouse on Cloud 안내 데모: 데이터 로드 탐색 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}을 참조하십시오.
+{{site.data.keyword.Bluemix_notm}} Object Storage에서 데이터를 가져오는 방법에 대한 안내 튜토리얼을 보려면 [IBM Db2 Warehouse on Cloud 안내 데모: 데이터 로드 탐색 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}을 참조하십시오.
 
 ## 7단계: MDMS 디바이스 삭제
 {: #erase}

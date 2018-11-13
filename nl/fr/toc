@@ -2,11 +2,12 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html" path="services/Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
     index.md
+    iam.md
     plans_cfgs.md
     about.md
     flex_scaling.md
@@ -20,10 +21,31 @@ Db2 Warehouse on Cloud
         migration.md
         pda_db2whc_mdms.md
 
-    connecting.md
+    {: .topicgroup}
+    Connexion
+        connecting/connecting.md
+        connecting/credentials.md
+        connecting/driver_pkg.md
+        connecting/install_linux.md
+        connecting/install_mac.md
+        connecting/install_win.md
+        connecting/driver_pkg_cfg.md
+        connecting/ssl.md
+        connecting/jdbc.md
+        connecting/net_apps.md
+        connecting/odbc_cli.md
+        connecting/odbc_data_source_admin.md
+        connecting/php.md
+        connecting/rest_api.md
 
     {: .topicgroup}
-    Connexion à un autre serveur Db2
+    Intégrations
+        connecting/data.md
+        connecting/vis_bi.md
+        connecting/data_sci.md
+
+    {: .topicgroup}
+    Connexion à une autre base de données Db2
         federation.md
 
     user_mgmt.md
@@ -43,7 +65,9 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    [Démonstration guidée : chargement des données depuis IBM Cloud Object Storage](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud)
     [Tutoriel : SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
+    [Tutoriel : Migrating data from on-premises relational databases](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud)
     {: .navgroup-end}
 
     {: .navgroup id="reference"}

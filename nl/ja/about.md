@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-15"
 
 ---
 
@@ -26,4 +26,27 @@ lastupdated: "2018-03-15"
 
 {{site.data.keyword.dashdbshort_notm}} の完全マネージド・サービスは、すべてのソフトウェア・アップグレード、オペレーティング・システム更新、およびハードウェア保守を処理します。 このサービスには、データベースおよびインフラストラクチャーの 24 時間 365 日ヘルス・モニターが含まれています。 ハードウェアまたはソフトウェアの障害が発生した場合は、このサービスが自動的に再始動されます。
 {: shortdesc}
+
+<!-- ## Provisioning of Db2 Warehouse on Cloud
+{: #whse_provision}
+
+The {{site.data.keyword.dashdbshort_notm}} database can be provisioned on {{site.data.keyword.BluSoftlayer_full}} and for AWS.
+{: shortdesc}
+
+If you want to have the data warehouse provisioned for AWS, select the **MPP Small for AWS** plan. -->
+
+## データ可視化
+{: #visualize}
+
+以下のアプリケーションに接続することにより、分析を実行したり分析を視覚化したりできます。
+
+- [Watson Studio (以前の Data Science Experience)](connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Looker ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Tableau](connecting/vis_bi.html#tableau)
+- [SPSS Statistics](connecting/data_sci.html#spss_stats)
+- [SAS](connecting/data_sci.html#sas)
+- [Microsoft Excel](connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
+
 

@@ -17,17 +17,17 @@ lastupdated: "2018-07-18"
 # データ仮想化 (フェデレーション)
 {: #overview}
 
-DB2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。
+DB2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 {: shortdesc}
 
-このファンクションは、エントリー・プランを除き、{{site.data.keyword.dashdbshort_notm}} のすべてのバージョンでサポートされています。ただし、データをプルできるターゲットとしてエントリー・プランを使用できます。
+このファンクションは、エントリー・プランを除き、{{site.data.keyword.dashdbshort_notm}} のすべてのバージョンでサポートされています。 ただし、データをプルできるターゲットとしてエントリー・プランを使用できます。
 
 ## ユース・ケース
 {: #use_cases}
 
 ### データ・ソースの統合
 
-クラウドに配置されたデータと組織のオンプレミス・データをフェデレートすることで、仮想化データは単一のソースから取得されているように見えます。データ仮想化によって、煩雑でコストのかかるデータ・マイグレーションの作業が軽減され、ユーザーは高い効率と費用効果ですべてのデータを分析することが可能になります。
+クラウドに配置されたデータと組織のオンプレミス・データをフェデレートすることで、仮想化データは単一のソースから取得されているように見えます。 データ仮想化によって、煩雑でコストのかかるデータ・マイグレーションの作業が軽減され、ユーザーは高い効率と費用効果ですべてのデータを分析することが可能になります。
 
 <!-- A company may have started their operations with an on-premises Db2 server. As cloud technology becomes more widespread and companies start to operate on cloud in a cost-effective fashion, there will be continued Cloud growth. However, the organization’s data on both sources remain as a critical component to their decision-making processes. By way of example, a client operating in retail industry needs to be able to access all data, say customer information, to run further analysis on their customers’ consumption behaviors. They need to be able to identify customers, match their records on cloud with already existing ones from an on-premises database and compose them as if the data is being retrieved from a single source. Federation capability here prevents the burdensome data migration process and allows the user to access the data without moving the data.
 
@@ -35,7 +35,7 @@ located in the cloud and on-premises -->
 
 ### Db2 on Cloud への接続
 
-DB2 ファミリー製品のユーザーは、{{site.data.keyword.Db2_on_Cloud_short}} データベースおよび {{site.data.keyword.dashdbshort_notm}} データベースのデータを統合できます。一般的なインターフェースを使用してデータにアクセスしてデータを簡単に追加、照会、および分析することができ、複雑な ETL プロセスや追加コードは必要ありません。
+DB2 ファミリー製品のユーザーは、{{site.data.keyword.Db2_on_Cloud_short}} データベースおよび {{site.data.keyword.dashdbshort_notm}} データベースのデータを統合できます。 一般的なインターフェースを使用してデータにアクセスしてデータを簡単に追加、照会、および分析することができ、複雑な ETL プロセスや追加コードは必要ありません。
 
 <!-- Db2 family users would now be able to federate data between Db2 on Cloud and Db2 Warehouse on Cloud. By being provided a common interface for accessing the data, a user can now easily add or query data from or to the Warehouse without complex ETL processes or any additional code. -->
 
@@ -47,14 +47,14 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 ### 制限を超えたデータベース容量の拡張
 
-フェデレーションでは、クラウド上のデータベースと連携することにより、オンプレミス・データベースの容量を増やすことができます。このケースにおけるデータ仮想化は、オンプレミス・データベースのストレージが不足している場合に最適です。フェデレーションによるデータベース容量の拡張は、新規開発にも役立ちます。なぜなら、開発者は本番環境のデータベースを変更する必要がないからです。2 つの {{site.data.keyword.dashdbshort_notm}} データベースを統合すると、Flex プランの現在の制限を超えてデータベースの容量を増やすこともできます。
+フェデレーションでは、クラウド上のデータベースと連携することにより、オンプレミス・データベースの容量を増やすことができます。 このケースにおけるデータ仮想化は、オンプレミス・データベースのストレージが不足している場合に最適です。 フェデレーションによるデータベース容量の拡張は、新規開発にも役立ちます。なぜなら、開発者は本番環境のデータベースを変更する必要がないからです。 2 つの {{site.data.keyword.dashdbshort_notm}} データベースを統合すると、Flex プランの現在の制限を超えてデータベースの容量を増やすこともできます。
 
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 概説
 {: #getting_started}
 
-以下の手順では、分散したデータ・ソースを統合し、あたかも 1 つのデータ・ソースからデータを取得しているように見せる方法を例示します。2 つの {{site.data.keyword.dashdbshort_notm}} データベースをフェデレーションする例を以下に示します。
+以下の手順では、分散したデータ・ソースを統合し、あたかも 1 つのデータ・ソースからデータを取得しているように見せる方法を例示します。 2 つの {{site.data.keyword.dashdbshort_notm}} データベースをフェデレーションする例を以下に示します。
 
 ### Db2 Warehouse on Cloud ターゲット・マシン上:
 

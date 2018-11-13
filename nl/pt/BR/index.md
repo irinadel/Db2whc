@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-03-15"
+lastupdated: "2018-10-24"
 
 ---
 
@@ -17,6 +17,9 @@ lastupdated: "2018-03-15"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Introdução
@@ -67,12 +70,15 @@ relacionadas ao gerenciamento de arquivos, ao carregamento de dados e à execuç
 ### Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
 {: #connect_apps}
 
-Configure o seu ambiente local para conectar-se ao seu banco de dados de warehouse Db2 concluindo as etapas a seguir:
+Configure seu ambiente local para se conectar ao banco de dados {site.data.keyword.dashdbshort_notm}} concluindo as etapas a seguir:
 {: shortdesc}
 
-1. Faça download do [pacote de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package.html){:new_window} no console da web do Db2 Warehouse on Cloud.
-2. [Instale o pacote de drivers ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_install.html){:new_window} no computador em que seus apps ou ferramentas estão em execução.
-3. [Configure os arquivos do driver ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_driver_package_config.html){:new_window} para o seu banco de dados de warehouse Db2.
+1. Faça download do [pacote de drivers](connecting/driver_pkg.html) por meio do console da web do {{site.data.keyword.dashdbshort_notm}}.
+2. Instale o pacote de drivers no computador em que seus apps ou ferramentas estão em execução:
+   - [ Instalando no Linux ou PowerLinux ](connecting/install_linux.html)
+   - [ Instalando no Mac OS X ](connecting/install_mac.html)
+   - [ Instalando no Windows ](connecting/install_win.html)
+3. [Configure os arquivos do driver](connecting/driver_pkg_cfg.html) para seu banco de dados {site.data.keyword.dashdbshort_notm}}.
 
 ### Use o DB2 Warehouse on Cloud como uma origem de dados para seus apps ou serviços
 {{site.data.keyword.Bluemix_notm}}
@@ -83,7 +89,7 @@ Apps hospedados no {{site.data.keyword.Bluemix_notm}} podem se conectar ao seu b
 
 Quando seus apps usam a plataforma {{site.data.keyword.Bluemix_notm}}, é possível aproveitar a variável de ambiente `VCAP _SERVICES` para simplificar a tarefa de especificar detalhes e credenciais do banco de dados:
 1. Em seu painel do {{site.data.keyword.Bluemix_notm}}, na guia **Conexões** da página Detalhes do serviço para seu serviço do {{site.data.keyword.dashdbshort_notm}}, clique no botão **Criar conexão**.
-2. Selecione o app do {{site.data.keyword.Bluemix_notm}} para usar com seu banco de dados do {{site.data.keyword.dashdbshort_notm}} como uma origem de dados e, em seguida, clique no botão **Conectar**.
+2. Selecione o app {{site.data.keyword.Bluemix_notm}} para usar com o banco de dados {{site.data.keyword.dashdbshort_notm}} como uma origem de dados e, em seguida, clique no botão **Conectar**.
 3. Atualize seu código do aplicativo para recuperar detalhes e credenciais do banco de dados por meio da variável de ambiente `VCAP_SERVICES`:
 
     **Exemplo sem `VCAP_SERVICES`**
@@ -128,15 +134,43 @@ Quando seus apps usam a plataforma {{site.data.keyword.Bluemix_notm}}, é possí
 ## Amostra
 {: #samples}
 
-Aqui estão links para amostras que demonstram como se conectar a seu banco de dados do {{site.data.keyword.dashdbshort_notm}} por meio de aplicativos em diferentes idiomas:
+Aqui estão os links para amostras que demonstram como se conectar programaticamente ao banco de dados {{site.data.keyword.dashdbshort_notm}} por meio de aplicativos em diferentes linguagens:
 {: shortdesc}
 
-   * [.NET ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting__net_applications.html){:new_window}
-<!-- * [JAVA ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_java.html){:new_window} -->
-   * [JDBC ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_jdbc_applications.html){:new_window}
-<!-- * [Node.js ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_nodejs.html){:new_window} -->
-   * [PHP ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_php.html){:new_window}
-<!-- * [Python ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_python.html){:new_window} -->
-   * [Amostras do {{site.data.keyword.dashdbshort_notm}} no GitHub ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://github.com/IBM-Bluemix/dashdb-nodejs-helloworld){:new_window}
+- [ JDBC ](connecting/jdbc.html)
+- [ Microsoft Windows ODBC ou CLI ](connecting/odbc_cli.html)
+- [ .NET ](connecting/net_apps.html)
+- [ Administrador de Origem de Dados ODBC ](connecting/odbc_data_source_admin.html)
+- [PHP](connecting/php.html)
+- [API do REST](connecting/rest_api.html)
+
+## Vídeo: Introduzindo o Db2 Warehouse on Cloud
+{: #intro_vid}
+
+Assista a este vídeo para ver uma introdução ao {{site.data.keyword.dashdbshort_notm}}.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Introdução ao {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Introduzindo o Plano Flex Performance
+{: #intro_vid_flex}
+
+Assista a este vídeo para ver uma introdução ao plano de Desempenho do {{site.data.keyword.dashdbshort_notm}} Flex.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Criando uma conexão por meio do Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+## Vídeo: Conectando um aplicativo analítico
+{: #cognos_vid}
+
+Assista a este vídeo para ver como criar uma conexão por meio do Cognos Analytics.
+
+<iframe class="embed-responsive-item" id="youtubeplayer" title="Criando uma conexão por meio do Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
+
+
+
+
+
+
 
 
