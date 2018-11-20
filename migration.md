@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-08"
+lastupdated: "2018-11-20"
 
 ---
 
@@ -50,7 +50,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Note:** For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 
 ## Migrating data from on-premises system
 {: #onprem}
