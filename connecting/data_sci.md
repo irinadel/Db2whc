@@ -78,10 +78,12 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq1}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
 ### Procedure
+{: #proc1}
 
 1. In SPSS Statistics, click **File > Open Database > New Query**.
     
@@ -126,10 +128,12 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq2}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
 ### Procedure
+{: #proc2}
 
 For steps on how to connect from SAS to a {{site.data.keyword.dashdbshort_notm}} database, see the SAS documentation:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -141,10 +145,12 @@ Instead of using the RStudio® environment that is integrated within IBM Watson 
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq3}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
 ### Procedure
+{: #proc3}
 
 1. In your local R environment, install the `ibmdbR` package by entering the following command:
 

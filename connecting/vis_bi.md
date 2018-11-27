@@ -46,10 +46,12 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.dashd
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq1}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
 ### Procedure
+{: #proc1}
 
 1. In Tableau Desktop, open the window or page in your tool that is used to define a database connection.
 2. From the start page, click **Connect to data**.
@@ -74,6 +76,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq2}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
@@ -82,6 +85,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 **Restriction**: Connections between Excel and {{site.data.keyword.dashdbshort_notm}} are supported on only the Windows operating system.
 
 ### Procedure
+{: #proc2}
 
 1. In the web console, go to the **Run SQL** page.
     
@@ -100,6 +104,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 8. Ensure that the connection mode is `Share`, and then click **OK**.
 
 ### Results
+{: #results2}
 
 The query results are displayed in an Excel spreadsheet. These are the same results that are displayed in the Results viewer. Now you can generate charts and reports and analyze your data by using Excel. For more information about how to do this and how to run SQL queries on your data from the web console, see: 
 - [Tutorial: Generating charts and reports by using Excel ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -112,12 +117,14 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 {: shortdesc}
 
 ### Prerequisites
+{: #prereq3}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
 ### Procedure
+{: #proc3}
 
 1. Determine your ODBC DSN data from the [connection information](credentials.html) that you collected beforehand.
 
@@ -145,6 +152,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
      ![Database Connections wizard](images/2_gs_conn.jpg)
 
 ### Results
+{: #results3}
 
 The ArcCatalog component of Esri ArcGIS for Desktop is now connected to your {{site.data.keyword.dashdbshort_notm}} database. 
 
