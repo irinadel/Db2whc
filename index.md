@@ -67,7 +67,7 @@ With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks
 ### Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 
-Configure your local environment to connect to your {site.data.keyword.dashdbshort_notm}} database by completing the following steps:
+Configure your local environment to connect to your {{site.data.keyword.dashdbshort_notm}} database by completing the following steps:
 {: shortdesc}
 
 1. Download the [driver package](connecting/driver_pkg.html) from the {{site.data.keyword.dashdbshort_notm}} web console.
