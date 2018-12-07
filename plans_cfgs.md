@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-10-24"
+lastupdated: "2018-12-07"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Plans and configurations
@@ -19,7 +23,7 @@ lastupdated: "2018-10-24"
 You can choose a {{site.data.keyword.dashdbshort_notm}} plan that is configured and optimized for the work that you need to do:
 {: shortdesc}
 
-   * An entry plan to try things out. It's a free trial with up to 1 GB of storage.
+   * An entry plan to try things out. It's a free trial with up to 1 GB of storage. See: [Entry plan restrictions](#ep_restrictions)
    * Flex plans in which you can independently scale storage and compute resources
    * SMP plans of various sizes for production: small, medium, and large consist of a single node and a single instance
    * MPP multiple-node cluster configurations for parallel processing and high performance
@@ -41,7 +45,7 @@ If you don't see a configuration in the catalog that you need, contact [{{site.d
 ## Availability of plans in data centers
 {: #availability}
 
-The following tables provide information about the availability of the various Db2 Warehouse on Cloud plans by data centers located in geographical regions:
+The following tables provide information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by data centers located in geographical regions:
 
 <!-- ### Asia/Pacific
 {: #ap}
@@ -119,7 +123,7 @@ The following tables provide information about the availability of the various D
 {: caption="Table 4. South America data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 -->
 
-| Db2 Warehouse on Cloud plans | Asia/Pacific | Europe    | North/Central America     | South America |
+| {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|-----------------------    |---------------|
 | Flex                         | *NA          | Frankfurt | Washington D.C. (us-east) | *NA           |
 |                              |              |           | Dallas (us-south)         |               |  
@@ -141,5 +145,32 @@ The following tables provide information about the availability of the various D
 
 *NA = Not available at this time
 
+## Entry plan restrictions
+{: #ep_restrictions}
 
+You are strongly recommended to use an enterprise-level service plan rather than an Entry service plan for mission-critical or performance-sensitive workloads. 
+{: important}
 
+The following is a table of {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions:
+
+| Category | Item | Restriction | 
+|----------|------|-------------|
+| Resources | Storage | 20 GB of storage per user. The plan is free only if less than 1 GB of storage is used. |
+|  | Connections | 50 connections per user. This limit might be adjusted dynamically to maintain system integrity of the instance. |
+|  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
+|  |  |
+| Features & functions | Federation | Not supported |
+|  | Oracle compatibility | Not supported |
+|  | User-defined extensions (UDFs) | Not supported |
+|  | User management | User not given administrative authority |
+|  | Row and column access control (RCAC) | Not supported |
+|  | IBM InfoSphere Data Replication for use in loading data | Not supported |
+|  |  |
+| Networking environment | IBM Cloud Integrated Analytics | Not supported |
+|  | IBM Cloud Dedicated | Not supported |
+|  |  |
+| Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description. |
+|  | EU General Data Protection Regulation (GDPR) | No specific restrictions apply |
+|  |  |
+| Account management | Reactivation | No reactivation requirement |
+{: caption="Table 1. {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions" caption-side="top"}
