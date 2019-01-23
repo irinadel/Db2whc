@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Connecting programmatically with JDBC
+{: #con_prog_jdbc}
 
 Define a connection between a Java™ application and the {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}

@@ -18,7 +18,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # Connecting overview
-{: #overview}
+{: #connect}
 
 You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your {{site.data.keyword.dashdbshort_notm}} database. 
 {: shortdesc}

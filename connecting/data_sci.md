@@ -18,7 +18,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # Data science
-{: #overview}
+{: #ds}
 
 You can also connect external applications and tools to {{site.data.keyword.dashdbshort_notm}} and use them to further manage or analyze your data. 
 {: shortdesc}

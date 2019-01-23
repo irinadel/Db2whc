@@ -18,7 +18,7 @@ lastupdated: "2018-11-08"
 {:pre: .pre}
 
 # Data integration
-{: #overview}
+{: #data_int}
 
 You can also connect external applications and tools to {{site.data.keyword.dashdbshort_notm}} and use them to further manage or analyze your data. 
 {: shortdesc}

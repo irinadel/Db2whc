@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Installing the driver package on Mac OS X
+{: #install_dr_pkg_mac}
 
 You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Mac OS X by using the `installDSDriver.sh` script. 
 {: shortdesc}

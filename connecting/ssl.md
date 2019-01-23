@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Secure Sockets Layer (SSL) support
+{: #ssl_support}
 
 The {{site.data.keyword.dashdbshort_notm}} database uses a certificate for SSL connections that is issued by a third-party digital certificate authority (CA). 
 {: shortdesc}

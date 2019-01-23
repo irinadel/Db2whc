@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Driver package
+{: #dr_pkg}
 
 The {{site.data.keyword.dashdbshort_notm}} driver package contains software for connecting client applications to a {{site.data.keyword.dashdbshort_notm}} database. 
 {: shortdesc}

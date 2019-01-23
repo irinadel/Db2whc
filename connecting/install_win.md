@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Installing the driver package on Windows
+{: #install_dr_pkg_windows}
 
 You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Windows by using the installer. 
 {: shortdesc}

@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Configuring your local environment
+{: #cfg_loc_env}
 
 To connect local applications and tools to your {{site.data.keyword.dashdbshort_notm}} database, you need to configure your environment.  
 {: shortdesc}

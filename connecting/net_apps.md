@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Connecting programmatically with .NET
+{: #con_prog_net}
 
 Define a connection between a .NET application and your {{site.data.keyword.dashdbshort_notm}} database. 
 {: shortdesc}

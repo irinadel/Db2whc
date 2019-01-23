@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Connecting programmatically with PHP
+{: #con_prog_php}
 
 Define a connection between a PHP application and a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}

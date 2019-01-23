@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Connecting with the ODBC Data Source Administrator
+{: #con_prog_odbc_dsa}
 
 Use the Microsoft ODBC Data Source Administrator tool to define a connection between an ODBC or CLI application and a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}

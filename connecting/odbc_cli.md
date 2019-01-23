@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Connecting programmatically with ODBC or CLI
+{: #con_prog_odbc_cli}
 
 Define a connection between a Microsoft Windows ODBC or CLI application and a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}

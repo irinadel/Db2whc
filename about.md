@@ -18,7 +18,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # About Db2 Warehouse on Cloud
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}} is a fully-managed, high performance, petabyte-scale cloud data warehouse.
 

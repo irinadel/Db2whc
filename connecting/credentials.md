@@ -18,11 +18,13 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Database details and connection credentials
+{: #db_details_cxn_creds}
 
 To configure your local development environment and to connect applications and tools to your {{site.data.keyword.dashdbshort_notm}} database, you need to know the database details and connection credentials.
 {: shortdesc}
 
 ## Database details
+{: #db_details}
 
 There are important database details needed for connecting applications and tools to your database:
 
@@ -33,6 +35,7 @@ There are important database details needed for connecting applications and tool
 - *Database name* - The Db2 database name, usually BLUDB.
 
 ## Connection credentials
+{: #cxn_creds}
 
 There are three types of credentials:
 
@@ -41,6 +44,7 @@ There are three types of credentials:
 - *Administrator-created users* - Some {{site.data.keyword.dashdbshort_notm}} plans allow administrative users to create new users. These administrator-created user IDs and passwords can be used to log directly into the web console URL and to connect to the Db2 database from applications or tools.
 
 ## Where to find database details and connection credentials
+{: #location}
 
 You can collect this information from the following places:
 

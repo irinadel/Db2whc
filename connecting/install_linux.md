@@ -18,6 +18,7 @@ lastupdated: "2018-09-25"
 {:pre: .pre}
 
 # Installing the driver package on Linux or PowerLinux
+{: #install_dr_pkg_linux}
 
 You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Linux or PowerLinux by using `installDSDriver`. 
 {: shortdesc}

@@ -18,7 +18,7 @@ lastupdated: "2018-10-24"
 {:pre: .pre}
 
 # Data visualization/BI
-{: #overview}
+{: #data_vis_bi}
 
 You can also connect external applications and tools to {{site.data.keyword.dashdbshort_notm}} and use them to further manage or analyze your data. 
 {: shortdesc}
