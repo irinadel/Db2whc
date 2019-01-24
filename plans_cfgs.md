@@ -45,7 +45,7 @@ If you don't see a configuration in the catalog that you need, contact [{{site.d
 ## Availability of plans in data centers
 {: #availability}
 
-The following tables provide information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by data centers located in geographical regions:
+The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by data centers located in geographical regions:
 
 <!-- ### Asia/Pacific
 {: #ap}
