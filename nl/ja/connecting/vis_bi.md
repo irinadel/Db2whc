@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,13 +11,17 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # データ可視化/BI
-{: #overview}
+{: #data_vis_bi}
 
 また、外部アプリケーションやツールを {{site.data.keyword.dashdbshort_notm}} に接続して利用し、
-データをさらに管理したり分析したりすることも可能です。
+データをさらに管理したり分析したりすることも可能です。 
 {: shortdesc}
 
 ## Cognos Analytics
@@ -35,7 +39,7 @@ lastupdated: "2018-10-24"
 ## Looker
 {: #looker}
 
-Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続できます。Looker は、ビジネス・インテリジェンス・アプリケーションでありかつビッグデータ分析プラットフォームで、これを使用してリアルタイム・ビジネス・アナリティクスを探索、分析、および共有することができます。
+Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続できます。 Looker は、ビジネス・インテリジェンス・アプリケーションでありかつビッグデータ分析プラットフォームで、これを使用してリアルタイム・ビジネス・アナリティクスを探索、分析、および共有することができます。
 {: shortdesc}
 
 [Connecting Looker ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
@@ -47,10 +51,12 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 {: shortdesc}
 
 ### 前提条件
+{: #prereq1}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc1}
 
 1. Tableau Desktop で、データベース接続に使用するツールでウィンドウまたはページを開きます。
 2. 開始ページから、**「データに接続 (Connect to data)」**をクリックします。
@@ -75,6 +81,7 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 {: shortdesc}
 
 ### 前提条件
+{: #prereq2}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
@@ -83,6 +90,7 @@ Db2 ドライバー・パッケージか IBM® Data Server Driver Package をロ
 **制限事項**: Excel と {{site.data.keyword.dashdbshort_notm}} の間の接続は、Windows オペレーティング・システムに限りサポートされています。
 
 ### 手順
+{: #proc2}
 
 1. Web コンソールで、**「SQL の実行」**ページに移動します。
     
@@ -101,6 +109,7 @@ Db2 ドライバー・パッケージか IBM® Data Server Driver Package をロ
 8. 接続モードが `Share` (共有) であることを確認して**「OK」**をクリックします。
 
 ### 結果
+{: #results2}
 
 Excel スプレッドシートに照会結果が表示されます。 同じ結果が「結果」ビューアーにも表示されます。 この時点で、Excel を使用してグラフやレポートを生成したりデータを分析したりできます。 これを行う方法、および Web コンソールからデータに対して SQL 照会を実行する方法について詳しくは、以下を参照してください。 
 - [チュートリアル: Excel を使用したグラフおよびレポートの生成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -113,12 +122,14 @@ Esri ArcGIS for Desktop <!--version 10.3.1 -->を {{site.data.keyword.dashdbshor
 {: shortdesc}
 
 ### 前提条件
+{: #prereq3}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 Db2 ドライバー・パッケージか IBM® Data Server Driver Package をコンピューターにインストールしていなければなりません。
 
 ### 手順
+{: #proc3}
 
 1. 事前に収集した[接続情報](credentials.html)から ODBC DSN データを判別します。
 
@@ -146,6 +157,7 @@ Db2 ドライバー・パッケージか IBM® Data Server Driver Package をコ
      ![データベース接続ウィザード](images/2_gs_conn.jpg)
 
 ### 結果
+{: #results3}
 
 これで、Esri ArcGIS for Desktop の ArcCatalog コンポーネントが {{site.data.keyword.dashdbshort_notm}} データベースに接続されました。 
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visualizzazione dati/BI
-{: #overview}
+{: #data_vis_bi}
 
 Puoi anche
 connettere applicazioni e strumenti esterni a {{site.data.keyword.dashdbshort_notm}} e
@@ -48,10 +52,12 @@ Queste istruzioni illustrano come collegare Tableau a un database {{site.data.ke
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq1}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
 ### Procedura
+{: #proc1}
 
 1. In Tableau Desktop, apri la finestra o la pagina nel tuo strumento che utilizzi per definire una connessione al database.
 2. Dalla pagina iniziale, fai clic su **Connect to data**.
@@ -76,6 +82,7 @@ Queste istruzioni spiegano come collegare Microsoft Excel <!--2010-->a un databa
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq2}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
@@ -84,6 +91,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
 **Limitazione**: le connessioni tra Excel e {{site.data.keyword.dashdbshort_notm}} sono supportate solo sul sistema operativo Windows.
 
 ### Procedura
+{: #proc2}
 
 1. Nella console web, vai alla pagina **Run SQL**.
     
@@ -102,6 +110,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
 8. Assicurati che la modalità di connessione sia `Share` e poi fai clic su **OK**.
 
 ### Risultati
+{: #results2}
 
 I risultati della query vengono visualizzati in un foglio di calcolo Excel. Questi sono gli stessi risultati visualizzati nel visualizzatore dei risultati. Ora puoi generare grafici e report e analizzare i tuoi dati utilizzando Excel. Per ulteriori informazioni su come eseguire questa attività e su come eseguire le query SQL sui tuoi dati dalla console web, consulta: 
 - [Tutorial: Generating charts and reports by using Excel ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -114,12 +123,14 @@ Puoi collegare Esri ArcGIS per Desktop <!--version 10.3.1 -->a un database {{sit
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq3}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
 Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tuo computer.
 
 ### Procedura
+{: #proc3}
 
 1. Determina il tuo DSN ODBC dalle [informazioni di connessione](credentials.html) che hai annotato in precedenza.
 
@@ -147,6 +158,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
      ![Procedura guidata Database Connections](images/2_gs_conn.jpg)
 
 ### Risultati
+{: #results3}
 
 Il componente ArcCatalog di Esri ArcGIS for Desktop è ora collegato al tuo database {{site.data.keyword.dashdbshort_notm}}. 
 

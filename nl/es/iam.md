@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Gestión de identidad y acceso (IAM) en {{site.data.keyword.Bluemix_notm}}
@@ -40,7 +43,7 @@ El administrador de la base de datos debe añadir los usuarios con un IBMid a ca
 
 **ID de servicio**
 
-Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Los ID de servicio son ID que las aplicaciones pueden utilizar para autenticarse con un servicio de {{site.data.keyword.Bluemix_notm}}. Un ID de servicio representa una entidad individual del IBMid propietario. Por lo tanto, es posible otorgar distintas autorizaciones y permisos específicos para el ID de servicio en la base de datos. Los ID de servicio no tienen contraseñas. Es necesario crear una clave de API para cada ID de servicio para que el este se conecte a la instancia de servicio de la base de datos. Para obtener más información acerca de los ID de servicio, consulte [Introducción de {{site.data.keyword.Bluemix_notm}} ID de servicio de IAM y claves API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
+Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Los ID de servicio son ID que las aplicaciones pueden utilizar para autenticarse con un servicio de {{site.data.keyword.Bluemix_notm}}. Un ID de servicio representa una entidad individual del IBMid propietario. Por lo tanto, es posible otorgar distintas autorizaciones y permisos específicos para el ID de servicio en la base de datos. Los ID de servicio no tienen contraseñas. Es necesario crear una clave de API para cada ID de servicio para que el este se conecte a la instancia de servicio de la base de datos. Para obtener más información acerca de los ID de servicio, consulte [Introducción de {{site.data.keyword.Bluemix_notm}} ID de servicio de IAM y claves de API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Conexiones de cliente e inicios de sesión de usuario
 {: #connect}
@@ -66,7 +69,7 @@ Una señal de acceso identifica un usuario de IBMid o un ID de servicio en la ba
 
 **Clave de API**
 
-Es posible crear varias claves de API para cada usuario IBMid o ID de servicio. Normalmente, cada clase de API se crea para una única aplicación. Esta permite a la aplicación conectarse a la instancia de servicio de la base de datos siempre que el IBMid o ID de servicio del propietario se añada como usuario a la misma instancia de servicio de la base de datos. La clave API tiene las mismas autorizaciones y permisos dentro de la base de datos que el IBMid o el ID de servicio del propietario. Si una aplicación ya no debería poder conectarse a la base de datos, se puede eliminar la clave de API correspondiente. Este método de autenticación requiere menos cambios en la aplicación que utilizando una señal de acceso ya que no es necesaria ninguna interacción directa con el servicio de IAM. Para obtener más información acerca de la creación y gestión de claves API, consulte [Gestión de claves API de usuario ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
+Es posible crear varias claves de API para cada usuario IBMid o ID de servicio. Normalmente, cada clase de API se crea para una única aplicación. Esta permite a la aplicación conectarse a la instancia de servicio de la base de datos siempre que el IBMid o ID de servicio del propietario se añada como usuario a la misma instancia de servicio de la base de datos. La clave de API tiene las mismas autorizaciones y permisos dentro de la base de datos que el IBMid o el ID de servicio del propietario. Si una aplicación ya no debería poder conectarse a la base de datos, se puede eliminar la clave de API correspondiente. Este método de autenticación requiere menos cambios en la aplicación que utilizando una señal de acceso ya que no es necesaria ninguna interacción directa con el servicio de IAM. Para obtener más información acerca de la creación y gestión de claves de API, consulte [Gestión de claves de API de usuario ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
 
 **IBMid/contraseña**
 
@@ -78,13 +81,14 @@ Se puede utilizar el IBMid/contraseña para iniciar sesión en la consola y en l
 Se ofrece soporte a las interfaces de cliente de base de datos siguientes:
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC y CLPPLUS
+### ODBC, CLP, y CLPPLUS
 {: #odbc-clpplus}
 
-Para que una aplicación ODBC o un cliente de línea de mandatos (CLPPLUS) se conecte a un servidor de Db2 utilizando la autenticación IAM, primero es necesario configurar un nombre de origen de datos (DSN) en un archivo de configuración `db2dsdriver.cfg` ejecutando el mandato siguiente:
+Para que una aplicación ODBC o un cliente de línea de mandatos (CLP, CLPPLUS) se conecte a un servidor de Db2 utilizando la autenticación IAM, primero es necesario configurar un nombre de origen de datos (DSN) en un archivo de configuración `db2dsdriver.cfg` ejecutando el mandato siguiente:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,7 +127,29 @@ El ejemplo siguiente de un archivo de configuración `db2dsdriver.cfg` muestra l
 
     En ODBC, se puede especificar **AUTHENTICATION=GSSPLUGIN** en el archivo de configuración `db2dsdriver.cfg` o en la serie de conexión de la aplicación.
 
-* El mandato de conexión CLPPLUS puede contener una de las siguientes opciones:
+* El mandato CONNECT de CLP puede contener una de las siguientes opciones:
+
+    **Señal de acceso**
+
+    Conectarse al servidor de base de datos `<database_server_name>` y pasar la señal de acceso ejecutando el mandato siguiente en el script o indicador de mandatos de CLP:
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **Clave de API**
+
+    Conectarse al servidor de base de datos `<database_server_name>` con una clave de API ejecutando el mandato siguiente en el script o indicador de mandatos de CLP:
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/contraseña**
+
+    Conectarse al servidor de base de datos `<database_server_name>` con un IBMid y contraseña ejecutando el mandato siguiente en el script o indicador de mandatos CLP:
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* El mandato CONNECT de CLPPLUS puede contener una de las siguientes opciones:
 
     **Señal de acceso**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:accessToken=<señal_acceso>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **Clave de API**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:apikey=<clave_API>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/contraseña**
 
 ```
@@ -189,11 +227,17 @@ DB2SimpleDataSource dataSource;
 
 dataSource.setDriverType( 4 );
 dataSource.setDatabaseName( "BLUDB" );
-dataSource.setServerName( "<host_name_or_IP_address>" );
+dataSource.setServerName( "<nombre_host_o_dirección_IP>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<contraseña>" );
+```
+
+o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<nombre_host_o_dirección_IP>:50001/BLUDB:user=<IBMid>;password=<contraseña>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Experiencia del usuario de consola
@@ -210,7 +254,8 @@ La API REST de {{site.data.keyword.dashdbshort_notm}} se ha mejorado para que ta
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Nota**: `<userid>` no es necesario que el valor de `"id"` e `"ibmid"` sea el mismo. Los dos ID no están enlazados de ninguna forma.
+  El `<userid>` no es necesario que el valor de `"id"` e `"ibmid"` sea el mismo. Los dos ID no están enlazados de ninguna forma.
+  {: note}
 
 * Para migrar un usuario de la base de datos IBMid no de IBM (por ejemplo, `abcuser`) y transformarlo en un usuario IBMid, primero suprima el ID del usuario IBMid no de IBM ejecutando la llamada de API del ejemplo siguiente:
 
@@ -232,7 +277,7 @@ La API REST de {{site.data.keyword.dashdbshort_notm}} se ha mejorado para que ta
   .
   ```
 
-Para obtener más detalles sobre la API del servicio, consulte [{{site.data.keyword.dashdbshort_notm}} API REST ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
+Para obtener más detalles sobre la API del servicio, consulte: [API REST de {{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
 
 ## Federación de IBMid
 {: #fed}

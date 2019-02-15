@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # PHP를 사용하여 프로그래밍 방식으로 연결
+{: #con_prog_php}
 
 PHP 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 간의 연결을 정의합니다.
 {: shortdesc}
@@ -81,7 +86,6 @@ PHP 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이
    ```
 
    이 PHP 코드 예를 `C:\sample.php`라는 스크립트 파일에 저장한 다음 명령행에서 스크립트를 실행하면 다음 출력이 생성됩니다.
-
 
    ```
    C:\> php –f sample.php

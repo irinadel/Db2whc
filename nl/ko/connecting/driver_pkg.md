@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 드라이버 패키지
+{: #dr_pkg}
 
-{{site.data.keyword.dashdbshort_notm}} 드라이버 패키지에는 클라이언트 애플리케이션을 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 위한 소프트웨어가 포함되어 있습니다.
+{{site.data.keyword.dashdbshort_notm}} 드라이버 패키지에는 클라이언트 애플리케이션을 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 위한 소프트웨어가 포함되어 있습니다. 
 {: shortdesc}
 
 ## 정보

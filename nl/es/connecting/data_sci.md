@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Ciencia de datos
-{: #overview}
+{: #ds}
 
 También puede conectar aplicaciones externas a {{site.data.keyword.dashdbshort_notm}} y utilizarlas para gestionar o analizar todavía más sus datos. 
 {: shortdesc}
@@ -53,13 +57,13 @@ Vea este vídeo para saber cómo crear una conexión y añadir datos conectados 
 
    **Servicio de datos** = Servicio de datos de {{site.data.keyword.Bluemix_notm}}
 
-   Al seleccionar ** Servicio de datos **, los servicios de datos existentes de {{site.data.keyword.Bluemix_notm}} aparecerán en la lista **Instancia de servicio**.
+   Al seleccionar **Servicio de datos**, los servicios de datos existentes de {{site.data.keyword.Bluemix_notm}} aparecerán en la lista **Instancia de servicio**.
 
 4. Seleccione el servicio o servidor de base de datos de la lista.
 
 5. Especifique la información de conexión:
 
-   Al seleccionar ** Servicio de datos **, los servicios de datos existentes de {{site.data.keyword.Bluemix_notm}} aparecerán en la lista **Instancia de servicio**.
+   Al seleccionar **Servicio de datos**, los servicios de datos existentes de {{site.data.keyword.Bluemix_notm}} aparecerán en la lista **Instancia de servicio**.
     
 6. Pulse **Crear**. La conexión está disponible para todos los proyectos existentes.
     
@@ -78,10 +82,12 @@ En estas instrucciones se explica cómo crear una conexión desde IBM® SPSS® S
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq1}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
 ### Procedimiento
+{: #proc1}
 
 1. En SPSS Statistics, pulse **Archivo > Abrir base de datos > Nueva consulta**.
     
@@ -126,10 +132,12 @@ En estas instrucciones se explica cómo crear una conexión desde SAS a una base
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq2}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
 ### Procedimiento
+{: #proc2}
 
 Para obtener los pasos sobre cómo conectarse desde SAS a una base de datos de {{site.data.keyword.dashdbshort_notm}}, consulte la documentación de SAS:
 - [Interfaz SAS/ACCESS a DB2 en hosts UNIX y PC ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -141,10 +149,12 @@ En lugar de utilizar un entorno RStudio® que esté integrado con IBM Watson Stu
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq3}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
 ### Procedimiento
+{: #proc3}
 
 1. En su entorno R local, instale el paquete `ibmdbR` especificando el mandato siguiente:
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Daten in {{site.data.keyword.Bluemix_notm}} migrieren
@@ -50,7 +54,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Hinweis:** Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
-Eine geführte Anleitung zum Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [Geführte {{site.data.keyword.dashdblong}}-Präsentation zum Laden von Daten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+Eine Demo mit einer Anleitung zum Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [{{site.data.keyword.dashdblong}} - Demo mit Anleitung zum Laden von Daten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}. 
 
 ## Daten eines lokalen Systems migrieren
 {: #onprem}
@@ -64,7 +68,7 @@ Um Ihre Daten von einem lokalen System zu migrieren, wählen Sie abhängig von d
 
 Lift ist eine Anwendung, die Sie gebührenfrei nutzen können, um Ihre Daten aus verschiedenen Datenquellen, die in Tabelle 1 aufgelistet werden, zu {{site.data.keyword.Bluemix_notm}} zu migrieren. 
 
-|Zieldatenbank in {{site.data.keyword.Bluemix_notm}} | Datenquelle |
+| Zieldatenbank in {{site.data.keyword.Bluemix_notm}} | Datenquelle |
 |------------------------------|-------------|
 | IBM Db2 Warehouse on Cloud   | IBM Db2 |
 |                              | IBM Db2 Warehouse |
@@ -88,17 +92,16 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
 
 ![Ansicht der Mass Data Migration Service-Einheit](images/mdms.svg)
 
-Weitere Informationen zur MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen:  
+Weitere Informationen zur MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
 - [Einführung zu {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
-Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen:  
+Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
 - [Daten aus IBM PureData System for Analytics (Netezza)-Datenbank migrieren](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
 
 ## Lernprogramm zur Migration von Daten aus lokalen relationalen Datenbanken
-
 {: #tutorial}
 
-In diesem Lernprogramm wird vermittelt, wie Daten aus lokalen relationalen Datenbanken für Business Analytics-Anwendungen in {{site.data.keyword.dashdbshort_notm}} migriert werden können.  
+In diesem Lernprogramm wird vermittelt, wie Daten aus lokalen relationalen Datenbanken für Business Analytics-Anwendungen in {{site.data.keyword.dashdbshort_notm}} migriert werden können. 
 
 [Lernprogramm zum Hybrid-Data-Warehousing mit {{site.data.keyword.dashdbshort_notm}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
 

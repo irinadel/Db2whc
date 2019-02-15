@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-07-18"
 
 ---
@@ -12,12 +12,15 @@ lastupdated: "2018-07-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Virtualisation des données (fédération)
-{: #overview}
+{: #data_virt_fed}
 
-La virtualisation de données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.dashdbshort_notm}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site. 
+La virtualisation des données Db2 (qui porte également le nom de fédération) est prise en charge par {{site.data.keyword.dashdbshort_notm}}. Elle vous donne un accès de requête unique à toutes vos données situées dans des bases de données réparties partout dans votre organisation. Vous pouvez accéder aux données qui se trouvent dans toutes vos sources de données Db2 ou Informix, aussi bien sur le cloud que sur site. 
 {: shortdesc}
 
 Cette fonction est prise en charge sur toutes les versions de {{site.data.keyword.dashdbshort_notm}}, à l'exception du plan Entry. Toutefois, vous pouvez utiliser le plan Entry comme cible à partir de laquelle extraire des données.
@@ -117,4 +120,4 @@ A partir de la console {{site.data.keyword.dashdbshort_notm}} :
 
 Pour plus d'informations sur la virtualisation des données (fédération), voir : [Federation ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
 
-Pour plus d'informations sur les sources de données prises en charge par la fédération, voir : [Federation Supported Data Sources for Db2 on Cloud, Db2 Warehouse, Db2 Warehouse on Cloud and IBM Db2 Hosted![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Pour plus d'informations sur les sources de données prises en charge par la fédération, voir : [Federation Supported Data Sources ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.

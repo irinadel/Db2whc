@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visualisation des données/Intelligence métier
-{: #overview}
+{: #data_vis_bi}
 
 Vous pouvez aussi connecter des outils et des applications externes à {{site.data.keyword.dashdbshort_notm}}
 et les utiliser pour gérer ou analyser vos données. 
@@ -47,10 +51,12 @@ Ces instructions expliquent comment connecter Tableau à une base de données {{
 {: shortdesc}
 
 ### Prérequis
+{: #prereq1}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc1}
 
 1. Dans le tableau de bord de Tableau, ouvrez la fenêtre ou la page de votre outil qui est utilisée pour définir une connexion à la base de données.
 2. Sur la page d'accueil, cliquez sur **Connect to data**.
@@ -61,9 +67,9 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 |---------------|-----------------------------------|
 | Etape 1 : entrez un nom de serveur | Nom d'hôte |
 | Etape 2 : port | Numéro de port |
-| Etape 3 : entrez une base de données sur le serveur  | Nom de la base de données |
+| Etape 3 : entrez une base de données sur le serveur | Nom de la base de données |
 | Nom d'utilisateur | ID de l'utilisateur |
-| Mot de passe  | Mot de passe |
+| Mot de passe | Mot de passe |
 {: caption="Tableau 1. Zones de Tableau pour les informations de connexion" caption-side="top"}
 
 5. Cliquez sur **Connect** pour établir la connexion. Tableau offre plusieurs options de connexion à vos données. Pour utiliser pleinement votre base de données {{site.data.keyword.dashdbshort_notm}}, choisissez l'option **Connect Live**.
@@ -75,6 +81,7 @@ Ces instructions expliquent comment connecter Microsoft Excel <!--2010-->à une 
 {: shortdesc}
 
 ### Prérequis
+{: #prereq2}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
@@ -83,6 +90,7 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
 **Restriction** : les connexions entre Excel et {{site.data.keyword.dashdbshort_notm}} sont uniquement prises en charge sur le système d'exploitation Windows.
 
 ### Procédure
+{: #proc2}
 
 1. Dans la console Web, accédez à la page **Run SQL**.
     
@@ -96,11 +104,12 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
 
 6. Cliquez sur **Open** pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}}. La boîte de dialogue **Connect To DB2 Database** s'ouvre.
 
-7. Entrez l'ID d'utilisateur et le mot de passe que vous utilisez pour vous connecter à {{site.data.keyword.dashdbshort_notm}}. Pour obtenir l'ID d'utilisateur et le mot de passe, cliquez sur **Connect** ou sur **Connect > Connection information** dans la console Web. 
+7. Entrez l'ID d'utilisateur et le mot de passe que vous utilisez pour vous connecter à {{site.data.keyword.dashdbshort_notm}}. Pour obtenir l'ID d'utilisateur et le mot de passe, cliquez sur **Connect** ou sur **Connect > Connection information** dans la console Web.
 
 8. Vérifiez que le mode de connexion est `Share`, puis cliquez sur **OK**.
 
 ### Résultats
+{: #results2}
 
 Les résultats de la requête s'affichent dans une feuille de calcul Excel. Ces résultats sont les mêmes que ceux qui s'affichent dans le visualiseur Résultats. Vous pouvez maintenant générer des graphiques et des rapports et analyser vos données avec Excel. Pour en savoir plus sur la manière de procéder et sur la façon dont vous pouvez exécuter des requêtes SQL sur vos données à partir de la console Web, voir : 
 - [Tutoriel : Generating charts and reports by using Excel ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -113,12 +122,14 @@ Vous pouvez connecter Esri ArcGIS for Desktop <!--version 10.3.1 -->à une base 
 {: shortdesc}
 
 ### Prérequis
+{: #prereq3}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver Package installé sur votre ordinateur.
 
 ### Procédure
+{: #proc3}
 
 1. Déterminez votre nom de source de données ODBC à partir des [informations de connexion](credentials.html) obtenues précédemment.
 
@@ -146,6 +157,7 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
      ![Assistant de connexion à la base de données](images/2_gs_conn.jpg)
 
 ### Résultats
+{: #results3}
 
 Le composant ArcCatalog de Esri ArcGIS for Desktop est maintenant connecté à votre base de données {{site.data.keyword.dashdbshort_notm}}. 
 

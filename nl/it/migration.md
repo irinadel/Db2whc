@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migrazione dei dati a {{site.data.keyword.Bluemix_notm}}
@@ -50,7 +54,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **Nota:** per {{site.data.keyword.Bluemix_notm}} Object Storage, per creare le credenziali HMAC quando si creano nuove credenziali di servizio, specifica, {"HMAC:true"} nel campo *Aggiungi parametri di configurazione inline*.
 
-Per una demo guidata sul caricamento dei dati da {{site.data.keyword.Bluemix_notm}} Object Storage, consulta [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+Per una demo guidata sul caricamento dei dati da {{site.data.keyword.Bluemix_notm}} Object Storage, consulta: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 
 ## Migrazione di dati da un sistema in loco
 {: #onprem}

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # ODBC データ ソース アドミニストレータでの接続
+{: #con_prog_odbc_dsa}
 
 Microsoft ODBC データ ソース アドミニストレータ・ツールを使用して、ODBC または CLI アプリケーションと {{site.data.keyword.dashdbshort_notm}} データベース間の接続を定義します。
 {: shortdesc}

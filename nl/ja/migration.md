@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}} へのデータのマイグレーション

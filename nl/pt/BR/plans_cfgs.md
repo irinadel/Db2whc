@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-24"
+  years: 2014, 2019
+lastupdated: "2018-12-07"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Planos e configurações
@@ -19,7 +23,7 @@ lastupdated: "2018-10-24"
 É possível escolher um plano {{site.data.keyword.dashdbshort_notm}} que esteja configurado e otimizado para o trabalho que você precise fazer:
 {: shortdesc}
 
-   * Um plano de entrada para experimentar as coisas. É uma avaliação grátis com até 1 GB de armazenamento.
+   * Um plano de entrada para experimentar as coisas. É uma avaliação grátis com até 1 GB de armazenamento. Consulte: [Restrições de plano de entrada](#ep_restrictions)
    * Planos Flex nos quais é possível escalar de forma independente os recursos de armazenamento e de cálculo
    * Os planos SMP de vários tamanhos para produção: pequeno, médio e grande consistem em um único nó e uma única instância
    * Configurações de cluster com múltiplos nós MPP para processamento paralelo e alto desempenho
@@ -42,9 +46,10 @@ Caso você não veja no catálogo uma configuração da qual precisa, entre em c
 ## Disponibilidade de Planos em Datacenters
 {: #availability}
 
-As tabelas a seguir fornecem informações sobre a disponibilidade dos vários planos do Db2 Warehouse on Cloud por data centers localizados em regiões geográficas:
+A tabela a seguir fornece informações sobre a disponibilidade dos vários planos do {{site.data.keyword.dashdbshort_notm}} pelos data centers localizados nas regiões geográficas:
 
-| Planos do Db2 Warehouse on Cloud | Ásia / Pacífico | Europa    | América do Norte / Central     | América do Sul |
+
+|Planos do {{site.data.keyword.dashdbshort_notm}} | Ásia / Pacífico | Europa    | América do Norte / Central     | América do Sul |
 |------------------------------|--------------|-----------|-----------------------    |---------------|
 | Flex                         | *NA          | Frankfurt | Washington D.C. (us-leste) | *NA           |
 |                              |              |           | Dallas (us-sul)         |               |  
@@ -66,5 +71,32 @@ As tabelas a seguir fornecem informações sobre a disponibilidade dos vários p
 
 *NA = Não disponível neste momento
 
+## Restrições do plano de entrada
+{: #ep_restrictions}
 
+É altamente recomendável usar um plano de serviço de nível corporativo em vez de um plano de serviço de entrada para cargas de trabalho essenciais e sensíveis ao desempenho.
+{: important}
 
+A seguir está uma tabela de {{site.data.keyword.dashdbshort_notm}} Restrições de plano de entrada:
+
+| Categoria | Item | Restrição | 
+|----------|------|-------------|
+| Recursos | Storage | 20 GB de armazenamento por usuário. O plano é grátis somente se menos de 1 GB de armazenamento é usado. |
+|  | Conexões | 50 conexões por usuário. Esse limite pode ser ajustado dinamicamente para manter a integridade do sistema da instância. |
+|  | Desempenho | O desempenho pode flutuar devido a cargas de trabalho executadas por outros usuários no sistema de diversos locatários |
+|  |  |
+| Recursos e funções | Federação | Não suportado |
+|  | Compatibilidade do Oracle | Não suportado |
+|  | Extensões definidas pelo usuário (UDFs) | Não suportado |
+|  | Gerenciamento de usuários | Usuário que não tem autoridade administrativa |
+|  | Row and Column Access Control (RCAC) | Não suportado |
+|  | IBM InfoSphere Data Replication para uso no carregamento de dados | Não suportado |
+|  |  |
+| Ambiente de rede | IBM Cloud Integrated Analytics | Não suportado |
+|  | IBM Cloud Dedicado | Não suportado |
+|  |  |
+| Conformidades de segurança | Health Information Portability and Accountability Act de 1996 (HIPAA) | Não suportada. Consulte a descrição do serviço. |
+|  | Regulamento Geral sobre a Proteção de Dados (GDPR) da UE | Nenhuma restrição específica se aplica |
+|  |  |
+| Gerenciamento de conta | Reativação | Nenhum requisito de reativação |
+{: caption="Tabela 1. {{site.data.keyword.dashdbshort_notm}} Restrições de plano de entrada" caption-side="top"}

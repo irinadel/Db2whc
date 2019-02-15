@@ -14,9 +14,10 @@ Db2 Warehouse on Cloud
     br.md
     dr.md
     ha.md
+    [Audits](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html)
 
     {: .topicgroup}
-    Ihre Daten laden
+    Daten laden
         dcw.md
         migration.md
         pda_db2whc_mdms.md

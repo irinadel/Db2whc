@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # .NET을 사용하여 프로그래밍 방식으로 연결
+{: #con_prog_net}
 
-.NET 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 간의 연결을 정의합니다.
+.NET 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 간의 연결을 정의합니다. 
 {: shortdesc}
 
 ## 전제조건
@@ -53,7 +58,7 @@ lastupdated: "2018-09-25"
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. [*Optional*]: To 데이터베이스에 대한 .NET 연결을 확인하려면 명령 프롬프트에서 다음 명령을 입력하십시오.
+2. [*선택사항*]: 데이터베이스에 대한 .NET 연결을 확인하려면 명령 프롬프트에서 다음 명령을 입력하십시오.
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 

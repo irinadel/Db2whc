@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Configuración del entorno local
+{: #cfg_loc_env}
 
 Para conectar aplicaciones y herramientas locales a la base de datos {{site.data.keyword.dashdbshort_notm}}, tendrá que configurar el entorno.  
 {: shortdesc}

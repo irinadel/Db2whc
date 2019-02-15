@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Installazione del pacchetto del driver su Linux o PowerLinux
+{: #install_dr_pkg_linux}
 
-Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}}su Linux o PowerLinux utilizzando `installDSDriver`.
+Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}}su Linux o PowerLinux utilizzando `installDSDriver`. 
 {: shortdesc}
 
 ## Prerequisiti

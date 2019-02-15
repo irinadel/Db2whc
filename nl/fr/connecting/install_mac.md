@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Installation du module de pilote sur Mac OS X
+{: #install_dr_pkg_mac}
 
-Vous pouvez installer le module de pilote {{site.data.keyword.dashdbshort_notm}} sur Mac OS X à l'aide du script `installDSDriver.sh`.
+Vous pouvez installer le module de pilote {{site.data.keyword.dashdbshort_notm}} sur Mac OS X à l'aide du script `installDSDriver.sh`. 
 {: shortdesc}
 
 ## Prérequis

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # .NET を使用したプログラムによる接続
+{: #con_prog_net}
 
 .NET アプリケーションと {{site.data.keyword.dashdbshort_notm}} データベースの間の接続を定義します。 
 {: shortdesc}
@@ -45,7 +50,7 @@ lastupdated: "2018-09-25"
 
      `<hostname>`: サーバーのホスト名。
     
-     `<alias>`: .NET 接続を確立するために使用する DSN 別名の名前。何を指すのかがわかる名前にしてください (例、`analytics`)。 
+     `<alias>`: .NET 接続を確立するために使用する DSN 別名の名前。 何を指すのかがわかる名前にしてください (例、`analytics`)。 
 
    - SSL を使用しない接続の場合:
 

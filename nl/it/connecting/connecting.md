@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Panoramica di collegamento 
-{: #overview}
+# Panoramica di collegamento
+{: #connect}
 
-Puoi collegare le interfacce della riga di comando, strumenti e applicazioni di terze parti o di IBM® o applicazioni che hai creato nel tuo database {{site.data.keyword.dashdbshort_notm}}.
+Puoi collegare le interfacce della riga di comando, strumenti e applicazioni di terze parti o di IBM® o applicazioni che hai creato nel tuo database {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Prerequisiti

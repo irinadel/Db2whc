@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migration des données vers {{site.data.keyword.Bluemix_notm}}
@@ -48,9 +52,9 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Remarque :** Pour {{site.data.keyword.Bluemix_notm}} Object Storage, pour créer des données d'identification HMAC lorsque vous créez de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+**Remarque :** Dans {{site.data.keyword.Bluemix_notm}} Object Storage, pour créer des données d'identification HMAC lorsque vous créez de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
 
-Pour savoir comment charger les données depuis {{site.data.keyword.Bluemix_notm}} Object Storage, consultez le document [{{site.data.keyword.dashdblong}} guide : Explore data loading ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+Pour accéder à une démonstration présentant comment charger des données depuis {{site.data.keyword.Bluemix_notm}} Object Storage, consultez la page [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}.
 
 ## Migration de données depuis un système sur site
 {: #onprem}

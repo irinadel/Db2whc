@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Connessione con ODBC Data Source Administrator
+{: #con_prog_odbc_dsa}
 
 Utilizza lo strumento Microsoft ODBC Data Source Administrator per definire una connessione tra un'applicazione CLI o ODBC e un database {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}

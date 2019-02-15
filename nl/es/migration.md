@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migración de datos a {{site.data.keyword.Bluemix_notm}}
@@ -48,7 +52,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Nota:** Para {{site.data.keyword.Bluemix_notm}} Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+**Nota:** Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
 
 Para obtener una demostración guiada acerca de cómo cargar datos desde {{site.data.keyword.Bluemix_notm}} Object Storage, consulte [Demostración guiada de {{site.data.keyword.dashdblong}}: Explorar la carga de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 
@@ -57,7 +61,7 @@ Para obtener una demostración guiada acerca de cómo cargar datos desde {{site.
 
 Para migrar los datos desde un sistema local, seleccione uno de los métodos siguientes dependiendo del tamaño del conjunto de datos:
 * Menos de 25 TB de datos: [IBM Lift](#lift)
-* 25 TB de datos y superior: [{{site.data.keyword.Bluemix_notm}}Mass Data Migration Service](#mdms)
+* 25 TB de datos y superior: [{{site.data.keyword.Bluemix_notm}} Mass Data Migration Service](#mdms)
 
 ### Lift
 {: #lift}

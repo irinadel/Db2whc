@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Installation du module de pilote sur Windows
+{: #install_dr_pkg_windows}
 
-Vous pouvez installer le module de pilote {{site.data.keyword.dashdbshort_notm}} sur Windows à l'aide du programme d'installation.
+Vous pouvez installer le module de pilote {{site.data.keyword.dashdbshort_notm}} sur Windows à l'aide du programme d'installation. 
 {: shortdesc}
 
 ## Prérequis

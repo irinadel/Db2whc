@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,14 +11,20 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Dettagli database e credenziali di connessione 
+# Dettagli database e credenziali di connessione
+{: #db_details_cxn_creds}
 
 Per configurare il tuo ambiente di sviluppo locale e per collegare le applicazioni e gli strumenti al tuo database {{site.data.keyword.dashdbshort_notm}}, devi conoscere i dettagli del database e le credenziali di connessione.
 {: shortdesc}
 
 ## Dettagli del database
+{: #db_details}
 
 Esistono dei dettagli del database importanti necessari alla connessione delle applicazioni e degli strumenti al tuo database:
 
@@ -28,7 +34,8 @@ Esistono dei dettagli del database importanti necessari alla connessione delle a
    Se necessario, puoi ottenere l'indirizzo IP del tuo server utilizzando il comando ping o il comando nslookup, specificando il nome host.
 - *Nome database* - Il nome del database Db2, di solito BLUDB.
 
-## Credenziali di connessione 
+## Credenziali di connessione
+{: #cxn_creds}
 
 Ci sono tre tipi di credenziali:
 
@@ -37,6 +44,7 @@ Ci sono tre tipi di credenziali:
 - *Utenti creati dall'amministratore* - Alcuni piani {{site.data.keyword.dashdbshort_notm}} consentono agli utenti amministrativi di creare nuovi utenti. Questi ID utente e password creati dall'amministratore possono essere utilizzati per accedere direttamente all'URL della console web e per la connessione al database Db2 dalle applicazioni o dagli strumenti.
 
 ## Dove trovare i dettagli del database e le credenziali di connessione
+{: #location}
 
 Puoi raccogliere queste informazioni da:
 

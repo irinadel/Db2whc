@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 연결 개요
-{: #overview}
+{: #connect}
 
-명령행 인터페이스, IBM® 또는 서드파티 애플리케이션 및 도구, 또는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 작성하는 앱을 연결할 수 있습니다.
+명령행 인터페이스, IBM® 또는 서드파티 애플리케이션 및 도구, 또는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 작성하는 앱을 연결할 수 있습니다. 
 {: shortdesc}
 
 ## 전제조건

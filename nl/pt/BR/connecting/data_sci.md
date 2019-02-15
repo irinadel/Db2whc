@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Dados científicos
-{: #overview}
+{: #ds}
 
 Também é possível conectar ferramentas e aplicativos externos ao {{site.data.keyword.dashdbshort_notm}} e utilizá-los para gerenciar ou analisar ainda mais os dados. 
 {: shortdesc}
@@ -78,10 +82,12 @@ Estas instruções explicam como criar uma conexão do IBM® SPSS® Statistics c
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq1}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
 ### Procedimento
+{: #proc1}
 
 1. No SPSS Statistics, clique em **Arquivo > Abrir banco de dados > Nova consulta**.
     
@@ -126,10 +132,12 @@ Estas instruções explicam como criar uma conexão do SAS com um banco de dados
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq2}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
 ### Procedimento
+{: #proc2}
 
 Para obter as etapas sobre como se conectar do SAS a um banco de dados {{site.data.keyword.dashdbshort_notm}}, consulte a documentação do SAS:
 - [Interface SAS/ACCESS para o DB2 em Hosts UNIX e PC ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -141,10 +149,12 @@ Em vez de usar o ambiente do RStudio® integrado ao IBM Watson Studio, talvez vo
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq3}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
 ### Procedimento
+{: #proc3}
 
 1. Em seu ambiente R local, instale o pacote `ibmdbR` inserindo o comando a seguir:
 

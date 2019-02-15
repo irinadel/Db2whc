@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}}의 IAM(Identity and Access Management)
@@ -66,7 +69,7 @@ curl -k -X POST \
 
 **API 키**
 
-각 IBM ID 사용자 또는 서비스 ID에 대해 여러 개의 API 키를 작성할 수 있습니다. 각 API 키는 일반적으로 단일 애플리케이션에 대해 작성됩니다. 소유한 IBM ID 또는 서비스 ID가 동일한 데이터베이스 서비스 인스턴스에 사용자로 추가되어 있는 한 애플리케이션을 데이터베이스 서비스 인스턴스에 연결할 수 있습니다. API 키는 데이터베이스 내에서 소유한 IBM ID 또는 서비스 ID와 동일한 권한을 가집니다. 애플리케이션을 더 이상 데이터베이스에 연결하지 않는 경우 해당 API 키를 제거할 수 있습니다. 이 인증 방법은 IAM 서비스와 직접 상호작용할 필요가 없으므로 액세스 토큰을 사용하는 경우보다 애플리케이션을 덜 변경합니다. API 키 작성 및 관리에 대한 자세한 정보는 [사용자 API 키 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}을 참조하십시오.
+각 IBM ID 사용자 또는 서비스 ID에 대해 여러 개의 API 키를 작성할 수 있습니다. 각 API 키는 일반적으로 단일 애플리케이션에 대해 작성됩니다. 소유한 IBM ID 또는 서비스 ID가 동일한 데이터베이스 서비스 인스턴스에 사용자로 추가되어 있는 한 애플리케이션을 데이터베이스 서비스 인스턴스에 연결할 수 있습니다. API 키는 데이터베이스 내에서 소유한 IBM ID 또는 서비스 ID와 동일한 권한을 가집니다. 애플리케이션을 더 이상 데이터베이스에 연결하지 않는 경우 해당 API 키를 제거할 수 있습니다. 이 인증 방법은 IAM 서비스와 직접 상호작용할 필요가 없으므로 액세스 토큰을 사용하는 경우보다 애플리케이션을 덜 변경합니다. API 키 작성 및 관리에 대한 자세한 정보는 [사용자 API 키 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}를 참조하십시오.
 
 **IBM ID/비밀번호**
 
@@ -78,13 +81,14 @@ IBM ID/비밀번호는 콘솔에 로그인하는 데 사용할 수 있으며 사
 다음 데이터베이스 클라이언트 인터페이스가 지원됩니다.
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC 및 CLPPLUS
+### ODBC, CLP 및 CLPPLUS
 {: #odbc-clpplus}
 
-IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언트(CLPPLUS)를 Db2 서버에 연결하는 경우 먼저 다음 명령을 실행하여 `db2dsdriver.cfg` 구성 파일에 데이터 소스 이름(DSN)을 구성해야 합니다.
+IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언트(CLP, CLPPLUS)를 Db2 서버에 연결하는 경우 먼저 다음 명령을 실행하여 `db2dsdriver.cfg` 구성 파일에 데이터 소스 이름(DSN)을 구성해야 합니다.
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,7 +127,29 @@ IAM 인증을 사용하여 ODBC 애플리케이션 또는 명령행 클라이언
 
     ODBC의 경우 **AUTHENTICATION=GSSPLUGIN**을 `db2dsdriver.cfg` 구성 파일 또는 애플리케이션의 연결 문자열에 지정할 수 있습니다.
 
-* CLPPLUS 연결 명령에는 다음 중 하나가 포함될 수 있습니다.
+* CLP CONNECT 명령문에는 다음 중 하나가 포함될 수 있습니다.
+
+    **액세스 토큰**
+
+    데이터베이스 서버 `<database_server_name>`에 연결하고 CLP 명령 프롬프트나 스크립트에서 다음 명령을 실행하여 액세스 토큰을 전달하십시오.
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **API 키**
+
+    CLP 명령 프롬프트나 스크립트에서 다음 명령을 실행하여 API 키로 데이터베이스 서버 `<database_server_name>`에 연결하십시오.
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBM ID/비밀번호**
+
+    CLP 명령 프롬프트나 스크립트에서 다음 명령을 실행하여 IBM ID/비밀번호로 데이터베이스 서버 `<database_server_name>`에 연결하십시오.
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    CLP로 데이터베이스 서버에 연결하는 데 관한 자세한 정보는 [CONNECT(유형 2) 명령문 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}을 참조하십시오. 
+
+* CLPPLUS CONNECT 명령문에는 다음 중 하나가 포함될 수 있습니다.
 
     **액세스 토큰**
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+또는
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **API 키**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+또는
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBM ID/비밀번호**
 
 ```
@@ -193,13 +231,19 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+또는
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## 콘솔 사용자 환경
 {: #console-ux}
 
-서비스 콘솔 로그인 페이지에는 IBM ID 및 비밀번호를 사용하여 로그인하는 옵션이 있습니다. **IBM ID를 통해 로그인** 단추를 클릭하면 사용자는 비밀번호가 입력되는 IAM 로그인 페이지로 이동합니다. 인증이 완료되면 사용자가 다시 콘솔로 리디렉션됩니다. 이러한 로그인이 성공하려면 먼저 데이터베이스 관리자가 콘솔 또는 REST API를 통해 IBM ID 사용자를 각 데이터베이스 서비스 인스턴스에 추가해야 합니다. 비IBM ID 사용자의 경우와 같이 IBM ID 사용자가 추가될 때 데이터베이스 서비스 인스턴스의 사용자 ID를 입력해야 합니다. 사용자 ID는 데이터베이스 서비스 인스턴스 내에서 고유해야 합니다. 또한 이 사용자 ID는 데이터베이스 내에서 권한 부여(AUTH) ID입니다. 
+서비스 콘솔 로그인 페이지에는 IBM ID 및 비밀번호를 사용하여 로그인하는 옵션이 있습니다. **IBM ID를 통해 로그인** 단추를 클릭하면 사용자는 비밀번호가 입력되는 IAM 로그인 페이지로 이동합니다. 인증이 완료되면 사용자가 다시 콘솔로 리디렉션됩니다. 이러한 로그인이 성공하려면 먼저 데이터베이스 관리자가 콘솔 또는 REST API를 통해 IBM ID 사용자를 각 데이터베이스 서비스 인스턴스에 추가해야 합니다. 비IBM ID 사용자의 경우와 같이 IBM ID 사용자가 추가될 때 데이터베이스 서비스 인스턴스의 사용자 ID를 입력해야 합니다. 사용자 ID는 데이터베이스 서비스 인스턴스 내에서 고유해야 합니다. 또한 이 사용자 ID는 데이터베이스 내에서 권한 부여(AUTH) ID입니다.
 
 ## REST API 환경
 {: #api}
@@ -210,7 +254,8 @@ Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **참고**: `"id"` 및 `"ibmid"`의 `<userid>` 값은 같을 필요가 없습니다. 두 개의 다른 ID는 어떠한 방법으로도 함께 링크되지 않습니다.
+  `"id"` 및 `"ibmid"`의 `<userid>` 값은 같을 필요가 없습니다. 두 개의 다른 ID는 어떠한 방법으로도 함께 링크되지 않습니다.
+  {: note}
 
 * 기존 비IBM ID 데이터베이스 사용자(예: `abcuser`)를 마이그레이션하여 IBM ID 사용자로 만들려면 먼저 다음 API 호출 예제를 실행하여 비IBM ID 사용자 ID를 삭제하십시오.
 

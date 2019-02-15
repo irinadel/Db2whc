@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # ODBC または CLI を使用したプログラムによる接続
+{: #con_prog_odbc_cli}
 
 Microsoft Windows ODBC または CLI アプリケーションと {{site.data.keyword.dashdbshort_notm}} データベースの間の接続を定義します。
 {: shortdesc}
@@ -31,7 +36,7 @@ Microsoft Windows ODBC または CLI アプリケーションと {{site.data.key
 
 1. Linux オペレーティング・システムのコマンド・シェル、Windows コマンド・プロンプト、または Windows オペレーティング・システムの Db2 コマンド・ウィンドウに、以下のコマンドを入力します。
 
-   **注**: これらのコマンドは、コンピューター上のドライバー構成ファイル (`db2dsdriver.cfg`) に新規エントリーを作成し、接続属性を設定します。このステップは 1 回だけ実行する必要があります。
+   **注**: これらのコマンドは、コンピューター上のドライバー構成ファイル (`db2dsdriver.cfg`) に新規エントリーを作成し、接続属性を設定します。 このステップは 1 回だけ実行する必要があります。
    
    - SSL を使用する接続の場合:
 
@@ -63,7 +68,7 @@ Microsoft Windows ODBC または CLI アプリケーションと {{site.data.key
 
    `<password>` は前もって収集しておいた接続資格情報の中のパスワードです。
 
-3. [*Optional*]: To Microsoft ODBC Driver Manger にデータ・ソース名 (DSN) を登録し、Microsoft ODBC アプリケーションと連携させるには、次のコマンドを実行します。デフォルトでは、DSN はユーザー DSN として作成されます。
+3. [*Optional*]: To Microsoft ODBC Driver Manger にデータ・ソース名 (DSN) を登録し、Microsoft ODBC アプリケーションと連携させるには、次のコマンドを実行します。 デフォルトでは、DSN はユーザー DSN として作成されます。
 
    `db2cli registerdsn -add -dsn <alias>`
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Configurando seu Ambiente Local
+{: #cfg_loc_env}
 
 Para conectar aplicativos locais e ferramentas ao banco de dados {{site.data.keyword.dashdbshort_notm}}, é necessário configurar seu ambiente.  
 {: shortdesc}
@@ -78,7 +83,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
  
    Execute o comando a seguir por meio de uma linha de comandos: 
 
-   ` db2cli registerdsn -add -dsn <alias>`
+   `db2cli registerdsn -add -dsn <alias>`
 
    sendo: 
 

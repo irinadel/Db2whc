@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conexión mediante programa con .NET
+{: #con_prog_net}
 
 Defina una conexión entre una aplicación .NET y la base de datos de {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
@@ -31,7 +36,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
 Los pasos siguientes le muestran cómo conectar la aplicación a la base de datos con .NET.
 
-1. Desde un indicador de mandatos, entre los mandatos siguientes. Estos mandatos crean nuevas entradas en el archivo de configuración del controlador (`db2dsdriver.cfg`) en el sistema y establecen los atributos de conexión. Necesita realizar este paso solo una vez.
+1. Desde un indicador de mandatos, entre los mandatos siguientes. Estos mandatos crean nuevas entradas en el archivo de configuración del controlador (`db2dsdriver.cfg`) en el sistema y establecen los atributos de conexión. Solo debe realizar este paso una vez.
         
    - Para una conexión con SSL:
 
@@ -53,7 +58,7 @@ Los pasos siguientes le muestran cómo conectar la aplicación a la base de dato
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. [*Optional*]: To Para verificar la conexión .NET con la base de datos, especifique el mandato siguiente en un indicador de mandatos:
+2. [*Opcional*] Para verificar la conexión .NET con la base de datos, especifique el mandato siguiente en un indicador de mandatos:
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 

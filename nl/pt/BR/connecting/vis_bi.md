@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visualização de dados / BI
-{: #overview}
+{: #data_vis_bi}
 
 Também é possível conectar ferramentas e aplicativos externos ao {{site.data.keyword.dashdbshort_notm}} e utilizá-los para gerenciar ou analisar ainda mais os dados. 
 {: shortdesc}
@@ -46,10 +50,12 @@ Estas instruções explicam como conectar o Tableau a um banco de dados {{site.d
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq1}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
 ### Procedimento
+{: #proc1}
 
 1. Na Área de trabalho do Tableau, abra a janela ou a página na ferramenta usada para definir uma conexão com o banco de dados.
 2. Na página inicial, clique em **Conectar aos dados**.
@@ -74,6 +80,7 @@ Estas instruções explicam como conectar o Microsoft Excel <!--2010-->a um banc
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq2}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
@@ -82,6 +89,7 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
 **Restrição**: conexões entre o Excel e o {{site.data.keyword.dashdbshort_notm}} são suportadas apenas no sistema operacional Windows.
 
 ### Procedimento
+{: #proc2}
 
 1. No console da web, acesse a página **Executar SQL**.
     
@@ -100,6 +108,7 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
 8. Assegure-se de que o modo de conexão seja `Share` e, em seguida, clique em **OK**.
 
 ### Resultados
+{: #results2}
 
 Os resultados da consulta são exibidos em uma planilha do Excel. Esses são os mesmos resultados exibidos no visualizador Resultados. Agora é possível gerar gráficos e relatórios e analisar seus dados usando o Excel. Para obter mais informações sobre como fazer isso e como executar consultas SQL em seus dados por meio do console da web, consulte: 
 - [Tutorial: Gerando gráficos e relatórios usando o Excel ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -112,12 +121,14 @@ Os resultados da consulta são exibidos em uma planilha do Excel. Esses são os 
 {: shortdesc}
 
 ### Pré-requisitos
+{: #prereq3}
 
 Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
 
 Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package instalado no computador.
 
 ### Procedimento
+{: #proc3}
 
 1. Determine seus dados de DSN do ODBC por meio das [informações de conexão](credentials.html) coletadas antecipadamente.
 
@@ -145,6 +156,7 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
      ![Database Connections wizard](images/2_gs_conn.jpg)
 
 ### Resultados
+{: #results3}
 
 O componente ArcCatalog do Esri ArcGIS for Desktop está agora conectado ao banco de dados {{site.data.keyword.dashdbshort_notm}}. 
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-06-15"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-06-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Migration depuis IBM PureData System for Analytics (Netezza)
@@ -149,7 +153,7 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
 
        `/nz/support/contrib/bin/nz_backup –db <db_name> –d <target_directory>  ascii threads 4`
 
-       ****Remarque : le répertoire `<target_directory>` est le partage NFS du périphérique MDMS qui est monté sur votre serveur Netezza.
+       ****Remarque : la valeur `<target_directory>` est le partage NFS du périphérique MDMS qui est monté sur votre serveur Netezza.
    
     2. Exécutez l'exemple d'une instruction CREATE EXTERNAL TABLE ci-après :
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-07-18"
 
 ---
@@ -12,10 +12,13 @@ lastupdated: "2018-07-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 데이터 가상화(연합)
-{: #overview}
+{: #data_virt_fed}
 
 Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.dashdbshort_notm}}를 통해 지원합니다. 데이터 가상화를 사용하면 조직 전체의 여러 분산 데이터베이스에 있는 모든 데이터에 단일 조회 액세스가 가능합니다. 클라우드와 온프레미스 둘 다에서 Db2 또는 Informix 데이터 소스에 있는 데이터에 액세스할 수 있습니다. 
 {: shortdesc}

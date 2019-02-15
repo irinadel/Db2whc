@@ -1,7 +1,7 @@
 ﻿---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connexion à l'aide d'un programme avec ODBC ou une interface de ligne de commande 
+# Connexion à l'aide d'un programme avec ODBC ou une interface de ligne de commande
+{: #con_prog_odbc_cli}
 
 Définissez une connexion entre une application Microsoft Windows ODBC ou une application d'interface de ligne de commande et une base de données {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
@@ -57,19 +62,19 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    où :
 
-   `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg** 
+   `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg**
 
-   `<user_id>` provient des données d'identification de connexion que vous avez obtenues plus tôt 
+   `<user_id>` provient des données d'identification de connexion que vous avez obtenues plus tôt
 
    `<password>` provient des données d'identification de connexion que vous avez obtenues plus tôt
 
-3. [*Facultatif*] : Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur. 
+3. [*Facultatif*] : Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur.
 
    `db2cli registerdsn -add -dsn <alias>`
 
    où :
         
-   `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg** 
+   `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg**
 
 
 

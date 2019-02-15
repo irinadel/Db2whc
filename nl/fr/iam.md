@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # IAM (Identity and access management) sur {{site.data.keyword.Bluemix_notm}}
@@ -36,7 +39,7 @@ Les fonctions IAM suivantes sont implémentées pour le service géré {{site.da
 
 **IBMid**
 
-Les utilisateurs possédant un IBMid doivent être ajoutés à chaque instance de service de base de données par l'administrateur de base de données via la console ou l'API REST avant que les utilisateurs puissent se connecter à l'instance de service de base de données particulière. Tout comme pour un utilisateur qui n'est pas un utilisateur IBMid, un ID d'utilisateur doit être saisi pour l'instance de service de base de données en même temps que l'utilisateur IBMid est ajouté. Cet ID d'utilisateur doit être unique dans l'instance de service de base de données. Cet ID d'utilisateur est également l'ID d'autorisation (AUTH) dans la base de données.L'administrateur de base de données peut accorder et révoquer des droits en fonction de l'ID AUTH.
+Les utilisateurs possédant un IBMid doivent être ajoutés à chaque instance de service de base de données par l'administrateur de base de données via la console ou l'API REST avant que les utilisateurs puissent se connecter à l'instance de service de base de données particulière. Tout comme pour un utilisateur qui n'est pas un utilisateur IBMid, un ID d'utilisateur doit être saisi pour l'instance de service de base de données en même temps que l'utilisateur IBMid est ajouté. Cet ID d'utilisateur doit être unique dans l'instance de service de base de données. Cet ID d'utilisateur est également l'ID d'autorisation (AUTH) dans la base de données. L'administrateur de base de données peut accorder et révoquer des droits en fonction de l'ID AUTH.
 
 **ID de service**
 
@@ -66,7 +69,7 @@ Un jeton d'accès identifie un utilisateur IBMid ou un ID de service dans la bas
 
 **Clé d'API**
 
-Plusieurs clés d'API peuvent être créées pour chaque utilisateur IBMid ou ID de service. Chaque clé d'API est généralement créée pour une seule application. Elle permet à l'application de se connecter à l'instance de service de base de données tant que l'uté en tant qu'utilisateur à la même instance de service de base de données. La clé d'API possède les mêmes autorisations et permissions dans la base de données que l'IBMid ou l'ID de service propriétaire. Si une application n'est plus autorisée à se connecter à la base de données, la clé d'API correspondante peut être supprimée. Cette méthode d'authentification nécessite moins de changements dans l'application que l'utilisation d'un jeton d'accès car elle ne nécessite aucune interaction directe avec le service IAM. Pour en savoir plus sur la création et la gestion des clés d'API, voir : [Gestion des clés d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
+Plusieurs clés d'API peuvent être créées pour chaque utilisateur IBMid ou ID de service. Chaque clé d'API est généralement créée pour une seule application. Elle permet à l'application de se connecter à l'instance de service de base de données tant que l'IBMid propriétaire ou l'ID de service est ajouté en tant qu'utilisateur à la même instance de service de base de données. La clé d'API possède les mêmes autorisations et permissions dans la base de données que l'IBMid ou l'ID de service propriétaire. Si une application n'est plus autorisée à se connecter à la base de données, la clé d'API correspondante peut être supprimée. Cette méthode d'authentification nécessite moins de changements dans l'application que l'utilisation d'un jeton d'accès car elle ne nécessite aucune interaction directe avec le service IAM. Pour en savoir plus sur la création et la gestion des clés d'API, voir : [Gestion des clés d'API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/docs/iam/userid_keys.html#userapikey){:new_window}.
 
 **IBMid/mot de passe**
 
@@ -79,13 +82,14 @@ Les interfaces de client de base de données suivantes sont prises en charge :
 
 * [ODBC
 ](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC et CLPPLUS
+### ODBC, CLP et CLPPLUS
 {: #odbc-clpplus}
 
-Pour qu'une application ODBC ou un client de ligne de commande (CLPPLUS) puisse se connecter à un serveur Db2 en utilisant l'authentification IAM, un nom de source de données (DSN) doit d'abord être configuré dans un fichier de configuration `db2dsdriver.cfg` à l'aide de la commande suivante :
+Pour qu'une application ODBC ou un client de ligne de commande (CLP, CLPPLUS) puisse se connecter à un serveur Db2 en utilisant l'authentification IAM, un nom de source de données (DSN) doit d'abord être défini dans un fichier de configuration `db2dsdriver.cfg` à l'aide de la commande suivante :
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -124,7 +128,29 @@ L'exemple suivant d'un fichier de configuration `db2dsdriver.cfg` montre les con
 
     Pour ODBC, **AUTHENTICATION=GSSPLUGIN** peut être spécifié dans le fichier de configuration `db2dsdriver.cfg` ou bien dans la chaîne de connexion de l'application.
 
-* La commande de connexion CLPPLUS peut contenir l'un des éléments suivants :
+* L'instruction CLP CONNECT peut inclure l'un des éléments suivants :
+
+    **Jeton d'accès**
+
+    Connectez-vous au serveur de base de données `<database_server_name>` et transmettez le jeton d'accès en exécutant la commande suivante sur le script ou l'invite de commande CLP :
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **Clé d'API**
+
+    Connectez-vous au serveur de base de données `<database_server_name>` avec une clé d'API en exécutant la commande suivante sur le script ou l'invite de commande CLP :
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBMid/mot de passe**
+
+    Connectez-vous au serveur de base de données `<database_server_name>` avec un IBMid/mot de passe en exécutant la commande suivante sur le script ou l'invite de commande CLP :
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    Pour en savoir plus sur la connexion à un serveur de base de données avec CLP, voir [CONNECT (type 2) statement ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* L'instruction CLPPLUS CONNECT peut inclure l'un des éléments suivants :
 
     **Jeton d'accès**
 
@@ -168,6 +194,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **Clé d'API**
 
 ```
@@ -183,6 +215,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBMid/mot de passe**
 
 ```
@@ -194,7 +232,13 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+ou
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Expérience utilisateur de la console
@@ -205,13 +249,14 @@ La page de connexion de la console de service a la possibilité de se connecter 
 ## Expérience de l'API REST
 {: #api}
 
-L'API REST {{site.data.keyword.dashdbshort_notm}} a été améliorée pour accepter également un jeton d'accès IAM pour les fonctions qui acceptaient auparavant une jeton d'accès généré par le service de base de données.
+L'API REST {{site.data.keyword.dashdbshort_notm}} a été améliorée afin d'accepter également un jeton d'accès IAM pour les fonctions qui acceptaient auparavant un jeton d'accès généré par le service de base de données.
 
 * Pour ajouter un nouvel utilisateur IBMid, exécutez l'exemple d'appel API suivant :
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  ****Remarque : la valeur `<userid>` de `"id"` et `"ibmid"` n'a pas besoin d'être identique. Les deux ID différents ne sont pas liés entre eux.
+  Les valeurs `<userid>` des éléments `"id"` et `"ibmid"` n'ont pas besoin d'être identiques. Les deux ID différents ne sont pas liés entre eux.
+  {: note}
 
 * Pour faire migrer un utilisateur de base de données non-IBMid existant (par exemple `abcuser`) et le convertir en utilisateur IBMid, supprimez d'abord l'ID de l'utilisateur non-IBMid en exécutant l'exemple d'appel API suivant :
 

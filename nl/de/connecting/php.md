@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,16 +11,21 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Programmgestützte Verbindungsherstellung - PHP
+{: #con_prog_php}
 
 Definieren Sie eine Verbindung zwischen einer PHP-Anwendung und einer {{site.data.keyword.dashdbshort_notm}}-Datenbank.
 {: shortdesc}
 
 ## Voraussetzungen
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden. 
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -31,9 +36,9 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
 ### Szenario 1: Außerhalb von {{site.data.keyword.Bluemix_notm}} eine Verbindung herstellen:
         
-1. Laden Sie das [Db2-Treiberpaket](driver_pkg.html) über die Webkonsole herunter und installieren Sie das Paket auf der Maschine, auf dem Ihre PHP-Anwendung ausgeführt werden soll. 
+1. Laden Sie das [Db2-Treiberpaket](driver_pkg.html) über die Webkonsole herunter und installieren Sie das Paket auf der Maschine, auf dem Ihre PHP-Anwendung ausgeführt werden soll.
                 
-2. Stellen Sie über die Funktion [`odbc_connect` ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://php.net/manual/en/function.odbc-connect.php){:new_window} eine Verbindung zu der Datenbank BLUDB her. 
+2. Stellen Sie über die Funktion [`odbc_connect` ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://php.net/manual/en/function.odbc-connect.php){:new_window} eine Verbindung zu der Datenbank BLUDB her.
     
    PHP-Beispielcode:
 
@@ -80,7 +85,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
    ?>
    ```
 
-   Das Speichern dieses PHP-Beispielcodes in einer Scriptdatei namens `C:\sample.php` und anschließende Ausführen des Scripts über eine Befehlszeile führt zu der folgenden Ausgabe: 
+   Das Speichern dieses PHP-Beispielcodes in einer Scriptdatei namens `C:\sample.php` und anschließende Ausführen des Scripts über eine Befehlszeile führt zu der folgenden Ausgabe:
 
    ```
    C:\> php –f sample.php
@@ -90,15 +95,15 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
 ### Szenario 2: Verbindung von PHP-Web-App aus in {{site.data.keyword.Bluemix_notm}} herstellen
 
-1. Erstellen Sie über den {{site.data.keyword.Bluemix_notm}}-Katalog eine neue PHP-App. 
+1. Erstellen Sie über den {{site.data.keyword.Bluemix_notm}}-Katalog eine neue PHP-App.
         
-2. Laden Sie wie im Bereich 'Einführung' der neuen PHP-App in Ihrem {{site.data.keyword.Bluemix_notm}}-Dashboard den Startercode für die App in Ihr lokales Arbeitsverzeichnis herunter. 
+2. Laden Sie wie im Bereich 'Einführung' der neuen PHP-App in Ihrem {{site.data.keyword.Bluemix_notm}}-Dashboard den Startercode für die App in Ihr lokales Arbeitsverzeichnis herunter.
         
-3. Erstellen Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard eine neue Verbindung zwischen dem Db2-Service und der neuen PHP-App. (Das Erstellen dieser Verbindung in {{site.data.keyword.Bluemix_notm}} führt dazu, dass die Umgebungsvariable `VCAP_SERVICES` in der PHP-App verfügbar ist. Die Umgebungsvariable `VCAP_SERVICES` enthält die Datenbankdetails für den Db2-Service. Die Verwendung von `VCAP_SERVICES` hat Vorteile gegenüber einer festen Codierung der Datenbankdetails in der PHP-App.) 
+3. Erstellen Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard eine neue Verbindung zwischen dem Db2-Service und der neuen PHP-App. (Das Erstellen dieser Verbindung in {{site.data.keyword.Bluemix_notm}} führt dazu, dass die Umgebungsvariable `VCAP_SERVICES` in der PHP-App verfügbar ist. Die Umgebungsvariable `VCAP_SERVICES` enthält die Datenbankdetails für den Db2-Service. Die Verwendung von `VCAP_SERVICES` hat Vorteile gegenüber einer festen Codierung der Datenbankdetails in der PHP-App.)
         
-4. Aktualisieren Sie im lokalen Arbeitsverzeichnis die Datei `index.php`, um die Verbindung zur Datenbank BLUDB über die Funktion [`db2_connect` ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://php.net/manual/en/function.db2-connect.php){:new_window} herzustellen. 
+4. Aktualisieren Sie im lokalen Arbeitsverzeichnis die Datei `index.php`, um die Verbindung zur Datenbank BLUDB über die Funktion [`db2_connect` ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://php.net/manual/en/function.db2-connect.php){:new_window} herzustellen.
         
-   Beispiel: 
+   Beispiel:
 
    ```
    <!DOCTYPE html>
@@ -145,6 +150,6 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
    </html>
    ```
 
-5. Übertragen Sie die Aktualisierungen für {{site.data.keyword.Bluemix_notm}} vom lokalen Arbeitsverzeichnis aus mit einer Push-Operation. Orientieren Sie sich dabei an den Anweisungen im Bereich 'Einführung' der PHP-App in Ihrem {{site.data.keyword.Bluemix_notm}}-Dashboard. Starten Sie die App anschließend in {{site.data.keyword.Bluemix_notm}} und zeigen Sie die App in einem Browser an. 
+5. Übertragen Sie die Aktualisierungen für {{site.data.keyword.Bluemix_notm}} vom lokalen Arbeitsverzeichnis aus mit einer Push-Operation. Orientieren Sie sich dabei an den Anweisungen im Bereich 'Einführung' der PHP-App in Ihrem {{site.data.keyword.Bluemix_notm}}-Dashboard. Starten Sie die App anschließend in {{site.data.keyword.Bluemix_notm}} und zeigen Sie die App in einem Browser an.
 
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conexión con Administrador de orígenes de datos ODBC
+{: #con_prog_odbc_dsa}
 
 Utilice la herramienta Administrador de origen de datos ODBC para definir una conexión entre una aplicación ODBC o CLI y una base de datos de {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}

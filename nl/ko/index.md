@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,13 +61,13 @@ lastupdated: "2018-10-24"
 ### REST API
 {: #api}
 
-{{site.data.keyword.dashdbshort_notm}} 서비스 플랜을 사용하는 경우 [{{site.data.keyword.dashdbshort_notm}} REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/db2whc_api){:new_window}를 사용하여 파일 관리, 데이터 로드 및 R 스크립트 실행과 관련된 태스크를 수행할 수 있습니다.
+{{site.data.keyword.dashdbshort_notm}} 서비스 플랜을 사용하는 경우 [{{site.data.keyword.dashdbshort_notm}} REST API ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://ibm.biz/db2whc_api){:new_window}를 사용하여 파일 관리 및 데이터 로드와 관련된 태스크를 수행할 수 있습니다.
 {: shortdesc}
 
 ### 로컬 컴퓨터에서 애플리케이션 또는 선호하는 도구 연결
 {: #connect_apps}
 
-다음 단계를 완료하여 {site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 위한 로컬 환경을 구성하십시오.
+다음 단계를 완료하여 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하도록 로컬 환경을 구성하십시오.
 {: shortdesc}
 
 1. {{site.data.keyword.dashdbshort_notm}} 웹 콘솔에서 [드라이버 패키지](connecting/driver_pkg.html)를 다운로드하십시오.
@@ -145,28 +145,19 @@ lastupdated: "2018-10-24"
 
 {{site.data.keyword.dashdbshort_notm}}에 대한 소개를 보려면 이 동영상을 시청하십시오.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="소개 - {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="소개 - {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## 동영상: Flex Performance 플랜 소개
 {: #intro_vid_flex}
 
 {{site.data.keyword.dashdbshort_notm}} Flex Performance 플랜에 대한 소개를 보려면 이 동영상을 시청하십시오.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## 동영상: 분석 애플리케이션 연결
 {: #cognos_vid}
 
 Cognos Analytics에서 연결을 작성하는 방법을 보려면 이 동영상을 시청하십시오.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

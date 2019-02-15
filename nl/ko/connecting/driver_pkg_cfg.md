@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 로컬 환경 구성
+{: #cfg_loc_env}
 
 로컬 애플리케이션 및 도구를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하려면 환경을 구성해야 합니다.  
 {: shortdesc}

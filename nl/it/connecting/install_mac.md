@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Installazione del pacchetto del driver su Mac OS X
+{: #install_dr_pkg_mac}
 
-Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}}su Mac OS X utilizzando lo script `installDSDriver.sh`.
+Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}}su Mac OS X utilizzando lo script `installDSDriver.sh`. 
 {: shortdesc}
 
 ## Prerequisiti
@@ -28,7 +33,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
 - **Per una nuova installazione**
 
-  1. Monta l'immagine del disco facendo doppio clic sul file `macos_dsdriver.dmg`. 
+  1. Monta l'immagine del disco facendo doppio clic sul file `macos_dsdriver.dmg`.
    
      Viene visualizzata una nuova finestra **Finder** con il contenuto dell'immagine del disco.
 
@@ -51,7 +56,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
   2. Rimuovi il pacchetto del driver attualmente installato facendo clic con il tasto destro del mouse sulla cartella `dsdriver` e selezionando **Move to Trash**.
   3. Installa il nuovo pacchetto del driver come descritto nella precedente sezione **Per una nuova installazione**:
      
-     a. Monta l'immagine del disco facendo doppio clic sul file `macos_dsdriver.dmg`. 
+     a. Monta l'immagine del disco facendo doppio clic sul file `macos_dsdriver.dmg`.
      b. Nella finestra **Finder**, fai doppio clic sul file `installDSDriver.sh`.
   4. Ripristina i file di configurazione:
 

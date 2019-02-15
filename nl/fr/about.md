@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # A propos de Db2 Warehouse on Cloud
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}} est un entrepôt de données de cloud hautes performances et entièrement géré, à l'échelle du pétaoctet.
 

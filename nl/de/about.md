@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Informationen zu Db2 Warehouse on Cloud
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}} ist ein vollständig verwaltetes, hochleistungsfähiges Cloud-Data-Warehouse mit Kapazitäten im Petabytebereich.
 
@@ -38,7 +42,7 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 ## Datenvisualisierung
 {: #visualize}
 
-Stellen Sie zum Analysieren von Daten und Visualisieren Ihrer Analyse Verbindungen zu den folgenden Anwendungen her: 
+Stellen Sie zum Analysieren von Daten und Visualisieren Ihrer Analyse Verbindungen zu den folgenden Anwendungen her:
 
 - [Watson Studio (früher Data Science Experience)](connecting/data_sci.html#watson_studio)
 - [Cognos Analytics](connecting/vis_bi.html#cognos)

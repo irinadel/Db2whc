@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Informazioni su Db2 Warehouse on Cloud
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}} è un warehouse di dati cloud a livello di petabyte, ad elevate prestazioni e completamente gestito.
 

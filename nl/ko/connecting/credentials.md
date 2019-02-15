@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,14 +11,20 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 데이터베이스 세부사항 및 연결 인증 정보
+{: #db_details_cxn_creds}
 
 로컬 개발 환경을 구성하고 애플리케이션 및 도구를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하려면 데이터베이스 세부사항 및 연결 인증 정보를 알아야 합니다.
 {: shortdesc}
 
 ## 데이터베이스 세부사항
+{: #db_details}
 
 애플리케이션 및 도구를 데이터베이스에 연결하는 데 필요한 중요한 데이터베이스 세부사항이 있습니다.
 
@@ -29,6 +35,7 @@ lastupdated: "2018-09-25"
 - *데이터베이스 이름* - Db2 데이터베이스 이름(일반적으로 BLUDB)입니다.
 
 ## 연결 인증 정보
+{: #cxn_creds}
 
 다음과 같은 세 가지 유형의 인증 정보가 있습니다.
 
@@ -37,6 +44,7 @@ lastupdated: "2018-09-25"
 - *관리자 작성 사용자* - 일부 {{site.data.keyword.dashdbshort_notm}} 플랜에서는 관리자가 새 사용자를 작성할 수 있습니다. 이러한 관리자 작성 사용자 ID와 비밀번호를 사용하여 웹 콘솔 URL에 직접 로그인하고 애플리케이션 또는 도구에서 Db2 데이터베이스에 연결할 수 있습니다.
 
 ## 데이터베이스 세부사항 및 연결 인증 정보를 찾을 수 있는 위치
+{: #location}
 
 다음 위치에서 이 정보를 수집할 수 있습니다.
 

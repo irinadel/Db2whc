@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conexión mediante programa con ODBC o CLI
+{: #con_prog_odbc_cli}
 
 Defina una conexión entre una ODBC de Microsoft Windows o una aplicación de CLI y una base de datos de {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
@@ -51,7 +56,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
    `<alias>` es el alias de DSN que elija
     
-2. [*Optional*]: To Para verificar la conexión a la base de datos, ejecute este mandato desde el indicador de mandatos:
+2. [*Opcional*] Para verificar la conexión a la base de datos, ejecute este mandato desde el indicador de mandatos:
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -63,7 +68,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
    `<password>` es de las credenciales de conexión que ha recopilado antes
 
-3. [*Optional*]: To Para registrar el nombre del origen de datos (DSN) con el gestor de controlador ODBC y para trabajar con aplicaciones ODBC de Microsoft, ejecute el mandato siguiente. De forma predeterminada, el DSN se crea como DSN de usuario.
+3. [*Opcional*] Para registrar el nombre del origen de datos (DSN) con el gestor de controlador ODBC y para trabajar con aplicaciones ODBC de Microsoft, ejecute el mandato siguiente. De forma predeterminada, el DSN se crea como DSN de usuario.
 
    `db2cli registerdsn -add -dsn <alias>`
 

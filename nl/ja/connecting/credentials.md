@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,14 +11,20 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # データベースの詳細と接続資格情報
+{: #db_details_cxn_creds}
 
 ローカル開発環境を構成し、アプリケーションやツールを {{site.data.keyword.dashdbshort_notm}} データベースに接続するには、データベースの詳細と接続資格情報を知っている必要があります。
 {: shortdesc}
 
 ## データベースの詳細
+{: #db_details}
 
 アプリケーションやツールをデータベースに接続するのに必要な、データベースの重要な詳細情報には以下があります。
 
@@ -29,6 +35,7 @@ lastupdated: "2018-09-25"
 - *データベース名* - Db2 データベース名。通常、BLUDB。
 
 ## 接続資格情報
+{: #cxn_creds}
 
 資格情報には次の 3 つのタイプがあります。
 
@@ -37,6 +44,7 @@ lastupdated: "2018-09-25"
 - *管理者が作成したユーザー* - 一部の {{site.data.keyword.dashdbshort_notm}} プランでは、管理ユーザーが新しいユーザーを作成できるようになっています。 これらの管理者が作成したユーザー ID とパスワードを使用すると、Web コンソールの URL に直接ログインし、アプリケーションやツールから Db2 データベースに接続できます。
 
 ## データベースの詳細と接続資格情報の入手先
+{: #location}
 
 以下の場所からこの情報を収集できます。
 

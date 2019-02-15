@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conectando-se programaticamente com ODBC ou CLI
+{: #con_prog_odbc_cli}
 
 Defina uma conexão entre um aplicativo Microsoft Windows ODBC ou CLI e um banco de dados {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}

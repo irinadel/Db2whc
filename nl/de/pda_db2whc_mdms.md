@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-06-15"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-06-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Von IBM PureData System for Analytics (Netezza) migrieren
@@ -189,7 +193,7 @@ Wenn die Migration Ihrer Daten in den Cloud Object Storage-Bucket abgeschlossen 
 ## Schritt 6: Datenimport aus {{site.data.keyword.Bluemix_notm}} Object Storage
 {: #import}
 
-Für das direkte Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage mithilfe von externen Tabellen finden Sie hier eine SQL-Beispielanweisung: 
+Für das direkte Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage mithilfe von externen Tabellen finden Sie hier eine SQL-Beispielanweisung:
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -210,7 +214,7 @@ Eine Anleitung zum Importieren von Daten aus {{site.data.keyword.Bluemix_notm}} 
 ## Schritt 7: Löschen von Daten der MDMS-Einheit
 {: #erase}
 
-{{site.data.keyword.IBM}} implementiert eine Datenbereinigung auf der Ebene der Anforderungen des US-Verteidigungsministeriums, um Ihre Daten dauerhaft von der MDMS-Einheit zu löschen. Wenn Sie fertig sind, wird Ihr Anfragestatus als *Löschen abgeschlossen* angezeigt. 
+{{site.data.keyword.IBM}} implementiert eine Datenbereinigung auf der Ebene der Anforderungen des US-Verteidigungsministeriums, um Ihre Daten dauerhaft von der MDMS-Einheit zu löschen. Wenn Sie fertig sind, wird Ihr Anfragestatus als *Löschen abgeschlossen* angezeigt.
 
 ## Weitere Hinweise
 {: #notes}

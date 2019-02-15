@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Instalación de paquete de controlador en Mac OS X
+{: #install_dr_pkg_mac}
 
 Puede instalar el paquete de controlador de {{site.data.keyword.dashdbshort_notm}} en Mac OS X utilizando el script `installDSDriver.sh`. 
 {: shortdesc}

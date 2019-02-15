@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,16 +11,21 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Programmgestützte Verbindungsherstellung - ODBC und Befehlszeilenschnittstelle
+{: #con_prog_odbc_cli}
 
 Definieren Sie eine Verbindung zwischen einer ODBC- oder CLI-Anwendung von Microsoft Windows und einer {{site.data.keyword.dashdbshort_notm}}-Datenbank.
 {: shortdesc}
 
 ## Voraussetzungen
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden. 
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -29,23 +34,23 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
 ## Vorgehensweise
 
-1. Geben Sie in einer Befehlsshell in einem Linux-Betriebssystem in der Windows-Eingabeaufforderung bzw. unter einem Windows-Betriebssystem im Db2-Befehlsfenster die folgenden Befehle ein: 
+1. Geben Sie in einer Befehlsshell in einem Linux-Betriebssystem in der Windows-Eingabeaufforderung bzw. unter einem Windows-Betriebssystem im Db2-Befehlsfenster die folgenden Befehle ein:
 
-   **Hinweis**: Mit diesen Befehlen werden neue Einträge in der Treiberkonfigurationsdatei `db2dsdriver.cfg` auf Ihrem Computer erstellt und die Verbindungsattribute festgelegt. Sie müssen diesen Schritt lediglich ein einziges Mal ausführen. 
+   **Hinweis**: Mit diesen Befehlen werden neue Einträge in der Treiberkonfigurationsdatei `db2dsdriver.cfg` auf Ihrem Computer erstellt und die Verbindungsattribute festgelegt. Sie müssen diesen Schritt lediglich ein einziges Mal ausführen.
    
-   - Für SSL-Verbindungen: 
+   - Für SSL-Verbindungen:
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
 
-   - Für Verbindungen ohne SSL: 
+   - Für Verbindungen ohne SSL:
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-   Dabei gilt Folgendes: 
+   Dabei gilt Folgendes:
 
    `<hostname>` ist der Hostname des Servers
 
@@ -55,21 +60,21 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-   Dabei gilt Folgendes: 
+   Dabei gilt Folgendes:
 
-   `<alias>` ist der DSN-Alias, den Sie mit dem Befehl **db2cli writecfg** erstellt haben. 
+   `<alias>` ist der DSN-Alias, den Sie mit dem Befehl **db2cli writecfg** erstellt haben.
 
-   `<user_id>` stammt aus den Berechtigungsnachweisen für die Verbindung, die Sie zuvor ermittelt haben. 
+   `<user_id>` stammt aus den Berechtigungsnachweisen für die Verbindung, die Sie zuvor ermittelt haben.
 
-   `<password>` stammt aus den Berechtigungsnachweisen für die Verbindung, die Sie zuvor ermittelt haben. 
+   `<password>` stammt aus den Berechtigungsnachweisen für die Verbindung, die Sie zuvor ermittelt haben.
 
-3. [*Optional*]: To Zum Registrieren des Datenquellennamens bei Microsoft ODBC Driver Manager und zum Arbeiten mit Microsoft-ODBC-Anwendungen den folgenden Befehl ausführen. Standardmäßig wird der DSN als Benutzer-DSN erstellt. 
+3. [*Optional*]: To Zum Registrieren des Datenquellennamens bei Microsoft ODBC Driver Manager und zum Arbeiten mit Microsoft-ODBC-Anwendungen den folgenden Befehl ausführen. Standardmäßig wird der DSN als Benutzer-DSN erstellt.
 
    `db2cli registerdsn -add -dsn <alias>`
 
-   Dabei gilt Folgendes: 
+   Dabei gilt Folgendes:
         
-   `<alias>` ist der DSN-Alias, den Sie mit dem Befehl **db2cli writecfg** erstellt haben. 
+   `<alias>` ist der DSN-Alias, den Sie mit dem Befehl **db2cli writecfg** erstellt haben.
 
 
 

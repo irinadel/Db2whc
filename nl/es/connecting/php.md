@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conexión mediante programas con PHP
+{: #con_prog_php}
 
 Defina una conexión entre una aplicación PHP y una base de datos de {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
@@ -88,13 +93,13 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
    Connection succeeded.
    ```
 
-### Caso de ejemplo 2: Conexión desde una aplicación web PHP en {{site.data.keyword.Bluemix_notm}}
+### Caso de ejemplo 2: Conexión desde una app web PHP en {{site.data.keyword.Bluemix_notm}}
 
-1. Desde el catálogo {{site.data.keyword.Bluemix_notm}}, cree una nueva aplicación PHP.
+1. Desde el catálogo {{site.data.keyword.Bluemix_notm}}, cree una nueva app PHP.
         
-2. Desde la sección "Iniciación" de la nueva aplicación PHP en el panel de control de {{site.data.keyword.Bluemix_notm}}, descargue el código de inicio de la aplicación en el directorio de trabajo local.
+2. Desde la sección "Iniciación" de la nueva app PHP en el panel de control de {{site.data.keyword.Bluemix_notm}}, descargue el código de inicio de la app en el directorio de trabajo local.
         
-3. En el panel de control de {{site.data.keyword.Bluemix_notm}}, cree una nueva conexión desde el servicio Db2 a la nueva aplicación PHP. (La creación de esta conexión en {{site.data.keyword.Bluemix_notm}} hace que la variable de entorno `VCAP_SERVICES` esté disponible para la aplicación PHP. La variable de entorno `VCAP_SERVICES` contiene detalles de base de datos para el servicio Db2. El uso de `VCAP_SERVICES` es más práctico que la grabación en el código fuente de los detalles de base de datos de la aplicación PHP).
+3. En el panel de control de {{site.data.keyword.Bluemix_notm}}, cree una nueva conexión desde el servicio Db2 a la nueva app PHP. (La creación de esta conexión en {{site.data.keyword.Bluemix_notm}} hace que la variable de entorno `VCAP_SERVICES` esté disponible para la app PHP. La variable de entorno `VCAP_SERVICES` contiene detalles de base de datos para el servicio Db2. El uso de `VCAP_SERVICES` es más práctico que la grabación en el código fuente de los detalles de base de datos de la app PHP).
         
 4. En el directorio de trabajo, actualice el archivo `index.php` para conectarse a la base de datos BLUDB utilizando la función [`db2_connect` ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
         
@@ -115,7 +120,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
        # Obtenga detalles de la base de datos a partir de la variable de entorno VCAP_SERVICES
        #
        # *Esto solo funciona si ha utilizado el panel de control de Bluemix para
-       # crear una conexión desde el servicio dashDB a la aplicación PHP.
+       # crear una conexión desde el servicio dashDB a la app PHP.
        #
        $details  = json_decode( getenv( "VCAP_SERVICES" ), true );
        $dsn      = $details [ "dashDB" ][0][ "credentials" ][ "dsn" ];
@@ -143,6 +148,6 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
    </html>
    ```
 
-5. Desde el directorio de trabajo local, impulse las actualizaciones a {{site.data.keyword.Bluemix_notm}} siguiendo las instrucciones de la sección "Iniciación" de la aplicación PHP en el panel de control de {{site.data.keyword.Bluemix_notm}}. A continuación, reinicie la aplicación en {{site.data.keyword.Bluemix_notm}} y consulte la aplicación en un navegador.
+5. Desde el directorio de trabajo local, envíe las actualizaciones a {{site.data.keyword.Bluemix_notm}} siguiendo las instrucciones de la sección "Iniciación" de la app PHP en el panel de control de {{site.data.keyword.Bluemix_notm}}. A continuación, reinicie la app en {{site.data.keyword.Bluemix_notm}} y visualícela en un navegador.
 
 

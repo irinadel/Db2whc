@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-01"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-05-01"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Flexible Skalierung
 {: #scale}
 
-Der Flex Performance-Plan bietet eine unabhängige Skalierung von Speicher und Prozessorkernen.
+Der Flex Performance-Plan bietet eine unabhängige Skalierung von Speicher und Prozessorkernen. 
 {: shortdesc}
 
 Passen Sie vor der Bereitstellung des Flex Performance-Systems die voraussichtlich benötigten Speicherkapazitäten und Prozessorkerne an und übergeben Sie dann Ihre Auswahl.

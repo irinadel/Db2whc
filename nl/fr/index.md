@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,13 +61,13 @@ Vous pouvez accéder à la console Web de l'une des manières suivantes :
 ### API REST
 {: #api}
 
-Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers, au chargement de données et à l'exécution de scripts R à l'aide de l'[API REST {{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
+Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers et au chargement de données en utilisant l'API REST [{{site.data.keyword.dashdbshort_notm}}![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connectez des applications ou vos outils préférés depuis votre ordinateur local
 {: #connect_apps}
 
-Configurez votre environnement local pour qu'il se connecte à votre base de données {site.data.keyword.dashdbshort_notm}} comme suit :
+Configurez votre environnement local afin qu'il se connecte à votre base de données {{site.data.keyword.dashdbshort_notm}} en procédant comme suit :
 {: shortdesc}
 
 1. Téléchargez le [module de pilote](connecting/driver_pkg.html) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
@@ -145,28 +145,19 @@ Vous trouverez ici des liens vers des exemples montrant comment se connecter par
 
 Regardez cette vidéo pour voir une introduction à {{site.data.keyword.dashdbshort_notm}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction à {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction à {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vidéo : Présentation du plan Flex Performance
 {: #intro_vid_flex}
 
-Regardez cette vidéo pour voir une introduction au plan Flex Performance de {{site.data.keyword.dashdbshort_notm}}.
+Regardez cette vidéo pour voir une introduction au plan {{site.data.keyword.dashdbshort_notm}} Flex Performance.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Création d'une connexion depuis Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Création d'une connexion à partir de Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vidéo : Connexion d'une application d'analyse
 {: #cognos_vid}
 
 Regardez cette vidéo pour voir comment créer une connexion à partir de Cognos Analytics.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Création d'une connexion à partir de Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Création d'une connexion à partir de Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

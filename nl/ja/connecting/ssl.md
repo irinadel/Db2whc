@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Secure Sockets Layer (SSL) サポート
+{: #ssl_support}
 
-{{site.data.keyword.dashdbshort_notm}} データベースは、サード・パーティーのデジタル認証局 (CA) によって発行された証明書を SSL 接続に使用します。
+{{site.data.keyword.dashdbshort_notm}} データベースは、サード・パーティーのデジタル認証局 (CA) によって発行された証明書を SSL 接続に使用します。 
 {: shortdesc}
 
 CA 証明書は、Db2 ドライバー・パッケージの一部です。 アプリケーションが Db2 ドライバー・パッケージ内のドライバーを使用して接続する場合には、証明書を別途ダウンロードする必要はありません。 Db2 ドライバー・パッケージは、Web コンソールからダウンロードできます。

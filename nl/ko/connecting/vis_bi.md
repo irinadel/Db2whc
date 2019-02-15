@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 데이터 시각화/BI
-{: #overview}
+{: #data_vis_bi}
 
 외부 애플리케이션과 도구를 {{site.data.keyword.dashdbshort_notm}}에 연결하고 이 기능들을 사용하여 데이터를 더 정교하게 관리, 분석할 수도 있습니다. 
 {: shortdesc}
@@ -46,10 +50,12 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 {: shortdesc}
 
 ### 전제조건
+{: #prereq1}
 
 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
+{: #proc1}
 
 1. Tableau Desktop에서 데이터베이스 연결을 정의하는 데 사용되는 도구의 창이나 페이지를 여십시오.
 2. 시작 페이지에서 **데이터에 연결**을 클릭하십시오.
@@ -74,6 +80,7 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 {: shortdesc}
 
 ### 전제조건
+{: #prereq2}
 
 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
 
@@ -82,6 +89,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 로컬 컴
 **제한사항**: Excel과 {{site.data.keyword.dashdbshort_notm}} 간의 연결은 Windows 운영 체제에서만 지원됩니다.
 
 ### 프로시저
+{: #proc2}
 
 1. 웹 콘솔에서 **SQL 실행** 페이지로 이동하십시오.
     
@@ -100,6 +108,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 로컬 컴
 8. 연결 모드가 `Share`인지 확인한 다음 **확인**을 클릭하십시오.
 
 ### 결과
+{: #results2}
 
 Excel 스프레드시트에 조회 결과가 표시됩니다. 결과 표시기에 표시되는 결과와 동일한 결과가 표시됩니다. 이제 차트 및 보고서를 생성하고 Excel을 사용하여 데이터를 분석할 수 있습니다. 이를 수행하는 방법과 웹 콘솔에서 데이터에 대한 SQL 조회를 실행하는 방법에 대한 자세한 정보는 다음을 참조하십시오. 
 - [튜토리얼: Excel을 사용하여 차트 및 보고서 생성 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -112,12 +121,14 @@ Esri ArcGIS for Desktop<!--version 10.3.1 -->을 {{site.data.keyword.dashdbshort
 {: shortdesc}
 
 ### 전제조건
+{: #prereq3}
 
 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
 
 Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터에 설치되어 있어야 합니다.
 
 ### 프로시저
+{: #proc3}
 
 1. 미리 수집한 [연결 정보](credentials.html)에서 ODBC DSN 데이터를 판별하십시오.
 
@@ -145,6 +156,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터�
      ![데이터베이스 연결 마법사](images/2_gs_conn.jpg)
 
 ### 결과
+{: #results3}
 
 Esri ArcGIS for Desktop의 ArcCatalog 구성요소가 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결되었습니다. 
 

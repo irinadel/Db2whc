@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # SSL(Secure Sockets Layer) 지원
+{: #ssl_support}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스는 서드파티 디지털 인증 기관(CA)에서 발행하는 SSL 연결을 위한 인증서를 사용합니다.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스는 서드파티 디지털 인증 기관(CA)에서 발행하는 SSL 연결을 위한 인증서를 사용합니다. 
 {: shortdesc}
 
 CA 인증서는 Db2 드라이버 패키지의 일부입니다. 애플리케이션이 Db2 드라이버 패키지의 드라이버와 연결되는 경우 인증서를 별도로 다운로드할 필요가 없습니다. 웹 콘솔에서 Db2 드라이버 패키지를 다운로드할 수 있습니다.

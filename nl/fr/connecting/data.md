@@ -1,8 +1,8 @@
 ﻿---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-15"
+  years: 2014, 2019
+lastupdated: "2018-11-08"
 
 ---
 
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Intégration des données
-{: #overview}
+{: #data_int}
 
 Vous pouvez aussi connecter des outils et des applications externes à {{site.data.keyword.dashdbshort_notm}}
 et les utiliser pour gérer ou analyser vos données. 
@@ -27,8 +31,9 @@ Ces instructions expliquent comment définir une connexion sans SSL entre IBM® 
 {: shortdesc}
 
 ### Prérequis
+{: #prereq1}
 
-Si vous n'avez pas déjà installé un client Sata Server, téléchargez et installez le client IBM Data Server Client <!--Version 10.5 --> approprié au système d'exploitation de votre ordinateur client : [IBM Data Server Client ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}.
+Si aucun client de serveur de données n'est installé, téléchargez et installez le client IBM Data Server Client <!--Version 10.5 --> approprié au système d'exploitation de votre ordinateur client : [IBM Data Server Client ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}.
 
 Pour établir des connexions avec le protocole SSL, téléchargez et installez le GSKit V8 32 bits. Cliquez sur l'onglet Système d'exploitation correspondant au système d'exploitation de votre ordinateur client : [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Pour les systèmes d'exploitation suivants, veillez à ajouter le chemin d'accès au répertoire d'installation de GSKit à la variable d'environnement de chemin spécifique au système d'exploitation :
 
@@ -45,6 +50,7 @@ Pour établir des connexions avec le protocole SSL, téléchargez et installez l
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc1}
 
 - Pour créer une connexion avec SSL, effectuez les étapes suivantes :
 
@@ -54,7 +60,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
      `# /home/db2inst2> cd SSL`
 
-  2. Dans la console Db2, téléchargez le certificat SSL de la page de connexion entre vos applications et la base de données.
+  2. Dans la console Web {{site.data.keyword.dashdbshort_notm}}, téléchargez le certificat SSL à partir de la page permettant de connecter vos applications à la base de données****.
 
      a. Dans le menu principal, cliquez sur **Connect**.
      
@@ -62,19 +68,19 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
      
      c. Sauvegardez le certificat `DigiCertGlobalRootCA.crt` dans le répertoire SSL que vous avez créé à l'étape 1.
         
-  3. Créez une base de données de magasin de client dans le système DataStage à l'aide de l'utilitaire **gsk8capicmd**. Cet utilitaire est inclus dans l'installation du serveur DB2®.
+  3. Créez une base de données de magasin de clés client dans le système DataStage à l'aide de l'utilitaire **gsk8capicmd_64**.
 
-     `# /home/db2inst2/SSL> gsk8capicmd -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
      où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` représente le mot de passe de la base de données du magasin de clés client.
         
   4. Ajoutez le certificat à la base de données du magasin de clés client.
 
-     `# /home/db2inst2/SSL> gsk8capicmd -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
      où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` représente le mot de passe de la base de données du magasin de clés client.
     
-  5. Configurez le client DB2 sur le serveur DataStage.
+  5. Configurez le client Db2 sur le serveur DataStage.
             
      a. Mettez à jour les paramètres de configuration SSL dans le gestionnaire de base de données.
 
@@ -88,40 +94,68 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
             
      b. Cataloguez le noeud cible avec l'option de sécurité SSL puis la base de données BLUDB sur le noeud cible.
 
-     `# /home/db2inst2> db2 catalog tcpip node SSLCLOUD remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
+     `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     où `<IP_addr_of_BLUDB_database_server>` représente l'adresse IP du serveur de base de données BLUDB,
+     où `<node_name>` représente le nom du noeud cible et `<IP_addr_of_BLUDB_database_server>` représente l'adresse IP du serveur de base de données BLUDB,
 
-     `# /home/db2inst2> db2 catalog db BLUDB as BLUDB_S at node SSLCLOUD`
+     `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     `# /home/db2inst2> db2 terminate`
+     où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}}.
 
   6. Ajoutez des droits de lecture et d'exécution aux fichiers dans le répertoire SSL pour tout le monde. L'utilisateur DataStage qui exécute les tâches doit accéder à ces fichiers pour effectuer des connexions SSL à la base de données Db2.
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-  7. Redémarrez le serveur DataStage.
+  7. Testez la connexion SSL de l'une des manières suivantes :
 
-- Pour créer une connexion sans SSL, cataloguez la base de données Db2 cible sur le serveur IBM InfoSphere DataStage :
+     - Testez la connexion en utilisant CLP. Entrez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
 
-  1. Utilisez une application client telnet telle que PuTTY pour vous connecter au serveur DataStage en tant que propriétaire d'instance par défaut (généralement db2inst1).
-  2. Créez un catalogue de la base de données Db2 cible à l'aide des commandes DB2 suivantes :
+       `db2 connect to <db_alias> user <user_id>`
 
-     `db2 catalog tcpip node nodename remote <IP_address_of_BLUDB_database_server> <port_number_of_BLUDB_database>`
+       où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+    
+     - Testez la connexion en utilisant l'interface de ligne de commande. Entrez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
 
-     `db2 catalog db <BLUDB_db_name> at node <nodename>`
+       `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-     `db2 connect to <BLUDB_db_name> user <BLUDB_db_user_name> using <BLUDB_db_password>`
+        où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
 
-     `db2 list tables`
+- Pour créer une connexion sans SSL, cataloguez la base de données {{site.data.keyword.dashdbshort_notm}} cible en procédant comme suit :
 
-     où `<IP_address_of_BLUDB_database_server>` représente l'adresse IP du serveur de base de données BLUDB, `<port_number_of_BLUDB_database>` représente le numéro de port de la base de données BLUDB, `<BLUDB_db_name>` représente le nom de la base de données BLUDB, `<nodename>` représente le nom du noeud, `<BLUDB_db_user_name>` représente le nom de l'utilisateur de la base de données BLUDB et `<BLUDB_db_password>` représente le mot de passe de la base de données BLUDB.
+  1. Cataloguez le noeud {{site.data.keyword.dashdbshort_notm}} cible pour que les applications client puissent s'y connecter. Exécutez les commandes CLP suivantes :
 
-  3. Utilisez les [informations de connexion](credentials.html) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
+     `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
-     Pour obtenir des informations sur la définition d'une connexion dans DataStage, consultez la rubrique suivante de la documentation de DataStage : 
+     où `<node_name>` représente le nom du noeud, `<IP_address_of_BLUDB_database_server>` l'adresse IP du serveur de base de données BLUDB et `<port_number_of_BLUDB_database>` le numéro de port de la base de données BLUDB.
+
+  2. Cataloguez la base de données {{site.data.keyword.dashdbshort_notm}} distante pour que les applications client puissent s'y connecter. Exécutez la commande suivante :
+
+     `db2 catalog db BLUDB as <db_alias> at node <node_name>`
+
+     où `<db_alias>` représente le nom de la base de données {{site.data.keyword.dashdbshort_notm}} et `<node_name>` le nom du noeud.
+
+  3. Testez la connexion non SSL de l'une des manières suivantes :
+
+      - Testez la connexion en utilisant CLP. Entrez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
+
+        `db2 connect to <db_alias> user <user_id>`
+
+        où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+
+        `db2 list tables`
+
+      - Testez la connexion en utilisant l'interface de ligne de commande. Entrez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
+
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+        où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
+
+  4. Utilisez les [informations de connexion](credentials.html) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
+
+     Pour plus d'informations sur la définition d'une connexion dans DataStage, consultez les rubriques suivantes de la documentation de DataStage : 
      
      - [Création manuelle d'un objet de connexion de données ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+     - [Configuration de l'accès aux bases de données Db2 ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
@@ -176,16 +210,18 @@ Utilisez Lift pour faire migrer vos données dans {{site.data.keyword.dashdbshor
 ## InfoSphere Data Replication
 {: #idr}
 
-Vous pouvez connecter IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->à une base de données {{site.data.keyword.dashdbshort_notm}}. Cette possibilité s'applique aussi bien aux environnements SMP qu'aux environnements MPP. Elle ne s'applique pas au plan Entry de {{site.data.keyword.dashdbshort_notm}}.
+Vous pouvez connecter IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->à une base de données {{site.data.keyword.dashdbshort_notm}}. Cette possibilité s'applique aussi bien aux environnements SMP qu'aux environnements MPP. Elle ne s'applique pas au plan Entry de {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ### Présentation
+{: #overview2}
 
 Idéalement, lorsque vous connectez IBM InfoSphere Data Replication à {{site.data.data.dashdbshort_notm}}, IBM InfoSphere Data Replication se trouve dans le même centre de données {{site.data.keyword.Bluemix_notm}} que {{site.data.keyword.dashdbshort_notm}} ou au même endroit que {{site.data.keyword.dashdbshort_notm}}. IBM InfoSphere Data Replication se connecte d'un serveur local à l'instance {{site.data.keyword.dashdbshort_notm}} distante.
 
 Lorsque vous utilisez {{site.data.keyword.dashdbshort_notm}} en tant que cible de connexion, les performances d'IBM InfoSphere Data Replication dépendent en partie de la largeur de bande du réseau qui sépare son moteur cible de l'instance {{site.data.keyword.dashdbshort_notm}}. La distance physique affecte également la performance : dans une configuration idéale, IBM InfoSphere Data Replication est aussi proche que possible de l'instance {{site.data.keyword.dashdbshort_notm}}. Ensuite, la topologie du réseau est également un facteur déterminant. Par exemple, dans un cas idéal, le moteur cible d'IBM InfoSphere Data Replication s'exécute sur une machine virtuelle dans le même VPN (domaine de sécurité) que l'instance cible. Moins il y a de noeuds de réseau (par exemple, pare-feu ou routeurs) à traverser, mieux c'est. 
 
 ### Prérequis
+{: #prereq2}
 
 Si vous tentez de vous connecter à l'aide du protocole SSL, téléchargez et installez GSKit V8. Voir [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Cliquez sur l'onglet correspondant au système d'exploitation de la machine de votre client. Si vous installez le GSKit sur un ordinateur Windows, veillez à spécifier le chemin d'accès au répertoire d'installation de GSKit (`<installation_directory>\gsk8\bin`) dans la variable d'environnement **`PATH`**.
 
@@ -194,6 +230,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 Si vous avez l'intention de vous connecter en utilisant le protocole SSL, téléchargez le certificat SSL `DigiCertGlobalRootCA.crt` de la console Web vers un répertoire de la machine client. Pour télécharger le certificat, cliquez sur **Connexion > Informations de connexion** puis sur l'onglet **Connexion avec SSL**.
 
 ### Procédure
+{: #proc2}
 
 1. Choisissez l'une des approches suivantes pour créer votre connexion :
 
@@ -323,6 +360,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
    ![Console de gestion IIDR - Gestionnaire d'accès](images/IIDR_management_assign_user.jpg)
 
 ### Que faire ensuite ?
+{: #what2}
 
 Définissez un abonnement et procédez à la réplication des données. Pour obtenir des informations, consultez :
 
@@ -343,10 +381,12 @@ Ces instructions expliquent comment créer une connexion entre IBM® Data Studio
 {: shortdesc}
 
 ### Prérequis
+{: #prereq3}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc3}
 
 1. Dans Data Studio, cliquez sur **All Databases > New Connection to a database**.
 
@@ -366,14 +406,16 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 ## Data Server Manager (DSM)
 {: #dsm}
 
-Une connexion entre votre console IBM® Data Server Manager et votre base de données {{site.data.keyword.dashdbshort_notm}} vous permet de surveiller et de gérer la base de données à partir de la console Web Data Server Manager.
+Une connexion entre votre console IBM® Data Server Manager et votre base de données {{site.data.keyword.dashdbshort_notm}} vous permet de surveiller et de gérer la base de données à partir de la console Web Data Server Manager. 
 {: shortdesc}
 
 ### Prérequis
+{: #prereq4}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc4}
 
 <!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
 -->
@@ -388,7 +430,7 @@ Pour créer une connexion, procédez comme suit :
    - *Database connection name* : le nom doit être unique dans Data Server Manager
    - *Data server type* : dans le menu déroulant, sélectionnez **DB2 for Linux, UNIX, and Windows**
    - *Database name* : `BLUDB`
-   - *Host name* : entrez le nom d'hôte de {{site.data.keyword.dashdbshort_notm}}  
+   - *Host name* : entrez le nom d'hôte de {{site.data.keyword.dashdbshort_notm}} 
    - *Port number* : pour une connexion sans SSL, entrez `50000`. Pour une connexion avec SSL, entrez `50001`. 
    - *JDBC security* : dans le menu déroulant, sélectionnez **Clear text password**
    - *User ID* : votre ID d'utilisateur pour {{site.data.keyword.dashdbshort_notm}} 
@@ -410,10 +452,12 @@ Ces instructions expliquent comment créer une connexion entre InfoSphere® Data
 {: shortdesc}
 
 ### Prérequis
+{: #prereq5}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc5}
 
 1. Dans l'explorateur de source de données d'InfoSphere Data Architect, cliquez avec le bouton droit de la souris sur **Database Connections**, puis sélectionnez **New**.
     
@@ -438,10 +482,12 @@ Ces instructions expliquent comment connecter Aginity Workbench <!--4.3 -->à un
 {: shortdesc}
 
 ### Prérequis
+{: #prereq6}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
 ### Procédure
+{: #proc6}
 
 1. Téléchargez et installez Aginity Workbench.
 
@@ -458,6 +504,7 @@ CLPPlus (Command line processor plus) est inclus dans le module de pilote Db2. C
 {: shortdesc}
 
 ### Prérequis
+{: #prereq7}
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
 
@@ -467,6 +514,7 @@ Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) o
 - La configuration de la variable d'environnement `PATH` inclut le sous-répertoire `bin` du répertoire d'installation Java sur votre ordinateur.
 
 ### Procédure
+{: #proc7}
 
 1. Exécutez les commandes suivantes dans un interpréteur de commande sur les systèmes d'exploitation Linux, sur l'invite de commande Windows ou dans la fenêtre de commande DB2 sur les systèmes d'exploitation Windows :
 
@@ -481,7 +529,7 @@ Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) o
      où :
      
      - `<hostname>` est le nom d'hôte du serveur.
-     - `<alias>` est un alias que vous choisissez. 
+     - `<alias>` est un alias que vous choisissez.
 
    - Pour une connexion sans SSL :
 
@@ -519,6 +567,7 @@ Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) o
 ```
 
 ### Résultats
+{: #results7}
 
 Vous pouvez maintenant entrer des commandes CLPPlus ou des instructions SELECT et exécuter des scripts pour travailler avec les données dans la base de données.
 

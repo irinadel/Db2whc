@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Connessione programmatica con ODBC o la CLI
+{: #con_prog_odbc_cli}
 
 Definisci una connessione tra un Microsoft Windows ODBC o l'applicazione CLI e un database {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
@@ -63,7 +68,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
    `<password>` è dalle credenziali di connessione che hai raccolto in precedenza
 
-3. [*Optional*]: To per registrare il nome dell'origine dati (DSN) con Microsoft ODBC Driver Manger e per utilizzare le applicazioni Microsoft ODBC, immetti il seguente comando.  Per impostazione predefinita, il DSN viene creato come un utente DSN.
+3. [*Optional*]: To per registrare il nome dell'origine dati (DSN) con Microsoft ODBC Driver Manger e per utilizzare le applicazioni Microsoft ODBC, immetti il seguente comando. Per impostazione predefinita, il DSN viene creato come un utente DSN.
 
    `db2cli registerdsn -add -dsn <alias>`
 

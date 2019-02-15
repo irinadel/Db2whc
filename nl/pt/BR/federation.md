@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-07-18"
 
 ---
@@ -12,10 +12,13 @@ lastupdated: "2018-07-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Virtualização de dados (federação)
-{: #overview}
+{: #data_virt_fed}
 
 A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.dashdbshort_notm}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma de suas origens de dados do Db2 ou Informix, tanto na nuvem quanto no local. 
 {: shortdesc}

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Aperçu de la connexion 
-{: #overview}
+# Aperçu de la connexion
+{: #connect}
 
-Vous pouvez connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} des interfaces de ligne de commande, des applications et outils tiers ou propres à IBM®, ou encore des applications que vous créez.
+Vous pouvez connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} des interfaces de ligne de commande, des applications et outils tiers ou propres à IBM®, ou encore des applications que vous créez. 
 {: shortdesc}
 
 ## Prérequis
@@ -24,7 +28,7 @@ Vous pouvez connecter à votre base de données {{site.data.keyword.dashdbshort_
 
 Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les conditions requises sont remplies. 
 
-- Collectez les détails de la base de données et les données d'identification 
+- Collectez les détails de la base de données et les données d'identification
 
    Pour vous connecter à votre base de données, vous avez besoin des détails de la base de données (comme par exemple le nom d'hôte), ainsi que des données d'identification (comme par exemple un ID d'utilisateur et un mot de passe.) Vous trouverez ces informations de connexion sur la console Web {{site.data.keyword.dashdbshort_notm}}.
 

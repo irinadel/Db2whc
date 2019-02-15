@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Conectando programaticamente com .NET
+{: #con_prog_net}
 
-Defina uma conexão entre um aplicativo .NET e o banco de dados {{site.data.keyword.dashdbshort_notm}}.
+Defina uma conexão entre um aplicativo .NET e o banco de dados {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Pré-requisitos
@@ -55,7 +60,7 @@ As etapas a seguir mostram como conectar seu aplicativo ao banco de dados com .N
 
 2. [*Optional*]: To verificar a conexão .NET com o banco de dados, insira o comando a seguir em um prompt de comandos:
 
-   `testconn40 "DATABASE=<alias>; UID=<user_id>; PWD=<password>;"`
+   `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 
    sendo:
 

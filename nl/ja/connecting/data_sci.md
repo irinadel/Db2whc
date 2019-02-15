@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Data Science
-{: #overview}
+{: #ds}
 
 また、外部アプリケーションやツールを {{site.data.keyword.dashdbshort_notm}} に接続して利用し、
 データをさらに管理または分析することも可能です。 
@@ -23,10 +27,10 @@ lastupdated: "2018-10-15"
 ## Watson Studio
 {: #watson_studio}
 
-IBM Watson Studio (以前の Data Science Experience) にプロジェクトを作成したら、プロジェクトにデータ資産を追加して、データを処理できるようにします。プロジェクトのすべてのコラボレーターは自動的にプロジェクト内のデータへのアクセスを許可されます。
+IBM Watson Studio (以前の Data Science Experience) にプロジェクトを作成したら、プロジェクトにデータ資産を追加して、データを処理できるようにします。 プロジェクトのすべてのコラボレーターは自動的にプロジェクト内のデータへのアクセスを許可されます。
 {: shortdesc}
 
-データの追加方法、およびどこからデータを追加できるかは、レガシー・プロジェクトと IBM Watson プロジェクトで異なります。IBM Watson プロジェクトは、{{site.data.keyword.Bluemix_notm}} Object Storage を使用します。Object Storage OpenStack Swift が使用されている場合、そのプロジェクトはレガシー・プロジェクトになります。 
+データの追加方法、およびどこからデータを追加できるかは、レガシー・プロジェクトと IBM Watson プロジェクトで異なります。 IBM Watson プロジェクトは、{{site.data.keyword.Bluemix_notm}} Object Storage を使用します。 Object Storage OpenStack Swift が使用されている場合、そのプロジェクトはレガシー・プロジェクトになります。 
 
 ### IBM Watson プロジェクトで新規接続を作成するには、以下のようにします。
 
@@ -34,9 +38,9 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
     
 2. データ・ソースを選択します。
     
-3. データ・ソースに必要な接続情報を入力します。通常は、ホスト、ポート番号、ユーザー名、およびパスワードなどの情報を入力する必要があります。
+3. データ・ソースに必要な接続情報を入力します。 通常は、ホスト、ポート番号、ユーザー名、およびパスワードなどの情報を入力する必要があります。
     
-4. 資産は、{{site.data.keyword.dashdbshort_notm}} への接続から検出できます。それにより、その接続からのすべての表をデータ資産としてプロジェクトに追加することができます。**「データ資産の検出 (Discover data assets)」**を選択して、プロジェクトを選択します。
+4. 資産は、{{site.data.keyword.dashdbshort_notm}} への接続から検出できます。それにより、その接続からのすべての表をデータ資産としてプロジェクトに追加することができます。 **「データ資産の検出 (Discover data assets)」**を選択して、プロジェクトを選択します。
     
 5. **「作成」**をクリックします。 **「資産 (Assets)」**ページに接続が表示されます。
 
@@ -79,10 +83,12 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 {: shortdesc}
 
 ### 前提条件
+{: #prereq1}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc1}
 
 1. SPSS Statistics で、**「ファイル」>「データベースを開く (Open Database)」> 「新規照会 (New Query)」**をクリックします。
     
@@ -94,7 +100,7 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 
    b. 「新規データ ソースの作成」ウィンドウで、**IBM DB2 ODBC DRIVER** という名前のドライバーを選択し、**「完了」**をクリックします。
 
-   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。[Db2 ドライバー・パッケージ](driver_pkg.html)を参照してください。
+   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。 [Db2 ドライバー・パッケージ](driver_pkg.html)を参照してください。
         
    c. 「ODBC IBM ドライバー - 追加 (ODBC IBM Driver - Add)」ウィンドウで、データ・ソース名 (通常は接続先のデータベースの名前) を入力し、**「追加」** をクリックします。
         
@@ -127,10 +133,12 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 {: shortdesc}
 
 ### 前提条件
+{: #prereq2}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc2}
 
 SAS から {{site.data.keyword.dashdbshort_notm}} データベースへの接続方法の手順については、以下の SAS 資料を参照してください。
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -138,14 +146,16 @@ SAS から {{site.data.keyword.dashdbshort_notm}} データベースへの接続
 ## R 開発環境
 {: #r_dev_env}
 
-IBM Watson Studio 内に統合されている RStudio® 環境を使用する代わりに、ローカルにインストールされた独自の R 開発環境を使用することもできます。例えば、独自の RStudio インストール済み環境を保持したり、Rcmdr や Rattle などのその他の開発ツールを使用したりすることもできます。 以下の指示では、R 開発環境を {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法について説明しています。
+IBM Watson Studio 内に統合されている RStudio® 環境を使用する代わりに、ローカルにインストールされた独自の R 開発環境を使用することもできます。 例えば、独自の RStudio インストール済み環境を保持したり、Rcmdr や Rattle などのその他の開発ツールを使用したりすることもできます。 以下の指示では、R 開発環境を {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法について説明しています。
 {: shortdesc}
 
 ### 前提条件
+{: #prereq3}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc3}
 
 1. ローカル R 環境で、以下のコマンドを入力して `ibmdbR` パッケージをインストールします。
 

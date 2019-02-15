@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
-# Pacchetto del driver 
+# Pacchetto del driver
+{: #dr_pkg}
 
-Il pacchetto del driver {{site.data.keyword.dashdbshort_notm}} contiene il software per la connessione delle applicazioni client a un database {{site.data.keyword.dashdbshort_notm}}.
+Il pacchetto del driver {{site.data.keyword.dashdbshort_notm}} contiene il software per la connessione delle applicazioni client a un database {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Informazioni
@@ -41,7 +46,7 @@ Puoi scaricare il pacchetto del driver per il tuo sistema operativo dalla consol
 
 Nella console web {{site.data.keyword.dashdbshort_notm}}, seleziona **Connect > Connection info**. Seleziona il tile che rappresenta il tuo sistema operativo per scaricare il driver appropriato.
 
-## installazione 
+## installazione
 
 Installa il pacchetto del driver per il sistema operativo:
 - [Installazione su Windows](install_win.html)

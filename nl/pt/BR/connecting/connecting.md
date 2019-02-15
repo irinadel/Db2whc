@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,12 +11,16 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visão Geral de Conexão
-{: #overview}
+{: #connect}
 
-É possível conectar interfaces de linha de comandos, aplicativos e ferramentas IBM® ou de terceiros ou apps que você cria ao banco de dados {{site.data.keyword.dashdbshort_notm}}.
+É possível conectar interfaces de linha de comandos, aplicativos e ferramentas IBM® ou de terceiros ou apps que você cria ao banco de dados {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Pré-requisitos

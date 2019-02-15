@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Data science
-{: #overview}
+{: #ds}
 
 Puoi anche
 connettere applicazioni e strumenti esterni a {{site.data.keyword.dashdbshort_notm}} e
@@ -53,7 +57,7 @@ Guarda questo video per vedere come creare una connessione e aggiungere i dati c
 
 3. Immetti un nome e una descrizione e scegli una categoria del servizio:
 
-   **Data Service** = Servizio dati {{site.data.keyword.Bluemix_notm}} 
+   **Data Service** = Servizio dati {{site.data.keyword.Bluemix_notm}}
 
    Quando scegli **Data Service**, i servizi dati {{site.data.keyword.Bluemix_notm}} esistenti vengono visualizzati nell'elenco **Service Instance**.
 
@@ -80,10 +84,12 @@ Queste istruzioni spiegano come creare una connessione da IBM® SPSS® Statistic
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq1}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
 ### Procedura
+{: #proc1}
 
 1. In SPSS Statistics, fai clic su **File > Open Database > New Query**.
     
@@ -128,10 +134,12 @@ Queste istruzioni spiegano come creare una connessione da SAS a un database {{si
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq2}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
 ### Procedura
+{: #proc2}
 
 Per i passi su come eseguire la connessione da SAS a un database {{site.data.keyword.dashdbshort_notm}}, consulta la documentazione SAS:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -143,10 +151,12 @@ Invece di utilizzare l'ambiente RStudio® integrato in IBM Watson Studio, potres
 {: shortdesc}
 
 ### Prerequisiti
+{: #prereq3}
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
 
 ### Procedura
+{: #proc3}
 
 1. Nel tuo ambiente R locale, installa il pacchetto `ibmdbR` immettendo il seguente comando:
 

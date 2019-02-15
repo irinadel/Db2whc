@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Pacote de Driver
+{: #dr_pkg}
 
-O pacote de drivers do {{site.data.keyword.dashdbshort_notm}} contém o software para conectar aplicativos clientes a um banco de dados {{site.data.keyword.dashdbshort_notm}}.
+O pacote de drivers do {{site.data.keyword.dashdbshort_notm}} contém o software para conectar aplicativos clientes a um banco de dados {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Sobre

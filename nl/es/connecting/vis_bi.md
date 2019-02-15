@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visualización de datos/BI
-{: #overview}
+{: #data_vis_bi}
 
 También puede conectar aplicaciones externas a {{site.data.keyword.dashdbshort_notm}} y utilizarlas para gestionar o analizar todavía más sus datos. 
 {: shortdesc}
@@ -34,7 +38,7 @@ Para obtener más información, consulte [Conexión de Cognos Analytics ![Icono 
 ## Looker
 {: #looker}
 
-Puede conectar Looker a una base de datos de {{site.data.keyword.dashdbshort_notm}}. Looker es una aplicación de inteligencia empresarial y una gran plataforma de análisis con la que puede explorar, analizar y compartir analíticas empresariales en tiempo real.
+Puede conectar Looker a una base de datos de {{site.data.keyword.dashdbshort_notm}}. Looker es una app de inteligencia empresarial y una gran plataforma de análisis con la que puede explorar, analizar y compartir analíticas empresariales en tiempo real.
 {: shortdesc}
 
 [Conexión de Looker ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
@@ -46,10 +50,12 @@ En estas instrucciones se explica cómo conectar Tableau a una base de datos de 
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq1}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
 ### Procedimiento
+{: #proc1}
 
 1. En Tableau Desktop, abra la ventana o página de la herramienta que se utiliza para definir una conexión de base de datos.
 2. Desde la página de inicio, pulse **Conectar a datos**.
@@ -74,6 +80,7 @@ En estas instrucciones se explica cómo conectar Microsoft Excel <!--2010-->a un
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq2}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
@@ -82,6 +89,7 @@ Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package i
 **Restricción**: Solo se admiten conexiones entre Excel y {{site.data.keyword.dashdbshort_notm}} en el sistema operativo Windows.
 
 ### Procedimiento
+{: #proc2}
 
 1. En la consola web, vaya a la página **Ejecutar SQL**.
     
@@ -100,6 +108,7 @@ Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package i
 8. Asegúrese de que la modalidad de conexión es `Compartir` y, después, pulse **Aceptar**.
 
 ### Resultados
+{: #results2}
 
 Los resultados de la consulta se muestran en una hoja de cálculo de Excel. Estos son los mismos resultados que los que se muestran en el visor de resultados. Ahora puede generar gráficos e informes y analizar los datos utilizando Excel. Para obtener más información sobre cómo hacerlo y cómo ejecutar consultas SQL en los datos desde la consola web, consulte: 
 - [Guía de aprendizaje: Generación de gráficos e informes mediante Excel ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -112,12 +121,14 @@ Puede conectar Esri ArcGIS for Desktop <!--version 10.3.1 -->a una base de datos
 {: shortdesc}
 
 ### Requisitos previos
+{: #prereq3}
 
 Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
 
 Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package instalados en el sistema.
 
 ### Procedimiento
+{: #proc3}
 
 1. Determine los datos ODBC DSN de la [información de conexión](credentials.html) que ha recopilado antes.
 
@@ -145,6 +156,7 @@ Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package i
      ![Asistente de la conexión de base de datos](images/2_gs_conn.jpg)
 
 ### Resultados
+{: #results3}
 
 El componente ArcCatalog de Esri ArcGIS for Desktop ahora está conectado a la base de datos {{site.data.keyword.dashdbshort_notm}}. 
 

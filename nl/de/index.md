@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,21 +61,21 @@ Für den Zugriff auf die Webkonsole stehen Ihnen die folgenden Möglichkeiten zu
 ### REST-API
 {: #api}
 
-Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien, dem Laden von Daten und dem Ausführen von R-Scripts ausführen, indem Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2whc_api){:new_window} verwenden.
+Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien und dem Laden von Daten ausführen, indem Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2whc_api){:new_window} verwenden.
 {: shortdesc}
 
 ### Herstellen einer Verbindung für Anwendungen oder bevorzugte Tools vom lokalen Computer
 {: #connect_apps}
 
-Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur {site.data.keyword.dashdbshort_notm}}-Datenbank zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank zu konfigurieren:
 {: shortdesc}
 
-1. Laden Sie das [Treiberpaket](connecting/driver_pkg.html) über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunter. 
+1. Laden Sie das [Treiberpaket](connecting/driver_pkg.html) über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunter.
 2. Installieren Sie das Treiberpaket auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden:
    - [Installation unter Linux oder PowerLinux](connecting/install_linux.html)
    - [Installation unter Mac OS X](connecting/install_mac.html)
    - [Installation unter Windows](connecting/install_win.html)
-3. [Konfigurieren Sie die Treiberdateien](connecting/driver_pkg_cfg.html) für Ihre {site.data.keyword.dashdbshort_notm}}-Datenbank. 
+3. [Konfigurieren Sie die Treiberdateien](connecting/driver_pkg_cfg.html) für Ihre {site.data.keyword.dashdbshort_notm}}-Datenbank.
 
 ### Verwenden von Db2 Warehouse on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}
@@ -86,7 +86,7 @@ Für Apps, die per Hosting in {{site.data.keyword.Bluemix_notm}} bereitgestellt 
 Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, können Sie die Umgebungsvariable `VCAP _SERVICES` nutzen, um das Angeben von Datenbankdetails und -berechtigungsnachweisen zu vereinfachen:
 1. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard auf der Registerkarte **Verbindungen** der Servicedetailseite für Ihren {{site.data.keyword.dashdbshort_notm}}-Service auf die Schaltfläche **Verbindung erstellen**.
 2. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-App aus, die mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank als Datenquelle verwendet werden soll, und klicken Sie dann auf die Schaltfläche **Verbinden**.
-3. Aktualisieren Sie den Anwendungscode, um Datenbankdetails- und -berechtigungsnachweise aus der Umgebungsvariablen `VCAP_SERVICES` abzurufen: 
+3. Aktualisieren Sie den Anwendungscode, um Datenbankdetails- und -berechtigungsnachweise aus der Umgebungsvariablen `VCAP_SERVICES` abzurufen:
 
     **Beispiel ohne `VCAP_SERVICES`**
 
@@ -143,30 +143,21 @@ Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, könn
 ## Video mit Einführung zu Db2 Warehouse on Cloud
 {: #intro_vid}
 
-Sehen Sie sich das folgende Video an, um eine Einführung in {{site.data.keyword.dashdbshort_notm}} zu erhalten. 
+Sehen Sie sich das folgende Video an, um eine Einführung in {{site.data.keyword.dashdbshort_notm}} zu erhalten.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Video mit Einführung zum Flex Performance-Plan
 {: #intro_vid_flex}
 
-Das folgende Video enthält eine Einführung in den Flex Performance-Plan von {{site.data.keyword.dashdbshort_notm}}. 
+Das folgende Video enthält eine Einführung in den Flex Performance-Plan von {{site.data.keyword.dashdbshort_notm}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Video zum Herstellen einer Verbindung mit einer Analyseanwendung
 {: #cognos_vid}
 
-In dem folgenden Video erfahren Sie, wie Sie eine Verbindung von Cognos Analytics aus erstellen können. 
+In dem folgenden Video erfahren Sie, wie Sie eine Verbindung von Cognos Analytics aus erstellen können.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

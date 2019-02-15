@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-15"
+  years: 2014, 2019
+lastupdated: "2018-11-08"
 
 ---
 
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # データ統合
-{: #overview}
+{: #data_int}
 
 また、外部アプリケーションやツールを {{site.data.keyword.dashdbshort_notm}} に接続して利用し、
 データをさらに管理または分析することも可能です。 
@@ -23,14 +27,15 @@ lastupdated: "2018-10-15"
 ## DataStage
 {: #datastage}
 
-以下の手順では、データベースをカタログして接続オブジェクトを定義することにより、IBM® InfoSphere® DataStage® <!--version 9.1 and later -->と {{site.data.keyword.dashdbshort_notm}} データベースの間の SSL を使用しない接続を定義する方法や、サード・パーティーが発行するデジタル証明書を使用して、SSL を使用した接続を作成する方法について説明します。
+以下の手順では、IBM® InfoSphere® DataStage® <!--version 9.1 and later -->と {{site.data.keyword.dashdbshort_notm}} データベースの間において、データベースをカタログして接続オブジェクトを定義することによって SSL を使用しない接続を定義する方法、およびサード・パーティーが発行するデジタル証明書を使用することによって SSL を使用した接続を作成する方法について説明します。
 {: shortdesc}
 
 ### 前提条件
+{: #prereq1}
 
 まだデータ・サーバー・クライアントをインストールしていない場合は、ご使用のクライアント・マシンのオペレーティング・システムに適切な IBM Data Server Client <!--Version 10.5 --> をダウンロードしてインストールします。 [IBM Data Server Client ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
-SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} で、ご使用のクライアント・マシンのオペレーティング・システムに該当する OS タブをクリックします。以下の各オペレーティング・システムについて、GSKit インストール・ディレクトリー・パスを OS 固有の PATH 環境変数に追加していることを確認してください。
+SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} で、ご使用のクライアント・マシンのオペレーティング・システムに該当する OS タブをクリックします。 以下の各オペレーティング・システムについて、GSKit インストール・ディレクトリー・パスを OS 固有の PATH 環境変数に追加していることを確認してください。
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -45,6 +50,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc1}
 
 - SSL を使用して接続を作成するには、次の手順を実行します。
 
@@ -54,7 +60,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
      `# /home/db2inst2> cd SSL`
 
-  2. Db2 コンソールで、「データベースにアプリケーションを接続する」ページから SSL 証明書をダウンロードします。
+  2. {{site.data.keyword.dashdbshort_notm}} Web コンソールで、**「データベースにアプリケーションを接続する」**ページから SSL 証明書をダウンロードします。
 
      a. メインメニューから、**「接続」**をクリックします。
      
@@ -62,15 +68,15 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
      
      c. ステップ 1 で作成した SSL ディレクトリーに `DigiCertGlobalRootCA.crt` 証明書を保存します。
         
-  3. **gsk8capicmd** ユーティリティーを使用して、DataStage システムにクライアント鍵ストア・データベースを作成します。このユーティリティーは、DB2® サーバーのインストール済み環境に含まれています。
+  3. **gsk8capicmd_64** ユーティリティーを使用して、DataStage システムにクライアント鍵ストア・データベースを作成します。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
      ここで、`<keystore_db.kdb>` はクライアント鍵ストア・データベースを表し、`<ks_db_password>` はクライアント鍵ストア・データベースのパスワードを表します。
         
   4. 証明書をクライアント鍵ストア・データベースに追加します。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
      ここで、`<keystore_db.kdb>` はクライアント鍵ストア・データベースを表し、`<ks_db_password>` はクライアント鍵ストア・データベースのパスワードを表します。
     
@@ -88,40 +94,68 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
             
      b. SSL セキュリティー・オプションを使用してターゲット・ノードをカタログしてから、そのターゲット・ノードで BLUDB データベースをカタログします。
 
-     `# /home/db2inst2> db2 catalog tcpip node SSLCLOUD remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
+     `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     ここで、`<IP_addr_of_BLUDB_database_server>` は BLUDB データベース・サーバーの IP アドレスを表します。
+     ここで、`<node_name>` はターゲット・ノードの名前を表し、`<IP_addr_of_BLUDB_database_server>` は BLUDB データベース・サーバーの IP アドレスを表します。
 
-     `# /home/db2inst2> db2 catalog db BLUDB as BLUDB_S at node SSLCLOUD`
+     `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     `# /home/db2inst2> db2 terminate`
+     ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前です。
 
-  6. 全員が対象の、SSL ディレクトリー内のファイルに対する読み取り権限と実行権限を追加します。 ジョブを実行する DataStage ユーザーが Db2 データベースに対する SSL 接続を作成するには、これらのファイルにアクセスする必要があります。
+  6. 全員が対象の、SSL ディレクトリー内のファイルに対する読み取り権限と実行権限を追加します。 ジョブを実行する DataStage ユーザーは、Db2 データベースへの SSL 接続を行うために、これらのファイルにアクセスする必要があります。
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-  7. DataStage サーバーを再始動します。
+  7. 次のいずれかの方法で、SSL 接続をテストします。
 
-- SSL を使用せずに接続を作成するには、以下のステップを実行して、IBM InfoSphere DataStage サーバー上でターゲットの Db2 データベースをカタログします。
+     - CLP を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
-  1. PuTTY などの Telnet クライアント・アプリケーションを使用して、DataStage サーバーにデフォルトのインスタンス所有者 (通常は db2inst1) として接続します。
-  2. 以下の DB2 コマンドを使用して、ターゲットの Db2 データベースのカタログを作成します。
+       `db2 connect to <db_alias> user <user_id>`
 
-     `db2 catalog tcpip node nodename remote <IP_address_of_BLUDB_database_server> <port_number_of_BLUDB_database>`
+       ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+    
+     - CLI を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
-     `db2 catalog db <BLUDB_db_name> at node <nodename>`
+       `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-     `db2 connect to <BLUDB_db_name> user <BLUDB_db_user_name> using <BLUDB_db_password>`
+        ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は {{site.data.keyword.dashdbshort_notm}} パスワードです。
 
-     `db2 list tables`
+- SSL を使用せずに接続を作成するには、次の手順を実行してターゲットの {{site.data.keyword.dashdbshort_notm}} データベースをカタログします。
 
-     ここで、`<IP_address_of_BLUDB_database_server>` は BLUDB データベース・サーバーの IP アドレスを表します。 `<port_number_of_BLUDB_database>` は BLUDB データベースのポート番号を表し、`<BLUDB_db_name>` は BLUDB データベース名を表し、`<nodename>` はノードの名前を表し、`<BLUDB_db_user_name>` は BLUDB データベースのユーザー名を表し、`<BLUDB_db_password>` は BLUDB データベースのパスワードを表します。
+  1. クライアント・アプリケーションから接続できるように、ターゲットの {{site.data.keyword.dashdbshort_notm}} ノードをカタログします。以下の CLP コマンドを実行します。
 
-  3. 事前に収集した[接続情報](credentials.html)を使用して、DataStage クライアント内で接続を定義します。**「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
+     `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
+
+     ここで、`<node_name>` はノードの名前を表し、`<IP_address_of_BLUDB_database_server>` は BLUDB データベース・サーバーの IP アドレスを表し、`<port_number_of_BLUDB_database>` は BLUDB データベースのポート番号を表します。
+
+  2. クライアント・アプリケーションから接続できるように、リモート {{site.data.keyword.dashdbshort_notm}} データベースをカタログします。 次のコマンドを実行します。
+
+     `db2 catalog db BLUDB as <db_alias> at node <node_name>`
+
+     ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前を表し、`<node_name>` はノードの名前を表します。
+
+  3. 次のいずれかの方法で、非 SSL 接続をテストします。
+
+      - CLP を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+
+        `db2 connect to <db_alias> user <user_id>`
+
+        ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+
+        `db2 list tables`
+
+      - CLI を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+        ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は {{site.data.keyword.dashdbshort_notm}} パスワードです。
+
+  4. 事前に収集した[接続情報](credentials.html)を使用して、DataStage クライアント内で接続を定義します。 **「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
 
      DataStage での接続の定義について詳しくは、以下の DataStage 資料のトピックを参照してください。 
      
      - [データ接続オブジェクトの手動作成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+     - [DB2 データベースへのアクセスの構成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
@@ -176,24 +210,27 @@ Lift を使用して、データを {{site.data.keyword.dashdbshort_notm}} に�
 ## InfoSphere Data Replication
 {: #idr}
 
-IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->を {{site.data.keyword.dashdbshort_notm}} データベースに接続できます。この機能は、SMP 環境と MPP 環境の両方に適用されます。 {{site.data.keyword.dashdbshort_notm}} のエントリー・プランには適用されません。 
+IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->を {{site.data.keyword.dashdbshort_notm}} データベースに接続できます。 この機能は、SMP 環境と MPP 環境の両方に適用されます。 {{site.data.keyword.dashdbshort_notm}} のエントリー・プランには適用されません。 
 {: shortdesc}
 
 ### 概要
+{: #overview2}
 
-IBM InfoSphere Data Replication を {{site.data.keyword.dashdbshort_notm}} に接続する際は、IBM InfoSphere Data Replication が {{site.data.keyword.dashdbshort_notm}} と同じ {{site.data.keyword.Bluemix_notm}} データ・センター内にあるか、{{site.data.keyword.dashdbshort_notm}} と同じ場所に配置されているのが理想です。IBM InfoSphere Data Replication は、ローカル・サーバーからリモート {{site.data.keyword.dashdbshort_notm}} インスタンスに接続します。
+IBM InfoSphere Data Replication を {{site.data.keyword.dashdbshort_notm}} に接続する際は、IBM InfoSphere Data Replication が {{site.data.keyword.dashdbshort_notm}} と同じ {{site.data.keyword.Bluemix_notm}} データ・センター内にあるか、{{site.data.keyword.dashdbshort_notm}} と同じ場所に配置されているのが理想です。 IBM InfoSphere Data Replication は、ローカル・サーバーからリモート {{site.data.keyword.dashdbshort_notm}} インスタンスに接続します。
 
-{{site.data.keyword.dashdbshort_notm}} を接続ターゲットとして使用する場合、IBM InfoSphere Data Replication のパフォーマンスは、そのターゲット・エンジンを {{site.data.keyword.dashdbshort_notm}} のインスタンスから分離するネットワークの帯域幅に一部依存します。物理的な距離もパフォーマンスに影響します。IBM InfoSphere Data Replication が可能な限り {{site.data.keyword.dashdbshort_notm}} のインスタンスの近くにあるのが理想です。ネットワーク・トポロジーもパフォーマンスに影響します。 例えば、IBM InfoSphere Data Replication ターゲット・エンジンがターゲット・インスタンスと同じ VPN (セキュリティー・ドメイン) 内の VM 上で実行されるのが理想です。トラバースするネットワーク・ノード (ファイアウォールやルーターなど) を可能な限り少なくすることをお勧めします。 
+{{site.data.keyword.dashdbshort_notm}} を接続ターゲットとして使用する場合、IBM InfoSphere Data Replication のパフォーマンスは、そのターゲット・エンジンを {{site.data.keyword.dashdbshort_notm}} のインスタンスから分離するネットワークの帯域幅に一部依存します。 物理的な距離もパフォーマンスに影響します。IBM InfoSphere Data Replication が可能な限り {{site.data.keyword.dashdbshort_notm}} のインスタンスの近くにあるのが理想です。 ネットワーク・トポロジーもパフォーマンスに影響します。 例えば、IBM InfoSphere Data Replication ターゲット・エンジンがターゲット・インスタンスと同じ VPN (セキュリティー・ドメイン) 内の VM 上で実行されるのが理想です。 トラバースするネットワーク・ノード (ファイアウォールやルーターなど) を可能な限り少なくすることをお勧めします。 
 
 ### 前提条件
+{: #prereq2}
 
-SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} を参照してください。ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
+SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} を参照してください。 ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 SSL プロトコルを使用して接続しようとしている場合は、Web コンソールからクライアント・マシンのディレクトリーに `DigiCertGlobalRootCA.crt` SSL 証明書をダウンロードします。 証明書をダウンロードするには、**「接続」>「接続情報」**をクリックしてから**「SSL を使用した接続」**タブをクリックします。
 
 ### 手順
+{: #proc2}
 
 1. 次のいずれかの接続方法を選択してください。
 
@@ -245,7 +282,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 
        `db2 connect to <db_alias> user <user_id>`
 
-       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
+       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
                 
      - 以下のコマンドを発行して {{site.data.keyword.dashdbshort_notm}} データベースに接続し、CLI を使用した接続をテストします。
 
@@ -271,7 +308,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     `<db_alias>` は、{{site.data.keyword.dashdbshort_notm}} データベースのご使用の名前です。
+     ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前です。
 
      c. 次のいずれかの方法で、非 SSL 接続をテストします。
 
@@ -279,7 +316,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 
        `db2 connect to <db_alias> user <user_id>`
 
-       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
+       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
                 
      - 以下のコマンドを発行して {{site.data.keyword.dashdbshort_notm}} データベースに接続し、CLI を使用した接続をテストします。
 
@@ -322,6 +359,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
    ![IIDR 管理コンソール - アクセス・マネージャー](images/IIDR_management_assign_user.jpg)
 
 ### 次の作業
+{: #what2}
 
 サブスクリプションを定義して、データのレプリケーションを実行します。 詳しくは、以下を参照してください。
 
@@ -330,7 +368,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 ## Segment
 {: #segment}
 
-Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合することができます。Segment は、ユーザー・データを収集し、保管し、多数のツールに経路指定する単一プラットフォームです。
+Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合することができます。 Segment は、ユーザー・データを収集し、保管し、多数のツールに経路指定する単一プラットフォームです。
 {: shortdesc}
 
 [Segment ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://segment.com/docs/destinations/db2/){:new_window}
@@ -342,10 +380,12 @@ Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合�
 {: shortdesc}
 
 ### 前提条件
+{: #prereq3}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc3}
 
 1. Data Studio で、**「すべてのデータベース」>「データベースへの新規接続 (New Connection to a database)」**をクリックします。
 
@@ -354,7 +394,7 @@ Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合�
 3. **「一般」**タブで、以下の値を入力します。
    - *データベース*: `BLUDB`
    - *ホスト*: ホスト名。
-   - *ポート*: SSL を使用しない接続の場合、`50000` と入力します。SSL を使用した接続の場合、`50001` と入力します。 
+   - *ポート*: SSL を使用しない接続の場合、`50000` と入力します。 SSL を使用した接続の場合、`50001` と入力します。 
    - *ユーザー名*: ログインに使用するユーザー名。
    - *パスワード*: ログインに使用するパスワード。
 
@@ -365,14 +405,16 @@ Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合�
 ## Data Server Manager (DSM)
 {: #dsm}
 
-IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データベースの間を接続すると、Data Server Manager の Web コンソールからデータベースをモニターしたり管理したりできます。
+IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データベースの間を接続すると、Data Server Manager の Web コンソールからデータベースをモニターしたり管理したりできます。 
 {: shortdesc}
 
 ### 前提条件
+{: #prereq4}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc4}
 
 <!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
 -->
@@ -388,7 +430,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
    - *データ・サーバー・タイプ*: ドロップダウン・メニューから**「DB2 for Linux, UNIX, and Windows」**を選択します。
    - *データベース名*: `BLUDB`
    - *ホスト名*: {{site.data.keyword.dashdbshort_notm}} ホスト名を入力します。 
-   - *ポート番号*: SSL を使用しない接続の場合、`50000` と入力します。SSL を使用した接続の場合、`50001` と入力します。 
+   - *ポート番号*: SSL を使用しない接続の場合、`50000` と入力します。 SSL を使用した接続の場合、`50001` と入力します。 
    - *JDBC セキュリティー*: ドロップダウン・メニューから**「平文パスワード」**を選択します。
    - *ユーザー ID*: {{site.data.keyword.dashdbshort_notm}} ユーザー ID 
    - *パスワード*: {{site.data.keyword.dashdbshort_notm}} パスワード 
@@ -409,10 +451,12 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 {: shortdesc}
 
 ### 前提条件
+{: #prereq5}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc5}
 
 1. InfoSphere Data Architect の「データ・ソース・エクスプローラー」ビューで、**「データベース接続」**を右クリックして、**「新規」**を選択します。
     
@@ -422,7 +466,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 
    - *データベース*: `BLUDB`
    - *ホスト*: 事前に収集したホスト名。
-   - *ポート*: SSL を使用しない接続の場合、`50000` と入力します。SSL を使用した接続の場合、`50001` と入力します。 
+   - *ポート*: SSL を使用しない接続の場合、`50000` と入力します。 SSL を使用した接続の場合、`50001` と入力します。 
    - *ユーザー名*: 事前に収集したユーザー ID。
    - *パスワード*: 事前に収集したパスワード。
 
@@ -433,14 +477,16 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ## Aginity Workbench
 {: #aginity_wb}
 
-以下の手順では、Aginity Workbench <!--4.3 -->を {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法を説明します。Aginity Workbench を使用して、IBM PureData for Analytics (Netezza) データ・モデルおよびデータを {{site.data.keyword.dashdbshort_notm}} にマイグレーションできます。
+以下の手順では、Aginity Workbench <!--4.3 -->を {{site.data.keyword.dashdbshort_notm}} データベースに接続する方法を説明します。 Aginity Workbench を使用して、IBM PureData for Analytics (Netezza) データ・モデルおよびデータを {{site.data.keyword.dashdbshort_notm}} にマイグレーションできます。
 {: shortdesc}
 
 ### 前提条件
+{: #prereq6}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
+{: #proc6}
 
 1. Aginity Workbench をダウンロードしてインストールします。
 
@@ -448,15 +494,16 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 
 3. Aginity Workbench を起動します。 データベース接続ダイアログ・ボックスが自動的に開かない場合は、ツールバーの**「接続」**をクリックして開きます。
 
-4. [データベース接続を確立します ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}。前もって記録しておいた接続情報にあるホスト名、ユーザー ID、およびパスワードを使用します。
+4. [データベース接続を確立します ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}。 前もって記録しておいた接続情報にあるホスト名、ユーザー ID、およびパスワードを使用します。
 
 ## CLPPlus
 {: #clpplus}
 
-Command line processor plus (CLPPlus) は、Db2 ドライバー・パッケージに含まれています。CLPPlus は、{{site.data.keyword.dashdbshort_notm}} データベースに接続するために使用できるコマンド行インターフェースを提供します。 CLPPlus を使用して、ステートメント、スクリプト、およびコマンドを定義、編集、および実行することができます。
+Command line processor plus (CLPPlus) は、Db2 ドライバー・パッケージに含まれています。 CLPPlus は、{{site.data.keyword.dashdbshort_notm}} データベースに接続するために使用できるコマンド行インターフェースを提供します。 CLPPlus を使用して、ステートメント、スクリプト、およびコマンドを定義、編集、および実行することができます。
 {: shortdesc}
 
 ### 前提条件
+{: #prereq7}
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
 
@@ -466,6 +513,7 @@ CLPPlus を使用するには、ソフトウェア開発キット (SDK) また�
 - `PATH` 環境変数設定に、コンピューターの Java インストール・ディレクトリーの `bin` サブディレクトリーが含まれている。
 
 ### 手順
+{: #proc7}
 
 1. Linux オペレーティング・システムのコマンド・シェル、Windows コマンド・プロンプト、または Windows オペレーティング・システムの DB2 コマンド・ウィンドウに、以下のコマンドを実行します。
 
@@ -518,6 +566,7 @@ CLPPlus を使用するには、ソフトウェア開発キット (SDK) また�
 ```
 
 ### 結果
+{: #results7}
 
 これで、CLPPlus コマンドまたは SELECT ステートメントを入力してスクリプトを実行することにより、データベース内のデータを処理することができるようになりました。
 

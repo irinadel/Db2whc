@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Configurazione del tuo ambiente locale
+{: #cfg_loc_env}
 
 Per collegare gli strumenti e le applicazioni locali al tuo database {{site.data.keyword.dashdbshort_notm}}, devi configurare il tuo ambiente.  
 {: shortdesc}

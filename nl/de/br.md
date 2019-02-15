@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-05-10"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-05-10"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Sicherung und Wiederherstellung
@@ -19,7 +23,7 @@ lastupdated: "2018-05-10"
 Eine verschlüsselte Sicherung für die vollständige {{site.data.keyword.dashdbshort_notm}}-Datenbank wird einmal pro Tag ausgeführt.
 {: shortdesc}
 
-| Plan              | Häufigkeit der Sicherung | Anzahl der aufbewahrten Backups | Sicherungsaufbewahrungszeitraum   | Self-Service |
+| Plan              | Häufigkeit der Sicherung | Anzahl der aufbewahrten Sicherungen | Sicherungsaufbewahrungszeitraum   | Self-Service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
 | MPP               | 1 / Tag          | 2                          | 2 Tage; FIFO* Rollover   | Nein           |
 | Flex Performance  | 1 / Tag          | 7                          | 7 Tage; FIFO* Rollover   | Ja          |

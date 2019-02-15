@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Module de pilote
+{: #dr_pkg}
 
-Le module de pilote {{site.data.keyword.dashdbshort_notm}} contient un logiciel qui permet de connecter les applications client à une base de données {{site.data.keyword.dashdbshort_notm}}.
+Le module de pilote {{site.data.keyword.dashdbshort_notm}} contient un logiciel qui permet de connecter les applications client à une base de données {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## A propos du module de pilote

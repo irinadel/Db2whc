@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Prise en charge de SSL (Secure Sockets Layer)
+{: #ssl_support}
 
-La base de données {{site.data.keyword.dashdbshort_notm}} utilise un certificat pour les connexions SSL qui est émis par une autorité de certification numérique tierce.
+La base de données {{site.data.keyword.dashdbshort_notm}} utilise un certificat pour les connexions SSL qui est émis par une autorité de certification numérique tierce. 
 {: shortdesc}
 
 Le certificat de l'autorité de certification est compris dans le module de pilote Db2. Si votre application se connecte avec un pilote du module de pilote Db2, vous n'avez pas besoin de télécharger le certificat séparément. Vous pouvez télécharger le module de pilote Db2 à partir de la console Web.

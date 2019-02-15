@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,42 +11,46 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Überblick zum Herstellen von Verbindungen
-{: #overview}
+{: #connect}
 
-Sie können eine Verbindung von Befehlszeilenschnittstellen, IBM® Anwendungen und Tools sowie von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen.
+Sie können eine Verbindung von Befehlszeilenschnittstellen, IBM® Anwendungen und Tools sowie von Anwendungen oder Tools eines anderen Anbieters oder von Apps, die Sie erstellen, zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen. 
 {: shortdesc}
 
 ## Voraussetzungen
 {: #prereqs}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die erforderlichen Voraussetzungen erfüllt werden.  
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die erforderlichen Voraussetzungen erfüllt werden. 
 
 - Datenbankdetails und Berechtigungsnachweise ermitteln und notieren
 
-   Für Verbindungen zu Ihrer Datenbank benötigen Sie Datenbankdetails wie den Hostnamen und Berechtigungsnachweise wie Benutzer-IDs und Kennwörter. Sie können diese Verbindungsinformationen über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole ermitteln. 
+   Für Verbindungen zu Ihrer Datenbank benötigen Sie Datenbankdetails wie den Hostnamen und Berechtigungsnachweise wie Benutzer-IDs und Kennwörter. Sie können diese Verbindungsinformationen über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole ermitteln.
 
 - Unterstützung für den installierten Treiber überprüfen
 
-   - Enthält Ihre Anwendung bzw. Ihr Tool bereits das IBM Data Server Driver-Paket von Db2 Version 11.1, kann Ihre Anwendung bzw. Ihr Tool über den betreffenden Treiber mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank verbunden werden. 
-   - Installieren Sie das Db2-Treiberpaket andernfalls. Das Paket kann über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole heruntergeladen werden. 
+   - Enthält Ihre Anwendung bzw. Ihr Tool bereits das IBM Data Server Driver-Paket von Db2 Version 11.1, kann Ihre Anwendung bzw. Ihr Tool über den betreffenden Treiber mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank verbunden werden.
+   - Installieren Sie das Db2-Treiberpaket andernfalls. Das Paket kann über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole heruntergeladen werden.
 
 - Umgebung konfigurieren
 
-  - Fügen Sie Einträge zur Treiberkonfigurationsdatei `db2dsdriver.cfg` für Ihre Datenbank hinzu. 
+  - Fügen Sie Einträge zur Treiberkonfigurationsdatei `db2dsdriver.cfg` für Ihre Datenbank hinzu.
   - Secure Sockets Layer (SSL)
 
-    Sie können Verbindungen mit SSL und Verbindungen ohne SSL herstellen. Die Verbindungsdetails wie der zu verwendende Port und die Verbindungszeichenfolge richten sich danach, ob Sie SSL-Verbindungen oder Verbindungen ohne SSL verwenden. 
+    Sie können Verbindungen mit SSL und Verbindungen ohne SSL herstellen. Die Verbindungsdetails wie der zu verwendende Port und die Verbindungszeichenfolge richten sich danach, ob Sie SSL-Verbindungen oder Verbindungen ohne SSL verwenden.
 
-    Für SSL-Verbindungen wird ein CA-Zertifikat benötigt: 
-    - Bei Verwendung des neuesten {{site.data.keyword.dashdbshort_notm}}-Treiberpakets ist die Zertifikatsdatei im Paket enthalten und wird nach der Installation für Verbindungen eingesetzt. 
-    - Bei Verwendung des IBM Data Server Driver-Pakets können Sie das SSL-Zertifikat über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunterladen. 
+    Für SSL-Verbindungen wird ein CA-Zertifikat benötigt:
+    - Bei Verwendung des neuesten {{site.data.keyword.dashdbshort_notm}}-Treiberpakets ist die Zertifikatsdatei im Paket enthalten und wird nach der Installation für Verbindungen eingesetzt.
+    - Bei Verwendung des IBM Data Server Driver-Pakets können Sie das SSL-Zertifikat über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunterladen.
 
 - Verfügbarkeit der Ports überprüfen
 
-   Befindet sich Ihr Netz hinter einer Firewall, müssen Sie sicherstellen, dass Verbindungen über den Port `50000` (für Standardprotokolle) bzw. den Port `50001` (für SSL-Verbindungen) zugelassen werden. 
+   Befindet sich Ihr Netz hinter einer Firewall, müssen Sie sicherstellen, dass Verbindungen über den Port `50000` (für Standardprotokolle) bzw. den Port `50001` (für SSL-Verbindungen) zugelassen werden.
 
 <!-- Before you can connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you completed downloading and installing the necessary components on the prerequisites checklist: 
 

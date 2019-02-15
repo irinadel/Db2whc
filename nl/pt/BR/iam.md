@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Identidade e gerenciamento de acesso (IAM) em  {{site.data.keyword.Bluemix_notm}}
@@ -78,15 +81,16 @@ O IBMid/senha pode ser usado para efetuar login no console e também pode ser us
 As interfaces do cliente de banco de dados a seguir são suportadas:
 
 * [ ODBC ](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [ CLPPLUS ](#odbc-clpplus)
 * [ JDBC ](#jdbc)
 
-### ODBC e CLPPLUS
+### ODBC, CLP e CLPPLUS
 {: #odbc-clpplus}
 
-Para que um aplicativo ODBC ou um cliente da linha de comandos (CLPPLUS) se conecte a um servidor Db2 usando a autenticação do IAM, um nome de origem de dados (DSN) precisa ser configurado primeiro em um arquivo de configuração `db2dsdriver.cfg` executando o comando a seguir:
+Para que um aplicativo ODBC ou um cliente da linha de comando (CLP, CLPPLUS) se conecte a um servidor Db2 usando a autenticação do IAM, um nome de origem de dados (DSN) precisa ser configurado primeiro em um arquivo de configuração `db2dsdriver.cfg` executando o comando a seguir:
 
-`db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
+` db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
 O arquivo de configuração `db2dsdriver.cfg` é um arquivo XML, geralmente localizado no diretório `sqllib/cfg`, que contém uma lista de aliases DSN e suas propriedades.
 
@@ -109,35 +113,57 @@ O exemplo a seguir de um arquivo de configuração `db2dsdriver.cfg` mostra as c
 
 * A sequência de conexões ODBC pode conter um dos seguintes:
 
-    **Token de acesso**
+    ** Token de acesso **
 
     `DSN=<dsn>;ACCESSTOKEN=<access_token>`
 
-    **Chave de API**
+    ** Chave de API **
 
     `DSN=<dsn>;APIKEY=<api_key>`
 
-    **IBMid/password**
+    ** IBMid/password **
     
     `DSN=<dsn>;UID=<ibmid>;PWD=<password>`
 
     Para ODBC, o **AUTHENTICATION=GSSPLUGIN** pode ser especificado no arquivo de configuração `db2dsdriver.cfg` ou na sequência de conexões do aplicativo.
 
-* O comando de conexão CLPPLUS pode conter um dos seguintes:
+* A instrução CLP CONNECT pode conter um dos seguintes:
 
-    **Token de acesso**
+    ** Token de acesso **
+
+    Conecte-se ao servidor de banco de dados `<database_server_name>` e passe o token de acesso executando o comando a seguir no prompt de comandos ou no script de CLP:
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    ** Chave de API **
+
+    Conecte-se ao servidor de banco de dados `<database_server_name>` com uma chave de API executando o comando a seguir no prompt de comandos ou no script de CLP:
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    ** IBMid/password **
+
+    Conecte-se ao servidor de banco de dados `<database_server_name>` com um IBMid/senha executando o comando a seguir no prompt de comandos ou no script de CLP:
+
+    `CONNECT TO <database_server_name> USUÁRIO <IBMid> USING <password>`
+
+    Para obter mais detalhes sobre como conectar-se a um servidor de banco de dados com o CLP, consulte: [Instrução CONNECT (tipo 2) ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+
+* A instrução CLPPLUS CONNECT pode conter um dos seguintes:
+
+    ** Token de acesso **
 
     Conecte-se ao alias do DSN (`@<data_source_name>`) e transmita o token de acesso executando o comando a seguir no prompt de comandos ou no script de CLPPLUS:
 
     `conectar @<data_source_name> utilizando(accesstoken <access_token_string>)`
 
-    **Chave de API**
+    ** Chave de API **
 
     Conecte-se ao alias do DSN (`@<data_source_name>`) com uma chave API executando o comando a seguir no prompt de comandos ou no script de CLPPLUS:
 
     `conectar @<data_source_name> utilizando(apikey <api-key-string>)`
 
-    **IBMid/password**
+    ** IBMid/password **
 
     Conecte-se ao alias do DSN (`@<data_source_name>`) com um IBMid/senha, executando o comando a seguir no prompt de comandos ou no script de CLPPLUS:
 
@@ -152,7 +178,7 @@ O Driver JDBC Tipo 4 é suportado para autenticação do IAM.
 
 Os exemplos a seguir mostram fragmentos de conexão para os três métodos:
 
-**Token de acesso**
+** Token de acesso **
 
 ```
 DataSource; DB2SimpleDataSource;
@@ -167,7 +193,13 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
-**Chave de API**
+ou o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
+** Chave de API **
 
 ```
 DataSource; DB2SimpleDataSource;
@@ -182,7 +214,13 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
-**IBMid/password**
+ou o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
+** IBMid/password **
 
 ```
 DataSource; DB2SimpleDataSource;
@@ -193,7 +231,13 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+ou o
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## Experiência do Usuário do
@@ -210,7 +254,9 @@ A API de REST do {{site.data.keyword.dashdbshort_notm}} foi aprimorada para tamb
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **Nota**: os valores `<userid>` para `"id"` e `"ibmid"` não precisam ser iguais. Os dois IDs diferentes não são vinculados de nenhuma maneira.
+  O elemento `<userid>` valor para `"id"` e
+`"ibmid"` não precisam ser os mesmos. Os dois IDs diferentes não são vinculados de nenhuma maneira.
+  {: note}
 
 * Para migrar um usuário de banco de dados não IBMid existente (por exemplo, `abcuser`) e torná-lo um usuário IBMid, exclua primeiramente o ID de usuário não IBMid executando a chamada API de exemplo a seguir:
 

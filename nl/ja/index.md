@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,13 +61,13 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 ### REST API
 {: #api}
 
-{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理、データのロード、および R スクリプトの実行に関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2whc_api){:new_window} を使用して実行できます。
+{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理およびデータのロードに関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2whc_api){:new_window} を使用して実行できます。
 {: shortdesc}
 
 ### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する
 {: #connect_apps}
 
-以下の手順を実行して、{site.data.keyword.dashdbshort_notm}} データベースに接続するようにローカル環境を構成します。
+以下の手順を実行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続するようにローカル環境を構成します。
 {: shortdesc}
 
 1. [ ドライバー・パッケージ](connecting/driver_pkg.html)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
@@ -146,28 +146,19 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 
 {{site.data.keyword.dashdbshort_notm}} の概要を確認するには、このビデオを視聴してください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## ビデオ: Introducing the Flex Performance plan
 {: #intro_vid_flex}
 
 {{site.data.keyword.dashdbshort_notm}} Flex Performance plan の概要を確認するには、このビデオを視聴してください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## ビデオ: Connecting an analytics application
 {: #cognos_vid}
 
 Cognos Analytics からの接続の作成方法を確認するには、このビデオを視聴してください。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Suporte ao Secure Sockets Layer (SSL)
+{: #ssl_support}
 
-O banco de dados {{site.data.keyword.dashdbshort_notm}} usa um certificado para conexões SSL que é emitido por uma autoridade de certificação digital (CA) de terceiros.
+O banco de dados {{site.data.keyword.dashdbshort_notm}} usa um certificado para conexões SSL que é emitido por uma autoridade de certificação digital (CA) de terceiros. 
 {: shortdesc}
 
 O certificado de autoridade de certificação faz parte do pacote de drivers do Db2. Se o seu aplicativo se conectar a um driver por meio do pacote de drivers do Db2, não será necessário fazer download do certificado separadamente. É possível fazer download do pacote de drivers do Db2 por meio do console da web.

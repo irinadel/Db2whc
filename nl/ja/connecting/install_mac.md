@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Mac OS X 上でのドライバー・パッケージのインストール
+{: #install_dr_pkg_mac}
 
-`installDSDriver.sh` スクリプトを使用して、{{site.data.keyword.dashdbshort_notm}} ドライバー・パッケージを Mac OS X にインストールできます。
+`installDSDriver.sh` スクリプトを使用して、{{site.data.keyword.dashdbshort_notm}} ドライバー・パッケージを Mac OS X にインストールできます。 
 {: shortdesc}
 
 ## 前提条件

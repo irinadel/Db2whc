@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Connexion à .NET à l'aide d'un programme
+{: #con_prog_net}
 
-Définissez une connexion entre une application .NET et votre base de données {{site.data.keyword.dashdbshort_notm}}.
+Définissez une connexion entre une application .NET et votre base de données {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Prérequis

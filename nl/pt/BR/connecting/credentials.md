@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,14 +11,20 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Detalhes do banco de dados e credenciais de
+{: #db_details_cxn_creds}
 
 Para configurar seu ambiente de desenvolvimento local e para conectar aplicativos e ferramentas ao banco de dados {{site.data.keyword.dashdbshort_notm}}, é necessário saber os detalhes do banco de dados e as credenciais de conexão.
 {: shortdesc}
 
 ## Detalhes do banco de
+{: #db_details}
 
 Há detalhes importantes do banco de dados necessários para conectar aplicativos e ferramentas ao banco de dados:
 
@@ -29,6 +35,7 @@ Há detalhes importantes do banco de dados necessários para conectar aplicativo
 - *Nome do banco de dados* - O nome do banco de dados Db2, geralmente BLUDB.
 
 ## Credenciais de conexão
+{: #cxn_creds}
 
 Há três tipos de credenciais:
 
@@ -37,6 +44,7 @@ Há três tipos de credenciais:
 - *Usuários criados pelo administrador* - Alguns planos do {{site.data.keyword.dashdbshort_notm}} permitem que usuários administrativos criem novos usuários. Esses IDs de usuário e senhas criados pelo administrador podem ser usados para se registrar diretamente na URL do console da web e para se conectar ao banco de dados Db2 por meio de aplicativos ou ferramentas.
 
 ## Onde localizar detalhes do banco de dados e credenciais de conexão
+{: #location}
 
 É possível coletar essas informações nos locais a seguir:
 

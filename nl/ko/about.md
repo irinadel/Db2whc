@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Db2 Warehouse on Cloud 정보
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}}는 완전 관리되는 페타바이트 규모의 고성능 클라우드 데이터 웨어하우스입니다.
 

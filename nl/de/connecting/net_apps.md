@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,16 +11,21 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Programmgestützte Verbindungsherstellung - .NET
+{: #con_prog_net}
 
-Definieren Sie eine Verbindung zwischen einer .NET-Anwendung und der {{site.data.keyword.dashdbshort_notm}}-Datenbank.
+Definieren Sie eine Verbindung zwischen einer .NET-Anwendung und der {{site.data.keyword.dashdbshort_notm}}-Datenbank. 
 {: shortdesc}
 
 ## Voraussetzungen
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden. 
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -29,11 +34,11 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
 ## Vorgehensweise
 
-Im Folgenden wird gezeigt, wie Sie Ihre Anwendung über .NET mit der Datenbank verbinden. 
+Im Folgenden wird gezeigt, wie Sie Ihre Anwendung über .NET mit der Datenbank verbinden.
 
-1. Geben Sie die im Folgenden angegebenen Befehle in einer Eingabeaufforderung ein. Mit diesen Befehlen werden neue Einträge in der Treiberkonfigurationsdatei `db2dsdriver.cfg` auf Ihrem Computer erstellt und die Verbindungsattribute festgelegt. Sie müssen diesen Schritt lediglich ein einziges Mal ausführen. 
+1. Geben Sie die im Folgenden angegebenen Befehle in einer Eingabeaufforderung ein. Mit diesen Befehlen werden neue Einträge in der Treiberkonfigurationsdatei `db2dsdriver.cfg` auf Ihrem Computer erstellt und die Verbindungsattribute festgelegt. Sie müssen diesen Schritt lediglich ein einziges Mal ausführen.
         
-   - Für SSL-Verbindungen: 
+   - Für SSL-Verbindungen:
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
 
@@ -41,13 +46,13 @@ Im Folgenden wird gezeigt, wie Sie Ihre Anwendung über .NET mit der Datenbank v
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
-     Dabei gilt Folgendes: 
+     Dabei gilt Folgendes:
 
-     `<hostname>`: Der Hostname des Servers. 
+     `<hostname>`: Der Hostname des Servers.
     
-     `<alias>`: Der Name für einen DSN-Alias, der zum Herstellen einer .NET-Verbindung verwendet werden soll. Wählen Sie einen aussagekräftigen Namen aus, z. B. `analytics`.  
+     `<alias>`: Der Name für einen DSN-Alias, der zum Herstellen einer .NET-Verbindung verwendet werden soll. Wählen Sie einen aussagekräftigen Namen aus, z. B. `analytics`. 
 
-   - Für Verbindungen ohne SSL: 
+   - Für Verbindungen ohne SSL:
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
 
@@ -57,17 +62,17 @@ Im Folgenden wird gezeigt, wie Sie Ihre Anwendung über .NET mit der Datenbank v
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 
-   Dabei gilt Folgendes: 
+   Dabei gilt Folgendes:
 
-   `<alias>`: Der Name des DSN-Alias, den Sie in Schritt 1 mit dem Befehl **db2cli writecfg** erstellt haben. 
+   `<alias>`: Der Name des DSN-Alias, den Sie in Schritt 1 mit dem Befehl **db2cli writecfg** erstellt haben.
     
-   `<user_id>`: Ihre {{site.data.keyword.dashdbshort_notm}}-Benutzer-ID.  
+   `<user_id>`: Ihre {{site.data.keyword.dashdbshort_notm}}-Benutzer-ID. 
     
-   `<password>`: Das Kennwort, das Sie für die Verbindung zu der {{site.data.keyword.dashdbshort_notm}}-Datenbank verwenden.  
+   `<password>`: Das Kennwort, das Sie für die Verbindung zu der {{site.data.keyword.dashdbshort_notm}}-Datenbank verwenden. 
 
 ## Beispiel
 
-Die folgende Beispielsyntax enthält C#-Beispielcode, bei dem der .NET-Treiber zum Erstellen einer Verbindung zur Datenbank verwendet wird. 
+Die folgende Beispielsyntax enthält C#-Beispielcode, bei dem der .NET-Treiber zum Erstellen einer Verbindung zur Datenbank verwendet wird.
 
 ```
 using System;

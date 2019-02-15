@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # ドライバー・パッケージ
+{: #dr_pkg}
 
 {{site.data.keyword.dashdbshort_notm}} ドライバー・パッケージには、クライアント・アプリケーションを {{site.data.keyword.dashdbshort_notm}} データベースに接続するためのソフトウェアが含まれています。 
 {: shortdesc}
@@ -37,7 +42,7 @@ lastupdated: "2018-09-25"
 
 ## ダウンロード
 
-ご使用のオペレーティング・システム版のドライバー・パッケージは、{{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードできます。{{site.data.keyword.Bluemix_notm}} ダッシュボードで、{{site.data.keyword.dashdbshort_notm}} サービスを開きます。{{site.data.keyword.dashdbshort_notm}} Web コンソールにログインします。
+ご使用のオペレーティング・システム版のドライバー・パッケージは、{{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードできます。 {{site.data.keyword.Bluemix_notm}} ダッシュボードで、{{site.data.keyword.dashdbshort_notm}} サービスを開きます。 {{site.data.keyword.dashdbshort_notm}} Web コンソールにログインします。
 
 {{site.data.keyword.dashdbshort_notm}} Web コンソールで、**「接続」>「接続情報」**を選択します。ご使用のオペレーティング・システムを表すタイルを選択して、適切なドライバーをダウンロードします。
 

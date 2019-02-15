@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,13 +61,13 @@ Puede acceder a la consola web de los siguientes modos:
 ### API REST
 {: #api}
 
-Con los panes de servicio de {{site.data.keyword.dashdbshort_notm}}, puede realizar tareas relacionadas con la gestión de archivos, carga de datos y ejecución de scripts R utilizando la [API REST de {{site.data.keyword.dashdbshort_notm}}![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
+Con los planes de servicio de {{site.data.keyword.dashdbshort_notm}} puede realizar tareas relacionadas con la gestión de archivos y carga de datos utilizando la API REST de [{{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Conecte aplicaciones o herramientas preferidas desde el sistema local
 {: #connect_apps}
 
-Configure el entorno local para conectar la base de datos de {site.data.keyword.dashdbshort_notm}} siguiendo estos pasos:
+Configure el entorno local para conectar la base de datos de {{site.data.keyword.dashdbshort_notm}} siguiendo estos pasos:
 {: shortdesc}
 
 1. Descargue el [paquete de controlador](connecting/driver_pkg.html) desde la consola web de {{site.data.keyword.dashdbshort_notm}}.
@@ -137,7 +137,7 @@ A continuación, se muestran los enlaces a ejemplos que demuestran cómo conecta
 - [JDBC](connecting/jdbc.html)
 - [ODBC o CLI de Microsoft Windows](connecting/odbc_cli.html)
 - [.NET](connecting/net_apps.html)
-- [administrador de orígenes de datos ODBC ](connecting/odbc_data_source_admin.html)
+- [administrador de orígenes de datos ODBC](connecting/odbc_data_source_admin.html)
 - [PHP](connecting/php.html)
 - [API REST](connecting/rest_api.html)
 
@@ -146,28 +146,19 @@ A continuación, se muestran los enlaces a ejemplos que demuestran cómo conecta
 
 Vea el vídeo para ver una introducción a {{site.data.keyword.dashdbshort_notm}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Introducción a {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introducción a {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vídeo: Introducción al plan Flex Performance
 {: #intro_vid_flex}
 
 Vea este vídeo para ver una introducción al plan Flex Performance de {{site.data.keyword.dashdbshort_notm}}.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## Vídeo: Conexión a una aplicación de análisis
 {: #cognos_vid}
 
 Vea este vídeo para saber cómo crear una conexión desde Cognos Analytics.
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="Creación de una conexión desde Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

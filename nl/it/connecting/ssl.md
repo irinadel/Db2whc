@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Supporto SSL (Secure Sockets Layer)
+{: #ssl_support}
 
-Il database {{site.data.keyword.dashdbshort_notm}} utilizza un certificato per le connessioni SSL che viene emesso da un'autorità di certificazione (CA) digitale di terze parti.
+Il database {{site.data.keyword.dashdbshort_notm}} utilizza un certificato per le connessioni SSL che viene emesso da un'autorità di certificazione (CA) digitale di terze parti. 
 {: shortdesc}
 
 Il certificato CA fa parte del pacchetto del driver Db2. Se la tua applicazione si collega a un driver dal pacchetto del driver Db2, non devi scaricare il certificato separatamente. Puoi scaricare il pacchetto del driver Db2 dalla console web.

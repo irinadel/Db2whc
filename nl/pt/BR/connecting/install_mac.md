@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Instalando o pacote de drivers no Mac OS X
+{: #install_dr_pkg_mac}
 
-É possível instalar o pacote de drivers do {{site.data.keyword.dashdbshort_notm}} no Mac OS X usando o script `installDSDriver.sh`.
+É possível instalar o pacote de drivers do {{site.data.keyword.dashdbshort_notm}} no Mac OS X usando o script `installDSDriver.sh`. 
 {: shortdesc}
 
 ## Pré-requisitos

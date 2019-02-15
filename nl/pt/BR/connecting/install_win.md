@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Instalando o Pacote do Driver no Windows
+{: #install_dr_pkg_windows}
 
-É possível instalar o pacote de drivers do {{site.data.keyword.dashdbshort_notm}} no Windows usando o instalador.
+É possível instalar o pacote de drivers do {{site.data.keyword.dashdbshort_notm}} no Windows usando o instalador. 
 {: shortdesc}
 
 ## Pré-requisitos

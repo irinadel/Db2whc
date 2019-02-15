@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Visión general de la conexión
-{: #overview}
+{: #connect}
 
 Puede conectar interfaces de línea de mandatos, aplicaciones y herramientas de IBM® o terceros, o apps que crea a su base de datos de {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
@@ -80,7 +84,7 @@ Puede utilizar lenguajes de programación comunes para crear aplicaciones que co
 - [JDBC](jdbc.html)
 - [ODBC o CLI de Microsoft Windows](odbc_cli.html)
 - [.NET](net_apps.html)
-- [Administrador de orígenes de datos ODBC ](odbc_data_source_admin.html)
+- [Administrador de orígenes de datos ODBC](odbc_data_source_admin.html)
 - [PHP](php.html)
 - [API REST](rest_api.html)
 <!-- - [C++]() -->
@@ -127,6 +131,6 @@ La virtualización de datos de Db2 (también denominada federación) recibe sopo
 
 Esta función está admitida en todas las versiones de {{site.data.keyword.dashdbshort_notm}}, excepto en el plan de entrada. Sin embargo, puede utilizar el plan de entrada como destino desde el que extraer datos.
 
-- [Virtualización de datos (federación) ](../federation.html)
+- [Virtualización de datos (federación)](../federation.html)
 
 

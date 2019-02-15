@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Connessione programmatica con .NET
+{: #con_prog_net}
 
-Definisci una connessione tra un'applicazione .NET e il tuo database {{site.data.keyword.dashdbshort_notm}}.
+Definisci una connessione tra un'applicazione .NET e il tuo database {{site.data.keyword.dashdbshort_notm}}. 
 {: shortdesc}
 
 ## Prerequisiti
@@ -61,7 +66,7 @@ La seguente procedura mostra come collegare la tua applicazione al database con 
 
    `<alias>`: il nome dell'alias DSN che hai creato con il comando **db2cli writecfg** nel passo 1.
     
-   `<user_id>`: il tuo ID utente {{site.data.keyword.dashdbshort_notm}}.  
+   `<user_id>`: il tuo ID utente {{site.data.keyword.dashdbshort_notm}}. 
     
    `<password>`: la password che hai utilizzato per il collegamento al tuo database {{site.data.keyword.dashdbshort_notm}}. 
 

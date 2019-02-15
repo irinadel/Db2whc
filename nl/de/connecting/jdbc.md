@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,16 +11,21 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Programmgestützte Verbindungsherstellung - JDBC
+{: #con_prog_jdbc}
 
 Definieren Sie eine Verbindung zwischen einer Java™-Anwendung und der {{site.data.keyword.dashdbshort_notm}}-Datenbank.
 {: shortdesc}
 
 ## Voraussetzungen
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden. 
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -29,13 +34,13 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
 ## Vorgehensweise
 
-Geben Sie in den einzelnen Java-Anwendungen die Benutzer-ID und das zugehörige Kennwort an, indem Sie die Methode **DriverManager.getConnection** einbeziehen, und fügen Sie dann eine der folgenden JDBC-URL-Zeichenfolgen ein: 
+Geben Sie in den einzelnen Java-Anwendungen die Benutzer-ID und das zugehörige Kennwort an, indem Sie die Methode **DriverManager.getConnection** einbeziehen, und fügen Sie dann eine der folgenden JDBC-URL-Zeichenfolgen ein:
 
-- Für SSL-Verbindungen: 
+- Für SSL-Verbindungen:
 
   `jdbc:db2://<host_name>:50001/BLUDB:sslConnection=true;`
 
-- Für Verbindungen ohne SSL: 
+- Für Verbindungen ohne SSL:
 
   `jdbc:db2://<host_name>:50000/BLUDB`
 
