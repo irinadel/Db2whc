@@ -46,7 +46,7 @@ Users with an IBMid must be added to each database service instance by the datab
 A service ID identifies a service or application similar to how a user ID identifies a user. The service IDs are IDs that can be used by applications to authenticate with an {{site.data.keyword.Bluemix_notm}} service. A service ID represents a separate entity from the owning IBMid. Therefore, different authorities and permissions can be granted specific to the service ID within the database. Service IDs do not have passwords. An API key must be created for each service ID for the service ID to connect to the database service instance. For more information about service IDs, see: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Client connections and user logins
-{: #connect}
+{: #connect_login}
 
 **Prerequisite**: Db2 Client V11.1 FP3 and later.
 

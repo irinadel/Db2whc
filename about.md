@@ -44,13 +44,13 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 
 You can analyze and visualize your analysis by connecting to the following applications:
 
-- [Watson Studio (formerly Data Science Experience)](connecting/data_sci.html#watson_studio)
-- [Cognos Analytics](connecting/vis_bi.html#cognos)
+- [Watson Studio (formerly Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
+- [Cognos Analytics](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](connecting/vis_bi.html#tableau)
-- [SPSS Statistics](connecting/data_sci.html#spss_stats)
-- [SAS](connecting/data_sci.html#sas)
-- [Microsoft Excel](connecting/vis_bi.html#excel)
-- [Esri ArcGIS for Desktop](connecting/vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
+- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
+- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 

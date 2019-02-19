@@ -46,7 +46,7 @@ To make connections with the SSL protocol, download and install the 32-bit GSKit
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc1}
@@ -149,7 +149,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
         where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID, and `<password>` is your {{site.data.keyword.dashdbshort_notm}} password.
 
-  4. Use the [connection information](credentials.html) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+  4. Use the [connection information](/docs/services/Db2whc/connecting/credentials.html) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
 
      For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
@@ -224,7 +224,7 @@ When you use {{site.data.keyword.dashdbshort_notm}} as a connection target, the 
 
 If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 If you intend to connect by using the SSL protocol, download the `DigiCertGlobalRootCA.crt` SSL certificate from the web console to a directory on the client machine. To download the certificate, click **Connection > Connection Information** and then click the **Connection with SSL** tab.
 
@@ -381,7 +381,7 @@ These instructions explain how to create a connection from IBM® Data Studio <!-
 ### Prerequisites
 {: #prereq3}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc3}
@@ -410,7 +410,7 @@ A connection between your IBM® Data Server Manager and your {{site.data.keyword
 ### Prerequisites
 {: #prereq4}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc4}
@@ -452,7 +452,7 @@ These instructions explain how to create a connection from InfoSphere® Data Arc
 ### Prerequisites
 {: #prereq5}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc5}
@@ -482,7 +482,7 @@ These instructions explain how to connect Aginity Workbench <!--4.3 -->to a {{si
 ### Prerequisites
 {: #prereq6}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc6}
@@ -504,7 +504,7 @@ Command line processor plus (CLPPlus) is included in the Db2 driver package. CLP
 ### Prerequisites
 {: #prereq7}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime environment (JRE) for Java Version 1.5.0 or later is installed on your computer and that environment variables are set as follows:
 

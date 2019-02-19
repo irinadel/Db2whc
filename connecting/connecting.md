@@ -59,21 +59,21 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 ### Collecting connection information
 {: #collect_info}
 
-- [Database details and connection credentials](credentials.html)
+- [Database details and connection credentials](/docs/services/Db2whc/connecting/credentials.html)
 
 ### Downloading and installing driver package
 {: #dl_install}
 
-- [Download driver package](driver_pkg.html)
-- [Installing on Linux or PowerLinux](install_linux.html)
-- [Installing on Mac OS X](install_mac.html)
-- [Installing on Windows](install_win.html)
+- [Download driver package](/docs/services/Db2whc/connecting/driver_pkg.html)
+- [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
+- [Installing on Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Installing on Windows](/docs/services/Db2whc/connecting/install_win.html)
 
 ### Configuring your environment
 {: #cfg_env}
 
-- [Configuring your environment](driver_pkg_cfg.html)
-- [Secure Sockets Layer (SSL) support](ssl.html)
+- [Configuring your environment](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
+- [Secure Sockets Layer (SSL) support](/docs/services/Db2whc/connecting/ssl.html)
 
 ## Connecting programmatically
 {: #conx_prgrm}
@@ -81,12 +81,12 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 You can use common programming languages to create applications that connect to a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
-- [JDBC](jdbc.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
 - [Microsoft Windows ODBC or CLI](odbc_cli.html)
-- [.NET](net_apps.html)
-- [ODBC Data Source Administrator](odbc_data_source_admin.html)
-- [PHP](php.html)
-- [REST API](rest_api.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -100,29 +100,29 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 
 ### Data integration
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
-- [DataStage](data.html#datastage)
-- [Informatica](data.html#informatica)
+- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
+- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
 - [Lift ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](data.html#idr)
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
 - [Segment ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](data.html#data_studio)
-- [Data Server Manager](data.html#dsm)
-- [CLPPLUS](data.html#clpplus)
-- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](data.html#aginity_wb)
-- [InfoSphere Data Architect to design and deploy your database schema](data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
+- [Data Server Manager](/docs/services/Db2whc/connecting/data.html#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
+- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)
+- [InfoSphere Data Architect to design and deploy your database schema](/docs/services/Db2whc/connecting/data.html#ida)
 
 ### Data visualization/BI
-- [Cognos Analytics to run Business Intelligence reports against your data](vis_bi.html#cognos)
+- [Cognos Analytics to run Business Intelligence reports against your data](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](vis_bi.html#tableau)
-- [Microsoft Excel](vis_bi.html#excel)
-- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 ### Data science
-- [Watson Studio (formerly IBM Data Science Experience)](data_sci.html#watson_studio)
-- [SPSS Statistics](data_sci.html#spss_stats)
-- [SAS](data_sci.html#sas)
-- [Local R development environment](data_sci.html#r_dev_env)
+- [Watson Studio (formerly IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
+- [Local R development environment](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
 
 ## Connecting to another Db2 database
 {: #fed}
@@ -131,6 +131,6 @@ Db2 data virtualization (also known as federation) is supported by {{site.data.k
 
 This function is supported on all versions of {{site.data.keyword.dashdbshort_notm}}, except for the Entry plan. However, you can use the Entry plan as a target from which you can pull data.
 
-- [Data virtualization (federation)](../federation.html)
+- [Data virtualization (federation)](/docs/services/Db2whc/federation.html)
 
 

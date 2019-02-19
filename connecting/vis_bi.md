@@ -52,7 +52,7 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.dashd
 ### Prerequisites
 {: #prereq1}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc1}
@@ -82,7 +82,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 ### Prerequisites
 {: #prereq2}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your local computer. 
 
@@ -123,14 +123,14 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 ### Prerequisites
 {: #prereq3}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
 ### Procedure
 {: #proc3}
 
-1. Determine your ODBC DSN data from the [connection information](credentials.html) that you collected beforehand.
+1. Determine your ODBC DSN data from the [connection information](/docs/services/Db2whc/connecting/credentials.html) that you collected beforehand.
 
 2. Create a new connection:
       

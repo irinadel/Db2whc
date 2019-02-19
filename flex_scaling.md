@@ -31,7 +31,6 @@ After your system is provisioned and whenever your requirements change, you can 
 
 ![View of the web console compute cores page](images/scaling_full.png)
 
-
 ## Compute cores
 {: #cores}
 

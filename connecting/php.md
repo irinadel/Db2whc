@@ -25,7 +25,7 @@ Define a connection between a PHP application and a {{site.data.keyword.dashdbsh
 
 ## Prerequisites
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -36,7 +36,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 ### Scenario 1: Connecting from outside {{site.data.keyword.Bluemix_notm}}:
         
-1. Download the [Db2 driver package](driver_pkg.html) from the web console, and then install the driver package on the machine where your PHP application will run.
+1. Download the [Db2 driver package](/docs/services/Db2whc/connecting/driver_pkg.html) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
 2. Use the [`odbc_connect` function ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://php.net/manual/en/function.odbc-connect.php){:new_window} to connect to the BLUDB database.
     

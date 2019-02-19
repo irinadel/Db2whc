@@ -25,7 +25,7 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Lin
 
 ## Prerequisites
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -62,7 +62,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 ## What's next?
 
-To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](driver_pkg_cfg.html).   
+To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).   
 
 
 

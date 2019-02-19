@@ -84,7 +84,7 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 ### Prerequisites
 {: #prereq1}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc1}
@@ -99,11 +99,11 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
    b. On the Create New Data Source window, select the driver that is named **IBM DB2 ODBC DRIVER** and click **Finish**.
 
-   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Db2 driver package](driver_pkg.html).
+   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Db2 driver package](/docs/services/Db2whc/connecting/driver_pkg.html).
         
    c. In the ODBC IBM Driver - Add window, enter a data source name (usually the name of the database you are connecting to), and click **Add**.
         
-   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](credentials.html) that you collected beforehand.
+   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](/docs/services/Db2whc/connecting/credentials.html) that you collected beforehand.
         
    e. On the Advanced Settings page, for each of the following parameters, click **Add** to open the Add CLI Parameter window to begin the step, and click **OK** to return to the Advanced Settings page:
             
@@ -134,7 +134,7 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 ### Prerequisites
 {: #prereq2}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc2}
@@ -151,7 +151,7 @@ Instead of using the RStudio® environment that is integrated within IBM Watson 
 ### Prerequisites
 {: #prereq3}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
 {: #proc3}
@@ -168,7 +168,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
         
    b. Open your locally installed R development environment.
         
-   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](credentials.html) that you collected beforehand.
+   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/services/Db2whc/connecting/credentials.html) that you collected beforehand.
 
    - If your locally installed R development environment runs in the {{site.data.keyword.dashdbshort_notm}} database:
 

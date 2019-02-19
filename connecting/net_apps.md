@@ -25,7 +25,7 @@ Define a connection between a .NET application and your {{site.data.keyword.dash
 
 ## Prerequisites
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

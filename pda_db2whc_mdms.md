@@ -38,7 +38,8 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
    - Netmask 
    - Default Gateway to access the user interface (UI)
 3. Cloud Object Storage download destination <br/>
-   **Important**: You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Step 1: Creating a request
 {: #create-req}
@@ -108,9 +109,12 @@ If a different form factor of Ethernet connection is required, you must provide 
 2. Determine the most appropriate place for the device to be placed; where it will reach both power and your Ethernet (1GbE and 10GbE) connections and have minimal foot traffic nearby.
 
 3. Position the device to be connected. It can remain in the transport case during use. Ensure that the device is at room temperature and there's no condensation on it. Connect to power by using the provided power cable underneath the case lid. Power on the device.<br/>
-    **Note**: There are two power switches.
+    There are two power switches.
+    {: note}
+
     ![Power switches](/images/MDMSPowerSwitch.png)
-    **Note**: The device does not need to be removed from the portable case.
+    The device does not need to be removed from the portable case.
+    {: note}
 
 4. Remove the CAT6A cable from the case lid and connect it to the Eth3 (10GbE-B) port that is shown in the picture.
     ![Eth1 and Eth3 port location](/images/MDMSNewEth1and3.png)
@@ -120,14 +124,16 @@ If a different form factor of Ethernet connection is required, you must provide 
 6. If the IP address configured for Eth3 can be reached through a browser `https://<your_Eth3_IP_Address>`, continue to the next step. 
 
    Otherwise, connect to the Eth1 (1GbE-B) port. Open your browser and enter `https://<your_Eth1_IP_Address>`. Enter the Eth1 IP address appropriate for your network configuration. Accept the certificate exception.<br/>
-   **Note**: If you need to alter any IP settings for Eth3 or Eth1, see the [IP address configuration](#ip_cfg) section.
+   If you need to alter any IP settings for Eth3 or Eth1, see the [IP address configuration](#ip_cfg) section.
+   {: note}
 
 7. Use the provided user name and password to log in.<br/>
     ![Login page](/images/Login.png)
 
 8. The workflow wizard presents access to the specific items generally used in order from left to right.<br/>
     ![Workflow icons](/images/workflow.png) <br/>
-    **NOTE**: The workflow can be reopened by using **Workflow Manager** in the upper left of the GUI.
+    The workflow can be reopened by using **Workflow Manager** in the upper left of the GUI.
+    {: note}
 
 9. Activate the pre-configured storage pool:
     - Click **Unlock and Start Storage Pool**.
