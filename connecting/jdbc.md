@@ -28,6 +28,7 @@ Define a connection between a Java™ application and the {{site.data.keyword.da
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq61}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -37,6 +38,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedure
+{: #proc61}
 
 In each Java application, specify the user ID and password by including the **DriverManager.getConnection** method, and then include one of the following JDBC URL strings:
 

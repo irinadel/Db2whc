@@ -28,6 +28,7 @@ To connect local applications and tools to your {{site.data.keyword.dashdbshort_
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq21}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -40,6 +41,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ## Procedure
+{: #proc21}
 
 1. Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
 

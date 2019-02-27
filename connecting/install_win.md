@@ -28,12 +28,14 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Win
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq51}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
 ## Procedure
+{: #proc51}
 
 1. Run the downloaded executable file as an administrator.
 
@@ -41,5 +43,6 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 2. [*Optional*] Add the `bin` subdirectory of the driver package installation directory to your `%PATH%` environment variable (so you can run the **db2cli** command without specifying the full path to the command executable.)
 
 ## What's next?
+{: #wn51}
 
 To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).

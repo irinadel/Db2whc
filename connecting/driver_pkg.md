@@ -28,6 +28,7 @@ The {{site.data.keyword.dashdbshort_notm}} driver package contains software for 
 {: shortdesc}
 
 ## About
+{: #abt}
 
 - The driver package contains client interface tools, such as CLPPlus.
 - The driver package also contains the following drivers: 
@@ -41,16 +42,19 @@ The {{site.data.keyword.dashdbshort_notm}} driver package contains software for 
   - And more ...
 
 ## Already installed?
+{: #alrdy_instld}
 
 To verify that the driver package is already on your computer, or to determine the version number, you can use the [**db2level** ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window} command.
 
 ## Downloading
+{: #dwnldng}
 
 You can download the driver package for your operating system from the {{site.data.keyword.dashdbshort_notm}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.dashdbshort_notm}} service. Log in to your {{site.data.keyword.dashdbshort_notm}} web console.
 
 In the {{site.data.keyword.dashdbshort_notm}} web console, select **Connect > Connection info**. Select the tile representing your operating system to download the appropriate driver.
 
 ## Installing
+{: #instlng}
 
 Install the driver package for your operating system:
 - [Installing on Windows](/docs/services/Db2whc/connecting/install_win.html)

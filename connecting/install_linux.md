@@ -28,6 +28,7 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Lin
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq31}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -43,6 +44,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    `sudo dpkg -iG *.deb` 
 
 ## Procedure
+{: #proc31}
 
 1. Decompress the compressed driver package file that you downloaded earlier.
 
@@ -65,6 +67,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    - **C shell**: `source db2cshrc`
 
 ## What's next?
+{: #wn}
 
 To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).   
 

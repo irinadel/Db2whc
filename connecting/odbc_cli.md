@@ -28,6 +28,7 @@ Define a connection between a Microsoft Windows ODBC or CLI application and a {{
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq81}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -37,6 +38,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedure
+{: #proc81}
 
 1. In a command shell on Linux operating systems, at the Windows command prompt, or in the Db2 command window on Windows operating systems, enter the following commands:
 

@@ -28,6 +28,7 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 {: shortdesc}
 
 ## Prerequisites
+{: #prereq91}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -37,6 +38,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedure
+{: #proc91}
 
 1. Install the [Db2 driver package](/docs/services/Db2whc/connecting/driver_pkg.html).
 

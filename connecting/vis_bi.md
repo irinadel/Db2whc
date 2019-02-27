@@ -54,12 +54,12 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.dashd
 {: shortdesc}
 
 ### Prerequisites
-{: #prereq1}
+{: #prereq8}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 ### Procedure
-{: #proc1}
+{: #proc8}
 
 1. In Tableau Desktop, open the window or page in your tool that is used to define a database connection.
 2. From the start page, click **Connect to data**.
@@ -84,7 +84,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 {: shortdesc}
 
 ### Prerequisites
-{: #prereq2}
+{: #prereq9}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
@@ -93,7 +93,7 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 **Restriction**: Connections between Excel and {{site.data.keyword.dashdbshort_notm}} are supported on only the Windows operating system.
 
 ### Procedure
-{: #proc2}
+{: #proc9}
 
 1. In the web console, go to the **Run SQL** page.
     
@@ -125,14 +125,14 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 {: shortdesc}
 
 ### Prerequisites
-{: #prereq3}
+{: #prereq10}
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
 ### Procedure
-{: #proc3}
+{: #proc10}
 
 1. Determine your ODBC DSN data from the [connection information](/docs/services/Db2whc/connecting/credentials.html) that you collected beforehand.
 

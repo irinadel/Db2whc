@@ -22,7 +22,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Connecting overview
-{: #connect}
+{: #connect_ov}
 
 You can connect command-line interfaces, IBM® or third-party applications and tools, or apps that you create to your {{site.data.keyword.dashdbshort_notm}} database. 
 {: shortdesc}
@@ -103,6 +103,8 @@ You can use common programming languages to create applications that connect to 
 You can also connect external applications and tools to {{site.data.keyword.dashdbshort_notm}} and use them to further manage or analyze your data. For example:
 
 ### Data integration
+{: #di}
+
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
 - [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
 - [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
@@ -116,6 +118,8 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 - [InfoSphere Data Architect to design and deploy your database schema](/docs/services/Db2whc/connecting/data.html#ida)
 
 ### Data visualization/BI
+{: #dvis_bi}
+
 - [Cognos Analytics to run Business Intelligence reports against your data](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
 - [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
@@ -123,6 +127,8 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 - [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 ### Data science
+{: #dsci}
+
 - [Watson Studio (formerly IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
 - [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
 - [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
