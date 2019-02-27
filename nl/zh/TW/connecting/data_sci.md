@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料科學
-{: #overview}
+{: #ds}
 
 您也可以將外部應用程式和工具連接到 {{site.data.keyword.dashdbshort_notm}}，並使用它們進一步管理或分析您的資料。
 {: shortdesc}
@@ -22,7 +26,7 @@ lastupdated: "2018-10-15"
 ## Watson Studio
 {: #watson_studio}
 
-在 IBM Watson Studio（先前稱為 Data Science Experience）中建立專案之後，您可以資料資產新增至其中，以便能夠使用資料。專案中的所有合作人員都會自動獲得授權，以存取專案中的資料。
+在 IBM Watson Studio（先前稱為 Data Science Experience）中建立專案之後，您可以將資料資產新增至其中，以便能夠使用資料。專案中的所有合作人員都會自動獲得授權，以存取專案中的資料。
 {: shortdesc}
 
 您如何新增資料以及您可以從何處新增資料，在舊式專案與 IBM Watson 專案之間有所不同。IBM Watson 專案會使用 {{site.data.keyword.Bluemix_notm}} Object Storage。如果專案使用 Object Storage OpenStack Swift，則為舊式專案。 
@@ -78,16 +82,18 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
+{: #prereq1}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc1}
 
 1. 在 SPSS Statistics 中，按一下**檔案 > 開啟資料庫 > 新建查詢**。
     
 2. 在「資料庫精靈」中，按一下**新增 ODBC 資料來源**。
     
-3. 使用「ODBC 資料來源管理者」視窗，來新增 {{site.data.keyword.dashdbshort_notm}} 資料庫的 ODBC 資料來源名稱 (DSN)：
+3. 使用「ODBC 資料來源管理員」視窗，來新增 {{site.data.keyword.dashdbshort_notm}} 資料庫的 ODBC 資料來源名稱 (DSN)：
         
    a. 在**使用者 DSN** 標籤上，按一下**新增**。
 
@@ -126,10 +132,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
+{: #prereq2}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc2}
 
 如需如何從 SAS 連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫的步驟，請參閱 SAS 文件：
 - [UNIX 及 PC 主機下 Db2 的 SAS/ACCESS 介面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -141,10 +149,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
+{: #prereq3}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc3}
 
 1. 在本端 R 環境中，輸入下列指令，以安裝 `ibmdbR` 套件：
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -61,13 +61,13 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以執行檔案管理、載入資料等相關作業，以及透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/db2whc_api){:new_window} 來執行 R Script。
+使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/db2whc_api){:new_window} 執行檔案管理及載入資料等相關作業。
 {: shortdesc}
 
 ### 連接本端電腦的應用程式或您最愛的工具
 {: #connect_apps}
 
-請完成下列步驟，配置本端環境以連接至 {site.data.keyword.dashdbshort_notm}} 資料庫：
+請完成下列步驟，配置本端環境以連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 {: shortdesc}
 
 1. 從 {{site.data.keyword.dashdbshort_notm}} Web 主控台下載[驅動程式套件](connecting/driver_pkg.html)。
@@ -136,7 +136,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 - [JDBC](connecting/jdbc.html)
 - [Microsoft Windows ODBC 或 CLI](connecting/odbc_cli.html)
 - [.NET](connecting/net_apps.html)
-- [ODBC 資料來源管理者](connecting/odbc_data_source_admin.html)
+- [ODBC 資料來源管理員](connecting/odbc_data_source_admin.html)
 - [PHP](connecting/php.html)
 - [REST API](connecting/rest_api.html)
 
@@ -145,28 +145,19 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 
 觀看此視訊，以查看 {{site.data.keyword.dashdbshort_notm}} 的簡介。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="簡介 {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="簡介 {{site.data.keyword.dashdbshort_notm}}" type="text/html" width="640" height="390" src="//www.youtube.com/embed/0NO9OTFWzKs?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## 視訊：簡介彈性效能方案
 {: #intro_vid_flex}
 
 觀看此視訊，以查看「{{site.data.keyword.dashdbshort_notm}} 彈性效能」方案的簡介。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+<iframe class="embed-responsive-item" id="youtubeplayer2" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
 ## 視訊：連接分析應用程式
 {: #cognos_vid}
 
 觀看此視訊，以查看如何從 Cognos Analytics 建立連線。
 
-<iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
-
-
-
-
-
-
-
-
-
+<iframe class="embed-responsive-item" id="youtubeplayer3" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 

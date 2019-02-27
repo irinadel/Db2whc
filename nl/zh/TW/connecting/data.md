@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-15"
+  years: 2014, 2019
+lastupdated: "2018-11-08"
 
 ---
 
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料整合
-{: #overview}
+{: #data_int}
 
 您也可以將外部應用程式和工具連接到 {{site.data.keyword.dashdbshort_notm}}，並使用它們進一步管理或分析您的資料。
 {: shortdesc}
@@ -22,10 +26,11 @@ lastupdated: "2018-10-15"
 ## DataStage
 {: #datastage}
 
-這些指示說明如何編目資料庫及定義連線物件，在 IBM® InfoSphere® DataStage® <!--version 9.1 and later -->與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間定義不使用 SSL 的連線，或如何使用協力廠商所發出的數位憑證，來使用 SSL 建立連線。
+這些指示說明如何藉由編目資料庫及定義連線物件，在 IBM® InfoSphere® DataStage® <!--version 9.1 and later -->與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間定義不使用 SSL 的連線，或如何使用協力廠商所發出的數位憑證，來使用 SSL 建立連線。
 {: shortdesc}
 
 ### 必要條件
+{: #prereq1}
 
 如果您尚未安裝資料伺服器用戶端，請下載並安裝適用於用戶端機器作業系統的 IBM Data Server Client<!--Version 10.5 -->：[IBM Data Server Client ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
@@ -44,6 +49,7 @@ lastupdated: "2018-10-15"
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc1}
 
 - 若要使用 SSL 來建立連線，請完成下列步驟：
 
@@ -53,7 +59,7 @@ lastupdated: "2018-10-15"
 
      `# /home/db2inst2> cd SSL`
 
-  2. 在 Db2 主控台中，從「將應用程式連接至資料庫」頁面下載 SSL 憑證。
+  2. 在 {{site.data.keyword.dashdbshort_notm}} Web 主控台中，從**將應用程式連接至資料庫**頁面下載 SSL 憑證。
 
      a. 從主功能表中，按一下**連接**。
      
@@ -61,15 +67,15 @@ lastupdated: "2018-10-15"
      
      c. 將 `DigiCertGlobalRootCA.crt` 憑證儲存在步驟 1 中所做的 SSL 目錄中。
         
-  3. 使用 **gsk8capicmd** 公用程式，在 DataStage 系統中建立一個用戶端金鑰儲存資料庫。此公用程式包含在 Db2® 伺服器安裝中。
+  3. 使用 **gsk8capicmd_64** 公用程式，在 DataStage 系統中建立一個用戶端金鑰儲存資料庫。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
      其中 `<keystore_db.kdb>` 代表用戶端金鑰儲存資料庫，而 `<ks_db_password>` 代表用戶端金鑰儲存資料庫的密碼。
         
   4. 將憑證新增至用戶端金鑰儲存資料庫。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
      其中 `<keystore_db.kdb>` 代表用戶端金鑰儲存資料庫，而 `<ks_db_password>` 代表用戶端金鑰儲存資料庫的密碼。
     
@@ -87,40 +93,68 @@ lastupdated: "2018-10-15"
             
      b. 使用 SSL 安全選項編目目標節點，然後編目該目標節點上的 BLUDB 資料庫。
 
-     `# /home/db2inst2> db2 catalog tcpip node SSLCLOUD remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
+     `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     其中 `<IP_addr_of_BLUDB_database_server>` 代表 BLUDB 資料庫伺服器的 IP 位址。
+     其中 `<node_name>` 代表您的目標節點名稱，而 `<IP_addr_of_BLUDB_database_server>` 代表 BLUDB 資料庫伺服器的 IP 位址。
 
-     `# /home/db2inst2> db2 catalog db BLUDB as BLUDB_S at node SSLCLOUD`
+     `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     `# /home/db2inst2> db2 terminate`
+     其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱。
 
   6. 對於所有人，新增 SSL 目錄中檔案的讀取及執行許可權。執行工作的 DataStage 使用者需要存取這些檔案，才能建立與 Db2 資料庫的 SSL 連線。
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-  7. 重新啟動 DataStage Server。
+  7. 使用下列其中一種方式來測試 SSL 連線：
 
-- 若要建立不使用 SSL 的連線，請完成下列步驟，編目 IBM InfoSphere DataStage Server 上的目標 Db2 資料庫：
+     - 使用 CLP 測試連線。發出下列指令來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 
-  1. 使用 Telnet 用戶端應用程式（例如， PutTTY），以預設實例擁有者（通常是 db2inst1）身分來連接至 DataStage Server。
-  2. 使用下列 Db2 指令，建立目標 Db2 資料庫的型錄：
+       `db2 connect to <db_alias> user <user_id>`
 
-     `db2 catalog tcpip node nodename remote <IP_address_of_BLUDB_database_server> <port_number_of_BLUDB_database>`
+       其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
+    
+     - 使用 CLI 測試連線。發出下列指令來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 
-     `db2 catalog db <BLUDB_db_name> at node <nodename>`
+       `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-     `db2 connect to <BLUDB_db_name> user <BLUDB_db_user_name> using <BLUDB_db_password>`
+        其中 `<alias>` 是您使用 **db2cli writecfg** 指令建立的別名、`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID，而 `<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密碼。
 
-     `db2 list tables`
+- 若要建立不使用 SSL 的連線，請完成下列步驟，編目 {{site.data.keyword.dashdbshort_notm}} 上的目標資料庫：
 
-     其中 `<IP_address_of_BLUDB_database_server>` 代表 BLUDB 資料庫伺服器的 IP 位址、`<port_number_of_BLUDB_database>` 代表 BLUDB 資料庫的埠號、`<BLUDB_db_name>` 代表 BLUDB 資料庫名稱、`<nodename>` 代表節點的名稱、`<BLUDB_db_user_name>` 代表 BLUDB 資料庫使用者名稱，以及 `<BLUDB_db_password>` 代表 BLUDB 資料庫密碼。
+  1. 編目目標 {{site.data.keyword.dashdbshort_notm}} 節點，讓用戶端應用程式可以與其連接。執行下列 CLP 指令：
 
-  3. 使用您預先收集的[連線資訊](credentials.html)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
+     `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
+
+     其中 `<node_name>` 代表您的節點名稱、`<IP_address_of_BLUDB_database_server>` 代表 BLUDB 資料庫伺服器的 IP 位址，而 `<port_number_of_BLUDB_database>` 代表 BLUDB 資料庫的埠號。
+
+  2. 編目遠端 {{site.data.keyword.dashdbshort_notm}} 資料庫，讓用戶端應用程式可以與其連接。執行下列指令：
+
+     `db2 catalog db BLUDB as <db_alias> at node <node_name>`
+
+     其中 `<db_alias>` 代表 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<node_name>` 代表節點的名稱。
+
+  3. 使用下列其中一種方式來測試非 SSL 連線：
+
+      - 使用 CLP 測試連線。發出下列指令來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
+
+        `db2 connect to <db_alias> user <user_id>`
+
+        其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
+
+        `db2 list tables`
+
+      - 使用 CLI 測試連線。發出下列指令來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
+
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+        其中 `<alias>` 是您使用 **db2cli writecfg** 指令建立的別名、`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID，而 `<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密碼。
+
+  4. 使用您預先收集的[連線資訊](credentials.html)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
 
      如需在 DataStage 中定義連線的詳細資料，請參閱下列 DataStage 文件主題： 
      
      - [手動建立資料連線物件 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+     - [Configuring access to Db2 databases ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
@@ -179,12 +213,14 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 概觀
+{: #overview2}
 
 在理想情況下，當您將 IBM InfoSphere Data Replication 連接至 {{site.data.keyword.dashdbshort_notm}} 時，IBM InfoSphere Data Replication 位於與 {{site.data.keyword.dashdbshort_notm}} 相同的「{{site.data.keyword.Bluemix_notm}} 資料中心」，或與 {{site.data.keyword.dashdbshort_notm}} 並存。IBM InfoSphere Data Replication 會從本端伺服器連接至遠端 {{site.data.keyword.dashdbshort_notm}} 實例。
 
 當您使用 {{site.data.keyword.dashdbshort_notm}} 作為連線目標時，IBM InfoSphere Data Replication 的效能局部取決於將其目標引擎與 {{site.data.keyword.dashdbshort_notm}} 實例區隔之網路的頻寬。實體距離也會影響效能：在理想情況下，IBM InfoSphere Data Replication 會盡可能靠近 {{site.data.keyword.dashdbshort_notm}} 實例。網路拓蹼也會影響效能。例如，在理想情況下，IBM InfoSphere Data Replication 目標引擎會在與目標實例相同的 VPN（安全網域）中執行於 VM 上。要遍訪的網路節點（例如，防火牆或路由器）數目越少，效能就越佳。 
 
 ### 必要條件
+{: #prereq2}
 
 如果您要使用 SSL 通訊協定進行連接，請下載並安裝 GSKit 第 8 版。請參閱 [GSKit 第 8 版 - 安裝、解除安裝及升級指示 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。按一下套用至用戶端機器作業系統的作業系統標籤。如果您是在 Windows 電腦上安裝 GSKit，請確定您針對 **`PATH`** 環境變數指定 GSKit 安裝目錄路徑 (`<installation_directory>\gsk8\bin`)。
 
@@ -193,6 +229,7 @@ The ODBC Data Sources Administrator dialog box appears.
 如果您要使用 SSL 通訊協定進行連接，請將 `DigiCertGlobalRootCA.crt` SSL 憑證從 Web 主控台下載至用戶端機器上的目錄。若要下載憑證，請按一下**連線 > 連線資訊**，然後按一下**使用 SSL 的連線**標籤。
 
 ### 程序
+{: #proc2}
 
 1. 選擇下列其中一種方法進行連線：
 
@@ -321,6 +358,7 @@ The ODBC Data Sources Administrator dialog box appears.
    ![IIDR 管理主控台 - 存取權管理程式](images/IIDR_management_assign_user.jpg)
 
 ### 下一步
+{: #what2}
 
 定義訂閱，並執行資料抄寫。如需相關資訊，請參閱：
 
@@ -341,10 +379,12 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 必要條件
+{: #prereq3}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc3}
 
 1. 在 Data Studio 中，按一下**所有資料庫 > 新建資料庫連線**。
 
@@ -368,10 +408,12 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 {: shortdesc}
 
 ### 必要條件
+{: #prereq4}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc4}
 
 <!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
 -->
@@ -409,10 +451,12 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 {: shortdesc}
 
 ### 必要條件
+{: #prereq5}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc5}
 
 1. 在 InfoSphere Data Architect 的「資料來源瀏覽器」視圖中，於**資料庫連線**上按一下滑鼠右鍵，然後選取**新建**。
     
@@ -433,14 +477,16 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ## Aginity Workbench
 {: #aginity_wb}
 
-這些指示說明如何將 Aginity Workbench <!--4.3 -->連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫。您可以使用 Aginity Workbench，將 IBM PureData for Analytics (Netezza) 資料模型移轉至 {{site.data.keyword.dashdbshort_notm}}。
+這些指示說明如何將 Aginity Workbench <!--4.3 -->連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫。您可以使用 Aginity Workbench，將 IBM PureData for Analytics (Netezza) 資料模型和資料移轉至 {{site.data.keyword.dashdbshort_notm}}。
 {: shortdesc}
 
 ### 必要條件
+{: #prereq6}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc6}
 
 1. 下載並安裝 Aginity Workbench。
 
@@ -457,6 +503,7 @@ Db2 驅動程式套件中包含 Command Line Processor Plus (CLPPlus)。CLPPlus 
 {: shortdesc}
 
 ### 必要條件
+{: #prereq7}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
@@ -466,6 +513,7 @@ Db2 驅動程式套件中包含 Command Line Processor Plus (CLPPlus)。CLPPlus 
 - `PATH` 環境變數設定包括電腦上 Java 安裝目錄的 `bin` 子目錄。
 
 ### 程序
+{: #proc7}
 
 1. 在 Linux 作業系統上的指令 Shell、Windows 命令提示字元，或 Windows 作業系統上的 Db2 指令視窗中，執行下列指令：
 
@@ -518,6 +566,7 @@ Db2 驅動程式套件中包含 Command Line Processor Plus (CLPPlus)。CLPPlus 
 ```
 
 ### 結果
+{: #results7}
 
 您現在可以輸入 CLPPlus 指令或 SELECT 陳述式，然後執行 Script 來使用資料庫中的資料。
 

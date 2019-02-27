@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-06-15"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-06-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 从 IBM PureData System for Analytics (Netezza) 迁移
@@ -41,8 +45,8 @@ MDMS 提供快速、简单且安全的方式将太字节级别到拍字节级别
 
 1. 使用您的唯一凭证来登录到 [{{site.data.keyword.slportal}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){:new_window}。
 2. 从“导航栏”中选择**存储 > 数据迁移 > Mass Data Migration** 以访问 MDMS 登录页面。
-3. 单击**请求设备**以打开订单。
-4. 填写 **Mass Data Migration** 订单中的每个字段。
+3. 单击**请求设备**以打开订购表单。
+4. 填写 **Mass Data Migration** 订购表单中的每个字段。
    - **送货地址**：此表单不进行预填充，并且每个字段均可编辑。在“收件人”字段中提供将接受设备交付的人员的姓名。在选取交货位置时，请考虑设备重量（含箱子 30 千克（66 磅））和可达性。<br/> （**注**：设备配备有脚轮和弹出手柄以方便搬运。）
    - **主要迁移联系人**：此表单不进行预填充。每个字段均可编辑。可添加多个人员。
    - **数据中心网络配置**：装运前，针对 MDMS 设备上的 Eth3 端口的预先供应，提供网络配置详细信息。

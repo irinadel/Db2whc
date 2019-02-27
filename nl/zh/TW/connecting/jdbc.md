@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 使用 JDBC 以程式設計方式連接
+{: #con_prog_jdbc}
 
 定義 Java™ 應用程式與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間的連線。
 {: shortdesc}

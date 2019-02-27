@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 在 Windows 上安装驱动程序包
+{: #install_dr_pkg_windows}
 
 您可以使用安装程序在 Windows 上安装 {{site.data.keyword.dashdbshort_notm}} 驱动程序包。
 {: shortdesc}

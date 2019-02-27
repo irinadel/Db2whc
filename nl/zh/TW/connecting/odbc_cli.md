@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 使用 ODBC 或 CLI 以程式設計方式連接
+{: #con_prog_odbc_cli}
 
 定義 Microsoft Windows ODBC 或 CLI 應用程式與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間的連線。
 {: shortdesc}
@@ -51,7 +56,7 @@ lastupdated: "2018-09-25"
 
    `<alias>` 是您選擇的 DSN 別名
     
-2. [*選用*] 若要測試資料庫的連線，從命令提示字元中執行此指令：
+2. [*Optional*]: To測試資料庫的連線，從命令提示字元中執行此指令：
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 

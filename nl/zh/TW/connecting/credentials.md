@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,24 +11,31 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料庫詳細資料及連線認證
+{: #db_details_cxn_creds}
 
 若要配置本端開發環境，以及將應用程式及工具連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，您需要知道資料庫詳細資料及連線認證。
 {: shortdesc}
 
 ## 資料庫詳細資料
+{: #db_details}
 
 需有重要的資料庫詳細資料，才能將應用程式及工具連接至資料庫：
 
 - *主機名稱* - 伺服器的主機名稱。
 - *埠號* - 由資料庫管理程式用於 TCP/IP 通訊。（請注意，您的服務會佈建一個埠號來進行使用 Secure Sockets Layer (SSL) 的連線，並佈建不同的埠來進行非 SSL 連線。）
 
-   必要的話，您可以使用 ping 指令或 nslookup 指令來取得伺服器的 IP 位址，並指定主機名稱。
-- *資料庫名稱* - Db2 資料庫名稱，通常是 BLUUDB。
+   必要的話，您可以使用 ping 指令或 nslookup 指令並指定主機名稱，來取得伺服器的 IP 位址。
+- *資料庫名稱* - Db2 資料庫名稱，通常是 BLUDB。
 
 ## 連線認證
+{: #cxn_creds}
 
 有三種類型的認證：
 
@@ -37,6 +44,7 @@ lastupdated: "2018-09-25"
 - *管理者建立的使用者* - 部分 {{site.data.keyword.dashdbshort_notm}} 方案可讓管理使用者建立新的使用者。這些管理者建立的使用者 ID 及密碼可以用來直接登入 Web 主控台 URL，並從應用程式或工具連接至 Db2 資料庫。
 
 ## 在何處尋找資料庫詳細資料及連線認證
+{: #location}
 
 您可以從下列位置收集此資訊：
 

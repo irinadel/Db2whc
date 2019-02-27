@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-05-08"
+  years: 2014, 2019
+lastupdated: "2018-11-20"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-05-08"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 將資料移轉至 {{site.data.keyword.Bluemix_notm}}
@@ -48,7 +52,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**附註：**若為 {{site.data.keyword.Bluemix_notm}} Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數* 欄位中指定 {"HMAC:true"}。
+**附註：**對於 {{site.data.keyword.Bluemix_notm}} Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數* 欄位中指定 {"HMAC:true"}。
 
 如需有關從 {{site.data.keyword.Bluemix_notm}} Object Storage 載入資料的引導式示範，請參閱 [{{site.data.keyword.dashdblong}} 引導式示範：探索資料載入 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 
@@ -57,7 +61,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 若要從內部部署系統移轉您的資料，請選擇下列其中一種方法，視您的資料集大小而定：
 * 小於 25 TB 的資料：[IBM Lift](#lift)
-* 25 TB 或更大的資料：[{{site.data.keyword.Bluemix_notm}} Mass Data Migration Service](#mdms)
+* 25 TB 及更大的資料：[{{site.data.keyword.Bluemix_notm}} Mass Data Migration Service](#mdms)
 
 ### Lift
 {: #lift}

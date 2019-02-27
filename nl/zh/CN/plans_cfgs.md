@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-24"
+  years: 2014, 2019
+lastupdated: "2018-12-07"
 
 ---
 
@@ -11,6 +11,10 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 套餐和配置
@@ -19,7 +23,7 @@ lastupdated: "2018-10-24"
 您可以选择针对您需要执行的工作所配置和优化的 {{site.data.keyword.dashdbshort_notm}} 套餐：
 {: shortdesc}
 
-   * 用于试用的入门级套餐。最多可免费试用 1 GB 存储。
+   * 用于试用的入门级套餐。最多可免费试用 1 GB 存储。请参阅：[入门级套餐限制](#ep_restrictions)
    * 可独立扩展存储和计算资源的 Flex 套餐
    * 用于生产的各种规模的 SMP 套餐：小中大，包括单个节点和单个实例
    * 针对并行处理和高性能的 MPP 多节点集群配置
@@ -41,9 +45,10 @@ lastupdated: "2018-10-24"
 ## 套餐在各数据中心的可用性
 {: #availability}
 
-以下各表按位于各地理区域的数据中心提供了有关各种 Db2 Warehouse on Cloud 套餐的可用性的信息：
+下表按位于地理区域中的数据中心提供了有关各种 {{site.data.keyword.dashdbshort_notm}} 套餐的可用性的信息：
 
-| Db2 Warehouse on Cloud 套餐|亚太地区|欧洲|北美/中美洲|南美|
+
+|{{site.data.keyword.dashdbshort_notm}} 套餐|亚太地区|欧洲|北美/中美洲|南美|
 |------------------------------|--------------|-----------|-----------------------    |---------------|
 |Flex|*不适用|法兰克福|华盛顿 (us-east) |*不适用|
 |                              |              |           |达拉斯 (us-south)|               |  
@@ -65,5 +70,32 @@ lastupdated: "2018-10-24"
 
 *不适用 = 目前不可用
 
+## 入门级套餐限制
+{: #ep_restrictions}
 
+强烈建议您对任务关键型或性能敏感的工作负载使用企业级服务套餐，而不使用入门级服务套餐。
+{: important}
 
+以下是 {{site.data.keyword.dashdbshort_notm}} 入门级套餐限制的表格：
+
+|类别|项|限制| 
+|----------|------|-------------|
+|资源|存储|每个用户 20 GB 存储。仅在使用的存储小于 1 GB 时，该套餐免费。|
+|  |连接|每个用户 50 个连接。可以动态调整此限制，以保持实例的系统完整性。|
+|  |性能|性能可能由于多租户系统上的其他用户运行的工作负载而波动|
+|  |  |
+|功能部件和功能|联合|不受支持|
+|  |Oracle 兼容性|不受支持|
+|  |用户定义的扩展 (UDF) |不受支持|
+|  |用户管理|未向用户授予管理权限|
+|  |行和列访问控制 (RCAC) |不受支持|
+|  |用于装入数据的 IBM InfoSphere Data Replication|不受支持|
+|  |  |
+|联网环境| IBM Cloud Integrated Analytics |不受支持|
+|  | IBM Cloud Dedicated |不受支持|
+|  |  |
+|安全性合规性|1996 年的《健康保险可移植性和责任法案》(HIPAA) |不受支持。请参阅“服务描述”。|
+|  |欧盟一般数据保护条例 (GDPR) |没有特定限制适用。|
+|  |  |
+|帐户管理|重新激活|无重新激活需求|
+{: caption="表 1. {{site.data.keyword.dashdbshort_notm}} 入门级套餐限制" caption-side="top"}

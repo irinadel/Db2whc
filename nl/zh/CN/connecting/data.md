@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-10-15"
+  years: 2014, 2019
+lastupdated: "2018-11-08"
 
 ---
 
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 数据集成
-{: #overview}
+{: #data_int}
 
 您还可以将外部应用程序和工具连接到 {{site.data.keyword.dashdbshort_notm}}，以使用其进一步管理或分析数据。
 {: shortdesc}
@@ -26,6 +30,7 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq1}
 
 如果尚未安装数据服务器客户机，请下载并安装适合于您客户端机器操作系统的 IBM Data Server Client <!--Version 10.5 -->：[IBM Data Server Client ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
@@ -44,6 +49,7 @@ lastupdated: "2018-10-15"
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc1}
 
 - 要创建使用 SSL 的连接，请完成以下步骤：
 
@@ -53,7 +59,7 @@ lastupdated: "2018-10-15"
 
      `# /home/db2inst2> cd SSL`
 
-  2. 在 Db2 控制台的“将应用程序连接到数据库”页面中，下载 SSL 证书。
+  2. 在 {{site.data.keyword.dashdbshort_notm}} Web 控制台的**将应用程序连接到数据库**页面中，下载 SSL 证书。
 
      a. 在主菜单中，单击**连接**。
      
@@ -61,19 +67,19 @@ lastupdated: "2018-10-15"
      
      c. 将 `DigiCertGlobalRootCA.crt` 证书保存到在步骤 1 中创建的 SSL 目录中。
         
-  3. 使用 **gsk8capicmd** 实用程序在 DataStage 系统中创建客户机密钥库数据库。Db2® 服务器安装中包含此实用程序。
+  3. 使用 **gsk8capicmd_64** 实用程序在 DataStage 系统中创建客户机密钥库数据库。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
      其中，`<keystore_db.kdb>` 表示客户机密钥库数据库，`<ks_db_password>` 表示客户机密钥库数据库的密码。
         
   4. 将该证书添加到客户机密钥库数据库。
 
-     `# /home/db2inst2/SSL> gsk8capicmd -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
+     `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
      其中，`<keystore_db.kdb>` 表示客户机密钥库数据库，`<ks_db_password>` 表示客户机密钥库数据库的密码。
     
-  5. 在 DataStage 服务器上配置 Db2 客户机。
+  5. 在 DataStage 服务器上配置 DB2 客户机。
             
      a. 更新数据库管理器中的 SSL 配置参数。
 
@@ -87,40 +93,68 @@ lastupdated: "2018-10-15"
             
      b. 使用 SSL 安全选项对目标节点进行编目，然后在该目标节点上编目 BLUDB 数据库。
 
-     `# /home/db2inst2> db2 catalog tcpip node SSLCLOUD remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
+     `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     其中，`<IP_addr_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址。
+     其中，`<node_name>` represents your name for the target node and `<IP_addr_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址。
 
-     `# /home/db2inst2> db2 catalog db BLUDB as BLUDB_S at node SSLCLOUD`
+     `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     `# /home/db2inst2> db2 terminate`
+     其中，`<db_alias>`是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称。
 
   6. 为每个人添加对 SSL 目录中各个文件的读取和执行许可权。运行作业的 DataStage 用户需要访问这些文件才能与 Db2 数据库建立 SSL 连接。
 
      `# /home/db2inst2/SSL> chmod 655 /home/db2inst2/SSL/*`
 
-  7. 重新启动 DataStage 服务器。
+  7. 通过下列其中一种方法测试 SSL 连接：
 
-- 要创建不使用 SSL 的连接，请通过完成以下步骤对 IBM InfoSphere DataStage 服务器上的目标 Db2 数据库进行编目：
+     - 使用 CLP 测试连接。发出以下命令连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 
-  1. 使用 PuTTY 等 Telnet 客户机应用程序以缺省实例所有者（通常为 db2inst1）身份连接到 DataStage 服务器。
-  2. 使用以下 Db2 命令创建目标 Db2 数据库的目录：
+       `db2 connect to <db_alias> user <user_id>`
 
-     `db2 catalog tcpip node nodename remote <IP_address_of_BLUDB_database_server> <port_number_of_BLUDB_database>`
+       其中，`<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
+    
+     - 使用 CLI 测试连接。发出以下命令连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 
-     `db2 catalog db <BLUDB_db_name> at node <nodename>`
+       `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-     `db2 connect to <BLUDB_db_name> user <BLUDB_db_user_name> using <BLUDB_db_password>`
+        其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密码。
 
-     `db2 list tables`
+- 要创建不使用 SSL 的连接，请完成以下步骤对目标 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目：
 
-     其中，`<IP_address_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址，`<port_number_of_BLUDB_database>` 表示 BLUDB 数据库的端口号，`<BLUDB_db_name>` 表示 BLUDB 数据库名称，`<nodename>` 表示节点的名称，`<BLUDB_db_user_name>` 表示 BLUDB 数据库用户名，`<BLUDB_db_password>` 表示 BLUDB 数据库密码。
+  1. 对目标 {{site.data.keyword.dashdbshort_notm}} 节点进行编目，以便客户机应用程序可以连接到该节点。请运行以下 CLP 命令：
 
-  3. 使用预先收集的[连接信息](credentials.html)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
+     `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
+
+     其中，`<node_name>` 表示节点的名称，`<IP_address_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址，`<port_number_of_BLUDB_database>` 表示 BLUDB 数据库的端口号。
+
+  2. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。请运行以下命令：
+
+     `db2 catalog db BLUDB as <db_alias> at node <node_name>`
+
+     其中，`<db_alias>` 表示 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<node_name>` 表示节点的名称。
+
+  3. 通过下列其中一种方法测试非 SSL 连接：
+
+      - 使用 CLP 测试连接。发出以下命令连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
+
+        `db2 connect to <db_alias> user <user_id>`
+
+        其中，`<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
+
+        `db2 list tables`
+
+      - 使用 CLI 测试连接。发出以下命令连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
+
+        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+
+        其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密码。
+
+  4. 使用预先收集的[连接信息](credentials.html)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
 
      有关在 DataStage 中定义连接的详细信息，请参阅以下 DataStage 文档主题： 
      
      - [手动创建数据连接对象 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
+     - [配置对 Db2 数据库的访问权 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
@@ -179,12 +213,14 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 概述
+{: #overview2}
 
 理想情况下，将 IBM InfoSphere Data Replication 连接到 {{site.data.keyword.dashdbshort_notm}} 时，IBM InfoSphere Data Replication 会与 {{site.data.keyword.dashdbshort_notm}} 位于同一 {{site.data.keyword.Bluemix_notm}} Data Center 中，或者与 {{site.data.keyword.dashdbshort_notm}} 共享托管。IBM InfoSphere Data Replication 可使本地服务器连接到远程 {{site.data.keyword.dashdbshort_notm}} 实例。
 
 将 {{site.data.keyword.dashdbshort_notm}} 用作连接目标时，IBM InfoSphere Data Replication 的性能在一定程度上取决于其目标引擎与 {{site.data.keyword.dashdbshort_notm}} 实例之间网络的带宽。物理距离也会影响性能：理想情况下，IBM InfoSphere Data Replication 会尽可能接近 {{site.data.keyword.dashdbshort_notm}} 实例。网络拓扑也会影响性能。例如，理想情况下，IBM InfoSphere Data Replication 目标引擎会在目标实例所在的 VPN（安全域）中的 VM 上运行。要遍历的网络节点（例如，防火墙或路由器）越少，性能越好。 
 
 ### 先决条件
+{: #prereq2}
 
 如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
 
@@ -193,6 +229,7 @@ The ODBC Data Sources Administrator dialog box appears.
 如果打算使用 SSL 协议进行连接，请通过 Web 控制台将 `DigiCertGlobalRootCA.crt` SSL 证书下载到客户端机器上的目录。要下载证书，请单击**连接 > 连接信息**，然后单击**使用 SSL 进行连接**选项卡。
 
 ### 过程
+{: #proc2}
 
 1. 选择下列其中一种方法来建立连接：
 
@@ -221,7 +258,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `db2 update dbm cfg using SSL_CLNT_STASH /<ssl_directory_name>/ssl/dashclient.sth`
 
-     e. 对 {{site.data.keyword.dashdbshort_notm}} 节点进行编目，以便客户机应用程序可以连接到该节点。请发出以下命令：
+     e. 对 {{site.data.keyword.dashdbshort_notm}} 节点进行编目，以便客户机应用程序可以连接到该节点。发出以下命令：
 
      `db2 catalog tcpip node <node_name> remote <Db2_Warehouse_IP_address> server <port_number> security ssl`
 
@@ -233,7 +270,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `<port_number>` 是用于通过 SSL 连接来连接到 Db2 Warehouse 的端口。如果要使用缺省端口，请指定 `50001`。
             
-     f. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。请发出以下命令：
+     f. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。发出以下命令：
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
@@ -251,11 +288,11 @@ The ODBC Data Sources Administrator dialog box appears.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       其中，`<alias>` 是您已使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库密码。
+       其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库密码。
         
    - 要创建不使用 SSL 的连接，请完成以下步骤：
 
-     a. 对 {{site.data.keyword.dashdbshort_notm}} 节点进行编目，以便客户机应用程序可以连接到该节点。请发出以下命令：
+     a. 对 {{site.data.keyword.dashdbshort_notm}} 节点进行编目，以便客户机应用程序可以连接到该节点。发出以下命令：
 
      `db2 catalog tcpip node <node_name> remote <Db2_Warehouse_IP_address> server <port_number>`
 
@@ -267,7 +304,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `<port_number>` 是用于在不使用 SSL 连接的情况下连接到 {{site.data.keyword.dashdbshort_notm}} 的端口。如果要使用缺省端口，请指定 `50000`。
             
-     b. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。请发出以下命令：
+     b. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。发出以下命令：
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
@@ -285,7 +322,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       其中，`<alias>` 是您已使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 Db2 Warehouse on Cloud 密码。
+       其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 Db2 Warehouse on Cloud 密码。
     
 2. 启动 InfoSphere Data Replication 配置工具并执行以下步骤。截屏中显示的值是示例。
         
@@ -322,6 +359,7 @@ The ODBC Data Sources Administrator dialog box appears.
    ![IIDR 管理控制台 - Access Manager](images/IIDR_management_assign_user.jpg)
 
 ### 后续步骤
+{: #what2}
 
 定义预订并执行数据复制。有关信息，请参阅：
 
@@ -342,10 +380,12 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 先决条件
+{: #prereq3}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc3}
 
 1. 在 Data Studio 中，单击**所有数据库 > 新建数据库连接**。
 
@@ -369,10 +409,12 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 先决条件
+{: #prereq4}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc4}
 
 <!--The connection procedure was tested on Data Server Manager version 1.1. The same procedure applies to all of the other versions of the Data Server Manager software.
 -->
@@ -409,10 +451,12 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 先决条件
+{: #prereq5}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc5}
 
 1. 在 InfoSphere Data Architect 的“数据源资源管理器”视图中，右键单击**数据库连接**，然后选择**新建**。
     
@@ -437,10 +481,12 @@ The ODBC Data Sources Administrator dialog box appears.
 {: shortdesc}
 
 ### 先决条件
+{: #prereq6}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc6}
 
 1. 下载并安装 Aginity Workbench。
 
@@ -457,6 +503,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
 {: shortdesc}
 
 ### 先决条件
+{: #prereq7}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
@@ -466,6 +513,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
 - `PATH` 环境变量设置包含计算机上 Java 安装目录的 `bin` 子目录。
 
 ### 过程
+{: #proc7}
 
 1. 在 Linux 操作系统上的命令 shell 中、Windows 命令提示符处或 Windows 操作系统上的 Db2 命令窗口中，运行以下命令：
 
@@ -501,7 +549,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
      其中：
      
      - `<userid>` 是您预先收集的连接凭证中的用户标识。
-     - `<alias>` 是您已使用 **db2cli writecfg** 命令创建的别名。
+     - `<alias>` 是您使用 **db2cli writecfg** 命令创建的别名。
 
    运行此命令将打开 CLPPlus 窗口。
 
@@ -518,6 +566,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
 ```
 
 ### 结果
+{: #results7}
 
 现在，您可以输入 CLPPlus 命令或 SELECT 语句，以及运行脚本来处理数据库中的数据。
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 安全套接字层 (SSL) 支持
+{: #ssl_support}
 
 {{site.data.keyword.dashdbshort_notm}} 数据库使用由第三方数字认证中心 (CA) 签发的证书进行 SSL 连接。
 {: shortdesc}

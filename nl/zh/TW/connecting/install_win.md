@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 在 Windows 上安裝驅動程式套件
+{: #install_dr_pkg_windows}
 
 您可以使用安裝程式，在 Windows 上安裝 {{site.data.keyword.dashdbshort_notm}} 驅動程式套件。
 {: shortdesc}
@@ -28,8 +33,8 @@ lastupdated: "2018-09-25"
 
 1. 以管理者身分執行已下載的執行檔。
 
-   驅動程式套件的預設安裝路徑為：`Program`
-2. [*選用*] 將驅動程式套件安裝目錄的 `bin` 子目錄新增至 `%PATH%`環境變數（因此，您不必指定指令執行檔的完整路徑，即可執行 **db2cli** 指令）。
+   驅動程式套件的預設安裝路徑為：`Program Files\IBM\IBM DATA SERVER DRIVER`
+2. [*選用*] 將驅動程式套件安裝目錄的 `bin` 子目錄新增至 `%PATH%` 環境變數（因此，您不必指定指令執行檔的完整路徑，即可執行 **db2cli** 指令）。
 
 ## 下一步為何？
 

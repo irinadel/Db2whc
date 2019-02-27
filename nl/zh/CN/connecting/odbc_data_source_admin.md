@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 使用 ODBC 数据源管理器进行连接
+{: #con_prog_odbc_dsa}
 
 使用 Microsoft ODBC 数据源管理器工具来定义 ODBC 应用程序或 CLI 应用程序与 {{site.data.keyword.dashdbshort_notm}} 数据库之间的连接。
 {: shortdesc}

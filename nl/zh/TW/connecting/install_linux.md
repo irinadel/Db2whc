@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 在 Linux 或 PowerLinux 上安裝驅動程式套件
+{: #install_dr_pkg_linux}
 
 您可以在 Linux 或 PowerLinux 上使用 `installDSDriver`，來安裝 {{site.data.keyword.dashdbshort_notm}} 驅動程式套件。
 {: shortdesc}

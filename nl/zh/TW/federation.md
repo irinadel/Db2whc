@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-07-18"
 
 ---
@@ -12,10 +12,13 @@ lastupdated: "2018-07-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料虛擬化（聯合）
-{: #overview}
+{: #data_virt_fed}
 
 {{site.data.keyword.dashdbshort_notm}} 支援 Db2 資料虛擬化（也稱為聯合）。資料虛擬化讓您能對位於組織各地多個分散式庫料庫上的所有資料，進行單一查詢的存取。您可以存取位於任何 Db2 或 Informix 資料來源的資料，不論是在雲端或內部部署皆可。
 {: shortdesc}

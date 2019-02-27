@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-09-18"
+  years: 2014, 2019
+lastupdated: "2019-01-21"
 
 ---
 
@@ -12,6 +12,9 @@ lastupdated: "2018-09-18"
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # {{site.data.keyword.Bluemix_notm}} 上的 Identity and Access Management (IAM)
@@ -78,13 +81,14 @@ IBM 标识/密码可以用于登录到控制台，也可以在应用程序中按
 支持以下数据库客户机接口：
 
 * [ODBC](#odbc-clpplus)
+* [CLP](#odbc-clpplus)
 * [CLPPLUS](#odbc-clpplus)
 * [JDBC](#jdbc)
 
-### ODBC 和 CLPPLUS
+### ODBC、CLP、和 CLPPLUS
 {: #odbc-clpplus}
 
-要使 ODBC 应用程序或命令行客户机 (CLPPLUS) 能够使用 IAM 认证连接到 Db2 服务器，需要通过运行以下命令首先在 `db2dsdriver.cfg` 配置文件中配置数据源名称 (DSN)：
+要使 ODBC 应用程序或命令行客户机 (CLP, CLPPLUS) 能够使用 IAM 认证连接到 Db2 服务器，需要通过运行以下命令首先在 `db2dsdriver.cfg` 配置文件中配置数据源名称 (DSN)：
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -123,23 +127,45 @@ IBM 标识/密码可以用于登录到控制台，也可以在应用程序中按
 
     对于 ODBC，可以在 `db2dsdriver.cfg` 配置文件或应用程序的连接字符串中指定 **AUTHENTICATION=GSSPLUGIN**。
 
-* CLPPLUS 连接命令可以包含下列其中一项：
+* CLP CONNECT 语句可以包含下列其中一项：
 
     **访问令牌**
 
-    通过在 CLPPLUS 命令提示符或脚本中运行以下命令，连接到 DSN 别名 (`@<data_source_name>`) 并传递访问令牌：
+    通过在 CLP 命令提示符或脚本中运行以下命令连接到数据库服务器 `<database_server_name>` 并传递访问令牌：
+
+    `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
+
+    **API 密钥**
+
+    通过在 CLP 命令提示符或脚本中运行以下命令，使用 API 密钥连接到数据库服务器 `<database_server_name>`：
+
+    `CONNECT TO <database_server_name> APIKEY <api-key-string>`
+
+    **IBM 标识/密码**
+
+    通过在 CLP 命令提示符或脚本中运行以下命令，使用 IBM 标识/密码连接到数据库服务器 `<database_server_name>`：
+
+    `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
+
+    有关使用 CLP 连接数据库服务器的更多详细信息，请参阅 [CONNECT（第 2 类）语句 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}。 
+
+* CLPPLUS CONNECT 语句可以包含下列其中一项：
+
+    **访问令牌**
+
+    连接到 DSN 别名 (`@<data_source_name>`) 并传递访问令牌：
 
     `connect @<data_source_name> using(accesstoken <access_token_string>)`
 
     **API 密钥**
 
-    通过在 CLPPLUS 命令提示符或脚本中运行以下命令，使用 API 密钥连接到 DSN 别名 (`@<data_source_name>`)：
+    连接到 DSN 别名 (`@<data_source_name>`)：
 
     `connect @<data_source_name> using(apikey <api-key-string>)`
 
     **IBM 标识/密码**
 
-    通过在 CLPPLUS 命令提示符或脚本中运行以下命令，使用 IBM 标识/密码连接到 DSN 别名 (`@<data_source_name>`)：
+    连接到 DSN 别名 (`@<data_source_name>`)：
 
     `connect <IBMid>/<password>@<data_source_name>`
 
@@ -167,6 +193,12 @@ dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+或者
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **API 密钥**
 
 ```
@@ -182,6 +214,12 @@ dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
 
+或者
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apikey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
+```
+
 **IBM 标识/密码**
 
 ```
@@ -193,7 +231,13 @@ dataSource.setServerName( "<host_name_or_IP_address>" );
 dataSource.setPortNumber( 50001 );
 dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURITY );
 dataSource.setPluginName( "IBMIAMauth" );
-Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
+Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
+```
+
+或者
+
+```
+Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
 
 ## 控制台用户体验
@@ -210,7 +254,8 @@ Connection conn = dataSource.getConnection( "<user_ID>", "<password>" );
 
   `curl --tlsv1.2 "https://<IPaddress>/dbapi/v3/users" -H "Authorization: Bearer <access_token>" -H "accept: application/json" -H "Content-Type: application/json" -d "{"id":"<userid>","ibmid":"<userid>@<email_address_domain>","role":"bluadmin","locked":"no","iam":true}"`
 
-  **注**：`"id"` 和 `"ibmid"` 的 `<userid>` 值不必相同。这两个不同的标识不会以任何方式链接在一起。
+  `<userid>` 值不必相同。这两个不同的标识不会以任何方式链接在一起。
+  {: note}
 
 * 要迁移现有的非 IBM 标识数据库用户（例如，`abcuser`）并使其成为 IBM 标识用户，请先通过运行以下示例 API 调用来删除非 IBM 标识用户的标识：
 

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 連接概觀
-{: #overview}
+{: #connect}
 
 您可以將指令行、IBM® 或協力廠商應用程式及工具，或是您建立的應用程式，連接到您的 {{site.data.keyword.dashdbshort_notm}} 資料庫。
 {: shortdesc}
@@ -80,7 +84,7 @@ lastupdated: "2018-10-15"
 - [JDBC](jdbc.html)
 - [Microsoft Windows ODBC 或 CLI](odbc_cli.html)
 - [.NET](net_apps.html)
-- [ODBC 資料來源管理者](odbc_data_source_admin.html)
+- [ODBC 資料來源管理員](odbc_data_source_admin.html)
 - [PHP](php.html)
 - [REST API](rest_api.html)
 <!-- - [C++]() -->
@@ -112,7 +116,7 @@ lastupdated: "2018-10-15"
 - [Looker ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
 - [Tableau](vis_bi.html#tableau)
 - [Microsoft Excel](vis_bi.html#excel)
-- [Esri ArcGIS for Desktop，用來執行地理空間分析，以及將發佈與您的資料相對映](vis_bi.html#esri_arcgis)
+- [Esri ArcGIS for Desktop，用來使用您的資料執行地理空間分析和地圖發佈](vis_bi.html#esri_arcgis)
 
 ### 資料科學
 - [Watson Studio（先前稱為 IBM Data Science Experience）](data_sci.html#watson_studio)

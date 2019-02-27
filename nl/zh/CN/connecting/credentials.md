@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,14 +11,20 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 数据库详细信息和连接凭证
+{: #db_details_cxn_creds}
 
 要配置本地开发环境以及将应用程序和工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，您需要了解数据库详细信息和连接凭证。
 {: shortdesc}
 
 ## 数据库详细信息
+{: #db_details}
 
 下面是将应用程序和工具连接到数据库时需要的重要数据库详细信息：
 
@@ -29,6 +35,7 @@ lastupdated: "2018-09-25"
 - *数据库名称* - Db2 数据库名称，通常为 BLUDB。
 
 ## 连接凭证
+{: #cxn_creds}
 
 有三种类型的凭证：
 
@@ -37,6 +44,7 @@ lastupdated: "2018-09-25"
 - *管理员创建的用户* - 某些 {{site.data.keyword.dashdbshort_notm}} 套餐允许管理用户创建新用户。这些管理员创建的用户标识和密码可用于直接登录到 Web 控制台 URL，并可用于从应用程序或工具连接到 Db2 数据库。
 
 ## 在何处可找到数据库详细信息和连接凭证
+{: #location}
 
 您可以从以下位置收集这些信息：
 

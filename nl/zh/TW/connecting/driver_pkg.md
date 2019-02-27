@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 驅動程式套件
+{: #dr_pkg}
 
 {{site.data.keyword.dashdbshort_notm}} 驅動程式套件包含可將用戶端應用程式連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫的軟體。
 {: shortdesc}

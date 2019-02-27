@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 關於 Db2 Warehouse on Cloud
-{: #overview}
+{: #about}
 
 {{site.data.keyword.dashdblong}} 是完全受管理、高效能、Petabyte（2^50 位元組）規模的雲端資料倉儲。
 

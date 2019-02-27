@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 使用 .NET 以程式設計方式連接
+{: #con_prog_net}
 
 定義 .NET 應用程式與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間的連線。
 {: shortdesc}
@@ -53,13 +58,13 @@ lastupdated: "2018-09-25"
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. [*選用*] 若要驗證資料庫的 .NET 連線，在命令提示字元中輸入下列指令：
+2. [*Optional*]: To驗證資料庫的 .NET 連線，在命令提示字元中輸入下列指令：
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 
    其中：
 
-   `<alias>`：您在步驟 1 中使用 **db2cli writecfg**指令所建立之 DSN 別名的名稱。
+   `<alias>`：您在步驟 1 中使用 **db2cli writecfg** 指令所建立之 DSN 別名的名稱。
     
    `<user_id>`：您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。 
     

@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 连接概述
-{: #overview}
+{: #connect}
 
 您可以将命令行界面、IBM® 或第三方应用程序和工具或者自己创建的应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库。
 {: shortdesc}

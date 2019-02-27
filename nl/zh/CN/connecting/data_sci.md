@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-15"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # Data Science
-{: #overview}
+{: #ds}
 
 您还可以将外部应用程序和工具连接到 {{site.data.keyword.dashdbshort_notm}}，以使用其进一步管理或分析数据。
 {: shortdesc}
@@ -22,7 +26,7 @@ lastupdated: "2018-10-15"
 ## Watson Studio
 {: #watson_studio}
 
-在 IBM Watson Studio（原先的 Data Science Experience）中创建项目后，可向其添加数据资产，以便您可以使用数据。项目中的所有合作者都自动有权访问项目中的数据。
+在 IBM Watson Studio（原先的 Data Science Experience）中创建项目后，可向其添加数据资产，以便您可以使用数据。项目中的所有合写入者都自动有权访问项目中的数据。
 {: shortdesc}
 
 旧项目和 IBM Watson 项目的数据添加方式以及可以从中添加数据的位置有所不同。IBM Watson 项目使用的是 {{site.data.keyword.Bluemix_notm}} Object Storage。如果项目使用的是 Object Storage OpenStack Swift，说明该项目是旧项目。 
@@ -78,10 +82,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq1}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc1}
 
 1. 在 SPSS Statistics 中，单击**文件 > 打开数据库 > 新建查询**。
     
@@ -126,10 +132,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq2}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc2}
 
 有关如何从 SAS 连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的步骤，请参阅 SAS 文档：
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -141,10 +149,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq3}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc3}
 
 1. 在本地 R 环境中，通过输入以下命令安装 `ibmdbR` 软件包：
 

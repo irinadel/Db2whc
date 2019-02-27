@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 数据可视化/BI
-{: #overview}
+{: #data_vis_bi}
 
 您还可以将外部应用程序和工具连接到 {{site.data.keyword.dashdbshort_notm}}，以使用其进一步管理或分析数据。
 {: shortdesc}
@@ -46,10 +50,12 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq1}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 ### 过程
+{: #proc1}
 
 1. 在 Tableau Desktop 中，打开工具中用于定义数据库连接的窗口或页面。
 2. 在开始页面中，单击**连接到数据**。
@@ -74,6 +80,7 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq2}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
@@ -82,6 +89,7 @@ lastupdated: "2018-10-24"
 **限制**：仅 Windows 操作系统上支持 Excel 与 {{site.data.keyword.dashdbshort_notm}} 的连接。
 
 ### 过程
+{: #proc2}
 
 1. 在 Web 控制台中，转至**运行 SQL** 页面。
     
@@ -100,6 +108,7 @@ lastupdated: "2018-10-24"
 8. 确保连接方式为`共享`，然后单击**确定**。
 
 ### 结果
+{: #results2}
 
 查询结果将显示在 Excel 电子表格中。这些结果与结果查看器中显示的结果相同。现在，您可以使用 Excel 来生成图表和报告并分析数据。有关如何执行此操作以及如何通过 Web 控制台对数据运行 SQL 查询的更多信息，请参阅： 
 - [教程：使用 Excel 生成图表和报告 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -112,12 +121,14 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
+{: #prereq3}
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
 
 您必须在计算机上安装 Db2 驱动程序包或 IBM® Data Server 驱动程序包。
 
 ### 过程
+{: #proc3}
 
 1. 根据预先收集的[连接信息](credentials.html)来确定 ODBC DSN 数据。
 
@@ -145,6 +156,7 @@ lastupdated: "2018-10-24"
      ![“数据库连接”向导](images/2_gs_conn.jpg)
 
 ### 结果
+{: #results3}
 
 Esri ArcGIS for Desktop 的 ArcCatalog 组件现在已连接到 {{site.data.keyword.dashdbshort_notm}} 数据库。 
 

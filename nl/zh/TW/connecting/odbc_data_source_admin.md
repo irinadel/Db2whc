@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,11 +11,16 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 使用 ODBC 資料來源管理員進行連線
+{: #con_prog_odbc_dsa}
 
-使用「Microsoft ODBC 資料來源管理者」工具，可以定義 ODBC 或 CLI 應用程式與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間的連線。
+使用「Microsoft ODBC 資料來源管理員」工具，可以定義 ODBC 或 CLI 應用程式與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間的連線。
 {: shortdesc}
 
 ## 必要條件
@@ -31,7 +36,7 @@ lastupdated: "2018-09-25"
 
 1. 安裝 [Db2 驅動程式套件](driver_pkg.html)。
 
-2. 開啟「ODBC 資料來源管理者」，並建立 Db2 驅動程式套件的「使用者 DSN」或「系統 DSN」。
+2. 開啟「ODBC 資料來源管理員」，並建立 Db2 驅動程式套件的「使用者 DSN」或「系統 DSN」。
     
 3. 按一下**進階**設定。在下列 CLI 參數中輸入其適用於 {{site.data.keyword.dashdbshort_notm}} 伺服器的值：**Hostname**、**Port** 及 **Database**。
     

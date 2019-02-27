@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-10-24"
 
 ---
@@ -11,10 +11,14 @@ lastupdated: "2018-10-24"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 資料視覺化/BI
-{: #overview}
+{: #data_vis_bi}
 
 您也可以將外部應用程式和工具連接到 {{site.data.keyword.dashdbshort_notm}}，並使用它們進一步管理或分析您的資料。
 {: shortdesc}
@@ -46,10 +50,12 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 必要條件
+{: #prereq1}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 ### 程序
+{: #proc1}
 
 1. 在「Tableau 桌面」中，於您的工具中開啟用來定義資料庫連線的視窗或頁面。
 2. 從開始頁面中，按一下**連接至資料**。
@@ -74,6 +80,7 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 必要條件
+{: #prereq2}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
@@ -82,6 +89,7 @@ lastupdated: "2018-10-24"
 **限制**：只在 Windows 作業系統上，才支援 Excel 與 {{site.data.keyword.dashdbshort_notm}} 之間的連線。
 
 ### 程序
+{: #proc2}
 
 1. 在 Web 主控台中，移至**執行 SQL** 頁面。
     
@@ -100,6 +108,7 @@ lastupdated: "2018-10-24"
 8. 確定連線模式是 `Share`，然後按一下**確定**。
 
 ### 結果
+{: #results2}
 
 即會以 Excel 試算表顯示查詢結果。這些是「結果」檢視器中所顯示的相同結果。現在，您可以使用 Excel 來產生圖表及報告並分析資料。如需如何執行此動作，以及如何從 Web 主控台對資料執行 SQL 查詢的相關資訊，請參閱： 
 - [指導教學：使用 Excel 產生圖表及報告 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
@@ -108,16 +117,18 @@ lastupdated: "2018-10-24"
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
 
-您可以將 Esri ArcGIS for Desktop <!--version 10.3.1 -->連接至{{site.data.keyword.dashdbshort_notm}}資料庫，然後使用它來分析地理空間資料，並將其視覺化。
+您可以將 Esri ArcGIS for Desktop <!--version 10.3.1 -->連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，然後使用它來分析地理空間資料，並將其視覺化。
 {: shortdesc}
 
 ### 必要條件
+{: #prereq3}
 
 在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
 
 您必須在電腦上安裝 Db2 驅動程式套件或 IBM® Data Server Driver Package。
 
 ### 程序
+{: #proc3}
 
 1. 從您預先收集的[連線資訊](credentials.html)中，判定您的 ODBC DSN 資料。
 
@@ -145,6 +156,7 @@ lastupdated: "2018-10-24"
      ![「資料庫連線」精靈](images/2_gs_conn.jpg)
 
 ### 結果
+{: #results3}
 
 Esri ArcGIS for Desktop 的 ArcCatalog 元件現在已連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫。 
 

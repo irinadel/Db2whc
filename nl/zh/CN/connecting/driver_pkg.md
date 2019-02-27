@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-09-25"
 
 ---
@@ -11,9 +11,14 @@ lastupdated: "2018-09-25"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 驱动程序包
+{: #dr_pkg}
 
 {{site.data.keyword.dashdbshort_notm}} 驱动程序包中包含用于将客户机应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的软件。
 {: shortdesc}

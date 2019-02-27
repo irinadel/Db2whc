@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-04-30"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-04-30"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 高可用性 (HA) 
@@ -31,7 +35,7 @@ lastupdated: "2018-04-30"
 ## 彈性效能方案
 {: #ha_flex}
 
-如果發生非預期的節點失效，您的彈性效能 MPP 叢集會在短暫的關閉時間之後回到完整容量，這是因為使用了 IBM Container Service（以 Kubernetes 為基礎）。會使用來自儲存區的節點來移動失效的實體。
+如果發生非預期的節點失效，您的彈性效能 MPP 叢集會在短暫的關閉時間之後回到完整容量，這是因為使用了 IBM Container 服務（以 Kubernetes 為基礎）。會使用來自儲存區的節點來移動失效的實體。
  
 
 ### 運算 HA

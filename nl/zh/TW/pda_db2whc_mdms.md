@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2019
 lastupdated: "2018-06-15"
 
 ---
@@ -11,6 +11,10 @@ lastupdated: "2018-06-15"
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
+{:tip: .tip}
+{:important: .important}
+{:note: .note}
+{:deprecated: .deprecated}
 {:pre: .pre}
 
 # 從 IBM PureData System for Analytics 移轉 (Netezza)
@@ -202,7 +206,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 
 **附註：** 
 * 確定使用您已用來從 PureData System for Analytics (Netezza) 資料庫擷取資料的相同 `USING` 子句選項，方法為使用 CREATE EXTERNAL TABLE 陳述式。
-* 若為 {{site.data.keyword.Bluemix_notm}} Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數*欄位中指定 {"HMAC:true"}。
+* 對於 {{site.data.keyword.Bluemix_notm}} Object Storage，若要在建立新的服務認證時建立 HMAC 認證，請在*新增線型配置參數*欄位中指定 {"HMAC:true"}。
 
 如需從 {{site.data.keyword.Bluemix_notm}} Object Storage 匯入資料的引導式指導教學，請參閱 [IBM Db2 Warehouse on Cloud 引導示範：探索資料載入 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}。
 
