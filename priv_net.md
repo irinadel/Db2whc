@@ -2,9 +2,9 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-02-08"
+lastupdated: "2019-02-26"
 
-keywords:
+keywords: private network, public IP, VPN, IBM Cloud Service Endpoint, IBM Cloud Direct Link, Flex
 
 subcollection: Db2whc
 
@@ -31,38 +31,29 @@ You can request to have your {{site.data.keyword.dashdbshort_notm}} service depl
 {: shortdesc}
 
 ## Connecting
-{: #connect}
+{: #connecting}
 
 The following is a list of methods by which you can connect to your {{site.data.keyword.dashdbshort_notm}} Flex plan private network environment:
 
 * [Public IP](#pub_ip)
-* [IBM Cloud Service Endpoint](#serv_endpt)
-* [IBM Cloud Direct Link](#dl)
+* [{{site.data.keyword.cloud_notm}} Service Endpoint](#serv_endpt)
+* [{{site.data.keyword.cloud_notm}} Direct Link](#dl)
 * [VPN](#vpn)
-* [IP Whitelisting](#ip_wl)
+<!-- * [IP Whitelisting](#ip_wl) -->
 
 ### Public IP 
 {: #pub_ip}
 
-The default deployment for the Flex plan is in `Public Mode` with a public IP address. The public IP address means that your private network environment can be accessed from anywhere in the world. However, only the ports that are needed for communication with the private network environment are opened at our firewall. All other traffic is blocked.
+The default deployment for the Flex plan is in `Public Mode` with a public IP address. The public IP address means that your public network environment can be accessed from anywhere in the world. However, only the ports that are needed for communication with the public network environment are opened at our firewall. All other traffic is blocked.
 
-
-
-
-**Writer's notes**:
-After getting their public IP address, what do customers do next? 
-
-Step-by-step instructions?
-
-
-
+After logging in to {{site.data.keyword.cloud_notm}}, you'll see your service instance. Click on the service instance, add your credentials, and you'll get the access details that are required to access your {{site.data.keyword.dashdbshort_notm}} Public Instance.
 
 ### IBM Cloud Service Endpoint
 {: #serv_endpt}
 
-If you require that all of your traffic must be sent along the SoftLayer Private Backplane from your IaaS environment, an offering called **IBM Cloud Service Endpoint** provides this capability. For more information about the IBM Cloud Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint/getting-started.html).
+If you require that all of your traffic must be sent along the SoftLayer Private Backplane from your IaaS environment, an offering called **{{site.data.keyword.cloud_notm}} Service Endpoint** provides this capability. For more information about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint/getting-started.html).
 
-The Flex plan service must be provisioned with **Private Connectivity** to use the IBM Cloud Service Endpoint. At this time, this option is obtained only by request through a software quote order (SQO). 
+The Flex plan service must be provisioned with **Private Connectivity** to use the {{site.data.keyword.cloud_notm}} Service Endpoint. At this time, this option is obtained only by request through a software quote order (SQO). 
 
 When your Flex plan is provisioned in this mode, there is no public connectivity at all.
 {: note} 
@@ -71,48 +62,38 @@ After a Flex environment is provisioned with **Private Connectivity**, you must 
 
 1. To get started, see [Service Endpoint: Getting Started](/docs/services/service-endpoint/enable-servicepoint.html)
 
-   **Writer's notes**:
-   Do we need more than the above link to "getting started" instructions?
-
-2. Set up connectivity to your IaaS environment by using either [IBM Cloud Direct Link](#dl) or [VPN](#vpn).
+2. Set up connectivity to your IaaS environment by using either [{{site.data.keyword.cloud_notm}} Direct Link](#dl) or [VPN](#vpn).
 
 ### IBM Cloud Direct Link
 {: #dl}
 
-You can connect your Flex private network environment to your IaaS environment by using IBM Cloud Direct Link. See [Get Started with IBM Cloud Direct Link](/docs/infrastructure/direct-link/getting-started.html).
-
-**Writer's notes**:
-Do we need more than the above link to instructions to make the DL connection?
-
-Should step-by-step instructions be copied here instead?
-
-
+You can connect your Flex private network environment to your IaaS environment by using {{site.data.keyword.cloud_notm}} Direct Link. See [Get Started with {{site.data.keyword.cloud_notm}} Direct Link](/docs/infrastructure/direct-link/getting-started.html).
 
 ### VPN
 {: #vpn}
 
 You can connect your Flex private network environment to your IaaS environment by using a virtual private network (VPN) tunnel for public connectivity if you must have a connection method over and beyond the secure SSL port of `50001`.
 
+To establish a VPN connection to your private network environment, you must send your VPN information to our IBM Cloud networking team by filling out a VPN form (request form from IBM Support), attaching the form to a [ServiceNow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} ticket, and providing the following VPN part number `xxxx-xxxx-xxxx`. With that information in hand, our {{site.data.keyword.cloud_notm}} networking team can then set up our end of the VPN endpoint. <!-- Ben to provide VPN part number -->
 
+For information about getting started with a VPN, see [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn/getting-started.html).
 
-**Gopal's text**:
+<!-- **Gopal's text**:
 
 > For public connectivity, customers can setup a VPN tunnel if they need to use something over and beyond the secure SSL port of `50001` and send VPN information to our Networking team to set up VPN endpoints. This requires filling up a VPN form and attaching it to a Service Now Ticket. Should we attach the form template here? Customers need to order a particular part number for this (VPN part number to be provided by Ben)
 
-**Writer's notes**:
-I need step-by-step instructions.
 
-Can we use any of this documentation? --> [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn/getting-started.html).
+Can we use any of this documentation?  [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn/getting-started.html). -->
 
 
 
-### IP Whitelisting
+<!-- ### IP Whitelisting
 {: #ip_wl}
 
 IP whitelisting gives you the ability to specify which trusted IP addresses are granted access to your private network environment.
 
 
 **Writer's notes**:
-I need step-by-step instructions.
+I need step-by-step instructions. -->
 
 
