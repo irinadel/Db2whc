@@ -74,18 +74,9 @@ You can connect your Flex private network environment to your IaaS environment b
 
 You can connect your Flex private network environment to your IaaS environment by using a virtual private network (VPN) tunnel for public connectivity if you must have a connection method over and beyond the secure SSL port of `50001`.
 
-To establish a VPN connection to your private network environment, you must send your VPN information to our IBM Cloud networking team by filling out a VPN form (request form from IBM Support) and attaching the form to a [ServiceNow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} ticket. <!-- , attaching the form to a [ServiceNow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} ticket, and providing the following VPN part number `xxxx-xxxx-xxxx`. --> With that information in hand, our {{site.data.keyword.cloud_notm}} networking team can then set up our end of the VPN endpoint. <!-- Ben to provide VPN part number -->
+To establish a VPN connection to your private network environment, you must send your VPN information to our IBM Cloud networking team by filling out a VPN form (request form from IBM Support), attaching the form to a [ServiceNow ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} ticket, and providing the following ICIAE VPN part number `D1Q35LLVPN`. With that information in hand, our {{site.data.keyword.cloud_notm}} networking team can then set up our end of the VPN endpoint. 
 
 For information about getting started with a VPN, see [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn/getting-started.html).
-
-<!-- **Gopal's text**:
-
-> For public connectivity, customers can setup a VPN tunnel if they need to use something over and beyond the secure SSL port of `50001` and send VPN information to our Networking team to set up VPN endpoints. This requires filling up a VPN form and attaching it to a Service Now Ticket. Should we attach the form template here? Customers need to order a particular part number for this (VPN part number to be provided by Ben)
-
-
-Can we use any of this documentation?  [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn/getting-started.html). -->
-
-
 
 <!-- ### IP Whitelisting
 {: #ip_wl}
