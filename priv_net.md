@@ -51,7 +51,7 @@ After logging in to {{site.data.keyword.cloud_notm}}, you'll see your service in
 ### IBM Cloud Service Endpoint
 {: #serv_endpt}
 
-If you require that all of your traffic must be sent along the SoftLayer Private Backplane from your IaaS environment, an offering called **{{site.data.keyword.cloud_notm}} Service Endpoint** provides this capability. For more information about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint/getting-started.html).
+If you require that all of your traffic must be sent along the {{site.data.keyword.cloud_notm}} Private Backplane from your IaaS environment, an offering called **{{site.data.keyword.cloud_notm}} Service Endpoint** provides this capability. For more information about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint/getting-started.html).
 
 The Flex plan service must be provisioned with **Private Connectivity** to use the {{site.data.keyword.cloud_notm}} Service Endpoint. At this time, this option is obtained only by request through a software quote order (SQO). 
 
