@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ En estas instrucciones se explica cómo conectar Tableau a una base de datos de 
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq1}
+{: #prereq8}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
-{: #proc1}
+{: #proc8}
 
 1. En Tableau Desktop, abra la ventana o página de la herramienta que se utiliza para definir una conexión de base de datos.
 2. Desde la página de inicio, pulse **Conectar a datos**.
@@ -80,16 +84,16 @@ En estas instrucciones se explica cómo conectar Microsoft Excel <!--2010-->a un
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq2}
+{: #prereq9}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package instalados en el sistema local. 
 
 **Restricción**: Solo se admiten conexiones entre Excel y {{site.data.keyword.dashdbshort_notm}} en el sistema operativo Windows.
 
 ### Procedimiento
-{: #proc2}
+{: #proc9}
 
 1. En la consola web, vaya a la página **Ejecutar SQL**.
     
@@ -121,16 +125,16 @@ Puede conectar Esri ArcGIS for Desktop <!--version 10.3.1 -->a una base de datos
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq3}
+{: #prereq10}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package instalados en el sistema.
 
 ### Procedimiento
-{: #proc3}
+{: #proc10}
 
-1. Determine los datos ODBC DSN de la [información de conexión](credentials.html) que ha recopilado antes.
+1. Determine los datos ODBC DSN de la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
 
 2. Cree una nueva conexión:
       

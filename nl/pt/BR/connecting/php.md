@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Defina uma conexão entre um aplicativo PHP e um banco de dados {{site.data.keyw
 {: shortdesc}
 
 ## Pré-requisitos
+{: #prereq101}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,10 +38,12 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedimento
+{: #proc101}
 
 ### Cenário 1: Conectando-se de fora  {{site.data.keyword.Bluemix_notm}}:
-        
-1. Faça download do [pacote de drivers do Db2](driver_pkg.html) por meio do console da web e, em seguida, instale o pacote de drivers na máquina em que seu aplicativo PHP será executado.
+{: #scen1}
+
+1. Faça download do [pacote de drivers do Db2](/docs/services/Db2whc/connecting/driver_pkg.html) por meio do console da web e, em seguida, instale o pacote de drivers na máquina em que seu aplicativo PHP será executado.
                 
 2. Use a função [`odbc_connect` ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://php.net/manual/en/function.odbc-connect.php){:new_window} para se conectar ao banco de dados BLUDB.
     
@@ -94,6 +101,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
    ```
 
 ### Cenário 2: Conectando-se por meio de um app da web PHP no {{site.data.keyword.Bluemix_notm}}
+{: #scen2}
 
 1. No catálogo do {{site.data.keyword.Bluemix_notm}}, crie um novo App PHP.
         

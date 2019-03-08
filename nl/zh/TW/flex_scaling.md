@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ lastupdated: "2018-05-01"
 ![Web 主控台運算核心頁面的視圖](images/launch.png)
 
 ![Web 主控台運算核心頁面的視圖](images/scaling_full.png)
-
 
 ## 運算核心
 {: #cores}

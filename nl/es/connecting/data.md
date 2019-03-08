@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Para realizar conexiones con el protocolo SSL, descargue e instale el GSKit V8 d
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc1}
@@ -149,7 +153,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
         donde `<alias>` es un alias que ha creado utilizando el mandato **db2cli writecfg**, `<user_id>` es el ID de usuario de {{site.data.keyword.dashdbshort_notm}}, y `<password>` is la contraseña de {{site.data.keyword.dashdbshort_notm}}.
 
-  4. Utilice la [información de conexión](credentials.html) que ha recopilado antes para definir una conexión en el cliente DataStage. En el separador **Parámetros**, debe seleccionar el **DB2 Connector** para el campo **Conectar utilizando tipo de transferencia**.
+  4. Utilice la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes para definir una conexión en el cliente DataStage. En el separador **Parámetros**, debe seleccionar el **DB2 Connector** para el campo **Conectar utilizando tipo de transferencia**.
 
      Para obtener detalles sobre cómo definir una conexión en DataStage, consulte los siguientes temas de la documentación de DataStage: 
      
@@ -224,7 +228,7 @@ Al utilizar {{site.data.keyword.dashdbshort_notm}} como destino de conexión, el
 
 Si tiene previsto conectarse utilizando el protocolo SSL, descargue e instale GSKit V8. Consulte [GSKit V8 - Instrucciones de instalación, desinstalación y actualización ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Pulse el separador del sistema operativo que se aplica al sistema operativo de la máquina cliente. Si está instalando GSKit en un sistema Windows, asegúrese de especificar la vía de acceso del directorio de instalación de GSKit (`<installation_directory>\gsk8\bin`) para la variable de entorno **`PATH`**.
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 Si tiene previsto conectarse utilizando el protocolo SSL, descargue el certificado SSL `DigiCertGlobalRootCA.crt` desde la consola web en un directorio de la máquina cliente. Para descargar el certificado, pulse **Conexión > Información de conexión** y seleccione el separador **Conexión con SSL**.
 
@@ -381,7 +385,7 @@ En las instrucciones se explica cómo crear una conexión desde IBM® Data Studi
 ### Requisitos previos
 {: #prereq3}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc3}
@@ -412,7 +416,7 @@ Una conexión entre IBM® Data Server Manager y su base de datos de {{site.data.
 ### Requisitos previos
 {: #prereq4}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc4}
@@ -454,7 +458,7 @@ En las instrucciones se explica cómo crear una conexión desde InfoSphere® Dat
 ### Requisitos previos
 {: #prereq5}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc5}
@@ -487,7 +491,7 @@ En estas instrucciones se explica cómo conectar Aginity Workbench <!--4.3 -->a 
 ### Requisitos previos
 {: #prereq6}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc6}
@@ -509,7 +513,7 @@ El procesador de línea de mandatos plus (CLPPlus) se incluye en el paquete de c
 ### Requisitos previos
 {: #prereq7}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 Para utilizar CLPPlus, asegúrese de que está instalado en el sistema un kit de desarrollo de software (SDK) o un Java Runtime Environment (JRE) para Java versión 1.5.0 o posterior y que las variables de entorno están establecidas del modo siguiente:
 

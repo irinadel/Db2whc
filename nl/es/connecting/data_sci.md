@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -82,12 +86,12 @@ En estas instrucciones se explica cómo crear una conexión desde IBM® SPSS® S
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq1}
+{: #prereq11}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
-{: #proc1}
+{: #proc11}
 
 1. En SPSS Statistics, pulse **Archivo > Abrir base de datos > Nueva consulta**.
     
@@ -99,11 +103,11 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
    b. En la ventana Crear nuevo origen de datos, seleccione el controlador denominado **IBM DB2 ODBC DRIVER** y pulse **Finalizar**.
 
-   Asegúrese de que el controlador que seleccione no es un controlador con un nombre similar como, por ejemplo, `IBM DB2® ODBC DRIVER - DB2COPY`. Si el controlador no aparece en la lista, salga de SPSS Statistics y, a continuación, descargue e instale el controlador. Consulte [Paquete de controlador Db2](driver_pkg.html).
+   Asegúrese de que el controlador que seleccione no es un controlador con un nombre similar como, por ejemplo, `IBM DB2® ODBC DRIVER - DB2COPY`. Si el controlador no aparece en la lista, salga de SPSS Statistics y, a continuación, descargue e instale el controlador. Consulte [Paquete de controlador Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
         
    c. En la ventana Controlador ODBC IBM - Añadir, especifique un nombre de origen de datos (normalmente el nombre de la base de datos a la que se está conectando) y pulse **Añadir**.
         
-   d. En la ventana Configuración de CLI/ODBC, en el separador **Origen de datos**, especifique el ID de usuario y la contraseña de la [información de conexión](credentials.html) que ha recopilado antes.
+   d. En la ventana Configuración de CLI/ODBC, en el separador **Origen de datos**, especifique el ID de usuario y la contraseña de la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
         
    e. En la página Configuración avanzada, para cada uno de los parámetros siguientes, pulse **Añadir** para abrir la ventana Añadir parámetro CLI e iniciar el paso y pulse **Aceptar** para volver a la página Configuración avanzada:
             
@@ -132,12 +136,12 @@ En estas instrucciones se explica cómo crear una conexión desde SAS a una base
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq2}
+{: #prereq12}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
-{: #proc2}
+{: #proc12}
 
 Para obtener los pasos sobre cómo conectarse desde SAS a una base de datos de {{site.data.keyword.dashdbshort_notm}}, consulte la documentación de SAS:
 - [Interfaz SAS/ACCESS a DB2 en hosts UNIX y PC ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -149,12 +153,12 @@ En lugar de utilizar un entorno RStudio® que esté integrado con IBM Watson Stu
 {: shortdesc}
 
 ### Requisitos previos
-{: #prereq3}
+{: #prereq13}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 ### Procedimiento
-{: #proc3}
+{: #proc13}
 
 1. En su entorno R local, instale el paquete `ibmdbR` especificando el mandato siguiente:
 
@@ -168,7 +172,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
         
    b. Abra el entorno de desarrollo R instalado localmente.
         
-   c. En el indicador R, entre las sentencias siguientes para crear la conexión. Sustituya los marcadores con la [información de conexión](credentials.html) que ha recopilado antes.
+   c. En el indicador R, entre las sentencias siguientes para crear la conexión. Sustituya los marcadores con la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
 
    - Si el entorno de desarrollo R instalado localmente se ejecuta en la base de datos {{site.data.keyword.dashdbshort_notm}}:
 

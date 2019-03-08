@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc1}
@@ -149,7 +153,7 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
         여기서, `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성한 별명이고, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID이며, `<password>`는 {{site.data.keyword.dashdbshort_notm}} 비밀번호입니다.
 
-  4. DataStage 클라이언트에서 연결을 정의하기 위해 미리 수집한 [연결 정보](credentials.html)를 사용하십시오. **매개변수** 탭에서 **스테이징 유형을 사용하여 연결** 필드에 **DB2 커넥터**를 선택해야 합니다.
+  4. DataStage 클라이언트에서 연결을 정의하기 위해 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)를 사용하십시오. **매개변수** 탭에서 **스테이징 유형을 사용하여 연결** 필드에 **DB2 커넥터**를 선택해야 합니다.
 
      DataStage에서 연결을 정의하는 방법에 관한 세부사항은 다음 DataStage 문서 주제를 참조하십시오. 
      
@@ -224,7 +228,7 @@ IBM® InfoSphere® Data Replication<!--version 11.3.3.3-36 or later -->을 {{sit
 
 SSL 프로토콜을 사용하여 연결하려면 GSKit V8을 다운로드하여 설치하십시오. [GSKit V8 - 설치, 설치 제거 및 업그레이드 지시사항 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. 클라이언트 시스템의 운영 체제에 해당되는 운영 체제 탭을 클릭하십시오. Windows 컴퓨터에 GSKit을 설치하는 경우 **`PATH`** 환경 변수에 GSKit 설치 디렉토리 경로(`<installation_directory>\gsk8\bin`)를 지정했는지 확인하십시오.
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언트 시스템의 디렉토리로 `DigiCertGlobalRootCA.crt` SSL 인증서를 다운로드하십시오. 인증서를 다운로드하려면 **연결 > 연결 정보**를 클릭한 다음 **SSL을 사용하여 연결** 탭을 클릭하십시오.
 
@@ -381,7 +385,7 @@ Segment를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스와 통합�
 ### 전제조건
 {: #prereq3}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc3}
@@ -410,7 +414,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq4}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc4}
@@ -452,7 +456,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq5}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc5}
@@ -482,7 +486,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq6}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc6}
@@ -504,7 +508,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq7}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 CLPPlus를 사용하려면 소프트웨어 개발 킷(SDK) 또는 Java 버전 1.5.0 이상용 Java 런타임 환경(JRE)이 컴퓨터에 설치되어 있고 해당 환경 변수가 다음과 같이 설정되어야 합니다.
 

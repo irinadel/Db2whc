@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Wenn sich nach der Bereitstellung des Systems die Anforderungen ändern, können
 ![Ansicht der Webkonsolenseite zu Prozessorkernen](images/launch.png)
 
 ![Ansicht der Webkonsolenseite zu Prozessorkernen](images/scaling_full.png)
-
 
 ## Prozessorkerne
 {: #cores}

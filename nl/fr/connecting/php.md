@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Définissez une connexion entre une application PHP et une base de données {{si
 {: shortdesc}
 
 ## Prérequis
+{: #prereq101}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,10 +38,12 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procédure
+{: #proc101}
 
 ### Scénario 1 : Connexion depuis l'extérieur de {{site.data.keyword.Bluemix_notm}} :
-        
-1. Téléchargez le [module de pilote Db2](driver_pkg.html) à partir de la console Web, puis installez-le sur l'ordinateur sur lequel votre application PHP s'exécutera.
+{: #scen1}
+
+1. Téléchargez le [module de pilote Db2](/docs/services/Db2whc/connecting/driver_pkg.html) à partir de la console Web, puis installez-le sur l'ordinateur sur lequel votre application PHP s'exécutera.
                 
 2. Utilisez la fonction [`odbc_connect` ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://php.net/manual/en/function.odbc-connect.php){:new_window} pour vous connecter à la base de données BLUDB.
     
@@ -94,6 +101,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
    ```
 
 ### Scénario 2 : Connexion à partir d'une application Web PHP dans {{site.data.keyword.Bluemix_notm}}
+{: #scen2}
 
 1. Dans le catalogue {{site.data.keyword.Bluemix_notm}}, créez une nouvelle application PHP.
         

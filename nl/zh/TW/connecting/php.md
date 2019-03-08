@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 必要條件
+{: #prereq101}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,10 +38,12 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 程序
+{: #proc101}
 
 ### 情境 1：從 {{site.data.keyword.Bluemix_notm}} 外部連接：
-        
-1. 從 Web 主控台下載 [Db2 驅動程式套件](driver_pkg.html)，然後將驅動程式套件安裝在將執行 PHP 應用程式的機器上。
+{: #scen1}
+
+1. 從 Web 主控台下載 [Db2 驅動程式套件](/docs/services/Db2whc/connecting/driver_pkg.html)，然後將驅動程式套件安裝在將執行 PHP 應用程式的機器上。
                 
 2. 使用 [`odbc_connect` 函數 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://php.net/manual/en/function.odbc-connect.php){:new_window} 來連接至 BLUDB 資料庫。
     
@@ -94,6 +101,7 @@ lastupdated: "2018-09-25"
    ```
 
 ### 情境 2：從 {{site.data.keyword.Bluemix_notm}} 中的 PHP Web 應用程式連接
+{: #scen2}
 
 1. 從 {{site.data.keyword.Bluemix_notm}} 型錄中，建立新的 PHP 應用程式。
         

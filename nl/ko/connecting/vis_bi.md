@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 {: shortdesc}
 
 ### 전제조건
-{: #prereq1}
+{: #prereq8}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
-{: #proc1}
+{: #proc8}
 
 1. Tableau Desktop에서 데이터베이스 연결을 정의하는 데 사용되는 도구의 창이나 페이지를 여십시오.
 2. 시작 페이지에서 **데이터에 연결**을 클릭하십시오.
@@ -80,16 +84,16 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 {: shortdesc}
 
 ### 전제조건
-{: #prereq2}
+{: #prereq9}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 로컬 컴퓨터에 설치되어 있어야 합니다. 
 
 **제한사항**: Excel과 {{site.data.keyword.dashdbshort_notm}} 간의 연결은 Windows 운영 체제에서만 지원됩니다.
 
 ### 프로시저
-{: #proc2}
+{: #proc9}
 
 1. 웹 콘솔에서 **SQL 실행** 페이지로 이동하십시오.
     
@@ -121,16 +125,16 @@ Esri ArcGIS for Desktop<!--version 10.3.1 -->을 {{site.data.keyword.dashdbshort
 {: shortdesc}
 
 ### 전제조건
-{: #prereq3}
+{: #prereq10}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터에 설치되어 있어야 합니다.
 
 ### 프로시저
-{: #proc3}
+{: #proc10}
 
-1. 미리 수집한 [연결 정보](credentials.html)에서 ODBC DSN 데이터를 판별하십시오.
+1. 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)에서 ODBC DSN 데이터를 판별하십시오.
 
 2. 새 연결을 작성하십시오.
       

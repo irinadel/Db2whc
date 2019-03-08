@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -84,9 +88,9 @@ La siguiente tabla muestra las restricciones del plan de Entrada de {{site.data.
 |  | Conexiones | 50 conexiones por usuario. Es posible que este límite se ajuste dinámicamente para mantener la integridad de sistema de la instancia. |
 |  | Rendimiento | Es posible que el rendimiento fluctúe debido a cargas de trabajo ejecutadas por otros usuarios del sistema multiarrendatario. |
 |  |  |
-| Características y funciones | Federación | No soportada |
-|  | Compatibilidad con Oracle | No soportada |
-|  | Extensiones definidas por el usuario (UDF) | No soportadas |
+| Características y funciones | Federación | No soportado |
+|  | Compatibilidad con Oracle | No soportado |
+|  | Extensiones definidas por el usuario (UDF) | No soportado |
 |  | Gestión de usuarios | Al usuario no se le da autoridad administrativa |
 |  | Control de acceso a filas y columnas (RCAC) | No soportado |
 |  | IBM InfoSphere Data Replication para uso en la carga de datos | No soportado |

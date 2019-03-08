@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,12 +74,12 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 以下の手順を実行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続するようにローカル環境を構成します。
 {: shortdesc}
 
-1. [ ドライバー・パッケージ](connecting/driver_pkg.html)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
+1. [ ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
 2. アプリまたはツールが実行されているコンピューターにドライバー・パッケージをインストールします。
-   - [Linux または PowerLinux 上でのインストール](connecting/install_linux.html)
-   - [Mac OS X 上でのインストール](connecting/install_mac.html)
-   - [Windows 上でのインストール](connecting/install_win.html)
-3. {site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](connecting/driver_pkg_cfg.html)。
+   - [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting/install_linux.html)
+   - [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting/install_mac.html)
+   - [Windows 上でのインストール](/docs/services/Db2whc/connecting/install_win.html)
+3. {site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
 
 ### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 Warehouse on Cloud を使用する
 {: #data_src}
@@ -133,13 +137,12 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 各種の言語で作成されたアプリケーションから {{site.data.keyword.dashdbshort_notm}} データベースへのプログラマチックな接続方法を示すサンプルへのリンクは次のとおりです。
 {: shortdesc}
 
-- [JDBC 
-](connecting/jdbc.html)
-- [Microsoft Windows ODBC または CLI](connecting/odbc_cli.html)
-- [.NET](connecting/net_apps.html)
-- [ODBC データ ソース アドミニストレータ](connecting/odbc_data_source_admin.html)
-- [PHP](connecting/php.html)
-- [REST API](connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
+- [Microsoft Windows ODBC または CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC データ ソース アドミニストレータ](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 
 ## ビデオ: Introducing Db2 Warehouse on Cloud
 {: #intro_vid}

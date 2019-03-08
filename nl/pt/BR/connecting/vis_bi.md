@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ Estas instruções explicam como conectar o Tableau a um banco de dados {{site.d
 {: shortdesc}
 
 ### Pré-requisitos
-{: #prereq1}
+{: #prereq8}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
 
 ### Procedimento
-{: #proc1}
+{: #proc8}
 
 1. Na Área de trabalho do Tableau, abra a janela ou a página na ferramenta usada para definir uma conexão com o banco de dados.
 2. Na página inicial, clique em **Conectar aos dados**.
@@ -80,16 +84,16 @@ Estas instruções explicam como conectar o Microsoft Excel <!--2010-->a um banc
 {: shortdesc}
 
 ### Pré-requisitos
-{: #prereq2}
+{: #prereq9}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
 
 Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package instalado no computador local. 
 
 **Restrição**: conexões entre o Excel e o {{site.data.keyword.dashdbshort_notm}} são suportadas apenas no sistema operacional Windows.
 
 ### Procedimento
-{: #proc2}
+{: #proc9}
 
 1. No console da web, acesse a página **Executar SQL**.
     
@@ -121,16 +125,16 @@ Os resultados da consulta são exibidos em uma planilha do Excel. Esses são os 
 {: shortdesc}
 
 ### Pré-requisitos
-{: #prereq3}
+{: #prereq10}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
 
 Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package instalado no computador.
 
 ### Procedimento
-{: #proc3}
+{: #proc10}
 
-1. Determine seus dados de DSN do ODBC por meio das [informações de conexão](credentials.html) coletadas antecipadamente.
+1. Determine seus dados de DSN do ODBC por meio das [informações de conexão](/docs/services/Db2whc/connecting/credentials.html) coletadas antecipadamente.
 
 2. Crie uma nova conexão:
       

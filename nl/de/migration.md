@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-20"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,9 +56,10 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Hinweis:** Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
+Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
+{: note}
 
-Eine Demo mit einer Anleitung zum Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [{{site.data.keyword.dashdblong}} - Demo mit Anleitung zum Laden von Daten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}. 
+Eine Demo mit einer Anleitung zum Laden von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [{{site.data.keyword.dashdblong}} - Demo mit Anleitung zum Laden von Daten ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}.
 
 ## Daten eines lokalen Systems migrieren
 {: #onprem}

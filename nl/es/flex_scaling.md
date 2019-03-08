@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Cuando su sistema esté suministrado y cambien sus requisitos, podrá ajustar su
 ![Vista de la página de núcleos de cálculo de la consola web](images/launch.png)
 
 ![Vista de la página de núcleos de cálculo de la consola web](images/scaling_full.png)
-
 
 ## Núcleos de cálculo
 {: #cores}

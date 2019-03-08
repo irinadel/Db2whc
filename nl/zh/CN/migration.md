@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-20"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,7 +56,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**注：**对于 {{site.data.keyword.Bluemix_notm}} Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
+对于 {{site.data.keyword.Bluemix_notm}} Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
+{: note}
 
 有关从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据的指导式演示，请参阅 [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 

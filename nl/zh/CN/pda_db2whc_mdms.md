@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,7 @@ MDMS 提供快速、简单且安全的方式将太字节级别到拍字节级别
    - 网络掩码 
    - 用于访问用户界面 (UI) 的缺省网关
 3. Cloud Object Storage 下载目标<br/>
-   **重要信息**：您必须在美国交叉区域或美国南部区域中至少有一个 {{site.data.keyword.cos_full}} 帐户和一个存储区才能填写请求表单。如果您尚没有 {{site.data.keyword.cos_full_notm}}} 帐户，请创建一个帐户，然后再请求 MDMS 设备。有关更多信息，请参阅：[关于 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。
+您必须在美国交叉区域或美国南部区域中至少有一个 {{site.data.keyword.cos_full}} 帐户和一个存储区才能填写请求表单。如果您尚没有 {{site.data.keyword.cos_full_notm}}} 帐户，请创建一个帐户，然后再请求 MDMS 设备。有关更多信息，请参阅：[关于 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。{: important}
 
 ## 步骤 1：创建请求
 {: #create-req}
@@ -108,9 +112,12 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 2. 确定放置设备的最适合的位置；可接入电源和以太网（1GbE 和 10GbE）连接并且附近人流量很少。
 
 3. 放置要连接的设备。在使用期间，可留在运输箱中。确保设备为室温并且无冷凝。使用箱盖下随附的电源线连接到电源。开启设备。<br/>
-    **注**：有两个电源开关。
+    有两个电源开关。
+    {: note}
+
     ![电源开关](/images/MDMSPowerSwitch.png)
-    **注**：设备无需从便携式机箱中取出。
+    该设备无需从便携式机箱中取出。
+    {: note}
 
 4. 从箱盖中取出 CAT6A 电缆，将其连接到图中所示的 Eth3 (10GbE-B) 端口。
     ![Eth1 和 Eth3 端口位置](/images/MDMSNewEth1and3.png)
@@ -120,14 +127,16 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 6. 如果可通过浏览器 `https://<your_Eth3_IP_Address>` 访问针对 Eth3 配置的 IP 地址，那么继续至下一步。 
 
    否则，连接到 Eth1 (1GbE-B) 端口。打开浏览器，输入 `https://<your_Eth1_IP_Address>`。输入网络配置的相应 Eth1 IP 地址。接受证书例外。<br/>
-   **注**：如果需要更改 Eth3 或 Eth1 的任何 IP 设置，请参阅 [IP 地址配置](#ip_cfg)部分。
+   如果需要更改 Eth3 或 Eth1 的任何 IP 设置，请参阅 [IP 地址配置](#ip_cfg)部分。
+   {: note}
 
 7. 使用提供的用户名和密码登录。<br/>
     ![登录页面](/images/Login.png)
 
 8. 工作流程向导从左到右依次显示可访问的常用特定项。<br/>
     ![工作流程图标](/images/workflow.png) <br/>
-    **注**：可使用 GUI 左上角的**工作流程管理器**重新打开工作流程。
+    可使用 GUI 左上角的**工作流程管理器**重新打开工作流程。
+    {: note}
 
 9. 激活预配置的存储池：
     - 单击**解锁并启动存储池**。

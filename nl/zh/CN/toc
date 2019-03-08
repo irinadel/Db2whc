@@ -67,7 +67,7 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="howto"}
     [指导式演示：从 IBM Cloud Object Storage 装入数据](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud)
-    [教程：SQL Database for Cloud Data](../../tutorials/sql-database.html#sql-database-for-cloud-data)
+    [教程：SQL Database for Cloud Data](/tutorials/solution-tutorials-sql-database#sql-database)
     [教程：从内部部署关系数据库迁移数据](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud)
     {: .navgroup-end}
 

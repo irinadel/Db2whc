@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Les utilisateurs possédant un IBMid doivent être ajoutés à chaque instance d
 Un ID de service identifie un service ou une application de la même façon qu'un ID d'utilisateur identifie un utilisateur. Les ID de service sont des identifiants qui peuvent être utilisés par les applications pour s'authentifier auprès d'un service {{site.data.keyword.Bluemix_notm}}. Un ID de service représente une entité séparée du IBMid propriétaire. Par conséquent, différentes autorités et permissions peuvent être accordées en fonction de l'ID de service dans la base de données. Les ID de service n'ont pas de mot de passe. Une clé d'API doit être créée pour chaque ID de service pour que l'ID de service se connecte à l'instance de service de base de données. Pour en savoir plus sur les ID de service, voir : [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Connexions client et logins utilisateur
-{: #connect}
+{: #connect_login}
 
 **Prérequis** : Db2 Client V11.1 FP3 et versions ultérieures.
 
@@ -281,7 +285,7 @@ L'API REST {{site.data.keyword.dashdbshort_notm}} a été améliorée afin d'acc
 Pour en savoir plus sur votre API de service, voir : [{{site.data.keyword.dashdbshort_notm}} REST API ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
 
 ## Fédération IBMid
-{: #fed}
+{: #ibmid_fed}
 
 Pour utiliser votre propre fournisseur d'identité tel que LDAP, vous devez d'abord fédérer votre serveur LDAP avec IBMid. Pour recevoir des instructions sur la fédération de votre serveur LDAP avec IBMid, voir : [IBMid Enterprise Federation Adoption Guide ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Une fois que la fédération IBMid est terminée et que les utilisateurs autorisés ont été ajoutés à l'instance du service de base de données par l'administrateur de la base de données, ces utilisateurs peuvent se connecter à la console avec le nom utilisateur de leur entreprise et le mot de passe. Ces utilisateurs peuvent également utiliser un jeton d'accès ou une clé d'API qui représente leur ID d'utilisateur pour se connecter à l'instance du service de base de données via l'une des interfaces de client de base de données prises en charge.
 

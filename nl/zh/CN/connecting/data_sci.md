@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -82,12 +86,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq1}
+{: #prereq11}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
-{: #proc1}
+{: #proc11}
 
 1. 在 SPSS Statistics 中，单击**文件 > 打开数据库 > 新建查询**。
     
@@ -99,11 +103,11 @@ lastupdated: "2018-10-15"
 
    b. 在“创建新数据源”窗口中，选择名为 **IBM DB2 ODBC DRIVER** 的驱动程序，然后单击**完成**。
 
-   确保选择的驱动程序不是名称类似的驱动程序，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果该驱动程序未出现在列表中，请退出 SPSS Statistics，然后下载并安装该驱动程序。请参阅 [Db2 驱动程序包](driver_pkg.html)。
+   确保选择的驱动程序不是名称类似的驱动程序，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果该驱动程序未出现在列表中，请退出 SPSS Statistics，然后下载并安装该驱动程序。请参阅 [Db2 驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
         
    c. 在“ODBC IBM 驱动程序 - 添加”窗口中，输入数据源名称（通常是所要连接的数据库的名称），然后单击**添加**。
         
-   d. 在“CLI/ODBC 设置”窗口的**数据源**选项卡上，输入预先收集的[连接信息](credentials.html)中的用户标识和密码。
+   d. 在“CLI/ODBC 设置”窗口的**数据源**选项卡上，输入预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)中的用户标识和密码。
         
    e. 在“高级设置”页面中，针对以下每个参数，单击**添加**以打开“添加 CLI 参数”窗口开始执行步骤，然后单击**确定**以返回到“高级设置”页面：
             
@@ -132,12 +136,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq2}
+{: #prereq12}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
-{: #proc2}
+{: #proc12}
 
 有关如何从 SAS 连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的步骤，请参阅 SAS 文档：
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -149,12 +153,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq3}
+{: #prereq13}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
-{: #proc3}
+{: #proc13}
 
 1. 在本地 R 环境中，通过输入以下命令安装 `ibmdbR` 软件包：
 
@@ -168,7 +172,7 @@ lastupdated: "2018-10-15"
         
    b. 打开安装在本地的 R 开发环境。
         
-   c. 在 R 提示符处，输入以下语句以创建连接。将占位符替换为预先收集的[连接信息](credentials.html)。
+   c. 在 R 提示符处，输入以下语句以创建连接。将占位符替换为预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)。
 
    - 如果本地安装的 R 开发环境在 {{site.data.keyword.dashdbshort_notm}} 数据库中运行，请运行以下语句：
 

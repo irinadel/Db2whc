@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ lastupdated: "2018-11-08"
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
 {: #proc1}
@@ -149,7 +153,7 @@ lastupdated: "2018-11-08"
 
         其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密码。
 
-  4. 使用预先收集的[连接信息](credentials.html)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
+  4. 使用预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
 
      有关在 DataStage 中定义连接的详细信息，请参阅以下 DataStage 文档主题： 
      
@@ -224,7 +228,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 如果打算使用 SSL 协议进行连接，请通过 Web 控制台将 `DigiCertGlobalRootCA.crt` SSL 证书下载到客户端机器上的目录。要下载证书，请单击**连接 > 连接信息**，然后单击**使用 SSL 进行连接**选项卡。
 
@@ -382,7 +386,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq3}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
 {: #proc3}
@@ -411,7 +415,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq4}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
 {: #proc4}
@@ -453,7 +457,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq5}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
 {: #proc5}
@@ -483,7 +487,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq6}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
 {: #proc6}
@@ -505,7 +509,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
 ### 先决条件
 {: #prereq7}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 要使用 CLPPlus，请确保在计算机上安装 Java V1.5.0 或更高版本的软件开发包 (SDK) 或 Java 运行时环境 (JRE)，并确保环境变量设置如下：
 

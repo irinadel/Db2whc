@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'i
    - Masque de réseau 
    - Passerelle par défaut pour accéder à l'interface utilisateur
 3. Destination de téléchargement de Cloud Object Storage <br/>
-   **Important** : Vous devez disposer d'au moins un compte {{site.data.keyword.cos_full}} et un compartiment dans un emplacement US Cross Region ou US South pour compléter le formulaire de demande. Si vous n'avez pas encore de compte {{site.data.keyword.cos_full_notm}}, créez-en un avant de demander un périphérique MDMS. Pour plus d'informations, voir : [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Vous devez disposer d'au moins un compte {{site.data.keyword.cos_full}} et un compartiment dans un emplacement US Cross Region ou US South pour compléter le formulaire de demande. Si vous n'avez pas encore de compte {{site.data.keyword.cos_full_notm}}, créez-en un avant de demander un périphérique MDMS. Pour plus d'informations, voir : [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Etape 1 : création d'une demande
 {: #create-req}
@@ -108,9 +113,12 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
 2. Déterminez l'endroit le plus approprié pour placer le périphérique, pas trop loin de l'alimentation et de vos connexions Ethernet (1GbE et 10GbE) et avec le moins de passage possible.
 
 3. Positionnez le périphérique à connecter. Il peut rester dans sa mallette de transport lors de son utilisation. Assurez-vous que le périphérique est à température ambiante et qu'il n'y a pas de condensation. Connectez-le à l'alimentation en utilisant le câble fourni sous le couvercle de la mallette. Mettez le périphérique sous tension.<br/>
-    **Remarque **: Deux interrupteurs d'alimentation sont présents.
+    Deux interrupteurs d'alimentation sont présents.
+    {: note}
+
     ![Interrupteurs d'alimentation](/images/MDMSPowerSwitch.png)
-    **Remarque **: Il n'est pas obligatoire de sortir le périphérique de la mallette portable.
+    Il n'est pas nécessaire de sortir le périphérique de la mallette portable.
+    {: note}
 
 4. Retirez le câble CAT6A de son logement dans le couvercle de la mallette et connectez-le au port Eth3 (10GbE-B) repéré dans l'image ci-dessous. ![Emplacement des ports Eth1 et Eth3](/images/MDMSNewEth1and3.png)
 
@@ -119,14 +127,16 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
 6. Si l'adresse IP configurée pour Eth3 peut être atteinte via un navigateur `https://<your_Eth3_IP_Address>`, passez à l'étape suivante. 
 
    Sinon, effectuez une connexion au port Eth1 (1GbE-B). Ouvrez votre navigateur et entrez `https://<your_Eth1_IP_Address>`. Entrez l'adresse IP Eth1 appropriée à votre configuration réseau. Acceptez l'exception de certificat.<br/>
-   **Remarque** : si vous devez modifier un ou plusieurs paramètres IP pour Eth3 ou Eth1, voir la section [Configuration d'adresse IP](#ip_cfg).
+   Si vous devez modifier un ou plusieurs paramètres IP pour Eth3 ou Eth1, voir la section [Configuration d'adresse IP](#ip_cfg).
+   {: note}
 
 7. Utilisez le nom d'utilisateur et le mot de passe fournis pour vous connecter.<br/>
     ![Page de connexion](/images/Login.png)
 
 8. L'assistant de flux de travaux présente l'accès à des éléments spécifiques généralement utilisés dans l'ordre de gauche à droite.<br/>
     ![Icône de flux de travaux](/images/workflow.png) <br/>
-    ****Remarque : le flux de travaux peut être réouvert en utilisant **Workflow Manager** dans l'angle supérieur gauche de l'interface utilisateur graphique.
+    Le flux de travaux peut être rouvert en utilisant **Workflow Manager** dans l'angle supérieur gauche de l'interface utilisateur graphique.
+    {: note}
 
 9. Activez le pool de stockage préconfiguré :
     - Cliquez sur **Unlock and Start Storage Pool**.

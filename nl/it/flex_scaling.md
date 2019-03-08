@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Dopo che è stato eseguito il provisioning del tuo sistema e ogni volta che il t
 ![Vista della pagina dei core di calcolo della console web](images/launch.png)
 
 ![Vista della pagina dei core di calcolo della console web](images/scaling_full.png)
-
 
 ## Core di calcolo
 {: #cores}

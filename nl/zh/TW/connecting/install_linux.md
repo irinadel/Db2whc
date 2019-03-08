@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 必要條件
+{: #prereq31}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -40,6 +45,7 @@ lastupdated: "2018-09-25"
    `sudo dpkg -iG *.deb` 
 
 ## 程序
+{: #proc31}
 
 1. 解壓縮先前下載的壓縮驅動程式套件檔。
 
@@ -62,8 +68,9 @@ lastupdated: "2018-09-25"
    - **C Shell**：`source db2cshrc`
 
 ## 下一步為何？
+{: #wn}
 
-若要能夠將本端應用程式或用戶端工具連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，請[配置本端環境](driver_pkg_cfg.html)。   
+若要能夠將本端應用程式或用戶端工具連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，請[配置本端環境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。   
 
 
 

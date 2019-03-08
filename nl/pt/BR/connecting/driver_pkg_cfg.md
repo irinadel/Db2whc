@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Para conectar aplicativos locais e ferramentas ao banco de dados {{site.data.key
 {: shortdesc}
 
 ## Pré-requisitos
+{: #prereq21}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -36,6 +41,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ## Procedimento
+{: #proc21}
 
 1. Inclua entradas no arquivo de configuração do driver, `db2dsdriver.cfg`, para o seu banco de dados.
 

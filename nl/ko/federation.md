@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-07-18"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -55,11 +59,12 @@ At times, you might choose to partition (shard) your data. With federation capab
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 시작하기
-{: #getting_started}
+{: #gtng_strtd}
 
 다음 단계는 서로 다른 데이터 소스를 연합하여 단일 소스에서 데이터를 검색하는 것처럼 보이게 하는 방법을 보여주는 예입니다. 다음 예에서는 두 개의 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 연합하는 데 관해 설명합니다.
 
 ### Db2 Warehouse on Cloud 대상 시스템의 경우
+{: #targ}
 
 호스트 이름: targetdotcom
 
@@ -68,6 +73,7 @@ At times, you might choose to partition (shard) your data. With federation capab
 2. {{site.data.keyword.dashdbshort_notm}} 콘솔에서 `admin2`로 비밀번호 `YYYY`를 사용하여 `testdata` 테이블을 로드합니다.
 
 ### 연합 소스로 사용 중인 Db2 Warehouse on Cloud 시스템의 경우
+{: #fed_src}
 
 {{site.data.keyword.dashdbshort_notm}} 콘솔에서 다음을 수행하십시오.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Une fois le système mis à disposition, si vos besoins évoluent, vous pouvez m
 ![Vue de la page des coeurs de traitement de la console Web](images/launch.png)
 
 ![Vue de la page des coeurs de traitement de la console Web](images/scaling_full.png)
-
 
 ## Coeurs de traitement
 {: #cores}

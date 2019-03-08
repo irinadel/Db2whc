@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Microsoft ODBC 데이터 소스 관리자 도구를 사용하여 ODBC 또는 CLI
 {: shortdesc}
 
 ## 전제조건
+{: #prereq91}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,8 +38,9 @@ Microsoft ODBC 데이터 소스 관리자 도구를 사용하여 ODBC 또는 CLI
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 프로시저
+{: #proc91}
 
-1. [Db2 드라이버 패키지](driver_pkg.html)를 설치하십시오.
+1. [Db2 드라이버 패키지](/docs/services/Db2whc/connecting/driver_pkg.html)를 설치하십시오.
 
 2. ODBC 데이터 소스 관리자를 열고 Db2 드라이버 패키지에 대한 사용자 DSN 또는 시스템 DSN을 작성하십시오.
     

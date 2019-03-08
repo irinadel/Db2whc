@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Flex Performance 시스템을 프로비저닝하기 전에, 사용자는 스토�
 ![웹 콘솔 컴퓨팅 코어 페이지의 보기](images/launch.png)
 
 ![웹 콘솔 컴퓨팅 코어 페이지의 보기](images/scaling_full.png)
-
 
 ## 컴퓨팅 코어
 {: #cores}

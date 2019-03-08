@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-20"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,7 +56,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Nota:** Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+{: note}
 
 Para obtener una demostración guiada acerca de cómo cargar datos desde {{site.data.keyword.Bluemix_notm}} Object Storage, consulte [Demostración guiada de {{site.data.keyword.dashdblong}}: Explorar la carga de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
 

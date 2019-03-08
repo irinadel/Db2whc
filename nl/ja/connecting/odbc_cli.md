@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Microsoft Windows ODBC または CLI アプリケーションと {{site.data.key
 {: shortdesc}
 
 ## 前提条件
+{: #prereq81}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Microsoft Windows ODBC または CLI アプリケーションと {{site.data.key
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 手順
+{: #proc81}
 
 1. Linux オペレーティング・システムのコマンド・シェル、Windows コマンド・プロンプト、または Windows オペレーティング・システムの Db2 コマンド・ウィンドウに、以下のコマンドを入力します。
 

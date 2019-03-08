@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # 連接概觀
-{: #connect}
+{: #connect_ov}
 
 您可以將指令行、IBM® 或協力廠商應用程式及工具，或是您建立的應用程式，連接到您的 {{site.data.keyword.dashdbshort_notm}} 資料庫。
 {: shortdesc}
@@ -59,21 +63,21 @@ lastupdated: "2018-10-15"
 ### 收集連線資訊
 {: #collect_info}
 
-- [資料庫詳細資料及連線認證](credentials.html)
+- [資料庫詳細資料及連線認證](/docs/services/Db2whc/connecting/credentials.html)
 
 ### 下載並安裝驅動程式套件
 {: #dl_install}
 
-- [下載驅動程式套件](driver_pkg.html)
-- [在 Linux 或 PowerLinux 上安裝](install_linux.html)
-- [在 Mac OS X 上安裝](install_mac.html)
-- [在 Windows 上安裝](install_win.html)
+- [下載驅動程式套件](/docs/services/Db2whc/connecting/driver_pkg.html)
+- [在 Linux 或 PowerLinux 上安裝](/docs/services/Db2whc/connecting/install_linux.html)
+- [在 Mac OS X 上安裝](/docs/services/Db2whc/connecting/install_mac.html)
+- [在 Windows 上安裝](/docs/services/Db2whc/connecting/install_win.html)
 
 ### 配置環境
 {: #cfg_env}
 
-- [配置環境](driver_pkg_cfg.html)
-- [Secure Sockets Layer (SSL) 支援](ssl.html)
+- [配置環境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
+- [Secure Sockets Layer (SSL) 支援](/docs/services/Db2whc/connecting/ssl.html)
 
 ## 以程式設計方式連接
 {: #conx_prgrm}
@@ -81,12 +85,12 @@ lastupdated: "2018-10-15"
 您可以使用一般程式設計語言來建立連接 {{site.data.keyword.dashdbshort_notm}} 資料庫的應用程式。
 {: shortdesc}
 
-- [JDBC](jdbc.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
 - [Microsoft Windows ODBC 或 CLI](odbc_cli.html)
-- [.NET](net_apps.html)
-- [ODBC 資料來源管理員](odbc_data_source_admin.html)
-- [PHP](php.html)
-- [REST API](rest_api.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC 資料來源管理員](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -99,30 +103,36 @@ lastupdated: "2018-10-15"
 您也可以將外部應用程式和工具連接到 {{site.data.keyword.dashdbshort_notm}}，並使用它們進一步管理或分析您的資料。例如：
 
 ### 資料整合
+{: #di}
+
 - 連接需要分析資料庫的 {{site.data.keyword.Bluemix_short}} 應用程式。
-- [DataStage](data.html#datastage)
-- [Informatica](data.html#informatica)
+- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
+- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
 - [Lift ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](data.html#idr)
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
 - [Segment ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](data.html#data_studio)
-- [Data Server Manager](data.html#dsm)
-- [CLPPLUS](data.html#clpplus)
-- [Aginity Workbench，用來將 Netezza® 資料模型及資料移轉至 {{site.data.keyword.dashdbshort_notm}}](data.html#aginity_wb)
-- [InfoSphere Data Architect，用來設計及部署資料庫綱目](data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
+- [Data Server Manager](/docs/services/Db2whc/connecting/data.html#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
+- [Aginity Workbench，用來將 Netezza® 資料模型及資料移轉至 {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)
+- [InfoSphere Data Architect，用來設計及部署資料庫綱目](/docs/services/Db2whc/connecting/data.html#ida)
 
 ### 資料視覺化/BI
-- [Cognos Analytics，用來針對您的資料執行「商業智慧」報告](vis_bi.html#cognos)
+{: #dvis_bi}
+
+- [Cognos Analytics，用來針對您的資料執行「商業智慧」報告](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](vis_bi.html#tableau)
-- [Microsoft Excel](vis_bi.html#excel)
-- [Esri ArcGIS for Desktop，用來使用您的資料執行地理空間分析和地圖發佈](vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop，用來使用您的資料執行地理空間分析和地圖發佈](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 ### 資料科學
-- [Watson Studio（先前稱為 IBM Data Science Experience）](data_sci.html#watson_studio)
-- [SPSS Statistics](data_sci.html#spss_stats)
-- [SAS](data_sci.html#sas)
-- [Local R 開發環境](data_sci.html#r_dev_env)
+{: #dsci}
+
+- [Watson Studio（先前稱為 IBM Data Science Experience）](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
+- [Local R 開發環境](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
 
 ## 連接至另一個 Db2 資料庫
 {: #fed}
@@ -132,6 +142,6 @@ lastupdated: "2018-10-15"
 
 這項功能在所有版本的 {{site.data.keyword.dashdbshort_notm}} 上皆受支援，但入門方案例外。不過，您可以使用入門方案作為從中取回資料的目標。
 
-- [資料虛擬化（聯合）](../federation.html)
+- [資料虛擬化（聯合）](/docs/services/Db2whc/federation.html)
 
 

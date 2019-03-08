@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -84,12 +88,12 @@ Queste istruzioni spiegano come creare una connessione da IBM® SPSS® Statistic
 {: shortdesc}
 
 ### Prerequisiti
-{: #prereq1}
+{: #prereq11}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 ### Procedura
-{: #proc1}
+{: #proc11}
 
 1. In SPSS Statistics, fai clic su **File > Open Database > New Query**.
     
@@ -101,11 +105,11 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
    b. Nella finestra Create New Data Source, seleziona il driver denominato **IBM DB2 ODBC DRIVER** e fai clic su **Finish**.
 
-   Assicurati che il driver selezionato non sia un driver con un nome simile come ad esempio `IBM DB2® ODBC DRIVER - DB2COPY`. Se il driver non compare nell'elenco, esci da SPSS Statistics, quindi scarica e installa il driver. Consulta [Pacchetto del driver Db2](driver_pkg.html).
+   Assicurati che il driver selezionato non sia un driver con un nome simile come ad esempio `IBM DB2® ODBC DRIVER - DB2COPY`. Se il driver non compare nell'elenco, esci da SPSS Statistics, quindi scarica e installa il driver. Consulta [Pacchetto del driver Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
         
    c. Nella finestra ODBC IBM Driver - Add, immetti un nome dell'origine dati (normalmente il nome del database a cui ti stai collegando) e fai clic su **Add**.
         
-   d. Dalla finestra CLI/ODBC Settings, nella scheda **Data Source**, immetti l'ID utente e la password dalle [informazioni di connessione](credentials.html) che hai raccolto in precedenza.
+   d. Dalla finestra CLI/ODBC Settings, nella scheda **Data Source**, immetti l'ID utente e la password dalle [informazioni di connessione](/docs/services/Db2whc/connecting/credentials.html) che hai raccolto in precedenza.
         
    e. Nella pagina Advanced Settings, per ognuno dei seguenti parametri, fai clic su **Add** per aprire la finestra Add CLI Parameter ed iniziare la procedura e fai clic su **OK** per tornare alla pagina Advanced Settings:
             
@@ -134,12 +138,12 @@ Queste istruzioni spiegano come creare una connessione da SAS a un database {{si
 {: shortdesc}
 
 ### Prerequisiti
-{: #prereq2}
+{: #prereq12}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 ### Procedura
-{: #proc2}
+{: #proc12}
 
 Per i passi su come eseguire la connessione da SAS a un database {{site.data.keyword.dashdbshort_notm}}, consulta la documentazione SAS:
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -151,12 +155,12 @@ Invece di utilizzare l'ambiente RStudio® integrato in IBM Watson Studio, potres
 {: shortdesc}
 
 ### Prerequisiti
-{: #prereq3}
+{: #prereq13}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 ### Procedura
-{: #proc3}
+{: #proc13}
 
 1. Nel tuo ambiente R locale, installa il pacchetto `ibmdbR` immettendo il seguente comando:
 
@@ -170,7 +174,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
         
    b. Apri il tuo ambiente di sviluppo R installato localmente.
         
-   c. Al prompt di R, immetti le seguenti istruzioni per creare la connessione. Sostituisci i segnaposti con le [informazioni di connessione](credentials.html) che hai raccolto in precedenza.
+   c. Al prompt di R, immetti le seguenti istruzioni per creare la connessione. Sostituisci i segnaposti con le [informazioni di connessione](/docs/services/Db2whc/connecting/credentials.html) che hai raccolto in precedenza.
 
    - Se il tuo ambiente di sviluppo R installato localmente è in esecuzione nel database {{site.data.keyword.dashdbshort_notm}}:
 

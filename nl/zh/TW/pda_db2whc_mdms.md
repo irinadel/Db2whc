@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,7 @@ MDMS 提供一種快速、簡單、安全方式，將多個 TB 到多個 PB 的�
    - 網路遮罩 
    - 存取使用者介面 (UI) 的預設閘道
 3. Cloud Object Storage 下載目的地<br/>
-   **重要事項**：您在美國跨區域或美國南部位置必須至少具有一個 {{site.data.keyword.cos_full}} 帳戶及一個儲存區，才能完成要求表單。如果您尚未有 {{site.data.keyword.cos_full_notm}} 帳戶，請先建立一個，再要求 MDMS 裝置。如需相關資訊，請參閱：[關於 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。
+   您在美國跨區域或美國南部位置必須至少具有一個 {{site.data.keyword.cos_full}} 帳戶及一個儲存區，才能完成要求表單。如果您尚未有 {{site.data.keyword.cos_full_notm}} 帳戶，請先建立一個，再要求 MDMS 裝置。如需相關資訊，請參閱：[關於 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。{: important}
 
 ## 步驟 1：建立要求
 {: #create-req}
@@ -107,9 +111,12 @@ MDMS 裝置接受所有標準電源範圍。![電源範圍](/images/PowerRating.
 2. 決定裝置的最佳擺放位置；在該處，它應可連接電源及乙太網路（1GbE 及 10GbE）連線，而且附近人潮流量最少。
 
 3. 讓裝置就定位以便連接。使用期間它可以留在運輸盒中。確定裝置處於室溫，且其上沒有凝結情況。使用盒蓋下方提供的電源線來連接電源。開啟裝置電源。<br/>
-    **附註**：有兩個電源交換器。
-    ![電源交換器](/images/MDMSPowerSwitch.png)
-    **附註**：不需要從可攜式盒子中取出裝置。
+    有兩個電源開關。
+    {: note}
+
+    ![電源開關](/images/MDMSPowerSwitch.png)
+    不需要從可攜式盒子中取出裝置。
+    {: note}
 
 4. 從盒蓋中取下 CAT6A 纜線，並將它連接至圖片中顯示的 Eth3 (10GbE-B) 埠。
     ![Eth1 及 Eth3 埠位置](/images/MDMSNewEth1and3.png)
@@ -119,14 +126,16 @@ MDMS 裝置接受所有標準電源範圍。![電源範圍](/images/PowerRating.
 6. 如果可以透過瀏覽器 `https://<your_Eth3_IP_Address>` 到達針對 Eth3 配置的 IP 位址，請繼續下一步。 
 
    否則，連接至 Eth1 (1GbE-B) 埠。開啟您的瀏覽器，並輸入 `https://<your_Eth1_IP_Address>`。輸入適合於網路配置的 Eth1 IP 位址。接受憑證條款。<br/>
-   **附註**：如果您需要變更 Eth3 或 Eth1 的任何 IP 設定，請參閱 [IP 位址配置](#ip_cfg)一節。
+   如果您需要變更 Eth3 或 Eth1 的任何 IP 設定，請參閱 [IP 位址配置](#ip_cfg)一節。
+   {: note}
 
 7. 使用提供的使用者名稱及密碼來登入。<br/>
     ![登入頁面](/images/Login.png)
 
 8. 工作流程精靈會從左至右依序呈現常用特定項目的存取。<br/>
     ![工作流程圖示](/images/workflow.png) <br/>
-    **附註**：可以使用 GUI 左上方的**工作流程管理程式**來重新開啟工作流程。
+    可以使用 GUI 左上方的**工作流程管理程式**來重新開啟工作流程。
+    {: note}
 
 9. 啟動預先配置的儲存區：
     - 按一下**解除鎖定並啟動儲存區**。

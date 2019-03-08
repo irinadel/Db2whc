@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,12 +28,14 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 先决条件
+{: #prereq51}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
 ## 过程
+{: #proc51}
 
 1. 以管理员身份运行下载的可执行文件。
 
@@ -37,5 +43,6 @@ lastupdated: "2018-09-25"
 2. [*可选*] 将驱动程序包安装目录的 `bin` 子目录添加到 `%PATH%` 环境变量（以便可以在不指定命令可执行文件完整路径的情况下运行 **db2cli** 命令。）
 
 ## 后续操作
+{: #wn51}
 
-为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](driver_pkg_cfg.html)。
+为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。

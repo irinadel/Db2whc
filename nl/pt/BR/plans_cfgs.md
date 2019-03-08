@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -49,7 +53,7 @@ Caso você não veja no catálogo uma configuração da qual precisa, entre em c
 A tabela a seguir fornece informações sobre a disponibilidade dos vários planos do {{site.data.keyword.dashdbshort_notm}} pelos data centers localizados nas regiões geográficas:
 
 
-|Planos do {{site.data.keyword.dashdbshort_notm}} | Ásia / Pacífico | Europa    | América do Norte / Central     | América do Sul |
+| Planos do {{site.data.keyword.dashdbshort_notm}} | Ásia / Pacífico | Europa    | América do Norte / Central     | América do Sul |
 |------------------------------|--------------|-----------|-----------------------    |---------------|
 | Flex                         | *NA          | Frankfurt | Washington D.C. (us-leste) | *NA           |
 |                              |              |           | Dallas (us-sul)         |               |  
@@ -74,7 +78,7 @@ A tabela a seguir fornece informações sobre a disponibilidade dos vários plan
 ## Restrições do plano de entrada
 {: #ep_restrictions}
 
-É altamente recomendável usar um plano de serviço de nível corporativo em vez de um plano de serviço de entrada para cargas de trabalho essenciais e sensíveis ao desempenho.
+É altamente recomendável usar um plano de serviço de nível corporativo em vez de um plano de serviço de entrada para cargas de trabalho essenciais e sensíveis ao desempenho. 
 {: important}
 
 A seguir está uma tabela de {{site.data.keyword.dashdbshort_notm}} Restrições de plano de entrada:

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Pour connecter les applications locales et les outils à votre base de données 
 {: shortdesc}
 
 ## Prérequis
+{: #prereq21}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -36,6 +41,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ## Procédure
+{: #proc21}
 
 1. Ajoutez des entrées pour votre base de données dans le fichier de configuration du pilote, `db2dsdriver.cfg`.
 

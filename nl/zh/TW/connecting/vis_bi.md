@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq1}
+{: #prereq8}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
-{: #proc1}
+{: #proc8}
 
 1. 在「Tableau 桌面」中，於您的工具中開啟用來定義資料庫連線的視窗或頁面。
 2. 從開始頁面中，按一下**連接至資料**。
@@ -80,16 +84,16 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq2}
+{: #prereq9}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 您必須在本端電腦上安裝 Db2 驅動程式套件或 IBM® Data Server Driver Package。 
 
 **限制**：只在 Windows 作業系統上，才支援 Excel 與 {{site.data.keyword.dashdbshort_notm}} 之間的連線。
 
 ### 程序
-{: #proc2}
+{: #proc9}
 
 1. 在 Web 主控台中，移至**執行 SQL** 頁面。
     
@@ -121,16 +125,16 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq3}
+{: #prereq10}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 您必須在電腦上安裝 Db2 驅動程式套件或 IBM® Data Server Driver Package。
 
 ### 程序
-{: #proc3}
+{: #proc10}
 
-1. 從您預先收集的[連線資訊](credentials.html)中，判定您的 ODBC DSN 資料。
+1. 從您預先收集的[連線資訊](/docs/services/Db2whc/connecting/credentials.html)中，判定您的 ODBC DSN 資料。
 
 2. 建立新的連線：
       

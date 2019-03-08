@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # Aperçu de la connexion
-{: #connect}
+{: #connect_ov}
 
 Vous pouvez connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} des interfaces de ligne de commande, des applications et outils tiers ou propres à IBM®, ou encore des applications que vous créez. 
 {: shortdesc}
@@ -59,21 +63,21 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 ### Collecte des informations de connexion
 {: #collect_info}
 
-- [Détails de la base de données et données d'identification de connexion](credentials.html)
+- [Détails de la base de données et données d'identification de connexion](/docs/services/Db2whc/connecting/credentials.html)
 
 ### Téléchargement et installation du module de pilote
 {: #dl_install}
 
-- [Téléchargement du module de pilote](driver_pkg.html)
-- [Installation sur Linux ou PowerLinux](install_linux.html)
-- [Installation sur Mac OS X](install_mac.html)
-- [Installation sur Windows](install_win.html)
+- [Téléchargement du module de pilote](/docs/services/Db2whc/connecting/driver_pkg.html)
+- [Installation sur Linux ou PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
+- [Installation sur Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Installation sur Windows](/docs/services/Db2whc/connecting/install_win.html)
 
 ### Configuration de votre environnement
 {: #cfg_env}
 
-- [Configuration de votre environnement](driver_pkg_cfg.html)
-- [Prise en charge de SSL (Secure Sockets Layer)](ssl.html)
+- [Configuration de votre environnement](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
+- [Prise en charge de SSL (Secure Sockets Layer)](/docs/services/Db2whc/connecting/ssl.html)
 
 ## Connexion à l'aide d'un programme
 {: #conx_prgrm}
@@ -81,12 +85,12 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 Vous pouvez utiliser les langages de programmation communs pour créer des applications qui se connectent à une base de données {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
 
-- [JDBC](jdbc.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
 - [Microsoft Windows ODBC ou CLI](odbc_cli.html)
-- [.NET](net_apps.html)
-- [ODBC Data Source Administrator](odbc_data_source_admin.html)
-- [PHP](php.html)
-- [API REST](rest_api.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [API REST](/docs/services/Db2whc/connecting/rest_api.html)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -100,30 +104,36 @@ Vous pouvez aussi connecter des outils et des applications externes à {{site.da
 et les utiliser pour gérer ou analyser vos données. Exemple :
 
 ### Intégration des données
+{: #di}
+
 - Connectez vos applications {{site.data.keyword.Bluemix_short}} qui nécessitent une base de données analytique.
-- [DataStage](data.html#datastage)
-- [Informatica](data.html#informatica)
+- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
+- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
 - [Lift ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](data.html#idr)
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
 - [Segment ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](data.html#data_studio)
-- [Data Server Manager](data.html#dsm)
-- [CLPPLUS](data.html#clpplus)
-- [Aginity Workbench pour la migration des modèles de données Netezza® et des données vers {{site.data.keyword.dashdbshort_notm}}](data.html#aginity_wb)
-- [InfoSphere Data Architect pour la conception et le déploiement de votre schéma de base de données](data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
+- [Data Server Manager](/docs/services/Db2whc/connecting/data.html#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
+- [Aginity Workbench pour la migration des modèles de données Netezza® et des données vers {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)
+- [InfoSphere Data Architect pour la conception et le déploiement de votre schéma de base de données](/docs/services/Db2whc/connecting/data.html#ida)
 
 ### Visualisation des données/Intelligence métier
-- [Cognos Analytics pour exécuter les rapports de Business Intelligence pour vos données](vis_bi.html#cognos)
+{: #dvis_bi}
+
+- [Cognos Analytics pour exécuter les rapports de Business Intelligence pour vos données](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](vis_bi.html#tableau)
-- [Microsoft Excel](vis_bi.html#excel)
-- [Esri ArcGIS for Desktop pour la réalisation d'analyses géospatiales et de publications de cartes avec vos données](vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop pour la réalisation d'analyses géospatiales et de publications de cartes avec vos données](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 ### Data science
-- [Watson Studio (avant : IBM Data Science Experience)](data_sci.html#watson_studio)
-- [SPSS Statistics](data_sci.html#spss_stats)
-- [SAS](data_sci.html#sas)
-- [Environnement de développement R local](data_sci.html#r_dev_env)
+{: #dsci}
+
+- [Watson Studio (avant : IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
+- [Environnement de développement R local](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
 
 ## Connexion à une autre base de données Db2
 {: #fed}
@@ -132,6 +142,6 @@ La virtualisation des données Db2 (qui porte également le nom de fédération)
 
 Cette fonction est prise en charge sur toutes les versions de {{site.data.keyword.dashdbshort_notm}}, à l'exception du plan Entry. Toutefois, vous pouvez utiliser le plan Entry comme cible à partir de laquelle extraire des données.
 
-- [Virtualisation des données (fédération)](../federation.html)
+- [Virtualisation des données (fédération)](/docs/services/Db2whc/federation.html)
 
 

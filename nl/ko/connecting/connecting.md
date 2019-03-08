@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -18,7 +22,7 @@ lastupdated: "2018-10-15"
 {:pre: .pre}
 
 # 연결 개요
-{: #connect}
+{: #connect_ov}
 
 명령행 인터페이스, IBM® 또는 서드파티 애플리케이션 및 도구, 또는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 작성하는 앱을 연결할 수 있습니다. 
 {: shortdesc}
@@ -59,21 +63,21 @@ lastupdated: "2018-10-15"
 ### 연결 정보 수집
 {: #collect_info}
 
-- [데이터베이스 세부사항 및 연결 인증 정보](credentials.html)
+- [데이터베이스 세부사항 및 연결 인증 정보](/docs/services/Db2whc/connecting/credentials.html)
 
 ### 드라이버 패키지 다운로드 및 설치
 {: #dl_install}
 
-- [드라이버 패키지 다운로드](driver_pkg.html)
-- [Linux 또는 PowerLinux에서 설치](install_linux.html)
-- [Mac OS X에서 설치](install_mac.html)
-- [Windows에서 설치](install_win.html)
+- [드라이버 패키지 다운로드](/docs/services/Db2whc/connecting/driver_pkg.html)
+- [Linux 또는 PowerLinux에서 설치](/docs/services/Db2whc/connecting/install_linux.html)
+- [Mac OS X에서 설치](/docs/services/Db2whc/connecting/install_mac.html)
+- [Windows에서 설치](/docs/services/Db2whc/connecting/install_win.html)
 
 ### 환경 구성
 {: #cfg_env}
 
-- [환경 구성](driver_pkg_cfg.html)
-- [SSL(Secure Sockets Layer) 지원](ssl.html)
+- [환경 구성](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
+- [SSL(Secure Sockets Layer) 지원](/docs/services/Db2whc/connecting/ssl.html)
 
 ## 프로그래밍 방식으로 연결
 {: #conx_prgrm}
@@ -81,12 +85,12 @@ lastupdated: "2018-10-15"
 공통 프로그래밍 언어를 사용하여 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 애플리케이션을 작성할 수 있습니다.
 {: shortdesc}
 
-- [JDBC](jdbc.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
 - [Microsoft Windows ODBC 또는 CLI](odbc_cli.html)
-- [.NET](net_apps.html)
-- [ODBC 데이터 소스 관리자](odbc_data_source_admin.html)
-- [PHP](php.html)
-- [REST API](rest_api.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC 데이터 소스 관리자](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -99,30 +103,36 @@ lastupdated: "2018-10-15"
 외부 애플리케이션과 도구를 {{site.data.keyword.dashdbshort_notm}}에 연결하고 이 기능들을 사용하여 데이터를 더 정교하게 관리, 분석할 수도 있습니다. 예를 들어, 다음과 같습니다.
 
 ### 데이터 통합
+{: #di}
+
 - 분석 데이터베이스가 필요한 {{site.data.keyword.Bluemix_short}} 애플리케이션을 연결합니다.
-- [DataStage](data.html#datastage)
-- [Informatica](data.html#informatica)
+- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
+- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
 - [Lift ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](data.html#idr)
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
 - [Segment ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](data.html#data_studio)
-- [Data Server Manager](data.html#dsm)
-- [CLPPLUS](data.html#clpplus)
-- [Aginity Workbench - Netezza® 데이터 모델 및 데이터를 {{site.data.keyword.dashdbshort_notm}}](data.html#aginity_wb)로 마이그레이션
-- [InfoSphere Data Architect - 데이터베이스 스키마 설계 및 배치](data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
+- [Data Server Manager](/docs/services/Db2whc/connecting/data.html#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
+- [Aginity Workbench - Netezza® 데이터 모델 및 데이터를 {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)로 마이그레이션
+- [InfoSphere Data Architect - 데이터베이스 스키마 설계 및 배치](/docs/services/Db2whc/connecting/data.html#ida)
 
 ### 데이터 시각화/BI
-- [Cognos Analytics - 데이터에 대한 Business Intelligence 보고서 실행](vis_bi.html#cognos)
+{: #dvis_bi}
+
+- [Cognos Analytics - 데이터에 대한 Business Intelligence 보고서 실행](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
 - [Looker ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](vis_bi.html#tableau)
-- [Microsoft Excel](vis_bi.html#excel)
-- [Esri ArcGIS for Desktop - 데이터를 사용하여 지리공간 분석 및 지도 발행](vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
+- [Esri ArcGIS for Desktop - 데이터를 사용하여 지리공간 분석 및 지도 발행](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
 
 ### 데이터 사이언스
-- [Watson Studio(이전의 IBM Data Science Experience)](data_sci.html#watson_studio)
-- [SPSS Statistics](data_sci.html#spss_stats)
-- [SAS](data_sci.html#sas)
-- [로컬 R 개발 환경](data_sci.html#r_dev_env)
+{: #dsci}
+
+- [Watson Studio(이전의 IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
+- [로컬 R 개발 환경](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
 
 ## 다른 Db2 데이터베이스에 연결
 {: #fed}
@@ -131,6 +141,6 @@ Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.dashdbsho
 
 이 기능은 엔트리 플랜을 제외한 모든 버전의 {{site.data.keyword.dashdbshort_notm}}에서 지원됩니다. 그러나 데이터를 가져올 수 있는 대상으로 엔트리 플랜을 사용할 수 있습니다.
 
-- [데이터 가상화(연합)](../federation.html)
+- [데이터 가상화(연합)](/docs/services/Db2whc/federation.html)
 
 

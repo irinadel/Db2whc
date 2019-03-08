@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 必要條件
+{: #prereq71}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 程序
+{: #proc71}
 
 下列步驟顯示如何使用 .NET 將您的應用程式連接至資料庫。
 
@@ -58,7 +64,7 @@ lastupdated: "2018-09-25"
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-2. [*Optional*]: To驗證資料庫的 .NET 連線，在命令提示字元中輸入下列指令：
+2. [*選用*] 若要驗證資料庫的 .NET 連線，請在命令提示字元中輸入下列指令：
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 
@@ -71,6 +77,7 @@ lastupdated: "2018-09-25"
    `<password>`：您用來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫的密碼。 
 
 ## 範例
+{: #ex71}
 
 下列語法所顯示的範例 C# 程式碼使用 .NET 驅動程式來建立與資料庫的連線。
 

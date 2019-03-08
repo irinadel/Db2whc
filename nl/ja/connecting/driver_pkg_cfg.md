@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 前提条件
+{: #prereq21}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -36,6 +41,7 @@ lastupdated: "2018-09-25"
 3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
 
 ## 手順
+{: #proc21}
 
 1. ドライバー構成ファイル `db2dsdriver.cfg` に、データベースに関する項目を追加します。
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
    - Netzmaske 
    - Standardgateway zum Zugreifen auf die Benutzerschnittstelle
 3. Download-Zieladresse für die Cloud Object Storage-Instanz <br/>
-   **Wichtig**: Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Schritt 1: Anfrageerstellung
 {: #create-req}
@@ -108,9 +113,12 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 2. Legen Sie den bestgeeigneten Standort für Ihre Einheit fest, von dem die Stromversorgung und die Ethernet-Verbindung (1GbE und 10GbE) sichergestellt sind und von dem die Einheit gut erreicht werden kann.
 
 3. Positionieren Sie die Einheit dort, wo sie verbunden werden soll. Sie kann während der Nutzung in der Transportverpackung bleiben. Stellen Sie sicher, dass der Standort Raumtemperatur besitzt und dass keine Kondensation vorhanden ist. Schließen Sie die Einheit an die Stromversorgung an, indem Sie das mitgelieferte Netzkabel unter dem Gehäusedeckel verwenden. Schalten Sie die Einheit ein.<br/>
-    **Hinweis**: Es gibt zwei Netzschalter.
+    Es gibt zwei Netzschalter.
+    {: note}
+
     ![Netzschalter](/images/MDMSPowerSwitch.png)
-    **Hinweis**: Die Einheit muss nicht aus der Transportverpackung genommen werden.
+    Die Einheit muss nicht aus der Transportverpackung genommen werden.
+    {: note}
 
 4. Nehmen Sie das CAT6A-Kabel aus dem Gehäusedeckel und schließen Sie es an den Eth3-Anschluss (10GbE-B) an, wie in der Abbildung dargestellt.
     ![Eth1- und Eth3-Anschlussposition](/images/MDMSNewEth1and3.png)
@@ -120,14 +128,16 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 6. Wenn die IP-Adresse, die für Eth3 konfiguriert wurde, über einen Browser `https://<your_Eth3_IP_Address>` erreicht werden kann, fahren Sie mit dem nächsten Schritt fort. 
 
    Stellen Sie anderenfalls eine Verbindung mit dem Eth1-Port (1GbE-B) her. Öffnen Sie Ihrem Browser und geben Sie Folgendes ein: `https://<your_Eth1_IP_Address>`. Geben Sie die Eth1-IP-Adresse für Ihre Netzkonfiguration ein. Akzeptieren Sie die Zertifikatsausnahme.<br/>
-   **Hinweis**: Wenn Sie die IP-Einstellungen für Eth3 oder Eth1 ändern müssen, lesen Sie den Abschnitt [IP-Adresskonfiguration](#ip_cfg).
+   Wenn Sie die IP-Einstellungen für Eth3 oder Eth1 ändern müssen, lesen Sie den Abschnitt [IP-Adresskonfiguration](#ip_cfg).
+   {: note}
 
 7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden.<br/>
     ![Anmeldeseite](/images/Login.png)
 
 8. Der Workflow-Assistent bietet Zugriff auf die spezifischen Elemente, die normalerweise in der Reihenfolge von links nach rechts verwendet werden.<br/>
     ![Workflow-Symbole](/images/workflow.png) <br/>
-    **HINWEIS**: Der Workflow kann erneut geöffnet werden, indem oben links in der Benutzeroberfläche der **Workflow-Manager** verwendet wird.
+    Der Workflow kann erneut geöffnet werden, indem oben links in der Benutzeroberfläche der **Workflow-Manager** verwendet wird.
+    {: note}
 
 9. Aktivieren Sie den vorkonfigurierten Speicherpool:
     - Klicken Sie auf **Speicherpool entsperren und starten**.

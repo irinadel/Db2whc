@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Após seu sistema ser provisionado e sempre que seus requisitos mudarem, será p
 ![Visualização da página de núcleos de cálculo do console da web](images/launch.png)
 
 ![Visualização da página de núcleos de cálculo do console da web](images/scaling_full.png)
-
 
 ## Núcleos de cálculo
 {: #cores}

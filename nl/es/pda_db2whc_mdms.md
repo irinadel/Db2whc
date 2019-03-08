@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ MDMS ofrece una forma rápida, sencilla y segura para transferir físicamente de
    - Máscara de red 
    - Pasarela predeterminada para acceder a la interfaz de usuario (IU)
 3. Destino de descarga de Cloud Object Storage <br/>
-   **Importante**: Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Paso 1: creación de una solicitud
 {: #create-req}
@@ -107,8 +112,12 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
 2. Determine el lugar más adecuado para colocar el dispositivo; donde lleguen tanto la alimentación como las conexiones Ethernet (1 GbE y 10 GbE) y donde pase el mínimo de gente cerca.
 
 3. Coloque el dispositivo para conectarlo. Puede permanecer en el maletín de transporte durante su uso. Asegúrese de que el dispositivo esté a temperatura ambiente y de que no haya condensación en él. Conecte el dispositivo a la corriente mediante el cable de alimentación proporcionado debajo de la tapa del compartimento. Encienda el dispositivo.<br/>
-    **Nota**: hay dos interruptores de alimentación. ![Interruptores de alimentación](/images/MDMSPowerSwitch.png)
-    **Nota**: no es necesario que el dispositivo se extraiga del compartimento portátil.
+    Hay dos interruptores de alimentación.
+    {: note}
+
+    ![Conmutadores Power](/images/MDMSPowerSwitch.png)
+    No es necesario que el dispositivo se extraiga del compartimento portátil.
+    {: note}
 
 4. Extraiga el cable CAT6A de la tapa del compartimento y conéctelo al puerto Eth3 (10 GbE-B) que se muestra en la imagen.
     ![Ubicación de los puertos Eth1 y Eth3](/images/MDMSNewEth1and3.png)
@@ -118,14 +127,16 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
 6. Si se puede llegar a la dirección IP configurada para Eth3 mediante un navegador `https://<your_Eth3_IP_Address>`, vaya al siguiente paso. 
 
    De lo contrario, conéctelo en el puerto Eth1 (1 GbE-B). Abra el navegador y escriba `https://<your_Eth1_IP_Address>`. Especifique la dirección IP de Eth1 adecuada para su configuración de red. Acepte la excepción de certificado.<br/>
-   **Nota**: Si tiene que modificar los valores de IP para Eth3 o Eth1, consulte la sección [Configuración de dirección IP](#ip_cfg).
+   Si tiene que modificar los valores de IP para Eth3 o Eth1, consulte la sección [Configuración de dirección IP](#ip_cfg).
+   {: note}
 
 7. Utilice el nombre de usuario y la contraseña proporcionados para iniciar la sesión.<br/>
     ![Página de inicio de sesión](/images/Login.png)
 
 8. El asistente de flujo presenta el acceso a los temas específicos utilizados habitualmente ordenados de izquierda a derecha.<br/>
     ![Iconos de flujo de trabajos](/images/workflow.png) <br/>
-    **NOTA**: El flujo de trabajo se puede reabrir con **Gestor de trabajo** de la parte superior izquierda de la GUI.
+    El flujo de trabajo se puede reabrir con **Gestor de trabajo** de la parte superior izquierda de la GUI.
+    {: note}
 
 9. Active la agrupación de almacenamiento preconfigurado:
     - Pulse **Desbloquear e iniciar agrupación de almacenamiento**.

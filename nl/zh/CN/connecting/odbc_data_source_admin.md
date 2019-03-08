@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 先决条件
+{: #prereq91}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,8 +38,9 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 过程
+{: #proc91}
 
-1. 安装 [Db2 驱动程序包](driver_pkg.html)。
+1. 安装 [Db2 驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
 
 2. 打开 ODBC 数据源管理器，并为 Db2 驱动程序包创建“用户 DSN”或“系统 DSN”。
     

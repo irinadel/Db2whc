@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq1}
+{: #prereq8}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 过程
-{: #proc1}
+{: #proc8}
 
 1. 在 Tableau Desktop 中，打开工具中用于定义数据库连接的窗口或页面。
 2. 在开始页面中，单击**连接到数据**。
@@ -80,16 +84,16 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq2}
+{: #prereq9}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 您必须在本地计算机上安装 Db2 驱动程序包或 IBM® Data Server Driver Package。 
 
 **限制**：仅 Windows 操作系统上支持 Excel 与 {{site.data.keyword.dashdbshort_notm}} 的连接。
 
 ### 过程
-{: #proc2}
+{: #proc9}
 
 1. 在 Web 控制台中，转至**运行 SQL** 页面。
     
@@ -121,16 +125,16 @@ lastupdated: "2018-10-24"
 {: shortdesc}
 
 ### 先决条件
-{: #prereq3}
+{: #prereq10}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 您必须在计算机上安装 Db2 驱动程序包或 IBM® Data Server 驱动程序包。
 
 ### 过程
-{: #proc3}
+{: #proc10}
 
-1. 根据预先收集的[连接信息](credentials.html)来确定 ODBC DSN 数据。
+1. 根据预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)来确定 ODBC DSN 数据。
 
 2. 创建新连接：
       

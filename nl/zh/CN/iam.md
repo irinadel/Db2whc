@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ lastupdated: "2019-01-21"
 服务标识用于标识服务或应用程序，类似于用户标识对用户进行标识的方式。服务标识是可以由应用程序用于向 {{site.data.keyword.Bluemix_notm}} 服务进行认证的标识。服务标识代表持有 IBM 标识中的独立实体。因此，可以授予特定于数据库中服务标识的不同权限和许可权。服务标识没有密码。必须为每个服务标识创建一个 API 密钥，相应的服务标识才能连接到数据库服务实例。有关服务标识的更多信息，请参阅：[{{site.data.keyword.Bluemix_notm}} IAM 服务标识和 API 密钥简介 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}。
 
 ## 客户机连接和用户登录
-{: #connect}
+{: #connect_login}
 
 **先决条件**：Db2 Client V11.1 FP3 和更高版本。
 
@@ -131,19 +135,19 @@ IBM 标识/密码可以用于登录到控制台，也可以在应用程序中按
 
     **访问令牌**
 
-    通过在 CLP 命令提示符或脚本中运行以下命令连接到数据库服务器 `<database_server_name>` 并传递访问令牌：
+    连接到数据库服务器 `<database_server_name>` 并传递访问令牌：
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
     **API 密钥**
 
-    通过在 CLP 命令提示符或脚本中运行以下命令，使用 API 密钥连接到数据库服务器 `<database_server_name>`：
+    连接到数据库服务器 `<database_server_name>`：
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **IBM 标识/密码**
 
-    通过在 CLP 命令提示符或脚本中运行以下命令，使用 IBM 标识/密码连接到数据库服务器 `<database_server_name>`：
+    连接到数据库服务器 `<database_server_name>`：
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
@@ -280,7 +284,7 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
 有关服务的 API 的更多详细信息，请参阅：[{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2whc_api){:new_window}。
 
 ## IBM 标识联合
-{: #fed}
+{: #ibmid_fed}
 
 要使用您自己的身份提供者（例如，LDAP），您必须先使用 IBM 标识联合 LDAP 服务器。有关使用 IBM 标识联合 LDAP 服务器的指示信息，请参阅：[IBMid Enterprise Federation Adoption Guide ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}。完成 IBM 标识联合，并且数据库管理员将允许的用户添加到数据库服务实例后，这些用户就可以使用其公司用户标识和密码登录到控制台。或者，这些用户可以通过某个支持的数据库客户机接口，使用代表其用户标识的访问令牌或 API 密钥来连接到数据库服务实例。
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-07-18"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -55,11 +59,12 @@ At times, you might choose to partition (shard) your data. With federation capab
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 開始使用
-{: #getting_started}
+{: #gtng_strtd}
 
 下列步驟是您如何聯合不同資料來源，使得資料彷彿從單一來源擷取的範例。下列範例說明兩個 {{site.data.keyword.dashdbshort_notm}} 資料庫的聯合：
 
 ### 在 Db2 Warehouse on Cloud 目標機器上
+{: #targ}
 
 主機名稱：targetdotcom
 
@@ -68,6 +73,7 @@ At times, you might choose to partition (shard) your data. With federation capab
 2. 從 {{site.data.keyword.dashdbshort_notm}} 主控台，以使用者 `admin2` 的身份、密碼 `YYYY`，在 `testdata` 表格載入資料。
 
 ### 在用來作為聯合來源的 Db2 Warehouse on Cloud 機器上
+{: #fed_src}
 
 從 {{site.data.keyword.dashdbshort_notm}} 主控台：
 

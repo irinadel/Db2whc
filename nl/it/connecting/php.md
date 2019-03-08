@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Definisci una connessione tra un'applicazione PHP e un database {{site.data.keyw
 {: shortdesc}
 
 ## Prerequisiti
+{: #prereq101}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,10 +38,12 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedura
+{: #proc101}
 
 ### Scenario 1: Connessione dall'esterno di {{site.data.keyword.Bluemix_notm}}:
-        
-1. Scarica il [pacchetto del driver Db2](driver_pkg.html) dalla console web e installalo sulla macchina in cui verrà eseguita la tua applicazione PHP.
+{: #scen1}
+
+1. Scarica il [pacchetto del driver Db2](/docs/services/Db2whc/connecting/driver_pkg.html) dalla console web e installalo sulla macchina in cui verrà eseguita la tua applicazione PHP.
                 
 2. Utilizza la funzione [`odbc_connect` ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://php.net/manual/en/function.odbc-connect.php){:new_window} per il collegamento al database BLUDB.
     
@@ -94,6 +101,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
    ```
 
 ### Scenario 2: Connessione da una pagina web PHP in {{site.data.keyword.Bluemix_notm}}
+{: #scen2}
 
 1. Dal catalogo {{site.data.keyword.Bluemix_notm}}, crea una nuova applicazione PHP.
         

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Defina una conexión entre una ODBC de Microsoft Windows o una aplicación de CL
 {: shortdesc}
 
 ## Requisitos previos
+{: #prereq81}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedimiento
+{: #proc81}
 
 1. En un shell de mandatos en sistemas operativos Linux, en el indicador de mandatos Windows o en la ventana de mandatos Db2 en sistemas operativos Windows, especifique los mandatos siguientes:
 

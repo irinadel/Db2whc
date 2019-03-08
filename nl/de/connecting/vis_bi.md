@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -50,12 +54,12 @@ Im Folgenden wird beschrieben, wie Sie Tableau mit einer {{site.data.keyword.das
 {: shortdesc}
 
 ### Voraussetzungen
-{: #prereq1}
+{: #prereq8}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
 
 ### Vorgehensweise
-{: #proc1}
+{: #proc8}
 
 1. Öffnen Sie in Tableau Desktop das Fenster bzw. die Seite in Ihrem Tool, über die Datenbankverbindungen definiert werden.
 2. Klicken Sie auf der Startseite auf **Connect to data**.
@@ -80,16 +84,16 @@ Im Folgenden wird beschrieben, wie Sie Microsoft Excel <!--2010--> mit einer {{s
 {: shortdesc}
 
 ### Voraussetzungen
-{: #prereq2}
+{: #prereq9}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
 
 Auf Ihrem lokalen Computer muss das Db2-Treiberpaket oder das IBM Data Server Driver-Paket installiert sein. 
 
 **Einschränkung**: Verbindungen zwischen Excel und {{site.data.keyword.dashdbshort_notm}} werden nur unter Windows-Betriebssystemen unterstützt.
 
 ### Vorgehensweise
-{: #proc2}
+{: #proc9}
 
 1. Rufen Sie in der Webkonsole die Seite **SQL ausführen** auf.
     
@@ -121,16 +125,16 @@ Sie können Esri ArcGIS for Desktop <!--version 10.3.1 --> mit einer {{site.data
 {: shortdesc}
 
 ### Voraussetzungen
-{: #prereq3}
+{: #prereq10}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
 
 Auf Ihrem Computer muss das Db2-Treiberpaket oder das IBM Data Server Driver-Paket installiert sein.
 
 ### Vorgehensweise
-{: #proc3}
+{: #proc10}
 
-1. Ermitteln Sie Ihre ODBC-DSN-Daten anhand der [Verbindungsinformationen](credentials.html), die Sie zuvor notiert haben.
+1. Ermitteln Sie Ihre ODBC-DSN-Daten anhand der [Verbindungsinformationen](/docs/services/Db2whc/connecting/credentials.html), die Sie zuvor notiert haben.
 
 2. Erstellen Sie eine neue Verbindung:
       

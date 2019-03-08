@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ O MDMS oferece uma maneira rápida, simples e segura para transferir fisicamente
    - Máscara de rede 
    - Gateway padrão para acessar a interface com o usuário (IU)
 3. Destino de download do Cloud Object Storage <br/>
-   **Importante**: é necessário ter pelo menos uma conta do {{site.data.keyword.cos_full}} e um depósito em um local para Várias regiões dos EUA ou Sul dos EUA para concluir o formulário de solicitação. Se você ainda não tiver uma conta do {{site.data.keyword.cos_full_notm}}}, crie uma antes de solicitar o dispositivo MDMS. Para obter mais informações, veja: [Sobre o {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Deve-se ter pelo menos uma conta do {{site.data.keyword.cos_full}} e um depósito em um local de uma Região cruzada dos EUA ou Sul dos EUA para concluir o formulário de solicitação. Se você ainda não tiver uma conta do {{site.data.keyword.cos_full_notm}}}, crie uma antes de solicitar o dispositivo MDMS. Para obter mais informações, veja: [Sobre o {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Etapa 1: Criando uma solicitação
 {: #create-req}
@@ -107,9 +112,12 @@ Caso um fator de forma diferente de conexão Ethernet seja necessário, deve-se 
 2. Determine o local mais apropriado para o dispositivo ser colocado; no qual ele atingirá ambas as conexões de energia e de sua Ethernet (1 GbE e 10 GbE) e terá tráfego mínimo de pedestres nas proximidades.
 
 3. Posicione o dispositivo a ser conectado. Ele pode permanecer na embalagem de transporte durante o uso. Assegure-se de que o dispositivo esteja em temperatura ambiente e que não haja condensação nele. Conecte à energia usando o cabo de alimentação fornecido embaixo da tampa da embalagem. Ligue o dispositivo.<br/>
-    **Nota**: há dois comutadores de energia.
-![Comutadores de energia](/images/MDMSPowerSwitch.png)
-    **Nota**: o dispositivo não precisa ser removido da caixa móvel.
+    Há dois comutadores de energia.
+    {: note}
+
+    ![Comutadores de energia](/images/MDMSPowerSwitch.png)
+    O dispositivo não precisa ser removido da caixa móvel.
+    {: note}
 
 4. Remova o cabo CAT6A da tampa da embalagem e conecte-a à porta Eth3 (10 GbE-B) que é mostrada na figura.
     ![Local das portas Eth1 e Eth3](/images/MDMSNewEth1and3.png)
@@ -119,14 +127,16 @@ Caso um fator de forma diferente de conexão Ethernet seja necessário, deve-se 
 6. Se o endereço IP configurado para a Eth3 puder ser acessado por meio de um navegador `https://<your_Eth3_IP_Address>`, continue com a próxima etapa. 
 
    Caso contrário, conecte-se à porta Eth1 (1 GbE-B). Abra seu navegador e insira `https://<your_Eth1_IP_Address>`. Insira o endereço IP Eth1 apropriado para sua configuração de rede. Aceite a exceção de certificado.<br/>
-   **Nota**: se você precisar alterar quaisquer configurações IP para Eth3 ou Eth1, veja a seção [Configuração do endereço IP](#ip_cfg).
+   Se precisar alterar quaisquer configurações de IP para Eth3 ou Eth1, consulte a seção [Configuração de endereço IP](#ip_cfg).
+   {: note}
 
 7. Use o nome do usuário e a senha fornecidos para efetuar login.<br/>
     ![Página de login](/images/Login.png)
 
 8. O assistente de fluxo de trabalho apresenta acesso aos itens específicos geralmente usados em ordem da esquerda para a direita.<br/>
     ![Ícones de fluxo de trabalho](/images/workflow.png) <br/>
-    **NOTA**: o fluxo de pode ser reaberto usando o **Workflow Manager** no canto superior esquerdo da GUI.
+    O fluxo de trabalho pode ser reaberto usando o **Workflow Manager** no canto superior esquerdo da GUI.
+    {: note}
 
 9. Ative o conjunto de armazenamentos pré-configurado:
     - Clique em **Desbloquear e iniciar o conjunto de armazenamentos**.

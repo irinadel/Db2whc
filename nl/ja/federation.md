@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-07-18"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -55,11 +59,12 @@ At times, you might choose to partition (shard) your data. With federation capab
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 概説
-{: #getting_started}
+{: #gtng_strtd}
 
 以下の手順では、分散したデータ・ソースを統合し、あたかも 1 つのデータ・ソースからデータを取得しているように見せる方法を例示します。 2 つの {{site.data.keyword.dashdbshort_notm}} データベースをフェデレーションする例を以下に示します。
 
 ### Db2 Warehouse on Cloud ターゲット・マシン上:
+{: #targ}
 
 ホスト名: targetdotcom
 
@@ -68,6 +73,7 @@ At times, you might choose to partition (shard) your data. With federation capab
 2. ユーザー `admin2` として、パスワード `YYYY` を使用して、{{site.data.keyword.dashdbshort_notm}} コンソールからデータが入った `testdata` テーブルをロードします。
 
 ### フェデレーション・ソースとして使用されている DB2 Warehouse on Cloud マシン上:
+{: #fed_src}
 
 {{site.data.keyword.dashdbshort_notm}} コンソールから、以下を行います。
 

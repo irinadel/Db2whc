@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-20"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,7 +56,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**참고:** {{site.data.keyword.Bluemix_notm}} Object Storage의 경우, 새 서비스 인증 정보를 작성할 때 HMAC 인증 정보를 작성하려면 *인라인 구성 매개변수 추가* 필드에 {"HMAC:true"}를 지정하십시오.
+{{site.data.keyword.Bluemix_notm}} Object Storage의 경우, 새 서비스 인증 정보를 작성할 때 HMAC 인증 정보를 작성하려면 *인라인 구성 매개변수 추가* 필드에 {"HMAC:true"}를 지정하십시오.
+{: note}
 
 {{site.data.keyword.Bluemix_notm}} Object Storage에서 데이터를 로드하는 방법에 대한 안내 데모를 보려면 [{{site.data.keyword.dashdblong}} 안내 데모: 데이터 로드 탐색 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}을 참조하십시오.
 

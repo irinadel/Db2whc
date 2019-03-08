@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 先决条件
+{: #prereq31}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -40,6 +45,7 @@ lastupdated: "2018-09-25"
    `sudo dpkg -iG *.deb` 
 
 ## 过程
+{: #proc31}
 
 1. 解压缩先前下载的压缩驱动程序包文件。
 
@@ -62,8 +68,9 @@ lastupdated: "2018-09-25"
    - **C shell**：`source db2cshrc`
 
 ## 后续操作
+{: #wn}
 
-为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](driver_pkg_cfg.html)。   
+为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。   
 
 
 

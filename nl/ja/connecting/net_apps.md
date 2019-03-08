@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 前提条件
+{: #prereq71}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 手順
+{: #proc71}
 
 以下のステップは、.NET を使用してアプリケーションをデータベースに接続する方法を示しています。
 
@@ -71,6 +77,7 @@ lastupdated: "2018-09-25"
    `<password>`: {{site.data.keyword.dashdbshort_notm}} データベースに接続するために使用するパスワード。 
 
 ## 例
+{: #ex71}
 
 以下の構文は、.NET ドライバーを使用してデータベースへの接続を行うサンプルの C# コードです。
 

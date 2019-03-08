@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-03-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -27,4 +31,5 @@ Die Datenbankadministratorrolle umfasst die Verwaltung der folgenden Benutzerzug
 * Webkonsole. Über die Webkonsole können Benutzer Abfragen für die Datenbank ausführen.
 * Datenbank. Der Administrator kann differenzierte Zugriffsberechtigungen für die Datenbank erteilen. Zum Beispiel kann er den Zugriff auf bestimmte Tabellen, Schemas, Zeilen oder Spalten begrenzen. 
 
-Weitere Informationen zum Benutzermanagement finden Sie in: [Datenbankbenutzermanagement ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+Weitere Informationen zum Benutzermanagement finden Sie hier: 
+- [Datenbankbenutzermanagement ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}

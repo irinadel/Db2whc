@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -73,7 +77,7 @@ Le tableau suivant présente des informations sur la disponibilité des différe
 ## Restrictions du plan Entry
 {: #ep_restrictions}
 
-Il est fortement recommandé d'utiliser un plan de service de niveau d'entreprise et non un plan de service Entry pour les charges de travail sensibles aux performances ou stratégiques.
+Il est fortement recommandé d'utiliser un plan de service de niveau d'entreprise et non un plan de service Entry pour les charges de travail sensibles aux performances ou stratégiques. 
 {: important}
 
 Le tableau suivant présente les restrictions du plan {{site.data.keyword.dashdbshort_notm}} Entry :

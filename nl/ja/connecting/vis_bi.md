@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -51,12 +55,12 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 {: shortdesc}
 
 ### 前提条件
-{: #prereq1}
+{: #prereq8}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
-{: #proc1}
+{: #proc8}
 
 1. Tableau Desktop で、データベース接続に使用するツールでウィンドウまたはページを開きます。
 2. 開始ページから、**「データに接続 (Connect to data)」**をクリックします。
@@ -81,16 +85,16 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 {: shortdesc}
 
 ### 前提条件
-{: #prereq2}
+{: #prereq9}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 Db2 ドライバー・パッケージか IBM® Data Server Driver Package をローカル・コンピューターにインストールしていなければなりません。 
 
 **制限事項**: Excel と {{site.data.keyword.dashdbshort_notm}} の間の接続は、Windows オペレーティング・システムに限りサポートされています。
 
 ### 手順
-{: #proc2}
+{: #proc9}
 
 1. Web コンソールで、**「SQL の実行」**ページに移動します。
     
@@ -122,16 +126,16 @@ Esri ArcGIS for Desktop <!--version 10.3.1 -->を {{site.data.keyword.dashdbshor
 {: shortdesc}
 
 ### 前提条件
-{: #prereq3}
+{: #prereq10}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 Db2 ドライバー・パッケージか IBM® Data Server Driver Package をコンピューターにインストールしていなければなりません。
 
 ### 手順
-{: #proc3}
+{: #proc10}
 
-1. 事前に収集した[接続情報](credentials.html)から ODBC DSN データを判別します。
+1. 事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)から ODBC DSN データを判別します。
 
 2. 新規接続を作成します。
       

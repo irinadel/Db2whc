@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -83,12 +87,12 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 {: shortdesc}
 
 ### 前提条件
-{: #prereq1}
+{: #prereq11}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
-{: #proc1}
+{: #proc11}
 
 1. SPSS Statistics で、**「ファイル」>「データベースを開く (Open Database)」> 「新規照会 (New Query)」**をクリックします。
     
@@ -100,11 +104,11 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 
    b. 「新規データ ソースの作成」ウィンドウで、**IBM DB2 ODBC DRIVER** という名前のドライバーを選択し、**「完了」**をクリックします。
 
-   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。 [Db2 ドライバー・パッケージ](driver_pkg.html)を参照してください。
+   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。 [Db2 ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)を参照してください。
         
    c. 「ODBC IBM ドライバー - 追加 (ODBC IBM Driver - Add)」ウィンドウで、データ・ソース名 (通常は接続先のデータベースの名前) を入力し、**「追加」** をクリックします。
         
-   d. 「CLI/ODBC 設定」ウィンドウの**「データ・ソース」**タブで、事前に収集した[接続情報](credentials.html)にあるユーザー ID とパスワードを入力します。
+   d. 「CLI/ODBC 設定」ウィンドウの**「データ・ソース」**タブで、事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)にあるユーザー ID とパスワードを入力します。
         
    e. 「詳細設定」ページで、以下のパラメーターごとに、**「追加」**をクリックして「CLI パラメーターの追加 (Add CLI Parameter)」ウィンドウを開いてステップを開始し、**「OK」**をクリックして「詳細設定」ページに戻ります。
             
@@ -133,12 +137,12 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 {: shortdesc}
 
 ### 前提条件
-{: #prereq2}
+{: #prereq12}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
-{: #proc2}
+{: #proc12}
 
 SAS から {{site.data.keyword.dashdbshort_notm}} データベースへの接続方法の手順については、以下の SAS 資料を参照してください。
 - [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -150,12 +154,12 @@ IBM Watson Studio 内に統合されている RStudio® 環境を使用する代
 {: shortdesc}
 
 ### 前提条件
-{: #prereq3}
+{: #prereq13}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
-{: #proc3}
+{: #proc13}
 
 1. ローカル R 環境で、以下のコマンドを入力して `ibmdbR` パッケージをインストールします。
 
@@ -169,7 +173,7 @@ IBM Watson Studio 内に統合されている RStudio® 環境を使用する代
         
    b. ローカルにインストールされた R 開発環境を開きます。
         
-   c. R プロンプトに以下のステートメントを入力して接続を作成します。 プレースホルダーを、事前に収集した[接続情報](credentials.html)に置き換えます。
+   c. R プロンプトに以下のステートメントを入力して接続を作成します。 プレースホルダーを、事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)に置き換えます。
 
    - ローカルにインストールされた R 開発環境が {{site.data.keyword.dashdbshort_notm}} データベース内で実行される場合は、以下のようになります。
 

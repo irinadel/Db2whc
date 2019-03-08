@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ MDMS offre un modo sicuro, veloce e semplice per trasferire fisicamente terabyte
    - Maschera di rete 
    - Gateway predefinito per accedere all'interfaccia utente (IU)
 3. Destinazione di download di Cloud Object Storage <br/>
-   **Importante**: per completare il modulo di richiesta, devi disporre di almeno un account {{site.data.keyword.cos_full}} e di un bucket in una sede degli Stati Uniti in più regioni o degli Stati Uniti Sud. Se non hai ancora un account {{site.data.keyword.cos_full_notm}}}, creane uno prima di richiedere il dispositivo MDMS. Per ulteriori informazioni, consulta: [Informazioni su {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Per completare il modulo di richiesta, devi disporre di almeno un account {{site.data.keyword.cos_full}} e di un bucket in una sede degli Stati Uniti in più regioni o degli Stati Uniti Sud. Se non hai ancora un account {{site.data.keyword.cos_full_notm}}}, creane uno prima di richiedere il dispositivo MDMS. Per ulteriori informazioni, consulta: [Informazioni su {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   {: important}
 
 ## Passo 1: Creazione di una richiesta
 {: #create-req}
@@ -108,9 +113,12 @@ Se è richiesto un fattore di forma differente della connessione Ethernet, devi 
 2. Determina la posizione più appropriata in cui collocare il dispositivo, dove raggiungerà sia l'alimentazione che le tue connessioni Ethernet (1GbE e 10GbE) e con un calpestio minimo nelle sue prossimità.
 
 3. Posiziona il dispositivo da connettere. Durante l'uso può rimanere nella custodia di trasporto. Assicurati che il dispositivo sia a temperatura ambiente e che non vi sia condensa su di esso. Connetti all'alimentazione utilizzando il cavo di alimentazione fornito sotto il coperchio della custodia. Accendi il dispositivo.<br/>
-    **Nota**: ci sono due interruttori di alimentazione.
+    Ci sono due interruttori di alimentazione.
+    {: note}
+
     ![Interruttori di alimentazione](/images/MDMSPowerSwitch.png)
-    **Nota**: non è necessario rimuovere il dispositivo dalla custodia portatile.
+    Non è necessario rimuovere il dispositivo dalla custodia portatile.
+    {: note}
 
 4. Rimuovi il cavo CAT6A dal coperchio della custodia e connettilo alla porta Eth3 (10GbE-B) mostrata nella figura.
     ![Ubicazione delle porte Eth1 e Eth3](/images/MDMSNewEth1and3.png)
@@ -120,14 +128,16 @@ Se è richiesto un fattore di forma differente della connessione Ethernet, devi 
 6. Se l'indirizzo IP configurato per Eth3 può essere raggiunto tramite un `https://<your_Eth3_IP_Address>` del browser, continua al passo successivo. 
 
    Altrimenti, stabilisci una connessione alla porta Eth1 (1GbE-B). Apri il tuo browser e immetti `https://<your_Eth1_IP_Address>`. Immetti l'indirizzo IP Eth1 appropriato per la tua configurazione di rete. Accetta l'eccezione del certificato.<br/>
-   **Nota**: se hai bisogno di modificare le impostazioni IP per Eth3 o Eth1, consulta la sezione [Configurazione dell'indirizzo IP](#ip_cfg).
+   Se hai bisogno di modificare le impostazioni IP per Eth3 o Eth1, consulta la sezione [Configurazione dell'indirizzo IP](#ip_cfg).
+   {: note}
 
 7. Utilizza il nome utente e la password forniti per eseguire l'accesso.<br/>
     ![Pagina di accesso](/images/Login.png)
 
 8. La procedura guidata del flusso di lavoro presenta l'accesso agli specifici elementi generalmente utilizzati nell'ordine da sinistra a destra.<br/>
     ![Icone del flusso di lavoro](/images/workflow.png) <br/>
-    **NOTA**: il flusso di lavoro può essere riaperto utilizzando **Workflow Manager** nell'angolo superiore sinistro della GUI.
+    Il flusso di lavoro può essere riaperto utilizzando **Workflow Manager** nell'angolo superiore sinistro della GUI.
+    {: note}
 
 9. Attiva il pool di archiviazione preconfigurato:
     - Fai clic su **Unlock and Start Storage Pool**.

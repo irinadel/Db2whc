@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Flex Performance システムをプロビジョンする前に、ストレージ
 ![Web コンソールのコンピュート・コア・ページの表示](images/launch.png)
 
 ![Web コンソールのコンピュート・コア・ページの表示](images/scaling_full.png)
-
 
 ## コンピュート・コア
 {: #cores}

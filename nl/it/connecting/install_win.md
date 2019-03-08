@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,12 +28,14 @@ Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}} s
 {: shortdesc}
 
 ## Prerequisiti
+{: #prereq51}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
 ## Procedura
+{: #proc51}
 
 1. Esegui il file eseguibile scaricato come amministratore.
 
@@ -37,5 +43,6 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 2. [*Facoltativo*] Aggiungi la sottodirectory `bin` della directory di installazione del pacchetto del driver alla tua variabile di ambiente `%PATH%` (in modo da poter eseguire il comando **db2cli** senza specificare il percorso completo per l'eseguibile del comando.)
 
 ## Operazioni successive
+{: #wn51}
 
-Per poter collegare le tue applicazioni locali o i tuoi strumenti client al tuo database {{site.data.keyword.dashdbshort_notm}}, [configura il tuo ambiente locale](driver_pkg_cfg.html).
+Per poter collegare le tue applicazioni locali o i tuoi strumenti client al tuo database {{site.data.keyword.dashdbshort_notm}}, [configura il tuo ambiente locale](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).

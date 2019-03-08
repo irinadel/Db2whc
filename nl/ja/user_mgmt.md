@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-03-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -27,4 +31,5 @@ lastupdated: "2018-03-15"
 * Web コンソール。 Web コンソールから、ユーザーはデータベースに対して照会を実行できます。
 * データベース。 管理者は、特定の表やスキーマに対するアクセスだけではなく、行や列に対するアクセスなど、データベースに対する細かいアクセス許可を付与できます。 
 
-ユーザー管理について詳しくは、[Database user management![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window} を参照してください。
+ユーザー管理について詳しくは、以下を参照してください。 
+- [データベース・ユーザー管理![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}

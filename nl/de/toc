@@ -67,7 +67,7 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="howto"}
     [Geführte Demo zum Laden von Daten aus IBM Cloud Object Storage](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud)
-    [Lernprogramm zur SQL-Datenbank für Cloud-Daten](../../tutorials/sql-database.html#sql-database-for-cloud-data)
+    [Lernprogramm zur SQL-Datenbank für Cloud-Daten](/tutorials/solution-tutorials-sql-database#sql-database)
     [Lernprogramm zur Migration von Daten aus lokalen relationalen Datenbanken](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud)
     {: .navgroup-end}
 

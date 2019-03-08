@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Definisci una connessione tra un'applicazione Java™ e il database {{site.data.
 {: shortdesc}
 
 ## Prerequisiti
+{: #prereq61}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedura
+{: #proc61}
 
 In ogni applicazione Java, specifica l'ID utente e la password includendo il metodo **DriverManager.getConnection** e una delle seguenti stringhe URL JDBC:
 

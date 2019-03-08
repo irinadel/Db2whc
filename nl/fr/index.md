@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,12 +74,12 @@ Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez 
 Configurez votre environnement local afin qu'il se connecte à votre base de données {{site.data.keyword.dashdbshort_notm}} en procédant comme suit :
 {: shortdesc}
 
-1. Téléchargez le [module de pilote](connecting/driver_pkg.html) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
+1. Téléchargez le [module de pilote](/docs/services/Db2whc/connecting/driver_pkg.html) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
 2. Installez le module de pilote sur l'ordinateur sur lequel vos applications ou outils s'exécutent :
-   - [Installation sur Linux ou PowerLinux](connecting/install_linux.html)
-   - [Installation sur Mac OS X](connecting/install_mac.html)
-   - [Installation sur Windows](connecting/install_win.html)
-3. [Configuration des fichiers de pilote](connecting/driver_pkg_cfg.html) pour votre base de données {site.data.keyword.dashdbshort_notm}}.
+   - [Installation sur Linux ou PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
+   - [Installation sur Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+   - [Installation sur Windows](/docs/services/Db2whc/connecting/install_win.html)
+3. [Configuration des fichiers de pilote](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) pour votre base de données {site.data.keyword.dashdbshort_notm}}.
 
 ### Utilisez Db2 Warehouse on Cloud comme source de données pour vos applications ou services {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
@@ -133,12 +137,12 @@ Lorsque vos applications utilisent la plateforme {{site.data.keyword.Bluemix_not
 Vous trouverez ici des liens vers des exemples montrant comment se connecter par programmation à votre base de données {{site.data.keyword.dashdbshort_notm}} à partir d'applications dans différents langages :
 {: shortdesc}
 
-- [JDBC](connecting/jdbc.html)
-- [Microsoft Windows ODBC ou CLI](connecting/odbc_cli.html)
-- [.NET](connecting/net_apps.html)
-- [ODBC Data Source Administrator](connecting/odbc_data_source_admin.html)
-- [PHP](connecting/php.html)
-- [API REST](connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
+- [Microsoft Windows ODBC ou CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [API REST](/docs/services/Db2whc/connecting/rest_api.html)
 
 ## Vidéo : Présentation de Db2 Warehouse on Cloud
 {: #intro_vid}

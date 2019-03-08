@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-20"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -52,7 +56,8 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   )      
 ```
 
-**Remarque :** Dans {{site.data.keyword.Bluemix_notm}} Object Storage, pour créer des données d'identification HMAC lorsque vous créez de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+Pour {{site.data.keyword.Bluemix_notm}} Object Storage, pour créer des données d'identification HMAC lors de la création de nouvelles données d'identification de service, spécifiez {"HMAC:true"} dans la zone *Ajouter des paramètres de configuration en ligne*.
+{: note}
 
 Pour accéder à une démonstration présentant comment charger des données depuis {{site.data.keyword.Bluemix_notm}} Object Storage, consultez la page [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}.
 

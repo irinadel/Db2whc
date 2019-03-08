@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ lastupdated: "2018-11-08"
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
 {: #proc1}
@@ -149,7 +153,7 @@ lastupdated: "2018-11-08"
 
         其中 `<alias>` 是您使用 **db2cli writecfg** 指令建立的別名、`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID，而 `<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密碼。
 
-  4. 使用您預先收集的[連線資訊](credentials.html)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
+  4. 使用您預先收集的[連線資訊](/docs/services/Db2whc/connecting/credentials.html)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
 
      如需在 DataStage 中定義連線的詳細資料，請參閱下列 DataStage 文件主題： 
      
@@ -224,7 +228,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 如果您要使用 SSL 通訊協定進行連接，請下載並安裝 GSKit 第 8 版。請參閱 [GSKit 第 8 版 - 安裝、解除安裝及升級指示 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。按一下套用至用戶端機器作業系統的作業系統標籤。如果您是在 Windows 電腦上安裝 GSKit，請確定您針對 **`PATH`** 環境變數指定 GSKit 安裝目錄路徑 (`<installation_directory>\gsk8\bin`)。
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 如果您要使用 SSL 通訊協定進行連接，請將 `DigiCertGlobalRootCA.crt` SSL 憑證從 Web 主控台下載至用戶端機器上的目錄。若要下載憑證，請按一下**連線 > 連線資訊**，然後按一下**使用 SSL 的連線**標籤。
 
@@ -381,7 +385,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 必要條件
 {: #prereq3}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
 {: #proc3}
@@ -410,7 +414,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq4}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
 {: #proc4}
@@ -453,7 +457,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq5}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
 {: #proc5}
@@ -483,7 +487,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq6}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
 {: #proc6}
@@ -505,7 +509,7 @@ Db2 驅動程式套件中包含 Command Line Processor Plus (CLPPlus)。CLPPlus 
 ### 必要條件
 {: #prereq7}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 若要使用 CLPPlus，請確定已在電腦上安裝 Java 1.5.0 版或更新版本的軟體開發套件 (SDK) 或 Java 執行時期環境 (JRE)，而且環境變數設定如下：
 

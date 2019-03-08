@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -82,12 +86,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq1}
+{: #prereq11}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
-{: #proc1}
+{: #proc11}
 
 1. 在 SPSS Statistics 中，按一下**檔案 > 開啟資料庫 > 新建查詢**。
     
@@ -99,11 +103,11 @@ lastupdated: "2018-10-15"
 
    b. 在「建立新的資料來源」視窗上，選取名稱為 **IBM DB2 ODBC DRIVER** 的驅動程式，然後按一下**完成**。
 
-   確定您選取的驅動程式不是具有類似名稱的驅動程式，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果該驅動程式未顯示在清單中，請結束 SPSS Statistics，然後下載並安裝驅動程式。請參閱 [Db2 驅動程式套件](driver_pkg.html)。
+   確定您選取的驅動程式不是具有類似名稱的驅動程式，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果該驅動程式未顯示在清單中，請結束 SPSS Statistics，然後下載並安裝驅動程式。請參閱 [Db2 驅動程式套件](/docs/services/Db2whc/connecting/driver_pkg.html)。
         
    c. 在「ODBC IBM 驅動程式 - 新增」視窗中，輸入資料來源名稱（通常是您要連接的資料庫名稱），然後按一下**新增**。
         
-   d. 從「CLI/ODBC 設定」視窗中，在**資料來源**標籤上，輸入您預先收集的[連線資訊](credentials.html)中的使用者 ID 及密碼。
+   d. 從「CLI/ODBC 設定」視窗中，在**資料來源**標籤上，輸入您預先收集的[連線資訊](/docs/services/Db2whc/connecting/credentials.html)中的使用者 ID 及密碼。
         
    e. 在「進階設定」頁面上，針對下列每一個參數，按一下**新增**以開啟「新增 CLI 參數」視窗來開始步驟，然後按一下**確定**以回到「進階設定」頁面：
             
@@ -132,12 +136,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq2}
+{: #prereq12}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
-{: #proc2}
+{: #proc12}
 
 如需如何從 SAS 連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫的步驟，請參閱 SAS 文件：
 - [UNIX 及 PC 主機下 Db2 的 SAS/ACCESS 介面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
@@ -149,12 +153,12 @@ lastupdated: "2018-10-15"
 {: shortdesc}
 
 ### 必要條件
-{: #prereq3}
+{: #prereq13}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 ### 程序
-{: #proc3}
+{: #proc13}
 
 1. 在本端 R 環境中，輸入下列指令，以安裝 `ibmdbR` 套件：
 
@@ -168,7 +172,7 @@ lastupdated: "2018-10-15"
         
    b. 開啟本端安裝的 R 開發環境。
         
-   c. 在 R 提示中，輸入下列陳述式來建立連線。將位置保留元取代為預先收集的[連線資訊](credentials.html)。
+   c. 在 R 提示中，輸入下列陳述式來建立連線。將位置保留元取代為預先收集的[連線資訊](/docs/services/Db2whc/connecting/credentials.html)。
 
    - 如果本端安裝的 R 開發環境執行於 {{site.data.keyword.dashdbshort_notm}} 資料庫中：
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Definieren Sie eine Verbindung zwischen einer PHP-Anwendung und einer {{site.dat
 {: shortdesc}
 
 ## Voraussetzungen
+{: #prereq101}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,10 +38,12 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Vorgehensweise
+{: #proc101}
 
 ### Szenario 1: Außerhalb von {{site.data.keyword.Bluemix_notm}} eine Verbindung herstellen:
-        
-1. Laden Sie das [Db2-Treiberpaket](driver_pkg.html) über die Webkonsole herunter und installieren Sie das Paket auf der Maschine, auf dem Ihre PHP-Anwendung ausgeführt werden soll.
+{: #scen1}
+
+1. Laden Sie das [Db2-Treiberpaket](/docs/services/Db2whc/connecting/driver_pkg.html) über die Webkonsole herunter und installieren Sie das Paket auf der Maschine, auf dem Ihre PHP-Anwendung ausgeführt werden soll.
                 
 2. Stellen Sie über die Funktion [`odbc_connect` ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](http://php.net/manual/en/function.odbc-connect.php){:new_window} eine Verbindung zu der Datenbank BLUDB her.
     
@@ -94,6 +101,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
    ```
 
 ### Szenario 2: Verbindung von PHP-Web-App aus in {{site.data.keyword.Bluemix_notm}} herstellen
+{: #scen2}
 
 1. Erstellen Sie über den {{site.data.keyword.Bluemix_notm}}-Katalog eine neue PHP-App.
         

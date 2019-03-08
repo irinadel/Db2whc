@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Benutzer mit einer IBMid müssen vom Datenbankadministrator über die Konsole od
 Eine Service-ID identifiziert einen Service bzw. eine Anwendung ebenso, wie eine Benutzer-ID einen Benutzer identifiziert. Bei Service-IDs handelt es sich um IDs, die von Anwendungen für die Authentifizierung bei einem {{site.data.keyword.Bluemix_notm}}-Service verwendet werden können. Eine Service-ID stellt eine separate Entität gegenüber der IBMid dar, unter der die ID erstellt wurde. Es können deshalb andere Berechtigungen speziell für die Service-ID in der Datenbank erteilt werden. Für Service-IDs gibt es keine Kennwörter. Für die Verbindung zu der Datenbankserviceinstanz muss für jede Service-ID ein API-Schlüssel erstellt werden. Weitere Informationen zu Service-IDs finden Sie im Abschnitt zur [Einführung in {{site.data.keyword.Bluemix_notm}}-Service-IDs und -API-Schlüssel für IAM ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Clientverbindungen und Benutzeranmeldungen
-{: #connect}
+{: #connect_login}
 
 **Voraussetzung**: Db2 Client Version 11.1 ab Fixpack 3.
 
@@ -88,7 +92,7 @@ Die folgenden Datenbankclientschnittstellen werden unterstützt:
 ### ODBC, CLP und CLPPLUS
 {: #odbc-clpplus}
 
-Bevor eine ODBC-Anwendung oder ein Befehlszeilenclient (CLP, CLPPlus) unter Verwendung der IAM-Authentifizierung eine Verbindung zu einem Db2-Server herstellen kann, muss zunächst mit dem folgenden Befehl ein Datenquellenname (DSN = Data Source Name) in einer Konfigurationsdatei namens `db2dsdriver.cfg` konfiguriert werden: 
+Bevor eine ODBC-Anwendung oder ein Befehlszeilenclient (CLP, CLPPlus) unter Verwendung der IAM-Authentifizierung eine Verbindung zu einem Db2-Server herstellen kann, muss zunächst mit dem folgenden Befehl ein Datenquellenname (DSN = Data Source Name) in einer Konfigurationsdatei namens `db2dsdriver.cfg` konfiguriert werden:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -127,27 +131,27 @@ Die folgende Beispielkonfigurationsdatei `db2dsdriver.cfg` enthält die Konfigur
 
     Bei ODBC-Anwendungen kann **AUTHENTICATION=GSSPLUGIN** in der Konfigurationsdatei `db2dsdriver.cfg` oder in der Verbindungszeichenfolge der Anwendung angegeben werden.
 
-* Die CLP-Anweisung CONNECT kann eines der folgenden Elemente enthalten: 
+* Die CLP-Anweisung CONNECT kann eines der folgenden Elemente enthalten:
 
     **Zugriffstoken**
 
-    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` her und übergaben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` her und übergaben Sie das Zugriffstoken, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
     `CONNECT TO <database_server_name> ACCESSTOKEN <access_token_string>`
 
     **API-Schlüssel**
 
-    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einem API-Schlüssel her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
     `CONNECT TO <database_server_name> APIKEY <api-key-string>`
 
     **Kombination aus IBMid und Kennwort**
 
-    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einer IBMid und dem zugehörigen Kennwort her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen: 
+    Stellen Sie eine Verbindung zum Datenbankserver `<database_server_name>` mit einer IBMid und dem zugehörigen Kennwort her, indem Sie den folgenden Befehl in der Eingabeaufforderung des Befehlszeilenprozessors oder einem Script ausführen:
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    Weitere Details zum Herstellen einer Verbindung zu einem Datenbankserver über den Befehlszeilenprozessor (CLP) finden Sie in [Anweisung CONNECT (Typ 2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}.  
+    Weitere Details zum Herstellen einer Verbindung zu einem Datenbankserver über den Befehlszeilenprozessor (CLP) finden Sie in [Anweisung CONNECT (Typ 2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
 
 * Die CLPPlus-Anweisung CONNECT kann eines der folgenden Elemente enthalten:
 
@@ -280,7 +284,7 @@ Nach einer funktionalen Erweiterung akzeptiert auch die {{site.data.keyword.dash
 Nähere Informationen zu der API Ihres Service finden Sie im Abschnitt zur [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2whc_api){:new_window}.
 
 ## IBMid-Föderierung
-{: #fed}
+{: #ibmid_fed}
 
 Wenn ein eigener Identitätsprovider wie LDAP verwendet werden soll, müssen Sie den LDAP-Server zunächst in das IBMid-Konzept einbinden. Anweisungen zur Föderierung des LDAP-Servers mit IBMids finden Sie in der Veröffentlichung [IBMid Enterprise Federation Adoption Guide ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Wenn die IBMid-Föderierung abgeschlossen ist und die berechtigten Benutzer vom Datenbankadministrator zur Datenbankserviceinstanz hinzugefügt wurden, können sich die betreffenden Benutzer bei der Konsole mit der in ihrem Unternehmen verwendeten Benutzer-ID und dem zugehörigen Kennwort anmelden. Die betreffenden Benutzer können stattdessen auch für die Verbindung zu der Datenbankserviceinstanz über eine der unterstützten Datenbankclientschnittstellen ein Zugriffstoken oder einen API-Schlüssel, das bzw. der für die jeweilige Benutzer-ID steht, für die Verbindung zu der Datenbankserviceinstanz verwenden.
 

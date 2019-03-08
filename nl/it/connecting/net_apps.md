@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Definisci una connessione tra un'applicazione .NET e il tuo database {{site.data
 {: shortdesc}
 
 ## Prerequisiti
+{: #prereq71}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedura
+{: #proc71}
 
 La seguente procedura mostra come collegare la tua applicazione al database con .NET.
 
@@ -71,6 +77,7 @@ La seguente procedura mostra come collegare la tua applicazione al database con 
    `<password>`: la password che hai utilizzato per il collegamento al tuo database {{site.data.keyword.dashdbshort_notm}}. 
 
 ## Esempio
+{: #ex71}
 
 La seguente sintassi mostra il codice C# di esempio che utilizza il driver .NET per effettuare una connessione al database.
 

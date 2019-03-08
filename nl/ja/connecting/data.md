@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -47,7 +51,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc1}
@@ -108,13 +112,13 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
   7. 次のいずれかの方法で、SSL 接続をテストします。
 
-     - CLP を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+     - CLP を使用して接続をテストします。 次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
        `db2 connect to <db_alias> user <user_id>`
 
        ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
     
-     - CLI を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+     - CLI を使用して接続をテストします。 次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -122,7 +126,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
 - SSL を使用せずに接続を作成するには、次の手順を実行してターゲットの {{site.data.keyword.dashdbshort_notm}} データベースをカタログします。
 
-  1. クライアント・アプリケーションから接続できるように、ターゲットの {{site.data.keyword.dashdbshort_notm}} ノードをカタログします。以下の CLP コマンドを実行します。
+  1. クライアント・アプリケーションから接続できるように、ターゲットの {{site.data.keyword.dashdbshort_notm}} ノードをカタログします。 以下の CLP コマンドを実行します。
 
      `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
@@ -136,7 +140,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
   3. 次のいずれかの方法で、非 SSL 接続をテストします。
 
-      - CLP を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+      - CLP を使用して接続をテストします。 次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
         `db2 connect to <db_alias> user <user_id>`
 
@@ -144,13 +148,13 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
         `db2 list tables`
 
-      - CLI を使用して接続をテストします。次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
+      - CLI を使用して接続をテストします。 次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
         `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
         ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は {{site.data.keyword.dashdbshort_notm}} パスワードです。
 
-  4. 事前に収集した[接続情報](credentials.html)を使用して、DataStage クライアント内で接続を定義します。 **「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
+  4. 事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)を使用して、DataStage クライアント内で接続を定義します。 **「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
 
      DataStage での接続の定義について詳しくは、以下の DataStage 資料のトピックを参照してください。 
      
@@ -225,7 +229,7 @@ IBM InfoSphere Data Replication を {{site.data.keyword.dashdbshort_notm}} に�
 
 SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} を参照してください。 ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 SSL プロトコルを使用して接続しようとしている場合は、Web コンソールからクライアント・マシンのディレクトリーに `DigiCertGlobalRootCA.crt` SSL 証明書をダウンロードします。 証明書をダウンロードするには、**「接続」>「接続情報」**をクリックしてから**「SSL を使用した接続」**タブをクリックします。
 
@@ -382,7 +386,7 @@ Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合�
 ### 前提条件
 {: #prereq3}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc3}
@@ -411,7 +415,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq4}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc4}
@@ -453,7 +457,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq5}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc5}
@@ -483,7 +487,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq6}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc6}
@@ -505,7 +509,7 @@ Command line processor plus (CLPPlus) は、Db2 ドライバー・パッケー�
 ### 前提条件
 {: #prereq7}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 CLPPlus を使用するには、ソフトウェア開発キット (SDK) または Javaランタイム環境 (JRE) for Java バージョン 1.5.0 以降がコンピューターにインストールされていること、および環境変数が以下のように設定されていることを確認してください。
 

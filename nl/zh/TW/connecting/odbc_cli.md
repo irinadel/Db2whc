@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 必要條件
+{: #prereq81}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 程序
+{: #proc81}
 
 1. 在 Linux 作業系統上的指令 Shell、Windows 命令提示字元，或 Windows 作業系統上的 Db2 指令視窗中，輸入下列指令：
 
@@ -56,7 +62,7 @@ lastupdated: "2018-09-25"
 
    `<alias>` 是您選擇的 DSN 別名
     
-2. [*Optional*]: To測試資料庫的連線，從命令提示字元中執行此指令：
+2. [*選用*] 若要測試資料庫的連線，請從命令提示字元中執行此指令：
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -68,7 +74,7 @@ lastupdated: "2018-09-25"
 
    `<password>` 是來自您預先收集的連接認證
 
-3. [*Optional*]: To向 Microsoft ODBC Driver Manger 登錄資料來源名稱 (DSN)，並使用 Microsoft ODBC 應用程式，執行下列指令。依預設，DSN 會建立為使用者 DSN。
+3. [*選用*] 若要向 Microsoft ODBC Driver Manger 登錄資料來源名稱 (DSN)，並使用 Microsoft ODBC 應用程式，請執行下列指令。依預設，DSN 會建立為使用者 DSN。
 
    `db2cli registerdsn -add -dsn <alias>`
 

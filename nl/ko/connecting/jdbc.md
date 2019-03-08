@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Java™ 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터�
 {: shortdesc}
 
 ## 전제조건
+{: #prereq61}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Java™ 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터�
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 프로시저
+{: #proc61}
 
 각 Java 애플리케이션에서 **DriverManager.getConnection** 메소드를 포함시켜 사용자 ID 및 비밀번호를 지정하고 다음 JDBC URL 문자열 중 하나를 포함시키십시오.
 

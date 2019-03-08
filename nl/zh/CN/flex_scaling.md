@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-05-01"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -30,7 +34,6 @@ Flex Performance 套餐提供独立扩展的存储和计算核心。
 ![Web 控制台计算核心页面的视图](images/launch.png)
 
 ![Web 控制台计算核心页面的视图](images/scaling_full.png)
-
 
 ## 计算核心
 {: #cores}

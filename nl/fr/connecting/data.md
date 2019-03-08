@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-11-08"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -47,7 +51,7 @@ Pour établir des connexions avec le protocole SSL, téléchargez et installez l
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 ### Procédure
 {: #proc1}
@@ -150,7 +154,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
         où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
 
-  4. Utilisez les [informations de connexion](credentials.html) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
+  4. Utilisez les [informations de connexion](/docs/services/Db2whc/connecting/credentials.html) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
 
      Pour plus d'informations sur la définition d'une connexion dans DataStage, consultez les rubriques suivantes de la documentation de DataStage : 
      
@@ -225,7 +229,7 @@ Lorsque vous utilisez {{site.data.keyword.dashdbshort_notm}} en tant que cible d
 
 Si vous tentez de vous connecter à l'aide du protocole SSL, téléchargez et installez GSKit V8. Voir [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Cliquez sur l'onglet correspondant au système d'exploitation de la machine de votre client. Si vous installez le GSKit sur un ordinateur Windows, veillez à spécifier le chemin d'accès au répertoire d'installation de GSKit (`<installation_directory>\gsk8\bin`) dans la variable d'environnement **`PATH`**.
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 Si vous avez l'intention de vous connecter en utilisant le protocole SSL, téléchargez le certificat SSL `DigiCertGlobalRootCA.crt` de la console Web vers un répertoire de la machine client. Pour télécharger le certificat, cliquez sur **Connexion > Informations de connexion** puis sur l'onglet **Connexion avec SSL**.
 
@@ -383,7 +387,7 @@ Ces instructions expliquent comment créer une connexion entre IBM® Data Studio
 ### Prérequis
 {: #prereq3}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 ### Procédure
 {: #proc3}
@@ -412,7 +416,7 @@ Une connexion entre votre console IBM® Data Server Manager et votre base de don
 ### Prérequis
 {: #prereq4}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 ### Procédure
 {: #proc4}
@@ -454,7 +458,7 @@ Ces instructions expliquent comment créer une connexion entre InfoSphere® Data
 ### Prérequis
 {: #prereq5}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 ### Procédure
 {: #proc5}
@@ -484,7 +488,7 @@ Ces instructions expliquent comment connecter Aginity Workbench <!--4.3 -->à un
 ### Prérequis
 {: #prereq6}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 ### Procédure
 {: #proc6}
@@ -506,7 +510,7 @@ CLPPlus (Command line processor plus) est inclus dans le module de pilote Db2. C
 ### Prérequis
 {: #prereq7}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
 
 Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) ou un environnement d'exécution Java (JRE) est installé sur votre ordinateur pour la version Java 1.5.0 ou une version ultérieure et que les variables d'environnement sont définies comme suit :
 

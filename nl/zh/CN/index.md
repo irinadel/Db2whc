@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,12 +74,12 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 通过完成以下步骤，配置本地环境以连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-1. 通过 {{site.data.keyword.dashdbshort_notm}} Web 控制台下载[驱动程序包](connecting/driver_pkg.html)。
+1. 通过 {{site.data.keyword.dashdbshort_notm}} Web 控制台下载[驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
 2. 在运行应用程序或工具的计算机上安装驱动程序包：
-   - [在 Linux 或 PowerLinux 上安装](connecting/install_linux.html)
-   - [在 Mac OS X 上安装](connecting/install_mac.html)
-   - [在 Windows 上安装](connecting/install_win.html)
-3. 为 {site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](connecting/driver_pkg_cfg.html)。
+   - [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting/install_linux.html)
+   - [在 Mac OS X 上安装](/docs/services/Db2whc/connecting/install_mac.html)
+   - [在 Windows 上安装](/docs/services/Db2whc/connecting/install_win.html)
+3. 为 {site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
 
 ### 使用 Db2 Warehouse on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}
@@ -143,12 +147,12 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 下面是一些样本的链接，这些样本演示了在不同的语言中，如何以编程方式从应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-- [JDBC](connecting/jdbc.html)
-- [Microsoft Windows ODBC 或 CLI](connecting/odbc_cli.html)
-- [.NET](connecting/net_apps.html)
-- [ODBC 数据源管理器](connecting/odbc_data_source_admin.html)
-- [PHP](connecting/php.html)
-- [REST API](connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
+- [Microsoft Windows ODBC 或 CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC 数据源管理器](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 
 ## 视频：Db2 Warehouse on Cloud 简介
 {: #intro_vid}

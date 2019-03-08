@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,12 +74,12 @@ lastupdated: "2018-10-24"
 다음 단계를 완료하여 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하도록 로컬 환경을 구성하십시오.
 {: shortdesc}
 
-1. {{site.data.keyword.dashdbshort_notm}} 웹 콘솔에서 [드라이버 패키지](connecting/driver_pkg.html)를 다운로드하십시오.
+1. {{site.data.keyword.dashdbshort_notm}} 웹 콘솔에서 [드라이버 패키지](/docs/services/Db2whc/connecting/driver_pkg.html)를 다운로드하십시오.
 2. 앱 또는 도구가 실행 중인 컴퓨터에서 드라이버 패키지를 설치하십시오.
-   - [Linux 또는 PowerLinux에서 설치](connecting/install_linux.html)
-   - [Mac OS X에서 설치](connecting/install_mac.html)
-   - [Windows에서 설치](connecting/install_win.html)
-3. {site.data.keyword.dashdbshort_notm}} 데이터베이스에 대한 [드라이버 파일을 구성](connecting/driver_pkg_cfg.html)하십시오.
+   - [Linux 또는 PowerLinux에서 설치](/docs/services/Db2whc/connecting/install_linux.html)
+   - [Mac OS X에서 설치](/docs/services/Db2whc/connecting/install_mac.html)
+   - [Windows에서 설치](/docs/services/Db2whc/connecting/install_win.html)
+3. {site.data.keyword.dashdbshort_notm}} 데이터베이스에 대한 [드라이버 파일을 구성](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)하십시오.
 
 ### {{site.data.keyword.Bluemix_notm}} 앱 또는 서비스의 데이터 소스로 Db2 Warehouse on Cloud 사용
 {: #data_src}
@@ -133,12 +137,12 @@ lastupdated: "2018-10-24"
 다음은 여러 언어로 된 애플리케이션에서 프로그래밍 방식으로 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 방법을 보여주는 샘플에 대한 링크입니다.
 {: shortdesc}
 
-- [JDBC](connecting/jdbc.html)
-- [Microsoft Windows ODBC 또는 CLI](connecting/odbc_cli.html)
-- [.NET](connecting/net_apps.html)
-- [ODBC 데이터 소스 관리자](connecting/odbc_data_source_admin.html)
-- [PHP](connecting/php.html)
-- [REST API](connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
+- [Microsoft Windows ODBC 또는 CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC 데이터 소스 관리자](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 
 ## 동영상: Db2 Warehouse on Cloud 소개
 {: #intro_vid}

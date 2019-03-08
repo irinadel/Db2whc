@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ Gli utenti con un ID IBM devono essere aggiunti a ogni istanza del servizio data
 Un ID identifica un servizio o un'applicazione in modo simile a come un ID utente identifica un utente. Gli ID servizio sono gli ID che possono essere utilizzati dalle applicazioni per l'autenticazione a un servizio {{site.data.keyword.Bluemix_notm}}. Un ID servizio rappresenta un'entità separata dall'ID IBM di appartenenza. Pertanto, autorità e autorizzazioni diverse possono essere concesse in modo specifico all'ID servizio all'interno del database. Gli ID servizio non hanno password. Deve essere creata una chiave API per ogni ID servizio per l'ID da collegare all'istanza del servizio database. Per ulteriori informazioni sugli ID servizio, consulta: [Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Connessioni client e accessi utente
-{: #connect}
+{: #connect_login}
 
 **Prerequisito**: Client Db2 V11.1 FP3 e successive.
 
@@ -88,7 +92,7 @@ Sono supportate le seguenti interfacce client del database:
 ### ODBC, CLP e CLPPLUS
 {: #odbc-clpplus}
 
-Per un'applicazione ODBC o un client riga di comando (CLP, CLPPLUS) per connettersi a un server Db2 utilizzando l'autenticazione IAM, deve essere prima configurato un nome dell'origine dati (DSN) in un file di configurazione `db2dsdriver.cfg`, immettendo il seguente comando: 
+Per un'applicazione ODBC o un client riga di comando (CLP, CLPPLUS) per connettersi a un server Db2 utilizzando l'autenticazione IAM, deve essere prima configurato un nome dell'origine dati (DSN) in un file di configurazione `db2dsdriver.cfg`, immettendo il seguente comando:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -280,7 +284,7 @@ L'API REST {{site.data.keyword.dashdbshort_notm}} è stata migliorata per accett
 Per ulteriori dettagli sull'API del tuo servizio, consulta: [{{site.data.keyword.dashdbshort_notm}} REST API ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/db2whc_api){:new_window}.
 
 ## Federazione ID IBM
-{: #fed}
+{: #ibmid_fed}
 
 Per utilizzare il tuo provider di identità come ad esempio LDAP, devi prima federare il tuo server LDAP con l'ID IBM. Per istruzioni su come federare il server LDAP con l'ID IBM, consulta: [IBMid Enterprise Federation Adoption Guide ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Dopo che la federazione dell'ID IBM è stata completata e gli utenti consentiti sono stati aggiunti all'istanza del servizio database dall'amministratore del database, questi utenti possono accedere alla console con i loro ID utente e password aziendali. In alternativa, questi utenti possono utilizzare un token di accesso o una chiave API che rappresenta il proprio ID utente per connettersi all'istanza del servizio database tramite una delle interfacce client del database supportate.
 

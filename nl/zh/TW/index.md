@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-10-24"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,12 +74,12 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 請完成下列步驟，配置本端環境以連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 {: shortdesc}
 
-1. 從 {{site.data.keyword.dashdbshort_notm}} Web 主控台下載[驅動程式套件](connecting/driver_pkg.html)。
+1. 從 {{site.data.keyword.dashdbshort_notm}} Web 主控台下載[驅動程式套件](/docs/services/Db2whc/connecting/driver_pkg.html)。
 2. 在您的應用程式或工具執行所在的電腦上，安裝驅動程式套件。
-   - [在 Linux 或 PowerLinux 上安裝](connecting/install_linux.html)
-   - [在 Mac OS X 上安裝](connecting/install_mac.html)
-   - [在 Windows 上安裝](connecting/install_win.html)
-3. 針對 {site.data.keyword.dashdbshort_notm}} 資料庫[配置驅動程式檔案](connecting/driver_pkg_cfg.html)。
+   - [在 Linux 或 PowerLinux 上安裝](/docs/services/Db2whc/connecting/install_linux.html)
+   - [在 Mac OS X 上安裝](/docs/services/Db2whc/connecting/install_mac.html)
+   - [在 Windows 上安裝](/docs/services/Db2whc/connecting/install_win.html)
+3. 針對 {site.data.keyword.dashdbshort_notm}} 資料庫[配置驅動程式檔案](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
 
 ### 將 Db2 Warehouse on Cloud 用作 {{site.data.keyword.Bluemix_notm}} 應用程式或服務的資料來源
 {: #data_src}
@@ -133,12 +137,12 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 以下鏈結範例示範如何從不同語言的應用程式以程式設計方式連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 {: shortdesc}
 
-- [JDBC](connecting/jdbc.html)
-- [Microsoft Windows ODBC 或 CLI](connecting/odbc_cli.html)
-- [.NET](connecting/net_apps.html)
-- [ODBC 資料來源管理員](connecting/odbc_data_source_admin.html)
-- [PHP](connecting/php.html)
-- [REST API](connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
+- [Microsoft Windows ODBC 或 CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
+- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
+- [ODBC 資料來源管理員](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
+- [PHP](/docs/services/Db2whc/connecting/php.html)
+- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
 
 ## 視訊：簡介 Db2 Warehouse on Cloud
 {: #intro_vid}

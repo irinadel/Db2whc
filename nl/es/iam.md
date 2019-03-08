@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-01-21"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -46,7 +50,7 @@ El administrador de la base de datos debe añadir los usuarios con un IBMid a ca
 Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Los ID de servicio son ID que las aplicaciones pueden utilizar para autenticarse con un servicio de {{site.data.keyword.Bluemix_notm}}. Un ID de servicio representa una entidad individual del IBMid propietario. Por lo tanto, es posible otorgar distintas autorizaciones y permisos específicos para el ID de servicio en la base de datos. Los ID de servicio no tienen contraseñas. Es necesario crear una clave de API para cada ID de servicio para que el este se conecte a la instancia de servicio de la base de datos. Para obtener más información acerca de los ID de servicio, consulte [Introducción de {{site.data.keyword.Bluemix_notm}} ID de servicio de IAM y claves de API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
 
 ## Conexiones de cliente e inicios de sesión de usuario
-{: #connect}
+{: #connect_login}
 
 **Requisito previo**: Cliente Db2 V11.1 FP3 y posterior.
 
@@ -280,7 +284,7 @@ La API REST de {{site.data.keyword.dashdbshort_notm}} se ha mejorado para que ta
 Para obtener más detalles sobre la API del servicio, consulte: [API REST de {{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
 
 ## Federación de IBMid
-{: #fed}
+{: #ibmid_fed}
 
 Para utilizar su propio proveedor de identidad como, por ejemplo, LDAP, primero debe federar el servidor LDAP con IBMid. Para obtener instrucciones sobre cómo federar el servidor LDAP con IBMid, consulte [Guía de adopción de federación empresarial de IBMid ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.ent.box.com/notes/78040808400?s=nhuzrhlsn0ly338zddomx329tlpmfghc){:new_window}. Una vez que se haya completado la federación de IBMid y que el administrador de base de datos haya añadido los usuarios con permiso a la instancia de servicio de la base de datos, los usuarios podrán iniciar sesión en la consola con el ID de usuario y la contraseña de su empresa. De forma alternativa, los usuarios pueden utilizar una señal de acceso o una clave de API que represente su ID de usuario para conectarse a la instancia de servicio de la base de datos mediante una de las interfaces de cliente de base de datos soportadas.
 

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-07-18"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -55,11 +59,12 @@ La fédération vous permet d'accroître la capacité d'une base de données sur
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## Initiation
-{: #getting_started}
+{: #gtng_strtd}
 
 L'exemple de procédure ci-dessous vous montre comment fédérer vos sources de données disparates afin que les données semblent extraites d'une source unique. Il illustre la fédération de deux bases de données {{site.data.keyword.dashdbshort_notm}} :
 
 ### Sur la machine cible Db2 Warehouse on Cloud
+{: #targ}
 
 Nom d'hôte : targetdotcom
 
@@ -68,6 +73,7 @@ Nom d'hôte : targetdotcom
 2. A partir de la console {{site.data.keyword.dashdbshort_notm}}, chargez la table `testdata` en tant qu'utilisateur `admin2` avec le mot de passe `YYYY`.
 
 ### Sur une machine Db2 Warehouse on Cloud utilisée en tant que source de la fédération
+{: #fed_src}
 
 A partir de la console {{site.data.keyword.dashdbshort_notm}} :
 

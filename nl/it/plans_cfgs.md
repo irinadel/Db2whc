@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -70,10 +74,10 @@ La seguente tabella fornisce le informazioni sulla disponibilità dei vari piani
 
 *NA = Non disponibile in questo momento
 
-## Limitazioni piano d'ingresso 
+## Limitazioni piano d'ingresso
 {: #ep_restrictions}
 
-Ti consigliamo fortemente di utilizzare un piano di servizio a livello aziendale invece di un piano di servizio d'ingresso per i carichi di lavoro di importanza critica o sensibili alle prestazioni.
+Ti consigliamo fortemente di utilizzare un piano di servizio a livello aziendale invece di un piano di servizio d'ingresso per i carichi di lavoro di importanza critica o sensibili alle prestazioni. 
 {: important}
 
 La seguente è una tabella delle limitazioni del piano d'ingresso {{site.data.keyword.dashdbshort_notm}}:
@@ -98,4 +102,4 @@ La seguente è una tabella delle limitazioni del piano d'ingresso {{site.data.ke
 |  | Regolamento generale sulla protezione dei dati EU (GDPR) | Nessuna limitazione specifica applicata |
 |  |  |
 | Gestione account | Riattivazione | Nessun requisito di riattivazione |
-{: caption="Tabella 1. Limitazioni del piano d'ingresso {{site.data.keyword.dashdbshort_notm}} " caption-side="top"}
+{: caption="Tabella 1. Limitazioni del piano d'ingresso {{site.data.keyword.dashdbshort_notm}}" caption-side="top"}

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,12 +28,14 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 前提条件
+{: #prereq41}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
 ## 手順
+{: #proc41}
 
 - **新規インストールの場合**
 
@@ -64,5 +70,6 @@ lastupdated: "2018-09-25"
      ステップ 1 で保存した `db2cli.ini` ファイルと `db2dsdriver.cfg` ファイルを `/Applications/dsdriver/cfg` フォルダーにコピーします。
 
 ## 次の作業
+{: #wn41}
 
-ローカル・アプリケーションまたはクライアント・ツールを {{site.data.keyword.dashdbshort_notm}} データベースに接続できるようにするには、[ローカル環境を構成します](driver_pkg_cfg.html)。
+ローカル・アプリケーションまたはクライアント・ツールを {{site.data.keyword.dashdbshort_notm}} データベースに接続できるようにするには、[ローカル環境を構成します](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。

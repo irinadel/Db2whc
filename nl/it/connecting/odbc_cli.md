@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Definisci una connessione tra un Microsoft Windows ODBC o l'applicazione CLI e u
 {: shortdesc}
 
 ## Prerequisiti
+{: #prereq81}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## Procedura
+{: #proc81}
 
 1. In una shell di comandi sui sistemi operativi Linux, sul prompt dei comandi di Windows o nella finestra di comando Db2 sui sistemi operativi Windows, immetti i seguenti comandi:
 

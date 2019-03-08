@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ lastupdated: "2018-09-25"
 {: shortdesc}
 
 ## 先决条件
+{: #prereq71}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -33,6 +38,7 @@ lastupdated: "2018-09-25"
 - Collect [connection information](credentials.html), including database details such as host name and port numbers, and connection credentials such as user ID and password -->
 
 ## 过程
+{: #proc71}
 
 以下步骤显示如何使用 .NET 将应用程序连接到数据库。
 
@@ -71,6 +77,7 @@ lastupdated: "2018-09-25"
    `<password>`：您用于连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的密码。 
 
 ## 示例
+{: #ex71}
 
 以下语法显示使用 .NET 驱动程序来建立数据库连接的样本 C# 代码。
 

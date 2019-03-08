@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-06-15"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions -->
@@ -38,7 +42,8 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
    - 넷마스크 
    - 사용자 인터페이스(UI)에 액세스하기 위한 기본 게이트웨이
 3. Cloud Object Storage 다운로드 대상 <br/>
-   **중요**: 요청 양식을 완료하려면 US Cross Region 또는 US South 위치에 하나 이상의 {{site.data.keyword.cos_full}} 계정 및 하나의 버킷이 있어야 합니다. 아직 {{site.data.keyword.cos_full_notm}}} 계정이 없는 경우, MDMS 디바이스를 요청하기 전에 먼저 계정을 작성하십시오. 자세한 정보는 [{{site.data.keyword.cos_full}} 정보](/docs/services/cloud-object-storage/about-cos.html){:new_window}를 참조하십시오.
+  요청 양식을 완료하려면 US Cross Region 또는 US South 위치에 하나 이상의 {{site.data.keyword.cos_full}} 계정 및 하나의 버킷이 있어야 합니다. 아직 {{site.data.keyword.cos_full_notm}}} 계정이 없는 경우, MDMS 디바이스를 요청하기 전에 먼저 계정을 작성하십시오. 자세한 정보는 [{{site.data.keyword.cos_full}} 정보](/docs/services/cloud-object-storage/about-cos.html){:new_window}를 참조하십시오.
+   {: important}
 
 ## 1단계: 요청 작성
 {: #create-req}
@@ -108,9 +113,12 @@ RJ45 및 CAT6A 케이블이 제공되므로 두 포트 모두 디바이스에서
 2. 디바이스를 배치할 가장 적절한 위치를 결정하십시오. 해당 위치는 전원 및 이더넷(1GbE 및 10GbE) 둘 다에 연결되어야 하며 최소한의 도보 범위여야 합니다.
 
 3. 디바이스를 연결할 위치를 지정하십시오. 사용 중에는 운송 케이스에 둘 수 있습니다. 디바이스는 상온에 두어야 하며 표면에 응결이 없어야 합니다. 케이스 덮개 아래에서 제공되는 전원 케이블을 사용하여 전원에 연결하십시오. 디바이스 전원을 켜십시오.<br/>
-    **참고**: 두 개의 전원 스위치가 있습니다.
+    두 개의 전원 스위치가 있습니다.
+    {: note}
+
     ![전원 스위치](/images/MDMSPowerSwitch.png)
-    **참고**: 디바이스를 휴대용 케이스에서 제거할 필요는 없습니다.
+    디바이스를 휴대용 케이스에서 제거할 필요는 없습니다.
+    {: note}
 
 4. 케이스 덮개에서 CAT6A 케이블을 제거하고 그림에 표시된 Eth3(10GbE-B) 포트로 연결하십시오.
     ![Eth1 및 Eth3 포트 위치](/images/MDMSNewEth1and3.png)
@@ -120,14 +128,16 @@ RJ45 및 CAT6A 케이블이 제공되므로 두 포트 모두 디바이스에서
 6. Eth3에 대해 구성된 IP 주소에 `https://<your_Eth3_IP_Address>` 브라우저를 통해 도달할 수 있는 경우, 다음 단계로 계속 진행하십시오. 
 
    그렇지 않으면 Eth1(1GbE-B) 포트에 연결하십시오. 브라우저를 열고 `https://<your_Eth1_IP_Address>`를 입력하십시오. 네트워크 구성에 적합한 Eth1 IP 주소를 입력하십시오. 인증서 예외를 허용하십시오.<br/>
-   **참고**: Eth3 또는 Eth1에 대한 IP 설정을 변경해야 하는 경우, [IP 주소 구성](#ip_cfg) 섹션을 참조하십시오.
+   Eth3 또는 Eth1에 대한 IP 설정을 변경해야 하는 경우, [IP 주소 구성](#ip_cfg) 섹션을 참조하십시오.
+   {: note}
 
 7. 제공된 사용자 이름 및 비밀번호를 사용하여 로그인하십시오.<br/>
     ![로그인 페이지](/images/Login.png)
 
 8. 워크플로우 마법사는 일반적으로 왼쪽에서 오른쪽으로 사용되는 특정 항목에 대한 액세스를 표시합니다.<br/>
     ![워크플로우 아이콘](/images/workflow.png) <br/>
-    **참고**: 워크플로우는 GUI의 왼쪽 상단에 있는 **워크플로우 관리자**를 사용하여 다시 열 수 있습니다.
+    워크플로우는 GUI의 왼쪽 상단에 있는 **워크플로우 관리자**를 사용하여 다시 열 수 있습니다.
+    {: note}
 
 9. 사전 구성된 스토리지 풀 활성화:
     - **스토리지 풀 잠금 해제 및 시작**을 클릭하십시오.

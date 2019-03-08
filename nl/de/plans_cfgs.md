@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-12-07"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -23,7 +27,7 @@ lastupdated: "2018-12-07"
 Sie können einen {{site.data.keyword.dashdbshort_notm}}-Plan auswählen, der für die jeweiligen Aufgaben konfiguriert und optimiert ist:
 {: shortdesc}
 
-   * Einstiegsplan zum Testen der Funktionen. Dies ist eine kostenlose Testversion mit bis zu 1 GB Speicher. Weitere Informationen finden Sie in [Einschränkungen des Einstiegsplans](#ep_restrictions). 
+   * Einstiegsplan zum Testen der Funktionen. Dies ist eine kostenlose Testversion mit bis zu 1 GB Speicher. Weitere Informationen finden Sie in [Einschränkungen des Einstiegsplans](#ep_restrictions).
    * Flex-Pläne für unabhängige Skalierung von Speicher- und Prozessorressourcen
    * SMP-Pläne in verschiedenen Größen für die Produktion: Small, Medium und Large bestehen aus einem einzigen Knoten und einer einzigen Instanz
    * MPP-Clusterkonfigurationen mit mehreren Knoten für eine parallele Verarbeitung und hohe Leistung
@@ -45,7 +49,7 @@ Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, wenden Sie si
 ## Verfügbarkeit von Plänen in Rechenzentren
 {: #availability}
 
-Die folgende Tabelle enthält nach Rechenzentren in verschiedenen Regionen geordnete Informationen zur Verfügbarkeit der verschiedenen {{site.data.keyword.dashdbshort_notm}}-Pläne: 
+Die folgende Tabelle enthält nach Rechenzentren in verschiedenen Regionen geordnete Informationen zur Verfügbarkeit der verschiedenen {{site.data.keyword.dashdbshort_notm}}-Pläne:
 
 
 | {{site.data.keyword.dashdbshort_notm}}-Pläne | Asien/Pazifik | Europa    | Nord-/Mittelamerika     | Südamerika |
@@ -73,10 +77,10 @@ Die folgende Tabelle enthält nach Rechenzentren in verschiedenen Regionen geord
 ## Einschränkungen des Einstiegsplans
 {: #ep_restrictions}
 
-Für geschäftskritische oder leistungskritische Workloads wird die Verwendung eines auf das Unternehmen abgestimmten Serviceplans anstelle eines Einstiegsserviceplans unbedingt empfohlen.
+Für geschäftskritische oder leistungskritische Workloads wird die Verwendung eines auf das Unternehmen abgestimmten Serviceplans anstelle eines Einstiegsserviceplans unbedingt empfohlen. 
 {: important}
 
-In der folgenden Tabelle sind die Einschränkungen des {{site.data.keyword.dashdbshort_notm}}-Einstiegsplans aufgeführt: 
+In der folgenden Tabelle sind die Einschränkungen des {{site.data.keyword.dashdbshort_notm}}-Einstiegsplans aufgeführt:
 
 | Kategorie | Element | Einschränkung | 
 |----------|------|-------------|

@@ -4,6 +4,10 @@ copyright:
   years: 2014, 2019
 lastupdated: "2018-09-25"
 
+keywords:
+
+subcollection: Db2whc
+
 ---
 
 <!-- Attribute definitions --> 
@@ -24,8 +28,9 @@ Sie können das {{site.data.keyword.dashdbshort_notm}}-Treiberpaket über das Sc
 {: shortdesc}
 
 ## Voraussetzungen
+{: #prereq31}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -39,6 +44,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
    `sudo dpkg -iG *.deb` 
 
 ## Vorgehensweise
+{: #proc31}
 
 1. Dekomprimieren Sie die Datei mit dem komprimierten Treiberpaket, die Sie zuvor heruntergeladen haben.
 
@@ -61,8 +67,9 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
    - **C-Shell**: `source db2cshrc`
 
 ## Nächster Schritt
+{: #wn}
 
-[Konfigurieren Sie die lokale Umgebung](driver_pkg_cfg.html), damit lokale Anwendungen und Client-Tools eine Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen können.   
+[Konfigurieren Sie die lokale Umgebung](/docs/services/Db2whc/connecting/driver_pkg_cfg.html), damit lokale Anwendungen und Client-Tools eine Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen können.   
 
 
 
