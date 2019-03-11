@@ -79,7 +79,7 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
    - [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting/install_linux.html)
    - [在 Mac OS X 上安装](/docs/services/Db2whc/connecting/install_mac.html)
    - [在 Windows 上安装](/docs/services/Db2whc/connecting/install_win.html)
-3. 为 {site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+3. 为 {{site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
 
 ### 使用 Db2 Warehouse on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}

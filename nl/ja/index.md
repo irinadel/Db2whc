@@ -79,7 +79,7 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
    - [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting/install_linux.html)
    - [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting/install_mac.html)
    - [Windows 上でのインストール](/docs/services/Db2whc/connecting/install_win.html)
-3. {site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+3. {{site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
 
 ### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 Warehouse on Cloud を使用する
 {: #data_src}

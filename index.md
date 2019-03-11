@@ -79,7 +79,7 @@ Configure your local environment to connect to your {{site.data.keyword.dashdbsh
    - [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
    - [Installing on Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
    - [Installing on Windows](/docs/services/Db2whc/connecting/install_win.html)
-3. [Configure the driver files](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) for your {site.data.keyword.dashdbshort_notm}} database.
+3. [Configure the driver files](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) for your {{site.data.keyword.dashdbshort_notm}} database.
 
 ### Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}

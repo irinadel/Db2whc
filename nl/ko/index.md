@@ -79,7 +79,7 @@ subcollection: Db2whc
    - [Linux 또는 PowerLinux에서 설치](/docs/services/Db2whc/connecting/install_linux.html)
    - [Mac OS X에서 설치](/docs/services/Db2whc/connecting/install_mac.html)
    - [Windows에서 설치](/docs/services/Db2whc/connecting/install_win.html)
-3. {site.data.keyword.dashdbshort_notm}} 데이터베이스에 대한 [드라이버 파일을 구성](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)하십시오.
+3. {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 대한 [드라이버 파일을 구성](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)하십시오.
 
 ### {{site.data.keyword.Bluemix_notm}} 앱 또는 서비스의 데이터 소스로 Db2 Warehouse on Cloud 사용
 {: #data_src}

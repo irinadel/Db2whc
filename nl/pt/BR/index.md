@@ -80,7 +80,7 @@ Configure seu ambiente local para se conectar ao seu banco de dados do {{site.da
    - [ Instalando no Linux ou PowerLinux ](/docs/services/Db2whc/connecting/install_linux.html)
    - [ Instalando no Mac OS X ](/docs/services/Db2whc/connecting/install_mac.html)
    - [ Instalando no Windows ](/docs/services/Db2whc/connecting/install_win.html)
-3. [Configure os arquivos do driver](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) para seu banco de dados {site.data.keyword.dashdbshort_notm}}.
+3. [Configure os arquivos do driver](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) para seu banco de dados {{site.data.keyword.dashdbshort_notm}}.
 
 ### Use o DB2 Warehouse on Cloud como uma origem de dados para seus apps ou serviços
 {{site.data.keyword.Bluemix_notm}}

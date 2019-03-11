@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindu
    - [Installation unter Linux oder PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
    - [Installation unter Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
    - [Installation unter Windows](/docs/services/Db2whc/connecting/install_win.html)
-3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) für Ihre {site.data.keyword.dashdbshort_notm}}-Datenbank.
+3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) für Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank.
 
 ### Verwenden von Db2 Warehouse on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}
