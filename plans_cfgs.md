@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -128,8 +128,8 @@ The following table provides information about the availability of the various {
 -->
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *NA          | Frankfurt | Washington D.C. (us-east) | *NA           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
 |                              |              |           | Dallas (us-south)         |               |  
 |      |||||
 | SMP                          | Hong Kong    | Amsterdam | Washington D.C. (us-east) | Sao Paulo     |
