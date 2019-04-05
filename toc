@@ -25,6 +25,7 @@ Db2 Warehouse on Cloud
     {: .topicgroup}
     Connecting
         connecting/connecting.md
+        connecting/connectivity_options.md
         connecting/credentials.md
         connecting/driver_pkg.md
         connecting/install_linux.md
@@ -60,7 +61,6 @@ Db2 Warehouse on Cloud
     {: .topicgroup}
     Security
         [Compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-        priv_net.md
     
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}

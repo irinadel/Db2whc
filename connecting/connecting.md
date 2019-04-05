@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-15"
+lastupdated: "2019-04-01"
 
 keywords:
 
@@ -78,6 +78,14 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 - [Configuring your environment](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
 - [Secure Sockets Layer (SSL) support](/docs/services/Db2whc/connecting/ssl.html)
+
+## Connectivity options
+{: #connect_opts}
+
+{{site.data.keyword.dashdbshort_notm}} offers multiple secure connectivity options depending on your application connection requirements.  
+{: shortdesc}
+
+See [Connectivity options](/docs/services/Db2whc/connecting/connectivity_options.html).
 
 ## Connecting programmatically
 {: #conx_prgrm}
