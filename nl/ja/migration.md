@@ -98,7 +98,7 @@ MDMS は、テラバイト単位からペタバイト単位までのデータを
 ![Mass Data Migration Service デバイスの表示](images/mdms.svg)
 
 MDMS デバイスについて詳しくは、以下を参照してください。 
-- [{{site.data.keyword.Bluemix_notm}} 大量データ・マイグレーションの概説](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+- [{{site.data.keyword.Bluemix_notm}} 大量データ・マイグレーションの概説](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
 
 MDMS デバイスを使用した IBM PureData System for Analytics (Netezza) データベースから {{site.data.keyword.dashdblong}} データベースへのデータのマイグレーションについて詳しくは、以下を参照してください。 
 - [IBM PureData System for Analytics (Netezza) からのマイグレーション](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}。

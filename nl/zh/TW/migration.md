@@ -99,7 +99,7 @@ MDMS 提供一種快速、簡單、安全方式，將多個 TB 到多個 PB 的�
 ![Mass Data Migration Service 裝置的視圖](images/mdms.svg)
 
 如需 MDMS 裝置的相關資訊，請參閱： 
-- [開始使用 {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+- [開始使用 {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
 
 如需使用 MDMS 裝置，將資料從 IBM PureData System for Analytics (Netezza) 資料庫移轉至 {{site.data.keyword.dashdblong}} 資料庫的相關資訊，請參閱： 
 - [從 IBM PureData System for Analytics (Netezza) 移轉](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}。

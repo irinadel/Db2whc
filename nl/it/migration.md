@@ -98,7 +98,7 @@ MDMS offre un modo sicuro, veloce e semplice per trasferire fisicamente terabyte
 ![Vista del dispositivo Mass Data Migration Service](images/mdms.svg)
 
 Per ulteriori informazioni sul dispositivo MDMS, consulta: 
-- [Introduzione a {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+- [Introduzione a {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
 Per informazioni sulla migrazione dei tuoi dati da un database IBM PureData System for Analytics (Netezza) a un database {{site.data.keyword.dashdblong}} utilizzando il dispositivo MDMS, consulta: 
 - [Migrazione da IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.

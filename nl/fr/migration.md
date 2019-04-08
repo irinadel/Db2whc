@@ -98,7 +98,7 @@ MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'i
 ![Vue du périphérique Mass Data Migration Service](images/mdms.svg)
 
 Pour en savoir plus sur le périphérique MDMS, voir : 
-- [Initiation à {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+- [Initiation à {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
 Pour savoir comment faire migrer vos données d'une base de données IBM PureData System for Analytics (Netezza) vers une base de données {{site.data.keyword.dashdblong}} à l'aide du périphérique MDMS, voir : 
 - [Migration depuis IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.

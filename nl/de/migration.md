@@ -98,7 +98,7 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
 ![Ansicht der Mass Data Migration Service-Einheit](images/mdms.svg)
 
 Weitere Informationen zur MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
-- [Einführung zu {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+- [Einführung zu {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
 Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
 - [Daten aus IBM PureData System for Analytics (Netezza)-Datenbank migrieren](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.

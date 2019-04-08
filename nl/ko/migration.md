@@ -98,7 +98,7 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
 ![대량 데이터 마이그레이션 서비스 디바이스의 보기](images/mdms.svg)
 
 MDMS 디바이스에 대한 자세한 정보는 다음을 참조하십시오. 
-- [{{site.data.keyword.Bluemix_notm}} 대량 데이터 마이그레이션 시작하기](/docs/infrastructure/mass-data-migration/index.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+- [{{site.data.keyword.Bluemix_notm}} 대량 데이터 마이그레이션 시작하기](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
 MDMS 디바이스를 사용하여 IBM PureData System for Analytics(Netezza) 데이터베이스에서 {{site.data.keyword.dashdblong}} 데이터베이스로 데이터를 마이그레이션하는 방법에 대한 자세한 정보는 다음을 참조하십시오. 
 - [IBM PureData System for Analytics(Netezza)에서 마이그레이션](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
