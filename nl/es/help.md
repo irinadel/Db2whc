@@ -66,9 +66,9 @@ Al utilizar los foros para formular una pregunta, etiquete la pregunta para que 
 * Si tiene preguntas técnicas sobre el desarrollo o el despliegue de una app con {{site.data.keyword.dashdbshort_notm}}, publíquelas en [Stack Overflow ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} y etiquételas con "bluemix" y "db2".
 * Para formular preguntas sobre el servicio y obtener instrucciones de iniciación, utilice el foro [IBM developerWorks® dW Answers ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Incluya las etiquetas "bluemix" y "db2".
 
-Consulte [Obtención de ayuda](/docs/get-support/howtogetsupport.html#using-avatar){:new_window} para obtener más detalles sobre el uso de los foros.
+Consulte [Obtención de ayuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obtener más detalles sobre el uso de los foros.
 
-Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Apertura de una incidencia de soporte](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
+Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Apertura de una incidencia de soporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

@@ -60,9 +60,9 @@ subcollection: Db2whc
 * {{site.data.keyword.dashdbshort_notm}}에서 앱을 개발하거나 배치하는 방법에 대한 기술적인 질문이 있을 경우 [Stack Overflow ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window}에 질문을 게시하고 해당 질문에 "bluemix" 및 "db2" 태그를 지정하십시오.
 * 서비스 및 시작하기 지시사항에 대한 질문이 있는 경우에는 [IBM developerWorks® dW Answers ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window} 포럼을 이용하십시오. "bluemix" 및 "db2" 태그를 포함하십시오.
 
-포럼 사용에 대한 자세한 내용은 [도움 받기](/docs/get-support/howtogetsupport.html#using-avatar){:new_window}를 참조하십시오.
+포럼 사용에 대한 자세한 내용은 [도움 받기](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}를 참조하십시오.
 
-IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 티켓 열기](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}를 참조하십시오.
+IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 티켓 열기](/docs/get-support?topic=get-support-open-case#open-case){:new_window}를 참조하십시오.
 
 
 

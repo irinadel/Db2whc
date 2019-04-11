@@ -69,9 +69,9 @@ Quando utilizzi i forum per fare una domanda, contrassegna con una tag la tua do
 * Se hai domande tecniche sullo sviluppo o la distribuzione di un'applicazione con {{site.data.keyword.dashdbshort_notm}}, inserisci la tua domanda in [Stack Overflow ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} e contrassegnala con le tag "bluemix" e "db2".
 * Per domande sul servizio e per le istruzioni introduttive, usa il forum [IBM developerWorks® dW Answers ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Includi le tag "bluemix" e "db2".
 
-Consulta [Come ottenere supporto](/docs/get-support/howtogetsupport.html#using-avatar){:new_window} per ulteriori dettagli sull'utilizzo dei forum.
+Consulta [Come ottenere supporto](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} per ulteriori dettagli sull'utilizzo dei forum.
 
-Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Apertura di un ticket di supporto](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
+Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Apertura di un ticket di supporto](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

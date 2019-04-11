@@ -70,9 +70,9 @@ Si vous utilisez les forums pour poser une question, libellez votre question de 
 * Pour les questions liées au service et à la mise en route, utilisez le forum [IBM developerWorks® dW Answers ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Indiquez les étiquettes "bluemix" et "db2".
 
 Pour plus d'informations sur l'utilisation des forums, voir
-[Comment obtenir de l'aide](/docs/get-support/howtogetsupport.html#using-avatar){:new_window}.
+[Comment obtenir de l'aide](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
 
-Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Ouverture d'un ticket de demande de service](/docs/get-support/howtogetsupport.html#open-ticket){:new_window}.
+Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Ouverture d'un ticket de demande de service](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 
