@@ -57,11 +57,7 @@ Db2 Warehouse on Cloud
 
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-	
-    {: .topicgroup}
-    Security
-        [Compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-    
+    [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
