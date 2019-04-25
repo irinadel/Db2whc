@@ -34,7 +34,7 @@ You can choose a {{site.data.keyword.dashdbshort_notm}} plan that is configured 
    * Plans configured for High Availability
    * Oracle compatibility
 
-View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}.
+View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 

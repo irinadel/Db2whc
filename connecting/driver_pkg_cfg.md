@@ -30,7 +30,7 @@ To connect local applications and tools to your {{site.data.keyword.dashdbshort_
 ## Prerequisites
 {: #prereq21}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- 1. Install the Db2 driver package for your operating system.
 

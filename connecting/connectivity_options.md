@@ -68,7 +68,7 @@ The easiest way to connect to your data warehouse is by way of the public host n
 
 If you have an application deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You will be provided with a private host name at the time the service is provisioned and you can only connect to it from within your {{site.data.keyword.cloud_notm}} account.  
 
-To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint/getting-started.html).
+To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Service Endpoint: About](/docs/services/service-endpoint?topic=service-endpoint-about#about).
 
 
 ### How to connect to a private endpoint with IBM Cloud Service Endpoint

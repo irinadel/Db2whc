@@ -30,7 +30,7 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 ## Prerequisites
 {: #prereq91}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting/connecting.html#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 ## Procedure
 {: #proc91}
 
-1. Install the [Db2 driver package](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Install the [Db2 driver package](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Open ODBC Data Source Administrator and create either a User DSN or System DSN for the Db2 driver package.
     

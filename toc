@@ -2,11 +2,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html" path="services/Db2whc"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc?topic=Db2whc-getting_started#getting_started" path="services/Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     iam.md
     plans_cfgs.md
     about.md

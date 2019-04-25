@@ -42,12 +42,11 @@ An attempt to create a data warehouse fails with a 500 error, or an SDP load rep
 The {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} is undergoing a scheduled maintenance procedure or a known outage has occurred.
 {: tsCauses}
 
-You can determine the status of the {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} by checking the following status pages:
+You can determine the status of the {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status?selected=status){:new_window} page.
 {: tsResolve}
 
-* [IBM Cloud: Status ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/status?selected=status){:new_window}
-* Status monitoring:
-  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Getting help and support for Db2 Warehouse on Cloud
 {: #gettinghelp}

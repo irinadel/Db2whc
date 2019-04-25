@@ -57,9 +57,9 @@ In the {{site.data.keyword.dashdbshort_notm}} web console, select **Connect > Co
 {: #instlng}
 
 Install the driver package for your operating system:
-- [Installing on Windows](/docs/services/Db2whc/connecting/install_win.html)
-- [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-- [Installing on Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Installing on Linux or PowerLinux](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Installing on Mac OS X](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Installing on Windows](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 
