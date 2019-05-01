@@ -29,7 +29,7 @@ subcollection: Db2whc
 # Getting started tutorial
 {: #getting_started}
 
-The {{site.data.keyword.dashdblong}} managed service is an SQL database provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
+The {{site.data.keyword.dashdblong}} managed service is an SQL database that is provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
 ## Free trial
@@ -65,7 +65,7 @@ You can access your web console in the following ways:
 ### REST API
 {: #api}
 
-With {{site.data.keyword.dashdbshort_notm}} service plans, you can perform tasks related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/db2whc_api){:new_window}.
+With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connect applications or your favorite tools from your local computer
@@ -84,7 +84,7 @@ Configure your local environment to connect to your {{site.data.keyword.dashdbsh
 ### Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}
 
-Apps hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.dashdbshort_notm}} database exactly the same way as your local applications connect to your {{site.data.keyword.dashdbshort_notm}} database.
+Apps that are hosted on {{site.data.keyword.Bluemix_notm}} can connect to your {{site.data.keyword.dashdbshort_notm}} database the same way as your local applications connect to your {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
 When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take advantage of the `VCAP _SERVICES` environment variable to simplify the task of specifying database details and credentials:
@@ -134,7 +134,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 ## Samples
 {: #samples}
 
-Here are links to samples demonstrating how to programmatically connect to your {{site.data.keyword.dashdbshort_notm}} database from applications in different languages:
+Here are links to samples that demonstrate how to programmatically connect to your {{site.data.keyword.dashdbshort_notm}} database from applications in different languages:
 {: shortdesc}
 
 - [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
