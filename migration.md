@@ -21,8 +21,8 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Migrating data to {{site.data.keyword.Bluemix_notm}}
-{: #migration}
+# Loading data to {{site.data.keyword.Bluemix_notm}}
+{: #loading_data}
 
 You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage) to {{site.data.keyword.dashdblong}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
