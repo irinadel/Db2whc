@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ subcollection: Db2whc
    * 고가용성을 위해 구성된 플랜
    * Oracle 호환성
 
-[{{site.data.keyword.Bluemix}} 카탈로그](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}에서 모든 사용 가능한 {{site.data.keyword.dashdbshort_notm}} 플랜을 보십시오.
+[{{site.data.keyword.Bluemix}} 카탈로그](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}에서 모든 사용 가능한 {{site.data.keyword.dashdbshort_notm}} 플랜을 보십시오.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -51,10 +51,9 @@ subcollection: Db2whc
 
 다음 표는 실제 지역에 있는 데이터 센터에서 제공하는 다양한 {{site.data.keyword.dashdbshort_notm}} 플랜의 가용성에 대한 정보를 제공합니다.
 
-
 | {{site.data.keyword.dashdbshort_notm}} 플랜 | 아시아/태평양 |유럽    | 북/중앙아메리카     |남미 |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *NA          | 프랑크푸르트 | 워싱턴 D.C. (미국 동부) | *NA           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | 도쿄        | 프랑크푸르트 | 워싱턴 D.C. (미국 동부) | *해당사항 없음|
 |                              |              |           | 댈러스(미국 남부)         |               |  
 |      |||||
 | SMP                          | 홍콩    | 암스테르담 | 워싱턴 D.C. (미국 동부) | 상파울루     |
@@ -84,7 +83,7 @@ subcollection: Db2whc
 
 | 카테고리 | 항목 | 제한사항 | 
 |----------|------|-------------|
-| 자원 | 스토리지 | 사용자당 20GB의 스토리지. 1GB 미만의 스토리지를 사용하는 경우에만 플랜이 무료입니다. |
+| 리소스 | 스토리지 | 사용자당 20GB의 스토리지. 1GB 미만의 스토리지를 사용하는 경우에만 플랜이 무료입니다. |
 |  | 연결 | 사용자당 50개의 연결. 이 한계는 인스턴스의 시스템 무결성을 유지보수하기 위해 동적으로 조정될 수 있습니다. |
 |  | 성능 | 다중 테넌트 시스템에서 다른 사용자가 실행하는 워크로드 때문에 성능이 변동될 수 있음 |
 |  |  |

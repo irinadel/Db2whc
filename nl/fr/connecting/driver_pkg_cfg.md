@@ -30,7 +30,7 @@ Pour connecter les applications locales et les outils à votre base de données 
 ## Prérequis
 {: #prereq21}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -57,7 +57,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
-    où :
+    Où :
 
    - `<hostname>` est le nom d'hôte de votre serveur.
    - `<alias>` est un alias que vous choisissez. L'alias ne peut pas être le même que le nom de la base de données, `BLUDB`. Si vous souhaitez inclure des espaces dans l'alias, placez-les entre guillemets doubles.
@@ -70,7 +70,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-    où :
+    Où :
 
    - `<hostname>` est le nom d'hôte de votre serveur.
    - `<alias>` est un alias que vous choisissez. L'alias ne peut pas être le même que le nom de la base de données, `BLUDB`. Si vous souhaitez inclure des espaces dans l'alias, placez-les entre guillemets doubles.
@@ -79,7 +79,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `db2cli validate -dsn <alias> -connect -user <userid> -passwd <password>`
 
-   où : 
+   Où : 
    
    - `<alias>` est un alias que vous avez créé avec la commande **db2cli writecfg**.
    - `<userid>` est votre ID d'utilisateur Db2.
@@ -91,7 +91,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `db2cli registerdsn -add -dsn <alias>`
 
-   où : 
+   Où : 
 
    - `<alias>` est un alias que vous avez créé avec la commande **db2cli writecfg**.
 

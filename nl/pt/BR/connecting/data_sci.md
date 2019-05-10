@@ -88,7 +88,7 @@ Estas instruções explicam como criar uma conexão do IBM® SPSS® Statistics c
 ### Pré-requisitos
 {: #prereq11}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 ### Procedimento
 {: #proc11}
@@ -103,11 +103,11 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 
    b. Na janela Criar nova origem de dados, selecione o driver denominado **IBM DB2 ODBC DRIVER** e clique em **Concluir**.
 
-   Certifique-se de que o driver selecionado não seja um driver com um nome semelhante, como `IBM DB2® ODBC DRIVER - DB2COPY`. Se o driver não aparecer na lista, saia do SPSS Statistics e, em seguida, faça download e instale o driver. Consulte  [ Pacote do driver Db2 ](/docs/services/Db2whc/connecting/driver_pkg.html).
+   Certifique-se de que o driver selecionado não seja um driver com um nome semelhante, como `IBM DB2® ODBC DRIVER - DB2COPY`. Se o driver não aparecer na lista, saia do SPSS Statistics e, em seguida, faça download e instale o driver. Consulte [Pacote de drivers](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg).
         
    c. Na janela Driver ODBC IBM - Incluir, insira um nome de origem de dados (geralmente o nome do banco de dados ao qual você está se conectando) e clique em **Incluir**.
         
-   d. Na janela Configurações de CLI/ODBC, na guia **Origem de dados**, insira o ID de usuário e a senha das [informações de conexão](/docs/services/Db2whc/connecting/credentials.html) coletadas antecipadamente.
+   d. Na janela Configurações de CLI/ODBC, na guia **Origem de dados**, insira o ID de usuário e a senha das [informações de conexão](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) coletadas antecipadamente.
         
    e. Na página Configurações avançadas, para cada um dos parâmetros a seguir, clique em **Incluir** para abrir a janela Incluir parâmetro da CLI para iniciar a etapa e clique em **OK** para retornar à página Configurações avançadas:
             
@@ -138,7 +138,7 @@ Estas instruções explicam como criar uma conexão do SAS com um banco de dados
 ### Pré-requisitos
 {: #prereq12}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 ### Procedimento
 {: #proc12}
@@ -155,7 +155,7 @@ Em vez de usar o ambiente do RStudio® integrado ao IBM Watson Studio, talvez vo
 ### Pré-requisitos
 {: #prereq13}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 ### Procedimento
 {: #proc13}
@@ -172,7 +172,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
         
    b. Abra seu ambiente de desenvolvimento R instalado localmente.
         
-   c. No prompt de R, insira as instruções a seguir para criar a conexão. Substitua os itens temporários pelas [informações de conexão](/docs/services/Db2whc/connecting/credentials.html) coletadas antecipadamente.
+   c. No prompt de R, insira as instruções a seguir para criar a conexão. Substitua os itens temporários pelas [informações de conexão](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) coletadas antecipadamente.
 
    - Se o seu ambiente de desenvolvimento R instalado localmente for executado no banco de dados {{site.data.keyword.dashdbshort_notm}}:
 

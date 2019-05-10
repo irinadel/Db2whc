@@ -84,9 +84,9 @@ Lift est une application gratuite que vous pouvez utiliser pour migrer vos donn�
 |                              | Format de fichier CSV |
 {: caption="Tableau 1. Migration de sources de données" caption-side="top"}
 
-Pour télécharger et installer, voir : [Download Lift CLI![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#download){:new_window}.
+Pour télécharger et installer, voir : [Download Lift CLI![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
 
-Pour des instructions pas à pas relatives à la migration de vos données dans {{site.data.keyword.Bluemix_notm}} en utilisant Lift, voir : [Migrate data to {{site.data.keyword.dashdblong}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}.
+Pour des instructions pas à pas relatives à la migration de vos données dans {{site.data.keyword.Bluemix_notm}} en utilisant Lift, voir : [Migrate data to {{site.data.keyword.dashdblong}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -97,11 +97,9 @@ MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'i
 
 ![Vue du périphérique Mass Data Migration Service](images/mdms.svg)
 
-Pour en savoir plus sur le périphérique MDMS, voir : 
-- [Initiation à {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Pour plus d'informations sur le périphérique MDMS, voir le [tutoriel d'initiation](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
-Pour savoir comment faire migrer vos données d'une base de données IBM PureData System for Analytics (Netezza) vers une base de données {{site.data.keyword.dashdblong}} à l'aide du périphérique MDMS, voir : 
-- [Migration depuis IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+Pour plus d'informations sur la migration de vos données depuis une base de données IBM PureData System for Analytics (Netezza) vers une base de données {{site.data.keyword.dashdblong}} à l'aide du périphérique MDMS, voir [Migration depuis IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}.
 
 ## Tutoriel : Migration des données depuis des bases de données relationnelles sur site
 {: #tutorial}

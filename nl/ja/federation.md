@@ -24,7 +24,7 @@ subcollection: Db2whc
 # データ仮想化 (フェデレーション)
 {: #data_virt_fed}
 
-DB2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
+Db2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の Db2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 {: shortdesc}
 
 このファンクションは、エントリー・プランを除き、{{site.data.keyword.dashdbshort_notm}} のすべてのバージョンでサポートされています。 ただし、データをプルできるターゲットとしてエントリー・プランを使用できます。
@@ -42,7 +42,7 @@ located in the cloud and on-premises -->
 
 ### Db2 on Cloud への接続
 
-DB2 ファミリー製品のユーザーは、{{site.data.keyword.Db2_on_Cloud_short}} データベースおよび {{site.data.keyword.dashdbshort_notm}} データベースのデータを統合できます。 一般的なインターフェースを使用してデータにアクセスしてデータを簡単に追加、照会、および分析することができ、複雑な ETL プロセスや追加コードは必要ありません。
+Db2 ファミリー製品のユーザーは、{{site.data.keyword.Db2_on_Cloud_short}} データベースおよび {{site.data.keyword.dashdbshort_notm}} データベースのデータを統合できます。 一般的なインターフェースを使用してデータにアクセスしてデータを簡単に追加、照会、および分析することができ、複雑な ETL プロセスや追加コードは必要ありません。
 
 <!-- Db2 family users would now be able to federate data between Db2 on Cloud and Db2 Warehouse on Cloud. By being provided a common interface for accessing the data, a user can now easily add or query data from or to the Warehouse without complex ETL processes or any additional code. -->
 
@@ -72,7 +72,7 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 2. ユーザー `admin2` として、パスワード `YYYY` を使用して、{{site.data.keyword.dashdbshort_notm}} コンソールからデータが入った `testdata` テーブルをロードします。
 
-### フェデレーション・ソースとして使用されている DB2 Warehouse on Cloud マシン上:
+### フェデレーション・ソースとして使用されている Db2 Warehouse on Cloud マシン上:
 {: #fed_src}
 
 {{site.data.keyword.dashdbshort_notm}} コンソールから、以下を行います。
@@ -98,28 +98,28 @@ At times, you might choose to partition (shard) your data. With federation capab
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. ターゲット・マシンと通信するためのサーバーを作成します。<br/>
+1. ターゲット・マシンと対話するためのサーバーを作成します。<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のように指定します。<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2 用のユーザー・マッピングを作成します。<br/>
+2. admin2 のユーザー・マッピングを作成します。<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のように指定します。<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. データベースのニックネームを作成します。<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のように指定します。<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
 4. ターゲット・サーバーからデータを取得できることをテストします。<br/>
    `select * from <nickname>`
 
-   例えば、以下を行えます。<br/>
+   例えば、以下のように指定します。<br/>
    `select * from ntest1`
 
 ## 追加情報

@@ -30,7 +30,7 @@ Para conectar aplicativos locais e ferramentas ao banco de dados {{site.data.key
 ## Pré-requisitos
 {: #prereq21}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
@@ -51,11 +51,11 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 
    Para conectar seus aplicativos e ferramentas ao banco de dados usando SSL, insira os comandos a seguir em um shell de comando em sistemas operacionais Linux, no prompt de comandos do Windows ou em uma janela de comando do DB2: 
 
-   ` db2cli writecfg add -database BLUDB -host <hostname> -port 50001 `
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
 
-   ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001 `
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
 
-   ` db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode = SSL" `
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
     sendo:
 
@@ -66,9 +66,9 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 
    Para conectar seus aplicativos e ferramentas ao banco de dados sem usar SSL, insira os comandos a seguir em um shell de comando em sistemas operacionais Linux, no prompt de comandos do Windows ou em uma janela de comando do DB2: 
 
-   ` db2cli writecfg add -database BLUDB -host <hostname> -port 50000 `
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
 
-   ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000 `
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
     sendo:
 
@@ -77,7 +77,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 
 2. Teste a conexão emitindo o comando **db2cli validate** por meio do prompt de comandos:
 
-   ` db2cli validate -dsn <alias> -connect -user <userid> -passwd <password>`
+   `db2cli validate -dsn <alias> -connect -user <userid> -passwd <password>`
 
    sendo: 
    

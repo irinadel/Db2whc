@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 전제조건
 {: #prereq41}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -71,4 +71,4 @@ subcollection: Db2whc
 ## 다음에 수행할 작업
 {: #wn41}
 
-로컬 애플리케이션 또는 클라이언트 도구를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하려면 [로컬 환경을 구성](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)하십시오.
+로컬 애플리케이션 또는 클라이언트 도구를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하려면 [로컬 환경을 구성](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env)하십시오.

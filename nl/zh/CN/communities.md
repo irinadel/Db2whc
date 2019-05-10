@@ -24,7 +24,7 @@ subcollection: Db2whc
 # 社区
 {: #communities}
 
-您可加入用户驱动的社区以获取专业 Db2 用户的信息、教程、讨论或帮助。而且加入免费！
+您可加入用户主导的社区，以获取专业 Db2 用户的信息、教程、讨论和帮助。而且免费加入！
 {: shortdesc}
 
 * [International Db2 Users Group (IDUG) ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.idug.org/){:new_window} IDUG® 是独立、非盈利、用户运行的组织，其使命是提供最高质量的培训和服务来支持和加强信息服务社区，目标是提升 Db2 的有效利用。

@@ -30,7 +30,7 @@ Defina una conexión entre una ODBC de Microsoft Windows o una aplicación de CL
 ## Requisitos previos
 {: #prereq81}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

@@ -30,7 +30,7 @@ Definisci una connessione tra un'applicazione .NET e il tuo database {{site.data
 ## Prerequisiti
 {: #prereq71}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-24"
+lastupdated: "2019-04-24"
 
 keywords:
 
@@ -26,7 +26,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Einführung
+# Lernprogramm 'Einführung'
 {: #getting_started}
 
 Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können Db2 Warehouse wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
@@ -35,7 +35,7 @@ Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um ein
 ## Kostenfreier Test
 {: #freetrial}
 
-Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
+Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
 
 ## Schnittstellen
 {: #interfaces}
@@ -74,12 +74,12 @@ Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Z
 Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank zu konfigurieren:
 {: shortdesc}
 
-1. Laden Sie das [Treiberpaket](/docs/services/Db2whc/connecting/driver_pkg.html) über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunter.
+1. Laden Sie das [Treiberpaket](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg) über die {{site.data.keyword.dashdbshort_notm}}-Webkonsole herunter.
 2. Installieren Sie das Treiberpaket auf dem Computer, auf dem Ihre Apps bzw. Tools ausgeführt werden:
-   - [Installation unter Linux oder PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-   - [Installation unter Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
-   - [Installation unter Windows](/docs/services/Db2whc/connecting/install_win.html)
-3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) für Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank.
+   - [Installation unter Linux oder PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+   - [Installation unter Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+   - [Installation unter Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) für Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank. 
 
 ### Verwenden von Db2 Warehouse on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}
@@ -89,7 +89,7 @@ Für Apps, die per Hosting in {{site.data.keyword.Bluemix_notm}} bereitgestellt 
 
 Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, können Sie die Umgebungsvariable `VCAP _SERVICES` nutzen, um das Angeben von Datenbankdetails und -berechtigungsnachweisen zu vereinfachen:
 1. Klicken Sie im {{site.data.keyword.Bluemix_notm}}-Dashboard auf der Registerkarte **Verbindungen** der Servicedetailseite für Ihren {{site.data.keyword.dashdbshort_notm}}-Service auf die Schaltfläche **Verbindung erstellen**.
-2. Wählen Sie die {{site.data.keyword.Bluemix_notm}}-App aus, die mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank als Datenquelle verwendet werden soll, und klicken Sie dann auf die Schaltfläche **Verbinden**.
+2. Wählen Sie die {{site.data.keyword.cloud_notm}}-App aus, die mit der {{site.data.keyword.dashdbshort_notm}}-Datenbank als Datenquelle verwendet werden soll, und klicken Sie dann auf die Schaltfläche **Verbinden**.
 3. Aktualisieren Sie den Anwendungscode, um Datenbankdetails- und -berechtigungsnachweise aus der Umgebungsvariablen `VCAP_SERVICES` abzurufen:
 
     **Beispiel ohne `VCAP_SERVICES`**
@@ -137,12 +137,12 @@ Wenn Ihre Apps die {{site.data.keyword.Bluemix_notm}}-Plattform verwenden, könn
 Über die folgenden Links können Sie Beispiele aufrufen, die veranschaulichen, wie Sie von Anwendungen in verschiedenen Sprachen aus eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank programmgestützt herstellen:
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows-ODBC oder -Befehlszeilenschnittstelle](/docs/services/Db2whc/connecting/odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC-Datenquellenadministrator](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [REST-API](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows-ODBC oder -Befehlszeilenschnittstelle](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC-Datenquellenadministrator](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [REST-API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 
 ## Video mit Einführung zu Db2 Warehouse on Cloud
 {: #intro_vid}

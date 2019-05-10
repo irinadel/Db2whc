@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 先决条件
 {: #prereq31}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -70,7 +70,7 @@ subcollection: Db2whc
 ## 后续操作
 {: #wn}
 
-为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。   
+为了能够将本地应用程序或客户机工具连接到 {{site.data.keyword.dashdbshort_notm}} 数据库，请[配置本地环境](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env)。   
 
 
 

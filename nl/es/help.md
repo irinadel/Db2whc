@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -46,14 +46,11 @@ en {{site.data.keyword.Bluemix_notm}} se le está realizando
 un procedimiento de mantenimiento planificado o se ha producido una caída conocida.
 {: tsCauses}
 
-Puede determinar el estado del servicio de {{site.data.keyword.dashdbshort_notm}}
-en {{site.data.keyword.Bluemix_notm}} comprobando
-las siguientes páginas de estado:
+Para determinar el estado del servicio {{site.data.keyword.dashdbshort_notm}} en {{site.data.keyword.Bluemix_notm}}, consulte la página [IBM Cloud: Estado ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/status?selected=status){:new_window}.
 {: tsResolve}
 
-* [Soporte de IBM Cloud ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* Supervisión de estado:
-  * [Todas las regiones ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Obtención de ayuda y soporte para Db2 Warehouse on Cloud
 {: #gettinghelp}
@@ -68,7 +65,7 @@ Al utilizar los foros para formular una pregunta, etiquete la pregunta para que 
 
 Consulte [Obtención de ayuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obtener más detalles sobre el uso de los foros.
 
-Para obtener información sobre cómo abrir una incidencia de soporte de IBM, o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Apertura de una incidencia de soporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Para obtener información sobre cómo abrir una incidencia de soporte de IBM o sobre los niveles de soporte y la gravedad de las incidencias, consulte: [Cómo trabajar con casos de soporte de ](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

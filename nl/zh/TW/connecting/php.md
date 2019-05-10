@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 必要條件
 {: #prereq101}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -43,7 +43,7 @@ subcollection: Db2whc
 ### 情境 1：從 {{site.data.keyword.Bluemix_notm}} 外部連接：
 {: #scen1}
 
-1. 從 Web 主控台下載 [Db2 驅動程式套件](/docs/services/Db2whc/connecting/driver_pkg.html)，然後將驅動程式套件安裝在將執行 PHP 應用程式的機器上。
+1. 從 Web 主控台下載 [Db2 驅動程式套件](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)，然後將驅動程式套件安裝在將執行 PHP 應用程式的機器上。
                 
 2. 使用 [`odbc_connect` 函數 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://php.net/manual/en/function.odbc-connect.php){:new_window} 來連接至 BLUDB 資料庫。
     

@@ -56,7 +56,7 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq8}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc8}
@@ -86,7 +86,7 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq9}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 您必须在本地计算机上安装 Db2 驱动程序包或 IBM® Data Server Driver Package。 
 
@@ -127,14 +127,14 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq10}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 您必须在计算机上安装 Db2 驱动程序包或 IBM® Data Server 驱动程序包。
 
 ### 过程
 {: #proc10}
 
-1. 根据预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)来确定 ODBC DSN 数据。
+1. 根据预先收集的[连接信息](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)来确定 ODBC DSN 数据。
 
 2. 创建新连接：
       
@@ -149,7 +149,7 @@ subcollection: Db2whc
      FET_BUF_SIZE=256K  
      ```
 
-     其中，`<hostname>`, `<port>` 和 `<database>` 是占位符，表示您先前记录的主机名、端口号和数据库名称。
+     其中，`<hostname>`、`<port>` 和 `<database>` 是占位符，代表您先前记录的主机名、端口号和数据库名称。
             
    - 选择**数据库认证**作为认证类型。
             

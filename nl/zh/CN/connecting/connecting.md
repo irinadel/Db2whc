@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-15"
+lastupdated: "2019-04-01"
 
 keywords:
 
@@ -63,21 +63,29 @@ subcollection: Db2whc
 ### 收集连接信息
 {: #collect_info}
 
-- [数据库详细信息和连接凭证](/docs/services/Db2whc/connecting/credentials.html)
+- [数据库详细信息和连接凭证](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)
 
 ### 下载和安装驱动程序包
 {: #dl_install}
 
-- [下载驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)
-- [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting/install_linux.html)
-- [在 Mac OS X 上安装](/docs/services/Db2whc/connecting/install_mac.html)
-- [在 Windows 上安装](/docs/services/Db2whc/connecting/install_win.html)
+- [下载驱动程序包](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)
+- [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [在 Mac OS X 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [在 Windows 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 ### 配置环境
 {: #cfg_env}
 
-- [配置环境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
-- [安全套接字层 (SSL) 支持](/docs/services/Db2whc/connecting/ssl.html)
+- [配置环境](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)
+- [安全套接字层 (SSL) 支持](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support#ssl_support)
+
+## 连接选项
+{: #connect_opts}
+
+{{site.data.keyword.dashdbshort_notm}} 根据您的应用程序连接需求提供了多个安全连接选项。  
+{: shortdesc}
+
+请参阅[连接选项](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options#connect_options)。
 
 ## 以编程方式连接
 {: #conx_prgrm}
@@ -85,12 +93,12 @@ subcollection: Db2whc
 您可以使用常用编程语言来创建连接到 {{site.data.keyword.dashdbshort_notm}} 数据库的应用程序。
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows ODBC 或 CLI](odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC 数据源管理器](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows ODBC 或 CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC 数据源管理器](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -106,33 +114,33 @@ subcollection: Db2whc
 {: #di}
 
 - 连接需要分析数据库的 {{site.data.keyword.Bluemix_short}} 应用程序。
-- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
-- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
-- [Lift ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
+- [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
+- [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
+- [Lift ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
 - [Segment ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
-- [数据服务器管理器](/docs/services/Db2whc/connecting/data.html#dsm)
-- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
-- [通过 Aginity Workbench 将 Netezza® 数据模型和数据迁移到 {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)
-- [通过 InfoSphere Data Architect 设计和部署数据库模式](/docs/services/Db2whc/connecting/data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
+- [数据服务器管理器](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
+- [通过 Aginity Workbench 将 Netezza® 数据模型和数据迁移到 {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb)
+- [通过 InfoSphere Data Architect 设计和部署数据库模式](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#ida)
 
 ### 数据可视化/BI
 {: #dvis_bi}
 
-- [通过 Cognos Analytics 针对数据运行商业智能报告](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
+- [通过 Cognos Analytics 针对数据运行商业智能报告](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
-- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
-- [通过 Esri ArcGIS for Desktop 对数据执行地理空间分析和地图发布](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [通过 Esri ArcGIS for Desktop 对数据执行地理空间分析和地图发布](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 ### Data Science
 {: #dsci}
 
-- [Watson Studio（原先的 IBM Data Science Experience）](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
-- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
-- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
-- [本地 R 开发环境](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
+- [Watson Studio（原先的 IBM Data Science Experience）](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [本地 R 开发环境](/docs/services/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
 
 ## 连接到另一个 Db2 数据库
 {: #fed}
@@ -142,6 +150,6 @@ subcollection: Db2whc
 
 在其他所有版本的 {{site.data.keyword.dashdbshort_notm}} 都支持此功能，但入门套餐除外。但是，您可以使用入门套餐作为可从中拉取数据的目标。
 
-- [数据虚拟化（联合）](/docs/services/Db2whc/federation.html)
+- [数据虚拟化（联合）](/docs/services/Db2whc?topic=Db2whc-data_virt_fed#data_virt_fed)
 
 

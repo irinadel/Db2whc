@@ -48,13 +48,13 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 
 다음 애플리케이션에 연결하여 분석을 분석하고 시각화할 수 있습니다.
 
-- [Watson Studio(이전의 Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
-- [Cognos Analytics](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
+- [Watson Studio(이전의 Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [Cognos Analytics](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
-- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
-- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
-- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
-- [Esri ArcGIS for Desktop](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [Esri ArcGIS for Desktop](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 

@@ -57,9 +57,9 @@ En la consola web de {{site.data.keyword.dashdbshort_notm}}, seleccione **Conect
 {: #instlng}
 
 Instale el paquete de controlador para el sistema operativo:
-- [Instalación en Windows](/docs/services/Db2whc/connecting/install_win.html)
-- [Instalación en Linux o PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-- [Instalación en Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Instalación en Linux o PowerLinux](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Instalación en Mac OS X](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Instalación en Windows](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

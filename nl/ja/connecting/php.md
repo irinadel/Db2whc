@@ -30,7 +30,7 @@ PHP アプリケーションと {{site.data.keyword.dashdbshort_notm}} データ
 ## 前提条件
 {: #prereq101}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -43,7 +43,7 @@ PHP アプリケーションと {{site.data.keyword.dashdbshort_notm}} データ
 ### シナリオ 1: {{site.data.keyword.Bluemix_notm}} の外部からの接続:
 {: #scen1}
 
-1. Web コンソールから [Db2 ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)をダウンロードして、PHP アプリケーションが実行されるマシンにドライバー・パッケージをインストールします。
+1. Web コンソールから [Db2 ドライバー・パッケージ](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)をダウンロードして、PHP アプリケーションが実行されるマシンにドライバー・パッケージをインストールします。
                 
 2. [`odbc_connect` 関数 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://php.net/manual/en/function.odbc-connect.php){:new_window} を使用して BLUDB データベースに接続します。
     

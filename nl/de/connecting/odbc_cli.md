@@ -30,7 +30,7 @@ Definieren Sie eine Verbindung zwischen einer ODBC- oder CLI-Anwendung von Micro
 ## Voraussetzungen
 {: #prereq81}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

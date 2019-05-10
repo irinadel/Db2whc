@@ -57,9 +57,9 @@ Wählen Sie in der {{site.data.keyword.dashdbshort_notm}}-Webkonsole **Verbindun
 {: #instlng}
 
 Installieren Sie das Treiberpaket für Ihr Betriebssystem:
-- [Installation unter Windows](/docs/services/Db2whc/connecting/install_win.html)
-- [Installation unter Linux oder PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-- [Installation unter Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Installation unter Linux oder PowerLinux](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Installation unter Mac OS X](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Installation unter Windows](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

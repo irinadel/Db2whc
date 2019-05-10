@@ -41,11 +41,11 @@ MDMS ofrece una forma rápida, sencilla y segura para transferir físicamente de
    - Dirección IP estática
    - Máscara de red 
    - Pasarela predeterminada para acceder a la interfaz de usuario (IU)
-3. Destino de descarga de Cloud Object Storage <br/>
-   Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+3. Destino de la descarga de Cloud Object Storage<br/>
+Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
    {: important}
 
-## Paso 1: creación de una solicitud
+## Paso 1: Creación de una solicitud
 {: #create-req}
 
 1. Inicie una sesión en el [{{site.data.keyword.slportal}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){:new_window} utilizando sus credenciales exclusivas.
@@ -124,17 +124,17 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
 
 5. Conecte el adaptador de CAT6A a SFP proporcionado y conecte el conmutador de 10 Gb.
 
-6. Si se puede llegar a la dirección IP configurada para Eth3 mediante un navegador `https://<your_Eth3_IP_Address>`, vaya al siguiente paso. 
+6. Si se puede acceder a la dirección IP configurada para Eth3 a través de un navegador `https://<your_Eth3_IP_Address>`, continúe en el paso siguiente. 
 
    De lo contrario, conéctelo en el puerto Eth1 (1 GbE-B). Abra el navegador y escriba `https://<your_Eth1_IP_Address>`. Especifique la dirección IP de Eth1 adecuada para su configuración de red. Acepte la excepción de certificado.<br/>
    Si tiene que modificar los valores de IP para Eth3 o Eth1, consulte la sección [Configuración de dirección IP](#ip_cfg).
    {: note}
 
-7. Utilice el nombre de usuario y la contraseña proporcionados para iniciar la sesión.<br/>
+7. Utilice el nombre de usuario y la contraseña que se le ha suministrado para iniciar una sesión.<br/>
     ![Página de inicio de sesión](/images/Login.png)
 
 8. El asistente de flujo presenta el acceso a los temas específicos utilizados habitualmente ordenados de izquierda a derecha.<br/>
-    ![Iconos de flujo de trabajos](/images/workflow.png) <br/>
+    ![Icono de flujo de trabajo](/images/workflow.png) <br/>
     El flujo de trabajo se puede reabrir con **Gestor de trabajo** de la parte superior izquierda de la GUI.
     {: note}
 
@@ -144,7 +144,7 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
     ![Activar agrupación de almacenamiento](/images/UnlockPool.png)
 
 10. De forma predeterminada, el recurso compartido tiene habilitados los protocolos NFS y SMB sin restricciones de acceso al recurso compartido. Para restringir el acceso a este recurso compartido (para NFS o SMB), pulse con el botón derecho del ratón el nombre del recurso compartido y seleccione el elemento de menú correspondiente.<br/>
-    ![Restringir el acceso al recurso compartido](/images/ShareControls.png)
+    ![Restringir acceso compartido](/images/ShareControls.png)
 
 11. Cuando la agrupación de almacenamiento esté habilitada, el recurso compartido NFS está disponible para montar. En el flujo de trabajo, pulse **Ver recursos compartidos de red** para ver la vista de recursos compartidos de red. Cierre el flujo de trabajo, pulse con el botón derecho del ratón el recurso compartido y seleccione **Ver mandato de montaje** para ver el nombre del recurso compartido y la información de montaje. Monte el recurso compartido en el servidor. Asegúrese de especificar la dirección IP del enlace de 10 GB al montar el recurso compartido.
     ![Montaje del recurso compartido](/images/MountCommand.png)

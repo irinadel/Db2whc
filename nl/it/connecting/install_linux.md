@@ -30,7 +30,7 @@ Puoi installare il pacchetto del driver {{site.data.keyword.dashdbshort_notm}}su
 ## Prerequisiti
 {: #prereq31}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -69,7 +69,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 ## Operazioni successive
 {: #wn}
 
-Per poter collegare le tue applicazioni locali o i tuoi strumenti client al tuo database {{site.data.keyword.dashdbshort_notm}}, [configura il tuo ambiente locale](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).   
+Per poter collegare le tue applicazioni locali o i tuoi strumenti client al tuo database {{site.data.keyword.dashdbshort_notm}}, [configura il tuo ambiente locale](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).   
 
 
 

@@ -57,9 +57,9 @@ subcollection: Db2whc
 {: #instlng}
 
 다음과 같이 운영 체제용 드라이버 패키지를 설치하십시오.
-- [Windows에서 설치](/docs/services/Db2whc/connecting/install_win.html)
-- [Linux 또는 PowerLinux에서 설치](/docs/services/Db2whc/connecting/install_linux.html)
-- [Mac OS X에서 설치](/docs/services/Db2whc/connecting/install_mac.html)
+- [Linux 또는 PowerLinux에서 설치](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Mac OS X에서 설치](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Windows에서 설치](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

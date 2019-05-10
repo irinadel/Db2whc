@@ -30,7 +30,7 @@ Utilice la herramienta Administrador de origen de datos ODBC para definir una co
 ## Requisitos previos
 {: #prereq91}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 ## Procedimiento
 {: #proc91}
 
-1. Instale el [paquete de controlador Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Instale el [paquete de controlador Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Abra el administrador de orígenes de datos ODBC y cree un nombre de subsistema predeterminado de usuario o un nombre de subsistema predeterminado de sistema para el paquete de controlador Db2.
     

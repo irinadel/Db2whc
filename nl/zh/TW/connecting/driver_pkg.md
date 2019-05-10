@@ -57,9 +57,9 @@ subcollection: Db2whc
 {: #instlng}
 
 安裝作業系統的驅動程式套件：
-- [在 Windows 上安裝](/docs/services/Db2whc/connecting/install_win.html)
-- [在 Linux 或 PowerLinux 上安裝](/docs/services/Db2whc/connecting/install_linux.html)
-- [在 Mac OS X 上安裝](/docs/services/Db2whc/connecting/install_mac.html)
+- [在 Linux 或 PowerLinux 上安裝](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [在 Mac OS X 上安裝](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [在 Windows 上安裝](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

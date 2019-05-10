@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-24"
+lastupdated: "2019-04-24"
 
 keywords:
 
@@ -26,7 +26,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 入门
+# 入门教程
 {: #getting_started}
 
 {{site.data.keyword.dashdblong}} 受管服务是在云中为您供应的 SQL 数据库。您可以使用 Db2 Warehouse 就像使用任何数据库软件一样，但是却没有硬件设置或软件安装和维护所产生的开销和费用。
@@ -35,7 +35,7 @@ subcollection: Db2whc
 ## 免费试用
 {: #freetrial}
 
-您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
+您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
 
 ## 界面
 {: #interfaces}
@@ -65,7 +65,7 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2whc_api){:new_window}，执行与文件管理和装入数据相关的任务。
+使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2whc_api){:new_window} 来执行与文件管理和装入数据相关的任务。
 {: shortdesc}
 
 ### 从本地计算机连接应用程序或喜爱的工具
@@ -74,22 +74,22 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 通过完成以下步骤，配置本地环境以连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-1. 通过 {{site.data.keyword.dashdbshort_notm}} Web 控制台下载[驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
+1. 通过 {{site.data.keyword.dashdbshort_notm}} Web 控制台下载[驱动程序包](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)。
 2. 在运行应用程序或工具的计算机上安装驱动程序包：
-   - [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting/install_linux.html)
-   - [在 Mac OS X 上安装](/docs/services/Db2whc/connecting/install_mac.html)
-   - [在 Windows 上安装](/docs/services/Db2whc/connecting/install_win.html)
-3. 为 {{site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+   - [在 Linux 或 PowerLinux 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+   - [在 Mac OS X 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+   - [在 Windows 上安装](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+3. 为您的 {{site.data.keyword.dashdbshort_notm}} 数据库[配置驱动程序文件](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)。
 
 ### 使用 Db2 Warehouse on Cloud 作为 {{site.data.keyword.Bluemix_notm}} 应用程序或服务的数据源
 {: #data_src}
 
-在 {{site.data.keyword.Bluemix_notm}} 上托管的应用程序可以使用与本地应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库完全相同的方法，连接到 {{site.data.keyword.dashdbshort_notm}} 数据库。
+在 {{site.data.keyword.Bluemix_notm}} 上托管的应用程序可以使用与本地应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库相同的方法，来连接到 {{site.data.keyword.dashdbshort_notm}} 数据库。
 {: shortdesc}
 
 当应用程序使用 {{site.data.keyword.Bluemix_notm}} 平台时，您可以利用 `VCAP _SERVICES` 环境变量来简化指定数据库详细信息和凭证的任务：
 1. 在 {{site.data.keyword.Bluemix_notm}} 仪表板上，在 {{site.data.keyword.dashdbshort_notm}} 服务的“服务详细信息”页面的**连接**选项卡上，单击**创建连接**按钮。
-2. 选择 {{site.data.keyword.Bluemix_notm}} 应用程序以使用 {{site.data.keyword.dashdbshort_notm}} 数据库作为数据源，然后单击**连接**按钮。
+2. 选择 {{site.data.keyword.cloud_notm}} 应用程序以使用 {{site.data.keyword.dashdbshort_notm}} 数据库作为数据源，然后单击**连接**按钮。
 3. 更新应用程序代码以从 `VCAP_SERVICES` 环境变量检索数据库详细信息和凭证：
 
     **没有 `VCAP_SERVICES` 的示例**
@@ -97,8 +97,6 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
     ```php
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
-
-    
 
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connection info page of the
@@ -112,11 +110,7 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
                    "UID=$user;" .
                    "PWD=$password;";
 
-    
-
     $conn_string = $driver . $dsn;
-                                   
-    
 
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
@@ -128,14 +122,10 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
     <?php
     $driver      = "DRIVER={IBM DB2 ODBC DRIVER};";
 
-    
-
     $vcap        = json_decode( getenv( "VCAP_SERVICES" ), true );
     $dsn         = $vcap[ "dashDB" ][0][ "credentials" ][ "dsn" ];
 
     $conn_string = $driver . $dsn;
-                                   
-    
                                    
     $conn        = db2_connect( $conn_string, "", "" );
     ?>
@@ -144,15 +134,15 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ## 样本
 {: #samples}
 
-下面是一些样本的链接，这些样本演示了在不同的语言中，如何以编程方式从应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
+下面是一些示例的链接，这些示例演示了在不同的语言中，如何以编程方式从应用程序连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows ODBC 或 CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC 数据源管理器](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows ODBC 或 CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC 数据源管理器](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 
 ## 视频：Db2 Warehouse on Cloud 简介
 {: #intro_vid}

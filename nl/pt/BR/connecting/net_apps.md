@@ -30,7 +30,7 @@ Defina uma conexão entre um aplicativo .NET e o banco de dados {{site.data.keyw
 ## Pré-requisitos
 {: #prereq71}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -46,11 +46,11 @@ As etapas a seguir mostram como conectar seu aplicativo ao banco de dados com .N
         
    - Para uma conexão com SSL:
 
-     ` db2cli writecfg add -database BLUDB -host <hostname> -port 50001 `
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
 
-     ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001 `
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
 
-     ` db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode = SSL" `
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
      sendo:
 
@@ -60,9 +60,9 @@ As etapas a seguir mostram como conectar seu aplicativo ao banco de dados com .N
 
    - Para uma conexão sem SSL:
 
-     ` db2cli writecfg add -database BLUDB -host <hostname> -port 50000 `
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
 
-     ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000 `
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
 2. [*Optional*]: To verificar a conexão .NET com o banco de dados, insira o comando a seguir em um prompt de comandos:
 

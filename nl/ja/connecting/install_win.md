@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 前提条件
 {: #prereq51}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
@@ -45,4 +45,4 @@ subcollection: Db2whc
 ## 次の作業
 {: #wn51}
 
-ローカル・アプリケーションまたはクライアント・ツールを {{site.data.keyword.dashdbshort_notm}} データベースに接続できるようにするには、[ローカル環境を構成します](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+ローカル・アプリケーションまたはクライアント・ツールを {{site.data.keyword.dashdbshort_notm}} データベースに接続できるようにするには、[ローカル環境を構成します](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env)。

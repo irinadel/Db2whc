@@ -58,7 +58,7 @@ Queste istruzioni illustrano come collegare Tableau a un database {{site.data.ke
 ### Prerequisiti
 {: #prereq8}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 ### Procedura
 {: #proc8}
@@ -88,7 +88,7 @@ Queste istruzioni spiegano come collegare Microsoft Excel <!--2010-->a un databa
 ### Prerequisiti
 {: #prereq9}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tuo computer locale. 
 
@@ -129,14 +129,14 @@ Puoi collegare Esri ArcGIS per Desktop <!--version 10.3.1 -->a un database {{sit
 ### Prerequisiti
 {: #prereq10}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tuo computer.
 
 ### Procedura
 {: #proc10}
 
-1. Determina il tuo DSN ODBC dalle [informazioni di connessione](/docs/services/Db2whc/connecting/credentials.html) che hai annotato in precedenza.
+1. Determina il tuo DSN ODBC dalle [informazioni di connessione](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) che hai annotato in precedenza.
 
 2. Crea una nuova connessione:
       
@@ -151,7 +151,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
      FET_BUF_SIZE=256K  
      ```
 
-     dove `<hostname>`, `<port>` e `<database>` sono segnaposto che rappresentano il nome host, il numero di porta e il nome del database che hai annotato in precedenza.
+     dove `<hostname>`, `<port>` e `<database>` sono segnaposto che rappresentano il nome host, il numero di porta e il nome del database che hai annotato in precedenza. 
             
    - Seleziona **Database authentication** come tipo di autenticazione.
             

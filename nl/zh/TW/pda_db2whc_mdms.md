@@ -42,7 +42,7 @@ MDMS 提供一種快速、簡單、安全方式，將多個 TB 到多個 PB 的�
    - 網路遮罩 
    - 存取使用者介面 (UI) 的預設閘道
 3. Cloud Object Storage 下載目的地<br/>
-   您在美國跨區域或美國南部位置必須至少具有一個 {{site.data.keyword.cos_full}} 帳戶及一個儲存區，才能完成要求表單。如果您尚未有 {{site.data.keyword.cos_full_notm}} 帳戶，請先建立一個，再要求 MDMS 裝置。如需相關資訊，請參閱：[關於 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。{: important}
+   您在美國跨區域或美國南部位置必須至少具有一個 {{site.data.keyword.cos_full}} 帳戶及一個儲存區，才能完成要求表單。如果您尚未有 {{site.data.keyword.cos_full_notm}} 帳戶，請先建立一個，再要求 MDMS 裝置。如需相關資訊，請參閱：[關於 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}。{: important}
 
 ## 步驟 1：建立要求
 {: #create-req}
@@ -201,7 +201,7 @@ MDMS 裝置接受所有標準電源範圍。![電源範圍](/images/PowerRating.
 ## 步驟 6：從 {{site.data.keyword.Bluemix_notm}} Object Storage 匯入資料
 {: #import}
 
-若要直接從 {{site.data.keyword.Bluemix_notm}} Object Storage 使用「外部表格」來載入資料，下列是範例 SQL 陳述式：
+若要直接從 {{site.data.keyword.Bluemix_notm}} Object Storage 使用「外部表格」來載入資料，以下是 SQL 陳述式範例：
 
 ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING

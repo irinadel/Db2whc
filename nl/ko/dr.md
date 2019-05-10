@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-21"
+lastupdated: "2019-04-16"
 
 keywords:
 
@@ -24,13 +24,22 @@ subcollection: Db2whc
 # 재해 복구(DR)
 {: #dr}
 
-데이터 웨어하우스 인스턴스가 데이터 센터에 배치되고, 이 데이터 센터에서 예상 가동 중단 시간이 8시간 이상인 심각한 가동 중단 상황이 발생하는 경우 재해 복구 조치를 시작하려면 먼저 서비스 운영자가 인스턴스를 다른 데이터 센터로 장애 복구할 수 있도록 요청을 보내야 합니다.
+<!-- If your data warehouse instance is deployed in a data center that suffers a significant data center outage with an expected downtime of more than 8 hours, you will be sent a request to allow service operators to fail over your instance to another data center before disaster recovery actions can begin.
 {: shortdesc}
 
-데이터베이스의 Db2 백업은 매일 수행됩니다. 단, Db2 백업이 7일마다 수행되고 스냅샷 백업이 매일 수행되는 Flex 플랜은 예외입니다. 일별 백업은 여러 가용성 지역에 복제되는 원본 IBM Cloud Object Storage 서비스에 저장됩니다. 기본 데이터 센터에 어떤 상황이 발생해야 하는 경우 서비스 운영자는 보조 데이터 센터에서 복구된 데이터베이스를 유지하기 위해 사용자와 함께 작업을 수행할 것입니다.
+A Db2 backup of your database is done every day, except for the Flex plan where a Db2 backup is done every 7 days and a snapshot backup is done daily. Daily backups are stored in the IBM Cloud Object Storage service from which it is replicated to multiple availability zones. If something should happen to your primary data center, our service operators will work with you to stand up your recovered database in a secondary data center. -->
+
+재해 복구 전략은 현재 실행 중인 플랜 및 데이터 웨어하우스 생성 유형에 따라 달라집니다.
+{: shortdesc}
+
+1세대 SMP 소형, 중형, 대형 및 MPP 소형 플랜의 경우 하루에 한 번 백업을 수행하고  {{site.data.keyword.Bluemix_notm}} Object Storage 서비스에 배치됩니다. 여기서 백업은 여러 가용성 영역으로 복제됩니다. 기본 데이터 센터에서 재해 이벤트가 발생할 경우, IBM의 서비스 운영자는 사용자와 협력하여 다른 데이터 센터에 새로운 데이터 웨어하우스를 구축합니다. {{site.data.keyword.Bluemix_notm}} Object Storage 서비스에 상주하는 일일 백업을 사용합니다. 
+
+{{site.data.keyword.Bluemix_notm}}의 2세대 Flex 플랜의 경우 일주일에 한 번 백업을 수행하고 {{site.data.keyword.Bluemix_notm}} Object Storage 서비스에 배치합니다. 여기서 백업은 여러 가용성 영역으로 복제됩니다. 기본 데이터 센터에서 재해 이벤트가 발생할 경우, IBM의 서비스 운영자는 사용자와 협력하여 다른 데이터 센터에 새로운 데이터 웨어하우스를 구축합니다. {{site.data.keyword.Bluemix_notm}} Object Storage 서비스에 상주하는 주간 백업을 사용합니다. 
+
+Amazon Web Service의 2세대 Flex 플랜의 경우 일일 셀프 서비스 백업이 AWS S3에 자동으로 오프로드됩니다. S3에서 백업이 여러 지역으로 복제됩니다. 재해 이벤트가 발생하면 최신 백업을 사용하여 클러스터를 보조 데이터 센터로 복원합니다. 
 
 ## **브라질: 보충 규칙 14**(브라질 연방 정부를 위해 프로비저닝되는 시스템에 적용됨)
 {: #rule_14}
 
-현재 브라질에서는 보충 규칙 14로 인해 Db2 Warehouse on Cloud 오퍼링의 재해 복구(DR) 옵션을 연방 정부용으로 사용할 수 없습니다.
+현재 브라질에서는 보충 규칙 14로 인해 {{site.data.keyword.dashdbshort_notm}} 오퍼링의 재해 복구(DR) 옵션을 연방 정부용으로 사용할 수 없습니다.
 

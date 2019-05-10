@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ subcollection: Db2whc
    * 针对高可用性配置的套餐
    * Oracle 兼容性
 
-在 [{{site.data.keyword.Bluemix}} 目录](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}中查看所有可用的 {{site.data.keyword.dashdbshort_notm}} 套餐。
+在 [{{site.data.keyword.Bluemix}} 目录](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}中查看所有可用的 {{site.data.keyword.dashdbshort_notm}} 套餐。
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -51,10 +51,9 @@ subcollection: Db2whc
 
 下表按位于地理区域中的数据中心提供了有关各种 {{site.data.keyword.dashdbshort_notm}} 套餐的可用性的信息：
 
-
 |{{site.data.keyword.dashdbshort_notm}} 套餐|亚太地区|欧洲|北美/中美洲|南美|
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-|Flex|*不适用|法兰克福|华盛顿 (us-east) |*不适用|
+|------------------------------|--------------|-----------|---------------------------|---------------|
+|Flex|东京|法兰克福|华盛顿 (us-east) | *不适用           |
 |                              |              |           |达拉斯 (us-south)|               |  
 |      |||||
 |SMP|中国香港特别行政区|阿姆斯特丹|华盛顿 (us-east) |圣保罗|

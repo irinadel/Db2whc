@@ -56,7 +56,7 @@ En estas instrucciones se explica cómo conectar Tableau a una base de datos de 
 ### Requisitos previos
 {: #prereq8}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc8}
@@ -86,7 +86,7 @@ En estas instrucciones se explica cómo conectar Microsoft Excel <!--2010-->a un
 ### Requisitos previos
 {: #prereq9}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package instalados en el sistema local. 
 
@@ -127,14 +127,14 @@ Puede conectar Esri ArcGIS for Desktop <!--version 10.3.1 -->a una base de datos
 ### Requisitos previos
 {: #prereq10}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package instalados en el sistema.
 
 ### Procedimiento
 {: #proc10}
 
-1. Determine los datos ODBC DSN de la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
+1. Determine los datos ODBC DSN de la [información de conexión](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) que ha recopilado antes.
 
 2. Cree una nueva conexión:
       
@@ -149,7 +149,7 @@ Debe tener el paquete de controlador de Db2 o IBM® Data Server Driver Package i
      FET_BUF_SIZE=256K  
      ```
 
-     donde `<hostname>`, `<port>`, y `<database>` son marcadores que representan el nombre de host, el número de puerto y el nombre de la base de datos que ha anotado anteriormente.
+     donde `<hostname>`, `<port>` y `<database>` son marcadores que representan el nombre de host, el número de puerto y el nombre de la base de datos que ha anotado anteriormente.
             
    - Seleccione **Autenticación de base de datos** como el tipo de autenticación.
             

@@ -56,7 +56,7 @@ Im Folgenden wird beschrieben, wie Sie Tableau mit einer {{site.data.keyword.das
 ### Voraussetzungen
 {: #prereq8}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 ### Vorgehensweise
 {: #proc8}
@@ -86,7 +86,7 @@ Im Folgenden wird beschrieben, wie Sie Microsoft Excel <!--2010--> mit einer {{s
 ### Voraussetzungen
 {: #prereq9}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 Auf Ihrem lokalen Computer muss das Db2-Treiberpaket oder das IBM Data Server Driver-Paket installiert sein. 
 
@@ -127,14 +127,14 @@ Sie können Esri ArcGIS for Desktop <!--version 10.3.1 --> mit einer {{site.data
 ### Voraussetzungen
 {: #prereq10}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 Auf Ihrem Computer muss das Db2-Treiberpaket oder das IBM Data Server Driver-Paket installiert sein.
 
 ### Vorgehensweise
 {: #proc10}
 
-1. Ermitteln Sie Ihre ODBC-DSN-Daten anhand der [Verbindungsinformationen](/docs/services/Db2whc/connecting/credentials.html), die Sie zuvor notiert haben.
+1. Ermitteln Sie Ihre ODBC-DSN-Daten anhand der [Verbindungsinformationen](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds), die Sie zuvor notiert haben.
 
 2. Erstellen Sie eine neue Verbindung:
       

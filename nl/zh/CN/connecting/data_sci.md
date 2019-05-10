@@ -88,7 +88,7 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq11}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc11}
@@ -101,13 +101,13 @@ subcollection: Db2whc
         
    a. 在**用户 DSN** 选项卡上，单击**添加**。
 
-   b. 在“创建新数据源”窗口中，选择名为 **IBM DB2 ODBC DRIVER** 的驱动程序，然后单击**完成**。
+   b. 在“创建新数据源”窗口中，选择名为 **IBM Db2 ODBC DRIVER** 的驱动程序，然后单击**完成**。
 
-   确保选择的驱动程序不是名称类似的驱动程序，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果该驱动程序未出现在列表中，请退出 SPSS Statistics，然后下载并安装该驱动程序。请参阅 [Db2 驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
+   确保选择的驱动程序不是名称类似的驱动程序，例如 `IBM DB2® ODBC DRIVER - DB2COPY`。如果该驱动程序未出现在列表中，请退出 SPSS Statistics，然后下载并安装该驱动程序。请参阅[驱动程序包](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)。
         
-   c. 在“ODBC IBM 驱动程序 - 添加”窗口中，输入数据源名称（通常是所要连接的数据库的名称），然后单击**添加**。
+   c. 在“ODBC IBM 驱动程序 - 添加”窗口中，输入数据源名称（通常是要连接到的数据库的名称），然后单击**添加**。
         
-   d. 在“CLI/ODBC 设置”窗口的**数据源**选项卡上，输入预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)中的用户标识和密码。
+   d. 在“CLI/ODBC 设置”窗口的**数据源**选项卡上，输入预先收集的[连接信息](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)中的用户标识和密码。
         
    e. 在“高级设置”页面中，针对以下每个参数，单击**添加**以打开“添加 CLI 参数”窗口开始执行步骤，然后单击**确定**以返回到“高级设置”页面：
             
@@ -138,7 +138,7 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq12}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc12}
@@ -155,7 +155,7 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq13}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc13}
@@ -172,7 +172,7 @@ subcollection: Db2whc
         
    b. 打开安装在本地的 R 开发环境。
         
-   c. 在 R 提示符处，输入以下语句以创建连接。将占位符替换为预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)。
+   c. 在 R 提示符处，输入以下语句以创建连接。将占位符替换为预先收集的[连接信息](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)。
 
    - 如果本地安装的 R 开发环境在 {{site.data.keyword.dashdbshort_notm}} 数据库中运行，请运行以下语句：
 

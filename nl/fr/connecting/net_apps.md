@@ -30,7 +30,7 @@ Définissez une connexion entre une application .NET et votre base de données {
 ## Prérequis
 {: #prereq71}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -52,7 +52,7 @@ Les étapes suivantes montrent comment vous pouvez connecter votre application �
 
      `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
-     où :
+     Où :
 
      `<hostname>`: nom d'hôte du serveur.
     
@@ -68,7 +68,7 @@ Les étapes suivantes montrent comment vous pouvez connecter votre application �
 
    `testconn40 "DATABASE=<alias>;UID=<user_id>;PWD=<password>;"`
 
-   où :
+   Où :
 
    `<alias>` : nom de l'alias DSN que vous avez créé avec la commande **db2cli writecfg** à l'étape 1.
     

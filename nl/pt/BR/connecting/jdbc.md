@@ -30,7 +30,7 @@ Defina uma conexão entre um aplicativo Java™ e o banco de dados {{site.data.k
 ## Pré-requisitos
 {: #prereq61}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -44,10 +44,10 @@ Em cada aplicativo Java, especifique o ID do usuário e a senha incluindo o mét
 
 - Para uma conexão com SSL:
 
-  ` jdbc:db2: //<host_name>: 50001/BLUDB :sslConnection=true; `
+  `jdbc:db2://<host_name>:50001/BLUDB:sslConnection=true;`
 
 - Para uma conexão sem SSL:
 
-  ` jdbc:db2: //<host_name>: 50000/BLUDB `
+  `jdbc:db2://<host_name>:50000/BLUDB`
 
 

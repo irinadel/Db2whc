@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-08"
+lastupdated: "2019-03-29"
 
 keywords:
 
@@ -36,6 +36,9 @@ subcollection: Db2whc
 ### 必要條件
 {: #prereq1}
 
+強烈建議您將 DataStage 更新為最新版本，讓您可以利用外部表格，將資料載入至 {{site.data.keyword.dashdbshort_notm}}。
+{: important}
+
 如果您尚未安裝資料伺服器用戶端，請下載並安裝適用於用戶端機器作業系統的 IBM Data Server Client<!--Version 10.5 -->：[IBM Data Server Client ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
 若要使用 SSL 通訊協定建立連線，請下載並安裝 32 位元 GSKit 第 8 版。按一下適用於用戶端機器作業系統的「作業系統」標籤：[GSKit 第 8 版 - 安裝、解除安裝及升級指示 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。對於下列作業系統，請確定您將 GSKit 安裝目錄路徑新增至 OS 特定路徑環境變數：
@@ -50,7 +53,7 @@ subcollection: Db2whc
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 程序
 {: #proc1}
@@ -103,7 +106,7 @@ subcollection: Db2whc
 
      `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱。
+     其中 `<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 資料庫名稱。
 
   6. 對於所有人，新增 SSL 目錄中檔案的讀取及執行許可權。執行工作的 DataStage 使用者需要存取這些檔案，才能建立與 Db2 資料庫的 SSL 連線。
 
@@ -115,7 +118,7 @@ subcollection: Db2whc
 
        `db2 connect to <db_alias> user <user_id>`
 
-       其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
+       其中 `<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 資料庫名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
     
      - 使用 CLI 測試連線。發出下列指令來連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫：
 
@@ -135,7 +138,7 @@ subcollection: Db2whc
 
      `db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     其中 `<db_alias>` 代表 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<node_name>` 代表節點的名稱。
+     其中 `<db_alias>` 代表您的 {{site.data.keyword.dashdbshort_notm}} 資料庫名稱，而 `<node_name>` 代表您的節點名稱。
 
   3. 使用下列其中一種方式來測試非 SSL 連線：
 
@@ -143,7 +146,7 @@ subcollection: Db2whc
 
         `db2 connect to <db_alias> user <user_id>`
 
-        其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
+        其中 `<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 資料庫名稱，而 `<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID。系統會提示您輸入密碼。
 
         `db2 list tables`
 
@@ -153,7 +156,7 @@ subcollection: Db2whc
 
         其中 `<alias>` 是您使用 **db2cli writecfg** 指令建立的別名、`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 使用者 ID，而 `<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密碼。
 
-  4. 使用您預先收集的[連線資訊](/docs/services/Db2whc/connecting/credentials.html)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
+  4. 使用您預先收集的[連線資訊](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)來定義 DataStage 用戶端中的連線。在**參數**標籤上，您必須針對**使用暫置類型連接**欄位選取 **Db2 連接器**。
 
      如需在 DataStage 中定義連線的詳細資料，請參閱下列 DataStage 文件主題： 
      
@@ -208,7 +211,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 使用 Lift 將您的資料移轉至 {{site.data.keyword.dashdbshort_notm}}。
 
-[Lift ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}
+[Lift ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -228,7 +231,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 如果您要使用 SSL 通訊協定進行連接，請下載並安裝 GSKit 第 8 版。請參閱 [GSKit 第 8 版 - 安裝、解除安裝及升級指示 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。按一下套用至用戶端機器作業系統的作業系統標籤。如果您是在 Windows 電腦上安裝 GSKit，請確定您針對 **`PATH`** 環境變數指定 GSKit 安裝目錄路徑 (`<installation_directory>\gsk8\bin`)。
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 如果您要使用 SSL 通訊協定進行連接，請將 `DigiCertGlobalRootCA.crt` SSL 憑證從 Web 主控台下載至用戶端機器上的目錄。若要下載憑證，請按一下**連線 > 連線資訊**，然後按一下**使用 SSL 的連線**標籤。
 
@@ -311,7 +314,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     其中 `<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 資料庫的名稱。
+     其中 `<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 資料庫名稱。
 
      c. 使用下列其中一種方式來測試非 SSL 連線：
 
@@ -385,7 +388,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 必要條件
 {: #prereq3}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 程序
 {: #proc3}
@@ -414,7 +417,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq4}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 程序
 {: #proc4}
@@ -457,7 +460,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq5}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 程序
 {: #proc5}
@@ -487,7 +490,7 @@ IBM® Data Server Manager 與 {{site.data.keyword.dashdbshort_notm}} 資料庫�
 ### 必要條件
 {: #prereq6}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 程序
 {: #proc6}
@@ -509,7 +512,7 @@ Db2 驅動程式套件中包含 Command Line Processor Plus (CLPPlus)。CLPPlus 
 ### 必要條件
 {: #prereq7}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 若要使用 CLPPlus，請確定已在電腦上安裝 Java 1.5.0 版或更新版本的軟體開發套件 (SDK) 或 Java 執行時期環境 (JRE)，而且環境變數設定如下：
 
@@ -601,7 +604,7 @@ SELECT branch_code, city from GOSALES.BRANCH;
 
 `clpplus <user_id>/<password>@<alias> @C:\temp\cities.sql`
 
-`cities.sql` Script 的範例輸出如下：
+`cities.sql` Script 的輸出範例如下：
 
 ```
 BRANCH_CODE CITY

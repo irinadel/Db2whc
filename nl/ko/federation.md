@@ -98,29 +98,25 @@ At times, you might choose to partition (shard) your data. With federation capab
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. 대상 시스템과 통신할 서버를 작성합니다.<br/>
+1. 대상 시스템과 통신할 서버 작성:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   예를 들어, 다음과 같습니다.<br/>
-   `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
+   예:<br/>    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2의 사용자 맵핑을 작성합니다.<br/>
+2. admin2에 대한 사용자 맵핑 작성:<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   예를 들어, 다음과 같습니다.<br/>
-   `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
+   예:<br/>    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
-3. 데이터베이스의 닉네임을 작성합니다.<br/>
+3. 데이터베이스의 닉네임 작성:<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   예를 들어, 다음과 같습니다.<br/>
-   `create nickname ntest1 for db2server.admin2.testdata`
+   예:<br/>    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. 대상 서버에서 데이터를 가져올 수 있는지 테스트합니다.<br/>
+4. 대상 서버에서 데이터를 가져올 수 있는지 테스트:<br/>
    `select * from <nickname>`
 
-   예를 들어, 다음과 같습니다.<br/>
-   `select * from ntest1`
+   예:<br/>    `select * from ntest1`
 
 ## 추가 정보
 

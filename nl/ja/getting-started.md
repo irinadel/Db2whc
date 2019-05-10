@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-24"
+lastupdated: "2019-04-24"
 
 keywords:
 
@@ -26,7 +26,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 概説
+# 入門チュートリアル
 {: #getting_started}
 
 {{site.data.keyword.dashdblong}} マネージド・サービスは、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように Db2 ウェアハウスを使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
@@ -35,7 +35,7 @@ subcollection: Db2whc
 ## 無料トライアル
 {: #freetrial}
 
-ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
+ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
 
 ## インターフェース
 {: #interfaces}
@@ -74,22 +74,22 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 以下の手順を実行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続するようにローカル環境を構成します。
 {: shortdesc}
 
-1. [ ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
+1. [ ドライバー・パッケージ](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)を {{site.data.keyword.dashdbshort_notm}} Web コンソールからダウンロードします。
 2. アプリまたはツールが実行されているコンピューターにドライバー・パッケージをインストールします。
-   - [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting/install_linux.html)
-   - [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting/install_mac.html)
-   - [Windows 上でのインストール](/docs/services/Db2whc/connecting/install_win.html)
-3. {{site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルの構成](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+   - [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+   - [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+   - [Windows 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+3. {{site.data.keyword.dashdbshort_notm}} データベース用の[ドライバー・ファイルを構成します](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)。
 
 ### {{site.data.keyword.Bluemix_notm}} アプリまたはサービス用のデータ・ソースとして Db2 Warehouse on Cloud を使用する
 {: #data_src}
 
-{{site.data.keyword.Bluemix_notm}} でホストされているアプリは、ローカル・アプリケーションが {{site.data.keyword.dashdbshort_notm}} データベースに接続するのとまったく同じ方法で、{{site.data.keyword.dashdbshort_notm}} データベースに接続できます。
+{{site.data.keyword.Bluemix_notm}} でホストされているアプリは、ローカル・アプリケーションが {{site.data.keyword.dashdbshort_notm}} データベースに接続するのと同じ方法で、{{site.data.keyword.dashdbshort_notm}} データベースに接続できます。
 {: shortdesc}
 
 アプリが {{site.data.keyword.Bluemix_notm}} プラットフォームを使用している場合、`VCAP _SERVICES` 環境変数を利用して、データベースの詳細および資格情報を指定する作業を単純化できます。
 1. {{site.data.keyword.Bluemix_notm}} ダッシュボードで、{{site.data.keyword.dashdbshort_notm}} サービスの「サービス詳細」ページの**「接続」**タブで、**「接続の作成」**ボタンをクリックします。
-2. {{site.data.keyword.dashdbshort_notm}} データベースをデータ・ソースとして使用する {{site.data.keyword.Bluemix_notm}} アプリを選択し、**「接続」**ボタンをクリックします。
+2. {{site.data.keyword.dashdbshort_notm}} データベースをデータ・ソースとして使用する {{site.data.keyword.cloud_notm}} アプリを選択し、**「接続」**ボタンをクリックします。
 3. データベースの詳細および資格情報を `VCAP_SERVICES` 環境変数から取り出すようにアプリケーション・コードを更新します。
 
     **`VCAP_SERVICES` を使用しない例**
@@ -137,12 +137,12 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 各種の言語で作成されたアプリケーションから {{site.data.keyword.dashdbshort_notm}} データベースへのプログラマチックな接続方法を示すサンプルへのリンクは次のとおりです。
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows ODBC または CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC データ ソース アドミニストレータ](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows ODBC または CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC データ ソース アドミニストレータ](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 
 ## ビデオ: Introducing Db2 Warehouse on Cloud
 {: #intro_vid}

@@ -30,7 +30,7 @@ Microsoft ODBC データ ソース アドミニストレータ・ツールを使
 ## 前提条件
 {: #prereq91}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Microsoft ODBC データ ソース アドミニストレータ・ツールを使
 ## 手順
 {: #proc91}
 
-1. [Db2 ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)をインストールします。
+1. [Db2 ドライバー・パッケージ](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)をインストールします。
 
 2. ODBC データ ソース アドミニストレータを開いて、Db2 ドライバー・パッケージのユーザー DSN またはシステム DSN を作成します。
     

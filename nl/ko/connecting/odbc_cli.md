@@ -30,7 +30,7 @@ Microsoft Windows ODBC 또는 CLI 애플리케이션과 {{site.data.keyword.dash
 ## 전제조건
 {: #prereq81}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

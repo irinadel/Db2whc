@@ -30,7 +30,7 @@ Definisci una connessione tra un'applicazione PHP e un database {{site.data.keyw
 ## Prerequisiti
 {: #prereq101}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -43,7 +43,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 ### Scenario 1: Connessione dall'esterno di {{site.data.keyword.Bluemix_notm}}:
 {: #scen1}
 
-1. Scarica il [pacchetto del driver Db2](/docs/services/Db2whc/connecting/driver_pkg.html) dalla console web e installalo sulla macchina in cui verrà eseguita la tua applicazione PHP.
+1. Scarica il [pacchetto del driver Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) dalla console web e installalo sulla macchina in cui verrà eseguita la tua applicazione PHP.
                 
 2. Utilizza la funzione [`odbc_connect` ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://php.net/manual/en/function.odbc-connect.php){:new_window} per il collegamento al database BLUDB.
     

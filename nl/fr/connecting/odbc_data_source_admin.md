@@ -30,7 +30,7 @@ Utilisez l'outil ODBC Data Source Administrator de Microsoft pour définir une c
 ## Prérequis
 {: #prereq91}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 ## Procédure
 {: #proc91}
 
-1. Installez le [module de pilote Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Installez le [module de pilote Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Ouvrez ODBC Data Source Administrator et créez un DSN utilisateur ou un DSN système pour le module de pilote Db2.
     

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ subcollection: Db2whc
    * Planos configurados para Alta Disponibilidade
    * Compatibilidade do Oracle
 
-Visualizar todos os planos disponíveis do {{site.data.keyword.dashdbshort_notm}} no [catálogo do {{site.data.keyword.Bluemix}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}.
+Visualize todos os planos do {{site.data.keyword.dashdbshort_notm}} no [Catálogo do {{site.data.keyword.Bluemix}}](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -52,10 +52,9 @@ Caso você não veja no catálogo uma configuração da qual precisa, entre em c
 
 A tabela a seguir fornece informações sobre a disponibilidade dos vários planos do {{site.data.keyword.dashdbshort_notm}} pelos data centers localizados nas regiões geográficas:
 
-
 | Planos do {{site.data.keyword.dashdbshort_notm}} | Ásia / Pacífico | Europa    | América do Norte / Central     | América do Sul |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *NA          | Frankfurt | Washington D.C. (us-leste) | *NA           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Tokyo        | Frankfurt | Washington D.C. (us-leste) | *NA           |
 |                              |              |           | Dallas (us-sul)         |               |  
 |      |||||
 | SMP                          | Hong Kong    | Amsterdã | Washington D.C. (us-leste) | São Paulo     |

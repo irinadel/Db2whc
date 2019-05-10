@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-15"
+lastupdated: "2019-04-01"
 
 keywords:
 
@@ -63,21 +63,29 @@ subcollection: Db2whc
 ### 接続情報の収集
 {: #collect_info}
 
-- [データベースの詳細と接続資格情報](/docs/services/Db2whc/connecting/credentials.html)
+- [データベースの詳細と接続資格情報](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)
 
 ### ドライバー・パッケージのダウンロードおよびインストール
 {: #dl_install}
 
-- [ドライバー・パッケージのダウンロード](/docs/services/Db2whc/connecting/driver_pkg.html)
-- [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting/install_linux.html)
-- [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting/install_mac.html)
-- [Windows 上でのインストール](/docs/services/Db2whc/connecting/install_win.html)
+- [ドライバー・パッケージのダウンロード](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)
+- [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Windows 上でのインストール](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 ### 環境の構成
 {: #cfg_env}
 
-- [環境の構成](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
-- [Secure Sockets Layer (SSL) サポート](/docs/services/Db2whc/connecting/ssl.html)
+- [環境の構成](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)
+- [Secure Sockets Layer (SSL) サポート](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support#ssl_support)
+
+## 接続オプション
+{: #connect_opts}
+
+アプリケーションの接続要件に応じて、{{site.data.keyword.dashdbshort_notm}} は複数のセキュア接続オプションを提供しています。  
+{: shortdesc}
+
+[接続オプション](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options#connect_options)を参照してください。
 
 ## プログラムによる接続
 {: #conx_prgrm}
@@ -85,12 +93,12 @@ subcollection: Db2whc
 共通プログラミング言語を使用して、{{site.data.keyword.dashdbshort_notm}} データベースに接続するアプリケーションを作成できます。
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows ODBC または CLI](odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC データ ソース アドミニストレータ](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [REST API](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows ODBC または CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC データ ソース アドミニストレータ](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -107,41 +115,41 @@ subcollection: Db2whc
 {: #di}
 
 - 分析データベースを必要とする {{site.data.keyword.Bluemix_short}} アプリケーションを接続します。
-- [DataStage](/docs/services/Db2whc/connecting/data.html#datastage)
-- [Informatica](/docs/services/Db2whc/connecting/data.html#informatica)
-- [Lift ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
+- [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
+- [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
+- [Lift ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
 - [Segment ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://segment.com/docs/destinations/db2/){:new_window}
-- [Data Studio](/docs/services/Db2whc/connecting/data.html#data_studio)
-- [Data Server Manager](/docs/services/Db2whc/connecting/data.html#dsm)
-- [CLPPLUS](/docs/services/Db2whc/connecting/data.html#clpplus)
-- [Aginity Workbench を接続して、Netezza® データ・モデルおよびデータを {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb) にマイグレーションします
-- [InfoSphere Data Architect を接続して、データベース・スキーマを設計およびデプロイします](/docs/services/Db2whc/connecting/data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
+- [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
+- [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
+- [Aginity Workbench を接続して、Netezza® データ・モデルおよびデータを {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb) にマイグレーションします
+- [InfoSphere Data Architect を接続して、データベース・スキーマを設計およびデプロイします](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#ida)
 
 ### データ可視化/BI
 {: #dvis_bi}
 
-- [Cognos Analytics を接続して、データに対してビジネス・インテリジェンス・レポートを実行します](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
+- [Cognos Analytics を接続して、データに対してビジネス・インテリジェンス・レポートを実行します](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
-- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
-- [Esri ArcGIS for Desktop を接続して、ご使用のデータで地理情報分析やマップ・パブリッシュを実行します](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [Esri ArcGIS for Desktop を接続して、ご使用のデータで地理情報分析やマップ・パブリッシュを実行します](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 ### Data Science
 {: #dsci}
 
-- [Watson Studio (以前の IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
-- [SPSS Statistics](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
-- [SAS](/docs/services/Db2whc/connecting/data_sci.html#sas)
-- [ローカル R 開発環境](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
+- [Watson Studio (以前の IBM Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [ローカル R 開発環境](/docs/services/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
 
-## 他の DB2 データベースへの接続
+## 他の Db2 データベースへの接続
 {: #fed}
 
-DB2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の DB2 または Informix のデータ・ソースにあるデータにアクセスできます。 
+Db2 データ仮想化 (フェデレーションとも呼ばれる) は、{{site.data.keyword.dashdbshort_notm}} によってサポートされます。 データ仮想化によって、組織内の任意の場所にある複数の分散データベース上にあるすべてのデータに対して単一照会アクセスが可能になります。 クラウドとオンプレミスの両方の Db2 または Informix のデータ・ソースにあるデータにアクセスできます。 
 
 このファンクションは、エントリー・プランを除き、{{site.data.keyword.dashdbshort_notm}} のすべてのバージョンでサポートされています。 ただし、データをプルできるターゲットとしてエントリー・プランを使用できます。
 
-- [データ仮想化 (フェデレーション)](/docs/services/Db2whc/federation.html)
+- [データ仮想化 (フェデレーション)](/docs/services/Db2whc?topic=Db2whc-data_virt_fed#data_virt_fed)
 
 

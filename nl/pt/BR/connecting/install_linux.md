@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## Pré-requisitos
 {: #prereq31}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -69,7 +69,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 ## Qual o próximo?
 {: #wn}
 
-Para poder conectar os seus aplicativos locais ou as ferramentas do cliente ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, [configure o seu ambiente local](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).   
+Para poder conectar os seus aplicativos locais ou as ferramentas do cliente ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, [configure o seu ambiente local](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).   
 
 
 

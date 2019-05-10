@@ -57,9 +57,9 @@ subcollection: Db2whc
 {: #instlng}
 
 以下のオペレーティング・システム版のドライバー・パッケージをインストールします。
-- [Windows 上でのインストール](/docs/services/Db2whc/connecting/install_win.html)
-- [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc/connecting/install_linux.html)
-- [Mac OS X 上でのインストール](/docs/services/Db2whc/connecting/install_mac.html)
+- [Linux または PowerLinux 上でのインストール](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Mac OS X 上でのインストール](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Windows 上でのインストール](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

@@ -56,7 +56,7 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 ### 전제조건
 {: #prereq8}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc8}
@@ -86,7 +86,7 @@ Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할
 ### 전제조건
 {: #prereq9}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 로컬 컴퓨터에 설치되어 있어야 합니다. 
 
@@ -127,14 +127,14 @@ Esri ArcGIS for Desktop<!--version 10.3.1 -->을 {{site.data.keyword.dashdbshort
 ### 전제조건
 {: #prereq10}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터에 설치되어 있어야 합니다.
 
 ### 프로시저
 {: #proc10}
 
-1. 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)에서 ODBC DSN 데이터를 판별하십시오.
+1. 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)에서 ODBC DSN 데이터를 판별하십시오.
 
 2. 새 연결을 작성하십시오.
       
@@ -149,7 +149,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터�
      FET_BUF_SIZE=256K  
      ```
 
-     여기서, `<hostname>`, `<port>` 및 `<database>`는 이전에 언급한 호스트 이름, 포트 번호 및 데이터베이스 이름을 나타내는 플레이스홀더입니다.
+     여기서 `<hostname>`, `<port>`, `<database>`는 이전에 언급한 호스트 이름, 포트 번호 및 데이터베이스 이름을 나타내는 플레이스홀더입니다. 
             
    - 인증 유형으로 **데이터베이스 인증**을 선택하십시오.
             
@@ -162,6 +162,6 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터�
 ### 결과
 {: #results3}
 
-Esri ArcGIS for Desktop의 ArcCatalog 구성요소가 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결되었습니다. 
+Esri ArcGIS for Desktop의 ArcCatalog 컴포넌트가 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결되었습니다. 
 
 

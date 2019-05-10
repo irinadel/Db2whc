@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-08"
+lastupdated: "2019-03-29"
 
 keywords:
 
@@ -36,6 +36,9 @@ subcollection: Db2whc
 ### 전제조건
 {: #prereq1}
 
+DataStage를 최신 버전으로 업데이트하여 외부 테이블을 활용하여 데이터를 {{site.data.keyword.dashdbshort_notm}}에 로드할 수 있도록 하는 것이 좋습니다.
+{: important}
+
 데이터 서버 클라이언트가 아직 설치되지 않은 경우, 클라이언트 시스템의 운영 체제에 적합한 IBM Data Server Client<!--Version 10.5 -->를 다운로드하여 설치하십시오. [IBM Data Server Client ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}.
 
 SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설치하십시오. 클라이언트 시스템의 운영 체제에 적합한 OS 탭을 클릭하십시오. [GSKit V8 - 설치, 설치 제거 및 업그레이드 지시사항 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. 다음 운영 체제에서는 OS 특정 경로 환경 변수에 GSKit 설치 디렉토리 경로를 추가해야 합니다.
@@ -50,7 +53,7 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc1}
@@ -75,13 +78,13 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
-     여기서, `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를 나타내고 `<ks_db_password>`는 클라이언트 키 저장소 데이터베이스의 비밀번호를 나타냅니다.
+     여기서 `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를,  `<ks_db_password>`는 클라이언트 키 저장소 데이터베이스의 비밀번호를 나타냅니다. 
         
   4. 클라이언트 키 저장소 데이터베이스에 인증서를 추가하십시오.
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
-     여기서, `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를 나타내고 `<ks_db_password>`는 클라이언트 키 저장소 데이터베이스의 비밀번호를 나타냅니다.
+     여기서 `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를,  `<ks_db_password>`는 클라이언트 키 저장소 데이터베이스의 비밀번호를 나타냅니다. 
     
   5. DataStage 서버에서 Db2 클라이언트를 구성하십시오.
             
@@ -89,21 +92,21 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst2/SSL/<keystore_db.kdb>`
 
-     여기서, `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를 나타냅니다.
+     여기서 `<keystore_db.kdb>`는 클라이언트 키 저장소 데이터베이스를 나타냅니다. 
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst2/SSL/<keystore_db.sth>`
 
-     여기서, `<keystore_db.sth>`는 클라이언트 키 저장소 데이터베이스 비밀번호 스태쉬를 나타냅니다.
+     여기서 `<keystore_db.sth>`는 클라이언트 키 저장소 데이터베이스 비밀번호 스태쉬를 나타냅니다. 
             
      b. SSL 보안 옵션을 사용하여 대상 노드를 카탈로그화한 다음 대상 노드에서 BLUDB 데이터베이스를 카탈로그화하십시오.
 
      `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     여기서, `<node_name>`은 대상 노드의 이름을 나타내고 `<IP_addr_of_BLUDB_database_server>`는 BLUDB 데이터베이스 서버의 IP 주소를 나타냅니다.
+     여기서 `<node_name>`은 대상 노드의 이름을, `<IP_addr_of_BLUDB_database_server>`는 BLUDB 데이터베이스 서버의 IP 주소를 나타냅니다. 
 
      `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     여기서, `<db_alias>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름입니다.
+     여기서 `<db_alias>`는 사용자가 정한 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름입니다. 
 
   6. 모든 사용자를 위해 SSL 디렉토리 내의 파일에 대해 읽기 및 실행 권한을 추가하십시오. 작업을 실행하는 DataStage 사용자는 이러한 파일에 액세스하여 Db2 데이터베이스에 대한 SSL 연결을 작성해야 합니다.
 
@@ -115,13 +118,13 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
        `db2 connect to <db_alias> user <user_id>`
 
-       여기서, `<db_alias>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
+       여기서 `<db_alias>`는 사용자가 정한 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 이름이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
     
      - CLI를 사용하여 연결을 테스트하십시오. 다음 명령을 실행하여 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하십시오.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-        여기서, `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성한 별명이고, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID이며, `<password>`는 {{site.data.keyword.dashdbshort_notm}} 비밀번호입니다.
+        여기서 `<alias>`는 **db2cli writecfg**명령을 사용하여 작성된 별명이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID, 그리고 `<password>`는 {{site.data.keyword.dashdbshort_notm}} 비밀번호입니다. 
 
 - SSL을 사용하지 않고 연결을 작성하려면 다음 단계를 완료하여 대상 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 카탈로그화하십시오.
 
@@ -129,13 +132,13 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
      `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
-     여기서, `<node_name>`은 노드의 이름을 나타내고 `<IP_address_of_BLUDB_database_server>`는 BLUDB 데이터베이스 서버의 IP 주소를 나타내며 `<port_number_of_BLUDB_database>`는 BLUDB 데이터베이스의 포트 번호를 나타냅니다.
+     여기서 `<node_name>`은 사용자가 정한 노드 이름, `<IP_address_of_BLUDB_database_server>`는 BLUDB 데이터베이스 서버의 IP 주소, `<port_number_of_BLUDB_database>`는 BLUDB 데이터베이스의 포트 번호를 나타냅니다. 
 
   2. 클라이언트 애플리케이션이 연결할 수 있도록 원격 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 카탈로그화하십시오. 다음 명령을 실행하십시오.
 
      `db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     여기서, `<db_alias>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름을 나타내고 `<node_name>`은 노드의 이름을 나타냅니다.
+     여기서 `<db_alias>`는 사용자가 정한 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 이름, `<node_name>`은 사용자가 정한 노드 이름을 나타냅니다. 
 
   3. 다음 방법 중 하나로 비SSL 연결을 테스트하십시오.
 
@@ -143,7 +146,7 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
         `db2 connect to <db_alias> user <user_id>`
 
-        여기서, `<db_alias>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
+        여기서 `<db_alias>`는 사용자가 정한 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 이름이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
 
         `db2 list tables`
 
@@ -151,9 +154,9 @@ SSL 프로토콜과 연결하려면 32비트 GSKit V8을 다운로드하여 설�
 
         `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-        여기서, `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성한 별명이고, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID이며, `<password>`는 {{site.data.keyword.dashdbshort_notm}} 비밀번호입니다.
+        여기서 `<alias>`는 **db2cli writecfg**명령을 사용하여 작성된 별명이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID, 그리고 `<password>`는 {{site.data.keyword.dashdbshort_notm}} 비밀번호입니다. 
 
-  4. DataStage 클라이언트에서 연결을 정의하기 위해 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)를 사용하십시오. **매개변수** 탭에서 **스테이징 유형을 사용하여 연결** 필드에 **DB2 커넥터**를 선택해야 합니다.
+  4. DataStage 클라이언트에서 연결을 정의하기 위해 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)를 사용하십시오. **매개변수** 탭에서 **스테이징 유형을 사용하여 연결** 필드에 **DB2 커넥터**를 선택해야 합니다.
 
      DataStage에서 연결을 정의하는 방법에 관한 세부사항은 다음 DataStage 문서 주제를 참조하십시오. 
      
@@ -208,7 +211,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 Lift를 사용하여 데이터를 {{site.data.keyword.dashdbshort_notm}}에 마이그레이션하십시오.
 
-[Lift ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}
+[Lift ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -228,7 +231,7 @@ IBM® InfoSphere® Data Replication<!--version 11.3.3.3-36 or later -->을 {{sit
 
 SSL 프로토콜을 사용하여 연결하려면 GSKit V8을 다운로드하여 설치하십시오. [GSKit V8 - 설치, 설치 제거 및 업그레이드 지시사항 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. 클라이언트 시스템의 운영 체제에 해당되는 운영 체제 탭을 클릭하십시오. Windows 컴퓨터에 GSKit을 설치하는 경우 **`PATH`** 환경 변수에 GSKit 설치 디렉토리 경로(`<installation_directory>\gsk8\bin`)를 지정했는지 확인하십시오.
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언트 시스템의 디렉토리로 `DigiCertGlobalRootCA.crt` SSL 인증서를 다운로드하십시오. 인증서를 다운로드하려면 **연결 > 연결 정보**를 클릭한 다음 **SSL을 사용하여 연결** 탭을 클릭하십시오.
 
@@ -243,7 +246,7 @@ SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언�
 
      `cd /<ssl_directory_name>/ssl`
 
-     여기서, `/<ssl_directory_name>/ssl`은 `DigiCertGlobalRootCA.crt` SSL 인증서를 다운로드한 디렉토리 경로입니다.
+     여기서 `/<ssl_directory_name>/ssl`은 `DigiCertGlobalRootCA.crt` SSL 인증서를 다운로드한 디렉토리 경로입니다.
 
      b. **GSKCapiCmd** 도구를 사용하여 클라이언트 키 데이터베이스 및 스태쉬 파일을 작성하십시오. 예를 들어, 다음 명령은 `dashclient.kdb`라는 클라이언트 키 데이터베이스 및 `dashclient.sth`라는 스태쉬 파일을 작성합니다.
 
@@ -251,7 +254,7 @@ SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언�
 
      여기서, `passw0rdpw0`은 비밀번호입니다. **-stash** 옵션은 클라이언트 키 데이터베이스와 동일한 경로에 파일 확장자가 `.sth`인 스태쉬 파일을 작성합니다. 연결 시에 GSKit가 스태쉬 파일을 사용하여 클라이언트 키 데이터베이스에 대한 비밀번호를 얻습니다.
             
-     c. 클라이언트 키 데이터베이스에 인증서를 추가하십시오. 예를 들어, 다음 **gsk8capicmd** 명령은 `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` 파일에서 `dashclient.kdb`라는 클라이언트 키 데이터베이스로 인증서를 가져옵니다.
+     c. 클라이언트 키 데이터베이스에 인증서를 추가하십시오. 예를 들어 다음 **gsk8capicmd** 명령은 `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` 파일의 인증서를 `dashclient.kdb`라는 클라이언트 키 데이터베이스로 가져옵니다. 
 
      `gsk8capicmd_64 -cert -add -db "dashclient.kdb" -pw "passw0rdpw0" -label "DigiCert" -file "/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt" -format ascii -fips`
 
@@ -285,13 +288,13 @@ SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언�
 
        `db2 connect to <db_alias> user <user_id>`
 
-       여기서, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
+       여기서 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
                 
      - {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 다음 명령을 실행하여 CLI를 사용하는 연결을 테스트하십시오.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       여기서, `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성한 DSN 별명이고, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID이며, `<password>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 비밀번호입니다.
+       여기서 `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성된 DSN 별명이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID, 그리고 `<password>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 비밀번호입니다. 
         
    - SSL을 사용하지 않고 연결을 작성하려면 다음 단계를 완료하십시오.
 
@@ -311,7 +314,7 @@ SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언�
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     여기서, `<db_alias>`는 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름입니다.
+     여기서 `<db_alias>`는 사용자가 정한 {{site.data.keyword.dashdbshort_notm}} 데이터베이스의 이름입니다. 
 
      c. 다음 방법 중 하나로 비SSL 연결을 테스트하십시오.
 
@@ -319,13 +322,13 @@ SSL 프로토콜을 사용하여 연결하려면 웹 콘솔에서 클라이언�
 
        `db2 connect to <db_alias> user <user_id>`
 
-       여기서, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
+       여기서 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID입니다. 비밀번호를 입력하라는 프롬프트가 표시됩니다.
                 
      - {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하는 다음 명령을 실행하여 CLI를 사용하는 연결을 테스트하십시오.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       여기서, `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성한 DSN 별명이고, `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID이며, `<password>`는 Db2 Warehouse on Cloud 비밀번호입니다.
+       여기서 `<alias>`는 **db2cli writecfg** 명령을 사용하여 작성된 DSN 별명이고 `<user_id>`는 {{site.data.keyword.dashdbshort_notm}} 사용자 ID, 그리고 `<password>`는 Db2 Warehouse on Cloud 비밀번호입니다. 
     
 2. InfoSphere Data Replication 구성 도구를 실행하고 다음 단계를 수행하십시오. 화면 캡처에 표시되는 값은 예입니다.
         
@@ -385,7 +388,7 @@ Segment를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스와 통합�
 ### 전제조건
 {: #prereq3}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc3}
@@ -414,7 +417,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq4}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc4}
@@ -456,7 +459,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq5}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc5}
@@ -486,7 +489,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq6}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc6}
@@ -508,7 +511,7 @@ IBM® Data Server Manager 및 {{site.data.keyword.dashdbshort_notm}} 데이터�
 ### 전제조건
 {: #prereq7}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 CLPPlus를 사용하려면 소프트웨어 개발 킷(SDK) 또는 Java 버전 1.5.0 이상용 Java 런타임 환경(JRE)이 컴퓨터에 설치되어 있고 해당 환경 변수가 다음과 같이 설정되어야 합니다.
 

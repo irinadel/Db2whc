@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 先决条件
 {: #prereq21}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 <!-- 1. Install the Db2 driver package for your operating system.
 

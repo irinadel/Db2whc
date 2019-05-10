@@ -30,7 +30,7 @@ Definieren Sie eine Verbindung zwischen einer ODBC- oder CLI-Anwendung und einer
 ## Voraussetzungen
 {: #prereq91}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 ## Vorgehensweise
 {: #proc91}
 
-1. Installieren Sie das [Db2-Treiberpaket](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Installieren Sie das [Db2-Treiberpaket](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Öffnen Sie ODBC-Datenquellenadministrator und erstellen Sie einen Benutzer-DSN oder einen System-DSN für das Db2-Treiberpaket.
     

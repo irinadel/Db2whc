@@ -30,7 +30,7 @@ Sie können das {{site.data.keyword.dashdbshort_notm}}-Treiberpaket über das Sc
 ## Voraussetzungen
 {: #prereq41}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -71,4 +71,4 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 ## Nächster Schritt
 {: #wn41}
 
-[Konfigurieren Sie die lokale Umgebung](/docs/services/Db2whc/connecting/driver_pkg_cfg.html), damit lokale Anwendungen und Client-Tools eine Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen können.
+[Konfigurieren Sie die lokale Umgebung](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env), damit lokale Anwendungen und Client-Tools eine Verbindung zur {{site.data.keyword.dashdbshort_notm}}-Datenbank herstellen können.

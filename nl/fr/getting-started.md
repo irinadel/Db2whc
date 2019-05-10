@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-24"
+lastupdated: "2019-04-24"
 
 keywords:
 
@@ -26,7 +26,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Initiation
+# Tutoriel d'initiation
 {: #getting_started}
 
 Le service géré {{site.data.keyword.dashdblong}} est une base de données SQL mise à votre disposition dans le cloud. Vous pouvez utiliser l'entrepôt Db2 de la même manière que vous utilisez n'importe quel logiciel de base de données, sans les frais associés à la configuration de matériel ou à l'installation et la maintenance de logiciels. 
@@ -35,7 +35,7 @@ Le service géré {{site.data.keyword.dashdblong}} est une base de données SQL 
 ## Essai gratuit
 {: #freetrial}
 
-Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}
+Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
 
 ## Interfaces
 {: #interfaces}
@@ -65,7 +65,7 @@ Vous pouvez accéder à la console Web de l'une des manières suivantes :
 ### API REST
 {: #api}
 
-Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers et au chargement de données en utilisant l'API REST [{{site.data.keyword.dashdbshort_notm}}![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
+Avec les plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers et au chargement de données en utilisant l'API REST [{{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
 {: shortdesc}
 
 ### Connectez des applications ou vos outils préférés depuis votre ordinateur local
@@ -74,22 +74,22 @@ Grâce aux plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez 
 Configurez votre environnement local afin qu'il se connecte à votre base de données {{site.data.keyword.dashdbshort_notm}} en procédant comme suit :
 {: shortdesc}
 
-1. Téléchargez le [module de pilote](/docs/services/Db2whc/connecting/driver_pkg.html) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
+1. Téléchargez le [module de pilote](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg) depuis la console Web de {{site.data.keyword.dashdbshort_notm}}.
 2. Installez le module de pilote sur l'ordinateur sur lequel vos applications ou outils s'exécutent :
-   - [Installation sur Linux ou PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-   - [Installation sur Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
-   - [Installation sur Windows](/docs/services/Db2whc/connecting/install_win.html)
-3. [Configuration des fichiers de pilote](/docs/services/Db2whc/connecting/driver_pkg_cfg.html) pour votre base de données {{site.data.keyword.dashdbshort_notm}}.
+   - [Installation sur Linux ou PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+   - [Installation sur Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+   - [Installation sur Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+3. [Configuration des fichiers de pilote](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) pour votre base de données {{site.data.keyword.dashdbshort_notm}}.
 
 ### Utilisez Db2 Warehouse on Cloud comme source de données pour vos applications ou services {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 
-Les applications hébergées sur {{site.data.keyword.Bluemix_notm}} peuvent se connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} exactement de la même manière que vos applications locales se connectent à votre base de données {{site.data.keyword.dashdbshort_notm}}.
+Les applications hébergées sur {{site.data.keyword.Bluemix_notm}} peuvent se connecter à votre base de données {{site.data.keyword.dashdbshort_notm}} de la même manière que vos applications locales se connectent à votre base de données {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
 
 Lorsque vos applications utilisent la plateforme {{site.data.keyword.Bluemix_notm}}, vous pouvez tirer parti de la variable d'environnement `VCAP _SERVICES` pour simplifier la spécification des détails et des données d'identification de la base de données :
 1. Dans le tableau de bord {{site.data.keyword.Bluemix_notm}}, dans l'onglet **Connexions** de la page Détails du service de votre service {{site.data.keyword.dashdbshort_notm}}, cliquez sur le bouton **Créer une connexion**.
-2. Sélectionnez l'application {{site.data.keyword.Bluemix_notm}} à utiliser avec votre base de données {{site.data.keyword.dashdbshort_notm}} comme source de données, puis cliquez sur le bouton **Connecter**.
+2. Sélectionnez l'application {{site.data.keyword.cloud_notm}} à utiliser avec votre base de données {{site.data.keyword.dashdbshort_notm}} comme source de données, puis cliquez sur le bouton **Connecter**.
 3. Mettez à jour le code de votre application pour qu'il extraie les détails et les données d'identification de la base de données à partir de la variable d'environnement `VCAP_SERVICES` :
 
     **Exemple sans `VCAP_SERVICES`**
@@ -134,15 +134,15 @@ Lorsque vos applications utilisent la plateforme {{site.data.keyword.Bluemix_not
 ## Exemples
 {: #samples}
 
-Vous trouverez ici des liens vers des exemples montrant comment se connecter par programmation à votre base de données {{site.data.keyword.dashdbshort_notm}} à partir d'applications dans différents langages :
+Voici des liens vers des exemples qui montrent comment se connecter par programmation à votre base de données {{site.data.keyword.dashdbshort_notm}} à partir d'applications dans différents langages :
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [Microsoft Windows ODBC ou CLI](/docs/services/Db2whc/connecting/odbc_cli.html)
-- [.NET](/docs/services/Db2whc/connecting/net_apps.html)
-- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [API REST](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [Microsoft Windows ODBC ou CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [API REST](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 
 ## Vidéo : Présentation de Db2 Warehouse on Cloud
 {: #intro_vid}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ Sie können einen {{site.data.keyword.dashdbshort_notm}}-Plan auswählen, der f�
    * Für die Hochverfügbarkeit konfigurierte Pläne
    * Oracle-Kompatibilität
 
-Alle verfügbaren {{site.data.keyword.dashdbshort_notm}}-Pläne können im [{{site.data.keyword.Bluemix}}-Katalog](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} angezeigt werden.
+Alle verfügbaren {{site.data.keyword.dashdbshort_notm}}-Pläne können im [{{site.data.keyword.Bluemix}}-Katalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window} angezeigt werden.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -51,10 +51,9 @@ Wenn die benötigte Konfiguration im Katalog nicht angezeigt wird, wenden Sie si
 
 Die folgende Tabelle enthält nach Rechenzentren in verschiedenen Regionen geordnete Informationen zur Verfügbarkeit der verschiedenen {{site.data.keyword.dashdbshort_notm}}-Pläne:
 
-
 | {{site.data.keyword.dashdbshort_notm}}-Pläne | Asien/Pazifik | Europa    | Nord-/Mittelamerika     | Südamerika |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *NV          | Frankfurt | Washington D.C. (Vereinigte Staaten (Osten)) | *NV           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Tokio        | Frankfurt | Washington D.C. (Vereinigte Staaten (Osten)) | *NV           |
 |                              |              |           | Dallas (Vereinigte Staaten (Süden))         |               |  
 |      |||||
 | SMP                          | Hongkong    | Amsterdam | Washington D.C. (Vereinigte Staaten (Osten)) | Sao Paulo     |

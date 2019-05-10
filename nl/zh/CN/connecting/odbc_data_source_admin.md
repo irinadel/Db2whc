@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 先决条件
 {: #prereq91}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ subcollection: Db2whc
 ## 过程
 {: #proc91}
 
-1. 安装 [Db2 驱动程序包](/docs/services/Db2whc/connecting/driver_pkg.html)。
+1. 安装 [Db2 驱动程序包](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)。
 
 2. 打开 ODBC 数据源管理器，并为 Db2 驱动程序包创建“用户 DSN”或“系统 DSN”。
     

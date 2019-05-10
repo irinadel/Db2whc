@@ -30,7 +30,7 @@ Java™ アプリケーションと {{site.data.keyword.dashdbshort_notm}} デ�
 ## 前提条件
 {: #prereq61}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

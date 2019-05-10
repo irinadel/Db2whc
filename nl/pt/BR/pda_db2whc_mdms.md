@@ -42,7 +42,7 @@ O MDMS oferece uma maneira rápida, simples e segura para transferir fisicamente
    - Máscara de rede 
    - Gateway padrão para acessar a interface com o usuário (IU)
 3. Destino de download do Cloud Object Storage <br/>
-   Deve-se ter pelo menos uma conta do {{site.data.keyword.cos_full}} e um depósito em um local de uma Região cruzada dos EUA ou Sul dos EUA para concluir o formulário de solicitação. Se você ainda não tiver uma conta do {{site.data.keyword.cos_full_notm}}}, crie uma antes de solicitar o dispositivo MDMS. Para obter mais informações, veja: [Sobre o {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+Deve-se ter pelo menos uma conta do {{site.data.keyword.cos_full}} e um depósito em uma Região cruzada dos EUA ou Sul dos EUA para concluir o formulário de solicitação. Se você ainda não tiver uma conta do {{site.data.keyword.cos_full_notm}}}, crie uma antes de solicitar o dispositivo MDMS. Para obter mais informações, veja: [Sobre o {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
    {: important}
 
 ## Etapa 1: Criando uma solicitação
@@ -52,7 +52,7 @@ O MDMS oferece uma maneira rápida, simples e segura para transferir fisicamente
 2. Selecione **Armazenamento > Migração de dados > Mass Data Migration** na barra de navegação para acessar a página inicial do MDMS.
 3. Clique em **Solicitar dispositivo** para abrir o formulário do pedido.
 4. Preencha cada campo no formulário do pedido **Mass Data Migration**.
-   - **Endereço de entrega**: esse formulário não é previamente preenchido e cada campo é editável. Forneça o nome da pessoa que aceitará a entrega do dispositivo no campo Atenção. Ao escolher o local de entrega, considere o peso do dispositivo (30 kg (66 lb.) com sua embalagem) e a acessibilidade. <br/> (**Nota**: o dispositivo é equipado com rodas e com uma alça suspensa para manobras).
+   - **Endereço de entrega**: esse formulário não é previamente preenchido e cada campo é editável. Forneça o nome da pessoa que aceitará a entrega do dispositivo no campo Atenção. Ao escolher o local de entrega, considere o peso do dispositivo (30 kg (66 lb) com a caixa) e a acessibilidade. <br/> (**Nota**: o dispositivo é equipado com rodas e com uma alça suspensa para manobras).
    - **Contatos de migração de chave**: esse formulário não é previamente preenchido. Cada campo é editável. Mais de uma pessoa pode ser incluída.
    - **Configuração de rede do data center**: forneça detalhes de configuração de rede para o provisionamento prévio da porta Eth3 no dispositivo MDMS antes da remessa.
    - **Destino de transferência de dados**: selecione a conta de destino existente na lista.
@@ -124,14 +124,14 @@ Caso um fator de forma diferente de conexão Ethernet seja necessário, deve-se 
 
 5. Conecte o adaptador CAT6A para SFP+ fornecido e conecte seu comutador 10 Gb.
 
-6. Se o endereço IP configurado para a Eth3 puder ser acessado por meio de um navegador `https://<your_Eth3_IP_Address>`, continue com a próxima etapa. 
+6. Se o endereço IP configurado para Eth3 puder ser acessado por meio de um navegador `https://<your_Eth3_IP_Address>`, continue com a próxima etapa. 
 
-   Caso contrário, conecte-se à porta Eth1 (1 GbE-B). Abra seu navegador e insira `https://<your_Eth1_IP_Address>`. Insira o endereço IP Eth1 apropriado para sua configuração de rede. Aceite a exceção de certificado.<br/>
+   Caso contrário, conecte-se à porta Eth1 (1 GbE-B). Abra seu navegador e insira `https://<your_Eth1_IP_Address>`. Insira o endereço IP Eth1 apropriado para sua configuração de rede. Aceite a exceção do certificado.<br/>
    Se precisar alterar quaisquer configurações de IP para Eth3 ou Eth1, consulte a seção [Configuração de endereço IP](#ip_cfg).
    {: note}
 
-7. Use o nome do usuário e a senha fornecidos para efetuar login.<br/>
-    ![Página de login](/images/Login.png)
+7. Use o nome de usuário e a senha fornecidos para efetuar login.<br/>
+    ![Login page](/images/Login.png)
 
 8. O assistente de fluxo de trabalho apresenta acesso aos itens específicos geralmente usados em ordem da esquerda para a direita.<br/>
     ![Ícones de fluxo de trabalho](/images/workflow.png) <br/>
@@ -144,7 +144,7 @@ Caso um fator de forma diferente de conexão Ethernet seja necessário, deve-se 
     ![Ativar conjunto de armazenamentos](/images/UnlockPool.png)
 
 10. Por padrão, o compartilhamento tem os protocolos NFS e SMB que estão ativados sem restrições de acesso que são colocadas no compartilhamento. Para restringir o acesso a esse compartilhamento (para NFS ou SMB), clique com o botão direito no nome do compartilhamento e selecione o item de menu apropriado.<br/>
-    ![Restringir acesso de compartilhamento](/images/ShareControls.png)
+    ![Acesso restrito ao compartilhamento](/images/ShareControls.png)
 
 11. Quando o conjunto de armazenamentos é ativado, o compartilhamento do NFS se torna disponível para montagem. No fluxo de trabalho, clique em **Visualizar compartilhamentos de rede** para
 abrira a visualização de compartilhamentos de rede. Feche o fluxo de trabalho, clique com o botão direito no compartilhamento e selecione **Visualizar comando de montagem** para ver o nome do compartilhamento e as informações de montagem. Monte o compartilhamento em seu servidor de origem. Assegure-se de especificar o endereço IP do link de 10 GB ao montar o compartilhamento.

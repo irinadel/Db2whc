@@ -24,13 +24,13 @@ subcollection: Db2whc
 # {{site.data.keyword.Bluemix_notm}}로 데이터 마이그레이션
 {: #migration}
 
-로컬 네트워크 또는 오브젝트 저장소(Amazon S3 또는 {{site.data.keyword.Bluemix_notm}} Object Storage)에 있는 CSV 또는 TXT와 같은 구분된 형식의 데이터 파일에서 데이터를 {{site.data.keyword.dashdblong}}로 로드할 수 있습니다. 온프레미스 시스템에서도 데이터를 마이그레이션할 수 있습니다.
+로컬 네트워크 또는 오브젝트 저장소(Amazon S3 또는 {{site.data.keyword.Bluemix_notm}} Object Storage)에 있는 CSV 또는 TXT와 같은 구분된 형식의 데이터 파일에서 데이터를 {{site.data.keyword.dashdblong}}로 로드할 수 있습니다. 온프레미스 시스템에서 데이터를 마이그레이션할 수도 있습니다.
 {: shortdesc}
 
 ## 오브젝트 저장소에서 데이터 로드
 {: #cos}
 
-Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 사용하십시오.
+Amazon S3에서 데이터를 로드하려면 다음 방법 중 하나를 선택하십시오.
   * {{site.data.keyword.dashdbshort_notm}} 웹 콘솔을 사용하십시오. **로드 > Amazon S3**를 선택하십시오. 
   * 외부 테이블에서 직접 로드하십시오. 다음은 예제 SQL문입니다.
 
@@ -84,9 +84,9 @@ Lift는 표 1에 나열된 다양한 데이터 소스에서 {{site.data.keyword.
 |                              | CSV 파일 형식 |
 {: caption="표 1. 마이그레이션 데이터 소스" caption-side="top"}
 
-Lift를 다운로드하고 설치하려면 [Lift 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#download){:new_window}를 참조하십시오.
+Lift를 다운로드하고 설치하려면 [Lift 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}를 참조하십시오.
 
-Lift를 사용하여 {{site.data.keyword.Bluemix_notm}}에 데이터를 마이그레이션하는 데 관한 단계별 지침은 [{{site.data.keyword.dashdblong}}로 데이터 마이그레이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://lift.ng.bluemix.net/#docs){:new_window}을 참조하십시오.
+Lift를 사용하여 {{site.data.keyword.Bluemix_notm}}에 데이터를 마이그레이션하는 데 관한 단계별 지침은 [{{site.data.keyword.dashdblong}}로 데이터 마이그레이션 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}을 참조하십시오.
 
 ### {{site.data.keyword.Bluemix_notm}} 대량 데이터 마이그레이션 서비스
 {: #mdms}
@@ -97,11 +97,9 @@ MDMS는 테라바이트에서 페타바이트까지의 데이터를 {{site.data.
 
 ![대량 데이터 마이그레이션 서비스 디바이스의 보기](images/mdms.svg)
 
-MDMS 디바이스에 대한 자세한 정보는 다음을 참조하십시오. 
-- [{{site.data.keyword.Bluemix_notm}} 대량 데이터 마이그레이션 시작하기](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+MDMS 디바이스에 대한 자세한 정보는 [시작하기 튜토리얼](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}을 참조하십시오.
 
-MDMS 디바이스를 사용하여 IBM PureData System for Analytics(Netezza) 데이터베이스에서 {{site.data.keyword.dashdblong}} 데이터베이스로 데이터를 마이그레이션하는 방법에 대한 자세한 정보는 다음을 참조하십시오. 
-- [IBM PureData System for Analytics(Netezza)에서 마이그레이션](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+MDMS 디바이스를 사용하여 IBM PureData System for Analytics(Netezza) 데이터베이스에서 {{site.data.keyword.dashdblong}} 데이터베이스로 데이터를 마이그레이션하는 방법에 대한 자세한 정보는 [IBM PureData System for Analytics(Netezza)에서 마이그레이션](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}을 참조하십시오.
 
 ## 튜토리얼: 온프레미스 관계형 데이터베이스에서 데이터 마이그레이션
 {: #tutorial}

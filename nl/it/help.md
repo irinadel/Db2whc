@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -48,14 +48,11 @@ sottoposto a una procedura di manutenzione pianificata o si è verificata un'int
 nota.
 {: tsCauses}
 
-È possibile determinare lo stato del servizio {{site.data.keyword.dashdbshort_notm}}
-in {{site.data.keyword.Bluemix_notm}}
-controllando le seguenti pagine sullo stato:
+Puoi determinare lo stato del servizio {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} controllando la pagina [IBM Cloud: Stato ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/status?selected=status){:new_window}.
 {: tsResolve}
 
-* [IBM Cloud Support ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* Monitoraggio dello stato:
-  * [Tutte le regioni ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Come ottenere aiuto e supporto per Db2 Warehouse on Cloud
 {: #gettinghelp}
@@ -71,7 +68,7 @@ Quando utilizzi i forum per fare una domanda, contrassegna con una tag la tua do
 
 Consulta [Come ottenere supporto](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} per ulteriori dettagli sull'utilizzo dei forum.
 
-Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Apertura di un ticket di supporto](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Per informazioni su come aprire un ticket di supporto IBM o sui livelli di supporto e sulla gravità dei ticket, consulta: [Gestione dei casi di supporto](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

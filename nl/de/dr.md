@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-21"
+lastupdated: "2019-04-16"
 
 keywords:
 
@@ -24,13 +24,22 @@ subcollection: Db2whc
 # Disaster-Recovery (DR)
 {: #dr}
 
-Wenn Ihre Data-Warehouse-Instanz in einem Rechenzentrum bereitgestellt wird und ein nennenswerter Ausfall des Rechenzentrums mit einer erwarteten Ausfallzeit von mehr als 8 Stunden auftritt, wird Ihnen eine Anfrage zugesendet, ob Service-Betreiber Ihre Instanz in einem anderen Rechenzentrum übernehmen dürfen, bevor Disaster-Recovery-Aktionen ausgeführt werden.
+<!-- If your data warehouse instance is deployed in a data center that suffers a significant data center outage with an expected downtime of more than 8 hours, you will be sent a request to allow service operators to fail over your instance to another data center before disaster recovery actions can begin.
 {: shortdesc}
 
-Eine Db2-Sicherung Ihrer Datenbank wird täglich durchgeführt. Eine Ausnahme bildet der Flex-Plan, bei dem alle 7 Tage eine Db2-Sicherung und täglich eine Momentaufnahmesicherung durchgeführt werden. Die täglichen Sicherungen werden über den Service 'IBM Cloud Object Storage' gespeichert und über diesen Service in Verfügbarkeitszonen repliziert. Sollte ein gravierender Fehler beim primären Rechenzentrum auftreten, werden die Servicebetreiber gemeinsam mit Ihnen für die Einrichtung der wiederhergestellten Datenbank in einem sekundären Rechenzentrum sorgen.
+A Db2 backup of your database is done every day, except for the Flex plan where a Db2 backup is done every 7 days and a snapshot backup is done daily. Daily backups are stored in the IBM Cloud Object Storage service from which it is replicated to multiple availability zones. If something should happen to your primary data center, our service operators will work with you to stand up your recovered database in a secondary data center. -->
+
+Die Disaster-Recovery-Strategie hängt vom Typ des Plans und der Data-Warehouse-Generation ab, die Sie aktuell ausführen.
+{: shortdesc}
+
+Für die erste Generation (Pläne: SMP Small, Medium, Large und MPP Small) wird täglich einmal ein Backup erstellt und dem {{site.data.keyword.Bluemix_notm}} Object Storage-Service bereitgestellt. Von dort wird das Backup in mehrere verfügbare Zonen repliziert. Sollte im primären Rechenzentrum schwerwiegender Fehler auftreten, werden unsere Servicemitarbeiter gemeinsam mit Ihnen für die Einrichtung eines neuen Data-Warehouses in einem anderen Rechenzentrum sorgen. Wir verwenden dabei die tägliche Sicherung, die sich im {{site.data.keyword.Bluemix_notm}} Object Storage-Service befindet.
+
+Bei der zweiten Generation (Flex-Pläne in {{site.data.keyword.Bluemix_notm}}) wird einmal wöchentlich eine Sicherung erstellt und dem {{site.data.keyword.Bluemix_notm}} Object Storage-Service bereitgestellt. Von dort wird das Backup in mehrere verfügbare Zonen repliziert. Sollte im primären Rechenzentrum schwerwiegender Fehler auftreten, werden unsere Servicemitarbeiter gemeinsam mit Ihnen für die Einrichtung eines neuen Data-Warehouses in einem anderen Rechenzentrum sorgen. Wir verwenden dabei die wöchentliche Sicherung, die sich im {{site.data.keyword.Bluemix_notm}} Object Storage-Service befindet.
+
+Für die zweite Generation (Flex-Pläne in Amazon-Web-Services) wird automatisch ein tägliches Self-Service-Backup in AWS S3 ausgelagert. Wenn das Backup in S3 ist, wird es in mehrere Regionen repliziert. Wenn ein schwerwiegender Fehler auftritt, wird das aktuellste Backup verwendet, um Ihre Cluster in einem zweiten Rechenzentrum wiederherzustellen. 
 
 ## **Brasilien: Zusatzregel 14** (betrifft für die Bundesregierung von Brasilien bereitgestellte Systeme)
 {: #rule_14}
 
-Die Option für Disaster-Recovery (DR) ist für Db2 Warehouse on Cloud-Angebote derzeit für die Bundesregierung in Brasilien aufgrund von Zusatzregel 14 nicht verfügbar.
+Zum gegenwärtigen Zeitpunkt ist die DR-Option (Disaster Recovery) für {{site.data.keyword.dashdbshort_notm}}-Angebote aufgrund der ergänzenden Regel 14 für Systeme, die für die brasilianische Regierung eingerichtet werden, nicht verfügbar. 
 

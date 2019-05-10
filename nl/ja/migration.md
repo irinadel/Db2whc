@@ -84,9 +84,9 @@ Lift は、表 1 にリストされている各種データ・ソースから {{
 |                              | CSV ファイル・フォーマット |
 {: caption="表 1. マイグレーションのデータ・ソース" caption-side="top"}
 
-Lift のダウンロードとインストールについては、[Download Lift ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#download){:new_window} を参照してください。
+Lift のダウンロードとインストールについては、[Download Lift ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#download){:new_window} を参照してください。
 
-Lift を使用してデータを {{site.data.keyword.Bluemix_notm}} にマイグレーションする方法に関するステップバイステップの説明については、[{{site.data.keyword.dashdblong}} へのデータ・マイグレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window}を参照してください。
+Lift を使用してデータを {{site.data.keyword.Bluemix_notm}} にマイグレーションする方法に関するステップバイステップの説明については、[{{site.data.keyword.dashdblong}} へのデータ・マイグレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}を参照してください。
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -97,11 +97,9 @@ MDMS は、テラバイト単位からペタバイト単位までのデータを
 
 ![Mass Data Migration Service デバイスの表示](images/mdms.svg)
 
-MDMS デバイスについて詳しくは、以下を参照してください。 
-- [{{site.data.keyword.Bluemix_notm}} 大量データ・マイグレーションの概説](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+MDMS デバイスについて詳しくは、[入門チュートリアル](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}を参照してください。
 
-MDMS デバイスを使用した IBM PureData System for Analytics (Netezza) データベースから {{site.data.keyword.dashdblong}} データベースへのデータのマイグレーションについて詳しくは、以下を参照してください。 
-- [IBM PureData System for Analytics (Netezza) からのマイグレーション](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}。
+MDMS デバイスを使用した IBM PureData System for Analytics (Netezza) データベースから {{site.data.keyword.dashdblong}} データベースへのデータのマイグレーションについて詳しくは、[IBM PureData System for Analytics (Netezza) からのマイグレーション](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}を参照してください。
 
 ## チュートリアル: Migrating data from on-premises relational databases
 {: #tutorial}

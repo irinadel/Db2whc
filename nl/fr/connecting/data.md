@@ -1,8 +1,8 @@
-﻿---
+---
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-08"
+lastupdated: "2019-03-29"
 
 keywords:
 
@@ -37,6 +37,9 @@ Ces instructions expliquent comment définir une connexion sans SSL entre IBM® 
 ### Prérequis
 {: #prereq1}
 
+Il est vivement recommandé d'effectuer une mise à jour de DataStage vers la version la plus récente de manière à bénéficier de tables externes pour charger vos données dans {{site.data.keyword.dashdbshort_notm}}.
+{: important}
+
 Si aucun client de serveur de données n'est installé, téléchargez et installez le client IBM Data Server Client <!--Version 10.5 --> approprié au système d'exploitation de votre ordinateur client : [IBM Data Server Client ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}.
 
 Pour établir des connexions avec le protocole SSL, téléchargez et installez le GSKit V8 32 bits. Cliquez sur l'onglet Système d'exploitation correspondant au système d'exploitation de votre ordinateur client : [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Pour les systèmes d'exploitation suivants, veillez à ajouter le chemin d'accès au répertoire d'installation de GSKit à la variable d'environnement de chemin spécifique au système d'exploitation :
@@ -51,7 +54,7 @@ Pour établir des connexions avec le protocole SSL, téléchargez et installez l
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc1}
@@ -76,13 +79,13 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
-     où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` représente le mot de passe de la base de données du magasin de clés client.
+     Où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` le mot de passe de la base de données du magasin de clés client.
         
   4. Ajoutez le certificat à la base de données du magasin de clés client.
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
-     où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` représente le mot de passe de la base de données du magasin de clés client.
+     Où `<keystore_db.kdb>` représente la base de données du magasin de clés client et `<ks_db_password>` le mot de passe de la base de données du magasin de clés client.
     
   5. Configurez le client Db2 sur le serveur DataStage.
             
@@ -90,21 +93,21 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst2/SSL/<keystore_db.kdb>`
 
-     où `<keystore_db.kdb>` représente la base de données du magasin de clés client.
+     Où `<keystore_db.kdb>` représente la base de données du magasin de clés client.
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst2/SSL/<keystore_db.sth>`
 
-     où `<keystore_db.sth>` représente le stockage de mot de passe de la base de données du magasin de clés client.
+     Où `<keystore_db.sth>` représente le stockage de mot de passe de la base de données du magasin de clés client.
             
      b. Cataloguez le noeud cible avec l'option de sécurité SSL puis la base de données BLUDB sur le noeud cible.
 
      `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     où `<node_name>` représente le nom du noeud cible et `<IP_addr_of_BLUDB_database_server>` représente l'adresse IP du serveur de base de données BLUDB,
+     Où `<node_name>` représente le nom du noeud cible et `<IP_addr_of_BLUDB_database_server>` l'adresse IP du serveur de base de données BLUDB.
 
      `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}}.
+     Où `<db_alias>` est le nom de la base de données {{site.data.keyword.dashdbshort_notm}}.
 
   6. Ajoutez des droits de lecture et d'exécution aux fichiers dans le répertoire SSL pour tout le monde. L'utilisateur DataStage qui exécute les tâches doit accéder à ces fichiers pour effectuer des connexions SSL à la base de données Db2.
 
@@ -116,13 +119,13 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
        `db2 connect to <db_alias> user <user_id>`
 
-       où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+       Où `<db_alias>` est le nom de la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
     
      - Testez la connexion en utilisant l'interface de ligne de commande. Entrez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-        où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
+        Où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
 
 - Pour créer une connexion sans SSL, cataloguez la base de données {{site.data.keyword.dashdbshort_notm}} cible en procédant comme suit :
 
@@ -130,13 +133,13 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
      `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
-     où `<node_name>` représente le nom du noeud, `<IP_address_of_BLUDB_database_server>` l'adresse IP du serveur de base de données BLUDB et `<port_number_of_BLUDB_database>` le numéro de port de la base de données BLUDB.
+     Où `<node_name>` représente le nom du noeud, `<IP_address_of_BLUDB_database_server>` l'adresse IP du serveur de base de données BLUDB et `<port_number_of_BLUDB_database>` le numéro de port de la base de données BLUDB.
 
   2. Cataloguez la base de données {{site.data.keyword.dashdbshort_notm}} distante pour que les applications client puissent s'y connecter. Exécutez la commande suivante :
 
      `db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     où `<db_alias>` représente le nom de la base de données {{site.data.keyword.dashdbshort_notm}} et `<node_name>` le nom du noeud.
+     Où `<db_alias>` est le nom de la base de données {{site.data.keyword.dashdbshort_notm}} et `<node_name>` le nom du noeud.
 
   3. Testez la connexion non SSL de l'une des manières suivantes :
 
@@ -144,7 +147,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
         `db2 connect to <db_alias> user <user_id>`
 
-        où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+        Où `<db_alias>` est le nom de la base de données {{site.data.keyword.dashdbshort_notm}} et `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
 
         `db2 list tables`
 
@@ -152,9 +155,9 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
         `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-        où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
+        Où `<alias>` est un alias que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` votre mot de passe {{site.data.keyword.dashdbshort_notm}}.
 
-  4. Utilisez les [informations de connexion](/docs/services/Db2whc/connecting/credentials.html) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
+  4. Utilisez les [informations de connexion](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) obtenues au préalable pour définir une connexion dans le client DataStage. Sur l'onglet **Parameters**, vous devez sélectionner le **connecteur DB2** dans la zone **Connect using Staging Type**.
 
      Pour plus d'informations sur la définition d'une connexion dans DataStage, consultez les rubriques suivantes de la documentation de DataStage : 
      
@@ -209,7 +212,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 Utilisez Lift pour faire migrer vos données dans {{site.data.keyword.dashdbshort_notm}}.
 
-[Lift ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://lift.ng.bluemix.net/#docs){:new_window}
+[Lift ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -227,9 +230,9 @@ Lorsque vous utilisez {{site.data.keyword.dashdbshort_notm}} en tant que cible d
 ### Prérequis
 {: #prereq2}
 
-Si vous tentez de vous connecter à l'aide du protocole SSL, téléchargez et installez GSKit V8. Voir [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Cliquez sur l'onglet correspondant au système d'exploitation de la machine de votre client. Si vous installez le GSKit sur un ordinateur Windows, veillez à spécifier le chemin d'accès au répertoire d'installation de GSKit (`<installation_directory>\gsk8\bin`) dans la variable d'environnement **`PATH`**.
+Si vous tentez de vous connecter à l'aide du protocole SSL, téléchargez et installez GSKit V8. Voir [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Cliquez sur l'onglet correspondant au système d'exploitation de la machine de votre client. Si vous installez GSKit sur un ordinateur Windows, veillez à spécifier le chemin d'accès au répertoire d'installation de GSKit (`<installation_directory>\gsk8\bin`) dans la variable d'environnement **`PATH`**.
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 Si vous avez l'intention de vous connecter en utilisant le protocole SSL, téléchargez le certificat SSL `DigiCertGlobalRootCA.crt` de la console Web vers un répertoire de la machine client. Pour télécharger le certificat, cliquez sur **Connexion > Informations de connexion** puis sur l'onglet **Connexion avec SSL**.
 
@@ -244,7 +247,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      `cd /<ssl_directory_name>/ssl`
 
-     où `/<ssl_directory_name>/ssl` est le chemin d'accès au répertoire dans lequel vous avez téléchargé le certificat SSL `DigiCertGlobalRootCA.crt`.
+     Où `/<ssl_directory_name>/ssl` est le chemin d'accès au répertoire dans lequel vous avez téléchargé le certificat SSL `DigiCertGlobalRootCA.crt`.
 
      b. Créez une base de données de clés client et un fichier de dissimulation à l'aide de l'outil **GSKCapiCmd**. Par exemple, la commande suivante crée une base de données de clés client appelée `dashclient.kdb` et un fichier de dissimulation appelé `dashclient.sth` :
 
@@ -252,7 +255,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      où `passw0rdpw0` est un mot de passe. L'option **-stash** crée un fichier de dissimulation au même endroit que la base de données de clés client, avec l'extension de fichier `.sth`. Lors de la connexion, GSKit utilise le fichier de dissimulation pour obtenir le mot de passe pour la base de données de clés client.
             
-     c. Ajoutez le certificat à la base de données de clés client. Par exemple, la commande **gsk8capicmd** suivante importe le certificat du fichier `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` dans la base de données de clés client appelée `dashclient.kdb` :
+     c. Ajoutez le certificat à la base de données de clés client. Par exemple, la commande **gsk8capicmd** suivante importe le certificat depuis le fichier `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` dans la base de données de clés client nommée `dashclient.kdb` :
 
      `gsk8capicmd_64 -cert -add -db "dashclient.kdb" -pw "passw0rdpw0" -label "DigiCert" -file "/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt" -format ascii -fips`
 
@@ -267,7 +270,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      `db2 catalog tcpip node <node_name> remote <Db2_Warehouse_IP_address> server <port_number> security ssl`
 
-     où :
+     Où :
                 
      `<node_name>` est le nom que vous donnez au noeud.
 
@@ -279,7 +282,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     où `db_alias` est le nom que donnez à la base de données {{site.data.keyword.dashdbshort_notm}}.
+     Où `db_alias` est le nom que donnez à la base de données {{site.data.keyword.dashdbshort_notm}}.
             
      g. Testez la connexion SSL de l'une des manières suivantes :
                 
@@ -287,13 +290,13 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
        `db2 connect to <db_alias> user <user_id>`
 
-       où `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+       Où `<user_id>` est votre ID utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
                 
      - Pour tester la connexion via l'interface de ligne de commande (CLI), exécutez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       où `<alias>` est un alias de nom de source de données (DSN) que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est votre mot de passe de base de données {{site.data.keyword.dashdbshort_notm}}.
+       Où `<alias>` est un alias DSN que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` votre mot de passe de la base de données {{site.data.keyword.dashdbshort_notm}}.
         
    - Pour créer une connexion sans SSL, procédez comme suit :
 
@@ -301,7 +304,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      `db2 catalog tcpip node <node_name> remote <Db2_Warehouse_IP_address> server <port_number>`
 
-     où :
+     Où :
                 
      `<node_name>` est le nom que vous donnez au noeud.
 
@@ -313,7 +316,7 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     où `<db_alias>` est le nom que vous donnez à la base de données {{site.data.keyword.dashdbshort_notm}}.
+     Où `<db_alias>` est le nom de la base de données {{site.data.keyword.dashdbshort_notm}}.
 
      c. Testez la connexion non SSL de l'une des manières suivantes :
 
@@ -321,13 +324,13 @@ Si vous avez l'intention de vous connecter en utilisant le protocole SSL, télé
 
        `db2 connect to <db_alias> user <user_id>`
 
-       où `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
+       Où `<user_id>` est votre ID utilisateur {{site.data.keyword.dashdbshort_notm}}. Vous êtes invité à entrer votre mot de passe.
                 
      - Pour tester la connexion via l'interface de ligne de commande (CLI), exécutez la commande suivante pour vous connecter à la base de données {{site.data.keyword.dashdbshort_notm}} :
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       où `<alias>` est un alias de nom de source de données (DSN) que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID d'utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` est le mot de passe de votre serveur Db2 Warehouse on Cloud.
+       Où `<alias>` est un alias DSN que vous avez créé à l'aide de la commande **db2cli writecfg**, `<user_id>` est votre ID utilisateur {{site.data.keyword.dashdbshort_notm}} et `<password>` le mot de passe de votre serveur Db2 Warehouse on Cloud.
     
 2. Lancez l'outil de configuration d'InfoSphere Data Replication et effectuez les étapes suivantes. Les valeurs qui s'affichent dans les captures d'écran sont des exemples.
         
@@ -387,7 +390,7 @@ Ces instructions expliquent comment créer une connexion entre IBM® Data Studio
 ### Prérequis
 {: #prereq3}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc3}
@@ -405,7 +408,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
 4. Pour une connexion SSL, cliquez sur l'onglet **Optional**, puis sur **Add**. Pour la propriété `sslConnection`, spécifiez `true`.
 
-5. [*Facultatif*] : Cliquez sur **Test Connection** pour vérifier que la connexion a réussi.
+5. [*Facultatif*]: Cliquez sur **Test Connection** pour vérifier que la connexion a réussi.
 
 ## Data Server Manager (DSM)
 {: #dsm}
@@ -416,7 +419,7 @@ Une connexion entre votre console IBM® Data Server Manager et votre base de don
 ### Prérequis
 {: #prereq4}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc4}
@@ -458,7 +461,7 @@ Ces instructions expliquent comment créer une connexion entre InfoSphere® Data
 ### Prérequis
 {: #prereq5}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc5}
@@ -477,7 +480,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
 4. Pour une connexion SSL, cliquez sur l'onglet **Optional**. Entrez une propriété `sslConnection` et spécifiez la valeur `true`. Cliquez sur **Add**.
     
-5. [*Facultatif*] : Cliquez sur **Test Connection** pour vérifier que la connexion a réussi.
+5. [*Facultatif*]: Cliquez sur **Test Connection** pour vérifier que la connexion a réussi.
 
 ## Aginity Workbench
 {: #aginity_wb}
@@ -488,7 +491,7 @@ Ces instructions expliquent comment connecter Aginity Workbench <!--4.3 -->à un
 ### Prérequis
 {: #prereq6}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc6}
@@ -510,7 +513,7 @@ CLPPlus (Command line processor plus) est inclus dans le module de pilote Db2. C
 ### Prérequis
 {: #prereq7}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) ou un environnement d'exécution Java (JRE) est installé sur votre ordinateur pour la version Java 1.5.0 ou une version ultérieure et que les variables d'environnement sont définies comme suit :
 
@@ -530,7 +533,7 @@ Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) o
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`  
 
-     où :
+     Où :
      
      - `<hostname>` est le nom d'hôte du serveur.
      - `<alias>` est un alias que vous choisissez.
@@ -551,7 +554,7 @@ Pour utiliser CLPPlus, assurez-vous qu'un kit de développement logiciel (SDK) o
 
      `clpplus -nw <userid>@<alias>`
 
-     où :
+     Où :
      
      - `<userid>` est l'ID d'utilisateur des données d'identification de connexion obtenues au préalable.
      - `<alias>` est l'alias que vous avez créé avec la commande **db2cli writecfg**.

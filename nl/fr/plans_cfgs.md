@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ Vous pouvez choisir un plan {{site.data.keyword.dashdbshort_notm}} configuré et
    * Des plans configurés pour la haute disponibilité
    * Une compatibilité Oracle
 
-Affichez tous les plans {{site.data.keyword.dashdbshort_notm}} disponibles dans le [catalogue {{site.data.keyword.Bluemix}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}.
+Affichez tous les plans {{site.data.keyword.dashdbshort_notm}} disponibles dans le [catalogue {{site.data.keyword.Bluemix}}](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}.
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -51,10 +51,9 @@ Si, dans le catalogue, vous ne trouvez pas la configuration dont vous avez besoi
 
 Le tableau suivant présente des informations sur la disponibilité des différents plans {{site.data.keyword.dashdbshort_notm}} en fonction des centres de données de différentes régions géographiques :
 
-
 | Plans {{site.data.keyword.dashdbshort_notm}} | Asie/Pacifique | Europe    | Amérique du Nord/centrale     | Amérique du Sud |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *N/D          | Francfort | Washington D.C. (est des E.U.) | *N/D           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Tokyo        | Francfort | Washington D.C. (est des E.U.) | *N/D           |
 |                              |              |           | Dallas (Sud des E.U.)         |               |  
 |      |||||
 | SMP                          | Hong Kong    | Amsterdam | Washington D.C. (est des E.U.) | São Paulo     |

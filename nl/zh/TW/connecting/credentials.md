@@ -43,7 +43,7 @@ subcollection: Db2whc
 
 有三種類型的認證：
 
-- *IBMid* - 如果您使用 {{site.data.keyword.Bluemix_notm}}，則這是您要用來登入 {{site.data.keyword.Bluemix_notm}} 的 ID。這不是您用來將應用程式或工具連接至 Db2 Warehouse on Cloud 資料庫的 ID。
+- *IBM ID* - 如果您使用 {{site.data.keyword.Bluemix_notm}}，則這是您要用來登入 {{site.data.keyword.Bluemix_notm}} 的 ID。這不是您用來將應用程式或工具連接至 Db2 Warehouse on Cloud 資料庫的 ID。
 - *Db2 資料庫認證* - 您的服務已佈建資料庫使用者 ID 及密碼，可用來將應用程式及工具連接至資料庫。
 - *管理者建立的使用者* - 部分 {{site.data.keyword.dashdbshort_notm}} 方案可讓管理使用者建立新的使用者。這些管理者建立的使用者 ID 及密碼可以用來直接登入 Web 主控台 URL，並從應用程式或工具連接至 Db2 資料庫。
 

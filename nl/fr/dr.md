@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-21"
+lastupdated: "2019-04-16"
 
 keywords:
 
@@ -24,13 +24,22 @@ subcollection: Db2whc
 # Reprise après incident
 {: #dr}
 
-Si votre instance d'entrepôt de données est déployée dans un centre de données qui subit une panne importante avec un temps d'arrêt prévu de plus de 8 heures, une demande vous sera envoyée pour permettre aux opérateurs de service de basculer votre instance sur un autre centre de données avant toute intervention de reprise après incident.
+<!-- If your data warehouse instance is deployed in a data center that suffers a significant data center outage with an expected downtime of more than 8 hours, you will be sent a request to allow service operators to fail over your instance to another data center before disaster recovery actions can begin.
 {: shortdesc}
 
-Une sauvegarde Db2 de votre base de données est effectuée tous les jours, à l'exception du plan Flex pour lequel une sauvegarde Db2 est effectuée toutes les semaines et une sauvegarde par image instantanée est effectuée tous les jours. Les sauvegardes quotidiennes sont stockées dans le service IBM Cloud Object Storage à partir duquel elles sont répliquées dans plusieurs zones de disponibilité. Si quelque chose devait arriver à votre centre de données principal, nos opérateurs de service travailleront avec vous pour mettre en place votre base de données récupérée dans un centre de données secondaire.
+A Db2 backup of your database is done every day, except for the Flex plan where a Db2 backup is done every 7 days and a snapshot backup is done daily. Daily backups are stored in the IBM Cloud Object Storage service from which it is replicated to multiple availability zones. If something should happen to your primary data center, our service operators will work with you to stand up your recovered database in a secondary data center. -->
+
+La stratégie de reprise après incident dépend du type de plan et de la génération d'entrepôt de données que vous effectuez actuellement.
+{: shortdesc}
+
+Pour la première génération des plans SMP Small, Medium, Large et MPP Small, une sauvegarde est effectuée une fois par jour et déployée dans le service {{site.data.keyword.Bluemix_notm}} Object Storage. Ensuite, la sauvegarde est répliquée dans plusieurs zones de disponibilité. Si un événement catastrophique se produit sur le centre de données principal, nos opérateurs de service vous aideront à mettre en place un nouvel entrepôt de données dans un autre centre de données. Pour ce faire, ils utiliseront la sauvegarde quotidienne qui se trouve sur le service {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+Pour la seconde génération des plans Flex sur {{site.data.keyword.Bluemix_notm}}, une sauvegarde est effectuée une fois par semaine et déployée dans le service {{site.data.keyword.Bluemix_notm}} Object Storage. Ensuite, la sauvegarde est répliquée dans plusieurs zones de disponibilité. Si un événement catastrophique se produit sur le centre de données principal, nos opérateurs de service vous aideront à mettre en place un nouvel entrepôt de données dans un autre centre de données. Pour ce faire, ils utiliseront la sauvegarde hebdomadaire qui se trouve sur le service {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+Pour la seconde génération des plans Flex sur Amazon Web Services, une sauvegarde quotidienne en libre-service est automatiquement déchargée sur AWS S3. En S3, la sauvegarde est répliquée dans plusieurs régions. Si un événement catastrophique se produit, la dernière sauvegarde est utilisée pour restaurer votre cluster dans un centre de données secondaire.
 
 ## **Brésil : règle supplémentaire n°14** (s'applique aux systèmes mis à disposition pour le gouvernement fédéral brésilien)
 {: #rule_14}
 
-Actuellement, l'option de reprise après incident des offres Db2 Warehouse on Cloud n'est pas disponible au Brésil pour le gouvernement fédéral en raison de la règle supplémentaire n°14.
+Actuellement, l'option de reprise après incident des offres {{site.data.keyword.dashdbshort_notm}} n'est pas disponible au Brésil pour le gouvernement fédéral en raison de la règle supplémentaire n° 14.
 

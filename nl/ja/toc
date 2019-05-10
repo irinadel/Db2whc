@@ -2,11 +2,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html" path="services/Db2whc"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc?topic=Db2whc-getting_started#getting_started" path="services/Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     iam.md
     plans_cfgs.md
     about.md
@@ -25,6 +25,7 @@ Db2 Warehouse on Cloud
     {: .topicgroup}
     接続
         connecting/connecting.md
+        connecting/connectivity_options.md
         connecting/credentials.md
         connecting/driver_pkg.md
         connecting/install_linux.md
@@ -46,7 +47,7 @@ Db2 Warehouse on Cloud
         connecting/data_sci.md
 
     {: .topicgroup}
-    他の DB2 データベースへの接続
+    他の Db2 データベースへの接続
         federation.md
 
     user_mgmt.md
@@ -56,12 +57,7 @@ Db2 Warehouse on Cloud
 
     [最新情報](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [よくあるご質問](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-	
-    {: .topicgroup}
-    セキュリティー
-        [コンプライアンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-        priv_net.md
-    
+    [セキュリティー・コンプライアンス](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-21"
+lastupdated: "2019-04-16"
 
 keywords:
 
@@ -24,13 +24,22 @@ subcollection: Db2whc
 # 災難回復 (DR)
 {: #dr}
 
-如果您的資料倉儲實例部署在發生重大中斷的資料中心，預期的關閉時間超過 8 小時，則在災難回復動作開始之前，會先傳送要求給您，請您容許維修操作員將您的實例由另一個資料中心進行失效接手。
+<!-- If your data warehouse instance is deployed in a data center that suffers a significant data center outage with an expected downtime of more than 8 hours, you will be sent a request to allow service operators to fail over your instance to another data center before disaster recovery actions can begin.
 {: shortdesc}
 
-您的資料庫每天都會進行 Db2 備份，彈性方案例外，該方案中每 7 天會執行一次 Db2 備份，且每天會執行一次 Snapshot 備份。每日備份儲存在 IBM Cloud Object Storage 服務中，而這些備份會從這個服務抄寫至多個可用性區域。萬一您的主要資料中心發生一些情況，我們的服務操作員將與您合作，在次要資料中心提供回復的資料庫。
+A Db2 backup of your database is done every day, except for the Flex plan where a Db2 backup is done every 7 days and a snapshot backup is done daily. Daily backups are stored in the IBM Cloud Object Storage service from which it is replicated to multiple availability zones. If something should happen to your primary data center, our service operators will work with you to stand up your recovered database in a secondary data center. -->
+
+災難回復策略取決於方案類型，以及您今日執行的資料倉儲產生作業。
+{: shortdesc}
+
+若為第一代 SMP「小型」、「中型」、「大型」及 MPP「小型」方案，每天會備份一次，並將備份部署至 {{site.data.keyword.Bluemix_notm}} Object Storage 服務。從這裡，備份會抄寫至多個可用性區域。如果主要資料中心發生災難事件，我們的服務操作員將與您合作，在不同的資料中心提供新的資料倉儲。我們將使用位於 {{site.data.keyword.Bluemix_notm}} Object Storage 服務的每日備份。
+
+若為 {{site.data.keyword.Bluemix_notm}} 上的第二代「彈性」方案，每週會備份一次，並將備份部署至 {{site.data.keyword.Bluemix_notm}} Object Storage 服務。從這裡，備份會抄寫至多個可用性區域。如果主要資料中心發生災難事件，我們的服務操作員將與您合作，在不同的資料中心提供新的資料倉儲。我們將使用位於 {{site.data.keyword.Bluemix_notm}} Object Storage 服務的每週備份。
+
+若為 Amazon Web Services 上的第二代「彈性」方案，每日自助式備份會自動卸載至 AWS S3。在 S3 時，備份會抄寫至多個地區。如果發生災難事件，則會使用最新備份，將您的叢集還原至次要資料中心。
 
 ## **巴西：增補規則 14**（適用於針對巴西聯邦政府所佈建的系統）
 {: #rule_14}
 
-目前，由於「增補規則 14」，無法在巴西為聯邦政府提供 Db2 Warehouse on Cloud 供應項目的災難回復 (DR) 選項。
+目前，由於「增補規則 14」，無法在巴西為聯邦政府提供 {{site.data.keyword.dashdbshort_notm}} 供應項目的災難回復 (DR) 選項。
 

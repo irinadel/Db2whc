@@ -57,7 +57,7 @@ Ces instructions expliquent comment connecter Tableau à une base de données {{
 ### Prérequis
 {: #prereq8}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 ### Procédure
 {: #proc8}
@@ -87,7 +87,7 @@ Ces instructions expliquent comment connecter Microsoft Excel <!--2010-->à une 
 ### Prérequis
 {: #prereq9}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver Package installé sur votre ordinateur local. 
 
@@ -128,14 +128,14 @@ Vous pouvez connecter Esri ArcGIS for Desktop <!--version 10.3.1 -->à une base 
 ### Prérequis
 {: #prereq10}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver Package installé sur votre ordinateur.
 
 ### Procédure
 {: #proc10}
 
-1. Déterminez votre nom de source de données ODBC à partir des [informations de connexion](/docs/services/Db2whc/connecting/credentials.html) obtenues précédemment.
+1. Déterminez votre nom de source de données ODBC à partir des [informations de connexion](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) obtenues précédemment.
 
 2. Créez une nouvelle connexion :
       
@@ -150,7 +150,7 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
      FET_BUF_SIZE=256K  
      ```
 
-     où `<hostname>`, `<port>` et `<database>` sont des espaces réservés qui représentent le nom d'hôte, le numéro de port et le nom de la base de données que vous avez notés auparavant.
+     Où `<hostname>`, `<port>` et `<database>` sont des espaces réservés qui représentent le nom d'hôte, le numéro de port et le nom de la base de données que vous avez notés auparavant.
             
    - Sélectionnez **Database authentication** comme type d'authentification.
             

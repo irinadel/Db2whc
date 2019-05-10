@@ -30,7 +30,7 @@ Utilizza lo strumento Microsoft ODBC Data Source Administrator per definire una 
 ## Prerequisiti
 {: #prereq91}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 ## Procedura
 {: #proc91}
 
-1. Installa il [Pacchetto del driver Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Installa il [Pacchetto del driver Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Apri ODBC Data Source Administrator e crea un DSN utente o sistema per il pacchetto del driver Db2.
     

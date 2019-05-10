@@ -57,9 +57,9 @@ Dans la console Web {{site.data.keyword.dashdbshort_notm}}, sélectionnez **Conn
 {: #instlng}
 
 Installez le module de pilote correspondant à votre système d'exploitation :
-- [Installation sur Windows](/docs/services/Db2whc/connecting/install_win.html)
-- [Installation sur Linux ou PowerLinux](/docs/services/Db2whc/connecting/install_linux.html)
-- [Installation sur Mac OS X](/docs/services/Db2whc/connecting/install_mac.html)
+- [Installation sur Linux ou PowerLinux](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [Installation sur Mac OS X](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [Installation sur Windows](/docs/services/Db2whc?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 <!-- ## Configuring
 

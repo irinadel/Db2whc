@@ -88,7 +88,7 @@ IBM Watson Studio(이전의 Data Science Experience)에 프로젝트를 작성�
 ### 전제조건
 {: #prereq11}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc11}
@@ -103,11 +103,11 @@ IBM Watson Studio(이전의 Data Science Experience)에 프로젝트를 작성�
 
    b. 새 데이터 소스 작성 창에서 이름이 **IBM DB2 ODBC DRIVER**인 드라이버를 선택하고 **완료**를 클릭하십시오.
 
-   선택하는 드라이버가 `IBM DB2® ODBC DRIVER - DB2COPY`처럼 이와 유사한 이름을 가진 드라이버가 아니어야 합니다. 드라이버가 목록에 없으면 SPSS Statistics를 종료한 다음 드라이버를 다운로드하여 설치하십시오. [Db2 드라이버 패키지](/docs/services/Db2whc/connecting/driver_pkg.html)를 참조하십시오.
+   선택하는 드라이버가 `IBM DB2® ODBC DRIVER - DB2COPY`처럼 이와 유사한 이름을 가진 드라이버가 아니어야 합니다. 드라이버가 목록에 없으면 SPSS Statistics를 종료한 다음 드라이버를 다운로드하여 설치하십시오. [드라이버 패키지](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)를 참조하십시오.
         
    c. ODBC IBM 드라이버 - 추가 창에서 데이터 소스 이름(일반적으로 연결 중인 데이터베이스의 이름)을 입력하고 **추가**를 클릭하십시오.
         
-   d. CLI/ODBC 설정 창의 **데이터 소스** 탭에 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)에 있는 사용자 ID와 비밀번호를 입력하십시오.
+   d. CLI/ODBC 설정 창의 **데이터 소스** 탭에 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)에 있는 사용자 ID와 비밀번호를 입력하십시오.
         
    e. 고급 설정 페이지에서 다음 각각의 매개변수에 대해 **추가**를 클릭하여 단계를 시작하는 CLI 매개변수 추가 창을 열고 **확인**을 클릭하여 고급 설정 페이지로 돌아가십시오.
             
@@ -138,7 +138,7 @@ IBM Watson Studio(이전의 Data Science Experience)에 프로젝트를 작성�
 ### 전제조건
 {: #prereq12}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc12}
@@ -155,7 +155,7 @@ IBM Watson Studio에 통합되어 있는 RStudio® 환경을 사용하는 대신
 ### 전제조건
 {: #prereq13}
 
-{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting/connecting.html#prereqs)이 있는지 확인하십시오.
+{{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결하기 전에 먼저 필수 [전제조건](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)이 있는지 확인하십시오.
 
 ### 프로시저
 {: #proc13}
@@ -172,7 +172,7 @@ IBM Watson Studio에 통합되어 있는 RStudio® 환경을 사용하는 대신
         
    b. 로컬에 설치된 R 개발 환경을 여십시오.
         
-   c. R 프롬프트에서 다음 명령문을 입력하여 연결을 작성하십시오. 플레이스홀더를 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting/credentials.html)로 바꾸십시오.
+   c. R 프롬프트에서 다음 명령문을 입력하여 연결을 작성하십시오. 플레이스홀더를 미리 수집한 [연결 정보](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)로 바꾸십시오.
 
    - 로컬에 설치된 R 개발 환경이 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에서 실행되는 경우:
 

@@ -30,7 +30,7 @@ Vous pouvez installer le module de pilote {{site.data.keyword.dashdbshort_notm}}
 ## Prérequis
 {: #prereq31}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -69,7 +69,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 ## Que faire ensuite ?
 {: #wn}
 
-Pour pouvoir connecter vos applications locales ou vos outils clients à votre base de données {{site.data.keyword.dashdbshort_notm}}, [configurez votre environnement local](/docs/services/Db2whc/connecting/driver_pkg_cfg.html).   
+Pour pouvoir connecter vos applications locales ou vos outils clients à votre base de données {{site.data.keyword.dashdbshort_notm}}, [configurez votre environnement local](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).   
 
 
 

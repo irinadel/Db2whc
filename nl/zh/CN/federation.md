@@ -99,13 +99,13 @@ At times, you might choose to partition (shard) your data. With federation capab
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. 创建用于与目标机器对话的服务器：<br/>
+1. 创建一个服务器以与目标机器对话：<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    例如：<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. 针对 admin2 创建用户映射：<br/>
+2. 创建 admin2 的用户映射：<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
    例如：<br/>

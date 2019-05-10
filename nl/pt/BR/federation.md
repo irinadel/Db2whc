@@ -111,12 +111,12 @@ No console de {{site.data.keyword.dashdbshort_notm}}:
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. Crie um apelido para o banco de dados:<br/>
-   `create nickname <nickname> para <server_name>.<schema_name>.<table_name>`
+   `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
    Por exemplo:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Teste se é possível puxar dados do servidor de destino:<br/>
+4. Teste se é possível extrair dados do servidor de destino:<br/>
    `select * from <nickname>`
 
    Por exemplo:<br/>

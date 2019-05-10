@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-08"
+lastupdated: "2019-03-29"
 
 keywords:
 
@@ -37,6 +37,9 @@ subcollection: Db2whc
 ### 前提条件
 {: #prereq1}
 
+外部テーブルを使用してデータを {{site.data.keyword.dashdbshort_notm}} にロードできるように、DataStage を最新のバージョンに更新することを強くお勧めします。
+{: important}
+
 まだデータ・サーバー・クライアントをインストールしていない場合は、ご使用のクライアント・マシンのオペレーティング・システムに適切な IBM Data Server Client <!--Version 10.5 --> をダウンロードしてインストールします。 [IBM Data Server Client ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
 SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} で、ご使用のクライアント・マシンのオペレーティング・システムに該当する OS タブをクリックします。 以下の各オペレーティング・システムについて、GSKit インストール・ディレクトリー・パスを OS 固有の PATH 環境変数に追加していることを確認してください。
@@ -51,7 +54,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc1}
@@ -84,7 +87,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
      ここで、`<keystore_db.kdb>` はクライアント鍵ストア・データベースを表し、`<ks_db_password>` はクライアント鍵ストア・データベースのパスワードを表します。
     
-  5. DataStage サーバー上で DB2 クライアントを構成します。
+  5. DataStage サーバー上で Db2 クライアントを構成します。
             
      a. データベース・マネージャー内で SSL 構成パラメーターを更新します。
 
@@ -116,7 +119,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
        `db2 connect to <db_alias> user <user_id>`
 
-       ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+       ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
     
      - CLI を使用して接続をテストします。 次のコマンドを発行して、{{site.data.keyword.dashdbshort_notm}} データベースに接続します。
 
@@ -144,7 +147,7 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
         `db2 connect to <db_alias> user <user_id>`
 
-        ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+        ここで、`<db_alias>` は {{site.data.keyword.dashdbshort_notm}} データベースの名前で、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
 
         `db2 list tables`
 
@@ -154,12 +157,12 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
         ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は {{site.data.keyword.dashdbshort_notm}} パスワードです。
 
-  4. 事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)を使用して、DataStage クライアント内で接続を定義します。 **「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
+  4. 事前に収集した[接続情報](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)を使用して、DataStage クライアント内で接続を定義します。 **「パラメーター」**タブで、**「ステージング・タイプを使用した接続 (Connect using Staging Type)」**フィールドに**「DB2 Connector」**を選択しなければなりません。
 
      DataStage での接続の定義について詳しくは、以下の DataStage 資料のトピックを参照してください。 
      
      - [データ接続オブジェクトの手動作成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
-     - [DB2 データベースへのアクセスの構成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
+     - [Db2 データベースへのアクセスの構成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
 
 ## Informatica
 {: #informatica}
@@ -209,7 +212,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 Lift を使用して、データを {{site.data.keyword.dashdbshort_notm}} にマイグレーションします。
 
-[Lift ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://lift.ng.bluemix.net/#docs){:new_window}
+[Lift ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -229,7 +232,7 @@ IBM InfoSphere Data Replication を {{site.data.keyword.dashdbshort_notm}} に�
 
 SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} を参照してください。 ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 SSL プロトコルを使用して接続しようとしている場合は、Web コンソールからクライアント・マシンのディレクトリーに `DigiCertGlobalRootCA.crt` SSL 証明書をダウンロードします。 証明書をダウンロードするには、**「接続」>「接続情報」**をクリックしてから**「SSL を使用した接続」**タブをクリックします。
 
@@ -286,13 +289,13 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 
        `db2 connect to <db_alias> user <user_id>`
 
-       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
                 
      - 以下のコマンドを発行して {{site.data.keyword.dashdbshort_notm}} データベースに接続し、CLI を使用した接続をテストします。
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       ここで、`<alias>` は、**db2cli writecfg** コマンドを使用して作成した DSN 別名です。`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID で、`<password>` は {{site.data.keyword.dashdbshort_notm}} データベースのパスワードです。
+       ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した DSN 別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は {{site.data.keyword.dashdbshort_notm}} データベースのパスワードです。
         
    - SSL を使用せずに接続を作成するには、次の手順を実行します。
 
@@ -320,13 +323,13 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 
        `db2 connect to <db_alias> user <user_id>`
 
-       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。パスワードの入力を求めるプロンプトが出されます。
+       ここで、`<user_id>` は、{{site.data.keyword.dashdbshort_notm}} のユーザー ID です。 パスワードの入力を求めるプロンプトが出されます。
                 
      - 以下のコマンドを発行して {{site.data.keyword.dashdbshort_notm}} データベースに接続し、CLI を使用した接続をテストします。
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       ここで、`<alias>` は、**db2cli writecfg** コマンドを使用して作成した DSN 別名です。`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID で、`<password>` は Db2 Warehouse on Cloud のパスワードです。
+       ここで、`<alias>` は **db2cli writecfg** コマンドを使用して作成した DSN 別名、`<user_id>` は {{site.data.keyword.dashdbshort_notm}} ユーザー ID、`<password>` は Db2 Warehouse on Cloud のパスワードです。
     
 2. InfoSphere Data Replication 構成ツールを起動し、次の手順を実行します。 画面取りで示されている値は例です。
         
@@ -386,7 +389,7 @@ Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合�
 ### 前提条件
 {: #prereq3}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc3}
@@ -415,7 +418,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq4}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc4}
@@ -457,7 +460,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq5}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc5}
@@ -487,7 +490,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 ### 前提条件
 {: #prereq6}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc6}
@@ -509,7 +512,7 @@ Command line processor plus (CLPPlus) は、Db2 ドライバー・パッケー�
 ### 前提条件
 {: #prereq7}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 CLPPlus を使用するには、ソフトウェア開発キット (SDK) または Javaランタイム環境 (JRE) for Java バージョン 1.5.0 以降がコンピューターにインストールされていること、および環境変数が以下のように設定されていることを確認してください。
 

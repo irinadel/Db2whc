@@ -29,7 +29,7 @@ subcollection: Db2whc
 
 데이터베이스 관리자 역할은 다음 유형의 사용자 액세스를 관리합니다. 
 * 웹 콘솔. 사용자는 웹 콘솔에서 데이터베이스에 대한 조회를 실행할 수 있습니다.
-* 데이터베이스, 관리자는 특정 테이블, 스키마, 또는 행이나 열에 이르기까지, 데이터베이스에 대한 세부적인 액세스 권한을 부여할 수 있습니다. 
+* 데이터베이스. 관리자는 특정 테이블, 스키마, 또는 행이나 열에 이르기까지, 데이터베이스에 대한 세부적인 액세스 권한을 부여할 수 있습니다. 
 
-사용자 관리에 대한 자세한 정보는 다음을 참조하십시오.  
+사용자 관리에 대한 자세한 정보는 다음을 참조하십시오. 
 - [데이터베이스 사용자 관리 ![외부 링크 아이콘](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}

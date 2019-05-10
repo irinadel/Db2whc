@@ -98,28 +98,28 @@ Führen Sie in der {{site.data.keyword.dashdbshort_notm}}-Konsole die folgenden 
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. Server für die Kommunikation mit der Zielmaschine erstellen:<br/>
+1. Erstellen Sie einen Server für die Kommunikation mit der Zielmaschine:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   Beispiele:<br/>
+   Beispiel: <br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. Benutzerzuordnung für admin2 erstellen:<br/>
+2. Erstellen Sie eine Benutzerzuordnung für admin2:<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   Beispiele:<br/>
+   Beispiel:<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
-3. Kurznamen für die Datenbank erstellen:<br/>
+3. Erstellen Sie einen Kurznamen für die Datenbank: <br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   Beispiele:<br/>
+   Beispiel:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Testen, ob Daten vom Zielserver abgerufen werden können:<br/>
+4. Testen Sie, ob Daten vom Zielserver abgerufen werden können:<br/>
    `select * from <nickname>`
 
-   Beispiele:<br/>
+   Beispiel:<br/>
    `select * from ntest1`
 
 ## Zusätzliche Informationen

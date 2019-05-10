@@ -98,13 +98,13 @@ Desde la consola de {{site.data.keyword.dashdbshort_notm}}:
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. Cree un servidor para que se comunique con la máquina de destino:<br/>
+1. Cree un servidor para comunicar con la máquina de destino:<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
    Por ejemplo:<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. Cree la correlación de usuario para admin2:<br/>
+2. Cree una correlación de usuario para admin2:<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
    Por ejemplo:<br/>
@@ -116,7 +116,7 @@ Desde la consola de {{site.data.keyword.dashdbshort_notm}}:
    Por ejemplo:<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Compruebe que puede extraer datos del servidor de destino:<br/>
+4. Pruebe que puede extraer datos del servidor de destino:<br/>
    `select * from <nickname>`
 
    Por ejemplo:<br/>

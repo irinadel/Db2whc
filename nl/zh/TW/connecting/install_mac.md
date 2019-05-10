@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## 必要條件
 {: #prereq41}
 
-在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在嘗試連接至您的 {{site.data.keyword.dashdbshort_notm}} 資料庫之前，請驗證您是否具有必要的[必備項目](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -71,4 +71,4 @@ subcollection: Db2whc
 ## 下一步為何？
 {: #wn41}
 
-若要能夠將本端應用程式或用戶端工具連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，請[配置本端環境](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)。
+若要能夠將本端應用程式或用戶端工具連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫，請[配置本端環境](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env)。

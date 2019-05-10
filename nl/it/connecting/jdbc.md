@@ -30,7 +30,7 @@ Definisci una connessione tra un'applicazione Java™ e il database {{site.data.
 ## Prerequisiti
 {: #prereq61}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

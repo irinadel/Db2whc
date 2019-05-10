@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ subcollection: Db2whc
    * 高可用性向けに構成されたプラン
    * Oracle 互換性
 
-[{{site.data.keyword.Bluemix}} カタログ](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}で、使用可能なすべての {{site.data.keyword.dashdbshort_notm}} プランを確認してください。
+[{{site.data.keyword.Bluemix}} カタログ](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}で、使用可能なすべての {{site.data.keyword.dashdbshort_notm}} プランを確認してください。
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -51,10 +51,9 @@ subcollection: Db2whc
 
 以下の表は、地理的地域にあるデータ・センター別のさまざまな {{site.data.keyword.dashdbshort_notm}} プランの可用性に関する情報を提供します。
 
-
 | {{site.data.keyword.dashdbshort_notm}} プラン | アジア太平洋地域 | ヨーロッパ    | 北米/中米     | 南米 |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| Flex                         | *NA          | フランクフルト | ワシントン D.C. (米国東部) | *NA           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | 東京        | フランクフルト | ワシントン D.C. (米国東部) | *NA           |
 |                              |              |           | ダラス (米国南部)         |               |  
 |      |||||
 | SMP                          | 香港    | アムステルダム | ワシントン D.C. (米国東部) | サンパウロ     |

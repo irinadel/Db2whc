@@ -42,7 +42,7 @@ MDMS offre un moyen simple, rapide et sécurisé de transférer physiquement d'i
    - Masque de réseau 
    - Passerelle par défaut pour accéder à l'interface utilisateur
 3. Destination de téléchargement de Cloud Object Storage <br/>
-   Vous devez disposer d'au moins un compte {{site.data.keyword.cos_full}} et un compartiment dans un emplacement US Cross Region ou US South pour compléter le formulaire de demande. Si vous n'avez pas encore de compte {{site.data.keyword.cos_full_notm}}, créez-en un avant de demander un périphérique MDMS. Pour plus d'informations, voir : [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Vous devez disposer d'au moins un compte {{site.data.keyword.cos_full}} et un compartiment dans un emplacement US Cross Region ou US South pour compléter le formulaire de demande. Si vous n'avez pas encore de compte {{site.data.keyword.cos_full_notm}}, créez-en un avant de demander un périphérique MDMS. Pour plus d'informations, voir : [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
    {: important}
 
 ## Etape 1 : création d'une demande
@@ -144,7 +144,7 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
     ![Activation du pool de stockage](/images/UnlockPool.png)
 
 10. Par défaut, les deux protocoles NFS et SMB sont activés sur le partage, sans restrictions d'accès. Pour restreindre l'accès à ce partage (pour NFS ou SMB), cliquez avec le bouton droit de la souris sur le nom du partage et sélectionnez l'élément de menu approprié.<br/>
-    ![Restriction de l'accès au partage](/images/ShareControls.png)
+    ![Restriction de l'accès au partgage](/images/ShareControls.png)
 
 11. Lorsque le pool de stockage est activé, le partage NFS est disponible pour montage. Dans le flux de travaux, cliquez sur **View Network Shares** afin d'afficher la vue des partages de réseau. Fermez le flux de travail, cliquez avec le bouton droit de la souris sur le partage et sélectionnez **View Mount Command** pour voir le nom de partage et les informations de montage. Montez le partage sur votre serveur source. Veillez à spécifier l'adresse IP du lien 10 Go lors du montage du partage.
     ![Montage du partage](/images/MountCommand.png)
@@ -163,7 +163,7 @@ Si un facteur de forme différent est requis pour la connexion Ethernet, vous de
 
        `/nz/support/contrib/bin/nz_backup –db <db_name> –d <target_directory>  ascii threads 4`
 
-       ****Remarque : la valeur `<target_directory>` est le partage NFS du périphérique MDMS qui est monté sur votre serveur Netezza.
+       **Remarque** : `<target_directory>` est le partage NFS du périphérique MDMS qui est monté sur votre serveur Netezza.
    
     2. Exécutez l'exemple d'une instruction CREATE EXTERNAL TABLE ci-après :
 

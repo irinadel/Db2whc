@@ -84,9 +84,9 @@ Lift ist eine Anwendung, die Sie gebührenfrei nutzen können, um Ihre Daten aus
 |                              | CSV-Dateiformat |
 {: caption="Tabelle 1. Datenquellen für die Migration" caption-side="top"}
 
-Weitere Informationen zum Herunterladen und Installieren von Lift finden Sie unter: [Lift herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#download){:new_window}.
+Weitere Informationen zum Herunterladen und Installieren von Lift finden Sie unter: [Lift herunterladen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
 
-Schritt-für-Schritt-Anweisungen für die Migration von Daten auf {{site.data.keyword.Bluemix_notm}} mithilfe von Lift finden Sie hier: [Daten auf {{site.data.keyword.dashdblong}} migrieren ![für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://lift.ng.bluemix.net/#docs){:new_window}.
+Schritt-für-Schritt-Anweisungen für die Migration von Daten auf {{site.data.keyword.Bluemix_notm}} mithilfe von Lift finden Sie hier: [Daten auf {{site.data.keyword.dashdblong}} migrieren ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -97,11 +97,9 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
 
 ![Ansicht der Mass Data Migration Service-Einheit](images/mdms.svg)
 
-Weitere Informationen zur MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
-- [Einführung zu {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Weitere Informationen zur MDMS-Einheit (MDMS, Mass Data Migration Service) finden Sie in [Einführung in IBM Cloud Mass Data Migration](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
 
-Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: 
-- [Daten aus IBM PureData System for Analytics (Netezza)-Datenbank migrieren](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}.
+Weitere Informationen zum Migrieren Ihrer Daten aus einer IBM PureData System for Analytics (Netezza)-Datenbank zu einer {{site.data.keyword.dashdblong}}-Datenbank mithilfe einer MDMS-Einheit können Sie über den Link zum folgenden Thema aufrufen: [Von IBM PureData System for Analytics (Netezza) migrieren](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}.
 
 ## Lernprogramm zur Migration von Daten aus lokalen relationalen Datenbanken
 {: #tutorial}

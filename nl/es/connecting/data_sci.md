@@ -88,7 +88,7 @@ En estas instrucciones se explica cómo crear una conexión desde IBM® SPSS® S
 ### Requisitos previos
 {: #prereq11}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc11}
@@ -103,11 +103,11 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
    b. En la ventana Crear nuevo origen de datos, seleccione el controlador denominado **IBM DB2 ODBC DRIVER** y pulse **Finalizar**.
 
-   Asegúrese de que el controlador que seleccione no es un controlador con un nombre similar como, por ejemplo, `IBM DB2® ODBC DRIVER - DB2COPY`. Si el controlador no aparece en la lista, salga de SPSS Statistics y, a continuación, descargue e instale el controlador. Consulte [Paquete de controlador Db2](/docs/services/Db2whc/connecting/driver_pkg.html).
+   Asegúrese de que el controlador que seleccione no es un controlador con un nombre similar como, por ejemplo, `IBM DB2® ODBC DRIVER - DB2COPY`. Si el controlador no aparece en la lista, salga de SPSS Statistics y, a continuación, descargue e instale el controlador. Consulte [Paquete de controladores](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg).
         
    c. En la ventana Controlador ODBC IBM - Añadir, especifique un nombre de origen de datos (normalmente el nombre de la base de datos a la que se está conectando) y pulse **Añadir**.
         
-   d. En la ventana Configuración de CLI/ODBC, en el separador **Origen de datos**, especifique el ID de usuario y la contraseña de la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
+   d. En la ventana Configuración de CLI/ODBC, en el separador **Origen de datos**, especifique el ID de usuario y la contraseña de la [información de conexión](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) que ha recopilado antes.
         
    e. En la página Configuración avanzada, para cada uno de los parámetros siguientes, pulse **Añadir** para abrir la ventana Añadir parámetro CLI e iniciar el paso y pulse **Aceptar** para volver a la página Configuración avanzada:
             
@@ -138,7 +138,7 @@ En estas instrucciones se explica cómo crear una conexión desde SAS a una base
 ### Requisitos previos
 {: #prereq12}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc12}
@@ -155,7 +155,7 @@ En lugar de utilizar un entorno RStudio® que esté integrado con IBM Watson Stu
 ### Requisitos previos
 {: #prereq13}
 
-Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necesarios.
+Antes de intentar realizar una conexión a su base de datos de {{site.data.keyword.dashdbshort_notm}}, verifique que dispone de los [requisitos previos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necesarios.
 
 ### Procedimiento
 {: #proc13}
@@ -172,7 +172,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
         
    b. Abra el entorno de desarrollo R instalado localmente.
         
-   c. En el indicador R, entre las sentencias siguientes para crear la conexión. Sustituya los marcadores con la [información de conexión](/docs/services/Db2whc/connecting/credentials.html) que ha recopilado antes.
+   c. En el indicador R, entre las sentencias siguientes para crear la conexión. Sustituya los marcadores con la [información de conexión](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) que ha recopilado antes.
 
    - Si el entorno de desarrollo R instalado localmente se ejecuta en la base de datos {{site.data.keyword.dashdbshort_notm}}:
 

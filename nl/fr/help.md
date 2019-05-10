@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -47,14 +47,11 @@ Le service
 prévue est survenue.
 {: tsCauses}
 
-Vous pouvez déterminer le statut du service
-{{site.data.keyword.dashdbshort_notm}} dans
-{{site.data.keyword.Bluemix_notm}} en consultant les pages de statut suivantes :
+Vous pouvez déterminer le statut du service {{site.data.keyword.dashdbshort_notm}} dans {{site.data.keyword.Bluemix_notm}} en consultant la page [IBM Cloud: Status ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/status?selected=status){:new_window}.
 {: tsResolve}
 
-* [Support IBM Cloud![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* Surveillance du statut :
-  * [Toutes les régions ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Aide et assistance pour Db2 Warehouse on Cloud
 {: #gettinghelp}
@@ -72,7 +69,7 @@ Si vous utilisez les forums pour poser une question, libellez votre question de 
 Pour plus d'informations sur l'utilisation des forums, voir
 [Comment obtenir de l'aide](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
 
-Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM, ou sur les niveaux de support et les gravités de tickets, voir [Ouverture d'un ticket de demande de service](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Pour plus d'informations sur l'ouverture d'un ticket de demande de service IBM ou sur les niveaux de support et les gravités de tickets, voir [Utilisation de cas de support](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

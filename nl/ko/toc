@@ -2,11 +2,11 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc/index.html" path="services/Db2whc"}
+{: .toc subcollection="Db2whc" audience="service" arm="2112718" href="/docs/services/Db2whc?topic=Db2whc-getting_started#getting_started" path="services/Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
-    index.md
+    getting-started.md
     iam.md
     plans_cfgs.md
     about.md
@@ -25,6 +25,7 @@ Db2 Warehouse on Cloud
     {: .topicgroup}
     연결
         connecting/connecting.md
+        connecting/connectivity_options.md
         connecting/credentials.md
         connecting/driver_pkg.md
         connecting/install_linux.md
@@ -56,18 +57,13 @@ Db2 Warehouse on Cloud
 
     [새로운 기능](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [자주 묻는 질문(FAQ)](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-	
-    {: .topicgroup}
-    보안
-        [규제 준수](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html)
-        priv_net.md
-    
+    [보안 준수](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
     [안내 데모: IBM Cloud Object Storage에서 데이터 로드](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud)
-    [튜토리얼: Cloud 데이터용 SQL 데이터베이스](/tutorials/solution-tutorials-sql-database#sql-database)
+    [튜토리얼: 클라우드 데이터용 SQL 데이터베이스](/tutorials/solution-tutorials-sql-database#sql-database)
     [튜토리얼: 온프레미스 관계형 데이터베이스에서 데이터 마이그레이션](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud)
     {: .navgroup-end}
 

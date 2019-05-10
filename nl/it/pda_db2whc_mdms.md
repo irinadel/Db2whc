@@ -42,7 +42,7 @@ MDMS offre un modo sicuro, veloce e semplice per trasferire fisicamente terabyte
    - Maschera di rete 
    - Gateway predefinito per accedere all'interfaccia utente (IU)
 3. Destinazione di download di Cloud Object Storage <br/>
-   Per completare il modulo di richiesta, devi disporre di almeno un account {{site.data.keyword.cos_full}} e di un bucket in una sede degli Stati Uniti in più regioni o degli Stati Uniti Sud. Se non hai ancora un account {{site.data.keyword.cos_full_notm}}}, creane uno prima di richiedere il dispositivo MDMS. Per ulteriori informazioni, consulta: [Informazioni su {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+   Per completare il modulo di richiesta, devi disporre di almeno un account {{site.data.keyword.cos_full}} e di un bucket in una sede degli Stati Uniti in più regioni o degli Stati Uniti Sud. Se non hai ancora un account {{site.data.keyword.cos_full_notm}}}, creane uno prima di richiedere il dispositivo MDMS. Per ulteriori informazioni, consulta: [Informazioni su {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
    {: important}
 
 ## Passo 1: Creazione di una richiesta
@@ -145,7 +145,7 @@ Se è richiesto un fattore di forma differente della connessione Ethernet, devi 
 ![Attiva pool di archiviazione](/images/UnlockPool.png)
 
 10. Per impostazione predefinita, la condivisione ha entrambi i protocolli NFS e SMB abilitati senza limitazioni di accesso sulla condivisione. Per limitare l'accesso a questa condivisione (per NFS o SMB), fai clic con il tasto destro del mouse sul nome della condivisione e seleziona la voce di menu appropriata.<br/>
-    ![Limita l'accesso alla condivisione](/images/ShareControls.png)
+    ![Restrict share access](/images/ShareControls.png)
 
 11. Quando il pool di archiviazione è abilitato, la condivisione NFS è disponibile per il montaggio. Nel flusso di lavoro, fai clic su **View Network Shares** per visualizzare la vista delle condivisioni di rete. Chiudi il flusso di lavoro, fai clic con il tasto destro del mouse sulla condivisione e seleziona **View Mount Command** per visualizzare il nome della condivisione e le informazioni di montaggio. Monta la condivisione sul tuo server di origine. Assicurati di specificare l'indirizzo IP del link da 10 GB quando monti la condivisione.
     ![Montaggio della condivisione](/images/MountCommand.png)

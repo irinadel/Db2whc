@@ -30,7 +30,7 @@ Defina uma conexão entre um aplicativo Microsoft Windows ODBC ou CLI e um banco
 ## Pré-requisitos
 {: #prereq81}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -46,15 +46,15 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
    
    - Para uma conexão com SSL:
 
-     ` db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode = SSL" `
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
 
-     ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001 `
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
 
    - Para uma conexão sem SSL:
 
-     ` db2cli writecfg add -database BLUDB -host <hostname> -port 50000 `
+     `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
 
-     ` db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000 `
+     `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
    sendo:
 
@@ -64,7 +64,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
     
 2. [*Optional*]: To testar a conexão com o banco de dados, execute este comando por meio do prompt de comandos:
 
-   ` db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
+   `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
    sendo:
 

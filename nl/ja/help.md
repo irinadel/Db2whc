@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -42,12 +42,11 @@ subcollection: Db2whc
 {{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスで定期保守手順が実行されているか、既知の障害が発生しました。
 {: tsCauses}
 
-以下の状況ページを確認することにより、{{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスの状況を判別できます。
+[IBM Cloud: 状況 ![外部リンク・アイコン](../../icons/launch-glyph.svg " 外部リンク・アイコン")](https://cloud.ibm.com/status?selected=status){:new_window} ページを確認することにより、{{site.data.keyword.Bluemix_notm}} 内の {{site.data.keyword.dashdbshort_notm}} サービスの状況を判別できます。
 {: tsResolve}
 
-* [IBM Cloud Support ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* 状況モニター:
-  * [すべての地域 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Db2 Warehouse on Cloud のヘルプおよびサポートの利用
 {: #gettinghelp}
@@ -63,7 +62,7 @@ subcollection: Db2whc
 
 フォーラムの使用について詳しくは、[ヘルプの利用](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}を参照してください。
 
-IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポート・チケットのオープン](/docs/get-support?topic=get-support-open-case#open-case){:new_window}を参照してください。
+IBM サポート・チケットのオープンや、サポート・レベルおよびチケットの重大度について詳しくは、[サポート Case の処理](/docs/get-support?topic=get-support-open-case#open-case){:new_window}を参照してください。
 
 
 

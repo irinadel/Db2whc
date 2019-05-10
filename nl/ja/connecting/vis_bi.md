@@ -57,7 +57,7 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 ### 前提条件
 {: #prereq8}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc8}
@@ -87,7 +87,7 @@ Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続で
 ### 前提条件
 {: #prereq9}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 Db2 ドライバー・パッケージか IBM® Data Server Driver Package をローカル・コンピューターにインストールしていなければなりません。 
 
@@ -128,14 +128,14 @@ Esri ArcGIS for Desktop <!--version 10.3.1 -->を {{site.data.keyword.dashdbshor
 ### 前提条件
 {: #prereq10}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 Db2 ドライバー・パッケージか IBM® Data Server Driver Package をコンピューターにインストールしていなければなりません。
 
 ### 手順
 {: #proc10}
 
-1. 事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)から ODBC DSN データを判別します。
+1. 事前に収集した[接続情報](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)から ODBC DSN データを判別します。
 
 2. 新規接続を作成します。
       

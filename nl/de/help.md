@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -42,12 +42,11 @@ Ein Versuch, ein Data-Warehouse zu erstellen, schlägt mit dem Fehler 500 fehl, 
 Der Service {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} wird momentan einer geplanten Wartung unterzogen oder es kam zu einer geplanten Unterbrechung.
 {: tsCauses}
 
-Sie können den Status des Service {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} durch Überprüfen der folgenden Statusseiten feststellen:
+Sie können den Status des Service {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} durch Überprüfen der folgenden Seite feststellen: [IBM Cloud: Status ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/status?selected=status){:new_window}.
 {: tsResolve}
 
-* [Unterstützung für IBM Cloud ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* Statusüberwachung:
-  * [Alle Regionen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Hilfe und Unterstützung für Db2 Warehouse on Cloud anfordern
 {: #gettinghelp}
@@ -62,7 +61,7 @@ Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag,
 
 Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
 
-Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie in [Ein Support-Ticket öffnen](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Mit Supportfällen arbeiten](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

@@ -98,28 +98,28 @@ A partir de la console {{site.data.keyword.dashdbshort_notm}} :
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. Créez un serveur pour parler à la machine cible :<br/>
+1. Créez un serveur pour communiquer avec la machine cible :<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   Exemple :<br/>
+   Par exemple :<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
 2. Créez le mappage utilisateur pour admin2 :<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   Exemple :<br/>
+   Par exemple :<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. Créez un alias pour la base de données :<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   Exemple :<br/>
+   Par exemple :<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
-4. Testez le fait que vous puissiez extraire des données du serveur cible :<br/>
+4. Vérifiez que vous pouvez extraire des données du serveur cible :<br/>
    `select * from <nickname>`
 
-   Exemple :<br/>
+   Par exemple :<br/>
    `select * from ntest1`
 
 ## Informations complémentaires

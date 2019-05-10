@@ -30,7 +30,7 @@ Definisci una connessione tra un Microsoft Windows ODBC o l'applicazione CLI e u
 ## Prerequisiti
 {: #prereq81}
 
-Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessari.
+Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-10-15"
+lastupdated: "2019-04-01"
 
 keywords:
 
@@ -63,21 +63,29 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 ### Coletando informações de conexão
 {: #collect_info}
 
-- [ Detalhes do banco de dados e credenciais de conexão ](/docs/services/Db2whc/connecting/credentials.html)
+- [Detalhes do banco de dados e credenciais de](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)
 
 ### Fazendo download e instalando o pacote do driver
 {: #dl_install}
 
-- [ Fazer download do pacote do driver ](/docs/services/Db2whc/connecting/driver_pkg.html)
-- [ Instalando no Linux ou PowerLinux ](/docs/services/Db2whc/connecting/install_linux.html)
-- [ Instalando no Mac OS X ](/docs/services/Db2whc/connecting/install_mac.html)
-- [ Instalando no Windows ](/docs/services/Db2whc/connecting/install_win.html)
+- [ Fazer download do pacote do driver ](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)
+- [ Instalando no Linux ou PowerLinux ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+- [ Instalando no Mac OS X ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+- [ Instalando no Windows ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
 ### Configurando o seu ambiente
 {: #cfg_env}
 
-- [Configurando o seu ambiente](/docs/services/Db2whc/connecting/driver_pkg_cfg.html)
-- [Suporte ao Secure Sockets Layer (SSL)](/docs/services/Db2whc/connecting/ssl.html)
+- [Configurando o seu ambiente](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)
+- [Suporte ao Secure Sockets Layer (SSL)](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support#ssl_support)
+
+## Opções de conectividade
+{: #connect_opts}
+
+O {{site.data.keyword.dashdbshort_notm}} oferece várias opções de conectividade segura, dependendo dos seus requisitos de conexão de aplicativo.  
+{: shortdesc}
+
+Consulte [Opções de conectividade](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options#connect_options).
 
 ## Conectando programaticamente
 {: #conx_prgrm}
@@ -85,12 +93,12 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 É possível usar linguagens de programação comuns para criar aplicativos que se conectam a um banco de dados {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting/jdbc.html)
-- [ Microsoft Windows ODBC ou CLI ](odbc_cli.html)
-- [ .NET ](/docs/services/Db2whc/connecting/net_apps.html)
-- [ Administrador de Origem de Dados ODBC ](/docs/services/Db2whc/connecting/odbc_data_source_admin.html)
-- [PHP](/docs/services/Db2whc/connecting/php.html)
-- [API do REST](/docs/services/Db2whc/connecting/rest_api.html)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
+- [ Microsoft Windows ODBC ou CLI ](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
+- [ .NET ](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
+- [ Administrador de Origem de Dados ODBC ](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
+- [API do REST](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -106,33 +114,33 @@ Também é possível conectar ferramentas e aplicativos externos ao {{site.data.
 {: #di}
 
 - Conecte seus aplicativos {{site.data.keyword.Bluemix_short}} que precisam de um banco de dados de análise.
-- [ DataStage ](/docs/services/Db2whc/connecting/data.html#datastage)
-- [ Informatica ](/docs/services/Db2whc/connecting/data.html#informatica)
-- [Lift ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://lift.ng.bluemix.net/#docs){:new_window}
-- [InfoSphere Data Replication](/docs/services/Db2whc/connecting/data.html#idr)
+- [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
+- [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
+- [Lift ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
 - [Segment ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://segment.com/docs/destinations/db2/){:new_window}
-- [ Data Studio ](/docs/services/Db2whc/connecting/data.html#data_studio)
-- [ Gerenciador do Servidor de Dados ](/docs/services/Db2whc/connecting/data.html#dsm)
-- [ CLPPLUS ](/docs/services/Db2whc/connecting/data.html#clpplus)
-- [Aginity Workbench para migrar modelos de dados do Netezza® e dados para o {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting/data.html#aginity_wb)
-- [InfoSphere Data Architect para projetar e implementar seu esquema de banco de dados](/docs/services/Db2whc/connecting/data.html#ida)
+- [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
+- [ Gerenciador do Servidor de Dados ](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
+- [ CLPPLUS ](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
+- [Aginity Workbench para migrar modelos de dados do Netezza® e dados para o {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb)
+- [InfoSphere Data Architect para projetar e implementar seu esquema de banco de dados](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#ida)
 
 ### Visualização de dados / BI
 {: #dvis_bi}
 
-- [Cognos Analytics para executar relatórios do Business Intelligence com relação a seus dados](/docs/services/Db2whc/connecting/vis_bi.html#cognos)
+- [Cognos Analytics para executar relatórios do Business Intelligence com relação a seus dados](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
-- [Tableau](/docs/services/Db2whc/connecting/vis_bi.html#tableau)
-- [Microsoft Excel](/docs/services/Db2whc/connecting/vis_bi.html#excel)
-- [Esri ArcGIS for Desktop para executar análise geoespacial e publicação de mapa com seus dados](/docs/services/Db2whc/connecting/vis_bi.html#esri_arcgis)
+- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [Esri ArcGIS for Desktop para executar análise geoespacial e publicação de mapa com seus dados](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 ### Dados científicos
 {: #dsci}
 
-- [Watson Studio (anteriormente IBM Data Science Experience)](/docs/services/Db2whc/connecting/data_sci.html#watson_studio)
-- [ Estatísticas do SPSS ](/docs/services/Db2whc/connecting/data_sci.html#spss_stats)
-- [ SAS ](/docs/services/Db2whc/connecting/data_sci.html#sas)
-- [ Ambiente de desenvolvimento R local ](/docs/services/Db2whc/connecting/data_sci.html#r_dev_env)
+- [Watson Studio (anteriormente IBM Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [Estatísticas do SPSS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [ Ambiente de desenvolvimento R local ](/docs/services/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
 
 ## Conectando-se a outro banco de dados Db2
 {: #fed}
@@ -141,6 +149,6 @@ A virtualização de dados do Db2 (também conhecida como federação) é suport
 
 Essa função é suportada em todas as versões do {{site.data.keyword.dashdbshort_notm}}, exceto para o plano de Entrada. No entanto, é possível usar o plano de Entrada como um destino do qual é possível puxar dados.
 
-- [Virtualização de dados (federação)](/docs/services/Db2whc/federation.html)
+- [Virtualização de dados (federação)](/docs/services/Db2whc?topic=Db2whc-data_virt_fed#data_virt_fed)
 
 

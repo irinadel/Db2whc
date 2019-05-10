@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -42,12 +42,11 @@ subcollection: Db2whc
 {{site.data.keyword.Bluemix_notm}} 中的 {{site.data.keyword.dashdbshort_notm}} 服务正在执行安排的维护过程，或者发生了已知的中断。
 {: tsCauses}
 
-您可以通过检查以下状态页面，确定 {{site.data.keyword.Bluemix_notm}} 中 {{site.data.keyword.dashdbshort_notm}} 服务的状态：
+您可以通过检查 [IBM Cloud：状态 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/status?selected=status){:new_window} 页面来确定 {{site.data.keyword.Bluemix_notm}} 中的 {{site.data.keyword.dashdbshort_notm}} 服务的状态：
 {: tsResolve}
 
-* [IBM Cloud 支持 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* 状态监视：
-  * [所有区域 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## 获取有关 Db2 Warehouse on Cloud 的帮助和支持
 {: #gettinghelp}
@@ -62,7 +61,7 @@ subcollection: Db2whc
 
 有关使用论坛的更多详细信息，请参阅[获取帮助](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}。
 
-有关开具 IBM 支持凭单或有关支持级别和凭单严重性的信息，请参阅：[提交支持凭单](/docs/get-support?topic=get-support-open-case#open-case){:new_window}。
+有关开具 IBM 支持凭单或支持级别和凭单严重性的信息，请参阅：[处理支持案例](/docs/get-support?topic=get-support-open-case#open-case){:new_window}。
 
 
 

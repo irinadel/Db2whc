@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-08"
+lastupdated: "2019-03-29"
 
 keywords:
 
@@ -36,6 +36,9 @@ subcollection: Db2whc
 ### 先决条件
 {: #prereq1}
 
+强烈建议您将 DataStage 更新为最新版本，以便您可以利用外部表格将数据装入 {{site.data.keyword.dashdbshort_notm}}。
+{: important}
+
 如果尚未安装数据服务器客户机，请下载并安装适合于您客户端机器操作系统的 IBM Data Server Client <!--Version 10.5 -->：[IBM Data Server Client ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
 
 要使用 SSL 协议进行连接，请下载并安装 32 位 GSKit V8。单击适用于您客户端机器操作系统的“操作系统”选项卡：[GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。对于以下操作系统，请确保将 GSKit 安装目录路径添加到特定于操作系统的路径环境变量：
@@ -50,7 +53,7 @@ subcollection: Db2whc
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc1}
@@ -75,13 +78,13 @@ subcollection: Db2whc
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
-     其中，`<keystore_db.kdb>` 表示客户机密钥库数据库，`<ks_db_password>` 表示客户机密钥库数据库的密码。
+     其中，`<keystore_db.kdb>` 代表客户机密钥库数据库，`<ks_db_password>` 代表客户机密钥库数据库的密码。
         
   4. 将该证书添加到客户机密钥库数据库。
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
-     其中，`<keystore_db.kdb>` 表示客户机密钥库数据库，`<ks_db_password>` 表示客户机密钥库数据库的密码。
+     其中，`<keystore_db.kdb>` 代表客户机密钥库数据库，`<ks_db_password>` 代表客户机密钥库数据库的密码。
     
   5. 在 DataStage 服务器上配置 DB2 客户机。
             
@@ -89,21 +92,21 @@ subcollection: Db2whc
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst2/SSL/<keystore_db.kdb>`
 
-     其中，`<keystore_db.kdb>` 表示客户机密钥库数据库。
+     其中，`<keystore_db.kdb>` 代表客户机密钥库数据库。
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst2/SSL/<keystore_db.sth>`
 
-     其中，`<keystore_db.sth>` 表示客户机密钥库数据库密码隐藏文件。
+     其中，`<keystore_db.sth>` 代表客户机密钥库数据库密码隐藏文件。
             
      b. 使用 SSL 安全选项对目标节点进行编目，然后在该目标节点上编目 BLUDB 数据库。
 
      `# /home/db2inst2> db2 catalog tcpip node <node_name> remote <IP_addr_of_BLUDB_database_server> server 50001 security SSL`
 
-     其中，`<node_name>` represents your name for the target node and `<IP_addr_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址。
+     其中，`<node_name>` 代表您的目标节点名称，`<IP_addr_of_BLUDB_database_server>` 代表 BLUDB 数据库服务器的 IP 地址。
 
      `# /home/db2inst2> db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     其中，`<db_alias>`是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称。
+     其中，`<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称。
 
   6. 为每个人添加对 SSL 目录中各个文件的读取和执行许可权。运行作业的 DataStage 用户需要访问这些文件才能与 Db2 数据库建立 SSL 连接。
 
@@ -115,7 +118,7 @@ subcollection: Db2whc
 
        `db2 connect to <db_alias> user <user_id>`
 
-       其中，`<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
+       其中，`<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
     
      - 使用 CLI 测试连接。发出以下命令连接到 {{site.data.keyword.dashdbshort_notm}} 数据库：
 
@@ -129,13 +132,13 @@ subcollection: Db2whc
 
      `db2 catalog tcpip node <node_name> remote <IP_address_of_BLUDB_database_server> server <port_number_of_BLUDB_database>`
 
-     其中，`<node_name>` 表示节点的名称，`<IP_address_of_BLUDB_database_server>` 表示 BLUDB 数据库服务器的 IP 地址，`<port_number_of_BLUDB_database>` 表示 BLUDB 数据库的端口号。
+     其中，`<node_name>` 代表您的节点名称，`<IP_address_of_BLUDB_database_server>` 代表 BLUDB 数据库服务器的 IP 地址，`<port_number_of_BLUDB_database>` 代表 BLUDB 数据库的端口号。
 
   2. 对远程 {{site.data.keyword.dashdbshort_notm}} 数据库进行编目，以便客户机应用程序可以连接到该数据库。请运行以下命令：
 
      `db2 catalog db BLUDB as <db_alias> at node <node_name>`
 
-     其中，`<db_alias>` 表示 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<node_name>` 表示节点的名称。
+     其中，`<db_alias>` 代表您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称，`<node_name>` 代表您的节点名称。
 
   3. 通过下列其中一种方法测试非 SSL 连接：
 
@@ -143,7 +146,7 @@ subcollection: Db2whc
 
         `db2 connect to <db_alias> user <user_id>`
 
-        其中，`<db_alias>` 是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
+        其中，`<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识。系统会提示您输入密码。
 
         `db2 list tables`
 
@@ -153,7 +156,7 @@ subcollection: Db2whc
 
         其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 密码。
 
-  4. 使用预先收集的[连接信息](/docs/services/Db2whc/connecting/credentials.html)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
+  4. 使用预先收集的[连接信息](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)在 DataStage 客户机中定义连接。在**参数**选项卡上，必须为**使用登台类型进行连接**字段选择 **Db2 连接器**。
 
      有关在 DataStage 中定义连接的详细信息，请参阅以下 DataStage 文档主题： 
      
@@ -208,7 +211,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 使用 Lift 将数据迁移到 {{site.data.keyword.dashdbshort_notm}} 中。
 
-[Lift ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://lift.ng.bluemix.net/#docs){:new_window}
+[Lift ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -226,9 +229,9 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq2}
 
-如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
+如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果您要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定了 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 如果打算使用 SSL 协议进行连接，请通过 Web 控制台将 `DigiCertGlobalRootCA.crt` SSL 证书下载到客户端机器上的目录。要下载证书，请单击**连接 > 连接信息**，然后单击**使用 SSL 进行连接**选项卡。
 
@@ -243,7 +246,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `cd /<ssl_directory_name>/ssl`
 
-     其中，`/<ssl_directory_name>/ssl` 是 `DigiCertGlobalRootCA.crt` SSL 证书下载目录的路径。
+     其中，`/<ssl_directory_name>/ssl` 是 `DigiCertGlobalRootCA.crt` SSL 证书所下载到的目录路径。
 
      b. 使用 **GSKCapiCmd** 工具创建客户机密钥数据库和隐藏文件。例如，以下命令将创建名为 `dashclient.kdb` 的客户机密钥数据库和名为 `dashclient.sth` 的隐藏文件：
 
@@ -252,7 +255,7 @@ The ODBC Data Sources Administrator dialog box appears.
      其中，`passw0rdpw0` 是密码。**-stash** 选项在客户机密钥数据库所在的路径中创建隐藏文件，其文件扩展名为
 `.sth`。在连接时，GSKit 使用隐藏文件来获取客户机密钥数据库的密码。
             
-     c. 将该证书添加到客户机密钥数据库。例如，以下 **gsk8capicmd** 命令将该证书从 `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` 文件导入到名为 `dashclient.kdb` 的客户机密钥数据库：
+     c. 将该证书添加到客户机密钥数据库。例如，以下 **gsk8capicmd** 命令将证书从 `/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt` 文件导入名为 `dashclient.kdb` 的客户机密钥数据库：
 
      `gsk8capicmd_64 -cert -add -db "dashclient.kdb" -pw "passw0rdpw0" -label "DigiCert" -file "/<ssl_directory_name>/ssl/DigiCertGlobalRootCA.crt" -format ascii -fips`
 
@@ -278,7 +281,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     其中，`db_alias` 是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称。
+     其中，`db_alias` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称。
             
      g. 通过下列其中一种方法测试 SSL 连接：
                 
@@ -292,7 +295,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库密码。
+       其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库密码。
         
    - 要创建不使用 SSL 的连接，请完成以下步骤：
 
@@ -312,7 +315,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
      `db2 catalog database bludb as <db_alias> at node <node_name>`
 
-     其中，`<db_alias>`是 {{site.data.keyword.dashdbshort_notm}} 数据库的名称。
+     其中，`<db_alias>` 是您的 {{site.data.keyword.dashdbshort_notm}} 数据库名称。
 
      c. 通过下列其中一种方法测试非 SSL 连接：
 
@@ -326,7 +329,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
        `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-       其中，`<alias>` 是您使用 **db2cli writecfg** 命令创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 Db2 Warehouse on Cloud 密码。
+       其中，`<alias>` 是您使用 **db2cli writecfg** 目录创建的 DSN 别名，`<user_id>` 是您的 {{site.data.keyword.dashdbshort_notm}} 用户标识，`<password>` 是您的 Db2 Warehouse on Cloud 密码。
     
 2. 启动 InfoSphere Data Replication 配置工具并执行以下步骤。截屏中显示的值是示例。
         
@@ -386,7 +389,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq3}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc3}
@@ -415,7 +418,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq4}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc4}
@@ -457,7 +460,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq5}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc5}
@@ -487,7 +490,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq6}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 ### 过程
 {: #proc6}
@@ -509,7 +512,7 @@ Db2 驱动程序包中包含命令行处理器增强版 (CLPPlus)。CLPPlus 提�
 ### 先决条件
 {: #prereq7}
 
-在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)。
+在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
 要使用 CLPPlus，请确保在计算机上安装 Java V1.5.0 或更高版本的软件开发包 (SDK) 或 Java 运行时环境 (JRE)，并确保环境变量设置如下：
 

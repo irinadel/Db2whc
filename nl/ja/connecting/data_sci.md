@@ -89,7 +89,7 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 ### 前提条件
 {: #prereq11}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc11}
@@ -104,11 +104,11 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 
    b. 「新規データ ソースの作成」ウィンドウで、**IBM DB2 ODBC DRIVER** という名前のドライバーを選択し、**「完了」**をクリックします。
 
-   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。 [Db2 ドライバー・パッケージ](/docs/services/Db2whc/connecting/driver_pkg.html)を参照してください。
+   `IBM DB2® ODBC DRIVER - DB2COPY` などの、似た名前のドライバーを選択していないことを確認してください。 このドライバーがリストに表示されない場合は、SPSS Statistics を終了してから、ドライバーをダウンロードしてインストールしてください。 [ドライバー・パッケージ](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)を参照してください。
         
    c. 「ODBC IBM ドライバー - 追加 (ODBC IBM Driver - Add)」ウィンドウで、データ・ソース名 (通常は接続先のデータベースの名前) を入力し、**「追加」** をクリックします。
         
-   d. 「CLI/ODBC 設定」ウィンドウの**「データ・ソース」**タブで、事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)にあるユーザー ID とパスワードを入力します。
+   d. 「CLI/ODBC 設定」ウィンドウの**「データ・ソース」**タブで、事前に収集した[接続情報](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)にあるユーザー ID とパスワードを入力します。
         
    e. 「詳細設定」ページで、以下のパラメーターごとに、**「追加」**をクリックして「CLI パラメーターの追加 (Add CLI Parameter)」ウィンドウを開いてステップを開始し、**「OK」**をクリックして「詳細設定」ページに戻ります。
             
@@ -139,7 +139,7 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 ### 前提条件
 {: #prereq12}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc12}
@@ -156,7 +156,7 @@ IBM Watson Studio 内に統合されている RStudio® 環境を使用する代
 ### 前提条件
 {: #prereq13}
 
-{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting/connecting.html#prereqs)を満たしていることを確認します。
+{{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
 ### 手順
 {: #proc13}
@@ -173,7 +173,7 @@ IBM Watson Studio 内に統合されている RStudio® 環境を使用する代
         
    b. ローカルにインストールされた R 開発環境を開きます。
         
-   c. R プロンプトに以下のステートメントを入力して接続を作成します。 プレースホルダーを、事前に収集した[接続情報](/docs/services/Db2whc/connecting/credentials.html)に置き換えます。
+   c. R プロンプトに以下のステートメントを入力して接続を作成します。 プレースホルダーを、事前に収集した[接続情報](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)に置き換えます。
 
    - ローカルにインストールされた R 開発環境が {{site.data.keyword.dashdbshort_notm}} データベース内で実行される場合は、以下のようになります。
 

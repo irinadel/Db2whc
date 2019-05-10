@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-12-07"
+lastupdated: "2019-03-15"
 
 keywords:
 
@@ -34,7 +34,7 @@ subcollection: Db2whc
    * 針對高可用性配置的方案
    * Oracle 相容性
 
-檢視 [{{site.data.keyword.Bluemix}} 型錄](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window}中所有可用的 {{site.data.keyword.dashdbshort_notm}} 方案。
+檢視 [{{site.data.keyword.Bluemix}} 型錄](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}中所有可用的 {{site.data.keyword.dashdbshort_notm}} 方案。
 <!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
 <!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
 
@@ -52,10 +52,9 @@ subcollection: Db2whc
 
 下表提供各種 {{site.data.keyword.dashdbshort_notm}} 方案可用性的相關資訊，依位於地理區域中的資料中心排列：
 
-
 | {{site.data.keyword.dashdbshort_notm}} 方案| 亞太地區 | 歐洲    | 北美洲/中美洲     | 南美洲 |
-|------------------------------|--------------|-----------|-----------------------    |---------------|
-| 彈性                         | *NA          | 法蘭克福 | 華盛頓特區（美國東部）| *NA           |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| 彈性                         | 東京        | 法蘭克福 | 華盛頓特區（美國東部）| *NA           |
 |                              |              |           | 達拉斯（美國南部）         |               |  
 |      |||||
 | SMP                          | 香港    | 阿姆斯特丹 | 華盛頓特區（美國東部）| 聖保羅     |

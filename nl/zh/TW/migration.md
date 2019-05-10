@@ -84,9 +84,9 @@ Lift 應用程式可供您免費用來將資料從「表 1」中列出的各種�
 |                              | CSV 檔案格式 |
 {: caption="表 1. 移轉資料來源" caption-side="top"}
 
-若要下載並安裝 Lift，請參閱[下載 Lift ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#download){:new_window}。
+若要下載並安裝 Lift，請參閱[下載 Lift ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}。
 
-如需使用 Lift 將您的資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱 [Migrate data to {{site.data.keyword.dashdblong}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://lift.ng.bluemix.net/#docs){:new_window}。
+如需使用 Lift 將您的資料移轉至 {{site.data.keyword.Bluemix_notm}} 的逐步指示，請參閱 [Migrate data to {{site.data.keyword.dashdblong}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}。
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -98,11 +98,9 @@ MDMS 提供一種快速、簡單、安全方式，將多個 TB 到多個 PB 的�
 
 ![Mass Data Migration Service 裝置的視圖](images/mdms.svg)
 
-如需 MDMS 裝置的相關資訊，請參閱： 
-- [開始使用 {{site.data.keyword.Bluemix_notm}} Mass Data Migration](/docs/infrastructure/mass-data-migration/getting-started.html#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+如需 MDMS 裝置的相關資訊，請參閱：[入門指導教學](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
 
-如需使用 MDMS 裝置，將資料從 IBM PureData System for Analytics (Netezza) 資料庫移轉至 {{site.data.keyword.dashdblong}} 資料庫的相關資訊，請參閱： 
-- [從 IBM PureData System for Analytics (Netezza) 移轉](/docs/services/Db2whc/pda_db2whc_mdms.html){:new_window}。
+如需使用 MDMS 裝置，將資料從 IBM PureData System for Analytics (Netezza) 資料庫移轉至 {{site.data.keyword.dashdblong}} 資料庫的相關資訊，請參閱：[從 IBM PureData System for Analytics (Netezza) 移轉](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}。
 
 ## 指導教學：從內部部署關聯式資料庫移轉資料
 {: #tutorial}

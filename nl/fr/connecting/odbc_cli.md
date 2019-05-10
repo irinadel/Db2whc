@@ -1,4 +1,4 @@
-﻿---
+---
 
 copyright:
   years: 2014, 2019
@@ -30,7 +30,7 @@ Définissez une connexion entre une application Microsoft Windows ODBC ou une ap
 ## Prérequis
 {: #prereq81}
 
-Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting/connecting.html#prereqs) sont remplies.
+Avant de tenter une connexion à votre base de données {{site.data.keyword.dashdbshort_notm}}, vérifiez que les [conditions requises](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) sont remplies.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -56,17 +56,17 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
      `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
 
-   où :
+   Où :
 
    `<hostname>` est le nom d'hôte du serveur
 
    `<alias>` est un alias de nom de source de données (DSN) que vous choisissez
     
-2. [*Facultatif*] : Pour tester la connexion à la base de données, exécutez cette commande dans l'invite de commande :
+2. [*Facultatif*]: Pour tester la connexion à la base de données, exécutez cette commande dans l'invite de commande :
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
-   où :
+   Où :
 
    `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg**
 
@@ -74,11 +74,11 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `<password>` provient des données d'identification de connexion que vous avez obtenues plus tôt
 
-3. [*Facultatif*] : Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur.
+3. [*Facultatif*]: Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur.
 
    `db2cli registerdsn -add -dsn <alias>`
 
-   où :
+   Où :
         
    `<alias>` est l'alias de nom de source de données (DSN) que vous avez créé avec la commande **db2cli writecfg**
 

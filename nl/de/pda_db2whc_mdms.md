@@ -41,8 +41,8 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
    - Statische IP-Adresse
    - Netzmaske 
    - Standardgateway zum Zugreifen auf die Benutzerschnittstelle
-3. Download-Zieladresse für die Cloud Object Storage-Instanz <br/>
-   Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}.
+3. Downloadziel für Cloud Object Storage<br/>
+   Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
    {: important}
 
 ## Schritt 1: Anfrageerstellung
@@ -125,17 +125,17 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
 5. Verbinden Sie das CAT6A-Kabel mit dem SFP+-Adapter und dann mit dem Ihrem 10Gb-Switch.
 
-6. Wenn die IP-Adresse, die für Eth3 konfiguriert wurde, über einen Browser `https://<your_Eth3_IP_Address>` erreicht werden kann, fahren Sie mit dem nächsten Schritt fort. 
+6. Wenn die IP-Adresse, die für Eth3 konfiguriert wurde, über einen Browser `https://<your_Eth3_IP_Address>` erreicht werden kann, fahren Sie mit dem nächsten Schritt fort 
 
-   Stellen Sie anderenfalls eine Verbindung mit dem Eth1-Port (1GbE-B) her. Öffnen Sie Ihrem Browser und geben Sie Folgendes ein: `https://<your_Eth1_IP_Address>`. Geben Sie die Eth1-IP-Adresse für Ihre Netzkonfiguration ein. Akzeptieren Sie die Zertifikatsausnahme.<br/>
+   Stellen Sie anderenfalls eine Verbindung mit dem Eth1-Port (1GbE-B) her. Öffnen Sie Ihren Browser und geben Sie `https://<your_Eth1_IP_Address>` ein. Geben Sie die Eth1-IP-Adresse für Ihre Netzkonfiguration ein. Akzeptieren Sie die Zertifikatsausnahme.<br/>
    Wenn Sie die IP-Einstellungen für Eth3 oder Eth1 ändern müssen, lesen Sie den Abschnitt [IP-Adresskonfiguration](#ip_cfg).
    {: note}
 
-7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden.<br/>
+7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden<br/>
     ![Anmeldeseite](/images/Login.png)
 
 8. Der Workflow-Assistent bietet Zugriff auf die spezifischen Elemente, die normalerweise in der Reihenfolge von links nach rechts verwendet werden.<br/>
-    ![Workflow-Symbole](/images/workflow.png) <br/>
+    ![Workflowsymbole](/images/workflow.png) <br/>
     Der Workflow kann erneut geöffnet werden, indem oben links in der Benutzeroberfläche der **Workflow-Manager** verwendet wird.
     {: note}
 
@@ -144,8 +144,8 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
     - Geben Sie die Kennphrase Ihres Speicherpools ein und klicken Sie auf **OK**.
     ![Speicherpool aktivieren](/images/UnlockPool.png)
 
-10. Standardmäßig verfügt die Freigabe über NFS- und SMB-Protokolle, die ohne Zugriffsbeschränkungen für die Freigabe aktiviert sind. Um den Zugriff auf diese Freigabe (für NFS oder SMB) zu beschränken, klicken Sie mit der rechten Maustaste auf den Namen der Freigabe und wählen Sie das entsprechende Menüelement aus.<br/>
-    ![Zugriff auf die Freigabe beschränken](/images/ShareControls.png)
+10. Standardmäßig verfügt die Freigabe über NFS- und SMB-Protokolle, die ohne Zugriffsbeschränkungen für die Freigabe aktiviert sind. Um den Zugriff auf diese Freigabe (für NFS oder SMB) zu beschränken, klicken Sie mit der rechten Maustaste auf den Namen der Freigabe und wählen das entsprechende Menüelement aus.<br/>
+    ![Gemeinsamen Zugriff beschränken](/images/ShareControls.png)
 
 11. Wenn der Speicherpool aktiviert ist, kann die gemeinsam genutzte NFS-Ressource bereitgestellt werden. Klicken Sie im Workflow auf **Netzfreigabe anzeigen**, um die Netzfreigaben anzuzeigen. Schließen Sie den Workflow, klicken Sie mit der rechten Maustaste auf die Freigabe und wählen Sie auf **Mountbefehl anzeigen**, um den Freigabenamen und die Mountinformationen anzuzeigen. Hängen Sie die Freigabe an Ihren Quellenserver an. Stellen Sie sicher, dass die IP-Adresse des 10-GB-Links beim Anhängen der Freigabe angegeben wird.
     ![Freigabe anhängen](/images/MountCommand.png)
@@ -164,7 +164,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
        `/nz/support/contrib/bin/nz_backup –db <db_name> –d <target_directory>  ascii threads 4`
 
-       **Hinweis**: `<target_directory>` ist die gemeinsam genutzte NFS-Ressource in der MDMS-Einheit, die an Ihren Netezza-Server angehängt wird.
+       **Hinweis**: Das `<target_directory>` ist die gemeinsam genutzte NFS-Ressource der MDMS-Einheit, die an Ihren Netezza-Server angehängt wurde. 
    
     2. Führen Sie das folgende Beispiel der Anweisung CREATE EXTERNAL TABLE aus:
 

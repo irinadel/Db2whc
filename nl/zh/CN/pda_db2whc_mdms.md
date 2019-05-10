@@ -42,7 +42,8 @@ MDMS 提供快速、简单且安全的方式将太字节级别到拍字节级别
    - 网络掩码 
    - 用于访问用户界面 (UI) 的缺省网关
 3. Cloud Object Storage 下载目标<br/>
-您必须在美国交叉区域或美国南部区域中至少有一个 {{site.data.keyword.cos_full}} 帐户和一个存储区才能填写请求表单。如果您尚没有 {{site.data.keyword.cos_full_notm}}} 帐户，请创建一个帐户，然后再请求 MDMS 设备。有关更多信息，请参阅：[关于 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage/about-cos.html){:new_window}。{: important}
+   在美国交叉区域或美国南部区域中您必须至少有一个 {{site.data.keyword.cos_full}} 帐户和一个存储区，才能填写请求表单。如果您目前还没有 {{site.data.keyword.cos_full_notm}}} 帐户，请先创建一个帐户，然后再请求 MDMS 设备。有关更多信息，请参阅：[关于 {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}。
+   {: important}
 
 ## 步骤 1：创建请求
 {: #create-req}
@@ -51,7 +52,7 @@ MDMS 提供快速、简单且安全的方式将太字节级别到拍字节级别
 2. 从“导航栏”中选择**存储 > 数据迁移 > Mass Data Migration** 以访问 MDMS 登录页面。
 3. 单击**请求设备**以打开订购表单。
 4. 填写 **Mass Data Migration** 订购表单中的每个字段。
-   - **送货地址**：此表单不进行预填充，并且每个字段均可编辑。在“收件人”字段中提供将接受设备交付的人员的姓名。在选取交货位置时，请考虑设备重量（含箱子 30 千克（66 磅））和可达性。<br/> （**注**：设备配备有脚轮和弹出手柄以方便搬运。）
+   - **送货地址**：此表单不进行预填充，并且每个字段均可编辑。在“收件人”字段中提供将接受设备交付的人员的姓名。在选取交货位置时，请考虑设备重量（含箱子 30 千克（66 磅））和可达性。<br/>（**注**：设备配备有脚轮和弹出手柄以方便搬运。）
    - **主要迁移联系人**：此表单不进行预填充。每个字段均可编辑。可添加多个人员。
    - **数据中心网络配置**：装运前，针对 MDMS 设备上的 Eth3 端口的预先供应，提供网络配置详细信息。
    - **数据卸载目标**：从列表中选择现有目标帐户。
@@ -112,7 +113,7 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 2. 确定放置设备的最适合的位置；可接入电源和以太网（1GbE 和 10GbE）连接并且附近人流量很少。
 
 3. 放置要连接的设备。在使用期间，可留在运输箱中。确保设备为室温并且无冷凝。使用箱盖下随附的电源线连接到电源。开启设备。<br/>
-    有两个电源开关。
+        有两个电源开关。
     {: note}
 
     ![电源开关](/images/MDMSPowerSwitch.png)
@@ -126,16 +127,15 @@ MDMS 设备接受所有标准功率范围。![功率范围](/images/PowerRating.
 
 6. 如果可通过浏览器 `https://<your_Eth3_IP_Address>` 访问针对 Eth3 配置的 IP 地址，那么继续至下一步。 
 
-   否则，连接到 Eth1 (1GbE-B) 端口。打开浏览器，输入 `https://<your_Eth1_IP_Address>`。输入网络配置的相应 Eth1 IP 地址。接受证书例外。<br/>
-   如果需要更改 Eth3 或 Eth1 的任何 IP 设置，请参阅 [IP 地址配置](#ip_cfg)部分。
+   否则，连接到 Eth1 (1GbE-B) 端口。打开浏览器，输入 `https://<your_Eth1_IP_Address>`。输入网络配置的相应 Eth1 IP 地址。接受证书例外。<br/>   如果需要更改 Eth3 或 Eth1 的任何 IP 设置，请参阅 [IP 地址配置](#ip_cfg)部分。
    {: note}
 
-7. 使用提供的用户名和密码登录。<br/>
+7. 使用所提供的用户名和密码登录。<br/>
     ![登录页面](/images/Login.png)
 
 8. 工作流程向导从左到右依次显示可访问的常用特定项。<br/>
     ![工作流程图标](/images/workflow.png) <br/>
-    可使用 GUI 左上角的**工作流程管理器**重新打开工作流程。
+        可使用 GUI 左上角的**工作流程管理器**重新打开工作流程。
     {: note}
 
 9. 激活预配置的存储池：

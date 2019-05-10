@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-04-30"
+lastupdated: "2019-03-14"
 
 keywords:
 
@@ -42,12 +42,11 @@ Uma tentativa de criar um data warehouse falha com um erro 500 ou um carregament
 O serviço {{site.data.keyword.dashdbshort_notm}} no {{site.data.keyword.Bluemix_notm}} está passando por um procedimento de manutenção planejada ou ocorreu uma indisponibilidade conhecida.
 {: tsCauses}
 
-É possível determinar o status do serviço {{site.data.keyword.dashdbshort_notm}} no {{site.data.keyword.Bluemix_notm}} verificando as páginas de status a seguir:
+É possível determinar o status do serviço {{site.data.keyword.dashdbshort_notm}} no {{site.data.keyword.Bluemix_notm}} verificando a página [IBM Cloud: Status ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/status?selected=status){:new_window}.
 {: tsResolve}
 
-* [Suporte ao IBM Cloud ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/bluemix/support/#status){:new_window}
-* Monitoramento de status:
-  * [Todas as regiões ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window}
+<!-- * Status monitoring:
+  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
 
 ## Obtendo ajuda e suporte para o Db2 Warehouse on Cloud
 {: #gettinghelp}
@@ -62,7 +61,7 @@ Ao usar os fóruns para fazer uma pergunta, marque a sua pergunta para que ela p
 
 Consulte [Obtendo ajuda](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window} para obter mais detalhes sobre o uso dos fóruns.
 
-Para obter informações sobre como abrir um chamado de suporte IBM ou sobre os níveis de suporte e as severidades de chamado, veja: [Abrindo um chamado de suporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Para obter informações sobre como abrir um chamado de suporte IBM ou sobre níveis de suporte e severidades de chamado, consulte: [Trabalhando com casos de suporte](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
 
 
 

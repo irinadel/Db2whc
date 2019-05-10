@@ -56,7 +56,7 @@ Estas instruções explicam como conectar o Tableau a um banco de dados {{site.d
 ### Pré-requisitos
 {: #prereq8}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 ### Procedimento
 {: #proc8}
@@ -86,7 +86,7 @@ Estas instruções explicam como conectar o Microsoft Excel <!--2010-->a um banc
 ### Pré-requisitos
 {: #prereq9}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package instalado no computador local. 
 
@@ -127,14 +127,14 @@ Os resultados da consulta são exibidos em uma planilha do Excel. Esses são os 
 ### Pré-requisitos
 {: #prereq10}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package instalado no computador.
 
 ### Procedimento
 {: #proc10}
 
-1. Determine seus dados de DSN do ODBC por meio das [informações de conexão](/docs/services/Db2whc/connecting/credentials.html) coletadas antecipadamente.
+1. Determine seus dados de DSN do ODBC por meio das [informações de conexão](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) coletadas antecipadamente.
 
 2. Crie uma nova conexão:
       
@@ -149,7 +149,7 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
      FET_BUF_SIZE=256K  
      ```
 
-     em que  `<hostname>`, `<port>`, e  `<database>` são itens temporários que representam o nome do host, o número da porta e o nome do banco de dados observados anteriormente.
+     em que `<hostname>`, `<port>` e `<database>` são marcadores que representam o nome do host, o número da porta e o nome do banco de dados que você observou anteriormente.
             
    - Selecione **Autenticação do banco de dados** como o tipo de autenticação.
             

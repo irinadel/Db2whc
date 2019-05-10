@@ -30,7 +30,7 @@ Use a ferramenta Administrador de origem de dados ODBC da Microsoft para definir
 ## Pré-requisitos
 {: #prereq91}
 
-Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting/connecting.html#prereqs) necessários.
+Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbshort_notm}}, verifique se você tem os [pré-requisitos](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessários.
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -40,7 +40,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 ## Procedimento
 {: #proc91}
 
-1. Instale o  [ pacote do driver Db2 ](/docs/services/Db2whc/connecting/driver_pkg.html).
+1. Instale o  [ pacote do driver Db2 ](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Abra o Administrador de origem de dados ODBC e crie um DSN do usuário ou um DSN do sistema para o pacote de drivers do Db2.
     

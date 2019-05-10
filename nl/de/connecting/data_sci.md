@@ -88,7 +88,7 @@ Im Folgenden wird beschrieben, wie Sie eine Verbindung von IBM® SPSS® Statisti
 ### Voraussetzungen
 {: #prereq11}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 ### Vorgehensweise
 {: #proc11}
@@ -103,11 +103,11 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 
    b. Wählen Sie im Fenster 'Neue Datenquelle erstellen' den Treiber mit der Bezeichnung **IBM DB2 ODBC DRIVER** aus und klicken Sie auf **Fertigstellen**.
 
-   Achten Sie darauf, dass Sie nicht versehentlich einen Treiber mit einer ähnlichen Bezeichnung, z. B. `IBM DB2® ODBC DRIVER - DB2COPY`, ausgewählen. Ist der Treiber nicht in der Liste enthalten, beenden Sie SPSS Statistics. Laden Sie dann den Treiber herunter und installieren Sie ihn. Weitere Informationen hierzu finden Sie im Abschnitt zum [Db2-Treiberpaket](/docs/services/Db2whc/connecting/driver_pkg.html).
+   Achten Sie darauf, dass Sie nicht versehentlich einen Treiber mit einer ähnlichen Bezeichnung, z. B. `IBM DB2® ODBC DRIVER - DB2COPY`, auswählen. Ist der Treiber nicht in der Liste enthalten, beenden Sie SPSS Statistics. Laden Sie dann den Treiber herunter und installieren Sie ihn. Siehe [Treiberpaket](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg).
         
    c. Geben Sie im Fenster 'ODBC IBM Driver - Hinzufügen' einen Datenquellennamen (im Allgemeinen der Name der Datenbank, zu der Sie eine Verbindung herstellen) ein und klicken Sie auf **Hinzufügen**.
         
-   d. Geben Sie auf der Registerkarte **Datenquelle** im Fenster 'CLI/ODBC-Einstellungen' die Benutzer-ID und das Kennwort aus den [Verbindungsinformationen](/docs/services/Db2whc/connecting/credentials.html) ein, die Sie zuvor ermittelt haben.
+   d. Geben Sie auf der Registerkarte **Datenquelle** im Fenster 'CLI/ODBC-Einstellungen' die Benutzer-ID und das Kennwort aus den [Verbindungsinformationen](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) ein, die Sie zuvor ermittelt haben.
         
    e. Klicken Sie auf der Seite 'Erweiterte Einstellungen' für jeden der folgenden Parameter auf **Hinzufügen**, um das Fenster 'CLI-Parameter hinzufügen' zu öffnen und mit dem Hinzufügen zu beginnen. Klicken Sie auf **OK**, um zur Seite 'Erweiterte Einstellungen' zurückzukehren:
             
@@ -138,7 +138,7 @@ Im Folgenden wird beschrieben, wie Sie eine Verbindung von SAS zu einer {{site.d
 ### Voraussetzungen
 {: #prereq12}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 ### Vorgehensweise
 {: #proc12}
@@ -155,7 +155,7 @@ Möglicherweise ziehen Sie der in IBM Watson Studio integrierten RStudio®-Umgeb
 ### Voraussetzungen
 {: #prereq13}
 
-Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting/connecting.html#prereqs) erfüllt werden.
+Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashdbshort_notm}}-Datenbank erstellen, dass die [erforderlichen Voraussetzungen](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) erfüllt werden.
 
 ### Vorgehensweise
 {: #proc13}
@@ -172,7 +172,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
         
    b. Öffnen Sie die lokal installierte R-Entwicklungsumgebung.
         
-   c. Geben Sie zum Erstellen der Verbindung in der R-Eingabeaufforderung die im Folgenden aufgeführten Anweisungen ein. Ersetzen Sie dabei die Platzhalter durch die [Verbindungsinformationen](/docs/services/Db2whc/connecting/credentials.html), die Sie zuvor ermittelt haben.
+   c. Geben Sie zum Erstellen der Verbindung in der R-Eingabeaufforderung die im Folgenden aufgeführten Anweisungen ein. Ersetzen Sie dabei die Platzhalter durch die [Verbindungsinformationen](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds), die Sie zuvor ermittelt haben.
 
    - Lokal installierte R-Entwicklungsumgebung, die in der {{site.data.keyword.dashdbshort_notm}}-Datenbank ausgeführt wird:
 
