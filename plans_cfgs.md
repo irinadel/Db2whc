@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-03-15"
+lastupdated: "2019-05-13"
 
 keywords:
 
@@ -46,86 +46,10 @@ You can request to have your {{site.data.keyword.dashdbshort_notm}} service depl
 
 If you don't see a configuration in the catalog that you need, contact [{{site.data.keyword.IBM_notm}} Sales ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} to discuss other options.
 
-## Availability of plans in data centers
+## Availability of plans in IBM Cloud data centers
 {: #availability}
 
-The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by data centers located in geographical regions:
-
-<!-- ### Asia/Pacific
-{: #ap}
-
-| Db2 Warehouse on Cloud plans | Data center availability |
-|------------------------------|------------------------|
-| Flex | *NA |
-|      ||
-| SMP  | Hong Kong |
-|      | Seoul |
-|      | Singapore |
-|      | Sydney |
-|      | Tokyo |
-|      ||
-| MPP  | Hong Kong |
-|      | Seoul |
-|      | Singapore |
-|      | Sydney |
-|      | Tokyo |
-{: caption="Table 1. Asia/Pacific data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
-
-### Europe
-{: #eu}
-
-| Db2 Warehouse on Cloud plans | Data center availability |
-|------------------------------|------------------------|
-| Flex | Frankfurt |
-|      ||
-| SMP  | Amsterdam |
-|      | Frankfurt |
-|      | London |
-|      | Milan |
-|      | Oslo |
-|      | Paris |
-|      ||
-| MPP  | Amsterdam |
-|      | Frankfurt |
-|      | London |
-|      | Milan |
-|      | Oslo |
-|      | Paris |
-{: caption="Table 2. Europe data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
-
-### North/Central America
-{: #nca}
-
-| Db2 Warehouse on Cloud plans | Data center availability |
-|------------------------------|------------------------|
-| Flex | Washington D.C. (us-east) |
-|      | Dallas (us-south) |
-|      ||
-| SMP  | Washington D.C. (us-east) |
-|      | Dallas (us-south) |
-|      | Montréal |
-|      | Querétaro |
-|      | Toronto |
-|      ||
-| MPP  | Washington D.C. (us-east) |
-|      | Dallas (us-south) |
-|      | Montréal |
-|      | Querétaro |
-|      | Toronto |
-{: caption="Table 3. North and Central America data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
-
-### South America
-{: #sa}
-
-| Db2 Warehouse on Cloud plans | Data center availability |
-|------------------------------|------------------------|
-| Flex | *NA |
-|      ||
-| SMP  | Sao Paulo |
-|      ||
-| MPP  | Sao Paulo |
-{: caption="Table 4. South America data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
--->
+The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by IBM Cloud data centers located in geographical regions:
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
@@ -145,9 +69,26 @@ The following table provides information about the availability of the various {
 |                              | Sydney       | Milan     | Querétaro                 |               | 
 |                              | Tokyo        | Oslo      | Toronto                   |               | 
 |                              |              | Paris     |                           |               |
-{: caption="Table 1. Data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+{: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
+
+## Availability of plans in Amazon Web Services data centers
+{: #availability_aws}
+
+The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by Amazon Web Services data centers located in geographical regions:
+
+| {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Sydney       | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    |             |               |  
+|      |||||
+| Flex Performance             | Sydney       | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    |             |               | 
+{: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+
+*NA = Not available at this time
+
 
 ## Entry plan restrictions
 {: #ep_restrictions}
@@ -177,4 +118,4 @@ The following is a table of {{site.data.keyword.dashdbshort_notm}} Entry plan re
 |  | EU General Data Protection Regulation (GDPR) | No specific restrictions apply |
 |  |  |
 | Account management | Reactivation | No reactivation requirement |
-{: caption="Table 1. {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions" caption-side="top"}
+{: caption="Table 3. {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions" caption-side="top"}
