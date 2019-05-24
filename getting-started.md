@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-05-15"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -27,10 +27,12 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Getting started tutorial
-{: #getting_started}
+{: #getting-started}
 
 The {{site.data.keyword.dashdblong}} managed service is an SQL database that is provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
+
+For a first impression on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:new_window}.
 
 ## Free trial
 {: #freetrial}
