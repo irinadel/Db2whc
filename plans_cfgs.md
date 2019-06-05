@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-05-13"
+lastupdated: "2019-06-05"
 
 keywords:
 
@@ -11,6 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
+{:external: target="_blank" .external}
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
@@ -34,17 +35,17 @@ You can choose a {{site.data.keyword.dashdbshort_notm}} plan that is configured 
    * Plans configured for High Availability
    * Oracle compatibility
 
-View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}.
-<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
-<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
+View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}.
+<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:external} -->
+<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:external} -->
 
 Watch this video to see an introduction to the {{site.data.keyword.dashdbshort_notm}} Flex Performance plan.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-You can request to have your {{site.data.keyword.dashdbshort_notm}} service deployed in a network-isolated environment on the {{site.data.keyword.Bluemix}}. Contact [{{site.data.keyword.IBM_notm}} Sales ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
+You can request to have your {{site.data.keyword.dashdbshort_notm}} service deployed in a network-isolated environment on the {{site.data.keyword.Bluemix}}. Contact [{{site.data.keyword.IBM_notm}} Sales](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}.
 
-If you don't see a configuration in the catalog that you need, contact [{{site.data.keyword.IBM_notm}} Sales ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} to discuss other options.
+If you don't see a configuration in the catalog that you need, contact [{{site.data.keyword.IBM_notm}} Sales](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external} to discuss other options.
 
 ## Availability of plans in IBM Cloud data centers
 {: #availability}
@@ -53,8 +54,10 @@ The following table provides information about the availability of the various {
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
+| Flex / Flex Performance      | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
 |                              |              |           | Dallas (us-south)         |               |  
+|      |||||
+| Flex One                     | *NA          | *NA       | Dallas (us-south)         | *NA           |
 |      |||||
 | SMP                          | Hong Kong    | Amsterdam | Washington D.C. (us-east) | Sao Paulo     |
 |                              | Seoul        | Frankfurt | Dallas (us-south)         |               | 
