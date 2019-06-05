@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -74,9 +74,9 @@ CALL SYSPROC.ADMIN_CMD('load from "S3::s3-us-west-2.amazonaws.com::<s3-access-ke
 coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
 ```
 
-For supported command options. see [**LOAD** command ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:new_window}. 
+For supported command options. see [**LOAD** command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
 
-For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
 
 ## Migrating data from on-premises system
 {: #onprem}
@@ -101,9 +101,9 @@ The Lift is an application that you can use without charge to migrate your data 
 |                              | CSV file format |
 {: caption="Table 1. Migration data sources" caption-side="top"}
 
-To download and install Lift, see: [Download Lift ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+To download and install Lift, see: [Download Lift](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrate data to {{site.data.keyword.dashdblong}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrate data to {{site.data.keyword.dashdblong}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -114,14 +114,14 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
 
 ![View of the Mass Data Migration Service device](images/mdms.svg)
 
-For more information about the MDMS device, see: [Getting started tutorial](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+For more information about the MDMS device, see: [Getting started tutorial](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 
-For information about migrating your data from an IBM PureData System for Analytics (Netezza) database to an {{site.data.keyword.dashdblong}} database by using the MDMS device, see: [Migrating from IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}.
+For information about migrating your data from an IBM PureData System for Analytics (Netezza) database to an {{site.data.keyword.dashdblong}} database by using the MDMS device, see: [Migrating from IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:external}.
 
 ## Tutorial: Migrating data from on-premises relational databases
 {: #tutorial}
 
 This tutorial demonstrates how to migrate data from on-premises relational databases into {{site.data.keyword.dashdbshort_notm}} for business analytics applications. 
 
-[Hybrid data warehousing with {{site.data.keyword.dashdbshort_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
+[Hybrid data warehousing with {{site.data.keyword.dashdbshort_notm}}](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:external}
 

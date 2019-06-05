@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions -->
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -42,13 +42,13 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
    - Netmask 
    - Default Gateway to access the user interface (UI)
 3. Cloud Object Storage download destination <br/>
-   You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
+   You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:external}.
    {: important}
 
 ## Step 1: Creating a request
 {: #create-req}
 
-1. Log in to the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} by using your unique credentials.
+1. Log in to the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:external} by using your unique credentials.
 2. Select **Storage > Data Migration > Mass Data Migration** from the Navigation Bar to access the MDMS landing page.
 3. Click **Request Device** to open the order form.
 4. Complete each field in the **Mass Data Migration** order form.
@@ -63,9 +63,9 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
 ## Step 2: Preparing and shipping
 {: #prep-ship}
 
-After submitting the request, the status for the request ticket appears as *Processing Request*. When your request has been processed, {{site.data.keyword.IBM}} begins pre-configuring the next available device and the status on the [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid will show *Prepping Device* followed by *Awaiting Shipment*. After your request enters *Awaiting Shipment* status, it can no longer be canceled. 
+After submitting the request, the status for the request ticket appears as *Processing Request*. When your request has been processed, {{site.data.keyword.IBM}} begins pre-configuring the next available device and the status on the [Requests](https://control.softlayer.com/storage/mdms){:external} grid will show *Prepping Device* followed by *Awaiting Shipment*. After your request enters *Awaiting Shipment* status, it can no longer be canceled. 
 
-The device is picked up by the carrier to be sent to your location. At this time, the request status is updated to *Device Shipped*. The tracking number is shared with you in the **Order Details** section of the [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid.
+The device is picked up by the carrier to be sent to your location. At this time, the request status is updated to *Device Shipped*. The tracking number is shared with you in the **Order Details** section of the [Requests](https://control.softlayer.com/storage/mdms){:external} grid.
 
 ## Step 3: Receiving and connecting
 {: #rec-con}
@@ -74,10 +74,10 @@ The device is picked up by the carrier to be sent to your location. At this time
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 1. The device arrives pre-configured for you. Basic [powering/connectivity instructions](docs/infrastructure/mass-data-migration/user-instructions.html) are included.  **[Editor's note: Are the instructions included in the MDMS package? If so, are they different from the instructions found with the "powering/connectivity" link?]**<br/>
-  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the credentials.
+  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the credentials.
 2. Point your browser to the static IP address that you provided in the order form. **[Editor's note: Is this done on PDA? What system is the static IP address for?]**
 3. Log in. Enter password to unlock the empty storage pool. **[Editor's note: How is this done?]**<br/>
-   **Note**: See the **Request Details** of your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the password.
+   **Note**: See the **Request Details** of your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the password.
 4. Mount the NFS share on your server. **[Editor's note: How is this done?]**
 5. Rerun your DataShuttle inventory to ensure any new files are captured. **[Editor's note: Is "DataShuttle inventory" a command that is run on PDA?]**
 
@@ -89,7 +89,7 @@ The {{site.data.keyword.cloud}} Mass Data Migration device is a portable storage
 
 ### Power
 
-The device includes with a C13-US power cord ([IEC 60320 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://en.wikipedia.org/wiki/IEC_60320){:new_window}). If the device is being used outside of the United States, a power adapter might be required.
+The device includes with a C13-US power cord ([IEC 60320](https://en.wikipedia.org/wiki/IEC_60320){:external}). If the device is being used outside of the United States, a power adapter might be required.
 
 The MDMS device accepts all standard power ranges.
 ![Power range](/images/PowerRating.png)
@@ -172,7 +172,7 @@ If a different form factor of Ethernet connection is required, you must provide 
 
        **Note:** If you used the `USING` clause options for data export, remember or save the clause options. The clause is reused later during the external table load process from {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-       For more information about the SQL statement, see: [CREATE EXTERNAL TABLE statement ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
+       For more information about the SQL statement, see: [CREATE EXTERNAL TABLE statement](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:external}. 
 
 <!--       - Provide the {{site.data.keyword.Bluemix_notm}} team with the "USING" clause that was used for data export. The clause is reused during the load process on {{site.data.keyword.Bluemix_notm}}.
        - Select FORMAT = "Text"
@@ -219,7 +219,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 * Be certain to use the same `USING` clause options that you used to extract the data from your PureData System for Analytics (Netezza) database by using the CREATE EXTERNAL TABLE statement.
 * For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-For a guided tutorial about importing data fron {{site.data.keyword.Bluemix_notm}} Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+For a guided tutorial about importing data fron {{site.data.keyword.Bluemix_notm}} Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:external}.
 
 ## Step 7: Erasing MDMS device
 {: #erase}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -37,7 +37,7 @@ Watch this video to see how to create a connection.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-For more information, see [Connecting Cognos Analytics ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+For more information, see [Connecting Cognos Analytics ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
 
 ## Looker
 {: #looker}
@@ -45,7 +45,7 @@ For more information, see [Connecting Cognos Analytics ![External link icon](../
 You can connect Looker to a {{site.data.keyword.dashdbshort_notm}} database. Looker is a business intelligence app and big data analytics platform with which you can explore, analyze, and share real-time business analytics.
 {: shortdesc}
 
-[Connecting Looker ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Connecting Looker ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -115,8 +115,8 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 {: #results2}
 
 The query results are displayed in an Excel spreadsheet. These are the same results that are displayed in the Results viewer. Now you can generate charts and reports and analyze your data by using Excel. For more information about how to do this and how to run SQL queries on your data from the web console, see: 
-- [Tutorial: Generating charts and reports by using Excel ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Analyzing with Excel ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [Tutorial: Generating charts and reports by using Excel ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analyzing with Excel ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}

@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,12 +32,13 @@ subcollection: Db2whc
 The {{site.data.keyword.dashdblong}} managed service is an SQL database that is provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
-<!-- For a first impression on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:new_window}. -->
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
 
 ## Free trial
 {: #freetrial}
 
-You can try the {{site.data.keyword.dashdbshort_notm}} Entry plan with up to 1 GB of storage without charge. [Free trial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+You can try the {{site.data.keyword.dashdbshort_notm}} Entry plan with up to 1 GB of storage without charge. [Free trial](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Interfaces
 {: #interfaces}
@@ -58,7 +59,7 @@ The web console provides a graphical interface for everything that you need to u
 
 ![View of the web console dashboard page](images/uc.png)
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 You can access your web console in the following ways:
    * From your {{site.data.keyword.Bluemix_notm}} dashboard - You can open the web console from the Service Details page for your {{site.data.keyword.dashdbshort_notm}} service.
@@ -67,7 +68,7 @@ You can access your web console in the following ways:
 ### REST API
 {: #api}
 
-With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/db2whc_api){:new_window}.
+With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external}.
 {: shortdesc}
 
 ### Connect applications or your favorite tools from your local computer
