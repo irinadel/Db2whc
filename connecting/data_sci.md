@@ -144,7 +144,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 {: #proc12}
 
 For steps on how to connect from SAS to a {{site.data.keyword.dashdbshort_notm}} database, see the SAS documentation:
-- [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
+- [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## R development environment
 {: #r_dev_env}
@@ -168,7 +168,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
     
 2. Create an ODBC driver connection between your R development environment and your {{site.data.keyword.dashdbshort_notm}} database:
         
-   a. [Set up your database as an ODBC data source ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
+   a. [Set up your database as an ODBC data source](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
         
    b. Open your locally installed R development environment.
         

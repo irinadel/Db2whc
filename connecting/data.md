@@ -39,9 +39,9 @@ These instructions explain how to define a connection without SSL between IBM® 
 It is strongly advised that you update DataStage to the most recent version so that you can take advantage of external tables to load your data into {{site.data.keyword.dashdbshort_notm}}.
 {: important}
 
-If you don’t already have a data server client installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}.
+If you don’t already have a data server client installed, download and install the IBM Data Server Client <!--Version 10.5 -->that is appropriate for your client machine’s operating system: [IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}.
 
-To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
+To make connections with the SSL protocol, download and install the 32-bit GSKit V8. Click the OS tab that is appropriate for your client machine’s operating system: [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. For the following operating systems, ensure that you add the GSKit installation directory path to the OS-specific path environment variable:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -160,8 +160,8 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
      For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
-     - [Creating a data connection object manually ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
-     - [Configuring access to Db2 databases ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
+     - [Creating a data connection object manually](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
+     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
 
 ## Informatica
 {: #informatica}
@@ -204,14 +204,14 @@ The ODBC Data Sources Administrator dialog box appears.
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Integrate Db2 and Salesforce with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/watch?v=RGTLweZvKP8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-<!-- [Informatica ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:external} -->
+<!-- [Informatica](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:external} -->
 
 ## Lift
 {: #lift}
 
 Use Lift to migrate your data into {{site.data.keyword.dashdbshort_notm}}.
 
-[Lift ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -229,7 +229,7 @@ When you use {{site.data.keyword.dashdbshort_notm}} as a connection target, the 
 ### Prerequisites
 {: #prereq2}
 
-If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions ![External link icon](../../../icons/launch-glyph.svg "External link icon")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
+If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
 Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
@@ -334,42 +334,42 @@ If you intend to connect by using the SSL protocol, download the `DigiCertGlobal
         
    a. Add a source instance to point to your source database by using the **Instance Configuration** tab:
 
-   ![IIDR New Instance - Source instance](images/IIDR_source_instance.jpg)
+   ![IIDR New Instance - Source instance](images/IIDR_source_instance.jpg "Source instance configuration"){: caption="Figure 1. IIDR New Instance - Source instance" caption-side="bottom"}
 
    b. Add a target instance to point to your target Db2 database by using the **Instance Configuration** tab. If you are not using IBM InfoSphere Data Replication 11.3.3.3-50 or later, do not select the **Specify refresh loader path** check box.
 
-   ![IIDR New Instance - Target instance](images/IIDR_target_instance.jpg)
+   ![IIDR New Instance - Target instance](images/IIDR_target_instance.jpg "Target instance configuration"){: caption="Figure 2. IIDR New Instance - Target instance" caption-side="bottom"}
 
    c. Start each instance:
 
-   ![IIDR Configuration Tool](images/IIDR_instances.jpg)
+   ![IIDR Configuration Tool](images/IIDR_instances.jpg "IIDR Configuration Tool listing source and target instances"){: caption="Figure 3. IIDR Configuration Tool" caption-side="bottom"}
 
 3. Launch the InfoSphere Data Replication management console and use Access Manager to complete the following steps:
         
    a. Create a datastore to connect to your source instance by using the **Datastore** tab. Because a Db2 database was not originally supported as a source database, you must provide user and password information for the source database by clicking **Connection Parameters**.
 
-   ![Datastore Properties - Source](images/IIDR_source_datastore.jpg)
+   ![Datastore Properties - Source](images/IIDR_source_datastore.jpg "Source datastore properties"){: caption="Figure 4. View of source datastore properties" caption-side="bottom"}
 
    b. Create a datastore to connect to your target instance by using the **Datastore** tab. You must provide user and password information by clicking **Connection Parameters**.
 
-   ![Datastore Properties - Target](images/IIDR_target_datastore.jpg)
+   ![Datastore Properties - Target](images/IIDR_target_datastore.jpg "Target datastore properties"){: caption="Figure 5. View of target datastore properties" caption-side="bottom"}
 
    c. If the user (for example, admin) that will connect to the Access Server does not exist, create that user:
 
-   ![New User](images/IIDR_management_user.jpg)
+   ![New User](images/IIDR_management_user.jpg "New User creation tool"){: caption="Figure 6. View of New User creation tool" caption-side="bottom"}
 
    d. Click the **Access Manager** tab.
         
    e. On the **Datastore Management** tab, assign the user to both the source and target datastores by right-clicking each datastore and then clicking **Assign User**. Ensure that the credentials for accessing each instance are correct.
 
-   ![IIDR Management Console - Access Manager](images/IIDR_management_assign_user.jpg)
+   ![IIDR Management Console - Access Manager](images/IIDR_management_assign_user.jpg "Access Manager console"){: caption="Figure 7. IIDR Management Console - Access Manager" caption-side="bottom"}
 
 ### What to do next
 {: #what2}
 
 Define a subscription and perform data replication. For information, see:
 
-- [Loading data from InfoSphere Data Replication ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
+- [Loading data from InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
 
 ## Segment
 {: #segment}
@@ -377,7 +377,7 @@ Define a subscription and perform data replication. For information, see:
 You can integrate Segment with a {{site.data.keyword.dashdbshort_notm}} database. Segment is a single platform that collects, stores, and routes your user data to hundreds of tools.
 {: shortdesc}
 
-[Segment ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://segment.com/docs/destinations/db2/){:external}
+[Segment](https://segment.com/docs/destinations/db2/){:external}
 
 ## Data Studio
 {: #data_studio}
@@ -430,7 +430,7 @@ To create a connection, complete the following steps:
     
 2. In the Data Server Manager web console, go to **Set Up > Database Connections**.
     
-3. Click the ![+ sign inside a circle](images/icon_R_plus.gif) icon to add a database connection. On the **Add Database Connection** page under the **Database Connection** tab, enter the required information in the following fields:
+3. Click the ![+ sign inside a circle](images/icon_R_plus.gif "Add icon") icon to add a database connection. On the **Add Database Connection** page under the **Database Connection** tab, enter the required information in the following fields:
 
    - *Database connection name*: The name must be unique to Data Server Manager
    - *Data server type*: From the drop-down menu, select **DB2 for Linux, UNIX, and Windows**
@@ -500,7 +500,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 3. Launch Aginity Workbench. If the database connection dialog box does not open automatically, open it by clicking **Connect** on the toolbar.
 
-4. [Establish a database connection ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}. Use the host name, user ID, and password from the connection information that you noted earlier.
+4. [Establish a database connection](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}. Use the host name, user ID, and password from the connection information that you noted earlier.
 
 ## CLPPlus
 {: #clpplus}

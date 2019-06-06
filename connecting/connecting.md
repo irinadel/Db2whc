@@ -116,9 +116,9 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
 - [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
 - [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
-- [Lift ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
-- [Segment ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://segment.com/docs/destinations/db2/){:external}
+- [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
 - [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
 - [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
@@ -129,7 +129,7 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 {: #dvis_bi}
 
 - [Cognos Analytics to run Business Intelligence reports against your data](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)

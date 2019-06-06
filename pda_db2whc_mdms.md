@@ -116,12 +116,12 @@ If a different form factor of Ethernet connection is required, you must provide 
     There are two power switches.
     {: note}
 
-    ![Power switches](/images/MDMSPowerSwitch.png)
+    ![Power switches](/images/MDMSPowerSwitch.png "Power switches are circled"){: caption="Figure 1. Power switches" caption-side="bottom"}
     The device does not need to be removed from the portable case.
     {: note}
 
 4. Remove the CAT6A cable from the case lid and connect it to the Eth3 (10GbE-B) port that is shown in the picture.
-    ![Eth1 and Eth3 port location](/images/MDMSNewEth1and3.png)
+    ![Eth1 and Eth3 port location](/images/MDMSNewEth1and3.png "Eth1 and Eth3 port locations are highlighted"){: caption="Figure 2. Eth1 and Eth3 port location" caption-side="bottom"}
 
 5. Connect the provided CAT6A to SFP+ adapter and connect to your 10Gb switch.
 
@@ -132,23 +132,23 @@ If a different form factor of Ethernet connection is required, you must provide 
    {: note}
 
 7. Use the provided user name and password to log in.<br/>
-    ![Login page](/images/Login.png)
+    ![Login dialog](/images/Login.png "Login dialog"){: caption="Figure 3. Login dialog" caption-side="bottom"}
 
 8. The workflow wizard presents access to the specific items generally used in order from left to right.<br/>
-    ![Workflow icons](/images/workflow.png) <br/>
+    ![Workflow icons](/images/workflow.png "Workflow wizard displaying workflow icons"){: caption="Figure 4. Workflow wizard" caption-side="bottom"} <br/>
     The workflow can be reopened by using **Workflow Manager** in the upper left of the GUI.
     {: note}
 
 9. Activate the pre-configured storage pool:
     - Click **Unlock and Start Storage Pool**.
     - Enter your Storage Pool Passphrase and click **OK**.
-    ![Activate storage pool](/images/UnlockPool.png)
+    ![Activate storage pool](/images/UnlockPool.png "Enter passphrase in circled field"){: caption="Figure 5. Activate storage pool" caption-side="bottom"}
 
-10. By default, the share has both NFS and SMB protocols that are enabled with no access restrictions that are placed on the share. To restrict access to this share (for NFS or SMB), right-click the share name and select the appropriate menu item.<br/>
-    ![Restrict share access](/images/ShareControls.png)
+10. By default, the share has both NFS and SMB protocols enabled with no access restrictions placed on the share. To restrict access to this share (for NFS or SMB), right-click the share name and select the appropriate menu item.<br/>
+    ![Restrict share access](/images/ShareControls.png "Restrict share access"){: caption="Figure 6. Restrict share access" caption-side="bottom"}
 
 11. When the storage pool is enabled, the NFS share is available to mount. In the workflow, click **View Network Shares** to see the network shares view. Close the workflow, right-click the share, and select **View Mount Command** to see the share name and mount information. Mount the share on your source server. Be sure to specify the IP address of the 10 GB link when mounting the share.
-    ![Mounting the share](/images/MountCommand.png)
+    ![Mounting the share](/images/MountCommand.png "Mounting the share"){: caption="Figure 7. Mounting the share" caption-side="bottom"}
 
 ## Step 4: Copying data and shipping
 {: #copy-ship}
@@ -179,13 +179,13 @@ If a different form factor of Ethernet connection is required, you must provide 
 -->
 
 2. In the workflow, click **View Network Activity** to show the inbound Ethernet load in the GUI as data is transferred to the device on the 10Gb/sec link.
-    ![View activity](/images/UserGuide13.png)
+    ![View activity](/images/UserGuide13.png "GUI shows inbound Ethernet load"){: caption="Figure 8. View of network activity" caption-side="bottom"}
 
 3. In the workflow, click **View Storage Pools** to monitor storage usage and IOPS on the device.
-    ![View storage pool](/images/UserGuide14.png)
+    ![View storage pool](/images/UserGuide14.png "GUI shows storage usage"){: caption="Figure 9. View of storage pool" caption-side="bottom"}
 
 4. When the copying is done, gracefully power down the system. Powering down the device also locks the storage pool. In the workflow, click **Shutdown Appliance...**.  
-    ![Appliance shutdown UI button location](/images/Shutdown.png)
+    ![Appliance shutdown button](/images/Shutdown.png "Shutdown Appliance UI button"){: caption="Figure 10. Appliance shutdown" caption-side="bottom"}
 
 5. Disconnect the device. Return the power cable, Ethernet cable, and SFP+ adapter into their respective storage locations under the lid.
 
@@ -246,7 +246,7 @@ Symlinks and hard links are skipped during the scan process.
 
 The LCD display on the device can be used to configure the IP addresses for the Ethernet ports. You navigate in the LCD display by using the **up arrow**, **down arrow**, **esc**, and **enter** buttons. The **enter** button takes you into a menu and **esc** takes you out of the menu.
 
-![LCD display](/images/MDMSLCD.png)
+![LCD display](/images/MDMSLCD.png "System Control Display"){: caption="Figure 11. System Control Display" caption-side="bottom"}
 
 When editing an IP address or subnet mask, **enter** steps you forward one character at a time; **esc** steps you back one character at a time. The **up arrow** and **down arrow** toggles through the numbers for the selected location.
 
