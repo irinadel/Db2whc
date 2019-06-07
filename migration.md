@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2019
 lastupdated: "2019-05-08"
 
-keywords: loading data, object store, IBM Cloud Object Storage, Amazon S3, LOAD command, Mass Data Migration Service (MDMS), migration, Lift
+keywords: Db2 Warehouse on Cloud, loading data, object store, IBM Cloud Object Storage, Amazon S3, LOAD command, Mass Data Migration Service (MDMS), migration, Lift
 
 subcollection: Db2whc
 
