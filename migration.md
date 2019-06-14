@@ -27,12 +27,12 @@ subcollection: Db2whc
 You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage) to {{site.data.keyword.dashdblong}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
 
-## Loading data from object store
+## Loading data from an object store
 {: #cos}
 
-To load data from Amazon S3, select one of the following methods:
-  * {{site.data.keyword.dashdbshort_notm}} web console. **Load > Amazon S3**. 
-  * External Tables directly. The following is an example SQL statement:
+To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage to {{site.data.keyword.dashdblong}}, select one of the following methods:
+* {{site.data.keyword.dashdbshort_notm}} web console. **Load > Amazon S3**. 
+* External Tables directly. The following is an example SQL statement:
 
     ```
     INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -44,37 +44,37 @@ To load data from Amazon S3, select one of the following methods:
       )      
     ```
 
-To load data from {{site.data.keyword.Bluemix_notm}} Object Storage by using External Tables directly, the following is an example SQL statement:
+  To load data from {{site.data.keyword.Bluemix_notm}} Object Storage by using External Tables directly, the following is an example SQL statement:
 
-```
-INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
-  (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
-  '<S3-access-key-ID>',
-  '<S3-secret-access-key>', 
-  '<my_bucket>'
-     )
-  )      
-```
+  ```
+  INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+    (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
+    '<S3-access-key-ID>',
+    '<S3-secret-access-key>', 
+    '<my_bucket>'
+       )
+    )      
+  ```
 
-For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
-{: note}
+  For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
+  {: note}
 
-For improved performance, the Db2 **LOAD** command can also be used to load data from Amazon S3 using the following example command:
+* For improved performance, the Db2 **LOAD** command can also be used to load data from Amazon S3 using the following example command:
 
-```
-CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
-:<s3-bucket-name>::<path-to-data-file>" OF <filetype> <additional-load-options> INTO <table-name>)
-```
+  ```
+  CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
+  :<s3-bucket-name>::<path-to-data-file>" OF <filetype> <additional-load-options> INTO <table-name>)
+  ```
 
-The following is an example usage of the Db2 **LOAD** command:
+  The following is an example usage of the Db2 **LOAD** command:
 
-```
-CALL SYSPROC.ADMIN_CMD('load from "S3::s3-us-west-2.amazonaws.com::<s3-access-key-id>:
-:<s3-secret-access-key>::ibm-state-store::bdidata2TB/web_site.dat" of DEL modified by codepage=1208 
-coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
-```
+  ```
+  CALL SYSPROC.ADMIN_CMD('load from "S3::s3-us-west-2.amazonaws.com::<s3-access-key-id>:
+  :<s3-secret-access-key>::ibm-state-store::bdidata2TB/web_site.dat" of DEL modified by codepage=1208 
+  coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
+  ```
 
-For supported command options. see [**LOAD** command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
+  For supported command options. see [**LOAD** command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
 
 For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
 
