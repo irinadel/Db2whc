@@ -149,6 +149,6 @@ Db2 data virtualization (also known as federation) is supported by {{site.data.k
 
 This function is supported on all versions of {{site.data.keyword.dashdbshort_notm}}, except for the Entry plan. However, you can use the Entry plan as a target from which you can pull data.
 
-- [Data virtualization (federation)](/docs/services/Db2whc?topic=Db2whc-data_virt_fed#data_virt_fed)
+- [Data virtualization (federation)](/docs/services/Db2whc?topic=Db2whc-data_virt_fed)
 
 
