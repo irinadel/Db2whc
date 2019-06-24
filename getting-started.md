@@ -68,7 +68,7 @@ You can access your web console in the following ways:
 ### REST API
 {: #api}
 
-With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external}.
+With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}.
 {: shortdesc}
 
 ### Connect applications or your favorite tools from your local computer

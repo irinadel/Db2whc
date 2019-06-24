@@ -68,7 +68,7 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [REST API](http://ibm.biz/db2whc_api)
+    [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     {: .navgroup-end}
 

@@ -283,7 +283,7 @@ The {{site.data.keyword.dashdbshort_notm}} REST API was enhanced to also accept 
   .
   ```
 
-For more details about your service's API, see: [{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external}.
+For more details about your service's API, see: [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}.
 
 ## IBMid federation
 {: #ibmid_fed}
