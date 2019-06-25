@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Esercitazione introduttiva
-{: #getting_started}
+{: #getting-started}
 
 Il servizio gestito {{site.data.keyword.dashdblong}} è un database SQL di cui viene eseguito il provisioning nel cloud per te. Puoi utilizzare il warehouse Db2 come useresti qualsiasi software database ma senza dover sostenere il carico di lavoro e i costi necessari per la configurazione dell'hardware o l'installazione e la manutenzione del software. 
 {: shortdesc}

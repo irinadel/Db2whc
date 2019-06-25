@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # 시작하기 튜토리얼
-{: #getting_started}
+{: #getting-started}
 
 {{site.data.keyword.dashdblong}} 관리 서비스는 클라우드에서 사용자를 위해 프로비저닝된 SQL 데이터베이스입니다. 데이터베이스 소프트웨어를 사용하는 것과 동일하게 Db2 웨어하우스를 사용할 수 있지만, 하드웨어 설정이나 소프트웨어 설치 및 관리에 대한 오버헤드와 비용이 없습니다. 
 {: shortdesc}

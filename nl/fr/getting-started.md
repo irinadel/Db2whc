@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Tutoriel d'initiation
-{: #getting_started}
+{: #getting-started}
 
 Le service géré {{site.data.keyword.dashdblong}} est une base de données SQL mise à votre disposition dans le cloud. Vous pouvez utiliser l'entrepôt Db2 de la même manière que vous utilisez n'importe quel logiciel de base de données, sans les frais associés à la configuration de matériel ou à l'installation et la maintenance de logiciels. 
 {: shortdesc}

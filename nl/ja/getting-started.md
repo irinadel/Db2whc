@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # 入門チュートリアル
-{: #getting_started}
+{: #getting-started}
 
 {{site.data.keyword.dashdblong}} マネージド・サービスは、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように Db2 ウェアハウスを使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
 {: shortdesc}

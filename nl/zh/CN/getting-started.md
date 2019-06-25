@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # 入门教程
-{: #getting_started}
+{: #getting-started}
 
 {{site.data.keyword.dashdblong}} 受管服务是在云中为您供应的 SQL 数据库。您可以使用 Db2 Warehouse 就像使用任何数据库软件一样，但是却没有硬件设置或软件安装和维护所产生的开销和费用。
 {: shortdesc}

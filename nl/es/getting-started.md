@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Guía de aprendizaje de iniciación
-{: #getting_started}
+{: #getting-started}
 
 El servicio gestionado de {{site.data.keyword.dashdblong}} es una base de datos SQL suministrada para usted en la nube. Puede utilizar Db2 Warehouse como utilizaría cualquier software de base de datos, pero sin la sobrecarga ni el gasto de la configuración de hardware o la instalación y el mantenimiento de software. 
 {: shortdesc}

@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # 入門指導教學
-{: #getting_started}
+{: #getting-started}
 
 {{site.data.keyword.dashdblong}} 受管理服務是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 Db2 倉儲，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
 {: shortdesc}

@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Tutorial de introdução
-{: #getting_started}
+{: #getting-started}
 
 O serviço gerenciado do {{site.data.keyword.dashdblong}} é um banco de dados SQL que é provisionado para você na nuvem. É possível usar o Db2 Warehouse da mesma maneira que você usaria qualquer software de banco de dados, mas sem o gasto adicional e as despesas de configuração de hardware ou de instalação e manutenção de software. 
 {: shortdesc}

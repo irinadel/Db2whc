@@ -27,7 +27,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Lernprogramm 'Einführung'
-{: #getting_started}
+{: #getting-started}
 
 Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können Db2 Warehouse wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
 {: shortdesc}
