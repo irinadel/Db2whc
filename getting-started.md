@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-05-21"
+lastupdated: "2019-06-28"
 
 keywords:
 
@@ -32,8 +32,10 @@ subcollection: Db2whc
 The {{site.data.keyword.dashdblong}} managed service is an SQL database that is provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}
 
-<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
-<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. -->
+To get started on provisioning and working with {{site.data.keyword.dashdbshort_notm}}, go through the following 2-part tutorial:
+- [Getting started tutorial: Part 1](https://www.ibm.com/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}.
+- [Getting started tutorial: Part 2](https://www.ibm.com/cloud/garage/dte/tutorial/ibm-db2-warehouse-cloud-getting-started-part-2){:external}.
 
 ## Free trial
 {: #freetrial}

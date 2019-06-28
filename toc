@@ -7,20 +7,21 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
     getting-started.md
-    iam.md
-    plans_cfgs.md
     about.md
-    flex_scaling.md
-    br.md
-    dr.md
-    ha.md
-    [Auditing](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html)
 
     {: .topicgroup}
-    Loading your data
-        dcw.md
-        migration.md
-        pda_db2whc_mdms.md
+    Features & specs
+        flex_scaling.md
+        br.md
+        dr.md
+        ha.md
+        [Auditing](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html)
+
+    {: .topicgroup}
+    Security
+        iam.md
+        user_mgmt.md
+        [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
 
     {: .topicgroup}
     Connecting
@@ -50,14 +51,19 @@ Db2 Warehouse on Cloud
     Connecting to another Db2 database
         federation.md
 
-    user_mgmt.md
+    {: .topicgroup}
+    Loading your data
+        dcw.md
+        migration.md
+        pda_db2whc_mdms.md
+
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+    plans_cfgs.md
     local_dev_env.md
     communities.md    
 
     [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-    [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
