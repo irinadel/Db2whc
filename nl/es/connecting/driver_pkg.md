@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,7 @@ El paquete de controlador de {{site.data.keyword.dashdbshort_notm}} contiene sof
 ## ¿Instalado?
 {: #alrdy_instld}
 
-Para verificar que el paquete de controlador ya se encuentra en el sistema o determinar el número de versión, puede utilizar el mandato [**db2level** ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window}.
+Para verificar que el paquete de controlador ya se encuentra en el sistema o determinar el número de versión, puede utilizar el mandato [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external}.
 
 ## Descargando
 {: #dwnldng}

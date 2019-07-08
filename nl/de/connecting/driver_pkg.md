@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,7 @@ Das {{site.data.keyword.dashdbshort_notm}}-Treiberpaket enthält Software für V
 ## Bereits installierte Version
 {: #alrdy_instld}
 
-Mithilfe des Befehls [**db2level** ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window} können Sie überprüfen, ob das Treiberpaket bereits auf Ihrem Computer installiert ist, oder die Versionsnummer einer vorhandenen Treiberinstallation ermitteln.
+Mithilfe des Befehls [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} können Sie überprüfen, ob das Treiberpaket bereits auf Ihrem Computer installiert ist, oder die Versionsnummer einer vorhandenen Treiberinstallation ermitteln. 
 
 ## Download
 {: #dwnldng}

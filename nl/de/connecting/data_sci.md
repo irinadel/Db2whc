@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -93,7 +93,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 ### Vorgehensweise
 {: #proc11}
 
-1. Klicken Sie in SPSS Statistic auf **Datei > Datenbank öffnen > Neue Abfrage**.
+1. Klicken Sie in SPSS Statistics auf **Datei > Datenbank öffnen > Neue Abfrage**.
     
 2. Klicken Sie im Datenbankassistenten auf **ODBC-Datenquelle hinzufügen**.
     
@@ -144,7 +144,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
 {: #proc12}
 
 Schrittweise Anleitungen für Verbindungen von SAS zu einer {{site.data.keyword.dashdbshort_notm}}-Datenbank finden Sie in der SAS-Dokumentation:
-- [Abschnitt zur SAS/ACCESS-Schnittstelle zu Db2 unter UNIX- und PC-Hosts ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
+- [Abschnitt zur SAS/ACCESS-Schnittstelle zu Db2 unter UNIX- und PC-Host](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## R-Entwicklungsumgebung
 {: #r_dev_env}
@@ -168,7 +168,7 @@ Stellen Sie sicher, bevor Sie eine Verbindung zu Ihrer {{site.data.keyword.dashd
     
 2. Erstellen Sie eine ODBC-Treiberverbindung zwischen der R-Entwicklungsumgebung und der {{site.data.keyword.dashdbshort_notm}}-Datenbank:
         
-   a. [Richten Sie Ihre Datenbank als ODBC-Datenquelle ein ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}.
+   a. [Richten Sie Ihre Datenbank als ODBC-Datenquelle ein](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
         
    b. Öffnen Sie die lokal installierte R-Entwicklungsumgebung.
         

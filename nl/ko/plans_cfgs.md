@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-03-15"
+lastupdated: "2019-06-05"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,27 +34,29 @@ subcollection: Db2whc
    * 고가용성을 위해 구성된 플랜
    * Oracle 호환성
 
-[{{site.data.keyword.Bluemix}} 카탈로그](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}에서 모든 사용 가능한 {{site.data.keyword.dashdbshort_notm}} 플랜을 보십시오.
-<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
-<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
+[{{site.data.keyword.Bluemix}} 카탈로그](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}에서 모든 사용 가능한 {{site.data.keyword.dashdbshort_notm}} 플랜을 보십시오.
+<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:external} -->
+<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:external} -->
 
 {{site.data.keyword.dashdbshort_notm}} Flex Performance 플랜에 대한 소개를 보려면 이 동영상을 시청하십시오.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-{{site.data.keyword.dashdbshort_notm}} 서비스를 {{site.data.keyword.Bluemix}}의 네트워크 격리 환경에 배치하도록 요청할 수 있습니다. [{{site.data.keyword.IBM_notm}} 영업 팀 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}에 문의하십시오.
+{{site.data.keyword.dashdbshort_notm}} 서비스를 {{site.data.keyword.Bluemix}}의 네트워크 격리 환경에 배치하도록 요청할 수 있습니다. [{{site.data.keyword.IBM_notm}} 영업 팀](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}에 문의하십시오.
 
-카탈로그에서 필요한 구성을 찾을 수 없는 경우 [{{site.data.keyword.IBM_notm}} 영업 팀 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}에 문의하여 다른 옵션에 대해 논의하십시오.
+카탈로그에서 필요한 구성을 찾을 수 없는 경우 [{{site.data.keyword.IBM_notm}} 영업 팀](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}에 문의하여 다른 옵션에 대해 논의하십시오.
 
-## 데이터 센터의 플랜 가용성
+## IBM Cloud 데이터 센터의 플랜 가용성
 {: #availability}
 
-다음 표는 실제 지역에 있는 데이터 센터에서 제공하는 다양한 {{site.data.keyword.dashdbshort_notm}} 플랜의 가용성에 대한 정보를 제공합니다.
+다음 표는 실제 지역에 있는 IBM Cloud 데이터 센터에서 제공하는 다양한 {{site.data.keyword.dashdbshort_notm}} 플랜의 가용성에 대한 정보를 제공합니다.
 
 | {{site.data.keyword.dashdbshort_notm}} 플랜 | 아시아/태평양 |유럽    | 북/중앙아메리카     |남미 |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | 도쿄        | 프랑크푸르트 | 워싱턴 D.C. (미국 동부) | *해당사항 없음|
+| Flex / Flex Performance      | 도쿄        | 프랑크푸르트 | 워싱턴 D.C. (미국 동부) | *해당사항 없음           |
 |                              |              |           | 댈러스(미국 남부)         |               |  
+|      |||||
+| Flex One                     | *해당사항 없음   | *해당사항 없음   | 댈러스(미국 남부)         | *해당사항 없음           |
 |      |||||
 | SMP                          | 홍콩    | 암스테르담 | 워싱턴 D.C. (미국 동부) | 상파울루     |
 |                              | 서울        | 프랑크푸르트 | 댈러스(미국 남부)         |               | 
@@ -69,9 +71,26 @@ subcollection: Db2whc
 |                              | 시드니       | 밀라노     | 케레타로                 |               | 
 |                              | 도쿄        | 오슬로      | 토론토                   |               | 
 |                              |              | 파리     |                           |               |
-{: caption="표 1. Db2 Warehouse on Cloud 서비스 플랜을 지원하는 데이터 센터" caption-side="top"}
+{: caption="표 1. Db2 Warehouse on Cloud 서비스 플랜을 지원하는 IBM Cloud 데이터 센터" caption-side="top"}
 
 *NA = 현재 사용할 수 없음
+
+## Amazon Web Services 데이터 센터의 플랜 가용성
+{: #availability_aws}
+
+다음 표는 실제 지역에 있는 Amazon Web Services 데이터 센터에서 제공하는 다양한 {{site.data.keyword.dashdbshort_notm}} 플랜의 가용성에 대한 정보를 제공합니다.
+
+| {{site.data.keyword.dashdbshort_notm}} 플랜 | 아시아/태평양 |유럽    | 북/중앙아메리카     |남미 |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | 시드니       | 프랑크푸르트 | 북버지니아 | *해당사항 없음           |
+|                              | 싱가포르    | 런던    |             |               |  
+|      |||||
+| Flex Performance             | 시드니       | 프랑크푸르트 | 북버지니아 | *해당사항 없음           |
+|                              | 싱가포르    | 런던    |             |               | 
+{: caption="표 2. Db2 Warehouse on Cloud 서비스 플랜을 지원하는 Amazon Web Services 데이터 센터" caption-side="top"}
+
+*NA = 현재 사용할 수 없음
+
 
 ## 엔트리 플랜 제한사항
 {: #ep_restrictions}
@@ -101,4 +120,4 @@ subcollection: Db2whc
 |  | EU 일반 개인정보 보호법률(GDPR) | 특정 제한사항이 적용되지 않음 |
 |  |  |
 | 계정 관리 | 재활성화 | 재활성화 요구사항이 없음 |
-{: caption="표 1. {{site.data.keyword.dashdbshort_notm}} 엔트리 플랜 제한사항" caption-side="top"}
+{: caption="표 3. {{site.data.keyword.dashdbshort_notm}} 엔트리 플랜 제한사항" caption-side="top"}

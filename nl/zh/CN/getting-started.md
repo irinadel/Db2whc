@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} 受管服务是在云中为您供应的 SQL 数据库。您可以使用 Db2 Warehouse 就像使用任何数据库软件一样，但是却没有硬件设置或软件安装和维护所产生的开销和费用。
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## 免费试用
 {: #freetrial}
 
-您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+您可以试用 {{site.data.keyword.dashdbshort_notm}} 入门级套餐，可免费使用多达 1 GB 存储。[免费试用](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## 界面
 {: #interfaces}
@@ -54,9 +57,9 @@ subcollection: Db2whc
 Web 控制台为您需要使用数据库的所有项目提供图形界面，包括：装入功能、SQL 编辑器、驱动程序下载等。
 {: shortdesc}
 
-![Web 控制台仪表板页面的视图](images/console_v3.png)
+![Web 控制台仪表板页面的视图](images/uc.png "打开至仪表板页面的 Web 控制台")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 您可以通过以下方法来访问 Web 控制台：
    * 从 {{site.data.keyword.Bluemix_notm}} 仪表板 - 您可以从 {{site.data.keyword.dashdbshort_notm}} 服务的“服务详细信息”页面打开 Web 控制台。
@@ -65,7 +68,7 @@ Web 控制台为您需要使用数据库的所有项目提供图形界面，包�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://ibm.biz/db2whc_api){:new_window} 来执行与文件管理和装入数据相关的任务。
+使用 {{site.data.keyword.dashdbshort_notm}} 服务套餐，您可以利用 [{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external} 来执行与文件管理和装入数据相关的任务。
 {: shortdesc}
 
 ### 从本地计算机连接应用程序或喜爱的工具

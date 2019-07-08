@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -116,9 +116,9 @@ subcollection: Db2whc
 - 連接需要分析資料庫的 {{site.data.keyword.Bluemix_short}} 應用程式。
 - [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
 - [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
-- [Lift ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
-- [Segment ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://segment.com/docs/destinations/db2/){:new_window}
+- [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
 - [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
 - [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
@@ -129,7 +129,7 @@ subcollection: Db2whc
 {: #dvis_bi}
 
 - [Cognos Analytics，用來針對您的資料執行「商業智慧」報告](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop，用來使用您的資料執行地理空間分析和地圖發佈](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)

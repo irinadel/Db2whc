@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions -->
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -42,13 +42,13 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
    - Netzmaske 
    - Standardgateway zum Zugreifen auf die Benutzerschnittstelle
 3. Downloadziel für Cloud Object Storage<br/>
-   Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
+   Sie benötigen mindestens ein {{site.data.keyword.cos_full}}-Konto und mindestens ein Bucket in einer US-Cross-Region oder im Süden der USA, um das Anfrageformular auszufüllen. Wenn Sie noch kein {{site.data.keyword.cos_full_notm}}-Konto haben, erstellen Sie ein Konto, bevor Sie die MDMS-Einheit anfordern. Weitere Informationen finden Sie unter [Informationen zu {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:external}.
    {: important}
 
 ## Schritt 1: Anfrageerstellung
 {: #create-req}
 
-1. Melden Sie sich mit Ihren eindeutigen Berechtigungsnachweisen beim [{{site.data.keyword.slportal}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){:new_window} an.
+1. Melden Sie sich mit Ihren eindeutigen Berechtigungsnachweisen beim [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:external} an. 
 2. Wählen Sie in der Navigationsleiste **Speicher > Datenmigration > Mass Data Migration** aus, um die MDMS-Landing-Page aufzurufen.
 3. Klicken Sie auf die Option zum **Anfordern der Einheit**, um das Bestellformular zu öffnen.
 4. Füllen Sie jedes Feld im Bestellformular für die **Mass Data Migration** aus.
@@ -63,9 +63,9 @@ MDMS bietet eine schnelle, einfache und sichere Möglichkeit, Terabytes bis Peta
 ## Schritt 2: Vorbereitung und Versand
 {: #prep-ship}
 
-Nachdem die Anfrage eingereicht wurde, ändert sich der Status für das Anfrageticket zu *Anfrage wird verarbeitet*. Wenn Ihre Anfrage verarbeitet wurde, beginnt {{site.data.keyword.IBM}} mit der Vorkonfiguration der nächsten verfügbaren Einheit und der Rasterstatus [Anfrage ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/storage/mdms){:new_window} zeigt die *Vorbereitung der Einheit* und dann *Warten auf Versand* an. Wenn Ihre Anfrage den Status *Warten auf Versand* erhält, kann sie nicht mehr abgebrochen werden. 
+Nachdem die Anfrage eingereicht wurde, ändert sich der Status für das Anfrageticket zu *Anfrage wird verarbeitet*. Wenn Ihre Anfrage verarbeitet wurde, beginnt {{site.data.keyword.IBM}} mit der Vorkonfiguration der nächsten verfügbaren Einheit und der Status im Raster[Anfragen](https://control.softlayer.com/storage/mdms){:external} zeigt die *Vorbereitung der Einheit* und dann *Warten auf Versand* an. Wenn Ihre Anfrage den Status *Warten auf Versand* erhält, kann sie nicht mehr abgebrochen werden. 
 
-Die Einheit wird vom Netzbetreiber abgeholt und an Ihren Standort gesendet. Daraufhin wird der Status zu *Einheit geliefert* aktualisiert. Die Tracking-Nummer finden Sie im Abschnitt **Auftragsdetails** im Raster [Anfragen ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/storage/mdms){:new_window}.
+Die Einheit wird vom Netzbetreiber abgeholt und an Ihren Standort gesendet. Daraufhin wird der Status zu *Einheit geliefert* aktualisiert. Die Tracking-Nummer finden Sie im Abschnitt **Auftragsdetails** im Raster [Anfragen](https://control.softlayer.com/storage/mdms){:external}. 
 
 ## Schritt 3: Empfangnahme und Verbindung
 {: #rec-con}
@@ -74,10 +74,10 @@ Die Einheit wird vom Netzbetreiber abgeholt und an Ihren Standort gesendet. Dara
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 1. The device arrives pre-configured for you. Basic [powering/connectivity instructions](docs/infrastructure/mass-data-migration/user-instructions.html) are included.  **[Editor's note: Are the instructions included in the MDMS package? If so, are they different from the instructions found with the "powering/connectivity" link?]**<br/>
-  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the credentials.
+  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the credentials.
 2. Point your browser to the static IP address that you provided in the order form. **[Editor's note: Is this done on PDA? What system is the static IP address for?]**
 3. Log in. Enter password to unlock the empty storage pool. **[Editor's note: How is this done?]**<br/>
-   **Note**: See the **Request Details** of your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the password.
+   **Note**: See the **Request Details** of your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the password.
 4. Mount the NFS share on your server. **[Editor's note: How is this done?]**
 5. Rerun your DataShuttle inventory to ensure any new files are captured. **[Editor's note: Is "DataShuttle inventory" a command that is run on PDA?]**
 
@@ -89,7 +89,7 @@ Die {{site.data.keyword.cloud}} Mass Data Migration-Einheit ist eine tragbare Sp
 
 ### Stromversorgung
 
-Die Einheit besitzt ein C13-US-Netzkabel ([IEC 60320 ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://en.wikipedia.org/wiki/IEC_60320){:new_window}). Wenn die Einheit außerhalb der USA verwendet wird, ist möglicherweise ein Netzteil erforderlich.
+Die Einheit besitzt ein C13-US-Netzkabel ([IEC 60320](https://en.wikipedia.org/wiki/IEC_60320){:external}). Wenn die Einheit außerhalb der USA verwendet wird, ist möglicherweise ein Netzteil erforderlich.
 
 Die MDMS-Einheit ist für alle Standard-Spannungsbereiche geeignet.
 ![Spannungsbereiche](/images/PowerRating.png)
@@ -116,12 +116,11 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
     Es gibt zwei Netzschalter.
     {: note}
 
-    ![Netzschalter](/images/MDMSPowerSwitch.png)
+    ![Netzschalter](/images/MDMSPowerSwitch.png "Netzschalter sind eingekreist")
     Die Einheit muss nicht aus der Transportverpackung genommen werden.
     {: note}
 
-4. Nehmen Sie das CAT6A-Kabel aus dem Gehäusedeckel und schließen Sie es an den Eth3-Anschluss (10GbE-B) an, wie in der Abbildung dargestellt.
-    ![Eth1- und Eth3-Anschlussposition](/images/MDMSNewEth1and3.png)
+4. Nehmen Sie das CAT6A-Kabel aus dem Gehäusedeckel und schließen Sie es an den Eth3-Anschluss (10GbE-B) an, wie in der Abbildung dargestellt.    ![Eth1- und Eth3-Anschlussposition](/images/MDMSNewEth1and3.png "Eth1- und Eth3-Anschlusspositionen sind hervorgehoben dargestellt")
 
 5. Verbinden Sie das CAT6A-Kabel mit dem SFP+-Adapter und dann mit dem Ihrem 10Gb-Switch.
 
@@ -131,24 +130,23 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
    Wenn Sie die IP-Einstellungen für Eth3 oder Eth1 ändern müssen, lesen Sie den Abschnitt [IP-Adresskonfiguration](#ip_cfg).
    {: note}
 
-7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden<br/>
-    ![Anmeldeseite](/images/Login.png)
+7. Verwenden Sie für die Anmeldung den Benutzernamen und das Kennwort, die Ihnen bereitgestellt wurden.<br/>
+    ![Anmeldedialog](/images/Login.png "Anmeldedialog")
 
 8. Der Workflow-Assistent bietet Zugriff auf die spezifischen Elemente, die normalerweise in der Reihenfolge von links nach rechts verwendet werden.<br/>
-    ![Workflowsymbole](/images/workflow.png) <br/>
+    ![Workflowsymbole](/images/workflow.png "Anzeige von Workflowsymbolen im Workflow-Assistenten") <br/>
     Der Workflow kann erneut geöffnet werden, indem oben links in der Benutzeroberfläche der **Workflow-Manager** verwendet wird.
     {: note}
 
 9. Aktivieren Sie den vorkonfigurierten Speicherpool:
     - Klicken Sie auf **Speicherpool entsperren und starten**.
     - Geben Sie die Kennphrase Ihres Speicherpools ein und klicken Sie auf **OK**.
-    ![Speicherpool aktivieren](/images/UnlockPool.png)
+    ![Speicherpool aktivieren](/images/UnlockPool.png "Kennphrase im eingekreisten Feld eingeben")
 
 10. Standardmäßig verfügt die Freigabe über NFS- und SMB-Protokolle, die ohne Zugriffsbeschränkungen für die Freigabe aktiviert sind. Um den Zugriff auf diese Freigabe (für NFS oder SMB) zu beschränken, klicken Sie mit der rechten Maustaste auf den Namen der Freigabe und wählen das entsprechende Menüelement aus.<br/>
-    ![Gemeinsamen Zugriff beschränken](/images/ShareControls.png)
+    ![Gemeinsamen Zugriff beschränken](/images/ShareControls.png "Gemeinsamen Zugriff beschränken")
 
-11. Wenn der Speicherpool aktiviert ist, kann die gemeinsam genutzte NFS-Ressource bereitgestellt werden. Klicken Sie im Workflow auf **Netzfreigabe anzeigen**, um die Netzfreigaben anzuzeigen. Schließen Sie den Workflow, klicken Sie mit der rechten Maustaste auf die Freigabe und wählen Sie auf **Mountbefehl anzeigen**, um den Freigabenamen und die Mountinformationen anzuzeigen. Hängen Sie die Freigabe an Ihren Quellenserver an. Stellen Sie sicher, dass die IP-Adresse des 10-GB-Links beim Anhängen der Freigabe angegeben wird.
-    ![Freigabe anhängen](/images/MountCommand.png)
+11. Wenn der Speicherpool aktiviert ist, kann die gemeinsam genutzte NFS-Ressource bereitgestellt werden. Klicken Sie im Workflow auf **Netzfreigabe anzeigen**, um die Netzfreigaben anzuzeigen. Schließen Sie den Workflow, klicken Sie mit der rechten Maustaste auf die Freigabe und wählen Sie auf **Mountbefehl anzeigen**, um den Freigabenamen und die Mountinformationen anzuzeigen. Hängen Sie die Freigabe an Ihren Quellenserver an. Stellen Sie sicher, dass die IP-Adresse des 10-GB-Links beim Anhängen der Freigabe angegeben wird. ![Freigabe anhängen](/images/MountCommand.png "Freigabe anhängen")
 
 ## Schritt 4: Kopie der Daten und Versand
 {: #copy-ship}
@@ -164,7 +162,7 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
        `/nz/support/contrib/bin/nz_backup –db <db_name> –d <target_directory>  ascii threads 4`
 
-       **Hinweis**: Das `<target_directory>` ist die gemeinsam genutzte NFS-Ressource der MDMS-Einheit, die an Ihren Netezza-Server angehängt wurde. 
+       **Hinweis**: Das `<target_directory>` ist die gemeinsam genutzte NFS-Ressource der MDMS-Einheit, die an Ihren Netezza-Server angehängt wurde.
    
     2. Führen Sie das folgende Beispiel der Anweisung CREATE EXTERNAL TABLE aus:
 
@@ -172,20 +170,18 @@ Wenn ein anderer Formfaktor der Ethernet-Verbindung erforderlich ist, müssen Si
 
        **Hinweis:** Wenn Sie die Klauseloptionen `USING` für den Datenexport verwendet haben, notieren oder speichern Sie sich diese Klauseloptionen. Die Klausel wird später beim Laden der externen Tabelle von {{site.data.keyword.Bluemix_notm}} Object Storage erneut verwendet.
 
-       Weitere Informationen zur SQL-Anweisung finden Sie unter: [Anweisung CREATE EXTERNAL TABLE ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
+       Weitere Informationen zur SQL-Anweisung finden Sie unter: [Anweisung CREATE EXTERNAL TABLE](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:external}. 
 
 <!--       - Provide the {{site.data.keyword.Bluemix_notm}} team with the "USING" clause that was used for data export. The clause is reused during the load process on {{site.data.keyword.Bluemix_notm}}.
        - Select FORMAT = "Text"
 -->
 
-2. Klicken Sie im Workflow auf **Netzaktivität anzeigen**, um die eingehende Ethernet-Last in der Benutzerschnittstelle anzuzeigen, während Daten über die 10-Gbit/s-Verbindung an die Einheit übertragen werden.
-    ![Aktivität anzeigen](/images/UserGuide13.png)
+2. Klicken Sie im Workflow auf **Netzaktivität anzeigen**, um die eingehende Ethernet-Last in der Benutzerschnittstelle anzuzeigen, während Daten über die 10-Gbit/s-Verbindung an die Einheit übertragen werden. ![Aktivität anzeigen](/images/UserGuide13.png "GUI zeigt eingehende Ethernet-Last")
 
-3. Klicken Sie im Workflow auf **Speicherpool anzeigen**, um die Speicherbelegung und E/A-Operationen pro Sekunde der Einheit zu überwachen.
-    ![Speicherpool anzeigen](/images/UserGuide14.png)
+3. Klicken Sie im Workflow auf **Speicherpools anzeigen**, um die Speicherbelegung und E/A-Operationen pro Sekunde der Einheit zu überwachen.![Speicherpool anzeigen](/images/UserGuide14.png "GUI zeigt Speicherbelegung an")
 
 4. Wenn Sie das Kopieren beendet haben, schalten Sie das System ordnungsgemäß aus. Durch das Ausschalten der Einheit wird auch der Speicherpool gesperrt. Klicken Sie im Workflow auf **Einheit herunterfahren...**.  
-    ![Schaltflächenposition zum Herunterfahren der Einheit](/images/Shutdown.png)
+    ![Schaltfläche zum Herunterfahren der Appliance](/images/Shutdown.png "UI-Schaltfläche zum Herunterfahren der Appliance")
 
 5. Trennen Sie die Verbindung zur Einheit. Legen Sie das Netzkabel, das Ethernet-Kabel und den SFP+-Adapter wieder in die entsprechenden Aufbewahrungsorte unter dem Deckel zurück.
 
@@ -219,7 +215,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 * Stellen Sie sicher, dass Sie die gleichen `USING`-Klauseloptionen verwenden, die Sie zum Extrahieren der Daten aus Ihrer PureData System für Analytics-Datenbank (Netezza) mithilfe der Anweisung CREATE EXTERNAL TABLE verwendet haben.
 * Wenn Sie {{site.data.keyword.Bluemix_notm}} Object Storage zum Erstellen von HMAC-Anmeldeinformationen beim Erstellen neuer Dienstanmeldeinformationen verwenden möchten, geben Sie {"HMAC:true"} im Feld *Inline-Konfigurationsparameter* hinzufügen an.
 
-Eine Anleitung zum Importieren von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in [IBM Db2 Warehouse on Cloud geführte Demo: Laden von Daten erkunden ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+Ein geführtes Lernprogramm zum Importieren von Daten aus {{site.data.keyword.Bluemix_notm}} Object Storage finden Sie in:[IBM Db2 Warehouse on Cloud geführte Demo: Laden von Daten erkunden](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:external}.
 
 ## Schritt 7: Löschen von Daten der MDMS-Einheit
 {: #erase}
@@ -246,7 +242,7 @@ Symbolische und feste Verbindungen werden während des Prüfvorgangs übersprung
 
 Über den LCD-Bildschirm an der Einheit können die IP-Adressen für die Ethernet-Ports konfiguriert werden. Sie navigieren im LCD-Bildschirm mit dem **Aufwärtspfeil**, **Abwärtspfeil** sowie mit der **ESC-Taste** und **Eingabetaste**. Mit der **Eingabetaste** rufen Sie ein Menü auf und mit der **ESC-Taste** verlassen Sie ein Menü.
 
-![LCD-Bildschirm](/images/MDMSLCD.png)
+![LCD-Anzeige](/images/MDMSLCD.png "Anzeige der Systemsteuerung")
 
 Beim Bearbeiten einer IP-Adresse oder einer Teilnetzmaske können Sie mit der **Eingabetaste** jeweils ein Zeichen nach vorn blättern. Mit der **ESC-Taste** blättern Sie ein Zeichen zurück. Mit dem **Aufwärtspfeil** und **Abwärtspfeil** wechseln Sie zwischen den Zahlen der ausgewählten Position.
 

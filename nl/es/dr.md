@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,11 +32,20 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 La estrategia de recuperación tras desastre depende del tipo de plan y de la generación de depósito de datos que ejecute.
 {: shortdesc}
 
+## Primera generación de planes pequeño/mediano/grande de SMP y pequeño de MPP
+{: #sml_mpp}
+
 Para planes de tipo SMP pequeño, mediano, grande y MPP pequeño de primera generación, se realiza una copia de seguridad una vez al día y se despliega en el servicio {{site.data.keyword.Bluemix_notm}} Object Storage. Desde ahí, la copia de seguridad se duplica en varias zonas de disponibilidad. Si se produce un suceso desastroso en el centro de datos principal, nuestros operadores de servicio trabajarán con usted para generar un nuevo depósito de datos en otro centro de datos. Utilizaremos la copia de seguridad diaria que reside en el servicio {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+## Segunda generación de planes Flex en IBM Cloud
+{: #flex_ibm_cloud}
 
 En el caso de los planes Flex de segunda generación de {{site.data.keyword.Bluemix_notm}}, se realiza una copia de seguridad una vez por semana y se despliega en el servicio {{site.data.keyword.Bluemix_notm}} Object Storage. Desde ahí, la copia de seguridad se duplica en varias zonas de disponibilidad. Si se produce un suceso desastroso en el centro de datos principal, nuestros operadores de servicio trabajarán con usted para generar un nuevo depósito de datos en otro centro de datos. Utilizaremos la copia de seguridad semanal que reside en el servicio {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-En el caso de planes Flex de segunda generación en Amazon Web Services, se descarga automáticamente una copia de seguridad diaria de autoservicio en AWS S3. Si está en S3, la copia de seguridad se duplica en varias regiones. Si se produce un suceso desastroso, se utiliza la copia de seguridad más reciente para restaurar el clúster en un centro de datos secundario.
+## Segunda generación de planes Flex en Servicios web de Amazon
+{: #flex_aws}
+
+En el caso de planes Flex de segunda generación en Amazon Web Services, se descarga automáticamente una copia de seguridad diaria de autoservicio en los Servicios web de Amazon S3. Si está en S3, la copia de seguridad se duplica en varias regiones. Si se produce un suceso desastroso, se utiliza la copia de seguridad más reciente para restaurar el clúster en un centro de datos secundario.
 
 ## **Brasil: Regla complementaria 14** (se aplica a sistema suministrado para el gobierno federal brasileño)
 {: #rule_14}

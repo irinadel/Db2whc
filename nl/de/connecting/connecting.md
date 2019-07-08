@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -116,9 +116,9 @@ Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.dashdbsho
 - Verbindung Ihrer {{site.data.keyword.Bluemix_short}}-Anwendungen, die eine Analysedatenbank benötigen.
 - [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
 - [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
-- [Lift ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
-- [Segment ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://segment.com/docs/destinations/db2/){:new_window}
+- [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
 - [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
 - [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
@@ -129,7 +129,7 @@ Sie können auch externe Anwendungen und Tools mit {{site.data.keyword.dashdbsho
 {: #dvis_bi}
 
 - [Cognos Analytics für Business Intelligence-Berichte zu Ihren Daten](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![Symbol für externen Link](../../../icons/launch-glyph.svg "Symbol für externen Link")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop für Geodatenanalyse und das Veröffentlichen von Karten mit Ihren Daten](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)

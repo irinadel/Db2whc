@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,4 +32,4 @@ subcollection: Db2whc
 * データベース。 管理者は、特定の表やスキーマに対するアクセスだけではなく、行や列に対するアクセスなど、データベースに対する細かいアクセス許可を付与できます。 
 
 ユーザー管理について詳しくは、以下を参照してください。 
-- [データベース・ユーザー管理![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [データベース・ユーザー管理](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

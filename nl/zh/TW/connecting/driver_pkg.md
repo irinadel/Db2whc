@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,7 @@ subcollection: Db2whc
 ## 已安裝？
 {: #alrdy_instld}
 
-若要驗證驅動程式套件是否已在您的電腦上，或若要判定版本號碼，您可以使用 [**db2level** ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window} 指令。
+若要驗證驅動程式套件是否已在您的電腦上，或若要判定版本號碼，您可以使用 [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} 指令。
 
 ## 下載
 {: #dwnldng}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -36,7 +36,7 @@ Durante un período de tiempo, las instancias de base de datos gestionadas de {{
 
 Si el valor devuelto de **IAM_ENABLED** es 1, IAM estará habilitado en la instancia.
 
-## Características de IAM de {{site.data.keyword.Bluemix_notm}}
+## Características de {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}
 
 Las siguientes características de IAM se implementan en el servicio gestionado de {{site.data.keyword.dashdbshort_notm}} con dos tipos de identidades soportadas:
@@ -47,7 +47,7 @@ El administrador de la base de datos debe añadir los usuarios con un IBMid a ca
 
 **ID de servicio**
 
-Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Los ID de servicio son ID que las aplicaciones pueden utilizar para autenticarse con un servicio de {{site.data.keyword.Bluemix_notm}}. Un ID de servicio representa una entidad individual del IBMid propietario. Por lo tanto, es posible otorgar distintas autorizaciones y permisos específicos para el ID de servicio en la base de datos. Los ID de servicio no tienen contraseñas. Es necesario crear una clave de API para cada ID de servicio para que el este se conecte a la instancia de servicio de la base de datos. Para obtener más información acerca de los ID de servicio, consulte [Introducción de {{site.data.keyword.Bluemix_notm}} ID de servicio de IAM y claves de API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window}.
+Un ID de servicio identifica un servicio o una aplicación de forma similar a cómo un ID de usuario identifica un usuario. Los ID de servicio son ID que las aplicaciones pueden utilizar para autenticarse con un servicio de {{site.data.keyword.Bluemix_notm}}. Un ID de servicio representa una entidad individual del IBMid propietario. Por lo tanto, es posible otorgar distintas autorizaciones y permisos específicos para el ID de servicio en la base de datos. Los ID de servicio no tienen contraseñas. Es necesario crear una clave de API para cada ID de servicio para que el este se conecte a la instancia de servicio de la base de datos. Para obtener más información sobre los ID de servicio, consulte: [Presentación de las claves de API y los ID de servicio de {{site.data.keyword.Bluemix_notm}} IAM](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external}.
 
 ## Conexiones de cliente e inicios de sesión de usuario
 {: #connect_login}
@@ -58,7 +58,7 @@ Es posible utilizar los métodos siguientes para la autenticación de IAM:
 
 **Señal de acceso**
 
-Se puede obtener una señal de acceso del servicio IAM directamente mediante la aplicación a través de la API REST utilizando una clave de API. Para obtener más información, consulte: [Obtención de una señal de {{site.data.keyword.Bluemix_notm}} IAM mediante una clave de API ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window}. El período de validez predeterminado de la señal de acceso antes de que caduque es de 60 minutos. Si la señal de acceso ha caducado, el servidor Db2 no permitirá que se establezca la conexión. No se comprobará la caducidad de la señal hasta que se haya establecido la conexión. Igual que antes de la integración IAM, la conexión permanecerá conectada hasta que se desconecte la aplicación o se termine la conexión debido a otras razones.
+Se puede obtener una señal de acceso del servicio IAM directamente mediante la aplicación a través de la API REST utilizando una clave de API. Para obtener más información, consulte: [Obtención de una señal {{site.data.keyword.Bluemix_notm}} IAM mediante una clave de API](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}. El período de validez predeterminado de la señal de acceso antes de que caduque es de 60 minutos. Si la señal de acceso ha caducado, el servidor Db2 no permitirá que se establezca la conexión. No se comprobará la caducidad de la señal hasta que se haya establecido la conexión. Igual que antes de la integración IAM, la conexión permanecerá conectada hasta que se desconecte la aplicación o se termine la conexión debido a otras razones.
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ Una señal de acceso identifica un usuario de IBMid o un ID de servicio en la ba
 
 **Clave de API**
 
-Es posible crear varias claves de API para cada usuario IBMid o ID de servicio. Normalmente, cada clase de API se crea para una única aplicación. Esta permite a la aplicación conectarse a la instancia de servicio de la base de datos siempre que el IBMid o ID de servicio del propietario se añada como usuario a la misma instancia de servicio de la base de datos. La clave de API tiene las mismas autorizaciones y permisos dentro de la base de datos que el IBMid o el ID de servicio del propietario. Si una aplicación ya no debería poder conectarse a la base de datos, se puede eliminar la clave de API correspondiente. Este método de autenticación requiere menos cambios en la aplicación que utilizando una señal de acceso ya que no es necesaria ninguna interacción directa con el servicio de IAM. Para obtener más información acerca de la creación y gestión de claves de API, consulte [Gestión de claves de API de usuario ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](/docs/iam?topic=iam-userapikey#userapikey){:new_window}.
+Es posible crear varias claves de API para cada usuario IBMid o ID de servicio. Normalmente, cada clase de API se crea para una única aplicación. Esta permite a la aplicación conectarse a la instancia de servicio de la base de datos siempre que el IBMid o ID de servicio del propietario se añada como usuario a la misma instancia de servicio de la base de datos. La clave de API tiene las mismas autorizaciones y permisos dentro de la base de datos que el IBMid o el ID de servicio del propietario. Si una aplicación ya no debería poder conectarse a la base de datos, se puede eliminar la clave de API correspondiente. Este método de autenticación requiere menos cambios en la aplicación que utilizando una señal de acceso ya que no es necesaria ninguna interacción directa con el servicio de IAM. Para obtener más información sobre la creación y la gestión de claves de API, consulte [Gestión de claves de API de usuario](/docs/iam?topic=iam-userapikey#userapikey){:external}.
 
 **IBMid/contraseña**
 
@@ -151,7 +151,7 @@ El ejemplo siguiente de un archivo de configuración `db2dsdriver.cfg` muestra l
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}. 
+    Para obtener información más detallada acerca de cómo conectarse a un servidor de base de datos con CLP, consulte: [Sentencia CONNECT (tipo 2)](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}. 
 
 * El mandato CONNECT de CLPPLUS puede contener una de las siguientes opciones:
 
@@ -173,7 +173,8 @@ El ejemplo siguiente de un archivo de configuración `db2dsdriver.cfg` muestra l
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    Para obtener información más detallada acerca de cómo conectarse a alias de DSN con CLPPLUS, consulte: [Alias de DSN en CLPPlus ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window}.
+    Para obtener información más detallada acerca de cómo conectarse a alias de DSN con CLPPLUS, consulte:
+[Alias de DSN en CLPPlus](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}.
 
 ### JDBC
 {: #jdbc}
@@ -281,12 +282,13 @@ La API REST de {{site.data.keyword.dashdbshort_notm}} se ha mejorado para que ta
   .
   ```
 
-Para obtener más detalles sobre la API del servicio, consulte: [API REST de {{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
+Para obtener más detalles sobre la API del servicio, consulte: [API REST de {{site.data.keyword.dashdbshort_notm}}](http://ibm.biz/db2whc_api){:external}.
 
 ## Federación de IBMid
 {: #ibmid_fed}
 
-Para utilizar su propio proveedor de identidad como, por ejemplo, LDAP, primero debe federar el servidor LDAP con IBMid. Para obtener instrucciones sobre cómo federar el servidor LDAP con IBMid, consulte [Guía de adopción de federación empresarial de IBMid ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window}. Una vez que se haya completado la federación de IBMid y que el administrador de base de datos haya añadido los usuarios con permiso a la instancia de servicio de la base de datos, los usuarios podrán iniciar sesión en la consola con el ID de usuario y la contraseña de su empresa. De forma alternativa, los usuarios pueden utilizar una señal de acceso o una clave de API que represente su ID de usuario para conectarse a la instancia de servicio de la base de datos mediante una de las interfaces de cliente de base de datos soportadas.
+Para utilizar su propio proveedor de identidad como, por ejemplo, LDAP, primero debe federar el servidor LDAP con IBMid. Para obtener instrucciones sobre cómo federar el servidor LDAP con IBMid, consulte la [Guía de adopción de federación empresarial de
+IBMid](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:external}. Una vez que se haya completado la federación de IBMid y que el administrador de base de datos haya añadido los usuarios con permiso a la instancia de servicio de la base de datos, los usuarios podrán iniciar sesión en la consola con el ID de usuario y la contraseña de su empresa. De forma alternativa, los usuarios pueden utilizar una señal de acceso o una clave de API que represente su ID de usuario para conectarse a la instancia de servicio de la base de datos mediante una de las interfaces de cliente de base de datos soportadas.
 
 ## Restricciones
 {: #restrictions}

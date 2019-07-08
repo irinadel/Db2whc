@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -145,7 +145,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 {: #proc12}
 
 Pour connaître la procédure à suivre pour connecter SAS à une base de données {{site.data.keyword.dashdbshort_notm}}, consultez la documentation SAS :
-- [Interface SAS/ACCESS à DB2 sous hôtes UNIX et PC ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
+- [Interface SAS/ACCESS à DB2 sous hôtes UNIX et PC](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## Environnement de développement R
 {: #r_dev_env}
@@ -169,7 +169,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
     
 2. Créez une connexion de pilote ODBC entre votre environnement de développement R et votre base de données {{site.data.keyword.dashdbshort_notm}} :
         
-   a. [Configuration de votre base de données en tant que source de données ODBC![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}.
+   a. [Configuration de votre base de données en tant que source de données ODBC](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}.
         
    b. Ouvrez votre environnement de développement R installé localement.
         

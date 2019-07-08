@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,4 +32,4 @@ A função de administrador de banco de dados gerencia os seguintes tipos de ace
 * Banco de dados. O administrador pode conceder permissões de acesso granular ao banco de dados, incluindo apenas ser capaz de acessar determinadas tabelas, esquemas ou mesmo linhas ou colunas. 
 
 Para obter mais informações sobre o gerenciamento de usuários, consulte: 
-- [Gerenciamento de usuários do banco de dados ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [Gerenciamento de usuários do banco de dados](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

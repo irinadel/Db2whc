@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ La méthode la plus simple pour vous connecter à votre entrepôt de données es
 
    ```
 
-   ![Accès du réseau public à {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Accès du réseau public à {{site.data.keyword.cloud_notm}}](images/public_connection.png "Représentation graphique d'une connexion d'utilisateur au cloud")
 
 ## Connexion à un noeud final privé : IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -90,7 +90,7 @@ Si vous disposez d'une application déployée sur un réseau privé situé en de
 ### Procédure de connexion à un noeud final privé à l'aide d'un réseau privé virtuel (VPN)
 {: #priv_endpt_vpn_steps}
 
-Pour établir une connexion VPN à votre entrepôt de données de cloud derrière un noeud final public, [créez un cas de support {{site.data.keyword.cloud_notm}}![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} qui inclut les détails suivants :
+Pour établir une connexion VPN à votre entrepôt de données de cloud derrière un noeud final public, [créez un cas de support {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} qui inclut les détails suivants :
 
 * **Type de support** : Technique 
 * **Catégorie** : Bases de données 
@@ -124,4 +124,4 @@ Pour établir une connexion VPN à votre entrepôt de données de cloud derrièr
 
 Une fois votre demande reçue, les techniciens {{site.data.keyword.cloud_notm}} ouvrent les ports de pare-feu appropriés et placent en liste blanche l'adresse IP fournie. Vous êtes informé de l'avancée et de la résolution de votre demande par le biais du ticket de cas de support {{site.data.keyword.cloud_notm}}.
 
-![Accès du réseau public à {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Accès du réseau public à {{site.data.keyword.cloud_notm}} via une connexion VPN](images/public_connection_vpn.png "Représentation graphique d'une connexion d'utilisateur au cloud")

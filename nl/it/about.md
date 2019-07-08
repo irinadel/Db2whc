@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -51,7 +51,7 @@ Puoi analizzare e visualizzare la tua analisi collegandoti alle seguenti applica
 
 - [Watson Studio (in precedenza Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
 - [Cognos Analytics](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
 - [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)

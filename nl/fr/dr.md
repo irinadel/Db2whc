@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,11 +32,20 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 La stratégie de reprise après incident dépend du type de plan et de la génération d'entrepôt de données que vous effectuez actuellement.
 {: shortdesc}
 
+## Première génération des plans SMP Small, Medium, Large et MPP Small
+{: #sml_mpp}
+
 Pour la première génération des plans SMP Small, Medium, Large et MPP Small, une sauvegarde est effectuée une fois par jour et déployée dans le service {{site.data.keyword.Bluemix_notm}} Object Storage. Ensuite, la sauvegarde est répliquée dans plusieurs zones de disponibilité. Si un événement catastrophique se produit sur le centre de données principal, nos opérateurs de service vous aideront à mettre en place un nouvel entrepôt de données dans un autre centre de données. Pour ce faire, ils utiliseront la sauvegarde quotidienne qui se trouve sur le service {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+## Seconde génération des plans Flex sur IBM Cloud
+{: #flex_ibm_cloud}
 
 Pour la seconde génération des plans Flex sur {{site.data.keyword.Bluemix_notm}}, une sauvegarde est effectuée une fois par semaine et déployée dans le service {{site.data.keyword.Bluemix_notm}} Object Storage. Ensuite, la sauvegarde est répliquée dans plusieurs zones de disponibilité. Si un événement catastrophique se produit sur le centre de données principal, nos opérateurs de service vous aideront à mettre en place un nouvel entrepôt de données dans un autre centre de données. Pour ce faire, ils utiliseront la sauvegarde hebdomadaire qui se trouve sur le service {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-Pour la seconde génération des plans Flex sur Amazon Web Services, une sauvegarde quotidienne en libre-service est automatiquement déchargée sur AWS S3. En S3, la sauvegarde est répliquée dans plusieurs régions. Si un événement catastrophique se produit, la dernière sauvegarde est utilisée pour restaurer votre cluster dans un centre de données secondaire.
+## Seconde génération des plans Flex plans sur Amazon Web Services
+{: #flex_aws}
+
+Pour la seconde génération des plans Flex sur Amazon Web Services, une sauvegarde quotidienne en libre-service est automatiquement déchargée sur Amazon Web Services S3. En S3, la sauvegarde est répliquée dans plusieurs régions. Si un événement catastrophique se produit, la dernière sauvegarde est utilisée pour restaurer votre cluster dans un centre de données secondaire.
 
 ## **Brésil : règle supplémentaire n°14** (s'applique aux systèmes mis à disposition pour le gouvernement fédéral brésilien)
 {: #rule_14}

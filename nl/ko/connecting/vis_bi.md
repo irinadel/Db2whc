@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -37,7 +37,7 @@ subcollection: Db2whc
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Cognos Analytics에서 연결 작성" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-자세한 정보는 [Cognos Analytics 연결 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}을 참조하십시오.
+자세한 정보는 [Cognos Analytics 연결](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}을 참조하십시오.
 
 ## Looker
 {: #looker}
@@ -45,7 +45,7 @@ subcollection: Db2whc
 Looker를 {{site.data.keyword.dashdbshort_notm}} 데이터베이스에 연결할 수 있습니다. Looker는 실시간 비즈니스 분석을 탐색, 분석 및 공유하는 데 사용되는 비즈니스 인텔리전스 앱이자 빅데이터 분석 플랫폼입니다.
 {: shortdesc}
 
-[Looker 연결 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Looker 연결](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -115,8 +115,8 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 로컬 컴
 {: #results2}
 
 Excel 스프레드시트에 조회 결과가 표시됩니다. 결과 표시기에 표시되는 결과와 동일한 결과가 표시됩니다. 이제 차트 및 보고서를 생성하고 Excel을 사용하여 데이터를 분석할 수 있습니다. 이를 수행하는 방법과 웹 콘솔에서 데이터에 대한 SQL 조회를 실행하는 방법에 대한 자세한 정보는 다음을 참조하십시오. 
-- [튜토리얼: Excel을 사용하여 차트 및 보고서 생성 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Excel을 사용하여 분석 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [튜토리얼: Excel을 사용하여 차트 및 보고서 생성](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Excel을 사용하여 분석](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
@@ -149,7 +149,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터�
      FET_BUF_SIZE=256K  
      ```
 
-     여기서 `<hostname>`, `<port>`, `<database>`는 이전에 언급한 호스트 이름, 포트 번호 및 데이터베이스 이름을 나타내는 플레이스홀더입니다. 
+     여기서 `<hostname>`, `<port>`, `<database>`는 이전에 언급한 호스트 이름, 포트 번호 및 데이터베이스 이름을 나타내는 플레이스홀더입니다.
             
    - 인증 유형으로 **데이터베이스 인증**을 선택하십시오.
             
@@ -157,7 +157,7 @@ Db2 드라이버 패키지 또는 IBM® Data Server Driver Package가 컴퓨터�
             
    - **확인**을 누르십시오.
         
-     ![데이터베이스 연결 마법사](images/2_gs_conn.jpg)
+     ![데이터베이스 연결 마법사](images/2_gs_conn.jpg "데이터베이스 연결 마법사")
 
 ### 결과
 {: #results3}

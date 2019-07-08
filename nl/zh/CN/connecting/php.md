@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ subcollection: Db2whc
 
 1. 通过 Web 控制台下载 [Db2 驱动程序包](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)，然后在将运行 PHP 应用程序的机器上安装该驱动程序包。
                 
-2. 使用 [`odbc_connect` 函数 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://php.net/manual/en/function.odbc-connect.php){:new_window} 连接到 BLUDB 数据库。
+2. 使用 [`odbc_connect` 函数](http://php.net/manual/en/function.odbc-connect.php){:external}连接到 BLUDB 数据库。
     
    PHP 代码示例：
 
@@ -110,7 +110,7 @@ subcollection: Db2whc
         
 3. 在 {{site.data.keyword.Bluemix_notm}}“仪表板”中，创建从 Db2 服务到新 PHP 应用程序的新连接。（在 {{site.data.keyword.Bluemix_notm}} 中创建此连接将使 `VCAP_SERVICES` 环境变量可供 PHP 应用程序使用。`VCAP_SERVICES` 环境变量包含 Db2 服务的数据库详细信息。与在 PHP 应用程序中对数据库详细信息进行硬编码相比，使用 `VCAP_SERVICES` 更方便。）
         
-4. 在本地工作目录中，将 `index.php` 文件更新为使用 [`db2_connect` 函数 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://php.net/manual/en/function.db2-connect.php){:new_window} 连接到 BLUDB 数据库。
+4. 在本地工作目录中，将 `index.php` 文件更新为使用 [`db2_connect` 函数](http://php.net/manual/en/function.db2-connect.php){:external}连接到 BLUDB 数据库。
         
    示例：
 

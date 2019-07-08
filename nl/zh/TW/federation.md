@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -124,6 +124,6 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 ## 其他資訊
 
-如需資料虛擬化（聯合）的相關資訊，請參閱 [Federation ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
+如需資料虛擬化（聯合）的相關資訊，請參閱：[Federation](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}。
 
-如需聯合所支援的資料來源相關資訊，請參閱 [Federation Supported Data Sources ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}。
+如需聯合所支援的資料來源相關資訊，請參閱：[Federation Supported Data Sources](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}。

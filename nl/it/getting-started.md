@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 Il servizio gestito {{site.data.keyword.dashdblong}} è un database SQL di cui viene eseguito il provisioning nel cloud per te. Puoi utilizzare il warehouse Db2 come useresti qualsiasi software database ma senza dover sostenere il carico di lavoro e i costi necessari per la configurazione dell'hardware o l'installazione e la manutenzione del software. 
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## Versione di prova gratuita
 {: #freetrial}
 
-Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+Puoi provare il piano d'ingresso {{site.data.keyword.dashdbshort_notm}} con un massimo di 1 GB di archiviazione senza addebiti. [Versione di prova gratuita](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Interfacce
 {: #interfaces}
@@ -54,9 +57,9 @@ Puoi lavorare con il tuo database warehouse nei seguenti modi:
 La console web fornisce un'interfaccia grafica per tutto quello che ti serve per utilizzare il tuo database, tra cui: funzionalità di carico, un editor SQL, dei download di driver e altro ancora.
 {: shortdesc}
 
-![Vista della pagina del dashboard della console web](images/console_v3.png)
+![Vista della pagina del dashboard della console web](images/uc.png "La console web si apre alla pagina del dashboard")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 Puoi accedere alla tua console web nei seguenti modi:
    * Dal tuo dashboard {{site.data.keyword.Bluemix_notm}} - puoi aprire la console web dalla pagina Dettagli del servizio per il tuo servizio {{site.data.keyword.dashdbshort_notm}}.
@@ -65,7 +68,7 @@ Puoi accedere alla tua console web nei seguenti modi:
 ### API REST
 {: #api}
 
-Con i piani del servizio {{site.data.keyword.dashdbshort_notm}}, puoi eseguire le attività correlate alla gestione dei file e al caricamento dei dati utilizzando l'[API REST {{site.data.keyword.dashdbshort_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://ibm.biz/db2whc_api){:new_window}.
+Con i piani del servizio {{site.data.keyword.dashdbshort_notm}}, puoi eseguire le attività correlate alla gestione dei file e al caricamento dei dati utilizzando l'[API REST {{site.data.keyword.dashdbshort_notm}}](http://ibm.biz/db2whc_api){:external}.
 {: shortdesc}
 
 ### Connetti le applicazioni o i tuoi strumenti preferiti dal tuo computer locale

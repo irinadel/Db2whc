@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Virtualização de dados (federação)
 {: #data_virt_fed}
 
-A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.dashdbshort_notm}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma de suas origens de dados do Db2 ou Informix, tanto na nuvem quanto no local. 
+A virtualização de dados do Db2 (também conhecida como federação) é suportada pelo {{site.data.keyword.dashdbshort_notm}}. A virtualização de dados fornece acesso de consulta única a todos os seus dados que estão em múltiplos bancos de dados distribuídos em qualquer lugar em sua organização. É possível acessar dados que estão em qualquer uma de suas origens de dados do Db2 ou Informix, tanto na nuvem quanto no local.
 {: shortdesc}
 
 Essa função é suportada em todas as versões do {{site.data.keyword.dashdbshort_notm}}, exceto para o plano de Entrada. No entanto, é possível usar o plano de Entrada como um destino do qual é possível puxar dados.
@@ -124,6 +124,6 @@ No console de {{site.data.keyword.dashdbshort_notm}}:
 
 ## Informações Adicionais
 
-Para obter mais informações sobre virtualização de dados (federação), veja: [Federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Para obter mais informações sobre virtualização de dados (federação), veja: [Federação](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-Para obter informações sobre as origens de dados suportadas pela federação, veja: [Origens de dados suportadas da federação ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo") ](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Para obter informações sobre as origens de dados suportadas pela federação, veja: [Origens de dados suportadas pela federação](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} マネージド・サービスは、クラウド内でプロビジョンされた SQL データベースです。 任意のデータベース・ソフトウェアを使用するのと同じように Db2 ウェアハウスを使用できますが、ハードウェアのセットアップやソフトウェアのインストールおよび保守のためのオーバーヘッドもコストもかかりません。 
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## 無料トライアル
 {: #freetrial}
 
-ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+ストレージが 1 GB までの {{site.data.keyword.dashdbshort_notm}} エントリー・プランを無料で試用できます。 [無料トライアル](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## インターフェース
 {: #interfaces}
@@ -54,9 +57,9 @@ subcollection: Db2whc
 Web コンソールは、ロード機能、SQL エディター、ドライバー・ダウンロードなど、データベースを使用するために必要なすべての操作を実行できるグラフィカル・インターフェースです。
 {: shortdesc}
 
-![Web コンソールのダッシュボード・ページの表示](images/console_v3.png)
+![Web コンソール・ダッシュボード・ページの表示](images/uc.png "Web コンソールがダッシュボード・ページに開いている")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 以下の方法で、Web コンソールにアクセスできます。
    * {{site.data.keyword.Bluemix_notm}} ダッシュボードから - {{site.data.keyword.dashdbshort_notm}} サービスの「サービス詳細」ページから Web コンソールを開くことができます。
@@ -65,7 +68,7 @@ Web コンソールは、ロード機能、SQL エディター、ドライバー
 ### REST API
 {: #api}
 
-{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理およびデータのロードに関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2whc_api){:new_window} を使用して実行できます。
+{{site.data.keyword.dashdbshort_notm}} サービス・プランでは、ファイル管理およびデータのロードに関連するタスクを、[{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external} を使用して実行できます。
 {: shortdesc}
 
 ### ローカル・コンピューターからアプリケーションまたは任意のツールを接続する

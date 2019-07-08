@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
 1. Scarica il [pacchetto del driver Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) dalla console web e installalo sulla macchina in cui verrà eseguita la tua applicazione PHP.
                 
-2. Utilizza la funzione [`odbc_connect` ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://php.net/manual/en/function.odbc-connect.php){:new_window} per il collegamento al database BLUDB.
+2. Utilizza la [funzione `odbc_connect`](http://php.net/manual/en/function.odbc-connect.php){:external} per stabilire una connessione al database BLUDB.
     
    Esempio di codice PHP:
 
@@ -107,9 +107,9 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
         
 2. Dalla sezione "Getting Started" della nuova applicazione PHP nel tuo dashboard {{site.data.keyword.Bluemix_notm}}, scarica il codice starter dell'applicazione nella tua directory di lavoro locale.
         
-3. Nel tuo dashboard {{site.data.keyword.Bluemix_notm}}, crea una nuova connessione dal tuo servizio Db2 alla tua nuova applicazione PHP. (La creazione di questa connessione in {{site.data.keyword.Bluemix_notm}} rende la variabile di ambiente `VCAP_SERVICES` disponibile per la tua applicazione PHP. La variabile di ambiente `VCAP_SERVICES` contiene i dettagli del database per il tuo servizio Db2. L'utilizzo di `VCAP_SERVICES` è più conveniente rispetto a impostare i dettagli del database come hardcoded nella tua applicazione PHP.)
+3. Nel tuo dashboard {{site.data.keyword.Bluemix_notm}}, crea una nuova connessione dal tuo servizio Db2 alla tua nuova applicazione PHP. (La creazione di questa connessione in {{site.data.keyword.Bluemix_notm}} rende la variabile di ambiente `VCAP_SERVICES` disponibile per la tua applicazione PHP. La variabile di ambiente `VCAP_SERVICES` contiene i dettagli del database per il tuo servizio Db2. L'utilizzo di `VCAP_SERVICES` è più conveniente rispetto a impostare i dettagli del database come hardcoded nella tua applicazione PHP).
         
-4. Nella tua directory di lavoro locale, aggiorna il file `index.php` per collegarsi al database BLUDB utilizzando la funzione [`db2_connect` ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
+4. Nella tua directory di lavoro locale, aggiorna il file `index.php` per stabilire una connessione al database BLUDB utilizzando la funzione [`db2_connect`](http://php.net/manual/en/function.db2-connect.php){:external}.
         
    Esempio:
 

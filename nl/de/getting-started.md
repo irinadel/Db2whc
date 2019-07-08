@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 Beim verwalteten {{site.data.keyword.dashdblong}}-Service handelt es sich um eine SQL-Datenbank, die für Sie in der Cloud bereitgestellt wird. Sie können Db2 Warehouse wie jede andere Datenbanksoftware verwenden, der Aufwand und die Kosten für die Hardwareeinrichtung sowie die Softwareinstallation und -verwaltung fallen jedoch weg. 
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## Kostenfreier Test
 {: #freetrial}
 
-Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+Sie können den Einstiegsplan für {{site.data.keyword.dashdbshort_notm}} mit bis zu 1 GB Speicher kostenfrei testen. [Kostenfreier Test](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Schnittstellen
 {: #interfaces}
@@ -54,9 +57,9 @@ Für die Arbeit mit der Warehousedatenbank stehen Ihnen die folgenden Möglichke
 Die Webkonsole bietet eine grafische Schnittstelle für alle Funktionen, die Sie für die Verwendung der Datenbank benötigen. Hierzu gehören z. B. Ladefunktionen, ein SQL-Editor, Treiberdownloads usw.
 {: shortdesc}
 
-![Ansicht der Dashboardseite der Webkonsole](images/console_v3.png)
+![Ansicht der Dashboardseite mit der Webkonsole](images/uc.png "Webkonsole wird auf der Dashboardseite geöffnet")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 Für den Zugriff auf die Webkonsole stehen Ihnen die folgenden Möglichkeiten zur Verfügung:
    * Über das {{site.data.keyword.Bluemix_notm}}-Dashboard - Sie können die Webkonsole über die Servicedetailseite für Ihren {{site.data.keyword.dashdbshort_notm}}-Service öffnen.
@@ -65,7 +68,7 @@ Für den Zugriff auf die Webkonsole stehen Ihnen die folgenden Möglichkeiten zu
 ### REST-API
 {: #api}
 
-Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien und dem Laden von Daten ausführen, indem Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://ibm.biz/db2whc_api){:new_window} verwenden.
+Mit {{site.data.keyword.dashdbshort_notm}}-Serviceplänen können Sie Tasks im Zusammenhang mit dem Verwalten von Dateien und dem Laden von Daten ausführen, wobei Sie die [{{site.data.keyword.dashdbshort_notm}}-REST-API](http://ibm.biz/db2whc_api){:external} verwenden.
 {: shortdesc}
 
 ### Herstellen einer Verbindung für Anwendungen oder bevorzugte Tools vom lokalen Computer
@@ -79,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um die lokale Umgebung für die Verbindu
    - [Installation unter Linux oder PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
    - [Installation unter Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
    - [Installation unter Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
-3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) für Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank. 
+3. [Konfigurieren Sie die Treiberdateien](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) für Ihre {{site.data.keyword.dashdbshort_notm}}-Datenbank.
 
 ### Verwenden von Db2 Warehouse on Cloud als Datenquelle für {{site.data.keyword.Bluemix_notm}}-Apps oder -Services
 {: #data_src}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ subcollection: Db2whc
 
    ```
 
-   ![{{site.data.keyword.cloud_notm}} へのパブリック・ネットワーク・アクセス](images/public_connection.png)
+   ![{{site.data.keyword.cloud_notm}} へのパブリック・ネットワーク・アクセス](images/public_connection.png "ユーザーのクラウド接続へのグラフィカル表現")
 
 ## プライベート・エンドポイントへの接続: IBM Cloud サービス・エンドポイント
 {: #priv_endpt}
@@ -90,7 +90,7 @@ subcollection: Db2whc
 ### VPN を使用したプライベート・エンドポイントへの接続方法
 {: #priv_endpt_vpn_steps}
 
-パブリック・エンドポイントの背後にあるクラウド・データウェアハウスへの VPN 接続を確立するには、以下の詳細を含む [{{site.data.keyword.cloud_notm}} サポート Case を作成します![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window}。
+パブリック・エンドポイントの背後にあるクラウド・データウェアハウスへの VPN 接続を確立するには、以下の詳細を含む [{{site.data.keyword.cloud_notm}} サポート Case を作成します](https://cloud.ibm.com/unifiedsupport/cases/add){:external}。
 
 * **サポート・タイプ (Type of support)**: 技術的 (Technical) 
 * **カテゴリー (Category)**: データベース (Databases) 
@@ -124,4 +124,4 @@ subcollection: Db2whc
 
 要求を受け取ると、{{site.data.keyword.cloud_notm}} 技術者は適切なファイアウォール・ポートを開き、指定された IP アドレスをホワイトリストに登録します。 要求に関するコミュニケーションや解決は、{{site.data.keyword.cloud_notm}} サポート Case チケットを使用して行われます。
 
-![{{site.data.keyword.cloud_notm}} へのパブリック・ネットワーク・アクセス](images/public_connection_vpn.png)
+![VPN を介した {{site.data.keyword.cloud_notm}} へのパブリック・ネットワーク・アクセス](images/public_connection_vpn.png "ユーザーのクラウド接続へのグラフィカル表現")

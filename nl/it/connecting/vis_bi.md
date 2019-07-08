@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -39,7 +39,7 @@ Guarda questo video per vedere come creare una connessione.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-Per ulteriori informazioni, consulta [Connecting Cognos Analytics ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+Per ulteriori informazioni, vedi [Connessione di Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
 
 ## Looker
 {: #looker}
@@ -47,7 +47,7 @@ Per ulteriori informazioni, consulta [Connecting Cognos Analytics ![Icona link e
 Puoi collegare Looker a un database {{site.data.keyword.dashdbshort_notm}}. Looker è un'applicazione di business intelligence e una piattaforma di analisi big data con cui puoi esplorare, analizzare e condividere le analisi di business in tempo reale.
 {: shortdesc}
 
-[Connecting Looker ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Connecting Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -117,8 +117,8 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
 {: #results2}
 
 I risultati della query vengono visualizzati in un foglio di calcolo Excel. Questi sono gli stessi risultati visualizzati nel visualizzatore dei risultati. Ora puoi generare grafici e report e analizzare i tuoi dati utilizzando Excel. Per ulteriori informazioni su come eseguire questa attività e su come eseguire le query SQL sui tuoi dati dalla console web, consulta: 
-- [Tutorial: Generating charts and reports by using Excel ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Analyzing with Excel ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [Tutorial: Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analyzing with Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
@@ -151,7 +151,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
      FET_BUF_SIZE=256K  
      ```
 
-     dove `<hostname>`, `<port>` e `<database>` sono segnaposto che rappresentano il nome host, il numero di porta e il nome del database che hai annotato in precedenza. 
+     dove `<hostname>`, `<port>` e `<database>` sono segnaposto che rappresentano il nome host, il numero di porta e il nome del database che hai annotato in precedenza.
             
    - Seleziona **Database authentication** come tipo di autenticazione.
             
@@ -159,7 +159,7 @@ Devi disporre del pacchetto del driver Db2 o IBM® Data Server installato sul tu
             
    - Premi **OK**.
         
-     ![Procedura guidata Database Connections](images/2_gs_conn.jpg)
+     ![Procedura guidata Database Connections](images/2_gs_conn.jpg "Procedura guidata Database Connections")
 
 ### Risultati
 {: #results3}

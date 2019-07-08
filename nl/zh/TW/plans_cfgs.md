@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-03-15"
+lastupdated: "2019-06-05"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,28 +34,30 @@ subcollection: Db2whc
    * 針對高可用性配置的方案
    * Oracle 相容性
 
-檢視 [{{site.data.keyword.Bluemix}} 型錄](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}中所有可用的 {{site.data.keyword.dashdbshort_notm}} 方案。
-<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
-<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
+檢視 [{{site.data.keyword.Bluemix}} 型錄](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}中所有可用的 {{site.data.keyword.dashdbshort_notm}} 方案。
+<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:external} -->
+<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:external} -->
 
 觀看此視訊，以查看「{{site.data.keyword.dashdbshort_notm}} 彈性效能」方案的簡介。
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-您可以要求將 {{site.data.keyword.dashdbshort_notm}} 服務部署在網路隔離的 {{site.data.keyword.Bluemix}} 環境。請與 [{{site.data.keyword.IBM_notm}} 業務 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} 聯絡。
+您可以要求將 {{site.data.keyword.dashdbshort_notm}} 服務部署在網路隔離的 {{site.data.keyword.Bluemix}} 環境。請與 [{{site.data.keyword.IBM_notm}} 業務](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}聯絡。
 
 
-如果您在型錄中看不到所需要的配置，請與 [{{site.data.keyword.IBM_notm}} 銷售人員 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} 聯絡，來討論其他選項。
+如果您在型錄中看不到所需要的配置，請與 [{{site.data.keyword.IBM_notm}} 銷售人員](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}聯絡，來討論其他選項。
 
-## 資料中心內方案的可用性
+## IBM Cloud 資料中心內方案的可用性
 {: #availability}
 
-下表提供各種 {{site.data.keyword.dashdbshort_notm}} 方案可用性的相關資訊，依位於地理區域中的資料中心排列：
+下表提供各種 {{site.data.keyword.dashdbshort_notm}} 方案可用性的相關資訊，依位於地理區域中的 IBM Cloud 資料中心排列：
 
 | {{site.data.keyword.dashdbshort_notm}} 方案| 亞太地區 | 歐洲    | 北美洲/中美洲     | 南美洲 |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| 彈性                         | 東京        | 法蘭克福 | 華盛頓特區（美國東部）| *NA           |
+|彈性 / 彈性效能| 東京        | 法蘭克福 | 華盛頓特區（美國東部）| *NA           |
 |                              |              |           | 達拉斯（美國南部）         |               |  
+|      |||||
+| Flex One                     | *NA          | *NA           | 達拉斯（美國南部）         | *NA           |
 |      |||||
 | SMP                          | 香港    | 阿姆斯特丹 | 華盛頓特區（美國東部）| 聖保羅     |
 |                              | 首爾        | 法蘭克福 | 達拉斯（美國南部）         |               | 
@@ -70,9 +72,26 @@ subcollection: Db2whc
 |                              | 雪梨       | 米蘭     | 克雷塔羅                 |               | 
 |                              | 東京        | 奧斯陸      | 多倫多                   |               | 
 |                              |              | 巴黎     |                           |               |
-{: caption="表 1. 支援 Db2 Warehouse on Cloud 服務方案的資料中心" caption-side="top"}
+{: caption="表 1. 支援 Db2 Warehouse on Cloud 服務方案的 IBM Cloud 資料中心" caption-side="top"}
 
 *NA = 目前無法使用
+
+## Amazon Web Services 資料中心內方案的可用性
+{: #availability_aws}
+
+下表提供各種 {{site.data.keyword.dashdbshort_notm}} 方案可用性的相關資訊，依位於地理區域中的 Amazon Web Services 資料中心排列：
+
+| {{site.data.keyword.dashdbshort_notm}} 方案| 亞太地區 | 歐洲    | 北美洲/中美洲     | 南美洲 |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| 彈性                         | 雪梨       | 法蘭克福 |北維吉尼亞州| *NA           |
+|                              | 新加坡    | 倫敦    |             |               |  
+|      |||||
+| 彈性效能  | 雪梨       | 法蘭克福 |北維吉尼亞州| *NA           |
+|                              | 新加坡    | 倫敦    |             |               | 
+{: caption="表 2. 支援 Db2 Warehouse on Cloud 服務方案的 Amazon Web Services 資料中心" caption-side="top"}
+
+*NA = 目前無法使用
+
 
 ## 入門方案限制
 {: #ep_restrictions}
@@ -102,4 +121,4 @@ subcollection: Db2whc
 |  | 歐盟一般資料保護規範 (GDPR) |無適用的特定限制|
 |  |  |
 |帳戶管理|重新啟動|無重新啟動需求|
-{: caption="表 1. {{site.data.keyword.dashdbshort_notm}} 入門方案限制" caption-side="top"}
+{: caption="表 3. {{site.data.keyword.dashdbshort_notm}} 入門方案限制" caption-side="top"}

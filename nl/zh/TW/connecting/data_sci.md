@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -144,7 +144,7 @@ subcollection: Db2whc
 {: #proc12}
 
 如需如何從 SAS 連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫的步驟，請參閱 SAS 文件：
-- [UNIX 及 PC 主機下 Db2 的 SAS/ACCESS 介面 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
+- [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## R 開發環境
 {: #r_dev_env}
@@ -168,7 +168,7 @@ subcollection: Db2whc
     
 2. 在 R 開發環境與 {{site.data.keyword.dashdbshort_notm}} 資料庫之間建立 ODBC 驅動程式連線：
         
-   a. [將資料庫設為 ODBC 資料來源 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}。
+   a. [設定資料庫作為 ODBC 資料來源](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}。
         
    b. 開啟本端安裝的 R 開發環境。
         

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,4 +32,4 @@ Il ruolo di amministratore del database gestisce i seguenti tipi di accesso uten
 * Database. L'amministratore può concedere le autorizzazioni di accesso granulari al database, incluso l'essere solo in grado di accedere a determinate tabelle, schemi o addirittura righe o colonne. 
 
 Per ulteriori informazioni sulla gestione utente, consulta: 
-- [Database user management ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [Database user management](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

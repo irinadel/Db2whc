@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -40,9 +40,9 @@ subcollection: Db2whc
 外部テーブルを使用してデータを {{site.data.keyword.dashdbshort_notm}} にロードできるように、DataStage を最新のバージョンに更新することを強くお勧めします。
 {: important}
 
-まだデータ・サーバー・クライアントをインストールしていない場合は、ご使用のクライアント・マシンのオペレーティング・システムに適切な IBM Data Server Client <!--Version 10.5 --> をダウンロードしてインストールします。 [IBM Data Server Client ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
+まだデータ・サーバー・クライアントをインストールしていない場合は、ご使用のクライアント・マシンのオペレーティング・システムに適切な IBM Data Server Client <!--Version 10.5 --> をダウンロードしてインストールします。[IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}
 
-SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} で、ご使用のクライアント・マシンのオペレーティング・システムに該当する OS タブをクリックします。 以下の各オペレーティング・システムについて、GSKit インストール・ディレクトリー・パスを OS 固有の PATH 環境変数に追加していることを確認してください。
+SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external} で、ご使用のクライアント・マシンのオペレーティング・システムに該当する OS タブをクリックします。以下の各オペレーティング・システムについて、GSKit インストール・ディレクトリー・パスを OS 固有の PATH 環境変数に追加していることを確認してください。
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -161,8 +161,8 @@ SSL プロトコルを使用して接続するには、32 ビットの GSKit V8 
 
      DataStage での接続の定義について詳しくは、以下の DataStage 資料のトピックを参照してください。 
      
-     - [データ接続オブジェクトの手動作成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
-     - [Db2 データベースへのアクセスの構成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
+     - [データ接続オブジェクトの手動作成](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
+     - [DB2データベースへのアクセスの構成](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
 
 ## Informatica
 {: #informatica}
@@ -205,14 +205,14 @@ The ODBC Data Sources Administrator dialog box appears.
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Integrate Db2 and Salesforce with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/watch?v=RGTLweZvKP8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-<!-- [Informatica ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:new_window} -->
+<!-- [Informatica](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:external} -->
 
 ## Lift
 {: #lift}
 
 Lift を使用して、データを {{site.data.keyword.dashdbshort_notm}} にマイグレーションします。
 
-[Lift ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -230,7 +230,7 @@ IBM InfoSphere Data Replication を {{site.data.keyword.dashdbshort_notm}} に�
 ### 前提条件
 {: #prereq2}
 
-SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window} を参照してください。 ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
+SSL プロトコルを使用して接続しようとしている場合は、GSKit V8 をダウンロードしてインストールします。 [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external} を参照してください。ご使用のクライアント・マシンのオペレーティング・システムに適用するオペレーティング・システム・タブをクリックします。 GSKit を Windows コンピューターにインストールしようとしている場合は、**`PATH`** 環境変数に GSKit インストール・ディレクトリー・パス (`<installation_directory>\gsk8\bin`) を指定していることを確認してください。
 
 {{site.data.keyword.dashdbshort_notm}} データベースへの接続を試行する前に、必要な[前提条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)を満たしていることを確認します。
 
@@ -335,42 +335,42 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
         
    a. **「インスタンス構成」**タブを使用して、ソース・データベースを指すソース・インスタンスを追加します。
 
-   ![IIDR 新規インスタンス - ソース・インスタンス](images/IIDR_source_instance.jpg)
+   ![IIDR 新規インスタンス - ソース・インスタンス](images/IIDR_source_instance.jpg "ソース・インスタンス構成")
 
    b. **「インスタンス構成」**タブを使用して、ターゲットの Db2 データベースを指すターゲット・インスタンスを追加します。 IBM InfoSphere Data Replication 11.3.3.3-50 以降を使用していない場合は、**「リフレッシュ・ローダー・パスの指定」**チェック・ボックスを選択しないでください。
 
-   ![IIDR 新規インスタンス - ターゲット・インスタンス](images/IIDR_target_instance.jpg)
+   ![IIDR 新規インスタンス - ターゲット・インスタンス](images/IIDR_target_instance.jpg "ターゲット・インスタンス構成")
 
    c. 各インスタンスを開始します。
 
-   ![IIDR 構成ツール](images/IIDR_instances.jpg)
+   ![IIDR 構成ツール](images/IIDR_instances.jpg "IIDR 構成ツール。ソース・インスタンスとターゲット・インスタンスをリストしている")
 
 3. InfoSphere Data Replication 管理コンソールを起動し、アクセス・マネージャーを使用して次の手順を実行します。
         
    a. **「データ・ストア」**タブを使用して、ソース・インスタンスに接続するデータ・ストアを作成します。 Db2 データベースはもともとソース・データベースとしてサポートされていないので、**「接続パラメーター」**をクリックして、ソース・データベースのユーザーとパスワードの情報を入力しなければなりません。
 
-   ![データ・ストア・プロパティー - ソース](images/IIDR_source_datastore.jpg)
+   ![データ・ストア・プロパティー - ソース](images/IIDR_source_datastore.jpg "ソース・データ・ストア・プロパティー")
 
    b. **「データ・ストア」**タブを使用して、ターゲット・インスタンスに接続するデータ・ストアを作成します。 **「接続パラメーター」**をクリックして、ユーザーとパスワードの情報を入力しなければなりません。
 
-   ![データ・ストア・プロパティー - ターゲット](images/IIDR_target_datastore.jpg)
+   ![データ・ストア・プロパティー - ターゲット](images/IIDR_target_datastore.jpg "ターゲット・データ・ストア・プロパティー")
 
    c. Access Server に接続するユーザー (admin など) がいない場合は、それを行うユーザーを作成します。
 
-   ![新規ユーザー](images/IIDR_management_user.jpg)
+   ![新規ユーザー](images/IIDR_management_user.jpg "新規ユーザー作成ツール")
 
    d. **「アクセス・マネージャー」**タブをクリックします。
         
    e. **「データ・ストアの管理」**タブで、各データ・ストアを右クリックしてから**「ユーザーの割り当て」**をクリックして、ユーザーをソースとターゲットの両方のデータ・ストアに割り当てます。 各インスタンスにアクセスするための資格情報が正しいことを確認してください。
 
-   ![IIDR 管理コンソール - アクセス・マネージャー](images/IIDR_management_assign_user.jpg)
+   ![IIDR 管理コンソール - アクセス・マネージャー](images/IIDR_management_assign_user.jpg "アクセス・マネージャー・コンソール")
 
 ### 次の作業
 {: #what2}
 
 サブスクリプションを定義して、データのレプリケーションを実行します。 詳しくは、以下を参照してください。
 
-- [InfoSphere Data Replication からのデータのロード ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:new_window} 
+- [InfoSphere Data Replication からのデータのロード](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
 
 ## Segment
 {: #segment}
@@ -378,7 +378,7 @@ SSL プロトコルを使用して接続しようとしている場合は、Web 
 Segment を {{site.data.keyword.dashdbshort_notm}} データベースに統合することができます。 Segment は、ユーザー・データを収集し、保管し、多数のツールに経路指定する単一プラットフォームです。
 {: shortdesc}
 
-[Segment ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://segment.com/docs/destinations/db2/){:new_window}
+[Segment](https://segment.com/docs/destinations/db2/){:external}
 
 ## Data Studio
 {: #data_studio}
@@ -431,7 +431,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
     
 2. Data Server Manager の Web コンソールで、**「セットアップ」>「データベース接続」**に移動します。
     
-3. ![円の中の + 符号](images/icon_R_plus.gif) アイコンをクリックして、データベース接続を追加します。 **「データベース接続」**タブの下の**「データベース接続の追加」**ページで、以下のフィールドに必要な情報を入力します。
+3. ![円の中に + 符号](images/icon_R_plus.gif "追加アイコン") アイコンをクリックして、データベース接続を追加します。**「データベース接続」**タブの下の**「データベース接続の追加」**ページで、以下のフィールドに必要な情報を入力します。
 
    - *データベース接続名*: この名前は、Data Server Manager にとって固有でなければなりません。
    - *データ・サーバー・タイプ*: ドロップダウン・メニューから**「DB2 for Linux, UNIX, and Windows」**を選択します。
@@ -501,7 +501,7 @@ IBM® Data Server Manager と {{site.data.keyword.dashdbshort_notm}} データ�
 
 3. Aginity Workbench を起動します。 データベース接続ダイアログ・ボックスが自動的に開かない場合は、ツールバーの**「接続」**をクリックして開きます。
 
-4. [データベース接続を確立します ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}。 前もって記録しておいた接続情報にあるホスト名、ユーザー ID、およびパスワードを使用します。
+4. [データベース接続を確立します](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}。前もって記録しておいた接続情報にあるホスト名、ユーザー ID、およびパスワードを使用します。
 
 ## CLPPlus
 {: #clpplus}

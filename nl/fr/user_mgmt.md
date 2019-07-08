@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,4 +32,4 @@ L'administrateur de base de données gère les types suivants d'accès utilisate
 * Base de données : l'administrateur peut accorder des droits d'accès granulaires à la base de données, notamment un accès restreint à certaines tables, certains schémas ou même certaines lignes ou colonnes. 
 
 Pour plus d'informations sur la gestion des utilisateurs, voir : 
-- [Database user management ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [Gestion des utilisateurs de la base de données](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

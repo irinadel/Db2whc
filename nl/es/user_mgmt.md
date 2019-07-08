@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -29,7 +29,7 @@ La gestión de usuarios a los que se ha dado acceso a la base de datos es respon
 
 El rol de administrador de la base de datos gestiona los siguientes tipos de acceso de usuario: 
 * Consola web. Desde la consola web, los usuarios puede ejecutar consultas contra la base de datos.
-* Base de datos. El administrador puede garantizar permisos de acceso granular a la base de datos, incluso solo permiso para acceder a determinadas tablas, esquemas, o incluso filas o columnas. 
+* Base de datos. El administrador puede otorgar permisos de acceso granular a la base de datos, incluso solo permiso para acceder a determinadas tablas, esquemas, o incluso filas o columnas. 
 
 Para obtener más información sobre la gestión de usuarios, consulte: 
-- [Gestión de usuarios de la base de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [Gestión de usuarios de base de datos](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

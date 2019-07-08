@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 Le service géré {{site.data.keyword.dashdblong}} est une base de données SQL mise à votre disposition dans le cloud. Vous pouvez utiliser l'entrepôt Db2 de la même manière que vous utilisez n'importe quel logiciel de base de données, sans les frais associés à la configuration de matériel ou à l'installation et la maintenance de logiciels. 
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## Essai gratuit
 {: #freetrial}
 
-Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+Vous pouvez essayer le plan {{site.data.keyword.dashdbshort_notm}} Entry avec jusqu'à 1 Go de stockage, gratuitement. [Essai gratuit](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Interfaces
 {: #interfaces}
@@ -54,9 +57,9 @@ Vous pouvez utiliser votre base de données d'entrepôt des manières suivantes 
 La console web fournit une interface graphique pour tous les éléments dont vous avez besoin pour utiliser votre base de données : fonctions de chargement, éditeur SQL, téléchargements de pilotes, et plus encore.
 {: shortdesc}
 
-![Affichez la page du tableau de bord de la console Web](images/console_v3.png)
+![Vue de la page de tableau de bord de la console Web](images/uc.png "La console Web s'ouvre sur la page de tableau de bord")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 Vous pouvez accéder à la console Web de l'une des manières suivantes :
    * A partir de votre tableau de bord {{site.data.keyword.Bluemix_notm}} : vous pouvez ouvrir la console Web depuis la page Détails du service de votre service {{site.data.keyword.dashdbshort_notm}}.
@@ -65,7 +68,7 @@ Vous pouvez accéder à la console Web de l'une des manières suivantes :
 ### API REST
 {: #api}
 
-Avec les plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers et au chargement de données en utilisant l'API REST [{{site.data.keyword.dashdbshort_notm}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}.
+Avec les plans de service {{site.data.keyword.dashdbshort_notm}}, vous pouvez effectuer des tâches liées à la gestion de fichiers et au chargement de données en utilisant l'API REST [{{site.data.keyword.dashdbshort_notm}}](http://ibm.biz/db2whc_api){:external}.
 {: shortdesc}
 
 ### Connectez des applications ou vos outils préférés depuis votre ordinateur local

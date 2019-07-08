@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -144,7 +144,7 @@ IBM Watson Studio(이전의 Data Science Experience)에 프로젝트를 작성�
 {: #proc12}
 
 SAS에서 {{site.data.keyword.dashdbshort_notm}} 데이터베이스로 연결하는 방법에 대한 단계는 SAS 문서를 참조하십시오.
-- [UNIX 및 PC 호스트에 있는 DB2에 대한 SAS/ACCESS 인터페이스 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
+- [UNIX 및 PC 호스트에 있는 DB2에 대한 SAS/ACCESS 인터페이스](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## R 개발 환경
 {: #r_dev_env}
@@ -168,7 +168,7 @@ IBM Watson Studio에 통합되어 있는 RStudio® 환경을 사용하는 대신
     
 2. R 개발 환경과 {{site.data.keyword.dashdbshort_notm}} 데이터베이스 간에 ODBC 드라이버 연결을 작성하십시오.
         
-   a. [데이터베이스를 ODBC 데이터 소스로 설정 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}.
+   a. [데이터베이스를 ODBC 데이터 소스로 설정](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}하십시오.
         
    b. 로컬에 설치된 R 개발 환경을 여십시오.
         

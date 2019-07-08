@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,18 +30,18 @@ subcollection: Db2whc
 ## Connessione a un endpoint pubblico (opzione predefinita)
 {: #pub_endpt}
 
-Come per qualsiasi servizio cloud pubblico, puoi collegare la tua applicazione tramite un nome host pubblico che viene fornito al momento del provisioning del tuo servizio. L'accesso ai tuoi dati è protetto tramite l'autenticazione avanzata, numerosi controlli di accesso e opzioni di autorizzazioni Db2, la crittografia dei dati trasmessi e memorizzati e le procedure consigliate di conformità e di sicurezza IBM per lo sviluppo e le operazioni. Viene offerta anche un'opzione facoltativa di inserimento in whitelist degli IP. Crea un caso di supporto IBM se vuoi abilitare l'inserimento in whitelist degli IP. 
+Come per qualsiasi servizio cloud pubblico, puoi collegare la tua applicazione tramite un nome host pubblico che viene fornito al momento del provisioning del tuo servizio. L'accesso ai tuoi dati è protetto tramite l'autenticazione avanzata, numerosi controlli di accesso e opzioni di autorizzazioni Db2, la crittografia dei dati trasmessi e memorizzati e le procedure consigliate di conformità e di sicurezza IBM per lo sviluppo e le operazioni. Viene offerta anche un'opzione facoltativa di inserimento in whitelist degli IP. Crea un caso di supporto IBM se vuoi abilitare l'inserimento in whitelist degli IP.
 
 ### Come collegarsi a un endpoint pubblico:
 {: #pub_endpt_steps}
 
-Il modo più semplice per collegare il tuo data warehouse è tramite il nome host pubblico fornito nella tua lettera di benvenuto. Puoi anche ottenere il tuo nome host e le credenziali nel seguente modo: 
+Il modo più semplice per collegare il tuo data warehouse è tramite il nome host pubblico fornito nella tua lettera di benvenuto. Puoi anche ottenere il tuo nome host e le credenziali nel seguente modo:
 
-1. Accedi a {{site.data.keyword.cloud_notm}} e fai clic sulla tua istanza del servizio. 
+1. Accedi a {{site.data.keyword.cloud_notm}} e fai clic sulla tua istanza del servizio.
 2. Fai clic su **Credenziali del servizio**.
 3. Fai clic su **Nuova credenziale**, quindi fai clic su **Aggiungi**.
 4. Una volta create le credenziali, nella colonna `Azioni`, fai clic su **Visualizza credenziali**.
-5. Nel seguente esempio di documento JSON, prendi nota del contenuto dei campi hostname, password e username. Questi tre componenti vengono utilizzati per stabilire la connessione all'endpoint pubblico: 
+5. Nel seguente esempio di documento JSON, prendi nota del contenuto dei campi hostname, password e username. Questi tre componenti vengono utilizzati per stabilire la connessione all'endpoint pubblico:
 
    ```
    {
@@ -61,7 +61,7 @@ Il modo più semplice per collegare il tuo data warehouse è tramite il nome hos
 
    ```
 
-   ![Accesso di rete pubblico a {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}}](images/public_connection.png "Rappresentazione grafica di connessione dall'utente al cloud")
 
 ## Connessione a un endpoint privato: endpoint del servizio IBM Cloud
 {: #priv_endpt}
@@ -71,16 +71,16 @@ Se hai un'applicazione distribuita nel tuo account {{site.data.keyword.cloud_not
 Per ulteriori informazioni sull'opzione dell'endpoint del servizio {{site.data.keyword.cloud_notm}}, vedi [Endpoint servizio: informazioni](/docs/services/service-endpoint?topic=service-endpoint-about#about).
 
 
-### Come collegarsi a un endpoint privato con l'endpoint del servizio IBM Cloud 
+### Come collegarsi a un endpoint privato con l'endpoint del servizio IBM Cloud
 {: #priv_endpt_steps}
 
-La comunicazione tra la rete pubblica e l'endpoint avviene tramite il servizio dell'endpoint del servizio {{site.data.keyword.cloud_notm}}. Il servizio dell'endpoint del servizio rende semplice instradare in modo sicuro e veloce il traffico di rete tra i diversi servizi {{site.data.keyword.cloud_notm}} e il tuo database warehouse tramite il backplane di rete privato {{site.data.keyword.cloud_notm}}. Questo instradamento di rete garantisce che i tuoi dati non verranno mai trasmessi su internet pubblico.  
+La comunicazione tra la rete pubblica e l'endpoint avviene tramite il servizio dell'endpoint del servizio {{site.data.keyword.cloud_notm}}. Il servizio dell'endpoint del servizio rende semplice instradare in modo sicuro e veloce il traffico di rete tra i diversi servizi {{site.data.keyword.cloud_notm}} e il tuo database warehouse tramite il backplane di rete privato {{site.data.keyword.cloud_notm}}. Questo instradamento di rete garantisce che i tuoi dati non verranno mai trasmessi su internet pubblico. 
 
 Per iniziare con l'endpoint del servizio, il tuo account {{site.data.keyword.cloud_notm}} deve essere abilitato per VRF (Virtual Routing and Forwarding). Per abilitare il tuo account, vedi [Abilitazione del tuo account per l'utilizzo dell'endpoint del servizio utilizzando la CLI IBM Cloud](/docs/services/service-endpoint?topic=service-endpoint-getting-started#cs_cli_install_steps).
 
-Una volta che il tuo account è abilitato per VRF e che l'endpoint del servizio è abilitato, segui le istruzioni fornite nella tua lettera di benvenuto. 
+Una volta che il tuo account è abilitato per VRF e che l'endpoint del servizio è abilitato, segui le istruzioni fornite nella tua lettera di benvenuto.
 
-Ora è il momento di collegare la tua istanza {{site.data.keyword.dashdbshort_notm}} dal tuo account {{site.data.keyword.cloud_notm}} tramite l'indirizzo di rete privato fornito nella tua lettera di benvenuto. 
+Ora è il momento di collegare la tua istanza {{site.data.keyword.dashdbshort_notm}} dal tuo account {{site.data.keyword.cloud_notm}} tramite l'indirizzo di rete privato fornito nella tua lettera di benvenuto.
 
 ## Connessione a un endpoint privato: VPN (virtual private network)
 {: #vpn}
@@ -90,7 +90,7 @@ Se hai un'applicazione distribuita in una rete privata che si trova all'esterno 
 ### Come collegarsi a un endpoint privato con una VPN
 {: #priv_endpt_vpn_steps}
 
-Per stabilire una connessione VPN al tuo data warehouse cloud dietro un endpoint pubblico, [crea un caso di supporto {{site.data.keyword.cloud_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} che include i seguenti dettagli: 
+Per stabilire una connessione VPN al tuo data warehouse cloud dietro un endpoint pubblico, [crea un caso di supporto {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} che include i seguenti dettagli: 
 
 * **Type of support**: tecnico 
 * **Category**: database 
@@ -124,4 +124,4 @@ Per stabilire una connessione VPN al tuo data warehouse cloud dietro un endpoint
 
 Dopo aver ricevuto la tua richiesta, i tecnici {{site.data.keyword.cloud_notm}} apriranno le porte appropriate del firewall ed inseriranno in whitelist l'indirizzo IP fornito. La comunicazione e la risoluzione alla richiesta verranno effettuate tramite il ticket del caso di supporto {{site.data.keyword.cloud_notm}}.
 
-![Accesso di rete pubblico a {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Accesso di rete pubblica a {{site.data.keyword.cloud_notm}} tramite una VPN](images/public_connection_vpn.png "Rappresentazione grafica della connessione da utente al cloud")

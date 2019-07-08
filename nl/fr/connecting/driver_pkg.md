@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,7 @@ Le module de pilote {{site.data.keyword.dashdbshort_notm}} contient un logiciel 
 ## Déjà installé ?
 {: #alrdy_instld}
 
-Pour vérifier si le module de pilote est déjà installé sur votre ordinateur, ou pour déterminer le numéro de version, vous pouvez utiliser la commande [**db2level** ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window}.
+Pour vérifier si le module de pilote est déjà installé sur votre ordinateur, ou pour déterminer le numéro de version, vous pouvez utiliser la commande [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external}.
 
 ## Téléchargement
 {: #dwnldng}

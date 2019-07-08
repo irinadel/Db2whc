@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -125,6 +125,6 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 ## 其他信息
 
-有关数据虚拟化（联合）的更多信息，请参阅：[联合 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}。
+有关数据虚拟化（联合）的更多信息，请参阅：[联合](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}。
 
-有关联合支持的数据源的信息，请参阅：[联合支持的数据源 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}。
+有关联合支持的数据源的信息，请参阅：[联合支持的数据源](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}。

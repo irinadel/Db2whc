@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,14 +32,23 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 Die Disaster-Recovery-Strategie hängt vom Typ des Plans und der Data-Warehouse-Generation ab, die Sie aktuell ausführen.
 {: shortdesc}
 
+## Pläne der ersten Generation: SMP Small, Medium, Large und MPP Small
+{: #sml_mpp}
+
 Für die erste Generation (Pläne: SMP Small, Medium, Large und MPP Small) wird täglich einmal ein Backup erstellt und dem {{site.data.keyword.Bluemix_notm}} Object Storage-Service bereitgestellt. Von dort wird das Backup in mehrere verfügbare Zonen repliziert. Sollte im primären Rechenzentrum schwerwiegender Fehler auftreten, werden unsere Servicemitarbeiter gemeinsam mit Ihnen für die Einrichtung eines neuen Data-Warehouses in einem anderen Rechenzentrum sorgen. Wir verwenden dabei die tägliche Sicherung, die sich im {{site.data.keyword.Bluemix_notm}} Object Storage-Service befindet.
+
+## Flex-Pläne der zweiten Generation in IBM Cloud
+{: #flex_ibm_cloud}
 
 Bei der zweiten Generation (Flex-Pläne in {{site.data.keyword.Bluemix_notm}}) wird einmal wöchentlich eine Sicherung erstellt und dem {{site.data.keyword.Bluemix_notm}} Object Storage-Service bereitgestellt. Von dort wird das Backup in mehrere verfügbare Zonen repliziert. Sollte im primären Rechenzentrum schwerwiegender Fehler auftreten, werden unsere Servicemitarbeiter gemeinsam mit Ihnen für die Einrichtung eines neuen Data-Warehouses in einem anderen Rechenzentrum sorgen. Wir verwenden dabei die wöchentliche Sicherung, die sich im {{site.data.keyword.Bluemix_notm}} Object Storage-Service befindet.
 
-Für die zweite Generation (Flex-Pläne in Amazon-Web-Services) wird automatisch ein tägliches Self-Service-Backup in AWS S3 ausgelagert. Wenn das Backup in S3 ist, wird es in mehrere Regionen repliziert. Wenn ein schwerwiegender Fehler auftritt, wird das aktuellste Backup verwendet, um Ihre Cluster in einem zweiten Rechenzentrum wiederherzustellen. 
+## Flex-Pläne der zweiten Generation in Amazon-Web-Services
+{: #flex_aws}
+
+Für die Flex-Pläne der zweiten Generation in Amazon-Web-Services wird automatisch ein tägliches Self-Service-Backup in Amazon-Web-Service S3 ausgelagert. Wenn das Backup in S3 ist, wird es in mehrere Regionen repliziert. Wenn ein schwerwiegender Fehler auftritt, wird das aktuellste Backup verwendet, um Ihre Cluster in einem zweiten Rechenzentrum wiederherzustellen.
 
 ## **Brasilien: Zusatzregel 14** (betrifft für die Bundesregierung von Brasilien bereitgestellte Systeme)
 {: #rule_14}
 
-Zum gegenwärtigen Zeitpunkt ist die DR-Option (Disaster Recovery) für {{site.data.keyword.dashdbshort_notm}}-Angebote aufgrund der ergänzenden Regel 14 für Systeme, die für die brasilianische Regierung eingerichtet werden, nicht verfügbar. 
+Zum gegenwärtigen Zeitpunkt ist die DR-Option (Disaster Recovery) für {{site.data.keyword.dashdbshort_notm}}-Angebote aufgrund der ergänzenden Regel 14 für Systeme, die für die brasilianische Regierung eingerichtet werden, nicht verfügbar.
 

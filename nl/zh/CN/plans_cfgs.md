@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-03-15"
+lastupdated: "2019-06-05"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,27 +34,29 @@ subcollection: Db2whc
    * 针对高可用性配置的套餐
    * Oracle 兼容性
 
-在 [{{site.data.keyword.Bluemix}} 目录](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}中查看所有可用的 {{site.data.keyword.dashdbshort_notm}} 套餐。
-<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
-<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
+在 [{{site.data.keyword.Bluemix}} 目录](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}中查看所有可用的 {{site.data.keyword.dashdbshort_notm}} 套餐。
+<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:external} -->
+<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:external} -->
 
 观看以下视频以了解 {{site.data.keyword.dashdbshort_notm}} Flex Performance 套餐简介。
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="通过 Cognos Analytics 创建连接" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-您可以请求在 {{site.data.keyword.Bluemix}} 上的网络隔离环境中部署 {{site.data.keyword.dashdbshort_notm}} 服务。请联系 [{{site.data.keyword.IBM_notm}} 销售人员 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}。
+您可以请求在 {{site.data.keyword.Bluemix}} 上的网络隔离环境中部署 {{site.data.keyword.dashdbshort_notm}} 服务。请联系 [{{site.data.keyword.IBM_notm}} 销售人员](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}。
 
-如果您在目录中看不到所需的配置，请联系 [{{site.data.keyword.IBM_notm}} 销售人员 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}，以讨论其他选择。
+如果您在目录中看不到所需的配置，请联系 [{{site.data.keyword.IBM_notm}} 销售人员](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}，以讨论其他选项。
 
-## 套餐在各数据中心的可用性
+## 套餐在 IBM Cloud 数据中心的可用性
 {: #availability}
 
-下表按位于地理区域中的数据中心提供了有关各种 {{site.data.keyword.dashdbshort_notm}} 套餐的可用性的信息：
+下表按位于地理区域中的 IBM Cloud 数据中心提供了有关各种 {{site.data.keyword.dashdbshort_notm}} 套餐的可用性的信息：
 
 |{{site.data.keyword.dashdbshort_notm}} 套餐|亚太地区|欧洲|北美/中美洲|南美|
 |------------------------------|--------------|-----------|---------------------------|---------------|
-|Flex|东京|法兰克福|华盛顿 (us-east) | *不适用           |
+| Flex / Flex Performance      |东京|法兰克福|华盛顿 (us-east) | *不适用           |
 |                              |              |           |达拉斯 (us-south)|               |  
+|      |||||
+| Flex One                     |*不适用|*不适用|达拉斯 (us-south)| *不适用           |
 |      |||||
 |SMP|中国香港特别行政区|阿姆斯特丹|华盛顿 (us-east) |圣保罗|
 |                              |首尔|法兰克福|达拉斯 (us-south)|               | 
@@ -69,9 +71,26 @@ subcollection: Db2whc
 |                              |悉尼|米兰|克雷塔罗|               | 
 |                              |东京|奥斯陆|多伦多|               | 
 |                              |              |巴黎|                           |               |
-{: caption="表 1. 支持 Db2 Warehouse on Cloud 服务套餐的数据中心" caption-side="top"}
+{: caption="表 1. 支持 Db2 Warehouse on Cloud 服务套餐的 IBM Cloud 数据中心" caption-side="top"}
 
 *不适用 = 目前不可用
+
+## 套餐在 Amazon Web Services 数据中心的可用性
+{: #availability_aws}
+
+下表按位于地理区域中的 Amazon Web Services 数据中心提供了有关各种 {{site.data.keyword.dashdbshort_notm}} 套餐的可用性的信息：
+
+|{{site.data.keyword.dashdbshort_notm}} 套餐|亚太地区|欧洲|北美/中美洲|南美|
+|------------------------------|--------------|-----------|---------------------------|---------------|
+|Flex|悉尼|法兰克福|北弗吉尼亚州| *不适用           |
+|                              |新加坡|伦敦|             |               |  
+|      |||||
+| Flex Performance  |悉尼|法兰克福|北弗吉尼亚州| *不适用           |
+|                              |新加坡|伦敦|             |               | 
+{: caption="表 2. 支持 Db2 Warehouse on Cloud 服务套餐的 Amazon Web Services 数据中心" caption-side="top"}
+
+*不适用 = 目前不可用
+
 
 ## 入门级套餐限制
 {: #ep_restrictions}
@@ -101,4 +120,4 @@ subcollection: Db2whc
 |  |欧盟一般数据保护条例 (GDPR) |没有特定限制适用。|
 |  |  |
 |帐户管理|重新激活|无重新激活需求|
-{: caption="表 1. {{site.data.keyword.dashdbshort_notm}} 入门级套餐限制" caption-side="top"}
+{: caption="表 3. {{site.data.keyword.dashdbshort_notm}} 入门级套餐限制" caption-side="top"}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,8 @@ O pacote de drivers do {{site.data.keyword.dashdbshort_notm}} contém o software
 ## Já instalado?
 {: #alrdy_instld}
 
-Para verificar se o pacote de drivers já está em seu computador ou para determinar o número da versão, é possível usar o comando [**db2level** ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window}.
+Para verificar se o pacote de drivers já está em seu computador ou para determinar o número
+da versão, é possível usar o comando [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external}.
 
 ## Download
 {: #dwnldng}

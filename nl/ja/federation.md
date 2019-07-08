@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -98,32 +98,32 @@ At times, you might choose to partition (shard) your data. With federation capab
 4. Create a wrapper on fedS:<br/>
    `db2 "create wrapper drda"` -->
 
-1. ターゲット・マシンと対話するためのサーバーを作成します。<br/>
+1. ターゲット・マシンと通信するためのサーバーを作成します。<br/>
    `create server <server_name> type dashdb version 11 wrapper drda authorization "<admin_user_on_target>" password "<admin_password_on_target>" options (host '<target_host_name>', port '50000', dbname 'bludb')`
 
-   例えば、以下のように指定します。<br/>
+   例えば、以下を行えます。<br/>
    `create server db2server type dashdb version 11 wrapper drda authorization "admin2" password "YYYY" options (host 'targetdotcom', port '50000', dbname 'bludb')`
 
-2. admin2 のユーザー・マッピングを作成します。<br/>
+2. admin2 用のユーザー・マッピングを作成します。<br/>
    `create user mapping for <admin_user> server db2server options (remote_authid '<admin_user_on_target>', remote_password '<admin_password_on_target>')`
 
-   例えば、以下のように指定します。<br/>
+   例えば、以下を行えます。<br/>
    `create user mapping for admin1 server db2server options (remote_authid 'admin2', remote_password 'YYYY')`
 
 3. データベースのニックネームを作成します。<br/>
    `create nickname <nickname> for <server_name>.<schema_name>.<table_name>`
 
-   例えば、以下のように指定します。<br/>
+   例えば、以下を行えます。<br/>
    `create nickname ntest1 for db2server.admin2.testdata`
 
 4. ターゲット・サーバーからデータを取得できることをテストします。<br/>
    `select * from <nickname>`
 
-   例えば、以下のように指定します。<br/>
+   例えば、以下を行えます。<br/>
    `select * from ntest1`
 
 ## 追加情報
 
-データ仮想化 (フェデレーション) について詳しくは、[フェデレーション ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}を参照してください。
+データ仮想化 (フェデレーション) について詳しくは、[フェデレーション](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}を参照してください。
 
-フェデレーションでサポートされるデータ・ソースについて詳しくは、[フェデレーションでサポートされるデータ・ソース ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}を参照してください。
+フェデレーションでサポートされるデータ・ソースについて詳しくは、[フェデレーションでサポートされるデータ・ソース](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}を参照してください。

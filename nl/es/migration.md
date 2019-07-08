@@ -2,16 +2,16 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-20"
+lastupdated: "2019-05-08"
 
-keywords:
+keywords: Db2 Warehouse on Cloud, loading data, object store, IBM Cloud Object Storage, Amazon S3, LOAD command, Mass Data Migration Service (MDMS), migration, Lift
 
 subcollection: Db2whc
 
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -21,18 +21,18 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Migración de datos a {{site.data.keyword.Bluemix_notm}}
-{: #migration}
+# Carga de datos en {{site.data.keyword.dashdbshort_notm}}
+{: #loading_data}
 
 Puede cargar datos desde un archivo de datos en un formato delimitado (CSV o TXT) ubicados en una red local o en un almacén de objetos (Amazon S3 o {{site.data.keyword.Bluemix_notm}} Object Storage) a {{site.data.keyword.dashdblong}}. Puede incluso migrar los datos desde un sistema local.
 {: shortdesc}
 
-## Carga de datos desde el almacén de objetos
+## Carga de datos desde un almacén de objetos
 {: #cos}
 
-Para cargar datos de Amazon S3, seleccione uno de los métodos siguientes:
-  * Consola web de {{site.data.keyword.dashdbshort_notm}}. **Carga de > Amazon S3**. 
-  * Tablas externas directamente. El siguiente es un ejemplo de una sentencia SQL:
+Para cargar datos de Amazon S3 o {{site.data.keyword.Bluemix_notm}} Object Storage en {{site.data.keyword.dashdblong}}, seleccione uno de los métodos siguientes:
+* Consola web de {{site.data.keyword.dashdbshort_notm}}. **Carga de > Amazon S3**. 
+* Tablas externas directamente. El siguiente es un ejemplo de una sentencia SQL:
 
     ```
     INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -44,22 +44,41 @@ Para cargar datos de Amazon S3, seleccione uno de los métodos siguientes:
       )      
     ```
 
-Para cargar datos de {{site.data.keyword.Bluemix_notm}} Object Storage mediante tablas externas directamente, a continuación se muestra una sentencia SQL de ejemplo:
+  Para cargar datos de {{site.data.keyword.Bluemix_notm}} Object Storage mediante tablas externas directamente, a continuación se muestra una sentencia SQL de ejemplo:
 
-```
-INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
+  ```
+  INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
   '<S3-access-key-ID>',
   '<S3-secret-access-key>', 
   '<my_bucket>'
      )
-  )      
-```
+    )      
+  ```
 
-Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
-{: note}
+  Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
+  {: note}
 
-Para obtener una demostración guiada acerca de cómo cargar datos desde {{site.data.keyword.Bluemix_notm}} Object Storage, consulte [Demostración guiada de {{site.data.keyword.dashdblong}}: Explorar la carga de datos ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+* Para mejorar el rendimiento, también se puede utilizar el mandato **LOAD** de DB2
+para cargar datos desde Amazon S3:
+
+  ```
+  CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
+  :<s3-bucket-name>::<path-to-data-file>" OF <filetype> <additional-load-options> INTO <table-name>)
+  ```
+
+  A continuación se muestra un uso de ejemplo del mandato **LOAD** de Db2:
+
+  ```
+  CALL SYSPROC.ADMIN_CMD('load from "S3::s3-us-west-2.amazonaws.com::<s3-access-key-id>:
+  :<s3-secret-access-key>::ibm-state-store::bdidata2TB/web_site.dat" of DEL modified by codepage=1208
+  coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
+  ```
+
+  Para ver las opciones de mandatos admitidas, consulte el mandato [**LOAD**](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
+
+Para ver una demo guiada sobre la carga de datos desde
+{{site.data.keyword.Bluemix_notm}} Object Storage, consulte: [Demo guiada de {{site.data.keyword.dashdblong}}: Exploración de la carga de datos](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
 
 ## Migración de datos desde un sistema local
 {: #onprem}
@@ -84,9 +103,9 @@ Lift es una aplicación que puede utilizar de forma gratuita para migrar los dat
 |                              | Formato de archivo CSV |
 {: caption="Tabla 1. Migración de orígenes de datos" caption-side="top"}
 
-Para descargar e instalar Lift, consulte: [Descargar Lift ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}.
+Para descargar e instalar Lift, consulte [Descargar Lift](https://www.lift-cli.cloud.ibm.com/#download){:external}.
 
-Para obtener instrucciones paso a paso sobre la migración de los datos al {{site.data.keyword.Bluemix_notm}} utilizando Lift, consulte: [Migrar datos a {{site.data.keyword.dashdblong}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}.
+Para obtener instrucciones paso a paso sobre la migración de los datos al {{site.data.keyword.Bluemix_notm}} utilizando Lift, consulte: [Migrar datos a {{site.data.keyword.dashdblong}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -97,14 +116,14 @@ MDMS ofrece una forma rápida, sencilla y segura para transferir físicamente de
 
 ![Vista del dispositivo del servicio de migración de datos masiva](images/mdms.svg)
 
-Para obtener más información sobre el dispositivo MDMS, consulte la [Guía de aprendizaje de iniciación](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}.
+Para obtener más información sobre el dispositivo MDMS, consulte la [Guía de aprendizaje de iniciación](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 
-Para obtener información sobre cómo migrar datos desde una base de datos de IBM PureData System for Analytics (Netezza) a una base de datos de {{site.data.keyword.dashdblong}} mediante el dispositivo MDMS, consulte:[Migración desde IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}
+Para obtener información sobre cómo migrar datos desde una base de datos de IBM PureData System for Analytics (Netezza) a una base de datos de {{site.data.keyword.dashdblong}} mediante el dispositivo MDMS, consulte: [Migración desde IBM PureData System for Analytics (Netezza)](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:external}.
 
 ## Guía de aprendizaje: Migración de datos desde bases de datos relacionales locales
 {: #tutorial}
 
 En esta guía de aprendizaje se muestra cómo migrar datos desde bases de datos relacionales locales a {{site.data.keyword.dashdbshort_notm}} para aplicaciones de análisis empresarial. 
 
-[Depósito de datos híbrido con {{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
+[Depósito de datos híbrido con {{site.data.keyword.dashdbshort_notm}}](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:external}
 

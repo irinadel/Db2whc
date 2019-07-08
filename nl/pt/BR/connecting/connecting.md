@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -73,7 +73,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 - [ Instalando no Mac OS X ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
 - [ Instalando no Windows ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 
-### Configurando o seu ambiente
+### Configuração do ambiente
 {: #cfg_env}
 
 - [Configurando o seu ambiente](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)
@@ -116,9 +116,9 @@ Também é possível conectar ferramentas e aplicativos externos ao {{site.data.
 - Conecte seus aplicativos {{site.data.keyword.Bluemix_short}} que precisam de um banco de dados de análise.
 - [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
 - [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
-- [Lift ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
-- [Segment ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://segment.com/docs/destinations/db2/){:new_window}
+- [Segmento](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
 - [ Gerenciador do Servidor de Dados ](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
 - [ CLPPLUS ](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
@@ -129,7 +129,7 @@ Também é possível conectar ferramentas e aplicativos externos ao {{site.data.
 {: #dvis_bi}
 
 - [Cognos Analytics para executar relatórios do Business Intelligence com relação a seus dados](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop para executar análise geoespacial e publicação de mapa com seus dados](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)

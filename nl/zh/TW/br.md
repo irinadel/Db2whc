@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-05-10"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,7 +30,8 @@ subcollection: Db2whc
 | 方案              | 備份頻率 | 保留的備份數目 | 備份保留期間   | 自助服務 |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
 | MPP               | 1 / 日          | 2                          | 2 天；FIFO* 輪替   | 否           |
-| 彈性效能  | 1 / 日          | 7                          | 7 天；FIFO* 輪替   | 是          |
+| 彈性                         | 1 / 日          | 最多 7                    | 7 天；FIFO* 輪替   | 是          |
+| 彈性效能  | 1 / 日          | 最多 7                    | 7 天；FIFO* 輪替   | 是          |
 {: caption="表 1. 備份頻率與保留" caption-side="top"}
 
 *先進，先出
@@ -42,10 +43,10 @@ subcollection: Db2whc
 
 保留的備份僅供 IBM 在發生災難或系統流失時，專門用於系統回復目的。不支援從備份還原資料庫的要求。您可以使用例如 IBM Data Studio 的 Db2 工具，或使用 **db2 export** 指令來匯出資料。 
 
-## 彈性效能方案
+## 彈性及彈性效能方案
 {: #flex}
 
-保留最後 7 個每日備份 Snapshot。
+保留最多達到最後 7 個每日備份 Snapshot。最多 7 個的保留 Snapshot 數取決於每個 Snapshot 的大小（等於第一個 Snapshot 之後各 Snapshot 之間變更的資料量），和保留備份的儲存空間量。
 
 從 {{site.data.keyword.dashdbshort_notm}} 主控台中，您可以將備份排定在最方便的時間執行，且您可以在選擇的任何時間，從您保留的任何備份 Snapshot 還原資料庫。系統會在還原期間關閉。將會傳送電子郵件以通知您還原作業已完成。
 

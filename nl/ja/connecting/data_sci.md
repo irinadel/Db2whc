@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -145,7 +145,7 @@ IBM Watson Studio (以前の Data Science Experience) にプロジェクトを�
 {: #proc12}
 
 SAS から {{site.data.keyword.dashdbshort_notm}} データベースへの接続方法の手順については、以下の SAS 資料を参照してください。
-- [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:new_window}
+- [SAS/ACCESS Interface to DB2 under UNIX and PC Hosts](https://documentation.sas.com/?docsetId=acreldb&docsetTarget=p1dzq4zjg1iycgn16l4xj9nnvibt.htm&docsetVersion=9.4&locale=en){:external}
 
 ## R 開発環境
 {: #r_dev_env}
@@ -169,7 +169,7 @@ IBM Watson Studio 内に統合されている RStudio® 環境を使用する代
     
 2. R 開発環境と {{site.data.keyword.dashdbshort_notm}} データベースの間の ODBC ドライバー接続を作成します。
         
-   a. [データベースを ODBC データ・ソースとしてセットアップします ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:new_window}。
+   a. [データベースを ODBC データ・ソースとしてセットアップします](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/connecting/connect_connecting_cli_and_odbc_applications.html){:external}。
         
    b. ローカルにインストールされた R 開発環境を開きます。
         

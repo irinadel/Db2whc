@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 
 1. Faça download do [pacote de drivers do Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) por meio do console da web e, em seguida, instale o pacote de drivers na máquina em que seu aplicativo PHP será executado.
                 
-2. Use a função [`odbc_connect` ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://php.net/manual/en/function.odbc-connect.php){:new_window} para se conectar ao banco de dados BLUDB.
+2. Use a função [`odbc_connect`](http://php.net/manual/en/function.odbc-connect.php){:external} para conexão com o banco de dados BLUDB.
     
    Exemplo de código PHP:
 
@@ -109,7 +109,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
         
 3. No painel do {{site.data.keyword.Bluemix_notm}}, crie uma nova conexão do serviço do Db2 com o novo App PHP. (A criação dessa Conexão no {{site.data.keyword.Bluemix_notm}} disponibiliza a variável de ambiente `VCAP_SERVICES` para seu App PHP. A variável de ambiente `VCAP_SERVICES` contém detalhes do banco de dados para o serviço do Db2. O uso de `VCAP_SERVICES` é mais conveniente do que codificar permanentemente os detalhes do banco de dados no App PHP.)
         
-4. No diretório ativo local, atualize o arquivo `index.php` para se conectar ao banco de dados BLUDB usando a função [`db2_connect` ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
+4. Em seu diretório ativo local, atualize o arquivo `index.php` para conexão com o banco de dados BLUDB usando a função [`db2_connect`](http://php.net/manual/en/function.db2-connect.php){:external}.
         
    Exemplo:
 

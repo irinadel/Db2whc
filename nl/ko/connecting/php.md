@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ PHP 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이
 
 1. 웹 콘솔에서 [Db2 드라이버 패키지](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)를 다운로드한 다음 PHP 애플리케이션이 실행되는 시스템에 드라이버 패키지를 설치하십시오.
                 
-2. [`odbc_connect` 함수 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://php.net/manual/en/function.odbc-connect.php){:new_window}를 사용하여 BLUDB 데이터베이스에 연결하십시오.
+2. [`odbc_connect` 함수](http://php.net/manual/en/function.odbc-connect.php){:external}를 사용하여 BLUDB 데이터베이스에 연결하십시오.
     
    PHP 코드 예:
 
@@ -109,7 +109,7 @@ PHP 애플리케이션과 {{site.data.keyword.dashdbshort_notm}} 데이터베이
         
 3. {{site.data.keyword.Bluemix_notm}} 대시보드에서, Db2 서비스에서 새 PHP 앱으로 새 연결을 작성하십시오. ({{site.data.keyword.Bluemix_notm}} 내에서 이 연결을 작성하면 `VCAP_SERVICES` 환경 변수를 사용자의 PHP 앱에서 사용할 수 있습니다. `VCAP_SERVICES` 환경 변수에는 Db2 서비스에 대한 데이터베이스 세부사항이 포함되어 있습니다. `VCAP_SERVICES`를 사용하는 것이 PHP 앱에서 데이터베이스 세부사항을 하드 코딩하는 것보다 편리합니다.)
         
-4. 로컬 작업 디렉토리에서 [`db2_connect` 함수 ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](http://php.net/manual/en/function.db2-connect.php){:new_window}를 사용하여 BLUDB 데이터베이스에 연결하기 위해 `index.php` 파일을 업데이트하십시오.
+4. 로컬 작업 디렉토리에서 [`db2_connect` 함수](http://php.net/manual/en/function.db2-connect.php){:external}를 사용하여 BLUDB 데이터베이스에 연결하도록 `index.php` 파일을 업데이트하십시오.
         
    예:
 

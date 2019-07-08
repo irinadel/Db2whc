@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,10 +24,10 @@ subcollection: Db2whc
 # 本端開發環境
 {: #local_dev}
 
-如果您想要設定本端 Db2 開發環境，您可以使用 [IBM Db2 Warehouse Developer-C for Non-Production ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://store.docker.com/images/ibm-db2-warehouse-dev){:new_window}，可從 Docker Store 取得。
+如果您想要設定本端 Db2 開發環境，您可以使用 [IBM Db2 Warehouse Developer-C for Non-Production](https://store.docker.com/images/ibm-db2-warehouse-dev){:external}，可從 Docker Store 取得。
 {: shortdesc}
 
 如需必要條件及安裝指示，請選取您作業系統的鏈結： 
 
-- [Windows 及 Macintosh ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
-- [Linux ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}
+- [Windows 及 Macintosh](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:external}
+- [Linux](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:external}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -124,6 +124,6 @@ Führen Sie in der {{site.data.keyword.dashdbshort_notm}}-Konsole die folgenden 
 
 ## Zusätzliche Informationen
 
-Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Weitere Informationen zur Datenvirtualisierung (Föderierung) finden Sie in [Föderierung](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-Informationen zu den Datenquellen, die durch die Föderierung unterstützt werden, finden Sie in [Durch die Föderierung unterstützte Datenquellen![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Weitere Informationen zu den durch die Föderierung unterstützen Datenquellen finden Sie in [Durch die Föderierung unterstützte Datenquellen](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.

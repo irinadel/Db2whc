@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ subcollection: Db2whc
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-詳しくは、[Connecting Cognos Analytics ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window} を参照してください。
+詳しくは、[Connecting Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external} を参照してください。
 
 ## Looker
 {: #looker}
@@ -46,7 +46,7 @@ subcollection: Db2whc
 Looker を {{site.data.keyword.dashdbshort_notm}} データベースに接続できます。 Looker は、ビジネス・インテリジェンス・アプリケーションでありかつビッグデータ分析プラットフォームで、これを使用してリアルタイム・ビジネス・アナリティクスを探索、分析、および共有することができます。
 {: shortdesc}
 
-[Connecting Looker ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Looker の接続](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -116,8 +116,8 @@ Db2 ドライバー・パッケージか IBM® Data Server Driver Package をロ
 {: #results2}
 
 Excel スプレッドシートに照会結果が表示されます。 同じ結果が「結果」ビューアーにも表示されます。 この時点で、Excel を使用してグラフやレポートを生成したりデータを分析したりできます。 これを行う方法、および Web コンソールからデータに対して SQL 照会を実行する方法について詳しくは、以下を参照してください。 
-- [チュートリアル: Excel を使用したグラフおよびレポートの生成 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Excel での分析 ![外部リンク・アイコン](../../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [チュートリアル: Excel を使用したグラフおよびレポートの生成](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Excel での分析](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
@@ -158,7 +158,7 @@ Db2 ドライバー・パッケージか IBM® Data Server Driver Package をコ
             
    - **「OK」**を押します。
         
-     ![データベース接続ウィザード](images/2_gs_conn.jpg)
+     ![データベース接続ウィザード](images/2_gs_conn.jpg "データベース接続ウィザード")
 
 ### 結果
 {: #results3}

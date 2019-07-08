@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,14 +32,23 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 La strategia di ripristino di emergenza dipende dal tipo di generazione del piano e del data warehouse che stai utilizzando al momento.
 {: shortdesc}
 
-Per i piani SMP Small, Medium, Large e MPP Small di prima generazione, viene eseguito un backup una volta al giorno e viene distribuito al servizio {{site.data.keyword.Bluemix_notm}} Object Storage. Da lì, il backup viene replicato in più zone di disponibilità. Se si verifica un evento di emergenza nel tuo data center primario, i nostri operatori del servizio lavoreranno con te per impostare un nuovo data warehouse in un data center diverso. Utilizzeremo il backup giornaliero che si trova nel servizio {{site.data.keyword.Bluemix_notm}} Object Storage. 
+## Piani SMP Small, Medium, Large e MPP Small di prima generazione
+{: #sml_mpp}
+
+Per i piani SMP Small, Medium, Large e MPP Small di prima generazione, viene eseguito un backup una volta al giorno e viene distribuito al servizio {{site.data.keyword.Bluemix_notm}} Object Storage. Da lì, il backup viene replicato in più zone di disponibilità. Se si verifica un evento di emergenza nel tuo data center primario, i nostri operatori del servizio lavoreranno con te per impostare un nuovo data warehouse in un data center diverso. Utilizzeremo il backup giornaliero che si trova nel servizio {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+## Piani Flex di seconda generazione su IBM Cloud
+{: #flex_ibm_cloud}
 
 Per i piani Flex di seconda generazione su {{site.data.keyword.Bluemix_notm}}, viene eseguito un backup una volta a settimana e viene distribuito al servizio {{site.data.keyword.Bluemix_notm}} Object Storage. Da lì, il backup viene replicato in più zone di disponibilità. Se si verifica un evento di emergenza nel tuo data center primario, i nostri operatori del servizio lavoreranno con te per impostare un nuovo data warehouse in un data center diverso. Utilizzeremo il backup settimanale che si trova nel servizio {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-Per i piani Flex di seconda generazione su AWS (Amazon Web Services), viene scaricato automaticamente in AWS S3 un backup giornaliero automatico. Quando si trova in S3, il backup viene replicato in più regioni. Se si verifica un evento di emergenza, verrà utilizzato il backup più recente per ripristinare il tuo cluster in un data center secondario. 
+## Piani Flex di seconda generazione su Amazon Web Services
+{: #flex_aws}
+
+Per i piani Flex di seconda generazione su AWS (Amazon Web Services), viene scaricato automaticamente in Amazon Web Services S3 un backup giornaliero automatico. Quando si trova in S3, il backup viene replicato in più regioni. Se si verifica un evento di emergenza, verrà utilizzato il backup più recente per ripristinare il tuo cluster in un data center secondario.
 
 ## **Brasile: regola supplementare 14** (si applica ai sistemi forniti al governo federale brasiliano)
 {: #rule_14}
 
-In questo momento, l'opzione di ripristino di emergenza (DR) per le offerte {{site.data.keyword.dashdbshort_notm}} non è disponibile in Brasile per il governo federale a causa della regola supplementare 14. 
+In questo momento, l'opzione di ripristino di emergenza (DR) per le offerte {{site.data.keyword.dashdbshort_notm}} non è disponibile in Brasile per il governo federale a causa della regola supplementare 14.
 

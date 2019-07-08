@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -27,7 +27,7 @@ subcollection: Db2whc
 Vous pouvez créer des applications qui utilisent une API REST pour accéder, interagir et échanger des données avec {{site.data.keyword.dashdbshort_notm}}. Utilisez l'API pour accéder aux données, afficher et créer des objets de base de données, et pour administrer et surveiller votre service {{site.data.keyword.dashdbshort_notm}}.
 {: shortdesc}
 
-- Référence API : [Db2 Warehouse on Cloud REST API ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://ibm.biz/db2whc_api){:new_window}
+- Référence d'API : [Db2 Warehouse on Cloud REST API](http://ibm.biz/db2whc_api){:external}
     
 
 

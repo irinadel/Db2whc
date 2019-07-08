@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,7 +34,7 @@ Db2 데이터 가상화(연합이라고도 함)는 {{site.data.keyword.dashdbsho
 
 ### 데이터 소스 통합
 
-조직 전체의 클라우드와 온프레미스 둘 다에 있는 데이터 소스를 연합하면 가상화된 데이터를 단일 소스에서 검색하는 것처럼 보입니다. 데이터 가상화를 수행하면 고비용의 부담스러운 데이터 마이그레이션 프로세스가 제거되므로 모든 데이터를 효과적이고 비용 효율적인 방식으로 분석할 수 있습니다.
+조직 전체의 클라우드와 온프레미스 둘 다에 있는 데이터 소스를 연합하면 가상화된 데이터가 단일 소스에서 검색되는 것처럼 보입니다. 데이터 가상화를 사용하면 부담스럽고 비용이 많이 드는 데이터 마이그레이션 프로세스가 제거되므로 모든 데이터를 효과적이고 비용 효율적인 방식으로 분석할 수 있습니다.
 
 <!-- A company may have started their operations with an on-premises Db2 server. As cloud technology becomes more widespread and companies start to operate on cloud in a cost-effective fashion, there will be continued Cloud growth. However, the organization’s data on both sources remain as a critical component to their decision-making processes. By way of example, a client operating in retail industry needs to be able to access all data, say customer information, to run further analysis on their customers’ consumption behaviors. They need to be able to identify customers, match their records on cloud with already existing ones from an on-premises database and compose them as if the data is being retrieved from a single source. Federation capability here prevents the burdensome data migration process and allows the user to access the data without moving the data.
 
@@ -52,25 +52,25 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 <!-- At times, users may choose to partition (shard). With federation capabilities, data can be queried with a unified interface and this lets the user better balance the workload, scale specific parts of an app or create microservices that work together. -->
 
-### 고정 한계 이상으로 데이터베이스 용량 증가
+### 고정된 한계를 초과하여 데이터베이스 용량 증가
 
-연합하면 클라우드의 데이터베이스와 연합하여 온프레미스 데이터베이스의 용량을 늘릴 수 있습니다. 따라서 온프레미스 데이터베이스의 스토리지 공간이 부족한 경우 데이터 가상화를 선택하는 것이 좋습니다. 개발자가 프로덕션에 있는 기존 데이터베이스를 변경하지 않아도 되므로 새로 개발할 때 연합을 사용하여 데이터베이스 용량을 늘리면 유용합니다. 두 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 연합하여 데이터 용량을 현재 Flex 플랜 한계 이상으로 늘릴 수 있습니다.
+연합을 사용하면 클라우드의 데이터베이스와 연합하여 온프레미스 데이터베이스의 용량을 늘릴 수 있습니다. 이 경우의 데이터 가상화는 온프레미스 데이터베이스의 저장 공간이 부족한 경우에 훌륭한 옵션입니다. 개발자가 프로덕션에 있는 기존 데이터베이스를 변경하지 않아도 되므로 연합을 사용하여 데이터베이스의 용량을 늘리는 것은 새로 개발하는 경우에 유용합니다. 두 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 연합하여 데이터 용량을 현재 Flex 플랜 한계 이상으로 늘릴 수 있습니다.
 
 <!-- By using federation, users can increase capacity of an on premises database by federating to or from the cloud. This is a great option if your on premises database is running out of storage. Increased capacity will also be useful for new development as our users no longer need to change a database in production. You can also use this feature to federate between two Db2 on Cloud databases to increase the capacity beyond the current limits of the Flex plan. -->
 
 ## 시작하기
 {: #gtng_strtd}
 
-다음 단계는 서로 다른 데이터 소스를 연합하여 단일 소스에서 데이터를 검색하는 것처럼 보이게 하는 방법을 보여주는 예입니다. 다음 예에서는 두 개의 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 연합하는 데 관해 설명합니다.
+다음 단계는 서로 다른 데이터 소스를 연합하여 단일 소스에서 데이터가 검색되는 것처럼 보이게 하는 방법을 보여주는 예입니다. 다음 예에서는 두 개의 {{site.data.keyword.dashdbshort_notm}} 데이터베이스를 연합하는 데 관해 설명합니다.
 
 ### Db2 Warehouse on Cloud 대상 시스템의 경우
 {: #targ}
 
 호스트 이름: targetdotcom
 
-1. `admin2` 스키마에서 `testdata` 테이블을 작성합니다.
+1. `admin2` 스키마에서 `testdata` 테이블을 작성하십시오.
 
-2. {{site.data.keyword.dashdbshort_notm}} 콘솔에서 `admin2`로 비밀번호 `YYYY`를 사용하여 `testdata` 테이블을 로드합니다.
+2. {{site.data.keyword.dashdbshort_notm}} 콘솔에서 `admin2`로 비밀번호 `YYYY`를 사용하여 `testdata` 테이블을 로드하십시오.
 
 ### 연합 소스로 사용 중인 Db2 Warehouse on Cloud 시스템의 경우
 {: #fed_src}
@@ -120,6 +120,6 @@ At times, you might choose to partition (shard) your data. With federation capab
 
 ## 추가 정보
 
-데이터 가상화(연합)에 관한 자세한 정보는 [연합 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}을 참조하십시오.
+데이터 가상화(연합)에 관한 자세한 정보는 [연합](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}을 참조하십시오.
 
-연합을 통해 지원하는 데이터 소스에 관한 정보는 [연합 지원 데이터 소스 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}를 참조하십시오.
+연합을 통해 지원하는 데이터 소스에 관한 정보는 [연합 지원 데이터 소스](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}를 참조하십시오.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-05-10"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -30,7 +30,8 @@ Un backup crittografato del database {{site.data.keyword.dashdbshort_notm}} comp
 | Piano              | Frequenza backup | Numero di backup conservati | Periodo di conservazione backup   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
 | MPP               | 1 / giorno          | 2                          | 2 giorni; rollover FIFO*   | No           |
-| Flex Performance  | 1 / giorno          | 7                          | 7 giorni; rollover FIFO*   | Sì          |
+| Flex              | 1 / giorno          | fino a 7                   | 7 giorni; rollover FIFO*   | Sì          |
+| Flex Performance  | 1 / giorno          | fino a 7                   | 7 giorni; rollover FIFO*   | Sì          |
 {: caption="Tabella 1. Frequenza e conservazione dei backup" caption-side="top"}
 
 *First in, first out
@@ -42,10 +43,10 @@ Vengono conservati gli ultimi 2 backup giornalieri.
 
 I backup conservati vengono utilizzati esclusivamente da IBM solo per scopi di ripristino del sistema nel caso di un'emergenza o di una perdita del sistema. Una richiesta per ripristinare il tuo database da un backup non è supportata. Puoi esportare i dati utilizzando gli strumenti Db2 come IBM Data Studio o utilizzando il comando **db2 export**. 
 
-## Piano Flex Performance
+## Piani Flex e Flex Performance
 {: #flex}
 
-Vengono conservate le ultime 7 istantanee di backup giornaliere.
+Come massimo, sono conservate le ultime 7 istantanee di backup giornaliere. Il numero di istantanee conservate, fino a un massimo di 7, dipende dalla dimensione di ciascuna istantanea (uguale alla quantità di dati modificata tra le istantanee successivamente alla prima) e la quantità di spazio di archiviazione per i backup conservati.
 
 Dalla console {{site.data.keyword.dashdbshort_notm}}, puoi pianificare i tuoi backup per essere eseguiti quando ti è più conveniente e puoi ripristinare il tuo database da una qualsiasi delle tue istantanee di backup conservate, in qualsiasi momento tu voglia. Il sistema si arresta durante il periodo di ripristino. Verrà inviata un'email per informarti che l'operazione di ripristino è stata completata.
 

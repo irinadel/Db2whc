@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ subcollection: Db2whc
 
 1. 從 Web 主控台下載 [Db2 驅動程式套件](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg)，然後將驅動程式套件安裝在將執行 PHP 應用程式的機器上。
                 
-2. 使用 [`odbc_connect` 函數 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://php.net/manual/en/function.odbc-connect.php){:new_window} 來連接至 BLUDB 資料庫。
+2. 使用 [`odbc_connect` 函數](http://php.net/manual/en/function.odbc-connect.php){:external}來連接至 BLUDB 資料庫。
     
    PHP 程式碼範例：
 
@@ -109,7 +109,7 @@ subcollection: Db2whc
         
 3. 在 {{site.data.keyword.Bluemix_notm}} 儀表板中，建立從 Db2 服務到新的 PHP 應用程式的新連線。（在 {{site.data.keyword.Bluemix_notm}} 中建立此「連線」可讓 PHP 應用程式能夠使用 `VCAP_SERVICES` 環境變數。`VCAP_SERVICES` 環境變數包含 Db2 服務的資料庫詳細資料。相較於將資料庫詳細資料寫在 PHP 應用程式中，使用 `VCAP_SERVICES` 更為方便）。
         
-4. 在本端工作目錄中，使用 [`db2_connect` 函數 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](http://php.net/manual/en/function.db2-connect.php){:new_window} 來更新`index.php` 檔案，以連接至 BLUDB 資料庫。
+4. 在本端工作目錄中，使用 [`db2_connect` 函數](http://php.net/manual/en/function.db2-connect.php){:external}來更新`index.php` 檔案，以連接至 BLUDB 資料庫。
         
    範例：
 

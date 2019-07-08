@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -124,6 +124,6 @@ Desde la consola de {{site.data.keyword.dashdbshort_notm}}:
 
 ## Información adicional
 
-Para obtener más información sobre la virtualización de datos (federación), consulte: [Federación ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:new_window}.
+Para obtener más información sobre la virtualización de datos (federación), consulte: [Federación](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/fcontainer.html){:external}.
 
-Para obtener información sobre los orígenes de datos que reciben soporte de la federación, consulte: [Orígenes de datos soportados de federación ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/docview.wss?uid=swg27050561){:new_window}.
+Para obtener información sobre los orígenes de datos que reciben soporte de la federación, consulte: [Orígenes de datos admitidos por la federación](https://www.ibm.com/support/docview.wss?uid=swg27050561){:external}.

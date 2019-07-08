@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -29,13 +29,16 @@ subcollection: Db2whc
 # Tutorial de introdução
 {: #getting-started}
 
-O serviço gerenciado do {{site.data.keyword.dashdblong}} é um banco de dados SQL que é provisionado para você na nuvem. É possível usar o Db2 Warehouse da mesma maneira que você usaria qualquer software de banco de dados, mas sem o gasto adicional e as despesas de configuração de hardware ou de instalação e manutenção de software. 
+O serviço gerenciado do {{site.data.keyword.dashdblong}} é um banco de dados SQL que é provisionado para você na nuvem. É possível usar o Db2 Warehouse da mesma maneira que você usaria qualquer software de banco de dados, mas sem o gasto adicional e as despesas de configuração de hardware ou de instalação e manutenção de software.
 {: shortdesc}
+
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
 
 ## Trial gratuito
 {: #freetrial}
 
-Você pode experimentar o plano Entry do {{site.data.keyword.dashdbshort_notm}} com até 1 GB de armazenamento, sem encargos. [Avaliação grátis ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+Você pode experimentar o plano Entry do {{site.data.keyword.dashdbshort_notm}} com até 1 GB de armazenamento, sem encargos. [Trial gratuito](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Interfaces
 {: #interfaces}
@@ -54,9 +57,9 @@ Você pode experimentar o plano Entry do {{site.data.keyword.dashdbshort_notm}} 
 O console da web fornece uma interface gráfica para tudo o que precisar para usar seu banco de dados, incluindo: instalações de carga, um editor de SQL, downloads de driver e mais.
 {: shortdesc}
 
-![Visualização da página do painel do console da web](images/console_v3.png)
+![Visualização da página de painel do console da web](images/uc.png "O console da web é aberto na página de painel")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 É possível acessar o seu console da web das maneiras a seguir:
    * No painel do {{site.data.keyword.Bluemix_notm}}: é possível abrir o console da web por meio da página Detalhes do serviço para seu serviço do {{site.data.keyword.dashdbshort_notm}}.
@@ -65,7 +68,8 @@ O console da web fornece uma interface gráfica para tudo o que precisar para us
 ### API do REST
 {: #api}
 
-Com os planos de serviço do {{site.data.keyword.dashdbshort_notm}}, é possível executar tarefas que estão relacionadas ao gerenciamento de arquivo e ao carregamento de dados usando a [API de REST do {{site.data.keyword.dashdbshort_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://ibm.biz/db2whc_api){:new_window}.
+Com os planos de serviços do {{site.data.keyword.dashdbshort_notm}}, é possível realizar tarefas que estão relacionadas ao gerenciamento de arquivos e ao carregamento de dados usando a API de
+REST do [{{site.data.keyword.dashdbshort_notm}}](http://ibm.biz/db2whc_api){:external}.
 {: shortdesc}
 
 ### Conecte aplicativos ou suas ferramentas favoritas por meio do seu computador local
@@ -81,7 +85,7 @@ Configure seu ambiente local para se conectar ao seu banco de dados do {{site.da
    - [ Instalando no Windows ](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
 3. [Configure os arquivos de driver](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) para seu banco de dados do {{site.data.keyword.dashdbshort_notm}}.
 
-### Use o DB2 Warehouse on Cloud como uma origem de dados para seus apps ou serviços
+### Use o Db2 Warehouse on Cloud como uma origem de dados para seus apps ou serviços
 {{site.data.keyword.Bluemix_notm}}
 {: #data_src}
 

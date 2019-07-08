@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -41,9 +41,9 @@ Queste istruzioni illustrano come definire una connessione senza SSL tra IBM® I
 Ti consigliamo vivamente di aggiornare DataStage alla versione più recente in modo da poter usufruire delle tabelle esterne per caricare i tuoi dati in {{site.data.keyword.dashdbshort_notm}}.
 {: important}
 
-Se non disponi già di un client del server di dati installato, scarica e installa l'IBM Data Server Client <!--Version 10.5 -->appropriato per il tuo sistema operativo della macchina client: [IBM Data Server Client ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}.
+Se non disponi già di un client del server di dati installato, scarica e installa l'IBM Data Server Client <!--Version 10.5 -->appropriato per il tuo sistema operativo della macchina client: [IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}.
 
-Per effettuare le connessioni con il protocollo SSL, scarica e installa il GSKit V8 a 32 bit. Fai clic sulla scheda del sistema operativo appropriata per il sistema operativo della tua macchina client: [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Per i seguenti sistemi operativi, assicurarti di aggiungere il percorso di directory di installazione di GSKit alla variabile di ambiente del percorso specifico del sistema operativo:
+Per effettuare le connessioni con il protocollo SSL, scarica e installa il GSKit V8 a 32 bit. Fai clic sulla scheda del sistema operativo appropriata per il sistema operativo della tua macchina client: [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Per i seguenti sistemi operativi, assicurarti di aggiungere il percorso di directory di installazione di GSKit alla variabile di ambiente del percorso specifico del sistema operativo:
 
 - AIX®: **LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -80,13 +80,13 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -keydb -create -db <keystore_db.kdb> -pw <ks_db_password> -stash`
 
-     dove `<keystore_db.kdb>` rappresenta il database keystore client e `<ks_db_password>` rappresenta la password per il database keystore client. 
+     dove `<keystore_db.kdb>` rappresenta il database keystore client e `<ks_db_password>` rappresenta la password per il database keystore client.
         
   4. Aggiungi il certificato al database keystore client.
 
      `# /home/db2inst2/SSL> gsk8capicmd_64 -cert -add -db <keystore_db.kdb> -pw <ks_db_password> -label BLUDB_SSL -file DigiCertGlobalRootCA.crt`
 
-     dove `<keystore_db.kdb>` rappresenta il database keystore client e `<ks_db_password>` rappresenta la password per il database keystore client. 
+     dove `<keystore_db.kdb>` rappresenta il database keystore client e `<ks_db_password>` rappresenta la password per il database keystore client.
     
   5. Configura il client Db2 sul server DataStage.
             
@@ -94,11 +94,11 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_KEYDB /home/db2inst2/SSL/<keystore_db.kdb>`
 
-     dove `<keystore_db.kdb>` rappresenta il database keystore client. 
+     dove `<keystore_db.kdb>` rappresenta il database keystore client.
 
      `# /home/db2inst2> db2 update dbm cfg using SSL_CLNT_STASH /home/db2inst2/SSL/<keystore_db.sth>`
 
-     dove `<keystore_db.sth>` rappresenta lo stash password del database keystore client. 
+     dove `<keystore_db.sth>` rappresenta lo stash password del database keystore client.
             
      b. Cataloga il nodo di destinazione con l'opzione di sicurezza SSL e poi il database BLUDB per tale nodo di destinazione.
 
@@ -162,8 +162,8 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
      Per i dettagli sulla definizione di una connessione in DataStage, consulta i seguenti argomenti della documentazione di DataStage: 
      
-     - [Creating a data connection object manually ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
-     - [Configuring access to Db2 databases ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
+     - [Creating a data connection object manually](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
+     - [Configuring access to Db2 databases](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
 
 ## Informatica
 {: #informatica}
@@ -206,14 +206,14 @@ The ODBC Data Sources Administrator dialog box appears.
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Integrate Db2 and Salesforce with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/watch?v=RGTLweZvKP8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-<!-- [Informatica ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:new_window} -->
+<!-- [Informatica](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:external} -->
 
 ## Lift
 {: #lift}
 
 Utilizza Lift per migrare i dati in {{site.data.keyword.dashdbshort_notm}}.
 
-[Lift ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -231,7 +231,7 @@ Quando utilizzi {{site.data.keyword.dashdbshort_notm}} come una destinazione di 
 ### Prerequisiti
 {: #prereq2}
 
-Se intendi effettuare la connessione utilizzando il protocollo SSL, scarica e installa GSKit V8. Consulta [GSKit V8 - Install, Uninstall and Upgrade instructions ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}. Fai clic sulla scheda del sistema operativo che si applica al sistema operativo della macchina client. Se stai installando il GSKit su un computer Windows, assicurati di specificare il percorso della directory di installazione di GSKit (`<installation_directory>\gsk8\bin`) per la variabile di ambiente **`PATH`**.
+Se intendi effettuare la connessione utilizzando il protocollo SSL, scarica e installa GSKit V8. Vedi [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Fai clic sulla scheda del sistema operativo che si applica al sistema operativo della macchina client. Se stai installando il GSKit su un computer Windows, assicurati di specificare il percorso della directory di installazione di GSKit (`<installation_directory>\gsk8\bin`) per la variabile di ambiente **`PATH`**.
 
 Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_notm}}, verifica di avere i [prerequisiti](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs) necessari.
 
@@ -248,7 +248,7 @@ Se intendi effettuare la connessione utilizzando il protocollo SSL, scarica il c
 
      `cd /<ssl_directory_name>/ssl`
 
-     dove `/<ssl_directory_name>/ssl` è il percorso alla directory in cui hai scaricato il certificato SSL `DigiCertGlobalRootCA.crt`. 
+     dove `/<ssl_directory_name>/ssl` è il percorso alla directory in cui hai scaricato il certificato SSL `DigiCertGlobalRootCA.crt`.
 
      b. Crea un database di chiavi client e un file stash utilizzando lo strumento **GSKCapiCmd**. Ad esempio, il seguente comando crea un database di chiavi client denominato `dashclient.kdb` e un file stash denominato `dashclient.sth`:
 
@@ -336,42 +336,42 @@ Se intendi effettuare la connessione utilizzando il protocollo SSL, scarica il c
         
    a. Aggiungi un'istanza di origine che punta al tuo database di origine utilizzando la scheda **Instance Configuration**:
 
-   ![IIDR New Instance - Source instance](images/IIDR_source_instance.jpg)
+   ![Nuova istanza IIDR - istanza di origine](images/IIDR_source_instance.jpg "Configurazione dell'istanza di origine")
 
    b. Aggiungi un'istanza di destinazione che punta al tuo database Db2 di destinazione utilizzando la scheda **Instance Configuration**. Se non stai utilizzando IBM InfoSphere Data Replication 11.3.3.3-50 o successive, non selezionare la casella di spunta **Specify refresh loader path**.
 
-   ![IIDR New Instance - Target instance](images/IIDR_target_instance.jpg)
+   ![Nuova istanza IIDR - istanza di destinazione](images/IIDR_target_instance.jpg "Configurazione dell'istanza di destinazione")
 
    c. Avvia tutte le istanze:
 
-   ![IIDR Configuration Tool](images/IIDR_instances.jpg)
+   ![Strumento di configurazione IIDR](images/IIDR_instances.jpg "Istanze di origine e di destinazione di elenco dello strumento di configurazione IIDR")
 
 3. Avvia la console di gestione di InfoSphere Data Replication e utilizza Access Manager per completare i seguenti passi:
         
    a. Crea un datastore per collegarti alla tua istanza di origine utilizzando la scheda **Datastore**. Poiché un database Db2 non è stato originariamente supportato come database di origine, devi fornire le informazioni sull'utente e sulla password per il database di origine facendo clic su **Connection Parameters**.
 
-   ![Datastore Properties - Source](images/IIDR_source_datastore.jpg)
+   ![Proprietà dell'archivio dati - origine](images/IIDR_source_datastore.jpg "Proprietà dell'archivio dati di origine")
 
    b. Crea un datastore per collegarti alla tua istanza di destinazione utilizzando la scheda **Datastore**. Devi fornire le informazioni sull'utente e sulla parola d'ordine facendo clic su **Connection Parameters**.
 
-   ![Datastore Properties - Target](images/IIDR_target_datastore.jpg)
+   ![Proprietà archivio dati - destinazione](images/IIDR_target_datastore.jpg "Proprietà dell'archivio dati di destinazione")
 
    c. Se l'utente (ad esempio, admin) che si collegherà a Access Server non esiste, crea quell'utente:
 
-   ![New User](images/IIDR_management_user.jpg)
+   ![Nuovo utente](images/IIDR_management_user.jpg "Strumento di creazione di nuovo utente")
 
    d. Fai clic sulla scheda **Access Manager**.
         
    e. Nella scheda **Datastore Management**, assegna l'utente ai datastore di origine e di destinazione facendo clic con il tasto destro del mouse su ciascun datastore e facendo clic su **Assign User**. Assicurati che le credenziali per l'accesso a ciascuna istanza siano corrette.
 
-   ![IIDR Management Console - Access Manager](images/IIDR_management_assign_user.jpg)
+   ![Console di gestione IIDR - Access Manager](images/IIDR_management_assign_user.jpg "Console Access Manager")
 
 ### Operazioni successive
 {: #what2}
 
 Definisci una sottoscrizione ed esegui la replica dei dati. Per informazioni, consulta:
 
-- [Loading data from InfoSphere Data Replication ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:new_window} 
+- [Caricamento di dati da InfoSphere Data Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
 
 ## Segment
 {: #segment}
@@ -379,7 +379,7 @@ Definisci una sottoscrizione ed esegui la replica dei dati. Per informazioni, co
 Puoi integrare Segment con un database {{site.data.keyword.dashdbshort_notm}}. Segment è una piattaforma unica che raccoglie, archivia e instrada i tuoi dati utente a centinaia di strumenti.
 {: shortdesc}
 
-[Segment ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://segment.com/docs/destinations/db2/){:new_window}
+[Segment](https://segment.com/docs/destinations/db2/){:external}
 
 ## Data Studio
 {: #data_studio}
@@ -432,7 +432,7 @@ Per creare una connessione, completa la seguente procedura:
     
 2. Nella console web di Data Server Manager, vai a **Set Up > Database Connections**.
     
-3. Fai clic sull'icona ![segno + all'interno di un cerchio](images/icon_R_plus.gif) per aggiungere una connessione al database. Nella pagina **Add Database Connection** nella scheda **Database Connection**, immetti le informazioni richieste nei seguenti campi:
+3. Fai clic sull'icona ![segno + all'interno di un cerchio](images/icon_R_plus.gif "Icona di aggiunta") per aggiungere una connessione al database. Nella pagina **Add Database Connection** nella scheda **Database Connection**, immetti le informazioni richieste nei seguenti campi:
 
    - *Database connection name*: il nome deve essere univoco per Data Server Manager
    - *Data server type*: dal menu a discesa, seleziona **DB2 for Linux, UNIX, and Windows**
@@ -502,7 +502,7 @@ Prima di tentare di collegarti al tuo database {{site.data.keyword.dashdbshort_n
 
 3. Avvia Aginity Workbench. Se la finestra di dialogo di connessione al database non si apre automaticamente, aprila facendo clic su **Connect** nella barra degli strumenti.
 
-4. [Establish a database connection ![Icona link esterno](../../../icons/launch-glyph.svg "Icona link esterno")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}. Utilizza il nome host, l'ID utente e la password dalle informazioni di connessione che hai annotato in precedenza.
+4. [Stabilisci una connessione al database](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}. Utilizza il nome host, l'ID utente e la password dalle informazioni di connessione che hai annotato in precedenza.
 
 ## CLPPlus
 {: #clpplus}

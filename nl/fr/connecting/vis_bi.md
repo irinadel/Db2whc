@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -38,7 +38,7 @@ Regardez cette vidéo pour voir comment créer une connexion.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Création d'une connexion à partir de Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-Pour plus d'informations, voir [Connexions de Cognos Analytics ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+Pour plus d'informations, voir [Connexions de Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
 
 ## Looker
 {: #looker}
@@ -46,7 +46,7 @@ Pour plus d'informations, voir [Connexions de Cognos Analytics ![Icône de lien 
 Vous pouvez connecter Looker à une base de données {{site.data.keyword.dashdbshort_notm}}. Looker est une application d'intelligence métier et une plateforme d'analyse des mégadonnées avec laquelle vous pouvez explorer, analyser et partager en temps réel des analyses commerciales.
 {: shortdesc}
 
-[Connexion de Looker ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Connexion de Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -116,8 +116,8 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
 {: #results2}
 
 Les résultats de la requête s'affichent dans une feuille de calcul Excel. Ces résultats sont les mêmes que ceux qui s'affichent dans le visualiseur Résultats. Vous pouvez maintenant générer des graphiques et des rapports et analyser vos données avec Excel. Pour en savoir plus sur la manière de procéder et sur la façon dont vous pouvez exécuter des requêtes SQL sur vos données à partir de la console Web, voir : 
-- [Tutoriel : Generating charts and reports by using Excel ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Analyse avec Excel ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [Tutoriel : Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analyse avec Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
@@ -158,7 +158,7 @@ Vous devez avoir le module de pilote Db2 ou le module IBM® Data Server Driver P
             
    - Appuyez sur **OK**.
         
-     ![Assistant de connexion à la base de données](images/2_gs_conn.jpg)
+     ![Assistant de connexion à la base de données](images/2_gs_conn.jpg "Assistant de connexion à la base de données")
 
 ### Résultats
 {: #results3}

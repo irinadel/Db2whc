@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -39,9 +39,9 @@ subcollection: Db2whc
 强烈建议您将 DataStage 更新为最新版本，以便您可以利用外部表格将数据装入 {{site.data.keyword.dashdbshort_notm}}。
 {: important}
 
-如果尚未安装数据服务器客户机，请下载并安装适合于您客户端机器操作系统的 IBM Data Server Client <!--Version 10.5 -->：[IBM Data Server Client ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:new_window}。
+如果尚未安装数据服务器客户机，请下载并安装适合于您客户端机器操作系统的 IBM Data Server Client <!--Version 10.5 -->：[IBM Data Server Client](https://www.ibm.com/marketing/iwm/iwm/web/preLogin.do?source=swg-idsc97){:external}。
 
-要使用 SSL 协议进行连接，请下载并安装 32 位 GSKit V8。单击适用于您客户端机器操作系统的“操作系统”选项卡：[GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。对于以下操作系统，请确保将 GSKit 安装目录路径添加到特定于操作系统的路径环境变量：
+要使用 SSL 协议进行连接，请下载并安装 32 位 GSKit V8。单击适用于您客户端机器操作系统的“操作系统”选项卡：[GSKit V8 - 安装、卸载和升级指示信息](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}。对于以下操作系统，请确保将 GSKit 安装目录路径添加到特定于操作系统的路径环境变量：
 
 - AIX®：**LIBPATH**
    - `/usr/opt/ibm/gsk8/lib`
@@ -160,8 +160,8 @@ subcollection: Db2whc
 
      有关在 DataStage 中定义连接的详细信息，请参阅以下 DataStage 文档主题： 
      
-     - [手动创建数据连接对象 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:new_window}
-     - [配置对 Db2 数据库的访问权 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:new_window}
+     - [手动创建数据连接对象](https://www.ibm.com/support/knowledgecenter/SSZJPZ_11.3.0/com.ibm.swg.im.iis.ds.design.doc/topics/t_ddesref_Creating_a_Data_Connection_Object_Manually.html){:external}
+     - [配置对 Db2 数据库的访问权](https://www.ibm.com/support/knowledgecenter/en/SSZJPZ_11.7.0/com.ibm.swg.im.iis.conn.common.usage.doc/topics/t_configuring_db2conn.html){:external}
 
 ## Informatica
 {: #informatica}
@@ -204,14 +204,14 @@ The ODBC Data Sources Administrator dialog box appears.
 
 <iframe class="embed-responsive-item" id="youtubeplayer2" title="Integrate Db2 and Salesforce with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/watch?v=RGTLweZvKP8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-<!-- [Informatica ![External link icon](../../../icons/launch-glyph.svg "External link icon")](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:new_window} -->
+<!-- [Informatica](https://kb.informatica.com/howto/6/Pages/20/522402.aspx?myk=Connect%20to%20Db2){:external} -->
 
 ## Lift
 {: #lift}
 
 使用 Lift 将数据迁移到 {{site.data.keyword.dashdbshort_notm}} 中。
 
-[Lift ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+[Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 
 ## InfoSphere Data Replication
 {: #idr}
@@ -229,7 +229,7 @@ The ODBC Data Sources Administrator dialog box appears.
 ### 先决条件
 {: #prereq2}
 
-如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](http://www.ibm.com/support/docview.wss?uid=swg21631462){:new_window}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果您要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定了 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
+如果您打算使用 SSL 协议进行连接，请下载并安装 GSKit V8。请参阅 [GSKit V8 - 安装、卸载和升级指示信息](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}。单击适用于您的客户端机器操作系统的“操作系统”选项卡。如果您要在 Windows 计算机上安装 GSKit，请确保为 **`PATH`** 环境变量指定了 GSKit 安装目录路径 (`<installation_directory>\gsk8\bin`)。
 
 在尝试连接到 {{site.data.keyword.dashdbshort_notm}} 数据库之前，请验证您是否具有必需的[先决条件](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs)。
 
@@ -335,42 +335,42 @@ The ODBC Data Sources Administrator dialog box appears.
         
    a. 通过使用**实例配置**选项卡，添加源实例以指向源数据库：
 
-   ![IIDR 新建实例 - 源实例](images/IIDR_source_instance.jpg)
+   ![IIDR 新建实例 - 源实例](images/IIDR_source_instance.jpg "源实例配置")
 
    b. 通过使用**实例配置**选项卡，添加目标实例以指向目标 Db2 数据库：如果使用的不是 IBM InfoSphere Data Replication 11.3.3.3-50 或更高版本，请勿选中**指定刷新装入程序路径**复选框。
 
-   ![IIDR 新建实例 - 目标实例](images/IIDR_target_instance.jpg)
+   ![IIDR 新建实例 - 目标实例](images/IIDR_target_instance.jpg "目标实例配置")
 
    c. 启动每个实例：
 
-   ![IIDR 配置工具](images/IIDR_instances.jpg)
+   ![IIDR 配置工具](images/IIDR_instances.jpg "列出了源和目标实例的 IIDR 配置工具")
 
 3. 启动 InfoSphere Data Replication 管理控制台，并使用 Access Manager 来完成以下步骤：
         
    a. 通过使用**数据存储**选项卡，创建数据存储以连接到源实例。由于 Db2 数据库初始不支持作为源数据库，因此必须通过单击**连接参数**来提供源数据库的用户和密码信息。
 
-   ![数据存储属性 - 源](images/IIDR_source_datastore.jpg)
+   ![数据存储属性 - 源](images/IIDR_source_datastore.jpg "源数据存储属性")
 
    b. 通过使用**数据存储**选项卡，创建数据存储以连接到目标实例。必须通过单击**连接参数**来提供用户和密码信息。
 
-   ![数据存储属性 - 目标](images/IIDR_target_datastore.jpg)
+   ![数据存储属性 - 目标](images/IIDR_target_datastore.jpg "目标数据存储属性")
 
    c. 如果要连接到 Access Server 的用户（例如，admin）不存在，请创建该用户：
 
-   ![新建用户](images/IIDR_management_user.jpg)
+   ![新建用户](images/IIDR_management_user.jpg "新建用户创建工具")
 
    d. 单击 **Access Manager** 选项卡。
         
    e. 在**数据存储管理**选项卡上，通过右键单击每个数据存储，然后单击**分配用户**，将该用户分配给源数据存储和目标数据存储。请确保用于访问每个实例的凭证正确。
 
-   ![IIDR 管理控制台 - Access Manager](images/IIDR_management_assign_user.jpg)
+   ![IIDR 管理控制台 - Access Manager](images/IIDR_management_assign_user.jpg "Access Manager 控制台")
 
 ### 后续步骤
 {: #what2}
 
 定义预订并执行数据复制。有关信息，请参阅：
 
-- [从 InfoSphere Data Replication 装入数据 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:new_window} 
+- [从 InfoSphere Data Replication 装入数据](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/learn_how/loaddata_iidr.html){:external} 
 
 ## Segment
 {: #segment}
@@ -378,7 +378,7 @@ The ODBC Data Sources Administrator dialog box appears.
 您可以将 Segment 与 {{site.data.keyword.dashdbshort_notm}} 数据库集成。Segment 是一个单一平台，用于收集和存储用户数据，并将这些数据传递给数以百计的工具。
 {: shortdesc}
 
-[Segment ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://segment.com/docs/destinations/db2/){:new_window}
+[Segment](https://segment.com/docs/destinations/db2/){:external}
 
 ## Data Studio
 {: #data_studio}
@@ -431,7 +431,7 @@ The ODBC Data Sources Administrator dialog box appears.
     
 2. 在 Data Server Manager Web 控制台中，转至**设置 > 数据库连接**。
     
-3. 单击 ![带圆圈的 + 号](images/icon_R_plus.gif) 图标以添加数据库连接。在**添加数据库连接**页面上的**数据库连接**选项卡下，在以下字段中输入所需的信息：
+3. 单击 ![带圆圈的 + 号](images/icon_R_plus.gif "“添加”图标") 图标以添加数据库连接。在**添加数据库连接**页面上的**数据库连接**选项卡下，在以下字段中输入所需的信息：
 
    - *数据库连接名称*：名称必须对于 Data Server Manager 唯一
    - *数据服务器类型*：从下拉菜单中，选择 **Db2 for Linux, UNIX, and Windows**
@@ -501,7 +501,7 @@ The ODBC Data Sources Administrator dialog box appears.
 
 3. 启动 Aginity Workbench。如果数据库连接对话框未自动打开，请通过单击工具栏上的**连接**将其打开。
 
-4. [建立数据库连接 ![外部链接图标](../../../icons/launch-glyph.svg "外部链接图标")](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:new_window}。使用您先前记录的连接信息中的主机名、用户标识和密码。
+4. [建立数据库连接](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}。使用您先前记录的连接信息中的主机名、用户标识和密码。
 
 ## CLPPlus
 {: #clpplus}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 El servicio gestionado de {{site.data.keyword.dashdblong}} es una base de datos SQL suministrada para usted en la nube. Puede utilizar Db2 Warehouse como utilizaría cualquier software de base de datos, pero sin la sobrecarga ni el gasto de la configuración de hardware o la instalación y el mantenimiento de software. 
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## Prueba gratuita
 {: #freetrial}
 
-Puede probar el plan {{site.data.keyword.dashdbshort_notm}} Entry con hasta 1 GB de almacenamiento sin coste. [Prueba gratuita ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+Puede probar el plan {{site.data.keyword.dashdbshort_notm}} Entry con hasta 1 GB de almacenamiento sin coste. [Prueba gratuita](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## Interfaces
 {: #interfaces}
@@ -54,9 +57,9 @@ Puede trabajar con la base de datos de Db2 Warehouse de los siguientes modos:
 La consola web proporciona una interfaz gráfica para todo lo que puede utilizar su base de datos, incluyendo: recursos de cargas, un editor SQL, descargas de controladores, etc.
 {: shortdesc}
 
-![Vista de la página de panel de control de la consola web](images/console_v3.png)
+![Vista de la página del panel de control de la consola web](images/uc.png "Se abre la consola web en la página del panel de control")
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 Puede acceder a la consola web de los siguientes modos:
    * Desde el panel de control de {{site.data.keyword.Bluemix_notm}} - Puede abrir la consola web desde la página Detalles de servicio para el servicio de {{site.data.keyword.dashdbshort_notm}}.
@@ -65,7 +68,7 @@ Puede acceder a la consola web de los siguientes modos:
 ### API REST
 {: #api}
 
-Con los planes de servicio de {{site.data.keyword.dashdbshort_notm}} puede realizar tareas relacionadas con la gestión de archivos y carga de datos utilizando la API REST de [{{site.data.keyword.dashdbshort_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://ibm.biz/db2whc_api){:new_window}.
+Con los planes de servicio de {{site.data.keyword.dashdbshort_notm}} puede realizar tareas relacionadas con la gestión de archivos y carga de datos utilizando la [API REST de {{site.data.keyword.dashdbshort_notm}}](http://ibm.biz/db2whc_api){:external}.
 {: shortdesc}
 
 ### Conecte aplicaciones o herramientas preferidas desde el sistema local
@@ -79,7 +82,7 @@ Configure el entorno local para conectar la base de datos de {{site.data.keyword
    - [Instalación en Linux o PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
    - [Instalación en Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
    - [Instalación en Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
-3. [Configuración de los archivos de controlador](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) para la base de datos de {{site.data.keyword.dashdbshort_notm}}.
+3. [Configure los archivos de controlador](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) para la base de datos de {{site.data.keyword.dashdbshort_notm}}.
 
 ### Utilice Db2 Warehouse on Cloud como origen de datos para apps o servicios de {{site.data.keyword.Bluemix_notm}}
 {: #data_src}

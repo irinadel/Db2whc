@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
 
 1. Descargue el [paquete de controlador de Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) desde la consola web y, a continuación, instale el paquete de controlador en la máquina en la que se ejecutará la aplicación PHP.
                 
-2. Utilice la función [`odbc_connect` ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://php.net/manual/en/function.odbc-connect.php){:new_window} para conectarse a la base de datos BLUDB.
+2. Utilice la [función `odbc_connect`](http://php.net/manual/en/function.odbc-connect.php){:external} para conectar a la base de datos BLUDB.
     
    Ejemplo de código de PHP:
 
@@ -109,7 +109,7 @@ Antes de intentar realizar una conexión a su base de datos de {{site.data.keywo
         
 3. En el panel de control de {{site.data.keyword.Bluemix_notm}}, cree una nueva conexión desde el servicio Db2 a la nueva app PHP. (La creación de esta conexión en {{site.data.keyword.Bluemix_notm}} hace que la variable de entorno `VCAP_SERVICES` esté disponible para la app PHP. La variable de entorno `VCAP_SERVICES` contiene detalles de base de datos para el servicio Db2. El uso de `VCAP_SERVICES` es más práctico que la grabación en el código fuente de los detalles de base de datos de la app PHP).
         
-4. En el directorio de trabajo, actualice el archivo `index.php` para conectarse a la base de datos BLUDB utilizando la función [`db2_connect` ![Icono de enlace externo](../../../icons/launch-glyph.svg "Icono de enlace externo")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
+4. En el directorio de trabajo, actualice el archivo `index.php` para conectarse a la base de datos BLUDB utilizando la [función `db2_connect`](http://php.net/manual/en/function.db2-connect.php){:external}.
         
    Ejemplo:
 

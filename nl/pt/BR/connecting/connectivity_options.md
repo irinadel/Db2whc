@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -61,7 +61,7 @@ A maneira mais fácil de se conectar ao data warehouse é por meio do nome do ho
 
    ```
 
-   ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Acesso de rede pública ao {{site.data.keyword.cloud_notm}}](images/public_connection.png "Representação gráfica da conexão do usuário com a nuvem")
 
 ## Conectando-se a um terminal privado: IBM Cloud Service Endpoint
 {: #priv_endpt}
@@ -90,7 +90,9 @@ Se você tiver um aplicativo implementado em uma rede privada que esteja fora do
 ### Como conectar-se a um terminal privado com uma VPN
 {: #priv_endpt_vpn_steps}
 
-Para estabelecer uma conexão VPN com seu data warehouse em nuvem atrás de um terminal público, [crie um caso de Suporte {{site.data.keyword.cloud_notm}} ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} que inclua os detalhes a seguir:
+Para estabelecer uma conexão VPN com seu data warehouse de nuvem atrás de um terminal
+público, [crie um caso de suporte do {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} que inclua
+os detalhes a seguir:
 
 * **Tipo de suporte**: técnico 
 * **Categoria**: bancos de dados 
@@ -124,4 +126,4 @@ Para estabelecer uma conexão VPN com seu data warehouse em nuvem atrás de um t
 
 Após o recebimento de sua solicitação, os técnicos do {{site.data.keyword.cloud_notm}} abrirão as portas de firewall apropriadas e a lista de desbloqueio do endereço IP fornecido. A comunicação e a resolução para a solicitação serão feitas por meio do chamado de caso do Suporte {{site.data.keyword.cloud_notm}}.
 
-![Acesso à rede pública para o {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Acesso de rede pública ao {{site.data.keyword.cloud_notm}} por meio de uma VPN](images/public_connection_vpn.png "Representação gráfica da conexão do usuário com a nuvem")

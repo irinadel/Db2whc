@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -37,7 +37,7 @@ subcollection: Db2whc
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="從 Cognos Analytics 建立連線" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-如需相關資訊，請參閱[連接 Cognos Analytics ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+如需相關資訊，請參閱 [Connecting Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
 
 ## Looker
 {: #looker}
@@ -45,7 +45,7 @@ subcollection: Db2whc
 您可以將 Looker 連接至 {{site.data.keyword.dashdbshort_notm}} 資料庫。Looker 是一個商業智慧應用程式及海量資料分析平台，您可以利用它來探索、分析及共用即時商業分析。
 {: shortdesc}
 
-[連接 Looker ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[連接 Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -115,8 +115,8 @@ subcollection: Db2whc
 {: #results2}
 
 即會以 Excel 試算表顯示查詢結果。這些是「結果」檢視器中所顯示的相同結果。現在，您可以使用 Excel 來產生圖表及報告並分析資料。如需如何執行此動作，以及如何從 Web 主控台對資料執行 SQL 查詢的相關資訊，請參閱： 
-- [指導教學：使用 Excel 產生圖表及報告 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [使用 Excel 分析 ![外部鏈結圖示](../../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [Tutorial: Generating charts and reports by using Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analyzing with Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS for Desktop
 {: #esri_arcgis}
@@ -157,7 +157,7 @@ subcollection: Db2whc
             
    - 按下**確定**。
         
-     ![「資料庫連線」精靈](images/2_gs_conn.jpg)
+     ![資料庫連線精靈](images/2_gs_conn.jpg "資料庫連線精靈"){: caption="圖 1. 資料庫連線精靈" caption-side="bottom"}
 
 ### 結果
 {: #results3}

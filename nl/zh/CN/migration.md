@@ -2,16 +2,16 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-11-20"
+lastupdated: "2019-05-08"
 
-keywords:
+keywords: Db2 Warehouse on Cloud, loading data, object store, IBM Cloud Object Storage, Amazon S3, LOAD command, Mass Data Migration Service (MDMS), migration, Lift
 
 subcollection: Db2whc
 
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -21,8 +21,8 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# 将数据迁移到 {{site.data.keyword.Bluemix_notm}}
-{: #migration}
+# 将数据装入到 {{site.data.keyword.dashdbshort_notm}}
+{: #loading_data}
 
 您可以从本地网络、对象存储（Amazon S3 或 {{site.data.keyword.Bluemix_notm}} Object Storage）上定界格式（CSV 或 TXT）的数据文件将数据装入到 {{site.data.keyword.dashdblong}}。您甚至可以从内部部署系统迁移数据。
 {: shortdesc}
@@ -30,9 +30,9 @@ subcollection: Db2whc
 ## 从对象存储装入数据
 {: #cos}
 
-要从 Amazon S3 装入数据，请选择以下一种方法：
-  * {{site.data.keyword.dashdbshort_notm}} Web 控制台。**装入 > Amazon S3**。 
-  * 直接从外部表。以下是示例 SQL 语句：
+要将数据从 Amazon S3 或 {{site.data.keyword.Bluemix_notm}} Object Storage 装入到 {{site.data.keyword.dashdblong}}，请选择以下一种方法：
+* {{site.data.keyword.dashdbshort_notm}} Web 控制台。**装入 > Amazon S3**。 
+* 直接从外部表。以下是示例 SQL 语句：
 
     ```
       INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
@@ -44,9 +44,9 @@ subcollection: Db2whc
         )      
     ```
 
-要直接使用“外部表”从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据，以下是示例 SQL 语句：
+  要直接使用“外部表”从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据，以下是示例 SQL 语句：
 
-```
+  ```
 INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   (CCSID 1208 s3('s3-api.us-geo.objectstorage.softlayer.net', 
   '<S3-access-key-ID>',
@@ -54,12 +54,29 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
   '<my_bucket>'
      )
   )      
-```
+  ```
 
-对于 {{site.data.keyword.Bluemix_notm}} Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
-{: note}
+  对于 {{site.data.keyword.Bluemix_notm}} Object Storage，要在创建新服务凭证时创建 HMAC 凭证，请在*添加内联配置参数*字段中指定 {"HMAC:true"}。
+  {: note}
 
-有关从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据的指导式演示，请参阅 [{{site.data.keyword.dashdblong}} guided demo: Explore data loading ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:new_window}
+* 为改进性能，还可以使用 Db2 **LOAD** 命令，通过以下示例命令从 Amazon S3 装入数据：
+
+  ```
+  CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
+  :<s3-bucket-name>::<path-to-data-file>" OF <filetype> <additional-load-options> INTO <table-name>)
+  ```
+
+  下面列出了 Db2 **LOAD** 命令的示例用法：
+
+  ```
+  CALL SYSPROC.ADMIN_CMD('load from "S3::s3-us-west-2.amazonaws.com::<s3-access-key-id>:
+  :<s3-secret-access-key>::ibm-state-store::bdidata2TB/web_site.dat" of DEL modified by codepage=1208 
+  coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
+  ```
+
+  对于支持的命令选项，请参阅 [**LOAD** 命令](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}。 
+
+有关从 {{site.data.keyword.Bluemix_notm}} Object Storage 装入数据的指导式演示，请参阅：[{{site.data.keyword.dashdblong}} guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
 
 ## 从内部部署系统迁移数据
 {: #onprem}
@@ -84,9 +101,9 @@ Lift 是可用于将数据从表 1 中列出的各个数据源迁移至 {{site.d
 |                              | CSV 文件格式 |
 {: caption="表 1. 迁移数据源" caption-side="top"}
 
-要下载并安装 Lift，请参阅：[下载 Lift ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/#download){:new_window}。
+要下载并安装 Lift，请参阅：[下载 Lift](https://www.lift-cli.cloud.ibm.com/#download){:external}。
 
-有关使用 Lift 将数据迁移至 {{site.data.keyword.Bluemix_notm}} 的逐步指示信息，请参阅：[将数据迁移至 {{site.data.keyword.dashdblong}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}。
+有关使用 Lift 将数据迁移至 {{site.data.keyword.Bluemix_notm}} 的逐步指示信息，请参阅：[将数据迁移至 {{site.data.keyword.dashdblong}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}。
 
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
@@ -97,14 +114,14 @@ MDMS 提供快速、简单且安全的方式将太字节级别到拍字节级别
 
 ![Mass Data Migration Service 设备的视图](images/mdms.svg)
 
-有关 MDMS 设备的更多信息，请参阅[开始使用教程](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:new_window}。
+有关 MDMS 设备的更多信息，请参阅[开始使用教程](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}。
 
-有关使用 MDMS 设备将数据从 IBM PureData System for Analytics (Netezza) 数据库迁移至 {{site.data.keyword.dashdblong}} 数据库的信息，请参阅[从 IBM PureData System for Analytics (Netezza) 迁移](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:new_window}。
+有关使用 MDMS 设备将数据从 IBM PureData System for Analytics (Netezza) 数据库迁移至 {{site.data.keyword.dashdblong}} 数据库的信息，请参阅[从 IBM PureData System for Analytics (Netezza) 迁移](/docs/services/Db2whc/connecting?topic=Db2whc-pda#pda){:external}。
 
 ## 教程：从内部部署关系数据库迁移数据
 {: #tutorial}
 
 本教程演示如何将数据从内部部署关系数据库迁移到 {{site.data.keyword.dashdbshort_notm}}，以用于业务分析应用程序。 
 
-[使用 {{site.data.keyword.dashdbshort_notm}} 进行混合数据仓储 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:new_window}
+[使用 {{site.data.keyword.dashdbshort_notm}} 进行混合数据仓储](https://www.ibm.com/cloud/garage/tutorials/ibm-db2-warehouse-on-cloud/hybrid-data-warehousing-with-db-2-warehouse-on-cloud){:external}
 

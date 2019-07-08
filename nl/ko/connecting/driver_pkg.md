@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -44,7 +44,7 @@ subcollection: Db2whc
 ## 이미 설치하셨습니까?
 {: #alrdy_instld}
 
-드라이버 패키지가 컴퓨터에 이미 설치되어 있는지 확인하거나 버전 번호를 판별하려면 [**db2level** ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:new_window} 명령을 사용할 수 있습니다.
+드라이버 패키지가 컴퓨터에 이미 설치되어 있는지 확인하거나 버전 번호를 판별하려면 [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} 명령을 사용할 수 있습니다.
 
 ## 다운로드
 {: #dwnldng}

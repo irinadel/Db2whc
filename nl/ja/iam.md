@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -47,7 +47,7 @@ IBMid を持つユーザーが特定のデータベース・サービス・イ�
 
 **サービス ID**
 
-ユーザー ID がユーザーを識別するのと同様の方法で、サービス ID はサービスまたはアプリケーションを識別します。 サービス ID は、アプリケーションが {{site.data.keyword.Bluemix_notm}} サービスでの認証を行うために使用できる ID です。 サービス ID は、所有する IBMid とは別個のエンティティーを表します。 したがって、データベース内のサービス ID に固有で、さまざまな権限と許可を付与できます。 サービス ID にはパスワードはありません。 サービス ID がデータベース・サービス・インスタンスに接続するためには、サービス ID ごとに API キーを作成する必要があります。 サービス ID について詳しくは、[Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:new_window} を参照してください。
+ユーザー ID がユーザーを識別するのと同様の方法で、サービス ID はサービスまたはアプリケーションを識別します。 サービス ID は、アプリケーションが {{site.data.keyword.Bluemix_notm}} サービスでの認証を行うために使用できる ID です。 サービス ID は、所有する IBMid とは別個のエンティティーを表します。 したがって、データベース内のサービス ID に固有で、さまざまな権限と許可を付与できます。 サービス ID にはパスワードはありません。 サービス ID がデータベース・サービス・インスタンスに接続するためには、サービス ID ごとに API キーを作成する必要があります。 サービス ID について詳しくは、[Introducing {{site.data.keyword.Bluemix_notm}} IAM Service IDs and API Keys](https://www.ibm.com/blogs/bluemix/2017/10/introducing-ibm-cloud-iam-service-ids-api-keys/){:external} を参照してください。
 
 ## クライアント接続およびユーザー・ログイン
 {: #connect_login}
@@ -58,7 +58,7 @@ IAM 認証には、以下の方式を使用できます。
 
 **アクセス・トークン**
 
-アクセス・トークンは、API キーを使用して REST API を介し、アプリケーションにより IAM サービスから直接入手できます。 詳しくは、[API キーを使用した {{site.data.keyword.Bluemix_notm}} IAM トークンの取得 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:new_window} を参照してください。 アクセス・トークンには、期限切れまでに 60 分間のデフォルト有効期間があります。 トークンの有効期限が切れると、Db2 サーバーは、接続の確立を許可しません。 接続が確立された後は、トークンの有効期限のチェックは行われません。 IAM 統合以前のように、アプリケーションが切断するか、他の理由によって接続が終了されるまで、接続されたままになります。
+アクセス・トークンは、API キーを使用して REST API を介し、アプリケーションにより IAM サービスから直接入手できます。 詳しくは、[API キーを使用した {{site.data.keyword.Bluemix_notm}} IAM トークンの取得](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}を参照してください。アクセス・トークンには、期限切れまでに 60 分間のデフォルト有効期間があります。 トークンの有効期限が切れると、Db2 サーバーは、接続の確立を許可しません。 接続が確立された後は、トークンの有効期限のチェックは行われません。 IAM 統合以前のように、アプリケーションが切断するか、他の理由によって接続が終了されるまで、接続されたままになります。
 
 ```
 curl -k -X POST \
@@ -73,7 +73,7 @@ curl -k -X POST \
 
 **API キー**
 
-IBMid ユーザーまたはサービス ID ごとに複数の API キーを作成できます。 通常、各 API キーは、単一アプリケーションに対して作成されます。 API キーは、所有する IBMid またはサービス ID がデータベース・サービス・インスタンスにユーザーとして追加されている限り、アプリケーションが同じデータベース・サービス・インスタンスに接続することを許可します。 API キーは、所有する IBMid またはサービス ID と同じ権限および許可をデータベース内で持っています。 アプリケーションのデータベースへの接続の許可を取りやめる場合は、対応する API キーを削除できます。 この認証方式は、IAM サービスとの直接対話が必要ないため、アクセス・トークンを使用した場合よりも、アプリケーションで行う変更が少なくなります。 API キーの作成および管理について詳しくは、[ユーザーの API キーの管理![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](/docs/iam?topic=iam-userapikey#userapikey){:new_window} を参照してください。
+IBMid ユーザーまたはサービス ID ごとに複数の API キーを作成できます。 通常、各 API キーは、単一アプリケーションに対して作成されます。 API キーは、所有する IBMid またはサービス ID がデータベース・サービス・インスタンスにユーザーとして追加されている限り、アプリケーションが同じデータベース・サービス・インスタンスに接続することを許可します。 API キーは、所有する IBMid またはサービス ID と同じ権限および許可をデータベース内で持っています。 アプリケーションのデータベースへの接続の許可を取りやめる場合は、対応する API キーを削除できます。 この認証方式は、IAM サービスとの直接対話が必要ないため、アクセス・トークンを使用した場合よりも、アプリケーションで行う変更が少なくなります。 API キーの作成および管理について詳しくは、[ユーザーの API キーの管理](/docs/iam?topic=iam-userapikey#userapikey){:external}を参照してください。
 
 **IBMid/パスワード**
 
@@ -152,7 +152,7 @@ ODBC アプリケーションまたはコマンド・ライン・クライアン
 
     `CONNECT TO <database_server_name> USER <IBMid> USING <password>`
 
-    CLP を使用したデータベース・サーバーへの接続について詳しくは、[CONNECT (type 2) ステートメント![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:new_window}を参照してください。 
+    CLP を使用したデータベース・サーバーへの接続について詳しくは、[CONNECT (type 2) ステートメント](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r0000908.html){:external}を参照してください。 
 
 * CLPPLUS CONNECT ステートメントには、次のいずれかを含めることができます。
 
@@ -174,7 +174,7 @@ ODBC アプリケーションまたはコマンド・ライン・クライアン
 
     `connect <IBMid>/<password>@<data_source_name>`
 
-    CLPPLUS を使用した DSN 別名への接続について詳しくは、[CLPPlus での DSN 別名 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:new_window} を参照してください。
+    CLPPLUS を使用した DSN 別名への接続について詳しくは、[CLPPlus での DSN 別名](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.clpplus.doc/doc/c0057148.html){:external}を参照してください。
 
 ### JDBC
 {: #jdbc}
@@ -282,12 +282,12 @@ Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_addr
   .
   ```
 
-サービスの API について詳しくは、[{{site.data.keyword.dashdbshort_notm}} REST API ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://ibm.biz/db2whc_api){:new_window} を参照してください。
+サービスの API について詳しくは、[{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external} を参照してください。
 
 ## IBMid の統合
 {: #ibmid_fed}
 
-LDAP などの独自の ID プロバイダーを使用するには、まず LDAP サーバーを IBMid に統合する必要があります。 LDAP サーバーと IBMid との統合に関する説明については、[IBMid Enterprise Federation Adoption Guide ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:new_window} を参照してください。 IBMid の統合が完了して、許可されたユーザーがデータベース管理者によってデータベース・サービス・インスタンスに追加されると、それらのユーザーは、自分の企業のユーザー ID とパスワードを使用してコンソールにログインできるようになります。 代わりに、それらのユーザーは、自分のユーザー ID を表すアクセス・トークンまたは API キーを使用して、サポートされるデータベース・クライアント・インターフェースのいずれかを介してデータベース・サービス・インスタンスに接続することもできます。
+LDAP などの独自の ID プロバイダーを使用するには、まず LDAP サーバーを IBMid に統合する必要があります。 LDAP サーバーと IBMid との統合に関する説明については、[IBMid Enterprise Federation Adoption Guide](https://ibm.ent.box.com/notes/78040808400?v=IBMid-Federation-Guide){:external} を参照してください。IBMid の統合が完了して、許可されたユーザーがデータベース管理者によってデータベース・サービス・インスタンスに追加されると、それらのユーザーは、自分の企業のユーザー ID とパスワードを使用してコンソールにログインできるようになります。 代わりに、それらのユーザーは、自分のユーザー ID を表すアクセス・トークンまたは API キーを使用して、サポートされるデータベース・クライアント・インターフェースのいずれかを介してデータベース・サービス・インスタンスに接続することもできます。
 
 ## 制約事項
 {: #restrictions}

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -53,7 +53,7 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 
 - [ Watson Studio (anteriormente Data Science Experience) ](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
 - [Cognos Analytics](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Estatísticas do SPSS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
 - [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)

@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -82,7 +82,7 @@ subcollection: Db2whc
 ## 연결 옵션
 {: #connect_opts}
 
-{{site.data.keyword.dashdbshort_notm}}는 애플리케이션 연결 요구사항에 따라 여러 가지 보안 연결 옵션을 제공합니다.   
+{{site.data.keyword.dashdbshort_notm}}는 애플리케이션 연결 요구사항에 따라 여러 가지 보안 연결 옵션을 제공합니다.  
 {: shortdesc}
 
 [연결 옵션](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options#connect_options)을 참조하십시오.
@@ -116,9 +116,9 @@ subcollection: Db2whc
 - 분석 데이터베이스가 필요한 {{site.data.keyword.Bluemix_short}} 애플리케이션을 연결합니다.
 - [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
 - [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
-- [Lift ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.lift-cli.cloud.ibm.com/#docs){:new_window}
+- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
 - [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
-- [Segment ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://segment.com/docs/destinations/db2/){:new_window}
+- [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
 - [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
 - [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
@@ -129,7 +129,7 @@ subcollection: Db2whc
 {: #dvis_bi}
 
 - [Cognos Analytics - 데이터에 대한 Business Intelligence 보고서 실행](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
-- [Looker ![외부 링크 아이콘](../../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+- [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 - [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
 - [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop - 데이터를 사용하여 지리공간 분석 및 지도 발행](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)

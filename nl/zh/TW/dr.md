@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,11 +32,20 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 災難回復策略取決於方案類型，以及您今日執行的資料倉儲產生作業。
 {: shortdesc}
 
+## 第一代 SMP 小型、中型、大型及 MPP 小型方案
+{: #sml_mpp}
+
 若為第一代 SMP「小型」、「中型」、「大型」及 MPP「小型」方案，每天會備份一次，並將備份部署至 {{site.data.keyword.Bluemix_notm}} Object Storage 服務。從這裡，備份會抄寫至多個可用性區域。如果主要資料中心發生災難事件，我們的服務操作員將與您合作，在不同的資料中心提供新的資料倉儲。我們將使用位於 {{site.data.keyword.Bluemix_notm}} Object Storage 服務的每日備份。
+
+## IBM Cloud 上的第二代彈性方案
+{: #flex_ibm_cloud}
 
 若為 {{site.data.keyword.Bluemix_notm}} 上的第二代「彈性」方案，每週會備份一次，並將備份部署至 {{site.data.keyword.Bluemix_notm}} Object Storage 服務。從這裡，備份會抄寫至多個可用性區域。如果主要資料中心發生災難事件，我們的服務操作員將與您合作，在不同的資料中心提供新的資料倉儲。我們將使用位於 {{site.data.keyword.Bluemix_notm}} Object Storage 服務的每週備份。
 
-若為 Amazon Web Services 上的第二代「彈性」方案，每日自助式備份會自動卸載至 AWS S3。在 S3 時，備份會抄寫至多個地區。如果發生災難事件，則會使用最新備份，將您的叢集還原至次要資料中心。
+## Amazon Web Services 上的第二代彈性方案
+{: #flex_aws}
+
+若為 Amazon Web Services 上的第二代「彈性」方案，每日自助式備份會自動卸載至 Amazon Web Services S3。在 S3 時，備份會抄寫至多個地區。如果發生災難事件，則會使用最新備份，將您的叢集還原至次要資料中心。
 
 ## **巴西：增補規則 14**（適用於針對巴西聯邦政府所佈建的系統）
 {: #rule_14}

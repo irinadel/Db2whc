@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -45,7 +45,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
 1. Téléchargez le [module de pilote Db2](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) à partir de la console Web, puis installez-le sur l'ordinateur sur lequel votre application PHP s'exécutera.
                 
-2. Utilisez la fonction [`odbc_connect` ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://php.net/manual/en/function.odbc-connect.php){:new_window} pour vous connecter à la base de données BLUDB.
+2. Utilisez la fonction [`odbc_connect`](http://php.net/manual/en/function.odbc-connect.php){:external} pour vous connecter à la base de données BLUDB.
     
    Exemple de code PHP :
 
@@ -109,7 +109,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
         
 3. Dans votre tableau de bord {{site.data.keyword.Bluemix_notm}}, créez une nouvelle connexion entre votre service Db2 et votre nouvelle application PHP. (La création de cette connexion dans {{site.data.keyword.Bluemix_notm}} rend la variable d'environnement `VCAP_SERVICES` disponible pour votre application PHP. La variable d'environnement `VCAP_SERVICES` contient les détails de base de données de votre service Db2. Utiliser `VCAP_SERVICES` est plus pratique que de coder en dur les détails de la base de données dans votre application PHP.)
         
-4. Dans votre répertoire de travail local, mettez à jour le fichier `index.php` pour vous connecter à la base de données BLUDB à l'aide de la fonction [`db2_connect` ![Icône de lien externe](../../../icons/launch-glyph.svg "Icône de lien externe")](http://php.net/manual/en/function.db2-connect.php){:new_window}.
+4. Dans votre répertoire de travail local, mettez à jour le fichier `index.php` pour vous connecter à la base de données BLUDB à l'aide de la fonction [`db2_connect`](http://php.net/manual/en/function.db2-connect.php){:external}.
         
    Exemple :
 

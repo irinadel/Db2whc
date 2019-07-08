@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -41,7 +41,7 @@ El modo más sencillo de conectar el almacén de datos es mediante un nombre de 
 2. Pulse **Credenciales de servicio**.
 3. Pulse **Nueva credencial** y luego pulse **Añadir**.
 4. Una vez creadas las credenciales, en la columna `Acciones` pulse **Ver credenciales**.
-5. En el siguiente ejemplo e documento JSON, anote el contenido de los campos correspondientes a nombre de host, contraseña y nombre de usuario. Utilizará estos tres componentes para establecer la conexión de punto final público:
+5. En el siguiente ejemplo de documento JSON, anote el contenido de los campos correspondientes a nombre de host, contraseña y nombre de usuario. Utilizará estos tres componentes para establecer la conexión de punto final público:
 
    ```
    {
@@ -61,7 +61,7 @@ El modo más sencillo de conectar el almacén de datos es mediante un nombre de 
 
    ```
 
-   ![Acceso de red pública a {{site.data.keyword.cloud_notm}}](images/public_connection.png)
+   ![Acceso de red pública a {{site.data.keyword.cloud_notm}}](images/public_connection.png "Representación gráfica de la conexión de usuario a nube")
 
 ## Conexión a un punto final privado: punto final de servicio de IBM Cloud
 {: #priv_endpt}
@@ -90,7 +90,7 @@ Si tiene una aplicación desplegada en una red privada que está fuera de {{site
 ### Cómo conectar con un punto final privado con una VPN
 {: #priv_endpt_vpn_steps}
 
-Para establecer una conexión VPN con su depósito de datos en la nube detrás de un punto final público, [cree un caso de soporte de {{site.data.keyword.cloud_notm}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/unifiedsupport/cases/add){:new_window} que incluya los siguientes detalles:
+Para establecer una conexión VPN con su depósito de datos en la nube detrás de un punto final público, [cree un caso de soporte de {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/unifiedsupport/cases/add){:external} que incluya los detalles siguientes:
 
 * **Tipo de soporte**: Técnico 
 * **Categoría**: Bases de datos 
@@ -100,7 +100,7 @@ Para establecer una conexión VPN con su depósito de datos en la nube detrás d
   * **Dirección de igual VPN del lado del cliente** (su punto final de VPN): `<IP Address>`
   * **Dominio de cifrado del lado del cliente** (sea específico – 10.0.0.0/8 no funciona porque el direccionamiento 10 también se utiliza dentro de {{site.data.keyword.cloud_notm}} para los servicios de fondo): `<Domain>`
   * **Hardware y versión de VPN del lado del cliente**: `<Hardware and Version number>`
-  * **Contacto de VPN del lado del cliente** (nombre y dirección de correo electrónico del contacto técnico) 
+  * **Contacto de VPN del lado del cliente** (nombre y dirección de correo electrónico del contacto técnico): 
     * `<Name>` 
     * `<Title>` 
     * `<Email Address>`
@@ -124,4 +124,4 @@ Para establecer una conexión VPN con su depósito de datos en la nube detrás d
 
 Cuando reciban su solicitud, los técnicos de {{site.data.keyword.cloud_notm}} abrirán los puertos de cortafuegos adecuados y colocarán en la lista blanca la dirección IP proporcionada. La comunicación y la resolución de la solicitud se realizarán mediante una incidencia de caso de soporte de {{site.data.keyword.cloud_notm}}.
 
-![Acceso de red pública a {{site.data.keyword.cloud_notm}}](images/public_connection_vpn.png)
+![Acceso de red pública a {{site.data.keyword.cloud_notm}} a través de VPN](images/public_connection_vpn.png "Representación gráfica de la conexión de usuario a nube")

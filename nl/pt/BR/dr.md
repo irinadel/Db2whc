@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,11 +32,21 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 A estratégia de recuperação de desastre depende do tipo de plano e da geração do data warehouse que você está executando atualmente.
 {: shortdesc}
 
+## Planos SMP Small, Medium, Large e MPP Small de primeira geração
+{: #sml_mpp}
+
 Para os planos SMP Small, Medium, Large e MPP Small de primeira geração, um backup é feito uma vez por dia e implementado no serviço {{site.data.keyword.Bluemix_notm}} Object Storage. A partir daí, o backup é replicado para várias zonas de disponibilidade. Se um evento de desastre ocorrer no data center principal, nossos operadores de serviço trabalharão com você para criar um novo data warehouse em um data center diferente. Usaremos o backup diário que reside no serviço do {{site.data.keyword.Bluemix_notm}} Object Storage.
+
+## Planos Flex de segunda geração no IBM Cloud
+{: #flex_ibm_cloud}
 
 Para os planos Flex de segunda geração no {{site.data.keyword.Bluemix_notm}}, um backup é feito uma vez por semana e implementado no serviço {{site.data.keyword.Bluemix_notm}} Object Storage. A partir daí, o backup é replicado para várias zonas de disponibilidade. Se um evento de desastre ocorrer no data center principal, nossos operadores de serviço trabalharão com você para criar um novo data warehouse em um data center diferente. Usaremos o backup semanal que reside no serviço {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-Para os planos Flex de segunda geração no Amazon Web Services, um backup de autoatendimento diário é transferido automaticamente para o AWS S3. Quando no S3, o backup é replicado para múltiplas regiões. Se ocorrer um evento de desastre, o backup mais recente será usado para restaurar seu cluster para um data center secundário.
+## Planos Flex de segunda geração no Amazon Web Services
+{: #flex_aws}
+
+Para os planos Flex de segunda geração no Amazon Web Services, um backup de autoatendimento
+diário é transferido automaticamente para o Amazon Web Services S3. Quando no S3, o backup é replicado para múltiplas regiões. Se ocorrer um evento de desastre, o backup mais recente será usado para restaurar seu cluster para um data center secundário.
 
 ## **Brasil: Regra complementar 14** (aplica-se a sistemas provisionados para o governo federal brasileiro)
 {: #rule_14}

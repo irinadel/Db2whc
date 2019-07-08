@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,4 +32,4 @@ Die Datenbankadministratorrolle umfasst die Verwaltung der folgenden Benutzerzug
 * Datenbank. Der Administrator kann differenzierte Zugriffsberechtigungen für die Datenbank erteilen. Zum Beispiel kann er den Zugriff auf bestimmte Tabellen, Schemas, Zeilen oder Spalten begrenzen. 
 
 Weitere Informationen zum Benutzermanagement finden Sie hier: 
-- [Datenbankbenutzermanagement ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:new_window}
+- [Datenbankbenutzermanagement](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}

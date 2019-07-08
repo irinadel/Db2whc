@@ -14,7 +14,7 @@ subcollection: Db2whc
 {:tsSymptoms: .tsSymptoms} 
 {:tsCauses: .tsCauses} 
 {:tsResolve: .tsResolve} 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -42,11 +42,11 @@ Ein Versuch, ein Data-Warehouse zu erstellen, schlägt mit dem Fehler 500 fehl, 
 Der Service {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} wird momentan einer geplanten Wartung unterzogen oder es kam zu einer geplanten Unterbrechung.
 {: tsCauses}
 
-Sie können den Status des Service {{site.data.keyword.dashdbshort_notm}} in {{site.data.keyword.Bluemix_notm}} durch Überprüfen der folgenden Seite feststellen: [IBM Cloud: Status ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://cloud.ibm.com/status?selected=status){:new_window}.
+Sie können den Status des {{site.data.keyword.dashdbshort_notm}}-Service in {{site.data.keyword.Bluemix_notm}} durch Überprüfen der folgenden Seite feststellen: [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external}.
 {: tsResolve}
 
 <!-- * Status monitoring:
-  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
+  * [All regions](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:external} -->
 
 ## Hilfe und Unterstützung für Db2 Warehouse on Cloud anfordern
 {: #gettinghelp}
@@ -56,12 +56,12 @@ Sollten bei der Verwendung von {{site.data.keyword.dashdbshort_notm}} Probleme a
 
 Wenn Sie in den Foren eine Frage stellen, versehen Sie Ihre Frage mit einem Tag, um die {{site.data.keyword.Bluemix}}-Entwicklungsteams auf die Frage aufmerksam zu machen.
 
-* Wenn Sie technische Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.dashdbshort_notm}} haben, posten Sie die Fragen in [Stack Overflow ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window} und kennzeichnen Sie die Frage mit den Tags "bluemix" und "db2".
-* Bei Fragen zum Service und zu den Anweisungen für den Einstieg verwenden Sie das Forum [IBM developerWorks® dW Answers ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window}. Geben Sie die Tags "bluemix" und "db2" an.
+* Wenn Sie technische Fragen zur Entwicklung oder Bereitstellung einer App mit {{site.data.keyword.dashdbshort_notm}} haben, posten Sie die Fragen in [Stack Overflow](http://stackoverflow.com/search?q=dashdb+bluemix){:external} und kennzeichnen Sie die Frage mit den Tags "bluemix" und "db2". 
+* Bei Fragen zum Service und zu den Anweisungen für den Einstieg verwenden Sie das Forum [IBM developerWorks® dW Answers](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:external}. Geben Sie die Tags "bluemix" und "db2" an.
 
-Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}.
+Weitere Details zur Nutzung der Foren finden Sie unter [Hilfe anfordern](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:external}.
 
-Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Mit Supportfällen arbeiten](/docs/get-support?topic=get-support-open-case#open-case){:new_window}.
+Informationen zum Öffnen eines IBM Support-Tickets oder zu den Supportebenen und den Prioritätsstufen von Tickets finden Sie unter [Mit Supportfällen arbeiten](/docs/get-support?topic=get-support-open-case#open-case){:external}.
 
 
 

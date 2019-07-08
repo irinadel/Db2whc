@@ -14,7 +14,7 @@ subcollection: Db2whc
 {:tsSymptoms: .tsSymptoms} 
 {:tsCauses: .tsCauses} 
 {:tsResolve: .tsResolve} 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -42,11 +42,11 @@ subcollection: Db2whc
 {{site.data.keyword.Bluemix_notm}}의 {{site.data.keyword.dashdbshort_notm}} 서비스가 스케줄된 유지보수 프로시저를 진행 중이거나 알려진 가동 중단이 발생했습니다.
 {: tsCauses}
 
-[IBM Cloud: 상태 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://cloud.ibm.com/status?selected=status){:new_window} 페이지를 확인하여 {{site.data.keyword.Bluemix_notm}}에서 {{site.data.keyword.dashdbshort_notm}} 서비스의 상태를 판별할 수 있습니다.
+[IBM Cloud: 상태](https://cloud.ibm.com/status?selected=status){:external} 페이지를 확인하여 {{site.data.keyword.Bluemix_notm}}에서 {{site.data.keyword.dashdbshort_notm}} 서비스의 상태를 판별할 수 있습니다.
 {: tsResolve}
 
 <!-- * Status monitoring:
-  * [All regions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:new_window} -->
+  * [All regions](https://console.eu-gb.bluemix.net/status?tags=platform,runtimes,services,ibm:yp:eu-gb,ibm:yp:eu-de,ibm:yp:us-south,ibm:yp:au-syd){:external} -->
 
 ## Db2 Warehouse on Cloud에 대한 도움 및 지원 받기
 {: #gettinghelp}
@@ -54,14 +54,14 @@ subcollection: Db2whc
 {{site.data.keyword.dashdbshort_notm}} 사용 시 문제점 또는 질문이 있는 경우, 정보를 검색하거나 포럼을 통해 질문하여 도움을 받을 수 있습니다. 또한 지원 티켓을 열 수도 있습니다.
 {: shortdesc}
 
-포럼을 사용하여 질문하는 경우, {{site.data.keyword.Bluemix}} 개발 팀이 볼 수 있도록 질문에 태그를 지정하십시오.
+포럼을 사용하여 질문하는 경우 {{site.data.keyword.Bluemix}} 개발 팀이 볼 수 있도록 질문에 태그를 지정하십시오.
 
-* {{site.data.keyword.dashdbshort_notm}}에서 앱을 개발하거나 배치하는 방법에 대한 기술적인 질문이 있을 경우 [Stack Overflow ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://stackoverflow.com/search?q=dashdb+bluemix){:new_window}에 질문을 게시하고 해당 질문에 "bluemix" 및 "db2" 태그를 지정하십시오.
-* 서비스 및 시작하기 지시사항에 대한 질문이 있는 경우에는 [IBM developerWorks® dW Answers ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:new_window} 포럼을 이용하십시오. "bluemix" 및 "db2" 태그를 포함하십시오.
+* {{site.data.keyword.dashdbshort_notm}}에서 앱을 개발하거나 배치하는 방법에 대한 기술적인 질문이 있을 경우 [Stack Overflow](http://stackoverflow.com/search?q=dashdb+bluemix){:external}에 질문을 게시하고 해당 질문에 "bluemix" 및 "db2" 태그를 지정하십시오.
+* 서비스 및 시작하기 지시사항에 대한 질문이 있는 경우에는 [IBM developerWorks® dW Answers](https://developer.ibm.com/answers/topics/dashdb/?smartspace=bluemix){:external} 포럼을 참조하십시오. "bluemix" 및 "db2" 태그를 포함하십시오.
 
-포럼 사용에 대한 자세한 내용은 [도움 받기](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:new_window}를 참조하십시오.
+포럼 사용에 대한 자세한 내용은 [도움 받기](/docs/get-support?topic=get-support-getting-customer-support#using-avatar){:external}를 참조하십시오.
 
-IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 케이스에 대해 작업](/docs/get-support?topic=get-support-open-case#open-case){:new_window}을 참조하십시오.
+IBM 지원 티켓 열기에 대한 정보 또는 지원 레벨 및 티켓 심각도에 대한 정보는 [지원 케이스에 대한 작업](/docs/get-support?topic=get-support-open-case#open-case){:external}을 참조하십시오.
 
 
 

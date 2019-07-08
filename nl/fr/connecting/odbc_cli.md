@@ -1,4 +1,4 @@
----
+﻿---
 
 copyright:
   years: 2014, 2019
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -62,7 +62,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `<alias>` est un alias de nom de source de données (DSN) que vous choisissez
     
-2. [*Facultatif*]: Pour tester la connexion à la base de données, exécutez cette commande dans l'invite de commande :
+2. [*Facultatif*] : Pour tester la connexion à la base de données, exécutez cette commande dans l'invite de commande :
 
    `db2cli validate -dsn <alias> -connect -user <user_id> -passwd <password>`
 
@@ -74,7 +74,7 @@ Avant de tenter une connexion à votre base de données {{site.data.keyword.dash
 
    `<password>` provient des données d'identification de connexion que vous avez obtenues plus tôt
 
-3. [*Facultatif*]: Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur.
+3. [*Facultatif*] : Pour enregistrer le nom de source de données (DSN) auprès de Microsoft ODBC Driver Manager et pour travailler avec les applications Microsoft ODBC, exécutez la commande suivante. Par défaut, le DSN est créé en tant que DSN utilisateur.
 
    `db2cli registerdsn -add -dsn <alias>`
 

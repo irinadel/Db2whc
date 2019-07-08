@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-24"
+lastupdated: "2019-05-21"
 
 keywords:
 
@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:ruby: #ruby .ph data-hd-programlang='ruby'}
 {:php: #php .ph data-hd-programlang='php'}
 {:python: #python .ph data-hd-programlang='python'}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -32,10 +32,13 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} 受管理服務是在雲端中為您所佈建的 SQL Database。您就像使用任何資料庫軟體一般的使用 Db2 倉儲，但沒有硬體設置或軟體安裝及維護的額外負荷與費用。
 {: shortdesc}
 
+<!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. Working on edits of Word doc. -->
+<!--To get started on accessing and working with {{site.data.keyword.dashdbshort_notm}}, go through the [Getting started tutorial](https://cloudcontent.mybluemix.net/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}. -->
+
 ## 免費試用
 {: #freetrial}
 
-您可以嘗試 {{site.data.keyword.dashdbshort_notm}} 入門方案，免費使用高達 1 GB 的儲存空間。[免費試用 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}
+您可以嘗試 {{site.data.keyword.dashdbshort_notm}} 入門方案，免費使用高達 1 GB 的儲存空間。[免費試用](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}
 
 ## 介面
 {: #interfaces}
@@ -54,9 +57,9 @@ subcollection: Db2whc
 Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面，包括：負載機能、SQL 編輯器、驅動程式下載等等。
 {: shortdesc}
 
-![Web 主控台儀表板頁面的視圖](images/console_v3.png)
+![Web 主控台儀表板頁面的視圖](images/uc.png "Web 主控台開啟至儀表板頁面"){: caption="圖 1. Web 主控台儀表板頁面的視圖" caption-side="bottom"}
 
-<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://ibm.biz/dashdb-general-quick-tour){:new_window}. -->
+<!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
 您可以透過下列方式來存取 Web 主控台：
    * 從 {{site.data.keyword.Bluemix_notm}} 儀表板 - 您可以從 {{site.data.keyword.dashdbshort_notm}} 服務的「服務詳細資料」頁面中開啟 Web 主控台。
@@ -65,7 +68,7 @@ Web 主控台為您使用資料庫所需的所有項目提供一個圖形介面�
 ### REST API
 {: #api}
 
-使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://ibm.biz/db2whc_api){:new_window} 執行與檔案管理及載入資料相關的作業。
+使用 {{site.data.keyword.dashdbshort_notm}} 服務方案，您可以透過使用 [{{site.data.keyword.dashdbshort_notm}} REST API](http://ibm.biz/db2whc_api){:external} 執行與檔案管理及載入資料相關的作業。
 {: shortdesc}
 
 ### 連接本端電腦的應用程式或您最愛的工具

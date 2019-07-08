@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -37,7 +37,7 @@ Assista a este vídeo para ver como criar uma conexão.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Criando uma conexão por meio do Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TRUEPVHGi0s?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-Para obter mais informações, consulte [Conectando o Cognos Analytics ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:new_window}
+Para obter mais informações, veja [Conectando o Cognos Analytics](https://www.ibm.com/support/knowledgecenter/en/SSEP7J_11.0.0/com.ibm.swg.ba.cognos.ug_cra.doc/c_create_ds.html#create_ds){:external}
 
 ## Looker
 {: #looker}
@@ -45,7 +45,7 @@ Para obter mais informações, consulte [Conectando o Cognos Analytics ![Ícone 
 É possível conectar o Looker a um banco de dados {{site.data.keyword.dashdbshort_notm}}. Looker é um app de inteligência de negócios e uma plataforma de análise de Big Data com a qual é possível explorar, analisar e compartilhar business analytics em tempo real.
 {: shortdesc}
 
-[Conectando o Looker ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://docs.looker.com/setup-and-management/connecting-to-db){:new_window}
+[Conectando o Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
 
 ## Tableau
 {: #tableau}
@@ -66,7 +66,7 @@ Antes de tentar se conectar ao seu banco de dados do {{site.data.keyword.dashdbs
 3. Na lista **Origens de dados**, selecione a origem de dados ou o driver a ser usado para a conexão com o banco de dados. Na seção **Em um servidor** da lista, selecione **IBM Db2**.
 4. Na janela **Conexão do IBM DB2**, insira as informações de conexão usando a tabela a seguir.
 
-| Campo Tableau | Campo de informações de conexões do Db2 |
+| Campo Tableau | Campo de informações de conexões do Db2|
 |---------------|-----------------------------------|
 | Etapa 1: Digitar um nome de servidor | Nome do host |
 | Etapa 2: Porta | Número da porta |
@@ -115,8 +115,8 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
 {: #results2}
 
 Os resultados da consulta são exibidos em uma planilha do Excel. Esses são os mesmos resultados exibidos no visualizador Resultados. Agora é possível gerar gráficos e relatórios e analisar seus dados usando o Excel. Para obter mais informações sobre como fazer isso e como executar consultas SQL em seus dados por meio do console da web, consulte: 
-- [Tutorial: Gerando gráficos e relatórios usando o Excel ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:new_window}
-- [Analisando com o Excel ![Ícone de link externo](../../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:new_window}
+- [Tutorial: Gerando gráficos e relatórios usando Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/explore_excel_reports.html){:external}
+- [Analisando com Excel](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/exploreexcel.html){:external}
 
 ## Esri ArcGIS para Desktop
 {: #esri_arcgis}
@@ -157,7 +157,7 @@ Deve-se ter o pacote de drivers do Db2 ou o IBM® Data Server Driver Package ins
             
    - Pressione  ** OK **.
         
-     ![Database Connections wizard](images/2_gs_conn.jpg)
+     ![Assistente de conexões com o banco de dados](images/2_gs_conn.jpg "Assistente de conexões com o banco de dados")
 
 ### Resultados
 {: #results3}

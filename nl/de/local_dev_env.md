@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -24,10 +24,10 @@ subcollection: Db2whc
 # Lokale Entwicklungsumgebung
 {: #local_dev}
 
-Wenn Sie eine lokale Db2-Entwicklungsumgebung einrichten möchten, können Sie [IBM Db2 Warehouse Developer-C for Non-Production ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://store.docker.com/images/ibm-db2-warehouse-dev){:new_window} verwenden, das in Docker Store verfügbar ist.
+Wenn Sie eine lokale Db2-Entwicklungsumgebung einrichten möchten, können Sie [IBM Db2 Warehouse Developer-C for Non-Production](https://store.docker.com/images/ibm-db2-warehouse-dev){:external} verwenden, das in Docker Store verfügbar ist.
 {: shortdesc}
 
 Informationen zu den Voraussetzungen sowie Installationsanweisungen können Sie über den Link für das jeweilige Betriebssystem aufrufen: 
 
-- [Windows und Macintosh ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:new_window}
-- [Linux ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:new_window}
+- [Windows und Macintosh](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:external}
+- [Linux](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:external}

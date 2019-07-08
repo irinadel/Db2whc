@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-03-15"
+lastupdated: "2019-06-05"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -34,27 +34,29 @@ Puoi scegliere un piano {{site.data.keyword.dashdbshort_notm}} configurato e ott
    * Piani configurati per l'alta disponibilità
    * Compatibilità Oracle
 
-Visualizza tutti i piani {{site.data.keyword.dashdbshort_notm}} disponibili nel [catalogo {{site.data.keyword.Bluemix}}](https://cloud.ibm.com/catalog/services/db2-warehouse){:new_window}.
-<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:new_window} -->
-<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:new_window} -->
+Visualizza tutti i piani {{site.data.keyword.dashdbshort_notm}} disponibili nel [catalogo {{site.data.keyword.Bluemix}}](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}.
+<!--   * Plans configured for data warehouse and online analytical processing (OLAP) workloads: [{{site.data.keyword.dashdbshort_notm}}](https://console.bluemix.net/catalog/services/db2-warehouse){:external} -->
+<!--   * Plans configured for high-speed, transactional processing (OLTP): [{{site.data.keyword.dashdbshort_notm}} for Transactions](https://console.ng.bluemix.net/catalog/services/dashdb-for-transactions-sql-database){:external} -->
 
 Guarda questo video per vedere un'introduzione al piano {{site.data.keyword.dashdbshort_notm}} Flex Performance.
 
 <iframe class="embed-responsive-item" id="youtubeplayer" title="Creating a connection from Cognos Analytics" type="text/html" width="640" height="390" src="//www.youtube.com/embed/59PKSnzNQAg?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
 
-Puoi richiedere che venga distribuito il tuo servizio {{site.data.keyword.dashdbshort_notm}} in un ambiente isolato dalla rete in {{site.data.keyword.Bluemix}}. Contatta [il settore Vendite di {{site.data.keyword.IBM_notm}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window}.
+Puoi richiedere che venga distribuito il tuo servizio {{site.data.keyword.dashdbshort_notm}} in un ambiente isolato dalla rete in {{site.data.keyword.Bluemix}}. Contatta il [settore Vendite di {{site.data.keyword.IBM_notm}}](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external}.
 
-Se nel catalogo non vedi una configurazione che risponda alle tue esigenze, contatta il settore Vendite di [{{site.data.keyword.IBM_notm}} ![Icona di link esterno](../../icons/launch-glyph.svg "Icona di link esterno")](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:new_window} per discutere delle altre opzioni.
+Se nel catalogo non vedi una configurazione che risponda alle tue esigenze, contatta il settore Vendite di [{{site.data.keyword.IBM_notm}}](https://www.ibm.com/connect/ibm/us/en/?lnk=fcw){:external} per discutere delle altre opzioni.
 
-## Disponibilità dei piani nei data center
+## Disponibilità di piani nei data center di IBM Cloud
 {: #availability}
 
-La seguente tabella fornisce le informazioni sulla disponibilità dei vari piani {{site.data.keyword.dashdbshort_notm}} per i data center ubicati in regioni geografiche:
+La seguente tabella fornisce le informazioni sulla disponibilità dei vari piani {{site.data.keyword.dashdbshort_notm}} in base ai data center IBM Cloud presenti nelle regioni geografiche:
 
 | Piani {{site.data.keyword.dashdbshort_notm}} | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
+| Flex / Flex Performance      | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
 |                              |              |           | Dallas (us-south)         |               |  
+|      |||||
+| Flex One                     | *NA          | *NA       | Dallas (us-south)         | *NA           |
 |      |||||
 | SMP                          | Hong Kong    | Amsterdam | Washington D.C. (us-east) | Sao Paulo     |
 |                              | Seoul        | Frankfurt | Dallas (us-south)         |               | 
@@ -69,9 +71,26 @@ La seguente tabella fornisce le informazioni sulla disponibilità dei vari piani
 |                              | Sydney       | Milan     | Querétaro                 |               | 
 |                              | Tokyo        | Oslo      | Toronto                   |               | 
 |                              |              | Paris     |                           |               |
-{: caption="Tabella 1. Data center che supportano i piani di servizio Db2 Warehouse on Cloud" caption-side="top"}
+{: caption="Tabella 1. Data center di IBM Cloud che supportano i piani di servizio Db2 Warehouse on Cloud" caption-side="top"}
 
 *NA = Non disponibile in questo momento
+
+## Disponibilità dei piani nei data center di Amazon Web Services
+{: #availability_aws}
+
+La seguente tabella fornisce le informazioni sulla disponibilità dei vari piani {{site.data.keyword.dashdbshort_notm}} in base ai data center Amazon Web Services presenti nelle regioni geografiche:
+
+| Piani {{site.data.keyword.dashdbshort_notm}} | Asia/Pacific | Europe    | North/Central America     | South America |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Sydney       | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    |             |               |  
+|      |||||
+| Flex Performance             | Sydney       | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    |             |               | 
+{: caption="Tabella 2. Data center di Amazon Web Services che supportano i piani di servizio Db2 Warehouse on Cloud" caption-side="top"}
+
+*NA = Non disponibile in questo momento
+
 
 ## Limitazioni piano d'ingresso
 {: #ep_restrictions}
@@ -101,4 +120,4 @@ La seguente è una tabella delle limitazioni del piano d'ingresso {{site.data.ke
 |  | Regolamento generale sulla protezione dei dati EU (GDPR) | Nessuna limitazione specifica applicata |
 |  |  |
 | Gestione account | Riattivazione | Nessun requisito di riattivazione |
-{: caption="Tabella 1. Limitazioni del piano d'ingresso {{site.data.keyword.dashdbshort_notm}}" caption-side="top"}
+{: caption="Tabella 3. Limitazioni del piano d'ingresso {{site.data.keyword.dashdbshort_notm}}" caption-side="top"}

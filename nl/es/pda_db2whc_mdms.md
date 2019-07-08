@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions -->
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -42,13 +42,13 @@ MDMS ofrece una forma rápida, sencilla y segura para transferir físicamente de
    - Máscara de red 
    - Pasarela predeterminada para acceder a la interfaz de usuario (IU)
 3. Destino de la descarga de Cloud Object Storage<br/>
-Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:new_window}.
+Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo en varias regiones de EE. UU. o en una ubicación del sur de EE. UU. para cumplimentar el formulario de solicitud. Si todavía no dispone de una cuenta de {{site.data.keyword.cos_full_notm}}, cree una antes de solicitar el dispositivo MDMS. Para obtener más información, consulte: [Acerca de {{site.data.keyword.cos_full}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-about#about){:external}.
    {: important}
 
 ## Paso 1: Creación de una solicitud
 {: #create-req}
 
-1. Inicie una sesión en el [{{site.data.keyword.slportal}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){:new_window} utilizando sus credenciales exclusivas.
+1. Inicie sesión en [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:external} utilizando sus credenciales exclusivas.
 2. Seleccione **Almacenamiento > Migración de datos > Migración de datos masiva** en la barra de navegación para acceder a la página de destino de MDMS.
 3. Pulse **Solicitar dispositivo** para abrir el formulario de pedido.
 4. Rellene todos los campos del formulario de solicitud de **migración de datos masiva**.
@@ -63,9 +63,9 @@ Debe tener como mínimo una cuenta de {{site.data.keyword.cos_full}} y un grupo 
 ## Paso 2: Preparación y envío
 {: #prep-ship}
 
-Después de enviar la solicitud, el estado de la incidencia de la solicitud aparece como *Procesando solicitud*. Una vez que se haya procesado la solicitud, {{site.data.keyword.IBM}} empieza a preconfigurar el siguiente dispositivo disponible y el estado en la cuadrícula [Solicitudes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/storage/mdms){:new_window} aparecerá como *Preparando dispositivo* seguido de *Esperando envío*. Después de pasar al estado *Pendiente de envío*, la solicitud ya no puede cancelarse. 
+Después de enviar la solicitud, el estado de la incidencia de la solicitud aparece como *Procesando solicitud*. Una vez que se haya procesado la solicitud, {{site.data.keyword.IBM}} empieza a preconfigurar el siguiente dispositivo disponible y el estado en la cuadrícula [Solicitudes](https://control.softlayer.com/storage/mdms){:external} mostrará *Preparando dispositivo* seguido de *a la espera de envío*. Después de pasar al estado *Pendiente de envío*, la solicitud ya no puede cancelarse. 
 
-El transportista recoge el dispositivo que se debe enviar a su ubicación. En este momento, el estado de la solicitud se actualiza a *Dispositivo enviado*. Se le proporciona el número de seguimiento en el apartado **Detalles de la solicitud** de la cuadrícula [Solicitudes ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/storage/mdms){:new_window}.
+El transportista recoge el dispositivo que se debe enviar a su ubicación. En este momento, el estado de la solicitud se actualiza a *Dispositivo enviado*. Se le proporciona el número de seguimiento en el apartado **Detalles de la solicitud** de la cuadrícula [Solicitudes](https://control.softlayer.com/storage/mdms){:external}.
 
 ## Paso 3: Recepción y conexión
 {: #rec-con}
@@ -74,10 +74,10 @@ El transportista recoge el dispositivo que se debe enviar a su ubicación. En es
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 1. The device arrives pre-configured for you. Basic [powering/connectivity instructions](docs/infrastructure/mass-data-migration/user-instructions.html) are included.  **[Editor's note: Are the instructions included in the MDMS package? If so, are they different from the instructions found with the "powering/connectivity" link?]**<br/>
-  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the credentials.
+  **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the credentials.
 2. Point your browser to the static IP address that you provided in the order form. **[Editor's note: Is this done on PDA? What system is the static IP address for?]**
 3. Log in. Enter password to unlock the empty storage pool. **[Editor's note: How is this done?]**<br/>
-   **Note**: See the **Request Details** of your [Requests ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/mdms){:new_window} grid for the password.
+   **Note**: See the **Request Details** of your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the password.
 4. Mount the NFS share on your server. **[Editor's note: How is this done?]**
 5. Rerun your DataShuttle inventory to ensure any new files are captured. **[Editor's note: Is "DataShuttle inventory" a command that is run on PDA?]**
 
@@ -89,7 +89,7 @@ El dispositivo de migración de datos masiva de {{site.data.keyword.cloud}} es u
 
 ### Alimentación
 
-El dispositivo incluye un cable de alimentación C13-US ([IEC 60320 ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://en.wikipedia.org/wiki/IEC_60320){:new_window}). Si se utiliza el dispositivo fuera de Estados Unidos, es posible que sea necesario un adaptador de alimentación.
+El dispositivo incluye un cable de alimentación C13-US ([IEC 60320](https://en.wikipedia.org/wiki/IEC_60320){:external}). Si se utiliza el dispositivo fuera de Estados Unidos, es posible que sea necesario un adaptador de alimentación.
 
 El dispositivo MDMS acepta todos los rangos de alimentación estándar. ![Rango de alimentación](/images/PowerRating.png)
 
@@ -115,12 +115,12 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
     Hay dos interruptores de alimentación.
     {: note}
 
-    ![Conmutadores Power](/images/MDMSPowerSwitch.png)
+    ![Interruptores de alimentación](/images/MDMSPowerSwitch.png "Los interruptores de alimentación van en círculos")
     No es necesario que el dispositivo se extraiga del compartimento portátil.
     {: note}
 
 4. Extraiga el cable CAT6A de la tapa del compartimento y conéctelo al puerto Eth3 (10 GbE-B) que se muestra en la imagen.
-    ![Ubicación de los puertos Eth1 y Eth3](/images/MDMSNewEth1and3.png)
+   ![Ubicación de puertos Eth1 y Eth3](/images/MDMSNewEth1and3.png "Las ubicaciones de puerto Eth1 y Eth3 están resaltadas")
 
 5. Conecte el adaptador de CAT6A a SFP proporcionado y conecte el conmutador de 10 Gb.
 
@@ -130,24 +130,24 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
    Si tiene que modificar los valores de IP para Eth3 o Eth1, consulte la sección [Configuración de dirección IP](#ip_cfg).
    {: note}
 
-7. Utilice el nombre de usuario y la contraseña que se le ha suministrado para iniciar una sesión.<br/>
-    ![Página de inicio de sesión](/images/Login.png)
+7. Utilice el nombre de usuario y contraseña proporcionados para iniciar sesión.<br/>
+    ![Diálogo de inicio de sesión](/images/Login.png "Diálogo de inicio de sesión")
 
 8. El asistente de flujo presenta el acceso a los temas específicos utilizados habitualmente ordenados de izquierda a derecha.<br/>
-    ![Icono de flujo de trabajo](/images/workflow.png) <br/>
+    ![Iconos de flujo de trabajo](/images/workflow.png "Asistente de flujo de trabajo que muestra los iconos de flujo de trabajo") <br/>
     El flujo de trabajo se puede reabrir con **Gestor de trabajo** de la parte superior izquierda de la GUI.
     {: note}
 
 9. Active la agrupación de almacenamiento preconfigurado:
     - Pulse **Desbloquear e iniciar agrupación de almacenamiento**.
     - Escriba la contraseña de la agrupación de almacenamiento y pulse **Aceptar**.
-    ![Activar agrupación de almacenamiento](/images/UnlockPool.png)
+    ![Activar agrupación de almacenamiento](/images/UnlockPool.png "Especificar frase de contraseña en el campo con círculo")
 
 10. De forma predeterminada, el recurso compartido tiene habilitados los protocolos NFS y SMB sin restricciones de acceso al recurso compartido. Para restringir el acceso a este recurso compartido (para NFS o SMB), pulse con el botón derecho del ratón el nombre del recurso compartido y seleccione el elemento de menú correspondiente.<br/>
-    ![Restringir acceso compartido](/images/ShareControls.png)
+    ![Restringir acceso compartido](/images/ShareControls.png "Restringir acceso compartido")
 
 11. Cuando la agrupación de almacenamiento esté habilitada, el recurso compartido NFS está disponible para montar. En el flujo de trabajo, pulse **Ver recursos compartidos de red** para ver la vista de recursos compartidos de red. Cierre el flujo de trabajo, pulse con el botón derecho del ratón el recurso compartido y seleccione **Ver mandato de montaje** para ver el nombre del recurso compartido y la información de montaje. Monte el recurso compartido en el servidor. Asegúrese de especificar la dirección IP del enlace de 10 GB al montar el recurso compartido.
-    ![Montaje del recurso compartido](/images/MountCommand.png)
+![Montaje del recurso compartido](/images/MountCommand.png "Montaje del recurso compartido")
 
 ## Paso 4: Copia de datos y envío
 {: #copy-ship}
@@ -171,20 +171,20 @@ Si se requiere un factor de forma diferente de conexión Ethernet, debe proporci
 
        **Nota:** Si ha utilizado las opciones de la cláusula `USING` para la exportación de datos, recuerde o guarde las opciones de cláusula. La cláusula se reutilizará más tarde durante el proceso de carga de la tabla externa desde {{site.data.keyword.Bluemix_notm}} Object Storage.
 
-       Para obtener más información sobre la sentencia SQL, consulte: [Sentencia CREATE EXTERNAL TABLE ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:new_window}. 
+       Para obtener más información sobre la sentencia SQL, consulte: [Sentencia CREATE EXTERNAL TABLE](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/r_create_ext_table.html){:external}. 
 
 <!--       - Provide the {{site.data.keyword.Bluemix_notm}} team with the "USING" clause that was used for data export. The clause is reused during the load process on {{site.data.keyword.Bluemix_notm}}.
        - Select FORMAT = "Text"
 -->
 
 2. En el flujo de trabajo, pulse **Ver actividad de red** para mostrar la carga de entrada de Ethernet en la GUI a medida que se transfieren datos al dispositivo en el enlace de 10 Gb/seg.
-    ![Ver actividad](/images/UserGuide13.png)
+    ![Ver actividad](/images/UserGuide13.png "La GUI muestra la carga de Ethernet de entrada")
 
 3. En el flujo de trabajo, pulse **Ver agrupaciones de almacenamiento** para supervisar el uso de almacenamiento en el dispositivo.
-    ![Ver agrupaciones de almacenamiento](/images/UserGuide14.png)
+    ![Ver agrupación de almacenamiento](/images/UserGuide14.png "La GUI muestra el uso del almacenamiento")
 
 4. Cuando haya finalizado la copia, apague correctamente el sistema. Al apagar el sistema, también se bloquea la agrupación de almacenamiento. En el flujo de trabajo, pulse **Cerrar dispositivo...**.  
-    ![Ubicación del botón de la IU de apagado del dispositivo](/images/Shutdown.png)
+    ![Botón de la interfaz Apagar dispositivo](/images/Shutdown.png "Botón de la interfaz Apagar dispositivo")
 
 5. Desconecte el dispositivo. Devuelva el cable de alimentación, el cable Ethernet y el adaptador de SFP+ en sus respectivas ubicaciones de almacenamiento debajo de la tapa.
 
@@ -218,7 +218,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 * Asegúrese de utilizar las mismas opciones de cláusula `USING` que ha utilizado para extraer los datos desde la base de datos de PureData System for Analytics (Netezza) utilizando la sentencia CREATE EXTERNAL TABLE.
 * Para {{site.data.keyword.Bluemix_notm}} Object Storage, para crear las credenciales de HMAC al crear las nuevas credenciales de servicio, especifique {"HMAC:true"} en el campo *Añadir parámetros de configuración en línea*.
 
-Para obtener una guía de aprendizaje guiada sobre la importación de datos desde {{site.data.keyword.Bluemix_notm}} Object Storage, consulte: [Demostración guiada de IBM Db2 Warehouse on Cloud: Explorar datos cargando ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:new_window}.
+Para obtener una guía de aprendizaje guiada sobre la importación de datos desde {{site.data.keyword.Bluemix_notm}} Object Storage, consulte: [Demostración guiada de IBM Db2 Warehouse on Cloud: Explorar carga de datos](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:external}.
 
 ## Paso 7: Borrado del dispositivo MDMS
 {: #erase}
@@ -245,7 +245,7 @@ Los enlaces simbólicos y los enlaces fijos se omiten durante el proceso de expl
 
 La pantalla LCD del dispositivo se puede utilizar para configurar las direcciones IP de los puertos Ethernet. Puede navegar por la pantalla LCD utilizando los botones de **flecha arriba**, **flecha abajo**, **esc** y **entrar**. Con el botón **entrar** se accede a un menú y con el botón **esc**, se sale del menú.
 
-![Pantalla LCD](/images/MDMSLCD.png)
+![Pantalla LCD](/images/MDMSLCD.png "Pantalla de control del sistema")
 
 Al editar una dirección IP o máscara de subred, el botón **entrar** hace avanzar un carácter cada vez; el botón **esc** hace retroceder un paso cada vez. Los botones de **flecha arriba** y **flecha abajo** permiten desplazarse por los números de la ubicación seleccionada.
 
