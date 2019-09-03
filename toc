@@ -8,6 +8,7 @@ Db2 Warehouse on Cloud
     {: .navgroup id="learn"}
     getting-started.md
     about.md
+    plans_cfgs.md
 
     {: .topicgroup}
     Features & specs
@@ -58,7 +59,6 @@ Db2 Warehouse on Cloud
         pda_db2whc_mdms.md
 
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
-    plans_cfgs.md
     local_dev_env.md
     communities.md    
 
