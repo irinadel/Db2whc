@@ -34,7 +34,7 @@ The {{site.data.keyword.dashdblong}} managed service is an SQL database that is 
 
 <!-- New tutorial submitted by Olaf Depper of DTE on 5-May-2019. -->
 To get started on provisioning and working with {{site.data.keyword.dashdbshort_notm}}, go through the following 2-part tutorial:
-- [Getting started tutorial: Part 1](https://www.ibm.com/cloud/garage/dte/tutorial/test-db2-warehouse-cloud-post-sales){:external}.
+- [Getting started tutorial: Part 1](https://www.ibm.com/cloud/garage/dte/tutorial/ibm-db2-warehouse-cloud-getting-started-part-1){:external}.
 - [Getting started tutorial: Part 2](https://www.ibm.com/cloud/garage/dte/tutorial/ibm-db2-warehouse-cloud-getting-started-part-2){:external}.
 
 ## Free trial
