@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-09-03"
+lastupdated: "2019-09-06"
 
 keywords:
 
@@ -68,8 +68,8 @@ The following table provides information about the availability of the various {
 | Flex Performance             | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
 |                              |              |           | Dallas (us-south)         |               |  
 |      |||||
-| Flex One                     | Tokyo        | *NA       | Washington D.C. (us-east) | *NA           |
-|                              |              |           | Dallas (us-south)         |               | 
+| Flex One                     | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
+|                              |              | London    | Dallas (us-south)         ||
 {: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
@@ -87,7 +87,7 @@ The following table provides information about the availability of the various {
 |                              | Singapore    | London    |             |               |  
 |      |||||
 | Flex Performance             | Sydney       | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               | 
+|                              | Singapore    | London    |             ||
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
