@@ -105,7 +105,7 @@ When your apps use the {{site.data.keyword.Bluemix_notm}} platform, you can take
 
     $database    = "BLUDB";         # Get these database details from
     $hostname    = "<Host-name>";   # the Connection info page of the
-    $port        = 50000;           # web console.
+    $port        = 50001;           # web console.
     $user        = "<User-ID >";    #
     $password    = "<Password>";    #
     $dsn         = "DATABASE=$database;" .
