@@ -35,6 +35,8 @@ Secure Sockets Layer (SSL) is a security protocol that provides communication pr
 
 Configuring your applications to connect to your {{site.data.keyword.dashdbshort_notm}} database with SSL depends on your company policy. Both the standard and the SSL protocols that you can use to connect to the database transmit user names and passwords as encrypted data. If you want to ensure complete end-to-end security, transmit all database information, including sensitive data and metadata, through an SSL connection. 
 
+SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
+{: important}
 
 
 
