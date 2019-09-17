@@ -39,7 +39,7 @@ The {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemi
 An attempt to create a data warehouse fails with a 500 error, or an SDP load reports an SQL error.
 {: tsSymptoms}
 
-The {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} is undergoing a scheduled maintenance procedure or a known outage has occurred.
+The {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} is undergoing a scheduled maintenance procedure or a known outage occurred.
 {: tsCauses}
 
 You can determine the status of the {{site.data.keyword.dashdbshort_notm}} service in {{site.data.keyword.Bluemix_notm}} by checking the [IBM Cloud: Status](https://cloud.ibm.com/status?selected=status){:external} page.

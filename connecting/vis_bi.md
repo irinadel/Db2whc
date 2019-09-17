@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Data visualization/BI
+# Data visualization & BI
 {: #data_vis_bi}
 
 You can also connect external applications and tools to {{site.data.keyword.dashdbshort_notm}} and use them to further manage or analyze your data. 
@@ -56,7 +56,7 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.dashd
 ### Prerequisites
 {: #prereq8}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 ### Procedure
 {: #proc8}
@@ -86,7 +86,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 ### Prerequisites
 {: #prereq9}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your local computer. 
 
@@ -127,7 +127,7 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 ### Prerequisites
 {: #prereq10}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 

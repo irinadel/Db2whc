@@ -32,20 +32,20 @@ A Db2 backup of your database is done every day, except for the Flex plan where 
 The disaster recovery strategy depends on the type of plan and data warehouse generation you’re running today.
 {: shortdesc}
 
-## First generation SMP Small, Medium, Large and MPP Small plans
+## First-generation SMP Small, Medium, Large, and MPP Small plans
 {: #sml_mpp}
 
-For the first generation SMP Small, Medium, Large and MPP Small plans, a backup is taken once a day and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators will work with you to stand up a new data warehouse in a different data center. We will use the daily backup residing in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
+For the first-generation SMP Small, Medium, Large, and MPP Small plans, a backup is taken once a day and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the daily backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
 
-## Second generation Flex plans on IBM Cloud
+## Second-generation Flex plans on IBM Cloud
 {: #flex_ibm_cloud}
 
-For the second generation Flex plans on {{site.data.keyword.Bluemix_notm}}, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators will work with you to stand up a new data warehouse in a different data center. We will use the weekly backup residing in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
+For the second-generation Flex plans on {{site.data.keyword.Bluemix_notm}}, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the weekly backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
 
-## Second generation Flex plans on Amazon Web Services
+## Second-generation Flex plans on Amazon Web Services
 {: #flex_aws}
 
-For the second generation Flex plans on Amazon Web Services, a daily self-service backup is automatically offloaded to Amazon Web Services S3. When in S3, the backup is replicated to multiple regions. If a disaster event occurs, the most recent backup will be used to restore your cluster to a secondary data center.
+For the second-generation Flex plans on Amazon Web Services, a daily self-service backup is automatically offloaded to Amazon Web Services S3. When in S3, the backup is replicated to multiple regions. If a disaster event occurs, the most recent backup is used to restore your cluster to a secondary data center.
 
 ## **Brazil: Supplementary Rule 14** (applies to systems provisioned for the Brazilian federal government)
 {: #rule_14}

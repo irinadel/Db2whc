@@ -58,7 +58,7 @@ The following methods can be used for IAM authentication:
 
 **Access token**
 
-An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was prior to IAM integration, the connection will stay connected until the application disconnects or the connection is terminated due to other reasons.
+An access token can be obtained from the IAM service directly by the application through the REST API by using an API key. For more information, see: [Getting an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key](/docs/iam?topic=iam-iamtoken_from_apikey#iamtoken_from_apikey){:external}. The access token has a default validity period of 60 minutes before it expires. If the token has expired, the Db2 server won't allow the connection to be established. The token isn’t checked for expiry after the connection is established. Just as it was before IAM integration, the connection stays connected until the application disconnects or the connection is terminated due to other reasons.
 
 ```
 curl -k -X POST \
@@ -94,7 +94,7 @@ The following database client interfaces are supported:
 ### ODBC, CLP, and CLPPLUS
 {: #odbc-clpplus}
 
-For an ODBC application or a command line client (CLP, CLPPLUS) to connect to a Db2 server using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
+For an ODBC application or a command-line client (CLP, CLPPLUS) to connect to a Db2 server by using IAM authentication, a data source name (DSN) needs to be configured first in a `db2dsdriver.cfg` configuration file by running the following command:
 
 `db2cli writecfg add -dsn <dsn_alias> -database <database_name> -host <host_name_or_IP_address> -port 50001 -parameter "Authentication=GSSPLUGIN;SecurityTransportMode=SSL"`
 
@@ -314,7 +314,7 @@ To use your own identity provider such as LDAP, you must first federate your LDA
 ## Restrictions
 {: #restrictions}
 
-The following are restrictions with regard to IAM authentication:
+The following restrictions are with regard to IAM authentication:
 
 * IAM authentication for a Db2 client that is connecting to a Db2 server is only supported over an SSL connection.
 * IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation.

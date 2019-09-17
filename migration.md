@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Loading data to {{site.data.keyword.dashdbshort_notm}}
 {: #loading_data}
 
-You can load data from a data file in a delimited format (CSV or TXT) located on a local network or in an object store (Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage) to {{site.data.keyword.dashdblong}}. You can even migrate your data from an on-premises system.
+You can load data from a data file in a delimited format (CSV or TXT) on a local network or in an object store (Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage) to {{site.data.keyword.dashdblong}}. You can even migrate your data from an on-premises system.
 {: shortdesc}
 
 ## Loading data from an object store
@@ -59,7 +59,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
   For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
   {: note}
 
-* For improved performance, the Db2 **LOAD** command can also be used to load data from Amazon S3 using the following example command:
+* For improved performance, the Db2 **LOAD** command can also be used to load data from Amazon S3 by using the following example command:
 
   ```
   CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
@@ -76,7 +76,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
 
   For supported command options. see [**LOAD** command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
 
-For a guided demo about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
+For a guided demonstration about loading data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [{{site.data.keyword.dashdblong}} guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud){:external}
 
 ## Migrating data from on-premises system
 {: #onprem}
@@ -108,7 +108,7 @@ For step-by-step instructions about migrating your data to the {{site.data.keywo
 ### {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service
 {: #mdms}
 
-The {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully-managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
+The {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
 
 MDMS offers a fast, simple, secure way to physically transfer terabytes to petabytes of data to the {{site.data.keyword.Bluemix_notm}}. The MDMS is a mobile storage device with 120 TB of usable storage capacity. This device gives you the ability to overcome common transfer challenges like high costs, long transfer times, and security concerns – all in a single service.
 

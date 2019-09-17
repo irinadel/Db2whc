@@ -24,15 +24,15 @@ subcollection: Db2whc
 # About Db2 Warehouse on Cloud
 {: #about}
 
-{{site.data.keyword.dashdblong}} is a fully-managed, high performance, petabyte-scale cloud data warehouse.
+{{site.data.keyword.dashdblong}} is a fully managed, high performance, petabyte-scale cloud data warehouse.
 
-It delivers true elasticity with independent scaling of storage and compute, a highly-optimized columnar data store, actionable compression and in-memory processing, all working together to supercharge your analytics workloads.
+It delivers true elasticity with independent scaling of storage and compute, a highly optimized columnar data store, actionable compression and in-memory processing, all working together to supercharge your analytics workloads.
 {: shortdesc}
 
 ## Db2 Warehouse on Cloud managed service
 {: #managed_service}
 
-The fully managed service of {{site.data.keyword.dashdbshort_notm}} handles all of the software upgrades, operating system updates, and hardware maintenance. The service includes 24x7 health monitoring of the database and infrastructure. In the event of a hardware or software failure, the service is automatically restarted.
+The fully managed service of {{site.data.keyword.dashdbshort_notm}} handles all of the software upgrades, operating system updates, and hardware maintenance. The service includes 24x7 health monitoring of the database and infrastructure. If there is a hardware or software failure, the service is automatically restarted.
 {: shortdesc}
 
 <!-- ## Provisioning of Db2 Warehouse on Cloud

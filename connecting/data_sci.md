@@ -88,7 +88,7 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 ### Prerequisites
 {: #prereq11}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 ### Procedure
 {: #proc11}
@@ -138,7 +138,7 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 ### Prerequisites
 {: #prereq12}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 ### Procedure
 {: #proc12}
@@ -149,13 +149,13 @@ For steps on how to connect from SAS to a {{site.data.keyword.dashdbshort_notm}}
 ## R development environment
 {: #r_dev_env}
 
-Instead of using the RStudio® environment that is integrated within IBM Watson Studio, you might prefer to use your own, locally-installed R development environment. For example, you might have your own RStudio installation, or you might prefer to use some other development tool such as Rcmdr or Rattle. These instructions explain how to connect an R development environment to a {{site.data.keyword.dashdbshort_notm}} database.
+Instead of using the RStudio® environment that is integrated within IBM Watson Studio, you might prefer to use your own, locally installed R development environment. For example, you might have your own RStudio installation, or you might prefer to use some other development tool such as Rcmdr or Rattle. These instructions explain how to connect an R development environment to a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
 ### Prerequisites
 {: #prereq13}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the necessary [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 ### Procedure
 {: #proc13}

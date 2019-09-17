@@ -24,14 +24,14 @@ subcollection: Db2whc
 # Migrating from IBM PureData System for Analytics (Netezza)
 {: #pda}
 
-The {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully-managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
+The {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
 
 MDMS offers a fast, simple, secure way to physically transfer terabytes to petabytes of data to the {{site.data.keyword.Bluemix_notm}}. The MDMS is a mobile storage device with 120 TB of usable storage capacity. This device gives you the ability to overcome common transfer challenges like high costs, long transfer times, and security concerns – all in a single service.
 {: shortdesc}
 
 ![View of the Mass Data Migration Service device](images/mdms.svg)
 
-## What you'll need when requesting a device
+## What you need when requesting a device
 {: #prereq}
 
 1. Network settings for the storage device
@@ -100,7 +100,7 @@ There are two Ethernet connections to be made. One for device management through
 
 Both ports originate from the device as RJ45, and CAT6A cables are supplied. Copper SFP+ adapters are provided to convert from RJ45. The adapters work with all switch manufacturers. These adapters are located in a pocket on the underside of the shipping lid.
 
-- Eth1 (1GbE-B) is used for device management, and as such, must have a gateway specified in the IP address configuration. This can be viewed on the LCD screen after the device is powered on (see the [IP address configuration](#ip_cfg) section).
+- Eth1 (1GbE-B) is used for device management, and as such, must have a gateway that is specified in the IP address configuration. This can be viewed on the LCD screen after the device is powered on (see the [IP address configuration](#ip_cfg) section).
 
 - Eth3 (10GbE-B) is used for the data transfer. This connection must be either on the same subnet as the source data, or can be directly connected to the server if needed.
 
@@ -144,7 +144,7 @@ If a different form factor of Ethernet connection is required, you must provide 
     - Enter your Storage Pool Passphrase and click **OK**.
     ![Activate storage pool](/images/UnlockPool.png "Enter passphrase in circled field"){: caption="Figure 5. Activate storage pool" caption-side="bottom"}
 
-10. By default, the share has both NFS and SMB protocols enabled with no access restrictions placed on the share. To restrict access to this share (for NFS or SMB), right-click the share name and select the appropriate menu item.<br/>
+10. By default, the share has both NFS and SMB protocols that are enabled with no access restrictions that are placed on the share. To restrict access to this share (for NFS or SMB), right-click the share name and select the appropriate menu item.<br/>
     ![Restrict share access](/images/ShareControls.png "Restrict share access"){: caption="Figure 6. Restrict share access" caption-side="bottom"}
 
 11. When the storage pool is enabled, the NFS share is available to mount. In the workflow, click **View Network Shares** to see the network shares view. Close the workflow, right-click the share, and select **View Mount Command** to see the share name and mount information. Mount the share on your source server. Be sure to specify the IP address of the 10 GB link when mounting the share.
@@ -219,7 +219,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 * Be certain to use the same `USING` clause options that you used to extract the data from your PureData System for Analytics (Netezza) database by using the CREATE EXTERNAL TABLE statement.
 * For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
 
-For a guided tutorial about importing data fron {{site.data.keyword.Bluemix_notm}} Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:external}.
+For a guided tutorial about importing data from {{site.data.keyword.Bluemix_notm}} Object Storage, see: [IBM Db2 Warehouse on Cloud guided demo: Explore data loading](https://www.ibm.com/cloud/garage/demo/try-db2-warehouse-cloud/){:external}.
 
 ## Step 7: Erasing MDMS device
 {: #erase}
@@ -231,7 +231,7 @@ For a guided tutorial about importing data fron {{site.data.keyword.Bluemix_notm
 
 ### Uniqueness in the bucket
 
-To ensure object names are unique when they are copied into the bucket, the file path is included as a prefix in the object name. For example, the config.ini file in the `/root/user/` folder becomes renamed to "root/user/config.ini" when copied into the bucket.
+To ensure that object names are unique when they are copied into the bucket, the file path is included as a prefix in the object name. For example, the config.ini file in the `/root/user/` folder becomes renamed to "root/user/config.ini" when copied into the bucket.
 
 ### Buckets
 

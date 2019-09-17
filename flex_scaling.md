@@ -29,7 +29,7 @@ The Flex Performance plan offers independent scaling of storage and compute core
 
 Before provisioning your Flex Performance system, you make initial adjustments to meet your anticipated requirements for storage and compute cores, then submit your choices.
 
-After your system is provisioned and whenever your requirements change, you can adjust your compute cores and storage requirements by launching the **Scale Instance** page from the service's **Manage** page and using the slider bars.
+After your system is provisioned and whenever your requirements change, you can adjust your compute cores and storage requirements by launching the **Scale Instance** page from the service's **Manage** page and by using the slider bars.
 
 ![View of the web console compute cores page](images/launch.png)
 

@@ -30,7 +30,7 @@ To configure your local development environment and to connect applications and 
 ## Database details
 {: #db_details}
 
-There are important database details needed for connecting applications and tools to your database:
+There are important database details that are needed for connecting applications and tools to your database:
 
 - *Host name* - The host name of the server.
 - *Port number* - Used by the database manager for TCP/IP communication. (Note that your service is provisioned with one port number for connections that use Secure Socket Layer (SSL) and a different port for non-SSL connection.)
