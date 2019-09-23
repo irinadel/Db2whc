@@ -40,7 +40,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 1. Run the downloaded executable file as an administrator.
 
    The default installation path of the driver package is: `Program Files\IBM\IBM DATA SERVER DRIVER`
-2. [*Optional*] Add the `bin` subdirectory of the driver package installation directory to your `%PATH%` environment variable (so you can run the **db2cli** command without specifying the full path to the command executable.)
+2. (*Optional*): Add the `bin` subdirectory of the driver package installation directory to your `%PATH%` environment variable (so you can run the **db2cli** command without specifying the full path to the command executable.)
 
 ## What's next?
 {: #wn51}
