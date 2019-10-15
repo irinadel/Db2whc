@@ -62,7 +62,7 @@ Db2 Warehouse on Cloud
     local_dev_env.md
     communities.md    
 
-    [What's new](https://www.ibm.com/support/docview.wss?uid=swg21961758)
+    [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     [Db2 Warehouse on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
