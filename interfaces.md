@@ -47,7 +47,7 @@ You can access your web console in the following ways:
    * Direct URL - You can bookmark the URL of the web console for your {{site.data.keyword.dashdbshort_notm}} service.
 
 ## REST API
-{: #api}
+{: #int_api}
 
 With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management and loading data by using the [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}.
 {: shortdesc}
