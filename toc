@@ -6,8 +6,14 @@
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
-    getting-started.md
     about.md
+
+    {: .topicgroup}
+    Getting started
+        getting-started.md
+        interfaces.md
+        samples.md
+
     plans_cfgs.md
 
     {: .topicgroup}
@@ -16,13 +22,6 @@ Db2 Warehouse on Cloud
         br.md
         dr.md
         ha.md
-        [Auditing](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/audit_policy_guidelines.html)
-
-    {: .topicgroup}
-    Security
-        iam.md
-        user_mgmt.md
-        [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
 
     {: .topicgroup}
     Connecting
@@ -59,6 +58,14 @@ Db2 Warehouse on Cloud
         pda_db2whc_mdms.md
 
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
+
+    {: .topicgroup}
+    Securing your service
+        iam.md
+        user_mgmt.md
+        auditing.md
+        [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+
     local_dev_env.md
     communities.md    
 
