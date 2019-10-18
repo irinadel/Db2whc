@@ -60,7 +60,7 @@ Db2 Warehouse on Cloud
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
 
     {: .topicgroup}
-    Securing your service
+    Security
         iam.md
         user_mgmt.md
         auditing.md
