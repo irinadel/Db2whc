@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-05-01"
+lastupdated: "2019-10-18"
 
 keywords:
 
@@ -21,19 +21,28 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Flexible scaling
+# Scaling
 {: #scale}
 
-The Flex Performance plan offers independent scaling of storage and compute cores. 
+You can independently scale storage and compute for your {{site.data.keyword.dashdblong}} instance. 
 {: shortdesc}
 
-Before provisioning your Flex Performance system, you make initial adjustments to meet your anticipated requirements for storage and compute cores, then submit your choices.
+The easiest way to scale your {{site.data.keyword.dashdbshort_notm}} instance is through the **Scale Instance** page that can be accessed from the service launch page for your instance.
 
-After your system is provisioned and whenever your requirements change, you can adjust your compute cores and storage requirements by launching the **Scale Instance** page from the service's **Manage** page and by using the slider bars.
+<!--Before provisioning your Flex Performance system, you make initial adjustments to meet your anticipated requirements for storage and compute cores, then submit your choices.
+
+After your system is provisioned and whenever your requirements change, you can adjust your compute cores and storage requirements by launching the **Scale Instance** page from the service's **Manage** page and by using the slider bars.-->
 
 ![View of the web console compute cores page](images/launch.png)
 
 ![View of the web console compute cores page](images/scaling_full.png)
+
+You can use the sliding bars on the **Scale Instance** page to manage storage and compute for your {{site.data.keyword.dashdbshort_notm}} instance. You can scale your instance immediately or schedule a scaling operation to happen later. You can also scale your instance programmatically by using a [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
+
+On-demand scaling is charged on an hourly basis. 
+
+Storage scaling occurs online, and compute scaling might incur a few minutes of downtime. During compute scaling, all uncommitted transactions are rolled back.
+{: note} 
 
 ## Compute cores
 {: #cores}

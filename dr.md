@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-04-16"
+lastupdated: "2019-10-18"
 
 keywords:
 
@@ -21,31 +21,51 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Disaster recovery (DR)
+# Disaster recovery
 {: #dr}
 
-<!-- If your data warehouse instance is deployed in a data center that suffers a significant data center outage with an expected downtime of more than 8 hours, you will be sent a request to allow service operators to fail over your instance to another data center before disaster recovery actions can begin.
+Geo-replicated disaster recovery (DR) backups for {{site.data.keyword.dashdblong}} are enabled by default and supplement daily snapshot backups. DR backups are used exclusively for system recovery purposes by IBM service operators if there is a disaster or system loss. 
 {: shortdesc}
 
-A Db2 backup of your database is done every day, except for the Flex plan where a Db2 backup is done every 7 days and a snapshot backup is done daily. Daily backups are stored in the IBM Cloud Object Storage service from which it is replicated to multiple availability zones. If something should happen to your primary data center, our service operators will work with you to stand up your recovered database in a secondary data center. -->
+If a disaster event occurs at the data center where your {{site.data.keyword.dashdbshort_notm}} instance is deployed, IBM service operators will work with you to stand up a new data warehouse in a different data center, by using the most recent disaster recovery backup. There is no additional charge for these backups.
 
-The disaster recovery strategy depends on the type of plan and data warehouse generation you’re running today.
-{: shortdesc}
+The RPO and RTO for DR backups for each cloud provider are described in the following sections. DR backups are also geo-replicated by default. You can open a support ticket to not have your DR backups replicated to certain regions to comply with your data retention policies.
 
-## First-generation SMP Small, Medium, Large, and MPP Small plans
-{: #sml_mpp}
+## IBM Cloud
+{: #ibm_cloud_dr}
 
-For the first-generation SMP Small, Medium, Large, and MPP Small plans, a backup is taken once a day and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the daily backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
+When deployed on {{site.data.keyword.Bluemix_notm}}, a full backup of the database is taken once a week for disaster recovery. This DR backup is encrypted and stored in {{site.data.keyword.Bluemix_notm}} Object Storage (COS).
 
-## Second-generation Flex plans on IBM Cloud
-{: #flex_ibm_cloud}
+IBM COS replicates each DR backup across multiple {{site.data.keyword.Bluemix_notm}} regions to ensure availability if a single zone fails.
 
-For the second-generation Flex plans on {{site.data.keyword.Bluemix_notm}}, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the weekly backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.
+DR backups of the last 2 weeks are retained by default. The RPO for DR backups on {{site.data.keyword.Bluemix_notm}} is 1 week. The RTO if a disaster occurs is dependent upon the size of the database – 1.5 hours per terabyte of data.
 
-## Second-generation Flex plans on Amazon Web Services
+<!--For the first-generation SMP Small, Medium, Large, and MPP Small plans, a backup is taken once a day and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the daily backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service. -->
+
+## Amazon Web Services
+{: #aws_dr}
+
+When deployed on Amazon Web Services, a full backup of the database is taken once a week for disaster recovery. This DR backup is encrypted and stored in Amazon Web Services S3.
+
+DR backups are also replicated to a secondary Amazon Web Services region by using Cross-Region replication. S3 keeps copies of each DR backup across 3 availability zones (AZs) in each region by default, so there are 6 copies of each DR backup in total.
+
+DR backups of the last 2 weeks are retained by default. The RPO for DR backups on Amazon Web Services is 1 week. The RTO if a disaster occurs is dependent upon the size of the database – 1.5 hours per terabyte of data.
+
+Secondary regions for each Amazon Web Services primary region are listed in the following table:
+
+| Primary region | Secondary region |
+|----------------|------------------|
+| us-east-1      | us-west-2        |
+| ap-southeast-1 | ap-southeast-2   |
+| eu-central-1   | eu-west-2        |
+{: caption="Table 1. Secondary regions for each Amazon Web Services primary region" caption-side="top"}
+
+<!--For the second-generation Flex plans on {{site.data.keyword.Bluemix_notm}} and Amazon Web Services, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the weekly backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.-->
+
+<!--## Second-generation Flex plans on Amazon Web Services
 {: #flex_aws}
 
-For the second-generation Flex plans on Amazon Web Services, a daily self-service backup is automatically offloaded to Amazon Web Services S3. When in S3, the backup is replicated to multiple regions. If a disaster event occurs, the most recent backup is used to restore your cluster to a secondary data center.
+For the second-generation Flex plans on Amazon Web Services, a daily self-service backup is automatically offloaded to Amazon Web Services S3. When in S3, the backup is replicated to multiple regions. If a disaster event occurs, the most recent backup is used to restore your cluster to a secondary data center. -->
 
 ## **Brazil: Supplementary Rule 14** (applies to systems provisioned for the Brazilian federal government)
 {: #rule_14}
