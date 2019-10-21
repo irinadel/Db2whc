@@ -61,7 +61,7 @@ The last 2 daily backups are retained.
 
 The retained backups are used exclusively by IBM for only system recovery purposes if there is a disaster or system loss. A request to restore your database from a backup is not supported. You can export your data by using Db2 tools such as IBM Data Studio or by using the **db2 export** command. -->
 
-## Flex and Flex Performance plans
+<!--## Flex and Flex Performance plans
 {: #flex}
 
 Up to the last 7 daily backup snapshots are retained. The number of retained snapshots to a maximum of 7 depends on the size of each snapshot (equal to the amount of data that is changed between snapshots after the first) and the amount of storage space for retained backups.
@@ -69,4 +69,4 @@ Up to the last 7 daily backup snapshots are retained. The number of retained sna
 From the {{site.data.keyword.dashdbshort_notm}} console, you can schedule your backups to run when it's most convenient and you can restore your database from any of your retained backup snapshots at any time that you choose. The system goes down during the restore period. An email is sent to notify you that the restore operation was completed.
 
 ![View of the web console backup and restore page](images/br.png)
-
+-->
