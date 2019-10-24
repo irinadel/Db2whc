@@ -27,9 +27,6 @@ subcollection: Db2whc
 You can independently scale storage and compute for your {{site.data.keyword.dashdblong}} instance. 
 {: shortdesc}
 
-## Compute cores and storage
-{: compute_storage}
-
 The easiest way to scale your {{site.data.keyword.dashdbshort_notm}} instance is through the **Scale Instance** page that can be accessed from the service launch page for your instance.
 
 <!--Before provisioning your Flex Performance system, you make initial adjustments to meet your anticipated requirements for storage and compute cores, then submit your choices.
@@ -44,7 +41,7 @@ You can use the sliding bars on the **Scale Instance** page to manage storage an
 
 On-demand scaling is charged on an hourly basis. 
 
-Storage scaling occurs online, and compute scaling might incur a few minutes of downtime. During compute scaling, all uncommitted transactions are rolled back.
+Storage scaling occurs online, and compute scaling might incur a few minutes of downtime. During compute scaling, all uncommitted transactions are rolled back. RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.
 {: note} 
 
 <!--## Compute cores
@@ -62,8 +59,8 @@ You can increase your storage. Storage changes do not incur any downtime.
 ![View of the web console storage page](images/storage.png)
 -->
 
-## Memory
+<!--## Memory
 {: #ram}
 
-RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.
+RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.-->
 
