@@ -7,21 +7,8 @@ Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
     about.md
-
-    {: .topicgroup}
-    Getting started
-        getting-started.md
-        interfaces.md
-        samples.md
-
+    getting-started.md
     plans_cfgs.md
-
-    {: .topicgroup}
-    Features & specs
-        flex_scaling.md
-        br.md
-        dr.md
-        ha.md
 
     {: .topicgroup}
     Connecting
@@ -60,6 +47,14 @@ Db2 Warehouse on Cloud
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
 
     {: .topicgroup}
+    Administration
+        interfaces.md
+        flex_scaling.md
+        br.md
+        dr.md
+        ha.md
+
+    {: .topicgroup}
     Security
         iam.md
         user_mgmt.md
@@ -70,6 +65,7 @@ Db2 Warehouse on Cloud
 
     local_dev_env.md
     communities.md    
+    samples.md
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
