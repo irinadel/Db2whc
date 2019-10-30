@@ -15,9 +15,6 @@ Db2 Warehouse on Cloud
         connecting/connectivity_options.md
         connecting/credentials.md
         connecting/driver_pkg.md
-        connecting/install_linux.md
-        connecting/install_mac.md
-        connecting/install_win.md
         connecting/driver_pkg_cfg.md
         connecting/ssl.md
         connecting/jdbc.md
