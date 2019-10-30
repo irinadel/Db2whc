@@ -8,7 +8,6 @@ Db2 Warehouse on Cloud
     {: .navgroup id="learn"}
     about.md
     getting-started.md
-    plans_cfgs.md
 
     {: .topicgroup}
     Connecting
@@ -35,10 +34,6 @@ Db2 Warehouse on Cloud
         connecting/data_sci.md
 
     {: .topicgroup}
-    Connecting to another Db2 database
-        federation.md
-
-    {: .topicgroup}
     Loading your data
         dcw.md
         migration.md
@@ -49,10 +44,13 @@ Db2 Warehouse on Cloud
     {: .topicgroup}
     Administration
         interfaces.md
+        advanced_admin.md
         flex_scaling.md
         br.md
         dr.md
         ha.md
+        maintenance.md
+        federation.md
 
     {: .topicgroup}
     Security
@@ -65,11 +63,9 @@ Db2 Warehouse on Cloud
 
     local_dev_env.md
     communities.md    
-    samples.md
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud)
     [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
-    [Db2 Warehouse on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -79,6 +75,7 @@ Db2 Warehouse on Cloud
     {: .navgroup id="reference"}
     [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
+    [Db2 Warehouse on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
