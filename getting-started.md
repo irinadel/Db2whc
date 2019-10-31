@@ -38,6 +38,11 @@ The following tutorials are the best way to get started with {{site.data.keyword
 
 For more tutorials, videos, and hands-on labs, see [IBM Demos: {{site.data.keyword.dashdbshort_notm}}](https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/){: external}.
 
+Watch this video to see an introduction to the {{site.data.keyword.dashdblong}} service.
+
+<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YjevHqLdl7Y?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+
+
 <!--
 The {{site.data.keyword.dashdblong}} managed service is an SQL database that is provisioned for you in the cloud. You can use the Db2 warehouse just as you would use any database software, but without the overhead and expense of hardware setup or software installation and maintenance. 
 {: shortdesc}

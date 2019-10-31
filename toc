@@ -48,6 +48,7 @@ Db2 Warehouse on Cloud
         ha.md
         maintenance.md
         federation.md
+        local_dev_env.md
 
     {: .topicgroup}
     Security
@@ -58,7 +59,6 @@ Db2 Warehouse on Cloud
         auditing.md
         [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
 
-    local_dev_env.md
     communities.md    
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud)
@@ -70,9 +70,10 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
+    [Database management REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
+    [Database resource scaling REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
-    [Db2 Warehouse on Cloud Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
+    [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}
 
     {: .navgroup id="help"}

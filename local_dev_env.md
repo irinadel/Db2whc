@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-03-15"
+lastupdated: "2019-10-31"
 
 keywords:
 
@@ -21,13 +21,13 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Local development environment
+# Db2 Warehouse Developer Edition
 {: #local_dev}
 
-If you want to set up a local Db2 development environment, you can use [IBM Db2 Warehouse Developer-C for Non-Production](https://store.docker.com/images/ibm-db2-warehouse-dev){:external} that is available from Docker Store.
+If you want to set up a local Db2 Warehouse environment for development and testing, you can use [IBM Db2 Warehouse Developer Edition](https://hub.docker.com/_/ibm-db2-warehouse-dev){:external}, a software-defined data warehouse for private clouds and virtual private clouds, optimized for fast and flexible deployment on your choice of hardware. Db2 Warehouse Developer Edition is available completely free of charge from Docker Hub.
 {: shortdesc}
 
 For prerequisites and installation instructions, select the link for your operating system: 
 
-- [Windows and Macintosh](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:external}
-- [Linux](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:external}
+- [Windows and Macintosh](https://www.ibm.com/support/knowledgecenter/en/SSCJDQ/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Winmac_using_Linux.html){:external}
+- [Linux](https://www.ibm.com/support/knowledgecenter/en/SSCJDQ/com.ibm.swg.im.dashdb.doc/admin/local_prereqs-Linux.html){:external}
