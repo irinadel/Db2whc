@@ -64,8 +64,8 @@ Train and run machine learning models directly in the {{site.data.keyword.dashdb
 {{site.data.keyword.dashdbshort_notm}} offers several elastic data warehouse configurations to meet your workload requirements:
 
 - **Flex One**: a single-partitioned plan designed for growing enterprises and new data warehouse projects.
-- **Flex**: a multi-partitioned instance designed for storage-dense workloads, inexpensive querying of large data sets, and development and test environments.
-- **Flex Performance**: a multi-partitioned instance designed for high-performance, production workloads that prioritize compute performance over storage density.
+- **Flex**: a multi-partitioned plan designed for storage-dense workloads, inexpensive querying of large data sets, and development and test environments.
+- **Flex Performance**: a multi-partitioned plan designed for high-performance, production workloads that prioritize compute performance over storage density.
 
 All plans offer the [key features](#key_features) described in the previous section.
 
