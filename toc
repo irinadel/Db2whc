@@ -32,9 +32,12 @@ Db2 Warehouse on Cloud
 
     {: .topicgroup}
     Loading your data
-        dcw.md
-        migration.md
+        load_local.md
+        load_cos.md
+        load_amazon_s3.md
+        load_onprem.md
         pda_db2whc_mdms.md
+        dcw.md
 
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
 
@@ -70,8 +73,8 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [Database management REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
-    [Database resource scaling REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp)
+    [Database management API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud)
+    [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp)
     [SQL reference](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html)
     [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html)
     {: .navgroup-end}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2018-06-15"
+lastupdated: "2019-11-06"
 
 keywords:
 
@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Migrating from IBM PureData System for Analytics (Netezza)
+# Migrating from IBM PureData System for Analytics (Netezza) with IBM Mass Data Migration Service
 {: #pda}
 
 The {{site.data.keyword.Bluemix_notm}} Mass Data Migration Service (MDMS) can be used to migrate data from large IBM PureData Systems for Analytics (Netezza) databases of about 25 TB and greater to a fully managed {{site.data.keyword.dashdblong}} database on {{site.data.keyword.Bluemix_notm}}.
