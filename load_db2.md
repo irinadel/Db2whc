@@ -34,10 +34,15 @@ Migration of your data with Lift happens in two phases:
 ## Migrating table structure
 {: #mig_table_struct}
 
-Migrate your table structure by using the following `lift ddl` command, which extracts the Data Definition Language (DDL) from the source database and applies it to the target database:
+Migrate your table structure by using the following `lift ddl` command example, which extracts the Data Definition Language (DDL) from the source database and applies it to the target database:
 
 ```
-% lift ddl --migrate --source-schema <source-schema-name> --source-object <source-object-name> --source-database <source-database-name> --source-user <source-user-name> --source-password <source-password> --source-host <source-database-host-name> --source-database-port <source-database-port> --source-database-type <source-database-type> --target-user <target-user-name> --target-password <target-password> --target-host <target-database-host-name>
+% lift ddl --migrate --source-schema <source-schema-name> --source-object <source-object-name> 
+--source-database <source-database-name> --source-user <source-user-name> 
+--source-password <source-password> --source-host <source-database-host-name> 
+--source-database-port <source-database-port> --source-database-type <source-database-type> 
+--target-user <target-user-name> --target-password <target-password> 
+--target-host <target-database-host-name>
 ```
 
 For more available command options, run the `lift ddl --help` command.
@@ -47,27 +52,35 @@ For more available command options, run the `lift ddl --help` command.
 
 After your table structure is in place, you can start moving your data. Lift CLI extracts the data from your table into a CSV file, moves that file over the network and stages it in the landing zone of the target database, and then loads the data into the database:
 
-1. Extract the table data into a CSV file by running the following `lift extract` command:
+1. Extract the table data into a CSV file by running the following `lift extract` command example:
 
    ```
-   % lift extract --source-schema <source-schema-name> --source-table <source-table-name> --source-database <source-database-name> --source-host <source-host-name> --source-user <source-user-name> --source-password <source-password> --source-database-port <source-database-port> --source-database-type <ias/db2/db2w> --file <path-to-csv-file>
+   % lift extract --source-schema <source-schema-name> --source-table <source-table-name> 
+   --source-database <source-database-name> --source-host <source-host-name> 
+   --source-user <source-user-name> --source-password <source-password> 
+   --source-database-port <source-database-port> --source-database-type <ias/db2/db2w> 
+   --file <path-to-csv-file>
    ```
 
    The `ias`, `db2`, and `db2w` settings for the `–source-database-type` command option are used to specify the particular source database type.
 
-2. Move the CSV file and stage it in the landing zone of the target database by running the following `lift put` command:
+2. Move the CSV file and stage it in the landing zone of the target database by running the following `lift put` command example:
 
    ```
-   % lift put --file <path-to-csv-file> --target-user <target-user-name> --target-password <target-password> --target-host <target-database-host-name>
+   % lift put --file <path-to-csv-file> --target-user <target-user-name> 
+   --target-password <target-password> --target-host <target-database-host-name>
    ```
 
-3. Load the data from the CSV file into the target database by running the following `lift load` command:
+3. Load the data from the CSV file into the target database by running the following `lift load` command example:
 
    ```
-   % lift load --filename <csv-file-name> --target-schema <target-schema-name> --target-table <target-table-name> --file-origin <extract-ias/extract-db2/extract-db2w> --target-user <target-user-name> --target-password <target-password> --target-host <target-database-host-name>
+   % lift load --filename <csv-file-name> --target-schema <target-schema-name> 
+   --target-table <target-table-name> --file-origin <extract-ias/extract-db2/extract-db2w> 
+   --target-user <target-user-name> --target-password <target-password> 
+   --target-host <target-database-host-name>
    ```
 
    The `extract-ias`, `extract-db2`, and `extract-db2w` settings for the `--file-origin` command option are used to specify that the CSV file was extracted from a particular database by using the `lift extract` command.
 
-By completing these steps, you can now run queries against your data.
+After completing these steps, you can run queries against your data.
 
