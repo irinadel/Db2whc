@@ -32,6 +32,7 @@ Db2 Warehouse on Cloud
 
     {: .topicgroup}
     Loading your data
+        load_db2.md
         load_local.md
         load_cos.md
         load_amazon_s3.md
