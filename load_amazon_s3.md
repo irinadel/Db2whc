@@ -22,7 +22,7 @@ subcollection: Db2whc
 {:pre: .pre}
 
 # Loading data from Amazon S3
-{: #load_amazon_s3}
+{: #loading_data}
 
 The best way to load data from Amazon S3 into {{site.data.keyword.dashdblong}} is through the External Tables functionality. 
 {: shortdesc}
