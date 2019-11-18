@@ -39,6 +39,7 @@ Db2 Warehouse on Cloud
         load_onprem.md
         pda_db2whc_mdms.md
         dcw.md
+        distrib_keys.md
 
     [Analyzing your data](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html)
 
