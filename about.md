@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-30"
+lastupdated: "2019-11-22"
 
 keywords:
 
@@ -102,11 +102,15 @@ The following table provides information about the availability of the various {
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Sydney       | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               |  
+| Flex                         | Seoul        | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    |             |               |
+|                              | Sydney       |           |             |               |
+|                              | Tokyo        |           |             |               |  
 |      |||||
-| Flex Performance             | Sydney       | Frankfurt | N. Virginia | *NA           |
+| Flex Performance             | Seoul        | Frankfurt | N. Virginia | *NA           |
 |                              | Singapore    | London    |             |               | 
+|                              | Sydney       |           |             |               |
+|                              | Tokyo        |           |             |               |  
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
