@@ -13,6 +13,7 @@ Db2 Warehouse on Cloud
     Connecting
         connecting/connecting.md
         connecting/connectivity_options.md
+        connecting/connectivity_options_aws.md
         connecting/credentials.md
         connecting/driver_pkg.md
         connecting/driver_pkg_cfg.md
@@ -63,6 +64,7 @@ Db2 Warehouse on Cloud
         rcac.md
         auditing.md
         [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+        key_protect.md
 
     communities.md    
 

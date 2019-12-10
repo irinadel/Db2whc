@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-06-25"
+lastupdated: "2019-12-10"
 
 keywords:
 
@@ -21,10 +21,10 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connectivity options
+# Connectivity options on IBM Cloud
 {: #connect_options}
 
-{{site.data.keyword.dashdblong}} offers multiple secure connectivity options depending on your application connection requirements.  
+{{site.data.keyword.dashdblong}} offers multiple secure connectivity options for your application connection requirements.  
 {: shortdesc}
 
 ## Connecting to a public endpoint (default option)
