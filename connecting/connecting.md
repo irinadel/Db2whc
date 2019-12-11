@@ -63,21 +63,21 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 ### Collecting connection information
 {: #collect_info}
 
-- [Database details and connection credentials](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds)
+- [Database details and connection credentials](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds)
 
 ### Downloading and installing driver package
 {: #dl_install}
 
-- [Download driver package](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg)
-- [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
-- [Installing on Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
-- [Installing on Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+- [Download driver package](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg)
+- [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_linux)
+- [Installing on Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_mac)
+- [Installing on Windows](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_windows)
 
 ### Configuring your environment
 {: #cfg_env}
 
-- [Configuring your environment](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env)
-- [Secure Sockets Layer (SSL) support](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support#ssl_support)
+- [Configuring your local environment](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#cfg_loc_env)
+- [SSL connectivity](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support)
 
 ## Connectivity options
 {: #connect_opts}
@@ -85,7 +85,8 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 {{site.data.keyword.dashdbshort_notm}} offers multiple secure connectivity options depending on your application connection requirements.  
 {: shortdesc}
 
-See [Connectivity options](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options#connect_options).
+- See [Connectivity options on IBM Cloud](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options).
+- See [Connectivity options on Amazon Web Services](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options_aws).
 
 ## Connecting programmatically
 {: #conx_prgrm}
@@ -93,12 +94,12 @@ See [Connectivity options](/docs/services/Db2whc/connecting?topic=Db2whc-connect
 You can use common programming languages to create applications that connect to a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_jdbc#con_prog_jdbc)
-- [Microsoft Windows ODBC or CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_cli#con_prog_odbc_cli)
-- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_net#con_prog_net)
-- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_odbc_dsa#con_prog_odbc_dsa)
-- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_prog_php#con_prog_php)
-- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api#con_rest_api)
+- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_jdbc)
+- [Microsoft Windows ODBC or CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_cli)
+- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_net)
+- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_dsa)
+- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_php)
+- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->

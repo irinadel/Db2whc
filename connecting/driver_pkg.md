@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-30"
+lastupdated: "2019-12-11"
 
 keywords:
 
@@ -44,7 +44,7 @@ The {{site.data.keyword.dashdbshort_notm}} driver package contains software for 
 ## Already installed?
 {: #alrdy_instld}
 
-To verify that the driver package is already on your computer, or to determine the version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
+To verify that the driver package is already on your computer so that you can skip installing it again, or to determine the driver package version number, you can use the [**db2level**](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.admin.cmd.doc/doc/r0009195.html){:external} command.
 
 ## Downloading
 {: #dwnldng}
@@ -109,7 +109,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 #### What's next?
 {: #wn}
 
-To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).   
+To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](#cfg_loc_env).   
 
 ### Installing the driver package on Mac OS X
 {: #install_dr_pkg_mac}
@@ -161,7 +161,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 #### What's next?
 {: #wn41}
 
-To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).
+To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](#cfg_loc_env).
 
 ### Installing the driver package on Windows
 {: #install_dr_pkg_windows}
@@ -187,11 +187,87 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 #### What's next?
 {: #wn51}
 
-To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](/docs/services/Db2whc?topic=Db2whc-cfg_loc_env#cfg_loc_env).
+To be able to connect your local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your local environment](#cfg_loc_env).
 
 
 <!-- ## Configuring
 
 To connect local applications or client tools to your {{site.data.keyword.dashdbshort_notm}} database, [configure your environment for your Db2 database](driver_pkg_cfg.html). -->
+
+## Configuring your local environment
+{: #cfg_loc_env}
+
+To connect local applications and tools to your {{site.data.keyword.dashdbshort_notm}} database, you need to configure your environment.  
+{: shortdesc}
+
+### Prerequisites
+{: #prereq21}
+
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+
+<!-- 1. Install the Db2 driver package for your operating system.
+
+   - [Installing on Windows](install_win.html)
+   - [Installing on Linux or PowerLinux](install_linux.html)
+   - [Installing on Mac OS X](install_mac.html)
+2. Decide whether or not you will be using Secure Sockets Layer (SSL) to connect to your database.
+3. Collect database details and connect credentials, including the host name of your server, and your database user ID and password. -->
+
+### Procedure
+{: #proc21}
+
+1. Add entries to the driver configuration file, `db2dsdriver.cfg`, for your database.
+
+   The configuration steps are different depending on whether you want to connect to your database by using SSL:
+
+   **With SSL**
+
+   To connect your applications and tools to your database by using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
+
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001`
+
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50001`
+
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50001 -parameter "SecurityTransportMode=SSL"`
+
+    where:
+
+   - `<hostname>` is the host name of your server.
+   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
+
+   **Without SSL**
+
+   To connect your applications and tools to your database without using SSL, enter the following commands in a command shell on Linux operating systems, at the Windows command prompt, or in a DB2 command window: 
+
+   `db2cli writecfg add -database BLUDB -host <hostname> -port 50000`
+
+   `db2cli writecfg add -dsn <alias> -database BLUDB -host <hostname> -port 50000`
+
+    where:
+
+   - `<hostname>` is the host name of your server.
+   - `<alias>` is an alias that you choose. The alias cannot be the same as the database name, `BLUDB`. If you want to have spaces in the alias, surround the alias with double quotation marks.
+
+2. Test connecting by issuing the **db2cli validate** command from the command prompt:
+
+   `db2cli validate -dsn <alias> -connect -user <userid> -passwd <password>`
+
+   where: 
+   
+   - `<alias>` is an alias that you created with the **db2cli writecfg** command.
+   - `<userid>` is your Db2 user ID.
+   - `<password>` is your Db2 password.
+
+3. (*Optional*): To be able to connect local ODBC applications and tools to your database, register the DSN with the ODBC driver manager:
+ 
+   Run the following command from a command line: 
+
+   `db2cli registerdsn -add -dsn <alias>`
+
+   where: 
+
+   - `<alias>` is an alias that you created with the **db2cli writecfg** command.
+
+   By default, the DSN is created as a user DSN.
 
 

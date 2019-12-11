@@ -17,12 +17,7 @@ Db2 Warehouse on Cloud
         connecting/credentials.md
         connecting/ssl.md
         connecting/driver_pkg.md
-        connecting/driver_pkg_cfg.md
-        connecting/jdbc.md
-        connecting/net_apps.md
-        connecting/odbc_cli.md
-        connecting/odbc_data_source_admin.md
-        connecting/php.md
+        connecting/connect_programmatically.md
         connecting/rest_api.md
 
     {: .topicgroup}
