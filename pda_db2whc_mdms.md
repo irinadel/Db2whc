@@ -214,6 +214,7 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
      )
   )      
 ```
+{: codeblock}
 
 **Notes:** 
 * Be certain to use the same `USING` clause options that you used to extract the data from your PureData System for Analytics (Netezza) database by using the CREATE EXTERNAL TABLE statement.

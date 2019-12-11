@@ -44,6 +44,7 @@ Migrate your table structure by using the following `lift ddl` command example, 
 --target-user <target-user-name> --target-password <target-password> 
 --target-host <target-database-host-name>
 ```
+{: codeblock}
 
 For more available command options, run the `lift ddl --help` command.
 
@@ -61,6 +62,7 @@ After your table structure is in place, you can start moving your data. Lift CLI
    --source-database-port <source-database-port> --source-database-type <ias/db2/db2w> 
    --file <path-to-csv-file>
    ```
+   {: codeblock}
 
    The `ias`, `db2`, and `db2w` settings for the `–source-database-type` command option are used to specify the particular source database type.
 
@@ -70,6 +72,7 @@ After your table structure is in place, you can start moving your data. Lift CLI
    % lift put --file <path-to-csv-file> --target-user <target-user-name> 
    --target-password <target-password> --target-host <target-database-host-name>
    ```
+   {: codeblock}
 
 3. Load the data from the CSV file into the target database by running the following `lift load` command example:
 
@@ -79,6 +82,7 @@ After your table structure is in place, you can start moving your data. Lift CLI
    --target-user <target-user-name> --target-password <target-password> 
    --target-host <target-database-host-name>
    ```
+   {: codeblock}
 
    The `extract-ias`, `extract-db2`, and `extract-db2w` settings for the `--file-origin` command option are used to specify that the CSV file was extracted from a particular database by using the `lift extract` command.
 

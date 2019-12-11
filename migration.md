@@ -43,6 +43,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
          )
       )      
     ```
+    {: codeblock}
 
   To load data from {{site.data.keyword.Bluemix_notm}} Object Storage by using External Tables directly, the following is an example SQL statement:
 
@@ -55,6 +56,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
        )
     )      
   ```
+  {: codeblock}
 
   For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credentials when creating new service credentials, specify {"HMAC:true"} in the *Add Inline Configuration Parameters* field.
   {: note}
@@ -65,6 +67,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
   CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<amazon-s3-URL>::<s3-access-key-id>::<s3-secret-access-key>:
   :<s3-bucket-name>::<path-to-data-file>" OF <filetype> <additional-load-options> INTO <table-name>)
   ```
+  {: codeblock}
 
   The following is an example usage of the Db2 **LOAD** command:
 
@@ -73,6 +76,7 @@ To load data from Amazon S3 or {{site.data.keyword.Bluemix_notm}} Object Storage
   :<s3-secret-access-key>::ibm-state-store::bdidata2TB/web_site.dat" of DEL modified by codepage=1208 
   coldel0x7c WARNINGCOUNT 1000 MESSAGES ON SERVER INSERT into BDINSIGHTS2.web_site ');
   ```
+  {: codeblock}
 
   For supported command options. see [**LOAD** command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){:external}. 
 

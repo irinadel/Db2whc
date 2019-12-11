@@ -91,6 +91,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    }
    ?>
    ```
+   {: codeblock}
 
    Saving this PHP code example to a script file called `C:\sample.php` and then running the script from a command line produces the following output:
 
@@ -157,6 +158,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
    </body>
    </html>
    ```
+   {: codeblock}
 
 5. From your local working directory, push the updates to {{site.data.keyword.Bluemix_notm}} by following the instructions in the "Getting Started" section of the PHP App in your {{site.data.keyword.Bluemix_notm}} dashboard. Then, restart the App in {{site.data.keyword.Bluemix_notm}} and view the App in a browser.
 

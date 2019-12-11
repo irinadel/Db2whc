@@ -68,6 +68,7 @@ curl -k -X POST \
   --data-urlencode "apikey=<apikey>" \
   "https://iam.bluemix.net/identity/token"
 ```
+{: codeblock}
 
 <!-- `curl -k -X POST \ --header "Content-Type:application/x-www-form-urlencoded" \ --header "Accept: application/json" \ --data-urlencode "grant_type=urn:ibm:params:oauth:grant-type:apikey" \ --data-urlencode "apikey=<apikey>" \ "https://iam.bluemix.net/identity/token"` -->
 
@@ -116,6 +117,7 @@ The following example of a `db2dsdriver.cfg` configuration file shows the config
         </databases>
 </configuration>
 ```
+{: codeblock}
 
 * The ODBC connection string can contain one of the following:
 
@@ -198,12 +200,14 @@ dataSource.setPluginName( "IBMIAMauth" );
 dataSource.setAccessToken( "<access_token>" );
 Connection conn = dataSource.getConnection( );
 ```
+{: codeblock}
 
 or
 
 ```
 Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:accessToken=<access_token>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
+{: codeblock}
 
 **API key**
 
@@ -219,12 +223,14 @@ dataSource.setPluginName( "IBMIAMauth" );
 dataSource.setApiKey( "<api_key>" );
 Connection conn = dataSource.getConnection( );
 ```
+{: codeblock}
 
 or
 
 ```
 Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:apiKey=<api_key>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
+{: codeblock}
 
 **IBMid/password**
 
@@ -239,12 +245,14 @@ dataSource.setSecurityMechanism( com.ibm.db2.jcc.DB2BaseDataSource.PLUGIN_SECURI
 dataSource.setPluginName( "IBMIAMauth" );
 Connection conn = dataSource.getConnection( "<IBMid>", "<password>" );
 ```
+{: codeblock}
 
 or
 
 ```
 Connection conn = DriverManager.getConnection( "jdbc:db2://<host_name_or_IP_address>:50001/BLUDB:user=<IBMid>;password=<password>;securityMechanism=15;pluginName=IBMIAMauth;sslConnection=true" );
 ```
+{: codeblock}
 
 ## Console user experience
 {: #console-ux}
@@ -303,6 +311,7 @@ The {{site.data.keyword.dashdbshort_notm}} REST API was enhanced to also accept 
   .
   .
   ```
+  {: codeblock}
 
 For more details about your service's API, see: [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}.
 
