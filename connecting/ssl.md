@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-09-09"
+lastupdated: "2019-12-11"
 
 keywords:
 
@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Secure Sockets Layer (SSL) support
+# SSL connectivity
 {: #ssl_support}
 
 The {{site.data.keyword.dashdbshort_notm}} database uses a certificate for SSL connections that is issued by a third-party digital certificate authority (CA). 
@@ -37,6 +37,5 @@ Configuring your applications to connect to your {{site.data.keyword.dashdbshort
 
 SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
 {: important}
-
 
 
