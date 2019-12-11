@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Db2 Warehouse on Cloud REST API
+# REST API
 {: #con_rest_api}
 
 {{site.data.keyword.dashdblong}} provides two REST APIs that you can use to interact with your instance:
