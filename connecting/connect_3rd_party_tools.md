@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connecting to third party tools
+# Connecting to third-party tools
 {: #connect_3rd_party}
 
 You can connect third-party command-line interfaces, applications, and tools to your {{site.data.keyword.dashdbshort_notm}} database. 
