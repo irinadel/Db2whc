@@ -18,13 +18,9 @@ Db2 Warehouse on Cloud
         connecting/ssl.md
         connecting/driver_pkg.md
         connecting/connect_programmatically.md
+        connecting/connect_ibm_tools.md
+        connecting/connect_3rd_party_tools.md
         connecting/rest_api.md
-
-    {: .topicgroup}
-    Integrations
-        connecting/data.md
-        connecting/vis_bi.md
-        connecting/data_sci.md
 
     {: .topicgroup}
     Loading your data
