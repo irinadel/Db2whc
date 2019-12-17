@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Driver package
+# Db2 Warehouse on Cloud driver package
 {: #dr_pkg}
 
 The {{site.data.keyword.dashdbshort_notm}} driver package contains software for connecting client applications to a {{site.data.keyword.dashdbshort_notm}} database. 

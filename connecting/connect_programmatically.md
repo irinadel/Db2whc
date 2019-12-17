@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Connecting programmatically with...
+# Connecting programmatically by using driver package
 {: #con_program}
 
 The {{site.data.keyword.dashdbshort_notm}} driver package contains software for connecting client applications to a {{site.data.keyword.dashdbshort_notm}} database. 
