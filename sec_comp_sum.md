@@ -27,6 +27,11 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} is provided on secure {{site.data.keyword.cloud}} and Amazon Web Services platforms. Db2 managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
 {: shortdesc}
 
+Any plan deployed under the Hybrid Data Management Platform (HDMP) possesses the same security compliances as the plan listed in the summary table.
+{: note}
+
+For details about each of the security compliances, see [Details about security compliance](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){: external}.
+
 ## Flex plans
 {: #sec_flex}
 
@@ -51,7 +56,3 @@ subcollection: Db2whc
 | MPP Large | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 {: caption="Table 2. Summary of security compliances for the legacy service offering plans on {{site.data.keyword.cloud_notm}}" caption-side="top"}
 
-Any plan deployed under the Hybrid Data Management Platform (HDMP) possesses the same security compliances as the plan listed in the summary table.
-{: note}
-
-For details about each of the security compliances, see [Details about security compliance](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances.html){: external}.
