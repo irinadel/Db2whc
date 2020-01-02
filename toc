@@ -54,7 +54,7 @@ Db2 Warehouse on Cloud
         roles.md
         rcac.md
         auditing.md
-        [Security compliances](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/compliances_summary.html)
+        sec_comp_sum.md
         key_protect.md
 
     communities.md    
