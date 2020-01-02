@@ -27,6 +27,9 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} is provided on secure {{site.data.keyword.cloud}} and Amazon Web Services platforms. Db2 managed services comply with the specific security standards and auditing processes that are listed here and do not automatically inherit general {{site.data.keyword.cloud_notm}} security compliances that are documented for IaaS, PaaS, and SaaS cloud offerings. 
 {: shortdesc}
 
+## Flex plans
+{: #sec_flex}
+
 | {{site.data.keyword.dashdblong}} Flex offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
 | Flex One on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
@@ -35,6 +38,9 @@ subcollection: Db2whc
 | Flex on Amazon Web Services |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Flex Performance on Amazon Web Services |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 {: caption="Table 1. Summary of security compliances for the Flex service offering plans" caption-side="top"}
+
+## Legacy plans
+{: #sec_legacy}
 
 | {{site.data.keyword.dashdblong}} legacy offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
