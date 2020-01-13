@@ -176,7 +176,7 @@ Use Lift to migrate your data into {{site.data.keyword.dashdbshort_notm}}.
 ### InfoSphere Data Replication
 {: #idr}
 
-You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a {{site.data.keyword.dashdbshort_notm}} database. This capability applies to both SMP and MPP environments. It does not apply to the Entry plan of {{site.data.keyword.dashdbshort_notm}}. 
+You can connect IBM® InfoSphere® Data Replication <!--version 11.3.3.3-36 or later -->to a {{site.data.keyword.dashdbshort_notm}} database. This capability applies to both SMP and MPP environments.  
 {: shortdesc}
 
 #### Overview

@@ -54,12 +54,6 @@ To get started on provisioning and working with {{site.data.keyword.dashdbshort_
 - [Getting started tutorial: Part 2](https://www.ibm.com/cloud/garage/dte/tutorial/ibm-db2-warehouse-cloud-getting-started-part-2){:external}.
 -->
 
-<!-- ## Free trial
-{: #freetrial}
-
-You can try the {{site.data.keyword.dashdbshort_notm}} Entry plan with up to 1 GB of storage without charge. [Free trial](https://cloud.ibm.com/catalog/services/db2-warehouse){:external} -->
-
-
 <!--
 ## Video: Introducing Db2 Warehouse on Cloud
 {: #intro_vid}

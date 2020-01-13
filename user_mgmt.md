@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Managing users
 {: #user_mgmt}
 
-Management of users that were given access to the database is the sole responsibility of the user or users with the administrator role. The administrator has the responsibility to manage how other users in your organization access your database. This capability does not apply to the Entry plan.
+Management of users that were given access to the database is the sole responsibility of the user or users with the administrator role. The administrator has the responsibility to manage how other users in your organization access your database. 
 {: shortdesc}
 
 The database administrator role manages the following types of user access: 

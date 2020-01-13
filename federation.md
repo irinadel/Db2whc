@@ -27,7 +27,7 @@ subcollection: Db2whc
 Db2 data virtualization (also known as federation) is supported by {{site.data.keyword.dashdbshort_notm}}. Data virtualization gives you single-query access to all of your data that is on multiple distributed databases anywhere in your organization. You can access data that is on any of your Db2 or Informix data sources, both in the cloud and on premises. 
 {: shortdesc}
 
-This function is supported on all versions of {{site.data.keyword.dashdbshort_notm}}, except for the Entry plan. However, you can use the Entry plan as a target from which you can pull data.
+This function is supported on all versions of {{site.data.keyword.dashdbshort_notm}}. 
 
 ## Use Cases
 {: #use_cases}

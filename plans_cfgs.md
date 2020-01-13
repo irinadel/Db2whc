@@ -39,17 +39,6 @@ All plans offer the following features:
 
 If you're looking to learn SQL, or use a free, fully managed, Db2 cloud database for general use, we recommend the [{{site.data.keyword.Db2_on_Cloud_short}} Lite plan](https://cloud.ibm.com/catalog/services/db2){:external}.
 
-
-<!-- You can choose a {{site.data.keyword.dashdbshort_notm}} plan that is configured and optimized for the work that you need to do:
-
-   * An entry plan to try things out. It's a free trial with up to 1 GB of storage. See: [Entry plan restrictions](#ep_restrictions)
-   * Flex plans in which you can independently scale storage and compute resources
-   * SMP plans of various sizes for production: small, medium, and large consist of a single node and a single instance
-   * MPP multiple-node cluster configurations for parallel processing and high performance
-   * Plans configured for High Availability
-   * Oracle compatibility
--->
-
 <!-- View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}. -->
 
 <!-- Watch this video to see an introduction to the {{site.data.keyword.dashdbshort_notm}} Flex Performance plan.
@@ -93,51 +82,4 @@ The following table provides information about the availability of the various {
 
 *NA = Not available at this time
 
-
-<!-- ## Entry plan restrictions
-{: #ep_restrictions}
-
-You are strongly recommended to use an enterprise-level service plan rather than an Entry service plan for mission-critical or performance-sensitive workloads. 
-{: important}
-
-The following is a table of {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions:
-
-| Category | Item | Restriction | 
-|----------|------|-------------|
-| Resources | Storage | 20 GB of storage per user. The plan is free only if less than 1 GB of storage is used. |
-|  | Connections | 50 connections per user. This limit might be adjusted dynamically to maintain system integrity of the instance. |
-|  | Performance | Performance might fluctuate due to workloads run by other users on the multi-tenant system |
-|  |  |
-| Features & functions | Federation | Not supported |
-|  | Oracle compatibility | Not supported |
-|  | User-defined extensions (UDFs) | Not supported |
-|  | User management | User not given administrative authority |
-|  | Row and column access control (RCAC) | Not supported |
-|  | IBM InfoSphere Data Replication for use in loading data | Not supported |
-|  |  |
-| Networking environment | IBM Cloud Integrated Analytics | Not supported |
-|  | IBM Cloud Dedicated | Not supported |
-|  |  |
-| Security compliances | Health Information Portability and Accountability Act of 1996 (HIPAA) | Not supported. Refer to your Service Description. |
-|  | EU General Data Protection Regulation (GDPR) | No specific restrictions apply |
-|  |  |
-| Account management | Reactivation | No reactivation requirement |
-{: caption="Table 3. {{site.data.keyword.dashdbshort_notm}} Entry plan restrictions" caption-side="top"}
--->
-
-<!--
-|      |||||
-| SMP                          | Hong Kong    | Amsterdam | Washington D.C. (us-east) | Sao Paulo     |
-|                              | Seoul        | Frankfurt | Dallas (us-south)         |               | 
-|                              | Singapore    | London    | Montréal                  |               | 
-|                              | Sydney       | Milan     | Querétaro                 |               | 
-|                              | Tokyo        | Oslo      | Toronto                   |               | 
-|                              |              | Paris     |                           |               |
-|      |||||
-| MPP                          | Hong Kong    | Amsterdam | Washington D.C. (us-east) | Sao Paulo     |
-|                              | Seoul        | Frankfurt | Dallas (us-south)         |               | 
-|                              | Singapore    | London    | Montréal                  |               | 
-|                              | Sydney       | Milan     | Querétaro                 |               | 
-|                              | Tokyo        | Oslo      | Toronto                   |               | 
-|                              |              | Paris     |                           |               |-->
 
