@@ -2,7 +2,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Db2whc" category="analytics,storage,databases,devops" audience="service" arm="2112718" href="/docs/services/Db2whc?topic=Db2whc-getting-started" path="services/Db2whc"}
+{: .toc subcollection="Db2whc" category="analytics,storage,databases,devops" audience="service" href="/docs/Db2whc?topic=Db2whc-getting-started" path="Db2whc"}
 Db2 Warehouse on Cloud
 
     {: .navgroup id="learn"}
