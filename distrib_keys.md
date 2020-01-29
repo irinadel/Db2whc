@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Distribution keys for multi-partitioned plans
 {: #distribution_keys}
 
-When creating a table in one of the {{site.data.keyword.dashdblong}} [multi-partitioned plans](/docs/services/Db2whc?topic=Db2whc-about#plans_cfgs){: external}, you can decide how you want to distribute data among data partitions. 
+When creating a table in one of the {{site.data.keyword.dashdblong}} [multi-partitioned plans](/docs/Db2whc?topic=Db2whc-about#plans_cfgs){: external}, you can decide how you want to distribute data among data partitions. 
 {: shortdesc}
 
 You can use either [hash distribution](#hash_distrib) or [random distribution](#random_distrib).

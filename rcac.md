@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Row and column access control (RCAC)
 {: #rcac}
 
-{{site.data.keyword.dashdblong}} comes equipped with powerful user security features that can help you manage security at the row and column level. This fine-grained access control that is known as row and column access control (RCAC) in {{site.data.keyword.dashdbshort_notm}}, works with [user roles](/docs/services/Db2whc?topic=Db2whc-user_roles). 
+{{site.data.keyword.dashdblong}} comes equipped with powerful user security features that can help you manage security at the row and column level. This fine-grained access control that is known as row and column access control (RCAC) in {{site.data.keyword.dashdbshort_notm}}, works with [user roles](/docs/Db2whc?topic=Db2whc-user_roles). 
 {: shortdesc}
 
 RCAC can be used to ensure that your database users can access only the portions of database tables that are required for their work. For example, a hospital might have a policy that states a doctor can see the data of only their patients and not the patients of other doctors. In the following example of a patient data table,

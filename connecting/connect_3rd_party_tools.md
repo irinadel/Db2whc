@@ -57,7 +57,7 @@ These instructions explain how to connect Aginity Workbench <!--4.3 -->to a {{si
 #### Prerequisites
 {: #prereq6}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc6}
@@ -90,7 +90,7 @@ These instructions explain how to connect Tableau to a {{site.data.keyword.dashd
 #### Prerequisites
 {: #prereq8}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc8}
@@ -120,7 +120,7 @@ These instructions explain how to connect Microsoft Excel <!--2010-->to a {{site
 #### Prerequisites
 {: #prereq9}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your local computer. 
 
@@ -161,14 +161,14 @@ You can connect Esri ArcGIS for Desktop <!--version 10.3.1 -->to a {{site.data.k
 #### Prerequisites
 {: #prereq10}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 You must have the Db2 driver package or the IBM® Data Server Driver Package installed on your computer.
 
 #### Procedure
 {: #proc10}
 
-1. Determine your ODBC DSN data from the [connection information](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+1. Determine your ODBC DSN data from the [connection information](/docs/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
 
 2. Create a new connection:
       
@@ -210,7 +210,7 @@ These instructions explain how to create a connection from SAS to a {{site.data.
 #### Prerequisites
 {: #prereq12}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc12}
@@ -227,7 +227,7 @@ Instead of using the RStudio® environment that is integrated within IBM Watson 
 #### Prerequisites
 {: #prereq13}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc13}
@@ -244,7 +244,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
         
    b. Open your locally installed R development environment.
         
-   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+   c. At the R prompt, enter the following statements to create the connection. Replace the placeholders with the [connection information](/docs/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
 
    - If your locally installed R development environment runs in the {{site.data.keyword.dashdbshort_notm}} database:
 

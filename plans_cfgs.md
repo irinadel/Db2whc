@@ -37,9 +37,9 @@ All plans offer the following features:
 * Autonomous and secure cloud service, supported by a world-class IBM DevOps team
 * Option to configure with Oracle compatibility
 
-If you're looking to learn SQL, or use a free, fully managed, Db2 cloud database for general use, we recommend the [{{site.data.keyword.Db2_on_Cloud_short}} Lite plan](https://cloud.ibm.com/catalog/services/db2){:external}.
+If you're looking to learn SQL, or use a free, fully managed, Db2 cloud database for general use, we recommend the [{{site.data.keyword.Db2_on_Cloud_short}} Lite plan](https://cloud.ibm.com/catalog/db2){:external}.
 
-<!-- View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){:external}. -->
+<!-- View all of the available {{site.data.keyword.dashdbshort_notm}} plans in the [{{site.data.keyword.Bluemix}} catalog](https://cloud.ibm.com/catalog/db2-warehouse){:external}. -->
 
 <!-- Watch this video to see an introduction to the {{site.data.keyword.dashdbshort_notm}} Flex Performance plan.
 

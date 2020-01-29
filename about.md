@@ -145,13 +145,13 @@ If you want to have the data warehouse provisioned for AWS, select the **MPP Sma
 
 You can analyze and visualize your analysis by connecting to the following applications:
 
-- [Watson Studio (formerly Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
-- [Cognos Analytics](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
+- [Watson Studio (formerly Data Science Experience)](/docs/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [Cognos Analytics](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
-- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
-- [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
-- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
-- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
-- [Esri ArcGIS for Desktop](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
+- [Tableau](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [SPSS Statistics](/docs/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [Microsoft Excel](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [Esri ArcGIS for Desktop](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 -->

@@ -36,7 +36,7 @@ Define a connection between a Java™ application and the {{site.data.keyword.da
 ### Prerequisites
 {: #prereq61}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -65,7 +65,7 @@ Define a connection between a .NET application and your {{site.data.keyword.dash
 ### Prerequisites
 {: #prereq71}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -181,7 +181,7 @@ Define a connection between a Microsoft Windows ODBC or CLI application and a {{
 ### Prerequisites
 {: #prereq81}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -242,7 +242,7 @@ Use the Microsoft ODBC Data Source Administrator tool to define a connection bet
 ### Prerequisites
 {: #prereq91}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -252,7 +252,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 ### Procedure
 {: #proc91}
 
-1. Install the [Db2 driver package](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
+1. Install the [Db2 driver package](/docs/Db2whc?topic=Db2whc-dr_pkg#dr_pkg).
 
 2. Open ODBC Data Source Administrator and create either a User DSN or System DSN for the Db2 driver package.
     
@@ -273,7 +273,7 @@ Define a connection between a PHP application and a {{site.data.keyword.dashdbsh
 ### Prerequisites
 {: #prereq101}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Before you can connect to your database, you must perform the following steps:
 
@@ -286,7 +286,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 #### Scenario 1: Connecting from outside {{site.data.keyword.Bluemix_notm}}:
 {: #scen1}
 
-1. Download the [Db2 driver package](/docs/services/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
+1. Download the [Db2 driver package](/docs/Db2whc?topic=Db2whc-dr_pkg#dr_pkg) from the web console, and then install the driver package on the machine where your PHP application will run.
                 
 2. Use the [`odbc_connect` function](http://php.net/manual/en/function.odbc-connect.php){:external} to connect to the BLUDB database.
     

@@ -59,12 +59,12 @@ With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that
 Configure your local environment to connect to your {{site.data.keyword.dashdbshort_notm}} database by completing the following steps:
 {: shortdesc}
 
-1. Download the [driver package](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg) from the {{site.data.keyword.dashdbshort_notm}} web console.
+1. Download the [driver package](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg) from the {{site.data.keyword.dashdbshort_notm}} web console.
 2. Install the driver package on the computer where your apps or tools are running:
-   - [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
-   - [Installing on Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
-   - [Installing on Windows](/docs/services/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
-3. [Configure the driver files](/docs/services/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) for your {{site.data.keyword.dashdbshort_notm}} database.
+   - [Installing on Linux or PowerLinux](/docs/Db2whc/connecting?topic=Db2whc-install_dr_pkg_linux#install_dr_pkg_linux)
+   - [Installing on Mac OS X](/docs/Db2whc/connecting?topic=Db2whc-install_dr_pkg_mac#install_dr_pkg_mac)
+   - [Installing on Windows](/docs/Db2whc/connecting?topic=Db2whc-install_dr_pkg_windows#install_dr_pkg_windows)
+3. [Configure the driver files](/docs/Db2whc/connecting?topic=Db2whc-cfg_loc_env#cfg_loc_env) for your {{site.data.keyword.dashdbshort_notm}} database.
 
 ## Use Db2 Warehouse on Cloud as a data source for your {{site.data.keyword.Bluemix_notm}} apps or services
 {: #data_src}

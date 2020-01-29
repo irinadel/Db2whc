@@ -29,7 +29,7 @@ subcollection: Db2whc
 # Getting started with {{site.data.keyword.dashdbshort_notm}}
 {: #getting-started}
 
-You can provision an instance of {{site.data.keyword.dashdblong}} through the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/services/db2-warehouse){: external}. [Create a free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.Bluemix_notm}} credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}.
+You can provision an instance of {{site.data.keyword.dashdblong}} through the [{{site.data.keyword.Bluemix_notm}} catalog](https://cloud.ibm.com/catalog/db2-warehouse){: external}. [Create a free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.Bluemix_notm}} credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}.
 
 The following tutorials are the best way to get started with {{site.data.keyword.dashdbshort_notm}}:
 

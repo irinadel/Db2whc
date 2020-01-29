@@ -63,21 +63,21 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 ### Collecting connection information
 {: #collect_info}
 
-- [Database details and connection credentials](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds)
+- [Database details and connection credentials](/docs/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds)
 
 ### Downloading and installing driver package
 {: #dl_install}
 
-- [Download driver package](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg)
-- [Installing on Linux or PowerLinux](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_linux)
-- [Installing on Mac OS X](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_mac)
-- [Installing on Windows](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_windows)
+- [Download driver package](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg)
+- [Installing on Linux or PowerLinux](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_linux)
+- [Installing on Mac OS X](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_mac)
+- [Installing on Windows](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#install_dr_pkg_windows)
 
 ### Configuring your environment
 {: #cfg_env}
 
-- [Configuring your local environment](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#cfg_loc_env)
-- [SSL connectivity](/docs/services/Db2whc/connecting?topic=Db2whc-ssl_support)
+- [Configuring your local environment](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#cfg_loc_env)
+- [SSL connectivity](/docs/Db2whc/connecting?topic=Db2whc-ssl_support)
 
 ## Connectivity options
 {: #connect_opts}
@@ -85,8 +85,8 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 {{site.data.keyword.dashdbshort_notm}} offers multiple secure connectivity options depending on your application connection requirements.  
 {: shortdesc}
 
-- See [Connectivity options on IBM Cloud](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options).
-- See [Connectivity options on Amazon Web Services](/docs/services/Db2whc/connecting?topic=Db2whc-connect_options_aws).
+- See [Connectivity options on IBM Cloud](/docs/Db2whc/connecting?topic=Db2whc-connect_options).
+- See [Connectivity options on Amazon Web Services](/docs/Db2whc/connecting?topic=Db2whc-connect_options_aws).
 
 ## Connecting programmatically
 {: #conx_prgrm}
@@ -94,12 +94,12 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 You can use common programming languages to create applications that connect to a {{site.data.keyword.dashdbshort_notm}} database.
 {: shortdesc}
 
-- [JDBC](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_jdbc)
-- [Microsoft Windows ODBC or CLI](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_cli)
-- [.NET](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_net)
-- [ODBC Data Source Administrator](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_dsa)
-- [PHP](/docs/services/Db2whc/connecting?topic=Db2whc-con_program#con_prog_php)
-- [REST API](/docs/services/Db2whc/connecting?topic=Db2whc-con_rest_api)
+- [JDBC](/docs/Db2whc/connecting?topic=Db2whc-con_program#con_prog_jdbc)
+- [Microsoft Windows ODBC or CLI](/docs/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_cli)
+- [.NET](/docs/Db2whc/connecting?topic=Db2whc-con_program#con_prog_net)
+- [ODBC Data Source Administrator](/docs/Db2whc/connecting?topic=Db2whc-con_program#con_prog_odbc_dsa)
+- [PHP](/docs/Db2whc/connecting?topic=Db2whc-con_program#con_prog_php)
+- [REST API](/docs/Db2whc/connecting?topic=Db2whc-con_rest_api)
 <!-- - [C++]() -->
 <!-- - [Java]() -->
 <!-- - [Node.js]() -->
@@ -115,33 +115,33 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 {: #di}
 
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
-- [DataStage](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#datastage)
-- [Informatica](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#informatica)
+- [DataStage](/docs/Db2whc/connecting?topic=Db2whc-data_int#datastage)
+- [Informatica](/docs/Db2whc/connecting?topic=Db2whc-data_int#informatica)
 - [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
-- [InfoSphere Data Replication](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#idr)
+- [InfoSphere Data Replication](/docs/Db2whc/connecting?topic=Db2whc-data_int#idr)
 - [Segment](https://segment.com/docs/destinations/db2/){:external}
-- [Data Studio](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
-- [Data Server Manager](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#dsm)
-- [CLPPLUS](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
-- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb)
-- [InfoSphere Data Architect to design and deploy your database schema](/docs/services/Db2whc/connecting?topic=Db2whc-data_int#ida)
+- [Data Studio](/docs/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
+- [Data Server Manager](/docs/Db2whc/connecting?topic=Db2whc-data_int#dsm)
+- [CLPPLUS](/docs/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
+- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](/docs/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb)
+- [InfoSphere Data Architect to design and deploy your database schema](/docs/Db2whc/connecting?topic=Db2whc-data_int#ida)
 
 ### Data visualization/BI
 {: #dvis_bi}
 
-- [Cognos Analytics to run Business Intelligence reports against your data](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
+- [Cognos Analytics to run Business Intelligence reports against your data](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
 - [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
-- [Tableau](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
-- [Microsoft Excel](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
-- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/services/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
+- [Tableau](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
+- [Microsoft Excel](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
+- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
 
 ### Data science
 {: #dsci}
 
-- [Watson Studio (formerly IBM Data Science Experience)](/docs/services/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
-- [SPSS Statistics](/docs/services/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
-- [SAS](/docs/services/Db2whc/connecting?topic=Db2whc-ds#sas)
-- [Local R development environment](/docs/services/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
+- [Watson Studio (formerly IBM Data Science Experience)](/docs/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
+- [SPSS Statistics](/docs/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
+- [SAS](/docs/Db2whc/connecting?topic=Db2whc-ds#sas)
+- [Local R development environment](/docs/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
 
 ## Connecting to another Db2 database
 {: #fed}
@@ -150,6 +150,6 @@ Db2 data virtualization (also known as federation) is supported by {{site.data.k
 
 This function is supported on all versions of {{site.data.keyword.dashdbshort_notm}}.
 
-- [Data virtualization (federation)](/docs/services/Db2whc?topic=Db2whc-data_virt_fed)
+- [Data virtualization (federation)](/docs/Db2whc?topic=Db2whc-data_virt_fed)
 
 

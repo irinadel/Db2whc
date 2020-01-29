@@ -56,7 +56,7 @@ To make connections with the SSL protocol, download and install the 32-bit GSKit
     - `<installation_directory>\gsk8\bin`
     - `<installation_directory>\gsk8\lib`
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc1}
@@ -159,7 +159,7 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
         where `<alias>` is an alias that you created by using the **db2cli writecfg** command, `<user_id>` is your {{site.data.keyword.dashdbshort_notm}} user ID, and `<password>` is your {{site.data.keyword.dashdbshort_notm}} password.
 
-  4. Use the [connection information](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
+  4. Use the [connection information](/docs/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand to define a connection in the DataStage client. On the **Parameters** tab, you must select the **DB2 Connector** for the **Connect using Staging Type** field.
 
      For details about defining a connection in DataStage, see the following DataStage documentation topics: 
      
@@ -191,7 +191,7 @@ When you use {{site.data.keyword.dashdbshort_notm}} as a connection target, the 
 
 If you intend to connect by using the SSL protocol, download and install GSKit V8. See [GSKit V8 - Install, Uninstall and Upgrade instructions](http://www.ibm.com/support/docview.wss?uid=swg21631462){:external}. Click the operating system tab that applies to your client machine’s operating system. If you are installing the GSKit on a Windows computer, ensure that you specify the GSKit installation directory path (`<installation_directory>\gsk8\bin`) for the **`PATH`** environment variable.
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 If you intend to connect by using the SSL protocol, download the `DigiCertGlobalRootCA.crt` SSL certificate from the web console to a directory on the client machine. To download the certificate, click **Connection > Connection Information** and then click the **Connection with SSL** tab.
 
@@ -340,7 +340,7 @@ These instructions explain how to create a connection from IBM® Data Studio <!-
 #### Prerequisites
 {: #prereq3}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc3}
@@ -369,7 +369,7 @@ A connection between your IBM® Data Server Manager and your {{site.data.keyword
 #### Prerequisites
 {: #prereq4}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc4}
@@ -411,7 +411,7 @@ These instructions explain how to create a connection from InfoSphere® Data Arc
 #### Prerequisites
 {: #prereq5}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc5}
@@ -441,7 +441,7 @@ Command line processor plus (CLPPlus) is included in the Db2 driver package. CLP
 #### Prerequisites
 {: #prereq7}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 To use CLPPlus, ensure that a software development kit (SDK) or a Java runtime environment (JRE) for Java Version 1.5.0 or later is installed on your computer and that environment variables are set as follows:
 
@@ -653,7 +653,7 @@ These instructions explain how to create a connection from IBM® SPSS® Statisti
 #### Prerequisites
 {: #prereq11}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 #### Procedure
 {: #proc11}
@@ -668,11 +668,11 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
    b. On the Create New Data Source window, select the driver that is named **IBM DB2 ODBC DRIVER** and click **Finish**.
 
-   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/services/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg).
+   Be sure that the driver that you select is not a driver with a similar name such as `IBM DB2® ODBC DRIVER - DB2COPY`. If the driver does not appear in the list, exit SPSS Statistics, then download and install the driver. See [Driver package](/docs/Db2whc/connecting?topic=Db2whc-dr_pkg#dr_pkg).
         
    c. In the ODBC IBM Driver - Add window, enter a data source name (usually the name of the database you are connecting to), and click **Add**.
         
-   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](/docs/services/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
+   d. From the CLI/ODBC Settings window, on the **Data Source** tab, enter the user ID and password from the [connection information](/docs/Db2whc/connecting?topic=Db2whc-db_details_cxn_creds#db_details_cxn_creds) that you collected beforehand.
         
    e. On the Advanced Settings page, for each of the following parameters, click **Add** to open the Add CLI Parameter window to begin the step, and click **OK** to return to the Advanced Settings page:
             

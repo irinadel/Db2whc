@@ -70,7 +70,7 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Lin
 #### Prerequisites
 {: #prereq31}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -120,7 +120,7 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Mac
 #### Prerequisites
 {: #prereq41}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Download the Db2 driver package for your operating system from the web console and install it. -->
 
@@ -172,7 +172,7 @@ You can install the {{site.data.keyword.dashdbshort_notm}} driver package on Win
 #### Prerequisites
 {: #prereq51}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- Download the driver package for your operating system from the web console and install it. -->
 
@@ -203,7 +203,7 @@ To connect local applications and tools to your {{site.data.keyword.dashdbshort_
 ### Prerequisites
 {: #prereq21}
 
-Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/services/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
+Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} database, verify that you have the [prerequisites](/docs/Db2whc/connecting?topic=Db2whc-connect_ov#prereqs).
 
 <!-- 1. Install the Db2 driver package for your operating system.
 
