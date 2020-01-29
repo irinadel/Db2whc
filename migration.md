@@ -118,7 +118,7 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
 
 ![View of the Mass Data Migration Service device](images/mdms.svg)
 
-For more information about the MDMS device, see: [Getting started tutorial](/docs/infrastructure/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
+For more information about the MDMS device, see: [Getting started tutorial](/docs/mass-data-migration?topic=mass-data-migration-getting-started-tutorial#getting-started-with-ibm-cloud-mass-data-migration){:external}.
 
 For information about migrating your data from an IBM PureData System for Analytics (Netezza) database to an {{site.data.keyword.dashdblong}} database by using the MDMS device, see: [Migrating from IBM PureData System for Analytics (Netezza)](/docs/Db2whc/connecting?topic=Db2whc-pda#pda){:external}.
 

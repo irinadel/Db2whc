@@ -73,7 +73,7 @@ The device is picked up by the carrier to be sent to your location. At this time
 <!-- **[Editor's note: What to keep from this section immediately below?]**
 
 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
-1. The device arrives pre-configured for you. Basic [powering/connectivity instructions](docs/infrastructure/mass-data-migration/user-instructions.html) are included.  **[Editor's note: Are the instructions included in the MDMS package? If so, are they different from the instructions found with the "powering/connectivity" link?]**<br/>
+1. The device arrives pre-configured for you. Basic [powering/connectivity instructions](docs/mass-data-migration/user-instructions.html) are included.  **[Editor's note: Are the instructions included in the MDMS package? If so, are they different from the instructions found with the "powering/connectivity" link?]**<br/>
   **Note**: User name and storage pool password is provided separately. Check the **Request Details** in your [Requests](https://control.softlayer.com/storage/mdms){:external} grid for the credentials.
 2. Point your browser to the static IP address that you provided in the order form. **[Editor's note: Is this done on PDA? What system is the static IP address for?]**
 3. Log in. Enter password to unlock the empty storage pool. **[Editor's note: How is this done?]**<br/>
