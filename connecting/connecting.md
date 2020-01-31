@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-04-01"
+  years: 2014, 2020
+lastupdated: "2020-01-31"
 
 keywords:
 
@@ -115,33 +115,33 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 {: #di}
 
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
-- [DataStage](/docs/Db2whc/connecting?topic=Db2whc-data_int#datastage)
-- [Informatica](/docs/Db2whc/connecting?topic=Db2whc-data_int#informatica)
+- [DataStage](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#datastage)
+- [Informatica](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#informatica)
 - [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
-- [InfoSphere Data Replication](/docs/Db2whc/connecting?topic=Db2whc-data_int#idr)
+- [InfoSphere Data Replication](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#idr)
 - [Segment](https://segment.com/docs/destinations/db2/){:external}
-- [Data Studio](/docs/Db2whc/connecting?topic=Db2whc-data_int#data_studio)
-- [Data Server Manager](/docs/Db2whc/connecting?topic=Db2whc-data_int#dsm)
-- [CLPPLUS](/docs/Db2whc/connecting?topic=Db2whc-data_int#clpplus)
-- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](/docs/Db2whc/connecting?topic=Db2whc-data_int#aginity_wb)
-- [InfoSphere Data Architect to design and deploy your database schema](/docs/Db2whc/connecting?topic=Db2whc-data_int#ida)
+- [Data Studio](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#data_studio)
+- [Data Server Manager](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#dsm)
+- [CLPPLUS](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#clpplus)
+- [Aginity Workbench to migrate Netezza® data models and data to {{site.data.keyword.dashdbshort_notm}}](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#aginity_wb)
+- [InfoSphere Data Architect to design and deploy your database schema](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#ida)
 
 ### Data visualization/BI
 {: #dvis_bi}
 
-- [Cognos Analytics to run Business Intelligence reports against your data](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#cognos)
+- [Cognos Analytics to run Business Intelligence reports against your data](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#cognos)
 - [Looker](https://docs.looker.com/setup-and-management/connecting-to-db){:external}
-- [Tableau](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#tableau)
-- [Microsoft Excel](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
-- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
+- [Tableau](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#tableau)
+- [Microsoft Excel](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#excel)
+- [Esri ArcGIS for Desktop to perform geospatial analytics and map publishing with your data](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#esri_arcgis)
 
 ### Data science
 {: #dsci}
 
-- [Watson Studio (formerly IBM Data Science Experience)](/docs/Db2whc/connecting?topic=Db2whc-ds#watson_studio)
-- [SPSS Statistics](/docs/Db2whc/connecting?topic=Db2whc-ds#spss_stats)
-- [SAS](/docs/Db2whc/connecting?topic=Db2whc-ds#sas)
-- [Local R development environment](/docs/Db2whc/connecting?topic=Db2whc-ds#r_dev_env)
+- [Watson Studio (formerly IBM Data Science Experience)](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#watson_studio)
+- [SPSS Statistics](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#spss_stats)
+- [SAS](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#sas)
+- [Local R development environment](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#r_dev_env)
 
 ## Connecting to another Db2 database
 {: #fed}
