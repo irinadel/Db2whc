@@ -103,14 +103,14 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 
 4. From the **IBM DB2 Connection** window, enter the connection information by using the following table.
 
-   | Tableau field | Db2 connections information field |
-   |---------------|-----------------------------------|
-   | Step 1: Enter a server name | Host name |
-   | Step 2: Port | Port number |
-   | Step 3: Enter a database on the server | Database name |
-   | Username | User ID |
-   | Password | Password |
-   {: caption="Table 1. Fields in Tableau for connection information" caption-side="top"}
+| Tableau field | Db2 connections information field |
+|---------------|-----------------------------------|
+| Step 1: Enter a server name | Host name |
+| Step 2: Port | Port number |
+| Step 3: Enter a database on the server | Database name |
+| Username | User ID |
+| Password | Password |
+{: caption="Table 1. Fields in Tableau for connection information" caption-side="top"}
 
 5. Click **Connect** to establish the connection. Tableau offers several options for connecting to your data. To make full use of your {{site.data.keyword.dashdbshort_notm}} database, choose the **Connect Live** option.
 
