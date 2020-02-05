@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-12-11"
+  years: 2014, 2020
+lastupdated: "2020-02-05"
 
 keywords:
 
@@ -35,7 +35,9 @@ Secure Sockets Layer (SSL) is a security protocol that provides communication pr
 
 Configuring your applications to connect to your {{site.data.keyword.dashdbshort_notm}} database with SSL depends on your company policy. Both the standard and the SSL protocols that you can use to connect to the database transmit user names and passwords as encrypted data. If you want to ensure complete end-to-end security, transmit all database information, including sensitive data and metadata, through an SSL connection. 
 
-SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
+<!-- SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
 {: important}
+-->
 
-
+SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default on all new and recently deployed instances. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request. If you have an older instance, non-SSL connections might be enabled. To enforce SSL connections or to ask about the SSL status of your system, open a support case.
+{: important}
