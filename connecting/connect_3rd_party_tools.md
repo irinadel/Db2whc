@@ -96,12 +96,10 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 {: #proc8}
 
 1. In Tableau Desktop, open the window or page in your tool that is used to define a database connection.
-
 2. From the start page, click **Connect to data**.
-
 3. From the **Data Sources** list, select the data source or driver to use for your database connection. In the **On a server** section of the list, select **IBM Db2**.
-
-4. From the **IBM DB2 Connection** window, enter the connection information by using the following table.
+4. From the **IBM DB2 Connection** window, enter the connection information by using the definitions in Table 1.
+5. Click **Connect** to establish the connection. Tableau offers several options for connecting to your data. To make full use of your {{site.data.keyword.dashdbshort_notm}} database, choose the **Connect Live** option.
 
 | Tableau field | Db2 connections information field |
 |---------------|-----------------------------------|
@@ -111,8 +109,6 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 | Username | User ID |
 | Password | Password |
 {: caption="Table 1. Fields in Tableau for connection information" caption-side="top"}
-
-5. Click **Connect** to establish the connection. Tableau offers several options for connecting to your data. To make full use of your {{site.data.keyword.dashdbshort_notm}} database, choose the **Connect Live** option.
 
 ### Microsoft Excel
 {: #excel}
