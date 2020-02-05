@@ -63,11 +63,8 @@ Before attempting to connect to your {{site.data.keyword.dashdbshort_notm}} data
 {: #proc6}
 
 1. Download and install Aginity Workbench.
-
 2. Determine your ODBC DSN from the connection information that you noted earlier.
-
 3. Launch Aginity Workbench. If the database connection dialog box does not open automatically, open it by clicking **Connect** on the toolbar.
-
 4. [Establish a database connection](https://www.aginity.com/documentation/WB/dashDB/Default.htm#Aginity_Topics/Aginity_Workbench/Database_Connection_Dialog_Box.htm){:external}. Use the host name, user ID, and password from the connection information that you noted earlier.
 
 ## Data visualization & BI
@@ -128,20 +125,13 @@ You must have the Db2 driver package or the IBM® Data Server Driver Package ins
 #### Procedure
 {: #proc9}
 
-1. In the web console, go to the **Run SQL** page.
-    
+1. In the web console, go to the **Run SQL** page.    
 2. Type one or more SELECT statements in the editor text box.
-
 3. Click one of the Run options.
-
 4. Click **Excel ODC File**.
-
 5. Download and open the `BLUExcel.odc` file in Excel. If a security notice is displayed, click **Enable**.
-
 6. Click **Open** to connect to the {{site.data.keyword.dashdbshort_notm}} database. The **Connect To DB2 Database** dialog box opens.
-
 7. Type the user ID and password that you use to log in to {{site.data.keyword.dashdbshort_notm}}. To obtain the user ID and password, click **Connect** in the web console or **Connect > Connection Information** in the web console.
-
 8. Ensure that the connection mode is `Share`, and then click **OK**.
 
 #### Results
