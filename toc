@@ -56,12 +56,10 @@ Db2 Warehouse on Cloud
         rcac.md
         auditing.md
         sec_comp_sum.md
-        key_protect.md
 
     communities.md    
 
     [What's new](https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud)
-    [Frequently asked questions](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.doc/managed_service.html)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -76,6 +74,7 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="help"}
+    faqs.md
     help.md
     {: .navgroup-end}
 	
