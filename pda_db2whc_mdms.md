@@ -42,7 +42,7 @@ MDMS offers a fast, simple, secure way to physically transfer terabytes to petab
    - Netmask 
    - Default Gateway to access the user interface (UI)
 3. Cloud Object Storage download destination <br/>
-   You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-about#about){:external}.
+   You must have at least one {{site.data.keyword.cos_full}} account and one bucket in a US Cross Region or US South location to complete the request form. If you don't have an {{site.data.keyword.cos_full_notm}}} account yet, create one before requesting the MDMS device. For more information, see: [About {{site.data.keyword.cos_full}}](/docs/cloud-object-storage?topic=cloud-object-storage-about-cloud-object-storage){:external}.
    {: important}
 
 ## Step 1: Creating a request
