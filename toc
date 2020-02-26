@@ -63,6 +63,7 @@ Db2 Warehouse on Cloud
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    cli_deploy.md
     [IBM Demos: Tutorials, videos, and hands-on labs](https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/)
     {: .navgroup-end}
 
