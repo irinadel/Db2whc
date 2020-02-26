@@ -122,7 +122,7 @@ Complete the following steps to order and deploy a {{site.data.keyword.dashdbsho
    
    `"storage": "<amount_of_storage_in_GB>"`
 
-   For example: `'{"datacenter": "us-south:dallas", "oracle_compatible": "no", "processors": "48", "storage": "96.0 TB"}'`
+   For example: `'{"datacenter": "us-south:dallas", "oracle_compatible": "no", "processors": "48", "storage": "9600"}'`
 
    ## Example
    {: #cli_example}
