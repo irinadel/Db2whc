@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-26"
+lastupdated: "2020-02-28"
 
 keywords:
 
@@ -61,9 +61,9 @@ Complete the following steps to order and deploy a {{site.data.keyword.dashdbsho
    
    **REGION** is one of the following data center regions (list of data center regions is subject to change when more become available):
 
-   `us-south` - (Dallas, Washington DC)
+   `us-south` - (Dallas, Toronto, Washington DC)
 
-   `au-syd` - (Tokyo)
+   `au-syd` - (Sydney, Tokyo)
 
    `eu-gb` - (London)
 
@@ -99,7 +99,11 @@ Complete the following steps to order and deploy a {{site.data.keyword.dashdbsho
 
    `"datacenter": "us-south:dallas"`
 
+   `"datacenter": "us-south:toronto"`  (Flex One)
+
    `"datacenter": "us-south:washington d.c"`
+
+   `"datacenter": "au-syd:sydney"`  (Flex One)
 
    `"datacenter": "au-syd:tokyo"`
 
