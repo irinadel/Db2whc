@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-12-10"
+  years: 2014, 2020
+lastupdated: "2020-02-28"
 
 keywords:
 
@@ -27,7 +27,7 @@ subcollection: Db2whc
 {{site.data.keyword.dashdblong}} provides two REST APIs that you can use to interact with your instance:
 {: shortdesc}
 
-- To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dashdbshort_notm}} service, use the [Database management API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
+- To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dashdbshort_notm}} service, use the [Database management API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4){: external}.
 - To scale the storage and compute for your {{site.data.keyword.dashdbshort_notm}} instance, use the [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp){: external}.
 
 
