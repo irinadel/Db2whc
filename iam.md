@@ -313,7 +313,7 @@ The {{site.data.keyword.dashdbshort_notm}} REST API was enhanced to also accept 
   ```
   {: codeblock}
 
-For more details about your service's API, see: [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}.
+For more details about your service's API, see: [{{site.data.keyword.dashdbshort_notm}} REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4){:external}.
 
 ## IBMid federation
 {: #ibmid_fed}
