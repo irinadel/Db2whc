@@ -4,7 +4,7 @@ copyright:
   years: 2014, 2020
 lastupdated: "2020-03-10"
 
-keywords:
+keywords: IAM, access token, api key
 
 subcollection: Db2whc
 
@@ -363,7 +363,6 @@ The following restrictions are with regard to IAM authentication:
 * IAM authentication for database federation is not supported.
 * Running IDA and user-defined extension (UDX) commands through CLPPlus are not supported.
 * Type 2 JDBC Driver is not supported.
-
 
 
 
