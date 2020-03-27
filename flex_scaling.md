@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-10-31"
+  years: 2014, 2020
+lastupdated: "2020-03-27"
 
 keywords:
 
@@ -41,7 +41,7 @@ You can use the sliding bars on the **Scale Instance** page to manage storage an
 
 On-demand scaling is charged on an hourly basis. 
 
-Storage scaling occurs online, and compute scaling might incur a few minutes of downtime. During compute scaling, all uncommitted transactions are rolled back. RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.
+Storage scaling occurs online, and compute scaling might incur a few minutes of downtime. Only storage expansion is supported; decreasing storage is not permitted. During compute scaling, all uncommitted transactions are rolled back. RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.
 {: note} 
 
 <!--## Compute cores
