@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-06"
+lastupdated: "2020-04-15"
 
 keywords: 
 
@@ -34,6 +34,9 @@ The following methods are used to secure your data:
 - When deployed to Amazon Web Services, backplane network connectivity is supported through Amazon Web Services PrivateLink
 - Database-level security is supported through Role-Based Access Control (RBAC) and Row and Column Access Control (RCAC)
 
-Administrators can make encrypted connections mandatory. For more information, see [SSL connectivity](/docs/Db2whc?topic=Db2whc-ssl_support).
+Encrypted connections are enforced by default. For more information, see [SSL connectivity](/docs/Db2whc?topic=Db2whc-ssl_support).
+
+
+
 
 
