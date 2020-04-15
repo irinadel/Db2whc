@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-10"
+lastupdated: "2020-04-15"
 
 keywords:
 
@@ -33,13 +33,13 @@ However, if your application has its own driver, you might need to download the 
 
 Secure Sockets Layer (SSL) is a security protocol that provides communication privacy. SSL enables client and server applications to communicate in a way that is designed to prevent eavesdropping, tampering, and message forgery. SSL-enabled client applications use standard encryption techniques to help ensure secure communication.
 
-Configuring your applications to connect to your {{site.data.keyword.dashdbshort_notm}} database with SSL depends on your company policy. Both the standard and the SSL protocols that you can use to connect to the database transmit user names and passwords as encrypted data. If you want to ensure complete end-to-end security, transmit all database information, including sensitive data and metadata, through an SSL connection. 
+Configuring your applications to connect to your {{site.data.keyword.dashdbshort_notm}} database with SSL is strongly recommended. You should use only non-SSL connections if your are using legacy applications that cannot connect using an SSL connection.
 
 <!-- SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
 {: important}
 -->
 
-SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default on all new and recently deployed instances. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request. If you have an older instance, non-SSL connections might be enabled. To enforce SSL connections or to ask about the SSL status of your system, open a support case.
+SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by default on all new and recently deployed instances and will start to be enforced on all older instances in April and May, 2020. To enable a non-SSL port on your {{site.data.keyword.cloud_notm}} system or to keep a non-SSL port enabled, open a [support case](https://cloud.ibm.com/unifiedsupport/cases/add){:external} to make that request.
 {: important}
 
 ## Configuring your Db2 client
