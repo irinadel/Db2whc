@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-10"
+lastupdated: "2020-04-22"
 
 keywords: IAM, access token, api key
 
@@ -27,10 +27,11 @@ subcollection: Db2whc
 Identity and access management (IAM) enables you to securely authenticate users for platform services and control access to resources consistently across the {{site.data.keyword.Bluemix_notm}} platform. For example, with only a single login to {{site.data.keyword.Bluemix_notm}} with your IBMid, you have access to any of your service consoles and their applications without having to log in to each of them separately.
 {: shortdesc}
 
+<!--
 ## Is IAM enabled on your instance?
 {: #enabled}
 
-Over a period of time, the {{site.data.keyword.dashdblong}} managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
+Over time, the {{site.data.keyword.dashdblong}} managed database instances on {{site.data.keyword.Bluemix_notm}} will be enabled to use IAM for access control. To check that IAM is enabled on your instance, run the following query:
 
 ```
 SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSIBMADM.DBMCFG WHERE NAME = 'srvcon_gssplugin_list'
@@ -38,6 +39,7 @@ SELECT CASE WHEN VALUE = 'IBMIAMauth' THEN 1 ELSE 0 END AS IAM_ENABLED FROM SYSI
 {:codeblock}
 
 If the returned value of **IAM_ENABLED** is 1, then IAM is enabled on your instance.
+-->
 
 ## Features of {{site.data.keyword.Bluemix_notm}} IAM
 {: #features}
@@ -47,7 +49,7 @@ The following IAM features are implemented for the {{site.data.keyword.dashdbsho
 ### IBMid
 {: #iam_ibmid}
 
-Users with an IBMid must be added to each database service instance by the database administrator through the console or REST API before these users can connect to the particular database service instance. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. This user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database. The database administrator can grant and revoke permissions based on the AUTH ID.
+Users with an IBMid must be added to each database service instance by the database administrator through the console or REST API before these users can connect to the particular database service instance. Like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. This user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database. The database administrator can grant and revoke permissions based on the AUTH ID.
 
 ### Service IDs
 {: #iam_serviceid}
@@ -87,7 +89,7 @@ An access token identifies an IBMid user or a service ID to the database. The da
 ### API key
 {: #iam_apikey}
 
-Multiple API keys can be created for each IBMid user or service ID. Each API key is typically created for a single application. It allows the application to connect to the database service instance as long as the owning IBMid or service ID is added as a user to the same database service instance. The API key has the same authorities and permissions within the database as the owning IBMid or service ID. If an application should no longer be allowed to connect to the database, the corresponding API key can be removed. This method of authentication requires less changes in the application than using an access token as it requires no direct interaction with the IAM service. For more information about creating and managing API keys, see: [Managing user API keys](/docs/iam?topic=iam-userapikey#userapikey){:external}.
+Multiple API keys can be created for each IBMid user or service ID. Each API key is typically created for a single application. It allows the application to connect to the database service instance as long as the owning IBMid or service ID is added as a user to the same database service instance. The API key has the same authorities and permissions within the database as the owning IBMid or service ID. If an application should no longer be allowed to connect to the database, the corresponding API key can be removed. This method of authentication requires fewer changes in the application than using an access token as it requires no direct interaction with the IAM service. For more information about creating and managing API keys, see: [Managing user API keys](/docs/iam?topic=iam-userapikey#userapikey){:external}.
 
 ### IBMid/password
 {: #iam_ibmid_pwd}
@@ -281,7 +283,7 @@ The following examples show connection snippets for the three methods:
 ## Console user experience
 {: #console-ux}
 
-The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the database administrator through the console or REST API. Just like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. The user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database.
+The service console login page has the option to log in with your IBMid and password. After the **Sign In via IBMid** button is clicked, the user is directed to the IAM login page, on which the password is entered. When authentication is completed, the user is redirected back to the console. Before such login can be successful, the IBMid user must be added to each database service instance by the database administrator through the console or REST API. Like for a non-IBMid user, a user ID for the database service instance must be entered at the same time that the IBMid user is added. The user ID needs to be unique within the database service instance. This user ID is also the authorization (AUTH) ID within the database.
 
 To add a user with either an IBMid or a service ID by using the web console, complete the following steps:
 
@@ -316,7 +318,7 @@ The {{site.data.keyword.dashdbshort_notm}} REST API was enhanced to also accept 
   ```
   {: codeblock}
 
-  The `<userid>` value for `"id"` and `"ibmid"` do not have to be the same. The two different IDs are not linked together in any way.
+  The `<userid>` value for `"id"` and `"ibmid"` does not have to be the same. The two different IDs are not linked together in any way.
   {: note}
 
 * To migrate an existing non-IBMid database user (for example, `abcuser`) and make them an IBMid user, first delete the non-IBMid user ID by running the following example API call:
@@ -356,13 +358,14 @@ To use your own identity provider such as LDAP, you must first federate your LDA
 ## Restrictions
 {: #restrictions}
 
-The following restrictions are with regard to IAM authentication:
+The following restrictions are regarding IAM authentication:
 
 * IAM authentication for a Db2 client that is connecting to a Db2 server is only supported over an SSL connection.
 * IBMid federation is supported to allow custom user management portal or server to be used for authentication. Such support does not include any group federation.
 * IAM authentication for database federation is not supported.
 * Running IDA and user-defined extension (UDX) commands through CLPPlus are not supported.
 * Type 2 JDBC Driver is not supported.
+
 
 
 
