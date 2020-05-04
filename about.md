@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-24"
+lastupdated: "2020-05-04"
 
 keywords:
 
@@ -81,14 +81,15 @@ The following table provides information about the availability of the various {
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
-|                              |              |           | Dallas (us-south)         |               |  
+| Flex                         | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
+|                              |              |           | Washington D.C. (us-east) |               |  
 |      |||||
-| Flex Performance             | Tokyo        | Frankfurt | Washington D.C. (us-east) | *NA           |
-|                              |              |           | Dallas (us-south)         |               |  
+| Flex Performance             | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
+|                              |              |           | Washington D.C. (us-east) |               |  
 |      |||||
-| Flex One                     | Hong Kong    | Frankfurt | Washington D.C. (us-east) | *NA           |
-|                              | Tokyo        | London    | Dallas (us-south)         |               | 
+| Flex One                     | Hong Kong    | Frankfurt | Dallas (us-south)         | *NA           |
+|                              | Tokyo        | London    | Toronto                   |               | 
+|                              |              |           | Washington D.C. (us-east) |               |
 {: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
