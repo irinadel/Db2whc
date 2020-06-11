@@ -44,7 +44,7 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
 
 ### Considerations and limitations
 
-- AWS PrivateLink currently supports only TCP traffic. Tools that rely on UDP traffic, such as [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){: external}, are not supported by PrivateLink. To load data, load directly from Amazon S3 into {{site.data.keyword.dashdbshort_notm}}. See [Loading data from Amazon S3](/docs/Db2whc?topic=Db2whc-loading_data).
+- AWS PrivateLink currently supports only TCP traffic. Tools that rely on UDP traffic, such as [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com/){: external}, are not supported by PrivateLink. To load data, load directly from Amazon S3 into {{site.data.keyword.dashdbshort_notm}}. See [Loading data from Amazon S3](/docs/Db2whc?topic=Db2whc-load_s3).
 
   Extra charges might apply when you transfer data by using the public endpoint.
   {: note}

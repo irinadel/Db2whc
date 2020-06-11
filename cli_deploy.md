@@ -39,9 +39,9 @@ Complete the following steps to order and deploy a {{site.data.keyword.dashdbsho
 
 3. Install the {{site.data.keyword.cloud_notm}} CLI:
 
-   [Getting started with the {{site.data.keyword.cloud_notm}} CLI and Developer Tools](/docs/cli?topic=cloud-cli-getting-started){: external}
+   [Getting started with the {{site.data.keyword.cloud_notm}} CLI and Developer Tools](/docs/cli?topic=cli-getting-started){: external}
 
-   [Installing the stand-alone {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cloud-cli-install-ibmcloud-cli){: external}
+   [Installing the stand-alone {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-install-ibmcloud-cli){: external}
 
 4. Order and deploy your service by running the following generalized example {{site.data.keyword.cloud_notm}} CLI commands:
 
