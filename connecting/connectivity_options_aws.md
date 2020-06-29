@@ -40,7 +40,7 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
     
 3. After the principal is granted permission, create an interface endpoint on your VPC to connect to the {{site.data.keyword.dashdbshort_notm}} service. See [Creating an Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint){: external}. Ensure that TCP traffic is allowed through ports 50001, 443, and 8443 on the VPC, and set rules to allow traffic from the CIDR range associated with the VPC.
     
-4. After the interface endpoint is created, provide the host names assigned to the endpoints so that they can be whitelisted in the {{site.data.keyword.dashdbshort_notm}} web console. After these host names are whitelisted, you can access your {{site.data.keyword.dashdbshort_notm}} instance by using the interface endpoint host names.
+4. After the interface endpoint is created, provide the host names assigned to the endpoints so that they can be allowlisted in the {{site.data.keyword.dashdbshort_notm}} web console. After these host names are allowlisted, you can access your {{site.data.keyword.dashdbshort_notm}} instance by using the interface endpoint host names.
 
 ### Considerations and limitations
 

@@ -30,7 +30,7 @@ subcollection: Db2whc
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
-As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP whitelisting is offered. Create an IBM Support case if you want to enable IP whitelisting.
+As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP allowlisting is offered. Create an IBM Support case if you want to enable IP allowlisting.
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
@@ -144,6 +144,6 @@ To establish a VPN connection to your cloud data warehouse behind a public endpo
   * **DH-Group** (if using PF-Secrecy): Group 5
   * **Security Association Lifetime (seconds)**: 3600 seconds
 
-After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and whitelist the provided IP address. Communication and resolution to the request is made through the {{site.data.keyword.cloud_notm}} Support case ticket.
+After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will open the appropriate firewall ports and allowlist the provided IP address. Communication and resolution to the request is made through the {{site.data.keyword.cloud_notm}} Support case ticket.
 
 ![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical representation of user to cloud connection"){: caption="Figure 2. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
