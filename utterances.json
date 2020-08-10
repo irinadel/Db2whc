@@ -1,0 +1,68 @@
+{
+    "q_sign": [
+        "sign up for Db2 Warehouse on Cloud",
+        "DB2 WH sign up",
+        "provision an instance of Db2 Warehouse",
+        "provisioning an instance of Db2 Warehouse",
+        "signing up for Db2 Warehouse on Cloud",
+        "get started with Db2 Warehouse",
+        "provisioning a free Lite instance of Db2 Warehouse",
+        "get db2 Wh for free",
+        "provision a Lite instance for Db2 Warehouse"
+    ],
+    "q_choose_plan": [
+        "help choosing the right Db2 Warehouse on Cloud plan",
+        "all about Db2 Warehouseon cloud",
+        "different plans for Db2 Warehouse",
+        "best pan for me on Db2 Warehouse",
+        "which Db2 Warehouse configurations meet the workload requirements",
+        "which Db2 WH configuration to meet the workload",
+        "can I scale Db2 Wh",
+        "scale Db2 Warehouse to meet workload"
+    ],
+    "q_creds": [
+        "generate credentials for my Db2 Warehouse instance",
+        "generate credential for Db2 Warehouse",
+        "View credentials for Db2 Warehouse on Cloud",
+        "viewing Db2 WH credentials",
+		    "what are my DB2 WH credentials",
+		    "DB2 WH credentials",
+        "create credentials for Db2 WH on Cloud",
+        "updating credentials within Db2 Warehouse",
+        "creating Db2 credentials for Db2 Warehouse"
+    ],
+    "q_access": [
+        "how to access Db2  Warehouseon Cloud instance",
+        "accessing Db2 WH on cloud",
+        "need to access Db2 Warehouse",
+        "how to connect to Db2 Warehouse",
+		    "accessing Db2 warehouse",
+		    "want to access Db2 wh",
+		    "db2 warehouse connection",
+        "create a connection to Db2 WH",
+        "access Db2 Warehouse nstance"
+    ],
+    "q_managed": [
+        "whats managed for me with Db2 Warehouse on Cloud",
+        "what does IBM manage in Db2 WH",
+        "health monitoring in Db2 Warehouse",
+        "do I need to backup Db2 Warehouse",
+        "do you handle Db2 WH backup",
+		    "Db2 Warehouse operating system updates",
+        "do I have to perform Db2 Warehouse operating system updates",
+        "health monitoring of the database managed in Db2 wh",
+        "backup Db2 warehouse management"
+    ],
+    "q_info": [
+        "more information about Db2 Warehouse on Cloud",
+        "additional recources for Db2 wh",
+        "information about the underlying Db2 WH engine",
+        "information about Db2 Db2 Warehouse engine",
+        "how much is Db2 wh",
+        "pricing plans for Db2 wh",
+        "how much does Db2 Warehouse cost",
+        "cost of Db2 Warehouse",
+        "price for Db2 Warehouse",
+        "how much will DB2 Wh cost"
+    ]
+}
