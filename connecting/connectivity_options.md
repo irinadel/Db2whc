@@ -66,14 +66,14 @@ The easiest way to connect to your data warehouse is by way of the public host n
 ## Connecting to a private endpoint: IBM Cloud service endpoint
 {: #priv_endpt}
 
-{{site.data.keyword.dashdbshort_notm}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/resources?topic=resources-service-endpoints). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dashdbshort_notm}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud data warehouse and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
+{{site.data.keyword.dashdbshort_notm}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dashdbshort_notm}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud data warehouse and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
 
 ### How to configure IBM Cloud service endpoint connectivity
 {: #cfg_endpt}
 
 Complete the following steps to enable {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.dashdbshort_notm}} instance:
 
-1. Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Setting up service endpoints](/docs/resources?topic=resources-private-network-endpoints).
+1. Enable your {{site.data.keyword.cloud_notm}} account to use virtual routing and forwarding (VRF) and {{site.data.keyword.cloud_notm}} service endpoints. To enable both of these items, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
 2. Configure your {{site.data.keyword.dashdbshort_notm}} instance for service endpoint connectivity.
 
@@ -84,25 +84,7 @@ Complete the following steps to enable {{site.data.keyword.cloud_notm}} service 
 After you've configured {{site.data.keyword.cloud_notm}} service endpoint connectivity for your {{site.data.keyword.dashdbshort_notm}} instance, it will only be accessible through a private endpoint. You will not be able to access your instance through a public endpoint.
 {: note}
 
-To learn more about the {{site.data.keyword.cloud_notm}} service endpoint service, see [Secure access to services using service endpoints](/docs/resources?topic=resources-service-endpoints).
-
-<!--
-If you have an application that is deployed on your {{site.data.keyword.cloud_notm}} account and want to connect it to your database without the database traffic to flow over any public networks, you can use the **{{site.data.keyword.cloud_notm}} Service Endpoint** option when ordering your database. You are provided with a private host name at the time the service is provisioned and you can connect to it only from within your {{site.data.keyword.cloud_notm}} account.  
-
-To learn more about the {{site.data.keyword.cloud_notm}} Service Endpoint option, see [Secure access to services using service endpoints](/docs/resources?topic=resources-service-endpoints).
-
-
-### How to connect to a private endpoint with IBM Cloud Service Endpoint
-{: #priv_endpt_steps}
-
-Private network and endpoint communication happens by way of the {{site.data.keyword.cloud_notm}} Service Endpoint service. The Service Endpoint service makes it easy to quickly and securely route network traffic between different {{site.data.keyword.cloud_notm}} services and your warehouse database over the {{site.data.keyword.cloud_notm}} private network backplane. This network routing ensures that your data never goes out to the public internet. 
-
-To get started with Service Endpoint, your {{site.data.keyword.cloud_notm}} account must be enabled for virtual routing and forwarding (VRF). To get your account enabled, see [Setting up service endpoints](/docs/resources?topic=resources-private-network-endpoints).
-
-After your account is VRF enabled and the Service Endpoint is enabled, follow the instructions that were provided in your welcome letter.
-
-Now, it’s time to connect to your {{site.data.keyword.dashdbshort_notm}} instance from within your {{site.data.keyword.cloud_notm}} account by way of the private network address that was provided in your welcome letter.
--->
+To learn more about the {{site.data.keyword.cloud_notm}} service endpoint service, see [Secure access to services using service endpoints](/docs/account?topic=account-service-endpoints-overview).
 
 ## Connecting to a virtual private network (VPN) endpoint
 {: #vpn}
