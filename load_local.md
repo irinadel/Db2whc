@@ -20,6 +20,7 @@ subcollection: Db2whc
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Loading data from your local system
 {: #load_local}
@@ -31,7 +32,9 @@ When loading data through the web console, {{site.data.keyword.dashdbshort_notm}
 
 Watch this video to see a demonstration about loading data into {{site.data.keyword.dashdbshort_notm}} through the web console. 
 
-<iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/7wufZd_Lw9w?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+![Loading data into IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/7wufZd_Lw9w?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+<!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/7wufZd_Lw9w?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
 If you want to load larger CSV files on the gigabyte or terabyte scale into {{site.data.keyword.dashdbshort_notm}}, we recommend using [IBM Lift CLI](https://www.lift-cli.cloud.ibm.com){: external}, a free ground-to-cloud data migration tool that uses Aspera technology for high-speed data transfer.
 

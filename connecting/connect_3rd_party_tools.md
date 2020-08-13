@@ -20,6 +20,7 @@ subcollection: Db2whc
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Connecting to third-party tools
 {: #connect_3rd_party}
@@ -38,7 +39,9 @@ You can connect Informatica to {{site.data.keyword.dashdbshort_notm}} to help yo
 
 Watch this video to see how to integrate {{site.data.keyword.dashdbshort_notm}} with Informatica Cloud.
 
-<iframe class="embed-responsive-item" id="youtubeplayer1" title="DB2 Connections - Lightening Fast How-To with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TUiS_HstLnU?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+![DB2 Connections - Lightening Fast How-To with Informatica Cloud](https://www.youtube.com/embed/TUiS_HstLnU?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+<!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="DB2 Connections - Lightening Fast How-To with Informatica Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/TUiS_HstLnU?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
 ### Segment
 {: #segment}

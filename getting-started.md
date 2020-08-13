@@ -25,6 +25,7 @@ subcollection: Db2whc
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Getting started with {{site.data.keyword.dashdbshort_notm}}
 {: #getting-started}
@@ -40,7 +41,9 @@ For more tutorials, videos, and hands-on labs, see [IBM Demos: {{site.data.keywo
 
 Watch this video to see an introduction to the {{site.data.keyword.dashdblong}} service.
 
-<iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YjevHqLdl7Y?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+![Introduction to IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/YjevHqLdl7Y?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+<!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YjevHqLdl7Y?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
 
 <!--

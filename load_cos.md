@@ -20,6 +20,7 @@ subcollection: Db2whc
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:video: .video}
 
 # Loading data from IBM Cloud Object Storage
 {: #load_cos}
@@ -48,7 +49,9 @@ For {{site.data.keyword.Bluemix_notm}} Object Storage, to create HMAC credential
 
 Watch this video about how to access COS data quickly by using External Tables.
 
-<iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data from COS into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/RMMExarvBVk?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe>
+![Loading data from COS into IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/RMMExarvBVk?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+
+<!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data from COS into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/RMMExarvBVk?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
 ## Db2 LOAD utility
 {: #cos_load}
