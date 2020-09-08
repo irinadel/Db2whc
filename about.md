@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-05-04"
+lastupdated: "2020-09-08"
 
 keywords:
 
@@ -88,8 +88,8 @@ The following table provides information about the availability of the various {
 |                              |              |           | Washington D.C. (us-east) |               |  
 |      |||||
 | Flex One                     | Hong Kong    | Frankfurt | Dallas (us-south)         | *NA           |
-|                              | Tokyo        | London    | Toronto                   |               | 
-|                              |              |           | Washington D.C. (us-east) |               |
+|                              | Sydney       | London    | Toronto                   |               | 
+|                              | Tokyo        |           | Washington D.C. (us-east) |               |
 {: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time

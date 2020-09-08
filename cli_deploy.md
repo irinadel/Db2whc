@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-28"
+lastupdated: "2020-09-08"
 
 keywords:
 
@@ -102,6 +102,8 @@ Complete the following steps to order and deploy a {{site.data.keyword.dashdbsho
    `"datacenter": "us-south:toronto"`  (Flex One)
 
    `"datacenter": "us-south:washington d.c"`
+
+   `"datacenter": "au-syd:hong kong"` (Flex One)
 
    `"datacenter": "au-syd:sydney"`  (Flex One)
 
