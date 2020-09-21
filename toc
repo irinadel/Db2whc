@@ -44,6 +44,7 @@ Db2 Warehouse on Cloud
         br.md
         dr.md
         ha.md
+        storage.md
         maintenance.md
         federation.md
         local_dev_env.md
