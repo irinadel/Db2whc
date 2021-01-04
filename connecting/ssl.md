@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-04-15"
+  years: 2014, 2021
+lastupdated: "2021-01-04"
 
 keywords:
 
@@ -56,7 +56,7 @@ SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by defaul
 
    - [WINDOWS](http://www-01.ibm.com/support/docview.wss?uid=swg21631462){: external}
 
-   For more details, see [IBM Global Security Kit global installation instructions overview](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.swg.tivoli.gskit.install.doc/doc/c0055521.html){: external}
+   For more details, see [IBM Global Security Kit global installation instructions overview](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.swg.tivoli.gskit.install.doc/doc/c0055521.html){: external}
 
 4. Set environment variable paths:
 
