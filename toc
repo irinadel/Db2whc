@@ -44,6 +44,7 @@ Db2 Warehouse on Cloud
         rc.md
         br.md
         dr.md
+        [Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.idrca.doc/overview/ovu-db2woc.html)
         ha.md
         storage.md
         maintenance.md
