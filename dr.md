@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-10-18"
+  years: 2014, 2021
+lastupdated: "2021-03-15"
 
 keywords:
 
@@ -30,6 +30,8 @@ Geo-replicated disaster recovery (DR) backups for {{site.data.keyword.dashdblong
 If a disaster event occurs at the data center where your {{site.data.keyword.dashdbshort_notm}} instance is deployed, IBM service operators will work with you to stand up a new data warehouse in a different data center, by using the most recent disaster recovery backup. There is no additional charge for these backups.
 
 The RPO and RTO for DR backups for each cloud provider are described in the following sections. DR backups are also geo-replicated by default. You can open a support ticket to not have your DR backups replicated to certain regions to comply with your data retention policies.
+
+For more information about DR and replication on {{site.data.keyword.dashdbshort_notm}}, see [Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.idrca.doc/overview/ovu-db2woc.html){: external}.
 
 ## IBM Cloud
 {: #ibm_cloud_dr}
