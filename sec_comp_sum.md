@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-19"
+lastupdated: "2021-03-26"
 
 keywords: security compliances, security, compliance, Db2 Warehouse on Cloud
 
@@ -41,9 +41,9 @@ For details about each of the security compliances, see [Details about security 
 
 | {{site.data.keyword.dashdblong}} Flex offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
-| Flex One on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
-| Flex on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
-| Flex Performance on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
+| Flex One on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
+| Flex on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
+| Flex Performance on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Flex on Amazon Web Services |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Flex Performance on Amazon Web Services |  | ![checkmark](images/checkmark.png) |  | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 {: caption="Table 1. Summary of security compliances for the Flex service offering plans" caption-side="top"}
