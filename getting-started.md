@@ -39,9 +39,9 @@ The following tutorials are the best way to get started with {{site.data.keyword
 
 For more tutorials, videos, and hands-on labs, see [IBM Demos: {{site.data.keyword.dashdbshort_notm}}](https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/){: external}.
 
-Watch this video to see an introduction to the {{site.data.keyword.dashdblong}} service.
+<!--Watch this video to see an introduction to the {{site.data.keyword.dashdblong}} service.
 
-![Introduction to IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/YjevHqLdl7Y?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Introduction to IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/YjevHqLdl7Y?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}-->
 
 <!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Introduction to IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/YjevHqLdl7Y?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
