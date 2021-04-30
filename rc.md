@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-02-24"
+lastupdated: "2021-04-30"
 
 keywords: 
 
@@ -24,14 +24,14 @@ subcollection: Db2whc
 # Resource controller (RC)
 {: #rc}
 
-In the coming days and weeks, the {{site.data.keyword.dashdblong}} service will be supporting resource controller (RC) across all regions. The RC is responsible for controlling and tracking the lifecycle of resources in an {{site.data.keyword.Bluemix_notm}} account. 
+The {{site.data.keyword.dashdblong}} service supports resource controller (RC) across all regions. The RC is responsible for controlling and tracking the lifecycle of resources in an {{site.data.keyword.Bluemix_notm}} account. 
 {: shortdesc}
 
 Resources is a broad term that can mean anything from an instance of a service like {{site.data.keyword.dashdbshort_notm}}, a Cloud Foundry application, a virtual machine, a container, a software image, a data set, or other entity associated with an account.
 
 After this change is made, all new {{site.data.keyword.dashdbshort_notm}} service instances that you create will be in a resource group. It is recommended that you create a migration plan to move your existing {{site.data.keyword.dashdbshort_notm}} service instances from their current Cloud Foundry org and space to a resource group.
 
-To be able to use upcoming features such as IBM Key Protect, you must migrate your Cloud Foundry service instances to RC.
+To be able to use upcoming features such as IBM Key Protect and Data Replication, you must migrate your Cloud Foundry service instances to RC.
 {: important}
 
 ## Migrating Cloud Foundry services to RC
