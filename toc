@@ -60,6 +60,7 @@ Db2 Warehouse on Cloud
         rcac.md
         auditing.md
         sec_comp_sum.md
+        key_protect.md
 
     communities.md    
 
