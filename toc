@@ -15,6 +15,7 @@ Db2 Warehouse on Cloud
         connecting/connectivity_options.md
         connecting/connectivity_options_aws.md
         connecting/credentials.md
+        connecting/dedicatedAWS.md
         connecting/ssl.md
         connecting/driver_pkg.md
         connecting/connect_programmatically.md
