@@ -6,7 +6,7 @@ lastupdated: "2022-01-17"
 
 keywords:
 
-subcollection: Db2onCloud
+subcollection: Db2whc
 
 ---
 
@@ -21,7 +21,7 @@ subcollection: Db2onCloud
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Migrating stand-alone parts to a Cloud Pak for Data subscription
+# Changing your Db2 Warehouse entitlements to a Cloud Pak for Data SaaS Subscription
 {: #mig_standalone}
 
 Migrating your stand-alone parts to a Cloud Pak for Data subscription gives you more flexibility to choose which offerings you want to consume, and how much you want to consume. 

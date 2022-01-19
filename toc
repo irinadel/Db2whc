@@ -51,6 +51,7 @@ Db2 Warehouse on Cloud
         maintenance.md
         federation.md
         local_dev_env.md
+        migrate_stand.md
 
     {: .topicgroup}
     Security
