@@ -1,0 +1,121 @@
+#  Name your file `toc.yaml`
+#  Make sure you include all nav file coding requirements, as defined in https://test.cloud.ibm.com/docs/writing?topic=writing-code-nav
+#  Anything with a fully qualified URL with `http` or `https` will get an external link icon added to the nav entry
+---
+toc:
+  properties:
+    subcollection: Db2whc
+    category: database
+    audience: service
+    href: /docs/Db2whc?topic=Db2whc-getting-started
+    console-page: /catalog/services/db2-warehouse
+    product-page: https://www.ibm.com/cloud/db2-warehouse-on-cloud
+    path: Db2whc
+    label: Db2 Warehouse on Cloud
+
+#  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
+  entries: 
+  - navgroup: 
+      id: learn
+      topics:
+      -  about.md
+      - getting-started.md
+      - topicgroup: 
+          label: Connecting
+          topics:
+          - connecting/connecting.md
+          - connecting/connectivity_options.md
+          - connecting/connectivity_options_aws.md
+          - connecting/credentials.md
+          - onnecting/dedicatedAWS.md
+          - connecting/ssl.md
+          - connecting/driver_pkg.md
+          - connecting/connect_programmatically.md
+          - connecting/connect_ibm_tools.md
+          - connecting/connect_3rd_party_tools.md
+          - connecting/rest_api.md
+      - topicgroup: 
+          label: Loading your data
+          topics:
+          - load_db2.md
+          - load_local.md
+          - load_cos.md
+          - load_amazon_s3.md
+          - load_onprem.md
+          - pda_db2whc_mdms.md
+          - dcw.md
+          - distrib_keys.md
+          - link: 
+              label: Analyzing your data
+              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html
+      - topicgroup: 
+          label: Adminstration
+          topics:
+          - interfaces.md
+          - db_design.md
+          - advanced_admin.md
+          - flex_scaling.md
+          - rc.md
+          - br.md
+          - dr.md
+          - link: 
+              label: Replication
+              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.idrca.doc/overview/ovu-db2woc.html
+          - ha.md
+          - storage.md
+          - maintenance.md
+          - federation.md
+          - local_dev_env.md
+          - migrate_stand.md
+      - topicgroup: 
+          label: Security
+          topics:
+          - encryption.md
+          - iam.md
+          - user_mgmt.md
+          - roles.md
+          - rcac.md
+          - auditing.md
+          - sec_comp_sum.md
+          - key_protect.md
+
+      - communities.md 
+      - link: 
+              label: What's new
+              href: https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud
+
+  - navgroup: 
+      id: howto
+      topics:
+      - cli_deploy.md
+      - topicgroup: 
+          label: topic-group-label
+          topics: 
+          - link: 
+              label: "IBM Demos: Tutorials, videos, and hands-on labs"
+              href: https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/
+
+#  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
+#  Links to your command line reference docs should be included in the Reference navigation group.
+  - navgroup:
+      id: reference
+      topics: 
+      - link: 
+              label: Database management API
+              href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4
+      - link: 
+              label: Database resource scaling API
+              href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp
+      - link: 
+              label: SQL reference
+              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html
+      - link: 
+              label: Knowledge Center
+              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html
+      
+
+  - navgroup:
+      id: help
+      topics: 
+      - faqs.md
+      - help.md
