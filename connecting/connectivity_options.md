@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-04-13"
+lastupdated: "2022-02-24"
 
 keywords:
 
@@ -25,12 +25,16 @@ subcollection: Db2whc
 {: #connect_options}
 
 {{site.data.keyword.dashdblong}} offers multiple secure connectivity options for your application connection requirements.  
-{: shortdesc}
+{: shortdesc} 
+
 
 ## Connecting to a public endpoint (default option)
 {: #pub_endpt}
 
 As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP allowlisting is offered. Create an IBM Support case if you want to enable IP allowlisting.
+
+For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
+{: important}
 
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}

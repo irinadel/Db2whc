@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-12-10"
+lastupdated: "2022-02-24"
 
 keywords:
 
@@ -26,6 +26,9 @@ subcollection: Db2whc
 
 {{site.data.keyword.dashdblong}} offers secure connectivity options for your application connection requirements.  
 {: shortdesc}
+
+For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
+{: important}
 
 ## Connecting to Db2 Warehouse on Cloud with Amazon Web Services PrivateLink
 {: #PrivateLink}
