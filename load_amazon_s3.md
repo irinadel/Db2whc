@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-01-27"
+lastupdated: "2022-03-09"
 
 keywords:
 
@@ -44,9 +44,6 @@ INSERT INTO <table-name> SELECT * FROM EXTERNAL '<mys3file.txt>' USING
 ```
 {: codeblock}
 
-Watch this video about how to access Cloud Object Storage data quickly by using External Tables.
-
-![Loading data from COS into IBM Db2 Warehouse on Cloud](https://www.youtube.com/embed/RMMExarvBVk?rel=0){: video output="iframe" data-script="none" id="youtubeplayer1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 <!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data from COS into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/RMMExarvBVk?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
@@ -63,7 +60,7 @@ CALL SYSPROC.ADMIN_CMD('LOAD FROM "S3::<s3-endpoint-url>::<s3-access-key-ID>::<s
 ```
 {: codeblock}
 
-For more information about the Db2 LOAD utility, see: [LOAD command](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0008305.html){: external}.
+For more information about the Db2 LOAD utility, see: [LOAD command](https://test.cloud.ibm.com/docs/Db2whc?topic=Db2whc-load_cos){: external}.
 
 
 <!--
