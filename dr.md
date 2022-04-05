@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-03-15"
+lastupdated: "2022-03-30"
 
 keywords:
 
@@ -47,20 +47,10 @@ DR backups of the last 2 weeks are retained by default. The RPO for DR backups o
 ## Amazon Web Services
 {: #aws_dr}
 
-When deployed on Amazon Web Services, a full backup of the database is taken once a week for disaster recovery. This DR backup is encrypted and stored in Amazon Web Services S3.
+When deployed on Amazon Web Services, a full backup of the database is taken once a day for disaster recovery. This DR backup is encrypted and stored in Amazon Web Services S3.
 
-DR backups are also replicated to a secondary Amazon Web Services region by using Cross-Region replication. S3 keeps copies of each DR backup across 3 availability zones (AZs) in each region by default, so there are 6 copies of each DR backup in total.
+DR backups of the last 7 days are retained by default. The RPO for DR backups on Amazon Web Services is 24 hours. The RTO if a disaster occurs is 4 hours.
 
-DR backups of the last 2 weeks are retained by default. The RPO for DR backups on Amazon Web Services is 1 week. The RTO if a disaster occurs is dependent upon the size of the database – 1.5 hours per terabyte of data.
-
-Secondary regions for each Amazon Web Services primary region are listed in the following table:
-
-| Primary region | Secondary region |
-|----------------|------------------|
-| us-east-1      | us-west-2        |
-| ap-southeast-1 | ap-southeast-2   |
-| eu-central-1   | eu-west-2        |
-{: caption="Table 1. Secondary regions for each Amazon Web Services primary region" caption-side="top"}
 
 <!--For the second-generation Flex plans on {{site.data.keyword.Bluemix_notm}} and Amazon Web Services, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the weekly backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.-->
 
