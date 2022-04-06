@@ -5,6 +5,7 @@
 toc:
   properties:
     subcollection: Db2whc
+    service-name: dashdb
     category: database
     audience: service
     href: /docs/Db2whc?topic=Db2whc-getting-started
