@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2022-03-09"
+lastupdated: "2022-04-08"
 
 keywords:
 
@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Loading data from on-premises systems with IBM Lift CLI
 {: #onprem}
 
-[IBM Lift CLI](https://www.lift-cli.cloud.ibm.com){: external} is a free ground-to-cloud data migration tool that securely moves your data from on-premises systems to {{site.data.keyword.dashdblong}} plans hosted on IBM Cloud.
+[IBM Lift CLI](https://www.lift-cli.cloud.ibm.com){: external} is a free ground-to-cloud data migration tool that securely moves your data from on-premises systems to {{site.data.keyword.dashdblong}} plans hosted on IBM Cloud. Beginning in April 2022, IBM Lift CLI is not available on the Flex One plan on IBM Cloud, or on AWS plans. It is also not available on newly deployed Flex and Flex Performance instances on IBM Cloud.
 {: shortdesc}
 
 The Lift application migrates your data to the {{site.data.keyword.Bluemix_notm}} from the various data sources listed in Table 1. 
