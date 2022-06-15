@@ -33,7 +33,7 @@ subcollection: Db2whc
 
 As with any public cloud service, you can connect your application by way of a public host name that is provided to you at the time that your service is provisioned. Access to your data is protected by strong authentication, vast Db2 authorization options and access controls, encryption over the wire and at rest, and IBM security and compliance practices for development and operations. Optional IP allowlisting is offered. Create an IBM Support case if you want to enable IP allowlisting.
 
-For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
+For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. 
 {: important}
 
 ### How to connect to a public endpoint:
@@ -72,7 +72,7 @@ The easiest way to connect to your data warehouse is by way of the public host n
 
 {{site.data.keyword.dashdbshort_notm}} supports private connectivity through an [{{site.data.keyword.cloud_notm}} service endpoint](/docs/account?topic=account-service-endpoints-overview). {{site.data.keyword.cloud_notm}} service endpoints securely route network traffic between different {{site.data.keyword.cloud_notm}} services through the {{site.data.keyword.cloud_notm}} private backplane network. When you configure your {{site.data.keyword.dashdbshort_notm}} instance with {{site.data.keyword.cloud_notm}} service endpoint connectivity, traffic between your cloud data warehouse and applications deployed on your {{site.data.keyword.cloud_notm}} account will not traverse any public networks.
 
-For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
+For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. 
 {: important}
 
 ### How to configure IBM Cloud service endpoint connectivity
