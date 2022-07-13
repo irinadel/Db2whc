@@ -87,9 +87,9 @@ The following table provides information about the availability of the various {
 | Flex Performance             | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
 |                              |              |           | Washington D.C. (us-east) |               |  
 |      |||||
-| Flex One                     | Hong Kong    | Frankfurt | Dallas (us-south)         | *NA           |
-|                              | Sydney       | London    | Toronto                   |               | 
-|                              | Tokyo        |           | Washington D.C. (us-east) |               |
+| Flex One                     | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
+|                              |              | London    | Toronto                   |               | 
+|                              |              |           | Washington D.C. (us-east) |               |
 {: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
@@ -103,14 +103,10 @@ The following table provides information about the availability of the various {
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               |
-|                              | Sydney       |           |             |               |
-|                              | Tokyo        |           |             |               |  
+| Flex                         | Sydney       | Frankfurt | N. Virginia | *NA           |
+|                              | Tokyo        |           |             |               |
 |      |||||
-| Flex Performance             | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               | 
-|                              | Sydney       |           |             |               |
+| Flex Performance             | Sydney       | Frankfurt | N. Virginia | *NA           |
 |                              | Tokyo        |           |             |               |  
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
