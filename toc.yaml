@@ -43,7 +43,6 @@ toc:
           - load_cos.md
           - load_amazon_s3.md
           - load_onprem.md
-          - pda_db2whc_mdms.md
           - dcw.md
           - distrib_keys.md
           - link: 
