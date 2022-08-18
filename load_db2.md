@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Loading data from Db2
 {: #load_db2}
 
-You can load data from a Db2 on-premises system into {{site.data.keyword.dashdblong}} with IBM Lift CLI, a free ground-to-cloud data migration tool. Beginning April 2022, IBM Lift CLI is not available on the Flex One plan on IBM Cloud, or on AWS plans. It is also not available on newly deployed Flex and Flex Performance instances on IBM Cloud.
+You can load data from a Db2 on-premises system into {{site.data.keyword.dashdblong}} with IBM Lift CLI, a free ground-to-cloud data migration tool. IBM Lift CLI is available for the Flex One, Flex, and Flex Performance plans hosted on IBM Cloud.
 {: shortdesc}
 
 Migration of your data with Lift happens in two phases: 
