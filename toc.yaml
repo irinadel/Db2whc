@@ -71,6 +71,7 @@ toc:
           label: Security
           topics:
           - encryption.md
+          - inter_node.md
           - iam.md
           - user_mgmt.md
           - roles.md
