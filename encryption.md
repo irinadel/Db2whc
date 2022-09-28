@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-04-15"
+  years: 2014, 2022
+lastupdated: "2022-09-27"
 
 keywords: 
 
@@ -33,9 +33,9 @@ The following methods are used to secure your data:
 - When deployed to IBM Cloud, backplane network connectivity is supported through IBM Cloud Service Endpoints
 - When deployed to Amazon Web Services, backplane network connectivity is supported through Amazon Web Services PrivateLink
 - Database-level security is supported through Role-Based Access Control (RBAC) and Row and Column Access Control (RCAC)
+- Optionally, inter-node encryption can be enabled for your Flex or Flex Performance instance hosted on IBM Cloud. For more information, see [Inter-node encryption](/docs/Db2whc?topic=Db2whc-Inter-node)
 
 Encrypted connections are enforced by default. For more information, see [SSL connectivity](/docs/Db2whc?topic=Db2whc-ssl_support).
-
 
 
 
