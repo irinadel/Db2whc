@@ -104,12 +104,12 @@ The following table provides information about the availability of the various {
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
 |------------------------------|--------------|-----------|---------------------------|---------------|
 | Flex                         | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               |
+|                              | Singapore    | London    | Oregon            |               |
 |                              | Sydney       |           |             |               |
 |                              | Tokyo        |           |             |               | 
 |      |||||
 | Flex Performance             | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    |             |               | 
+|                              | Singapore    | London    | Oregon         |               | 
 |                              | Sydney       |           |             |               |
 |                              | Tokyo        |           |             |               |  
 
