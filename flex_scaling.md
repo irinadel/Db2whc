@@ -33,7 +33,7 @@ After your system is provisioned and whenever your requirements change, you can 
 
 <!--![View of the web console compute cores page](images/launch.png)-->
 
-You can use the sliding bars on the **Scale Instance** page to manage storage and compute for your {{site.data.keyword.dashdbshort_notm}} instance. You can scale your instance immediately or schedule a scaling operation to happen later. You can also scale your instance programmatically by using a [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
+You can use the sliding bars on the **Scale Instance** page to manage storage and compute for your {{site.data.keyword.dashdbshort_notm}} instance. You can scale your instance immediately or schedule a scaling operation to happen later. You can also scale your instance programmatically by using the [REST API](https://ibm.biz/dashdb-api){: external}.
 
 <!--![View of the web console compute cores page](images/scale_instance.png)-->
 
