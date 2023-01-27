@@ -15,13 +15,13 @@ toc:
     label: Db2 Warehouse on Cloud
 
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
-  entries: 
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
       -  about.md
       - getting-started.md
-      - topicgroup: 
+      - topicgroup:
           label: Connecting
           topics:
           - connecting/connecting.md
@@ -35,7 +35,7 @@ toc:
           - connecting/connect_ibm_tools.md
           - connecting/connect_3rd_party_tools.md
           - connecting/rest_api.md
-      - topicgroup: 
+      - topicgroup:
           label: Loading your data
           topics:
           - load_db2.md
@@ -45,10 +45,10 @@ toc:
           - load_onprem.md
           - dcw.md
           - distrib_keys.md
-          - link: 
+          - link:
               label: Analyzing your data
-              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyzing_data.html
-      - topicgroup: 
+              href: https://www.ibm.com/docs/db2woc?topic=analyzing-your-data
+      - topicgroup:
           label: Adminstration
           topics:
           - interfaces.md
@@ -58,16 +58,16 @@ toc:
           - rc.md
           - br.md
           - dr.md
-          - link: 
+          - link:
               label: Replication
-              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.idrca.doc/overview/ovu-db2woc.html
+              href: https://www.ibm.com/docs/db2woc?topic=replication-continuous-availability
           - ha.md
           - storage.md
           - maintenance.md
           - federation.md
           - local_dev_env.md
           - migrate_stand.md
-      - topicgroup: 
+      - topicgroup:
           label: Security
           topics:
           - encryption.md
@@ -83,16 +83,16 @@ toc:
           - logg_mon.md
           - accesscont.md
 
-      - communities.md 
-      - link: 
+      - communities.md
+      - link:
               label: What's new
               href: https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud
 
-  - navgroup: 
+  - navgroup:
       id: howto
       topics:
       - cli_deploy.md
-      - link: 
+      - link:
               label: "IBM Demos: Tutorials, videos, and hands-on labs"
               href: https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/
 
@@ -100,23 +100,20 @@ toc:
 #  Links to your command line reference docs should be included in the Reference navigation group.
   - navgroup:
       id: reference
-      topics: 
-      - link: 
+      topics:
+      - link:
               label: Database management API
-              href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4
-      - link: 
-              label: Database resource scaling API
-              href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp
-      - link: 
+              href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud
+      - link:
               label: SQL reference
-              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.sql.ref.doc/doc/c0004100.html
-      - link: 
-              label: Knowledge Center
-              href: https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.kc.doc/welcome.html
-      
+              href: https://www.ibm.com/docs/db2woc?topic=reference-sql
+      - link:
+              label: IBM Documentation
+              href: https://www.ibm.com/docs/db2woc
+
 
   - navgroup:
       id: help
-      topics: 
+      topics:
       - faqs.md
       - help.md
