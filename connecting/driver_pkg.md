@@ -49,9 +49,7 @@ To verify that the driver package is already on your computer so that you can sk
 ## Downloading
 {: #dwnldng}
 
-You can download the driver package for your operating system from the {{site.data.keyword.dashdbshort_notm}} web console. From your {{site.data.keyword.Bluemix_notm}} dashboard, open your {{site.data.keyword.dashdbshort_notm}} service. Log in to your {{site.data.keyword.dashdbshort_notm}} web console.
-
-In the {{site.data.keyword.dashdbshort_notm}} web console, select **Connect > Connection info**. Select the tile that represents your operating system to download the appropriate driver.
+You can download the driver package for your operating system from the driver download center. Your web console provides a link to the site. In your web console, select **Administration > Connections**. Select the tab for your operating system.
 
 ## Installing
 {: #instlng}
