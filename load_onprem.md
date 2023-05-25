@@ -44,6 +44,6 @@ To download and install Lift, see: [Download Lift](https://www.lift-cli.cloud.ib
 
 For step-by-step instructions about migrating your data to the {{site.data.keyword.Bluemix_notm}} by using Lift, see: [Migrate data to {{site.data.keyword.dashdblong}}](https://www.lift-cli.cloud.ibm.com/#docs){:external}.
 
-For data volumes greater than 25 TB, we recommend using the [IBM Cloud Mass Data Migration Service](/docs/Db2whc?topic=Db2whc-pda){:external}.
+
 
 
