@@ -55,7 +55,6 @@ toc:
           - db_design.md
           - advanced_admin.md
           - flex_scaling.md
-          - rc.md
           - br.md
           - dr.md
           - link:
@@ -65,7 +64,6 @@ toc:
           - storage.md
           - maintenance.md
           - federation.md
-          - local_dev_env.md
           - migrate_stand.md
       - topicgroup:
           label: Security
