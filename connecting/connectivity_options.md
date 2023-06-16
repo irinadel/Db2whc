@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2022-06-15"
+lastupdated: "2023-06-15"
 
 keywords:
 
@@ -39,7 +39,7 @@ For application connections, do not use IP addresses to connect to the {{site.da
 ### How to connect to a public endpoint:
 {: #pub_endpt_steps}
 
-The easiest way to connect to your data warehouse is by way of the public host name that was provided in your welcome letter. You can also obtain your host name and credentials in the following way:
+You can also obtain your host name and credentials in the following way:
 
 1. Log in to {{site.data.keyword.cloud_notm}} and click your service instance.
 2. Click **Service credentials**.
