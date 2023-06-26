@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-18"
+lastupdated: "2023-06-14"
 
 keywords:
 
@@ -47,7 +47,7 @@ You can apply RCAC rules to your {{site.data.keyword.dashdbshort_notm}} instance
 
 For more information about RCAC, see [RCAC overview](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/rcac_overview.html){: external}.
 
-For a tutorial about how to implement row and column access control (RCAC) for your {{site.data.keyword.dashdbshort_notm}} instance, see [RCAC](https://www.ibm.com/cloud/garage/dte/tutorial/row-and-column-access-control-rcac-ibm-db2-warehouse-cloud){: external}.
+
 
 
 

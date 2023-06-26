@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2019-10-18"
+lastupdated: "2023-06-23"
 
 keywords:
 
@@ -45,5 +45,5 @@ Alice and Bob are now able to work on all of the data that is accessible to the 
 
 For more information about user roles in {{site.data.keyword.dashdbshort_notm}}, see [User-defined user roles](https://www.ibm.com/support/knowledgecenter/en/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/udef_user_roles.html){: external}.
 
-For a tutorial about how to implement user roles and Row and Column Access Control (RCAC) for your {{site.data.keyword.dashdbshort_notm}} instance, see [RCAC](https://www.ibm.com/cloud/garage/dte/tutorial/row-and-column-access-control-rcac-ibm-db2-warehouse-cloud){: external}.
+
 
