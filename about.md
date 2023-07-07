@@ -44,11 +44,11 @@ subcollection: Db2whc
 
 ### Native object storage support 
 
-Db2 Warehouse on Cloud on Amazon Web Services (AWS) introduces native object storage support to Db2. This functionality allows you to store traditional Db2 column-organized tables in Db2's native format on object storage while maintaining the existing SQL support and performance using a tiered storage architecture. Moving data from higher cost block storage to lower cost object storage can significantly reduce your costs and does not require changes to your workload. This feature is available on the current generation of AWS plans. For more information, see [Native Cloud Object Storage support](https://www.ibm.com/docs/en/db2woc?topic=native-cloud-object-storage-support){: external}
+{{site.data.keyword.dashdbshort_notm}} on Amazon Web Services (AWS) introduces native object storage support to Db2. This functionality allows you to store traditional Db2 column-organized tables in Db2's native format on object storage while maintaining the existing SQL support and performance using a tiered storage architecture. Moving data from higher cost block storage to lower cost object storage can significantly reduce your costs and does not require changes to your workload. This feature is available on the current generation of AWS plans. For more information, see [Native Cloud Object Storage support](https://www.ibm.com/docs/en/db2woc?topic=native-cloud-object-storage-support){: external}
 
 ### Open data format table support 
 
-Db2 Warehouse on Cloud on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open date format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
+{{site.data.keyword.dashdbshort_notm}} on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open date format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
 
 ### Expertly managed and highly secure
 

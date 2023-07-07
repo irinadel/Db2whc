@@ -23,7 +23,7 @@ subcollection: Db2whc
 
 # Open data format table support
 
-The current generation of Db2 Warehouse on Cloud plans on AWS supports open data formats as DATALAKE tables, allowing for seamless access to other data within your enterprise for integrated workloads.
+The current generation of {{site.data.keyword.dashdblong}} plans on AWS supports open data formats as DATALAKE tables, allowing for seamless access to other data within your enterprise for integrated workloads.
 You can:
 
 - Browse, explore, and query enterprise data in both Db2 and DATALAKE formats, using either the web-based UI, or through SQL
@@ -35,5 +35,5 @@ Supported open table and data formats include Iceberg, Parquet, ORC, and CSV. Bo
 
 
 
-Db2 Warehouse on Cloud also provides seamless integration and common metadata service with the new IBM watsonx.data service. You can use the web-based UI to register your watsonx.data service, to allow the import and export of data between the services.  For more information about integration with watsonx.data, see [watsonx.data Integration](https://www.ibm.com/docs/en/db2woc?topic=watsonxdata-integration){: external}
+{{site.data.keyword.dashdblong}} also provides seamless integration and common metadata service with the new IBM watsonx.data service. You can use the web-based UI to register your watsonx.data service, to allow the import and export of data between the services.  For more information about integration with watsonx.data, see [watsonx.data Integration](https://www.ibm.com/docs/en/db2woc?topic=watsonxdata-integration){: external}
 
