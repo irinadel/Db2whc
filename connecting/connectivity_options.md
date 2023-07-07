@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2023-06-15"
+lastupdated: "2023-06-28"
 
 keywords:
 
@@ -47,23 +47,31 @@ You can also obtain your host name and credentials in the following way:
 4. After the credentials are created, under the `Actions` column, click **View credentials**.
 5. In the following JSON document example, note the contents of the hostname, password, and username fields. You use these three components to make the public endpoint connection:
 
-   ```
+<pre>
+```text 
    {
-     "hostname": "db2whoc-flex-xxxxxxx.services.dal.bluemix.net",
-     "password": "DTPY7KXxhp_pKtjLSt",
-     "https_url": "https://db2whoc-flex-xxxxxxx.services.dal.bluemix.net",
-     "port": 50000,
-     "ssldsn": "DATABASE=BLUDB;HOSTNAME=db2whoc-flex-xxxxxx.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPY7KXWxhp_pKtjLSt;Security=SSL;",
-     "host": "db2whoc-flex-xxxxx.services.dal.bluemix.net",
-     "jdbcurl": "jdbc:db2://db2whoc-flex-xxxx.services.dal.bluemix.net:50000/BLUDB",
-     "uri": "db2://bluadmin:DTPY7KXx1p_pKtjLSt@db2whoc-flex-hyftpsb.services.dal.bluemix.net:50000/BLUDB",
-     "db": "BLUDB",
-     "dsn": "DATABASE=BLUDB;HOSTNAME=db2whoc-flex-xxxxx.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=bluadmin;PWD=DTPYZunlWxhp_pKtjLSt;",
-     "username": "bluadmin",
-     "ssljdbcurl": "jdbc:db2://db2whoc-flex-xxxx.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
-   }
-
-   ```
+    "apikey": "abcdefghijklmnopqrstuvwxyz0123456789",
+    "db": "BLUDB",
+    "host": "db2w-abcdefg.eu-de.db2w.cloud.ibm.com",
+    "hostname": "db2w-abcdefg.eu-de.db2w.cloud.ibm.com",
+    "https_url": "https://db2w-abcdefg.eu-de.db2w.cloud.ibm.com",
+    "iam_apikey_description": "Auto-generated for key crn:v1:bluemix:public:dashdb:eu-de:a/abc62e1447e5587cfcff971d4aa7d473:c1cac901-755b-489c-a742-f41295cb5dd8:resource-key:11f5e7e5-4759-439e-8291-7febc09382ce",
+    "iam_apikey_name": "Service credentials-1",
+    "iam_role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "iam_serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/abc62e1447e5587cfcff971d4aa7d473::serviceid:ServiceId-aecb72c2-b048-4800-a0d3-263d7bfe4e6a",
+    "parameters": {
+    "role_crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+    "serviceid_crn": "crn:v1:bluemix:public:iam-identity::a/abc62e1447e5587cfcff971d4aa7d473::serviceid:ServiceId-aecb72c2-b048-4800-a0d3-263d7bfe4e6a"
+    },
+    "password": "hereisthepassword123",
+    "port": 50001,
+    "ssldsn": "DATABASE=BLUDB;HOSTNAME=db2w.abcdefg.eu-de.db2w.cloud.ibm.com;PORT=50001;PROTOCOL=TCPIP;UID=bluadmin;PWD=hereisthepassword123;Security=SSL;",
+    "ssljdbcurl": "jdbc:db2://db2w-abcdefg.eu-de.db2w.cloud.ibm.com:50001/BLUDB:sslConnection=true;",
+    "uri": "db2://bluadmin:hereisthepassword123@db2w-abcdefg.eu-de.db2w.cloud.ibm.com:50001/BLUDB?ssl=true;",
+    "username": "bluadmin"
+    }
+```
+<pre>
 
    ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical representation of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
 
