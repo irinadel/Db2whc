@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2014, 2019
-lastupdated: "2019-10-18"
+  years: 2014, 2022
+lastupdated: "2023-07-07"
 
 keywords:
 
 subcollection: Db2whc
+
+---
 
 ---
 
@@ -21,13 +23,13 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# Snapshot backup and restore
+# Backup and restore
 {: #br}
 
 A snapshot backup of the database is taken daily. Management and configuration of daily snapshot backups is built into the web console. 
 {: shortdesc}
 
-You can use the web console to restore from a snapshot backup if needed. Snapshot backups take approximately 3 minutes to complete. During this time, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
+You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
 
 <!--| Plan              | Backup frequency | Number of retained backups | Backup retention period   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
@@ -44,7 +46,10 @@ The last 7 daily snapshots are retained by default. Snapshot backups are encrypt
 ## Amazon Web Services
 {: #aws_br}
 
-The last 7 daily snapshots are retained by default. When deployed on Amazon Web Services, you can use the web console to configure a longer retention period for snapshot backups if desired. Potentially unlimited snapshots can be retained. Snapshot backups are encrypted and stored in Amazon Web services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, so there are 3 copies of each snapshot backup in total. The first 7 snapshot backups on Amazon Web Services are free of charge. You will be charged each month for the capacity required for any additional snapshot backups.
+The last 7 daily snapshots are retained by default. When deployed on Amazon Web Services, you can use the web console to configure a longer retention period for snapshot backups if desired. Potentially unlimited snapshots can be retained. Snapshot backups are encrypted and stored in Amazon Web services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, so there are 3 copies of each snapshot backup in total. 
+
+With the current generation of plans, you are charged for all backups. The backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
+
 
 | Cloud provider      | Backup frequency | Number of retained backups | Retention period         |
 |---------------------|------------------|----------------------------|--------------------------|
@@ -54,6 +59,15 @@ The last 7 daily snapshots are retained by default. When deployed on Amazon Web 
 
 *First in, first out
 
+## Logical schema backup and restore
+
+This feature provides the ability to do full, cumulative incremental, or delta incremental backup of a Db2 schema followed by full restore of the schema or table(s) within the schema. Logical schema backup is a flexible and lightweight way to backup and restore table level data. 
+
+
+
+
+
+
 <!--## SMP and MPP plans
 {: #smp_mpp}
 
@@ -61,7 +75,7 @@ The last 2 daily backups are retained.
 
 The retained backups are used exclusively by IBM for only system recovery purposes if there is a disaster or system loss. A request to restore your database from a backup is not supported. You can export your data by using Db2 tools such as IBM Data Studio or by using the **db2 export** command. -->
 
-<!--## Flex and Flex Performance plans
+<!-- ## Flex and Flex Performance plans
 {: #flex}
 
 Up to the last 7 daily backup snapshots are retained. The number of retained snapshots to a maximum of 7 depends on the size of each snapshot (equal to the amount of data that is changed between snapshots after the first) and the amount of storage space for retained backups.

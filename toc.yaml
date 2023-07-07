@@ -21,6 +21,7 @@ toc:
       topics:
       -  about.md
       - getting-started.md
+      - open_data.md
       - topicgroup:
           label: Connecting
           topics:
@@ -28,17 +29,16 @@ toc:
           - connecting/connectivity_options.md
           - connecting/connectivity_options_aws.md
           - connecting/credentials.md
-          - onnecting/dedicatedAWS.md
+          - connecting/dedicatedAWS.md
           - connecting/ssl.md
           - connecting/driver_pkg.md
           - connecting/connect_programmatically.md
           - connecting/connect_ibm_tools.md
           - connecting/connect_3rd_party_tools.md
-          - connecting/rest_api.md
+          - connecting/rest_api.md 
       - topicgroup:
           label: Loading your data
           topics:
-          - load_db2.md
           - load_local.md
           - load_cos.md
           - load_amazon_s3.md
@@ -47,9 +47,9 @@ toc:
           - distrib_keys.md
           - link:
               label: Analyzing your data
-              href: https://www.ibm.com/docs/db2woc?topic=analyzing-your-data
+              href: https://www.ibm.com/docs/en/db2woc?topic=analyzing-your-data
       - topicgroup:
-          label: Adminstration
+          label: Administration
           topics:
           - interfaces.md
           - db_design.md
@@ -59,12 +59,13 @@ toc:
           - dr.md
           - link:
               label: Replication
-              href: https://www.ibm.com/docs/db2woc?topic=replication-continuous-availability
+              href: https://www.ibm.com/docs/en/db2woc?topic=replication-continuous-availability
           - ha.md
           - storage.md
           - maintenance.md
           - federation.md
           - migrate_stand.md
+        
       - topicgroup:
           label: Security
           topics:
@@ -103,10 +104,10 @@ toc:
               href: https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud
       - link:
               label: SQL reference
-              href: https://www.ibm.com/docs/db2woc?topic=reference-sql
+              href: https://www.ibm.com/docs/en/db2woc?topic=reference-sql
       - link:
-              label: IBM Documentation
-              href: https://www.ibm.com/docs/db2woc
+              label: Knowledge Center
+              href: https://www.ibm.com/docs/en/db2woc
 
 
   - navgroup:

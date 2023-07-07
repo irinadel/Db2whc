@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2022-03-30"
+lastupdated: "2023-07-04"
 
 keywords:
 
@@ -24,12 +24,12 @@ subcollection: Db2whc
 # Disaster recovery
 {: #dr}
 
-Geo-replicated disaster recovery (DR) backups for {{site.data.keyword.dashdblong}} are enabled by default and supplement daily snapshot backups. DR backups are used exclusively for system recovery purposes by IBM service operators if there is a disaster or system loss. 
+Disaster recovery (DR) backups for {{site.data.keyword.dashdblong}} are enabled by default and supplement daily snapshot backups. DR backups are used exclusively for system recovery purposes by IBM service operators if there is a disaster or system loss. 
 {: shortdesc}
 
 If a disaster event occurs at the data center where your {{site.data.keyword.dashdbshort_notm}} instance is deployed, IBM service operators will work with you to stand up a new data warehouse in a different data center, by using the most recent disaster recovery backup. There is no additional charge for these backups.
 
-The RPO (Recovery Point Objective) and RTO (Recovery Time Objective) for DR backups for each cloud provider are described in the following sections. DR backups are also geo-replicated by default. You can open a support ticket to not have your DR backups replicated to certain regions to comply with your data retention policies.
+The RPO (Recovery Point Objective) and RTO (Recovery Time Objective) for DR backups for each cloud provider are described in the following sections. On IBM Cloud, DR backups are geo-replicated by default. You can open a support ticket to not have your DR backups replicated to certain regions to comply with your data retention policies. On AWS, DR backups are stored in another Availability Zone in the same region and can also be geo-replicated at an additional cost.
 
 For more information about DR and replication on {{site.data.keyword.dashdbshort_notm}}, see [Replication](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.idrca.doc/overview/ovu-db2woc.html){: external}.
 

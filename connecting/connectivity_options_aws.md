@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-06-09"
+  years: 2014, 2019
+lastupdated: "2023-06-20"
 
 keywords:
 
@@ -43,7 +43,6 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
     
 3. After the principal is granted permission, create an interface endpoint on your VPC to connect to the {{site.data.keyword.dashdbshort_notm}} service. See [Creating an Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint){: external}. Ensure that TCP traffic is allowed through ports 50001, 443, and 8443 on the VPC, and set rules to allow traffic from the CIDR range associated with the VPC.
     
-4. After the interface endpoint is created, provide the host names assigned to the endpoints so that they can be allowlisted in the {{site.data.keyword.dashdbshort_notm}} web console. After these host names are allowlisted, you can access your {{site.data.keyword.dashdbshort_notm}} instance by using the interface endpoint host names.
 
 ### Considerations and limitations
 
@@ -53,5 +52,7 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
   {: note}
 
 - You must create the Endpoint Service for accessing {{site.data.keyword.dashdbshort_notm}} in the same AWS region where the {{site.data.keyword.dashdbshort_notm}} instance is deployed. To access your instance from other AWS regions, you can use VPC Peering. See [Example: Services Using AWS PrivateLink and VPC Peering](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peer-region-example.html){: external}.
+
+- For the current generation of plans on AWS, connectivity to the web UI is available only over the public network, even if you have enabled PrivateLink. This restriction is temporary, and will be removed in an upcoming update.
 
 For more information about AWS PrivateLink, see [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html){: external}.

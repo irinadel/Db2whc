@@ -49,10 +49,7 @@ You can access your web console in the following ways:
 ## REST API
 {: #int_api}
 
-With {{site.data.keyword.dashdbshort_notm}} service plans, you can do tasks that are related to file management, loading data, and resource scaling by using one of the following REST APIs:
-- [Database management REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){:external}
-- [Database resource scaling REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp){:external}
-
+With Db2 Warehouse on Cloud service plans, you can do tasks that are related to file management, loading data, and resource scaling using the database management [REST API]( https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-con_rest_api)
 ## Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 

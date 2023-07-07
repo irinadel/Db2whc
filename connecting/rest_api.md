@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-28"
+lastupdated: "2023-07-07"
 
 keywords:
 
@@ -24,10 +24,10 @@ subcollection: Db2whc
 # REST API
 {: #con_rest_api}
 
-{{site.data.keyword.dashdblong}} provides two REST APIs that you can use to interact with your instance:
+You can use the REST API to access data, view and create database objects, administer, scale storage and compute, and monitor your Db2 Warehouse on Cloud service.
 {: shortdesc}
 
-- To access data, view and create database objects, administer, and monitor your {{site.data.keyword.dashdbshort_notm}} service, use the [Database management API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4){: external}.
-- To scale the storage and compute for your {{site.data.keyword.dashdbshort_notm}} instance, use the [Database resource scaling API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2woc_scale_exp){: external}.
+- All plans hosted on IBM Cloud, and previous generation of plans hosted on AWS: [V4 REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v4){: external}.
+- Current generation of plans hosted on AWS: [V5 REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud/db2-warehouse-on-cloud-v5){: external}.
 
 

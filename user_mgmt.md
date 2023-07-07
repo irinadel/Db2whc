@@ -32,4 +32,4 @@ The database administrator role manages the following types of user access:
 * Database. The administrator can grant granular access permissions to the database, including being able to access only certain tables, schemas, or even rows or columns. 
 
 For more information about user management, see: 
-- [Database user management](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){:external}
+- [Database user management](https://www.ibm.com/support/knowledgecenter/SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.html){: external}

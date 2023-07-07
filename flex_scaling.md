@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-01-23"
+lastupdated: "2023-07-07"
 
 keywords:
 
@@ -25,23 +25,32 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-You can configure your {{site.data.keyword.dashdblong}} instance to autoscale, or you can independently scale storage and compute, by using the {{site.data.keyword.dashdbshort_notm}} console. Click **Administration** and then click the Scaling tab on the **Compute and storage** page. Click the appropriate **Edit** link to change the scaling settings manually or to configure autoscaling.
+{{site.data.keyword.dashdblong}} provides you with the ability to independently scale compute and storage. You can use the console to scale resources immediately or to schedule a scaling operation, or you can scale your instance programmatically using the REST API.
 {: shortdesc}
 
-![View of the web console Scaling tab](images/scaling.png){: caption="Figure 1. A screenshot of the Scaling tab" caption-side="bottom"}
+To use the console, click **Administration** and then click the **Scaling** tab on the **Compute & storage** page.
 
-You can scale your instance immediately or schedule a scaling operation to happen later. You can also scale your instance programmatically by using the [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
+![View of the web console Scaling tab](images/scaling1.png "Web console scaling tab"){: caption="Figure 1. A screenshot of the Scaling tab" caption-side="bottom"}
+
+For information about using the REST API to scale compute or storage, see [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
+
+On-demand scaling is charged on an hourly basis. This allows you to pay for additional resources only when they are needed. For example, you can scale up compute if your workload is heavier on weekdays, and then scale it down for the weekend.
 
 <!--![View of the web console Scaling tab in edit mode](images/scale_instance.png)-->
 
-On-demand scaling is charged on an hourly basis.
+## Compute Scaling
 
-Storage scaling occurs online. Only storage expansion is supported; decreasing storage is not permitted. During compute scaling, all uncommitted transactions are rolled back. RAM is allocated proportionally with a fixed ratio as the number of compute cores is changed.
+With all plans, you can scale compute up or down. Memory is scaled up or down proportionally as you scale compute resources up or down.
+During compute scaling, all uncommitted transactions are rolled back. 
 
-## Downtime
+Approximately 45 minutes of downtime is required for a compute scale operation. The downtime will vary depending on the amount of crash recovery processing that might be required. The best practice is to gracefully end workloads prior to a scaling operation, or to schedule the scaling operation during a low period of activity.
 
-{: #scaling_downtime}
+## Storage Scaling
 
-How much downtime is associated with increasing or decreasing compute resources?
+With the current generation of plans hosted on AWS, you can scale storage up or down. The ability to scale storage down allows you to reduce your costs as you move data from more expensive block storage to less expensive cloud storage. With all other plans, you can only scale storage up.
 
-Approximately 45 minutes. The downtime will vary depending on the amount of crash recovery processing that might be required. The best practice is to gracefully end workloads prior to a scaling operation, or to schedule the scaling operation during a low period of activity.
+You can also enable auto-scaling for your storage. When you enable autoscaling, the storage on your Db2 Warehouse on Cloud instance will automatically be scaled up if your storage use exceeds the threshold you specify. The following screenshot shows the auto-scaling panel in the console for a Db2 Warehouse on Cloud Flex instance hosted on IBM Cloud.
+
+![Storage autoscaling tab](images/scaling2.png){: caption="Figure 2. A screenshot of the autoscaling tab" caption-side="bottom"}
+
+Scaling storage up is an online operation. Scaling storage down requires downtime.

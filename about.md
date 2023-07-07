@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2022
-lastupdated: "2022-11-16"
+  years: 2014, 2020
+lastupdated: "2023-07-07"
 
 keywords:
 
@@ -42,6 +42,14 @@ subcollection: Db2whc
 
 {{site.data.keyword.dashdbshort_notm}} is an elastic service, and allows you to independently scale compute and storage through an intuitive UI or REST API.
 
+### Native object storage support 
+
+Db2 Warehouse on Cloud on Amazon Web Services (AWS) introduces native object storage support to Db2. This functionality allows you to store traditional Db2 column-organized tables in Db2's native format on object storage while maintaining the existing SQL support and performance using a tiered storage architecture. Moving data from higher cost block storage to lower cost object storage can significantly reduce your costs and does not require changes to your workload. This feature is available on the current generation of AWS plans. For more information, see [Native Cloud Object Storage support](https://www.ibm.com/docs/en/db2woc?topic=native-cloud-object-storage-support){: external}
+
+### Open data format table support 
+
+Db2 Warehouse on Cloud on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open date format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
+
 ### Expertly managed and highly secure
 
 Day-to-day operations for {{site.data.keyword.dashdbshort_notm}}, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their data warehouse.
@@ -61,13 +69,15 @@ Train and run machine learning models directly in the {{site.data.keyword.dashdb
 ## Plans and configurations
 {: #plans_cfgs}
 
-{{site.data.keyword.dashdbshort_notm}} offers several elastic data warehouse configurations to meet your workload requirements:
+{{site.data.keyword.dashdbshort_notm}} offers several elastic data warehouse configurations to meet your workload requirements.
+
+When you deploy your configuration on IBM Cloud, the following three plans are available:
 
 - **Flex One**: a single-partitioned plan designed for growing enterprises and new data warehouse projects.
 - **Flex**: a multi-partitioned plan designed for storage-dense workloads, inexpensive querying of large data sets, and development and test environments.
 - **Flex Performance**: a multi-partitioned plan designed for high-performance, production workloads that prioritize compute performance over storage density.
 
-All plans offer the [key features](#key_features) described in the previous section.
+When you deploy your configuration on Amazon Web Services, you choose a starting value for compute. The minimum required quantity of block storage is determined by the quantity of compute resources you choose. With the current generation of plans, you also have the option to store your data on cloud object storage. All instances on AWS are multi-partitioned.
 
 ## Supported cloud providers and data centers
 {: #sup_cp_dc}
@@ -87,37 +97,24 @@ The following table provides information about the availability of the various {
 | Flex Performance             | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
 |                              |              |           | Washington D.C. (us-east) |               |  
 |      |||||
-| Flex One                     | Tokyo        | Frankfurt | Dallas (us-south)         | *NA           |
-|                              |              | London    | Toronto                   |               | 
-|                              |              |           | Washington D.C. (us-east) |               |
+| Flex One                     | Tokyo    | Frankfurt | Dallas (us-south)         | *NA           |
+|                              |       | London    | Toronto                   |               | 
+|                              |        |           | Washington D.C. (us-east) |               |
 {: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
 *NA = Not available at this time
 
-You can request to deploy your {{site.data.keyword.dashdbshort_notm}} service in a network-isolated environment on the {{site.data.keyword.cloud_notm}}. Contact [IBM Sales](https://www.ibm.com/contact/us/en/){:external} to learn more.
+For information on deploying your Db2 Warehouse on Cloud service in a network-isolated environment on the IBM Cloud, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). {: external}
 
 ### Availability of plans in Amazon Web Services data centers
 {: #availability_aws}
 
-The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by Amazon Web Services data centers that are located in geographical regions:
+The current generation of plans on AWS is available in N. Virginia and Frankfurt, with additional data centers coming soon.
 
-| {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
-|------------------------------|--------------|-----------|---------------------------|---------------|
-| Flex                         | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    | Oregon            |               |
-|                              | Sydney       |           |             |               |
-|                              | Tokyo        |           |             |               | 
-|      |||||
-| Flex Performance             | Seoul        | Frankfurt | N. Virginia | *NA           |
-|                              | Singapore    | London    | Oregon         |               | 
-|                              | Sydney       |           |             |               |
-|                              | Tokyo        |           |             |               |  
+The previous generation of plans on AWS is available in N. Virginia, Oregon, Frankfurt, London, Tokyo, Seoul, Singapore, and Sydney.
 
-{: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+If you wish to provision a service instance in an AWS region not listed above, contact your local sales representative or open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). You can also open a support case for information on deploying your Db2 Warehouse on Cloud service in a network-isolated environment on AWS. 
 
-*NA = Not available at this time
-
-Customers who wish to provision a service instance in an AWS region not listed above should contact their local sales representative for additional information.
 
 
 <!--
@@ -155,5 +152,23 @@ You can analyze and visualize your analysis by connecting to the following appli
 - [SAS](/docs/Db2whc/connecting?topic=Db2whc-ds#sas)
 - [Microsoft Excel](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#excel)
 - [Esri ArcGIS for Desktop](/docs/Db2whc/connecting?topic=Db2whc-data_vis_bi#esri_arcgis)
+
+The following table provides information about the availability of the various {{site.data.keyword.dashdbshort_notm}} plans by Amazon Web Services data centers that are located in geographical regions:
+
+| {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America |
+|------------------------------|--------------|-----------|---------------------------|---------------|
+| Flex                         | Seoul        | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    | Oregon          |               |
+|                              | Sydney       |           |             |               |
+|                              | Tokyo        |           |             |               | 
+|      |||||
+| Flex Performance             | Seoul        | Frankfurt | N. Virginia | *NA           |
+|                              | Singapore    | London    | Oregon     |               | 
+|                              | Sydney       |           |             |               |
+|                              | Tokyo        |           |             |               |  
+
+{: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+
+*NA = Not available at this time
 
 -->
