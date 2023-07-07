@@ -21,7 +21,7 @@ toc:
       topics:
       -  about.md
       - getting-started.md
-      - open_data.md
+      
       - topicgroup:
           label: Connecting
           topics:
@@ -39,6 +39,7 @@ toc:
       - topicgroup:
           label: Loading your data
           topics:
+          - open_data.md
           - load_local.md
           - load_cos.md
           - load_amazon_s3.md
