@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-07-07"
+lastupdated: "2023-07-08"
 
 keywords:
 
@@ -30,7 +30,7 @@ subcollection: Db2whc
 
 To use the console, click **Administration** and then click the **Scaling** tab on the **Compute & storage** page.
 
-![View of the web console Scaling tab](images/scaling1.png "Web console scaling tab"){: caption="Figure 1. A screenshot of the Scaling tab" caption-side="bottom"}
+![View of the web console Scaling tab](images/scaling1.png){: caption="Figure 1. A screenshot of the Scaling tab" caption-side="bottom"}
 
 For information about using the REST API to scale compute or storage, see [REST API](https://cloud.ibm.com/apidocs/db2-warehouse-on-cloud){: external}.
 
