@@ -47,8 +47,7 @@ You can also obtain your host name and credentials in the following way:
 4. After the credentials are created, under the `Actions` column, click **View credentials**.
 5. In the following JSON document example, note the contents of the hostname, password, and username fields. You use these three components to make the public endpoint connection:
 
-<pre>
-```text 
+<pre> 
    {
     "apikey": "abcdefghijklmnopqrstuvwxyz0123456789",
     "db": "BLUDB",
@@ -70,7 +69,6 @@ You can also obtain your host name and credentials in the following way:
     "uri": "db2://bluadmin:hereisthepassword123@db2w-abcdefg.eu-de.db2w.cloud.ibm.com:50001/BLUDB?ssl=true;",
     "username": "bluadmin"
     }
-```
 <pre>
 
    ![Public network access to {{site.data.keyword.cloud_notm}}](images/public_connection.png "Graphical representation of user to cloud connection"){: caption="Figure 1. Public network access to {{site.data.keyword.cloud_notm}}" caption-side="bottom"}
