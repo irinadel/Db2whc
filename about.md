@@ -109,9 +109,6 @@ For information on deploying your Db2 Warehouse on Cloud service in a network-is
 ### Availability of plans in Amazon Web Services data centers
 {: #availability_aws}
 
-<<<<<<< Updated upstream
-The current generation of plans on AWS is available in N. Virginia and Frankfurt, with additional data centers coming soon.
-=======
 The current generation of plans on AWS is available in the following data centers:
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America    |
@@ -119,9 +116,6 @@ The current generation of plans on AWS is available in the following data center
 | All current generation                       | Tokyo        | Frankfurt | N. Virginia               | NA (coming soon) |
 |                                              | Sydney       |           |                           |                  | 
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
-
-Support for additional AWS regions is coming soon.
->>>>>>> Stashed changes
 
 The previous generation of plans on AWS is available in N. Virginia, Oregon, Frankfurt, London, Tokyo, Seoul, Singapore, and Sydney.
 
