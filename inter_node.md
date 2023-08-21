@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2022
-lastupdated: "2023-07-07"
+lastupdated: "2023-08-21"
 
 keywords:
 
@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Inter-node encryption
 {: #Inter-node encryption}
 
-For the current generation of plans hosted on AWS, inter-node encryption is always enabled. For the Flex and Flex Performance plans hosted on IBM Cloud, you can optionally choose to enable this form of encryption.
+For the current generation of plans hosted on AWS, inter-node encryption is always enabled, where available. As of September 2023, inter-node encryption is available in all AWS regions except sa-east-1 (Sao Paulo). For the Flex and Flex Performance plans hosted on IBM Cloud, you can optionally choose to enable this form of encryption.
 {: shortdesc}
 
 Inter-node encryption is an additional layer of security that protects inter-node traffic between internal Db2 nodes in a massively parallel processing (MPP) cluster. It supplements the SSL encryption that is already in use between the server and your applications.
