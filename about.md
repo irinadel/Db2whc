@@ -113,7 +113,7 @@ The current generation of plans on AWS is available in the following data center
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America    |
 |----------------------------------------------|--------------|-----------|---------------------------|------------------|
-| All current generation                       | Tokyo        | Frankfurt | N. Virginia               | NA (coming soon) |
+| All current generation                       | Tokyo        | Frankfurt | N. Virginia               | Sao Paulo        |
 |                                              | Sydney       |           |                           |                  | 
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
 
