@@ -48,7 +48,7 @@ subcollection: Db2whc
 
 ### Open data format table support 
 
-{{site.data.keyword.dashdbshort_notm}} on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open date format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
+{{site.data.keyword.dashdbshort_notm}} on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open data format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
 
 ### Expertly managed and highly secure
 
