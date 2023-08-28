@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-08-01"
+lastupdated: "2023-08-28"
 
 keywords:
 
@@ -70,8 +70,7 @@ Implicit or explicit
 
 Schema-level backup can be performed by passing the schema name to the LOGICAL_BACKUP stored procedure using -schema option. On error partial backup image will be removed. On success timestamp is returned as part of return sqlcode. This timestamp is to be used as a label to refer to the backup image, e.g. to restore it. Logical backup ensures that timestamp is unique in case when several backups are started at the same time.
 
-When using this command in a cloud environment, do not use the -path or -tsm option, and do not specify any -errorlogdir path. You are unable to view local files on the server hosting the instance. 
-{: attention}
+When using this command in a cloud environment, do not use the -path or -tsm option, and do not specify any -errorlogdir path. You are unable to view local files on the server hosting the instance. {: attention}
 
 ![](images/syntax_diagram1.png)
 
