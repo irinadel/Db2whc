@@ -12,7 +12,7 @@ subcollection: Db2whc
 
 <!-- Attribute definitions --> 
 {:note: .note}
-{:attention .attention}
+{:attention: .attention}
 
 # Command syntax for LOGICAL BACKUP and LOGICAL RESTORE 
 

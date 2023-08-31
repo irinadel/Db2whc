@@ -67,7 +67,7 @@ toc:
           - federation.md
           - migrate_stand.md
           - logical_schema.md
-          - command_syntax.md
+          - command_syntax.md 
         
       - topicgroup:
           label: Security
