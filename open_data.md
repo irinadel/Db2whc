@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2023
-lastupdated: "2023-07-07"
+lastupdated: "2023-09-08"
 
 keywords: 
 
@@ -35,5 +35,5 @@ Supported open table and data formats include Iceberg, Parquet, ORC, and CSV. Bo
 
 
 
-{{site.data.keyword.dashdblong}} also provides seamless integration and common metadata service with the new IBM watsonx.data service. You can use the web-based UI to register your watsonx.data service, to allow the import and export of data between the services.  For more information about integration with watsonx.data, see [watsonx.data Integration](https://www.ibm.com/docs/en/db2woc?topic=watsonxdata-integration){: external}
+{{site.data.keyword.dashdblong}} also provides seamless integration and common metadata service with the new IBM watsonx.data service. You can use the web-based UI to register your watsonx.data service, to allow the import and export of data between the services.  For more information about integration with watsonx.data, see [watsonx.data Integration](https://www.ibm.com/docs/en/db2woc?topic=tables-accessing-watsonxdata){: external}
 
