@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2023-07-07"
+lastupdated: "2023-08-18"
 
 keywords:
 
@@ -11,7 +11,7 @@ subcollection: Db2whc
 ---
 
 <!-- Attribute definitions --> 
-{:external: target="_blank" .external}
+{:external: target="_blank" .external} 
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
@@ -20,14 +20,15 @@ subcollection: Db2whc
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
+{:attention: .attention}
 
-# About
+# About 
 {: #about}
 
 {{site.data.keyword.dashdblong}} is a fully-managed, elastic cloud data warehouse that delivers independent scaling of storage and compute. It delivers a highly optimized columnar data store, actionable compression, and in-memory processing to supercharge your analytics and machine learning workloads.
 {: shortdesc}
 
-## Key features
+## Key features 
 {: #key_features}
 
 ### Blazingly-fast engine
@@ -66,19 +67,12 @@ Day-to-day operations for {{site.data.keyword.dashdbshort_notm}}, including data
 
 Train and run machine learning models directly in the {{site.data.keyword.dashdbshort_notm}} engine, using SQL, Python, or R. {{site.data.keyword.dashdbshort_notm}} also supports spatial analytics with Esri compatibility, including Esri data types such as GML, and integration with Jupyter Notebooks.
 
-## Plans and configurations
+## Plans and configurations 
 {: #plans_cfgs}
 
-{{site.data.keyword.dashdbshort_notm}} offers several elastic data warehouse configurations to meet your workload requirements.
+For information about the plans and configurations supported on IBM Cloud and Amazon Web Services (AWS), see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about).
 
-When you deploy your configuration on IBM Cloud, the following three plans are available:
-
-- **Flex One**: a single-partitioned plan designed for growing enterprises and new data warehouse projects.
-- **Flex**: a multi-partitioned plan designed for storage-dense workloads, inexpensive querying of large data sets, and development and test environments.
-- **Flex Performance**: a multi-partitioned plan designed for high-performance, production workloads that prioritize compute performance over storage density.
-
-When you deploy your configuration on Amazon Web Services, you choose a starting value for compute. The minimum required quantity of block storage is determined by the quantity of compute resources you choose. With the current generation of plans, you also have the option to store your data on cloud object storage. All instances on AWS are multi-partitioned.
-
+This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 Warehouse on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate. {: attention}
 ## Supported cloud providers and data centers
 {: #sup_cp_dc}
 
@@ -113,9 +107,11 @@ The current generation of plans on AWS is available in the following data center
 
 | {{site.data.keyword.dashdbshort_notm}} plans | Asia/Pacific | Europe    | North/Central America     | South America    |
 |----------------------------------------------|--------------|-----------|---------------------------|------------------|
-| All current generation                       | Tokyo        | Frankfurt | N. Virginia               | NA (coming soon) |
+| All current generation                       | Tokyo        | Frankfurt | N. Virginia               | Sao Paulo        |
 |                                              | Sydney       |           |                           |                  | 
 {: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+
+Support for additional AWS regions is coming soon.
 
 The previous generation of plans on AWS is available in N. Virginia, Oregon, Frankfurt, London, Tokyo, Seoul, Singapore, and Sydney.
 
