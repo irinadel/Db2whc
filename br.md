@@ -1,14 +1,12 @@
 ---
 
 copyright:
-  years: 2014, 2022
-lastupdated: "2023-07-07"
+  years: 2014, 2023
+lastupdated: "2023-10-11"
 
 keywords:
 
 subcollection: Db2whc
-
----
 
 ---
 
@@ -26,10 +24,10 @@ subcollection: Db2whc
 # Backup and restore
 {: #br}
 
-A snapshot backup of the database is taken daily. Management and configuration of daily snapshot backups is built into the web console. 
-{: shortdesc}
+A snapshot backup of the database is taken daily by IBM. You can also choose to take additional on-demand backups as required. Management of all backups and configuration of the daily backup schedule is built into the web console. While the backup is in progress, all writes will be suspended, and all reads that do not depend on the queued writes will continue.You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, the system is unavailable. 
 
-You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
+The recovery point objective (RPO) for snapshot backups is 24 hours. The recovery time objective (RTO) when restoring from a snapshot backup is approximately 1 hour.
+
 
 <!--| Plan              | Backup frequency | Number of retained backups | Backup retention period   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
@@ -41,20 +39,23 @@ You can use the web console to restore from a snapshot backup if needed. While t
 ## IBM Cloud
 {: #ibm_cloud_br}
 
-The last 7 daily snapshots are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge.
+Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr
 
 ## Amazon Web Services
 {: #aws_br}
 
-The last 7 daily snapshots are retained by default. When deployed on Amazon Web Services, you can use the web console to configure a longer retention period for snapshot backups if desired. Potentially unlimited snapshots can be retained. Snapshot backups are encrypted and stored in Amazon Web services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, so there are 3 copies of each snapshot backup in total. 
+For all instances on AWS, snapshot backups are encrypted and stored in Amazon Web Services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, which means that there are 3 copies of each snapshot backup in total.
 
-With the current generation of plans, you are charged for all backups. The backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
+In the previous generation of plans (all instances deployed before July 2023), the last 7 backups (whether taken by IBM or by the client) are retained by default. These first seven backups are free of charge. Additional backups can be retained at an additional cost.
+
+In the current generation of plans (all instances deployed in or after July 2023) backups (whether taken by IBM or by the client) are retained for 7 days by default. You are charged for all backups. Beginning in mid Oct 2023, you will have the option to reduce the retention period to one day, which means that only the last daily backup is retained. To meet the business continuity and disaster recovery requirements for the offering, and to meet compliance standards, a minimum backup retention of one day is required. With this generation of plans, the backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
 
 
-| Cloud provider      | Backup frequency | Number of retained backups | Retention period         |
-|---------------------|------------------|----------------------------|--------------------------|
-| IBM Cloud           | 1 / day          | Up to 7                    | 7 days; FIFO* rollover   |
-| Amazon Web Services | 1 / day          | Up to 7 by default. Can be configured to retain potentially unlimited backups. | 7 days; FIFO* rollover by default. Can be configured to retain potentially unlimited backups.  |
+| Cloud provider                            | Backup frequency | Number of retained backups              | Retention period         |
+|-------------------------------------------|------------------|-----------------------------------------|--------------------------|
+| IBM Cloud                                 | 1 / day          | Up to 7                                 | 7 days; FIFO* rollover   |
+| Amazon Web Services (previous generation) | 1 / day          | Up to 7 by default; Can be increased    | 7 days; FIFO* rollover   |
+| Amazon Web Services (current generation)  | 1 / day          | 7 by default; can be increased or decreased by configuring retention period | 7 days default; can be increased or decreased; FIFO rollover 
 {: caption="Table 1. Snapshot backup frequency and retention period" caption-side="top"}
 
 *First in, first out
