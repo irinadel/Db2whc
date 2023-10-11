@@ -39,7 +39,7 @@ The recovery point objective (RPO) for snapshot backups is 24 hours. The recover
 ## IBM Cloud
 {: #ibm_cloud_br}
 
-Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr
+Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr.
 
 ## Amazon Web Services
 {: #aws_br}
