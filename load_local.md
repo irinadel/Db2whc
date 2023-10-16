@@ -12,9 +12,9 @@ subcollection: Db2whc
 
 <!-- Attribute definitions --> 
 {:external: target="_blank" .external}
-{:shortdesc: .shortdesc}
+{:shortdesc: .shortdesc} 
 {:codeblock: .codeblock}
-{:screen: .screen}
+{:screen: .screen} 
 {:tip: .tip}
 {:important: .important}
 {:note: .note}

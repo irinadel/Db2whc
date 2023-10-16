@@ -14,7 +14,7 @@ subcollection: Db2whc
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
-{:screen: .screen}
+{:screen: .screen} 
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
