@@ -16,7 +16,7 @@ subcollection: Db2whc
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
-{:important: .important}
+{:attention: .attention}
 {:note: .note}
 {:deprecated: .deprecated}
 {:pre: .pre}
@@ -40,14 +40,14 @@ A full backup of the database is taken once a week for disaster recovery. This D
 
 DR backups of the last 2 weeks are retained by default. The RPO for DR backups on {{site.data.keyword.Bluemix_notm}} is 1 week. The RTO if a disaster occurs is dependent upon the size of the database – 1.5 hours per terabyte of data. 
 
-It is essential for disaster recovery backups to be taken regularly as part of this managed service. If you have concerns about the time window in which backups run and want to schedule the backup for a less busy time on your system, open a support case.{: important} 
+It is essential for disaster recovery backups to be taken regularly as part of this managed service. If you have concerns about the time window in which backups run and want to schedule the backup for a less busy time on your system, open a support case.{: attention} 
 
 <!--For the first-generation SMP Small, Medium, Large, and MPP Small plans, a backup is taken once a day and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the daily backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service. -->
 
 ## Amazon Web Services
 {: #aws_dr}
 
-When deployed on Amazon Web Services, the daily snapshot backup described in https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-br is also used for disaster recovery purposes. This DR backup is encrypted and stored in Amazon Web Services S3 across 3 availability zones (AZs) in each region. Regional DR backups allow you to restore your instance to another zone in the same region if needed. The RPO for DR backups on Amazon Web Services is 24 hours. The RTO if a disaster occurs is approximately 4 hours. 
+When deployed on Amazon Web Services, the daily snapshot backup described in [Backup and Restore](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-br) is also used for disaster recovery purposes. This DR backup is encrypted and stored in Amazon Web Services S3 across 3 availability zones (AZs) in each region. Regional DR backups allow you to restore your instance to another zone in the same region if needed. The RPO for DR backups on Amazon Web Services is 24 hours. The RTO if a disaster occurs is approximately 4 hours. 
 
 <!--For the second-generation Flex plans on {{site.data.keyword.Bluemix_notm}} and Amazon Web Services, a backup is taken once a week and deployed to the {{site.data.keyword.Bluemix_notm}} Object Storage service. From there, the backup is replicated to multiple availability zones. If a disaster event occurs at the primary data center, our service operators work with you to stand up a new data warehouse in a different data center. We will use the weekly backup that resides in the {{site.data.keyword.Bluemix_notm}} Object Storage service.-->
 
