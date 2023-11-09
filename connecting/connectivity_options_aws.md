@@ -39,11 +39,14 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
 
 1. Create an AWS principal to access {{site.data.keyword.dashdbshort_notm}}. The AWS principal can be AWS accounts, IAM users, or IAM roles.
 
-2. Open a support ticket with {{site.data.keyword.cloud_notm}} to enable AWS PrivateLink, and provide the Amazon Resource Name (ARN) of the AWS principal that was created in the previous step. The principal is granted permission to access your {{site.data.keyword.dashdbshort_notm}} instance.
+2. In the console, navigate to the Settings --> Access restriction panel. Enable private endpoints. You can optionally also disable public endpoints. You can now grant permissions to your principals by adding them to the allow list.
     
-3. After the principal is granted permission, create an interface endpoint on your VPC to connect to the {{site.data.keyword.dashdbshort_notm}} service. See [Creating an Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint){: external}. Ensure that TCP traffic is allowed through ports 50001, 443, and 8443 on the VPC, and set rules to allow traffic from the CIDR range associated with the VPC.
-    
+3. Navigate to the **Connections Details** tab in your console to find your Db2 Warehouse on Cloud private endpoint service name. The service name begins with the string `com.amazonaws.vpce.xxxx`
 
+4. Use the service name to Create an [Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/privatelinkcreate-interface-endpoint.html#create-interface-endpoint) in your VPC. Ensure that TCP traffic is allowed through port 50001 on the VPC.
+
+5. It is recommended that you use a private DNS to remap the endpoint to a company-specific hostname rather than consuming the endpoint directly. This will avoid the need to make updates across your applications if the endpoint later changes. For more information, see here: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html 
+    
 ### Considerations and limitations
 
 - AWS PrivateLink currently supports only TCP traffic. Tools that rely on UDP traffic are not supported by PrivateLink. To load data, load directly from Amazon S3 into {{site.data.keyword.dashdbshort_notm}}. See [Loading data from Amazon S3](/docs/Db2whc?topic=Db2whc-load_s3).
@@ -54,5 +57,7 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
 - You must create the Endpoint Service for accessing {{site.data.keyword.dashdbshort_notm}} in the same AWS region where the {{site.data.keyword.dashdbshort_notm}} instance is deployed. To access your instance from other AWS regions, you can use VPC Peering. See [Example: Services Using AWS PrivateLink and VPC Peering](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peer-region-example.html){: external}.
 
 - For the current generation of plans on AWS, connectivity to the web UI is available only over the public network, even if you have enabled PrivateLink. This restriction is temporary, and will be removed in an upcoming update.
+
+- The previous generation of plans on AWS does not support configuring PrivateLink through the console. If you'd like to set up PrivateLink, open a support case and provide the Amazon Resource Name (ARN) of the AWS principal you created in step 1.
 
 For more information about AWS PrivateLink, see [Interface VPC Endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html){: external}.
