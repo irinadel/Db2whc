@@ -39,7 +39,7 @@ The recovery point objective (RPO) for snapshot backups is 24 hours. The recover
 ## IBM Cloud
 {: #ibm_cloud_br}
 
-Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr.
+Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see [Disaster Recovery](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr).
 
 ## Amazon Web Services
 {: #aws_br}
@@ -48,7 +48,7 @@ For all instances on AWS, snapshot backups are encrypted and stored in Amazon We
 
 In the previous generation of plans (all instances deployed before July 2023), the last 7 backups (whether taken by IBM or by the client) are retained by default. These first seven backups are free of charge. Additional backups can be retained at an additional cost.
 
-In the current generation of plans (all instances deployed in or after July 2023) backups (whether taken by IBM or by the client) are retained for 7 days by default. You are charged for all backups. Beginning in mid Oct 2023, you will have the option to reduce the retention period to one day, which means that only the last daily backup is retained. To meet the business continuity and disaster recovery requirements for the offering, and to meet compliance standards, a minimum backup retention of one day is required. With this generation of plans, the backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
+In the current generation of plans (all instances deployed in or after July 2023 that support native object storage) backups (whether taken by IBM or by the client) are retained for 7 days by default. You are charged for all backups. Beginning in late Oct 2023, you can reduce the retention period to one day, which means that only the last daily backup is retained. To meet the business continuity and disaster recovery requirements for the offering, and to meet compliance standards, a minimum backup retention of one day is required. With this generation of plans, the backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
 
 
 | Cloud provider                            | Backup frequency | Number of retained backups              | Retention period         |
