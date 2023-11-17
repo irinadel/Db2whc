@@ -50,7 +50,7 @@ You can provision an instance of {{site.data.keyword.dashdbshort_notm}} directly
 
 1. Log into [IBM Cloud](https://cloud.ibm.com){: external}.
 2. Open your [**Resource list**](https://cloud.ibm.com/resources){: external}.
-3. Under **Cloud Foundry services**, locate your {{site.data.keyword.dashdbshort_notm}} instance and click on the service name.  
+3. Under **Databases**, locate your {{site.data.keyword.dashdbshort_notm}} instance and click on the service name.  
 4. Select the **Service credentials tab > New credentials+ > Add** in order to generate your service admin credentials.
 5. Expand **View credentials**, which displays your service connectivity information including your admin credentials (username and password).
 6. The admin credentials can be used to connect to both Db2 and the web console.
