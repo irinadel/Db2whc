@@ -34,7 +34,7 @@ This is a collection of frequently asked questions (FAQ) about the {{site.data.k
 {: faq}
 {: support}
 
-You can provision an instance of {{site.data.keyword.dashdbshort_notm}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}. Take the [tutorial](https://www.ibm.com/cloud/garage/dte/tutorial/ibm-db2-warehouse-cloud-getting-started-part-1){: external} that walks you through provisioning your first instance of {{site.data.keyword.dashdbshort_notm}}.
+You can provision an instance of {{site.data.keyword.dashdbshort_notm}} directly through the {{site.data.keyword.cloud}} catalog. You can [create a free {{site.data.keyword.cloud_notm}} account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse){: external} and get an {{site.data.keyword.cloud_notm}} credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}. 
 
 ## How do I choose the Db2 Warehouse on Cloud plan that's right for me?
 {: #q_choose_plan}
