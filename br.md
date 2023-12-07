@@ -26,8 +26,6 @@ subcollection: Db2whc
 
 A snapshot backup of the database is taken daily by IBM. You can also choose to take additional on-demand backups as required. Management of all backups and configuration of the daily backup schedule is built into the web console. While the backup is in progress, all writes will be suspended, and all reads that do not depend on the queued writes will continue.You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, the system is unavailable. 
 
-The recovery point objective (RPO) for snapshot backups is 24 hours. The recovery time objective (RTO) when restoring from a snapshot backup is approximately 1 hour.
-
 
 <!--| Plan              | Backup frequency | Number of retained backups | Backup retention period   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
