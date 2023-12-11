@@ -24,8 +24,9 @@ subcollection: Db2whc
 # Backup and restore
 {: #br}
 
-A snapshot backup of the database is taken daily by IBM. You can also choose to take additional on-demand backups as required. Management of all backups and configuration of the daily backup schedule is built into the web console. While the backup is in progress, all writes will be suspended, and all reads that do not depend on the queued writes will continue.You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, the system is unavailable. 
+A snapshot backup of the database is taken daily. Management and configuration of daily snapshot backups are built into the web console. 
 
+You can use the web console to restore from a snapshot backup if needed., While the restore is in progress, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
 
 <!--| Plan              | Backup frequency | Number of retained backups | Backup retention period   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
@@ -37,17 +38,18 @@ A snapshot backup of the database is taken daily by IBM. You can also choose to 
 ## IBM Cloud
 {: #ibm_cloud_br}
 
-Up to the the last 7 snapshots (whether taken by IBM or the clients) are retained by default. Snapshot backups are encrypted and stored in block storage local to the {{site.data.keyword.dashdbshort_notm}} system. Snapshot backups are free of charge. For information about disaster recovery (DR) backups that are not stored locally, see [Disaster Recovery](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-dr).
+The last 7 daily snapshots are retained by default. Snapshot backups are encrypted and stored in block storage local to the Db2 Warehouse on Cloud system. Snapshot backups are free of charge.
 
 ## Amazon Web Services
 {: #aws_br}
 
-For all instances on AWS, snapshot backups are encrypted and stored in Amazon Web Services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, which means that there are 3 copies of each snapshot backup in total.
+The last 7 daily snapshots are retained by default. When deployed on Amazon Web Services, you can use the web console to configure a longer retention period for snapshot backups if desired. 
 
-In the previous generation of plans (all instances deployed before July 2023), the last 7 backups (whether taken by IBM or by the client) are retained by default. These first seven backups are free of charge. Additional backups can be retained at an additional cost.
+Potentially unlimited snapshots can be retained. Snapshot backups are encrypted and stored in Amazon Web services S3. S3 keeps copies of each snapshot backup across 3 availability zones (AZs) in each region by default, so there are 3 copies of each snapshot backup in total. 
 
-In the current generation of plans (all instances deployed in or after July 2023 that support native object storage) backups (whether taken by IBM or by the client) are retained for 7 days by default. You are charged for all backups. You can reduce the retention period to one day, which means that only the last daily backup is retained. To meet the business continuity and disaster recovery requirements for the offering, and to meet compliance standards, a minimum backup retention of one day is required. With this generation of plans, the backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
+With the previous generation of plans, the first 7 snapshot backups on Amazon Web Services are free of charge. You will be charged each month for the capacity required for any additional snapshot backups.
 
+With the current generation of plans, you are charged for all backups. The backup process backs up data on both block and object storage. The backup in this case includes snapshots of block storage and AWS S3 backup of object storage data.
 
 | Cloud provider                            | Backup frequency | Number of retained backups              | Retention period         |
 |-------------------------------------------|------------------|-----------------------------------------|--------------------------|
@@ -60,12 +62,7 @@ In the current generation of plans (all instances deployed in or after July 2023
 
 ## Logical schema backup and restore
 
-This feature provides the ability to do full, cumulative incremental, or delta incremental backup of a Db2 schema followed by full restore of the schema or table(s) within the schema. Logical schema backup is a flexible and lightweight way to backup and restore table level data. 
-
-
-
-
-
+This feature provides the ability to do full, cumulative incremental, or delta incremental backup of a Db2 schema followed by full restore of the schema or table(s) within the schema. Logical schema backup is a flexible and lightweight way to backup and restore table level data. For more information about this feature, see [Schema-level and table-level backup and restore](https://www.ibm.com/docs/en/db2/11.5?topic=recovery-schema-level-table-level-backup-restore).
 
 <!--## SMP and MPP plans
 {: #smp_mpp}
