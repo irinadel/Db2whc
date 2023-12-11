@@ -26,7 +26,7 @@ subcollection: Db2whc
 
 A snapshot backup of the database is taken daily. Management and configuration of daily snapshot backups are built into the web console. 
 
-You can use the web console to restore from a snapshot backup if needed., While the restore is in progress, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
+You can use the web console to restore from a snapshot backup if needed. While the restore is in progress, all writes in the system are queued, and all reads that don’t depend on the queued writes will continue. The RPO for snapshot backups is 24 hours. The RTO when restoring from a snapshot backup is 1 hour.
 
 <!--| Plan              | Backup frequency | Number of retained backups | Backup retention period   | Self service |
 |-------------------|------------------|----------------------------|---------------------------|--------------|
