@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2023-06-22"
+lastupdated: "2024-03-04"
 
 keywords:
 
@@ -46,6 +46,9 @@ When your data source is IBM Db2, IBM Db2 Warehouse, IBM Integrated Analytics Sy
 
 ## Migrating Table Structure
 
+The Lift application may accept obsolete TLS protocol in SSL handshake if the server it is connecting to does not support TLS version 1.2. To ensure TLS 1.0 and TLS 1.1 will not be in use during communication, edit `liftMain` file adding in lines 115 and 118 `-Djdk.tls.client.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2` to Java™ invocation as specified [here](https://www.ibm.com/support/pages/how-do-i-change-default-ssltls-protocol-my-java™-application-will-use).
+{: important}
+
 Migrate your table structure by using the following lift ddl command example, which extracts the Data Definition Language (DDL) from the source database and applies it to the target database:
 
 ```
@@ -62,6 +65,9 @@ Migrate your table structure by using the following lift ddl command example, wh
 For more available command options, run the lift ddl --help command.
 
 ## Moving Data
+
+The Lift application may accept obsolete TLS protocol in SSL handshake if the server it is connecting to does not support TLS version 1.2. To ensure TLS 1.0 and TLS 1.1 will not be in use during communication, edit `liftMain` file adding in lines 115 and 118 `-Djdk.tls.client.protocols=TLSv1.2 -Dhttps.protocols=TLSv1.2` to Java™ invocation as specified [here](https://www.ibm.com/support/pages/how-do-i-change-default-ssltls-protocol-my-java™-application-will-use).
+{: important}
 
 Extract the table data into a CSV file by running the following lift extract command example:
 
@@ -115,6 +121,9 @@ After your table structure is in place, you can start moving your data. Lift CLI
 
 
 To download and install Lift, see the IBM Db2 Download Center: [Download Lift](https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=1120&tabId=5230&p=1&h=null){:external}.
+
+
+
 
 
 
