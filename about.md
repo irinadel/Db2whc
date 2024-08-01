@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2023-09-14"
+lastupdated: "2024-08-01"
 
 keywords:
 
@@ -51,6 +51,10 @@ subcollection: Db2whc
 
 {{site.data.keyword.dashdbshort_notm}} on AWS introduces new DATALAKE table support. This functionality provides Db2 users with the ability to access data that is stored on inexpensive, scalable, and reliable object storage in open data formats such as PARQUET and ORC from within the Db2 Warehouse. This feature is available on the current generation of AWS plans. For more information, see [Open data format table support](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-open-data-format-table-support) {: external}
 
+### Replication Support
+
+{{site.data.keyword.dashdbshort_notm}} with Q Replication enables high-speed data replication for business continuity. This feature allows you to manage downtime with continuous availability (99.999%) and in-place recovery within a cluster. The cloud-native architecture of Db2 features multiple layers of resiliency with managed computation, highly available storage, and cross-cloud replication. 
+
 ### Expertly managed and highly secure
 
 Day-to-day operations for {{site.data.keyword.dashdbshort_notm}}, including database monitoring, uptime checks and failovers, are fully automated. Operations are supplemented by a DevOps team that are on call to handle unexpected system failures. Data is encrypted at rest and in motion by default. Administrators can also restrict access to sensitive data through data masking, row permissions, and role-based security, and can utilize database audit utilities to maintain audit trails for their data warehouse.
@@ -70,7 +74,7 @@ Train and run machine learning models directly in the {{site.data.keyword.dashdb
 ## Plans and configurations 
 {: #plans_cfgs}
 
-For information about the plans and configurations supported on IBM Cloud and Amazon Web Services (AWS), see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about).
+For information about the plans and configurations supported on IBM Cloud and Amazon Web Services (AWS), see [here](https://cloud.ibm.com/db2-wh).
 
 This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 Warehouse on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate. {: attention}
 ## Supported cloud providers and data centers
