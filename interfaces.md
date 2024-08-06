@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2020-02-03"
+lastupdated: "2024-07-18"
 
 keywords:
 
@@ -38,7 +38,7 @@ You can work with your warehouse database in the following ways:
 The web console provides a graphical interface for everything that you need to use your database, including: load facilities, an SQL editor, driver downloads, and more.
 {: shortdesc}
 
-![View of the web console dashboard page](images/uc.png "Web console opens to the dashboard page"){: caption="Figure 1. View of the web console dashboard page" caption-side="bottom"}
+![View of the web console dashboard page](images/uc2.png "Web console opens to the dashboard page"){: caption="Figure 1. View of the web console dashboard page" caption-side="bottom"}
 
 <!-- Click the link to take a tour of the {{site.data.keyword.dashdbshort_notm}} for Analytics web console: [General tour](http://ibm.biz/dashdb-general-quick-tour){:external}. -->
 
@@ -49,7 +49,8 @@ You can access your web console in the following ways:
 ## REST API
 {: #int_api}
 
-With {{site.data.keyword.dashdblong}} service plans, you can do tasks that are related to file management, loading data, and resource scaling using the database management [REST API]( https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-con_rest_api)
+With Db2 Warehouse on Cloud service plans, you can do tasks that are related to file management, loading data, and resource scaling using the database management [REST API]( https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-con_rest_api)
+
 ## Connect applications or your favorite tools from your local computer
 {: #connect_apps}
 

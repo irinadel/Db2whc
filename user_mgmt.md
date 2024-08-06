@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2019
-lastupdated: "2023-10-11"
+lastupdated: "2023-07-10"
 
 keywords: 
 
@@ -14,7 +14,7 @@ subcollection: Db2whc
 {:external: target="_blank" .external}
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
-{:screen: .screen} 
+{:screen: .screen}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -41,7 +41,7 @@ Database users are not granted any service-level functions. For example, a datab
 #### IAM users
 {: #um_iam_users}
 
-IAM is only integrated with high-level service access, which governs privileges and operations available in the Db2 Warehouse on Cloud console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier.
+IAM is only integrated with high-level service access, which governs privileges and operations available in the Db2 Warehouse on Cloud console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier. 
 
 ### Roles and access 
 
@@ -82,4 +82,4 @@ Service action access is also controlled by IAM Roles. An IAM user can be assign
 {: caption="Table 2. Roles and service actions" caption-side="top"} 
 
 
-For more information about user management, see [Database user management](https://www.ibm.com/docs/en/db2woc?topic=SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.htm){: external}
+For more information about user management, see [Database user management]( https://www.ibm.com/docs/en/db2woc?topic=SS6NHC/com.ibm.swg.im.dashdb.security.doc/doc/user_mgmnt.htm){: external}
