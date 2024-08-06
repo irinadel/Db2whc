@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2021
-lastupdated: "2021-01-04"
+lastupdated: "2024-07-18"
 
 keywords:
 
@@ -47,7 +47,7 @@ SSL connections to {{site.data.keyword.dashdbshort_notm}} are enforced by defaul
 
 1. [Download the IBM Global Security Kit (GSKit)](https://www-945.ibm.com/support/fixcentral/swg/selectFixes?parent=Security+Systems&product=ibm/Tivoli/IBM+Global+Security+Kit&release=All&platform=All&function=fixId&fixids=8.0.*&source=fc){: external} by selecting the GSKit appropriate for your operating system (OS).
 
-2. Download the SSL certificate from the **Connection Information** section of the {{site.data.keyword.dashdbshort_notm}} web console. Store the SSL certificate file in a directory that can be referenced in a subsequent command.
+2. Download the SSL certificate from the **Connection configuration resources** section under **Connections** in the **Administration** page of the {{site.data.keyword.dashdbshort_notm}} web console. Store the SSL certificate file in a directory that can be referenced in a subsequent command.
 
 3. Install the GSKit. See the following links for instructions:
    - [AIX](http://www-01.ibm.com/support/docview.wss?uid=swg21577384){: external}
