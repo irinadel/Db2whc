@@ -53,7 +53,7 @@ subcollection: Db2whc
 
 ### Replication Support
 
-{{site.data.keyword.dashdbshort_notm}} with Q Replication enables high-speed data replication for business continuity. This feature allows you to manage downtime with continuous availability (99.999%) and in-place recovery within a cluster. The cloud-native architecture of Db2 features multiple layers of resiliency with managed computation, highly available storage, and cross-cloud replication. 
+{{site.data.keyword.dashdbshort_notm}} with Q Replication enables high-speed data replication for business continuity. This feature allows you to manage downtime with continuous availability (99.999%) and in-place recovery within a cluster. The cloud-native architecture of Db2 features multiple layers of resiliency with managed computation, highly available storage, and cross-cloud replication.  
 
 ### Expertly managed and highly secure
 
