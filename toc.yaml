@@ -85,6 +85,12 @@ toc:
           - logg_mon.md
           - accesscont.md
 
+      - topicgroup:
+          label: Migration
+          topics:
+          - migr_gen2_gen3.md
+          - migr_faq.md
+
       - communities.md
       - link:
               label: What's new
