@@ -13,7 +13,6 @@ toc:
     product-page: https://www.ibm.com/cloud/db2-warehouse-on-cloud
     path: Db2whc
     label: Db2 Warehouse on Cloud
-
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
   entries:
   - navgroup:
@@ -21,7 +20,6 @@ toc:
       topics:
       -  about.md
       - getting-started.md
-      
       - topicgroup:
           label: Connecting
           topics:
@@ -53,7 +51,7 @@ toc:
           label: Administration
           topics:
           - interfaces.md
-          - db_design.md
+          - db_design.md 
           - advanced_admin.md
           - flex_scaling.md
           - br.md
@@ -68,7 +66,6 @@ toc:
           - migrate_stand.md
           - logical_schema.md
           - command_syntax.md 
-        
       - topicgroup:
           label: Security
           topics:
@@ -79,24 +76,26 @@ toc:
           - roles.md
           - rcac.md
           - auditing.md
-          - aud_events.md
           - sec_comp_sum.md
           - key_protect.md
           - logg_mon.md
           - accesscont.md
-
+      - topicgroup:
+          label: Migration
+          topics:
+          - migr_gen2_gen3.md
+          - migr_faq.md
       - communities.md
       - link:
               label: What's new
               href: https://www.ibm.com/support/pages/whats-new-ibm-db2-warehouse-cloud
-
   - navgroup:
       id: howto
       topics:
+      - provision.md
       - link:
               label: "IBM Demos: Tutorials, videos, and hands-on labs"
               href: https://www.ibm.com/demos/collection/IBM-Db2-Warehouse-on-Cloud/
-
 #  Links to your REST API docs should be included in the Reference navigation group. For details on publishing API docs, see https://test.cloud.ibm.com/docs/api-docs.
 #  Links to your command line reference docs should be included in the Reference navigation group.
   - navgroup:
@@ -111,8 +110,6 @@ toc:
       - link:
               label: Knowledge Center
               href: https://www.ibm.com/docs/en/db2woc
-
-
   - navgroup:
       id: help
       topics:
