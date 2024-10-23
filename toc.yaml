@@ -75,7 +75,7 @@ toc:
           - user_mgmt.md
           - roles.md
           - rcac.md
-          - auditing.md
+          - auditing_sec.md
           - sec_comp_sum.md
           - key_protect.md
           - logg_mon.md
