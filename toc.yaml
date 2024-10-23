@@ -64,6 +64,7 @@ toc:
           - maintenance.md
           - federation.md
           - migrate_stand.md
+          - auditing_sec.md
           - logical_schema.md
           - command_syntax.md 
       - topicgroup:
@@ -75,7 +76,6 @@ toc:
           - user_mgmt.md
           - roles.md
           - rcac.md
-          - auditing_sec.md
           - sec_comp_sum.md
           - key_protect.md
           - logg_mon.md
