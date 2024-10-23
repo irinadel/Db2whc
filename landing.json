@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "title": "IBM Db2 Warehouse on Cloud",
+    "introduction": "IBM Db2 Warehouse on Cloud is a fully-managed, elastic cloud data warehouse that delivers independent scaling of storage and compute. It delivers a highly optimized columnar data store, actionable compression, and in-memory processing to supercharge your analytics and machine learning workloads.",
+    "product_page": "https://www.ibm.com/products/db2-warehouse",
+    "console_page": "/relative/console/path",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Getting started with Db2 Warehouse on Cloud",
+          "href": "/docs/Db2whc?topic=Db2whc-getting-started"
+        },
+        {
+          "title": "Connecting overview",
+          "href": "/docs/Db2whc?topic=Db2whc-connect_ov"
+        },
+        {
+          "title": "Connectivity options on IBM Cloud",
+          "href": "/docs/Db2whc?topic=Db2whc-connect_options"
+        },
+        {
+          "title": "Connecting to IBM tools",
+          "href": "/docs/overview?topic=overview-get-started-checklist"
+        },
+        {
+          "title": "Connecting with third-party tools",
+          "href": "/docs/Db2whc?topic=Db2whc-connect_3rd_party"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "Demos, Tutorials, Videos",
+        "description": "Learn How",
+        "href": "https://www.ibm.com/products/db2-warehouse",
+        "type": "training"
+      },
+      {
+        "title": "SQL Reference",
+        "description": "Procedures",
+        "href": "https://www.ibm.com/docs/en/db2woc?topic=reference-sql",
+        "type": "training",
+        "recommended": true
+      }
+    ]
+
+    
+
+}
+
+  
+  
