@@ -22,10 +22,10 @@ subcollection: Db2whc
 {:pre: .pre}
 {:video: .video}
 
-# Migration FAQs
+# Upgrade FAQs
 {: #migr_faq}
 
-## What do I need to do with my applications before the migration?
+## What do I need to do with my applications before upgrade?
 {: #q_appl}
 
 ### For users of the Db2 Warehouse on Cloud REST API
@@ -49,28 +49,28 @@ Lift users will need to download the latest version of the Lift tool from IBM. T
 
 ### Database-level objects
 
-All your database-level objects, such as tables, views, statistics, and procedures, will remain intact after the migration.
+All your database-level objects, such as tables, views, statistics, and procedures, will remain intact after the upgrade.
 
 ### User Credentials
 
-All user credentials will be migrated. 
+All user credentials will be upgraded. 
 
 ### UDXes (User-Defined Extensions)
 
-UDXes written in C++ will be migrated successfully. However, new UDXes *cannot be registered* after the upgrade.
+UDXes written in C++ will be upgraded successfully. However, new UDXes *cannot be registered* after the upgrade.
 
 ### Server Connections
 
    * Incoming connections to your Gen 2 instance (created via `CREATE SERVER`) may need to be reestablished.
-   * Outgoing connections from your Gen 2 instance (created via `CREATE SERVER`) will be migrated. For private/vpn, you need to ensure the two machines can communicate.
+   * Outgoing connections from your Gen 2 instance (created via `CREATE SERVER`) will be upgraded. For private/vpn, you need to ensure the two machines can communicate.
 
 ### Landing Zone Files
 
-Files stored in your Gen 2 landing zone will *not be persisted* during the upgrade. Be sure to download and back up any files prior to migration, as IBM will not be responsible for lost contents in the landing zone.
+Files stored in your Gen 2 landing zone will *not be persisted* during the upgrade. Be sure to download and back up any files prior to upgrade, as IBM will not be responsible for lost contents in the landing zone.
 
 ### Auditing
 
-Your audit policies and data will be retained. During the migration, auditing on your v2 instance will be halted and started on the v3 instance with the same policies. Any audit data stored outside the AUDIT tables will be copied asynchronously. If you are auditing to tables, support for this configuration will end, and it’s recommended to reconfigure your audit data to be written to an S3 cloud object storage (COS) instance. If you’re already auditing to COS, your configuration will be migrated, but you may notice a change in audit report format. For more details, see our [documentation](https://www.ibm.com/docs/en/db2woc?topic=activities-viewing-archived-audit-records){:external}. To reconfigure to COS, follow [these steps](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-auditing#enable-auditing). If unsure of your current configuration, go to Audit under Administration, where you’ll be prompted if you’re using audit to tables.
+Your audit policies and data will be retained. During the upgrade, auditing on your v2 instance will be halted and started on the v3 instance with the same policies. Any audit data stored outside the AUDIT tables will be copied asynchronously. If you are auditing to tables, support for this configuration will end, and it’s recommended to reconfigure your audit data to be written to an S3 cloud object storage (COS) instance. If you’re already auditing to COS, your configuration will be upgraded, but you may notice a change in audit report format. For more details, see our [documentation](https://www.ibm.com/docs/en/db2woc?topic=activities-viewing-archived-audit-records){:external}. To reconfigure to COS, follow [these steps](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-auditing#enable-auditing). If unsure of your current configuration, go to Audit under Administration, where you’ll be prompted if you’re using audit to tables.
 
 ### Key Protect
 
@@ -89,7 +89,7 @@ While the upgrade process is robust, in the event an error does happen, you will
 ## What should I expect after the upgrade?
 {: #q_after_upgrade}
 
-The self-service migration tool, will migrate your system to the new generation of {{site.data.keyword.dashdbshort_notm}} and VPC Gen2 infrastructure on IBM Cloud. It will retain all other levels of software, including the underlying database. In order to take advantage of the capabilities in the new generation of the product, a database update option will be available to be applied. 
+The self-service upgrade tool, will upgrade your system to the new generation of {{site.data.keyword.dashdbshort_notm}} and VPC Gen2 infrastructure on IBM Cloud. It will retain all other levels of software, including the underlying database. In order to take advantage of the capabilities in the new generation of the product, a database update option will be available to be applied. 
 
 For most customers, you can resume working with your data as before. However, certain customers may encounter specific circumstances requiring further actions:
 

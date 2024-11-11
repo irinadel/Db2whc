@@ -75,16 +75,17 @@ toc:
           - user_mgmt.md
           - roles.md
           - rcac.md
+          - auditing.md
           - sec_comp_sum.md
           - key_protect.md
-          - auditing_sec.md
           - logg_mon.md
           - accesscont.md
       - topicgroup:
-          label: Migration
+          label: Upgrade
           topics:
           - migr_gen2_gen3.md
           - migr_faq.md
+      - db2-database-assistant.md
       - communities.md
       - link:
               label: What's new
