@@ -22,7 +22,7 @@ subcollection: Db2whc
 {:pre: .pre}
 {:video: .video}
 
-# Upgrading your system to Db2 Warehouse Next Generation
+# Upgrading your system to Db2 Warehouse SaaS Next Generation
 {: #migr_gen2_gen3}
 
 In order to upgrade existing systems to the next generation (Gen 3) of {{site.data.keyword.dashdblong}}, a self-service upgrade tool has been provided and {{site.data.keyword.dashdbshort_notm}} users on {{site.data.keyword.Bluemix_notm}} Cloud will be invited individually to start using the tool. Upgrading to the next generation of {{site.data.keyword.dashdbshort_notm}}, unlocks opportunities to use {{site.data.keyword.Bluemix_notm}} Object Storage (COS) to store database data while increasing performance of your system and saving on storage costs. It also unlocks the use of open data formats such as DATALAKE tables, allowing for seamless access to other data within your enterprise for integrated workloads.
