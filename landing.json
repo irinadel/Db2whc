@@ -1,13 +1,13 @@
 {
     "version": 2,
-    "title": "IBM Db2 Warehouse on Cloud",
-    "introduction": "IBM Db2 Warehouse on Cloud is a fully-managed, elastic cloud data warehouse that delivers independent scaling of storage and compute. It delivers a highly optimized columnar data store, actionable compression, and in-memory processing to supercharge your analytics and machine learning workloads.",
+    "title": "IBM Db2 Warehouse as a Service",
+    "introduction": "IBM Db2 Warehouse as a Service is a fully-managed, elastic cloud data warehouse that delivers independent scaling of storage and compute. It delivers a highly optimized columnar data store, actionable compression, and in-memory processing to supercharge your analytics and machine learning workloads.",
     "product_page": "https://www.ibm.com/products/db2-warehouse",
     "console_page": "/relative/console/path",
     "section_topics": {
       "links": [
         {
-          "title": "Getting started with Db2 Warehouse on Cloud",
+          "title": "Getting started with IBM Db2 Warehouse SaaS",
           "href": "/docs/Db2whc?topic=Db2whc-getting-started"
         },
         {
