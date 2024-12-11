@@ -30,9 +30,9 @@ subcollection: Db2whc
 # Getting started with {{site.data.keyword.dashdbshort_notm}}
 {: #getting-started}
 
-You can provision an instance of IBM Db2 Warehouse on Cloud through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/db2-warehouse). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 Warehouse on Cloud. You can also get a $1000 promo code to try out Db2 Warehouse on Cloud by following the instructions [here.](https://cloud.ibm.com/registration/premium1?target=/catalog/services/db2-warehouse&cm_mmca1=000030YW&cm_mmca2=DAFWW&S_PKG=ov34433&uucid=0040c3e10b80999b&cm_sp=cloud-product---onpagenav-ibmcloudplatform_db2-warehouse-on-cloud---bm_nsl_customize_leadspace)
+You can provision an instance of IBM Db2 Warehouse as a Service through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/db2-warehouse). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards Db2 Warehouse on Cloud. You can also get a $1000 promo code to try out Db2 Warehouse on Cloud by following the instructions [here.](https://cloud.ibm.com/registration/premium1?target=/catalog/services/db2-warehouse&cm_mmca1=000030YW&cm_mmca2=DAFWW&S_PKG=ov34433&uucid=0040c3e10b80999b&cm_sp=cloud-product---onpagenav-ibmcloudplatform_db2-warehouse-on-cloud---bm_nsl_customize_leadspace)
 
-After creating the Db2 Warehouse on Cloud service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
+After creating the Db2 Warehouse as a Service service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
 
 While logged in as the **IAM** user that provisioned the instance, you can log into the web console by clicking on the **Go to UI** button on the **Manage** tab. In order to activate and administer Q Replication, you must login as a **IAM** user with **JDBC** privileges.
 
