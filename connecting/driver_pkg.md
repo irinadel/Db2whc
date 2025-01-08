@@ -21,7 +21,7 @@ subcollection: Db2whc
 {:deprecated: .deprecated}
 {:pre: .pre}
 
-# {{site.data.keyword.at_full_notm}} driver package
+# {{site.data.keyword.dashdblong}} driver package
 {: #dr_pkg}
 
 The {{site.data.keyword.dashdbshort_notm}} driver package contains software for connecting client applications to a {{site.data.keyword.dashdbshort_notm}} database. 
