@@ -24,7 +24,7 @@ subcollection: Db2whc
 # Data security & encryption
 {: #encryption}
 
-The {{site.data.keyword.dashdblong}} service has security built into all levels of its architecture.
+The {{site.data.keyword.dashdbshort_notm}} service has security built into all levels of its architecture.
 {: shortdesc}
 
 The following methods are used to secure your data:
