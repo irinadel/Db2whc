@@ -44,7 +44,7 @@ If you'd like to use AWS PrivateLink with {{site.data.keyword.dashdbshort_notm}}
 3. After the principal is granted permission, create an interface endpoint on your VPC to connect to the {{site.data.keyword.dashdbshort_notm}} service. See [Creating an Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html){: external}. Ensure that TCP traffic is allowed through ports 50001, 443, and 8443 on the VPC, and set rules to allow traffic from the CIDR range associated with the VPC.
 
 
-## Connecting to the private web console of Db2 Warehouse on Cloud
+## Connecting to the private web console of {{site.data.keyword.dashdbshort_notm}}
 {: #PrivateWebConsole}
 
 - When you enable private endpoint, the private web console becomes available. When private endpoint is enabled, you can still access a lite version of the web console to get connection information.
