@@ -76,7 +76,7 @@ Train and run machine learning models directly in the {{site.data.keyword.dashdb
 
 For information about the plans and configurations supported on IBM Cloud and Amazon Web Services (AWS), see [here](https://cloud.ibm.com/db2-wh).
 
-This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers Db2 Warehouse on Cloud. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate. {: attention}
+This set of documentation covers the detailed commands and reference topics for the Db2 engine that powers {{site.data.keyword.dashdbshort_notm}}. To find the IBM Cloud documentation for the offering, see [here](https://cloud.ibm.com/docs/Db2whc?topic=Db2whc-about). The IBM Cloud documentation covers the high-level functionality for the cloud offering, and refers back to this set of documentation where appropriate. {: attention}
 ## Supported cloud providers and data centers
 {: #sup_cp_dc}
 
@@ -98,11 +98,11 @@ The following table provides information about the availability of the various {
 | Flex One                     | Tokyo    | Frankfurt | Dallas (us-south)         | *NA           |
 |                              |       | London    | Toronto                   |               | 
 |                              |        |           | Washington D.C. (us-east) |               |
-{: caption="Table 1. IBM Cloud data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+{: caption="Table 1. IBM Cloud data centers supporting {{site.data.keyword.dashdbshort_notm}} service plans" caption-side="top"}
 
 *NA = Not available at this time
 
-For information on deploying your Db2 Warehouse on Cloud service in a network-isolated environment on the IBM Cloud, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). {: external}
+For information on deploying your {{site.data.keyword.dashdbshort_notm}} service in a network-isolated environment on the IBM Cloud, open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). {: external}
 
 ### Availability of plans in Amazon Web Services data centers
 {: #availability_aws}
@@ -113,13 +113,13 @@ The current generation of plans on AWS is available in the following data center
 |----------------------------------------------|--------------|-----------|---------------------------|------------------|
 | All current generation                       | Tokyo        | Frankfurt | N. Virginia               | Sao Paulo        |
 |                                              | Sydney       |           |                           |                  | 
-{: caption="Table 2. Amazon Web Services data centers supporting Db2 Warehouse on Cloud service plans" caption-side="top"}
+{: caption="Table 2. Amazon Web Services data centers supporting {{site.data.keyword.dashdbshort_notm}} service plans" caption-side="top"}
 
 Support for additional AWS regions is coming soon.
 
 The previous generation of plans on AWS is available in N. Virginia, Oregon, Frankfurt, London, Tokyo, Seoul, Singapore, and Sydney.
 
-If you wish to provision a service instance in an AWS region not listed above, contact your local sales representative or open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). You can also open a support case for information on deploying your Db2 Warehouse on Cloud service in a network-isolated environment on AWS. 
+If you wish to provision a service instance in an AWS region not listed above, contact your local sales representative or open a [support case](https://cloud.ibm.com/unifiedsupport/supportcenter). You can also open a support case for information on deploying your {{site.data.keyword.dashdbshort_notm}} service in a network-isolated environment on AWS. 
 
 
 
