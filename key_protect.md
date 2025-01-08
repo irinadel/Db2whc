@@ -36,7 +36,7 @@ Navigate to your instance of {{site.data.keyword.keymanagementserviceshort}} and
 ## Granting service authorization
 {: #kp-grant}
 
-Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 Warehouse on Cloud deployments:
+Authorize {{site.data.keyword.keymanagementserviceshort}} for use with Db2 Warehouse SaaS deployments:
 
 1. Open your {{site.data.keyword.cloud_notm}} dashboard.
 1. From the menu bar, select **Manage > Access (IAM)**.

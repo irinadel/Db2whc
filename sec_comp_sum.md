@@ -39,7 +39,7 @@ For details about each of the security compliances, see [Details about security 
 {: #sec_flex}
 -->
 
-| {{site.data.keyword.dashdblong}} Flex offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
+| IBM Db2 Warehouse as a Service Flex offering plans | HIPAA | ISO | SOC 2 Type 2 | GDPR | Privacy shield |
 |-------------------------------------------------|-------|-----|--------------|------|----------------|
 | Flex One on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
 | Flex on {{site.data.keyword.cloud_notm}} | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) | ![checkmark](images/checkmark.png) |
