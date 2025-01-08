@@ -30,7 +30,7 @@ subcollection: Db2whc
 # Getting started with IBM Db2 Warehouse as a Service
 {: #getting-started}
 
-You can provision an instance of {{site.data.keyword.dashdbshort_notm}} through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/db2-warehouse). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}. You can also get a $1000 promo code to try out Db2 Warehouse on Cloud by following the instructions [here.](https://cloud.ibm.com/registration/premium1?target=/catalog/services/db2-warehouse&cm_mmca1=000030YW&cm_mmca2=DAFWW&S_PKG=ov34433&uucid=0040c3e10b80999b&cm_sp=cloud-product---onpagenav-ibmcloudplatform_db2-warehouse-on-cloud---bm_nsl_customize_leadspace)
+You can provision an instance of {{site.data.keyword.dashdbshort_notm}} through the [IBM Cloud catalog](https://cloud.ibm.com/catalog/db2-warehouse). Create a [free account](https://cloud.ibm.com/registration?target=%2Fcatalog%2Fservices%2Fdb2-warehouse) and get an IBM Cloud credit of $200 that you can use towards {{site.data.keyword.dashdbshort_notm}}. You can also get a $1000 promo code to try out {{site.data.keyword.dashdbshort_notm}} by following the instructions [here.](https://cloud.ibm.com/registration/premium1?target=/catalog/services/db2-warehouse&cm_mmca1=000030YW&cm_mmca2=DAFWW&S_PKG=ov34433&uucid=0040c3e10b80999b&cm_sp=cloud-product---onpagenav-ibmcloudplatform_db2-warehouse-on-cloud---bm_nsl_customize_leadspace)
 
 After creating the {{site.data.keyword.dashdbshort_notm}} service, you can create a user name and password by clicking the **Service credentials** tab on your service page and selecting **New credential**.
 
