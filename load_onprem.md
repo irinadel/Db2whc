@@ -31,7 +31,7 @@ The Lift application migrates your data to the {{site.data.keyword.Bluemix_notm}
 
 | Target database on {{site.data.keyword.Bluemix_notm}} | Data source |
 |------------------------------|-------------|
-| IBM Db2 Warehouse on Cloud   | IBM Db2 |
+| IBM Db2 Warehouse SaaS       | IBM Db2 |
 |                              | IBM Db2 Warehouse |
 |                              | IBM Integrated Analytics System |
 |                              | IBM PureData System for Analytics |
@@ -42,7 +42,7 @@ The Lift application migrates your data to the {{site.data.keyword.Bluemix_notm}
 
 When your data source is IBM Db2, IBM Db2 Warehouse, IBM Integrated Analytics System, or IBM PureData System for Analytics, migration of your data with Lift happens in two phases:
 - Migrating the table structure of the source database
-- Moving data into Db2 Warehouse on Cloud
+- Moving data into IBM Db2 Warehouse SaaS
 
 ## Migrating Table Structure
 
