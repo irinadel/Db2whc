@@ -31,7 +31,7 @@ You can:
 - Access data within DATALAKE tables and import into Db2 formatted tables
 - Create new DATALAKE tables in S3 and export from Db2 formatted tables
 
-Supported open table and data formats include Iceberg, Parquet, ORC, and CSV. Both regular and Iceberg DATALAKE table types are supported, based on existing data formats or for business/technical requirements such as ACID compliance.  For more information about open data format support in Db2 Warehouse on Cloud, see [Using DATALAKE tables](https://www.ibm.com/docs/en/db2woc?topic=using-datalake-tables){: external}
+Supported open table and data formats include Iceberg, Parquet, ORC, and CSV. Both regular and Iceberg DATALAKE table types are supported, based on existing data formats or for business/technical requirements such as ACID compliance.  For more information about open data format support in IBM Db2 Warehouse SaaS, see [Using DATALAKE tables](https://www.ibm.com/docs/en/db2woc?topic=using-datalake-tables){: external}
 
 
 
