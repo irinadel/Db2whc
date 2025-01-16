@@ -41,7 +41,7 @@ Database users are not granted any service-level functions. For example, a datab
 #### IAM users
 {: #um_iam_users}
 
-IAM is only integrated with high-level service access, which governs privileges and operations available in the Db2 Warehouse on Cloud console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier. 
+IAM is only integrated with high-level service access, which governs privileges and operations available in the {{site.data.keyword.dashdbshort_notm}} console and database. Access to the database by these IAM users is provided by allowing an IAM user or service ID access to a specific Db2 user, as mentioned earlier. 
 
 ### Roles and access 
 
