@@ -12,7 +12,7 @@ toc:
     console-page: /catalog/services/db2-warehouse
     product-page: https://www.ibm.com/cloud/db2-warehouse-on-cloud
     path: Db2whc
-    label: Db2 Warehouse on Cloud
+    label: Db2 Warehouse as a Service
 #  List your getting started tutorial (getting-started.md) as the first item in the Get started nav group. See https://test.cloud.ibm.com/docs/writing?topic=writing-navigation for more details on the toc design.
   entries:
   - navgroup:
