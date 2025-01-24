@@ -30,7 +30,7 @@ subcollection: Db2whc
 For application connections, do not use IP addresses to connect to the {{site.data.keyword.dashdbshort_notm}} instance, as the IP addresses resolved from the hostname may change. Use hostnames to reference your connection properties where it is available.
 {: important}
 
-## Connecting to Db2 Warehouse on Cloud with Amazon Web Services PrivateLink
+## Connecting to Db2 Warehouse SaaS with Amazon Web Services PrivateLink
 {: #PrivateLink}
 
 [Amazon Web Services (AWS) PrivateLink](https://aws.amazon.com/privatelink/){: external} gives you the ability to securely and privately connect to a {{site.data.keyword.dashdbshort_notm}} instance that is deployed on AWS from your own AWS VPCs, services, and applications. With AWS PrivateLink, traffic between {{site.data.keyword.dashdbshort_notm}} and your AWS VPCs, services, and applications does not traverse the public internet.
