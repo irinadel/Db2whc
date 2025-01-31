@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-11-14"
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 subcollection: Db2whc
 
@@ -49,7 +49,7 @@ To get started with the database assistant:
 
 1. Click the database assistant chat icon.
 
-   ![database assistant icon](images/assistant-icon.png "database assistant icon"){: iih}
+   ![database assistant icon](images/assistant-icon.svg "database assistant icon"){: iih}
 
 1. Type your questions and requests in the chat.
 
@@ -70,13 +70,17 @@ Depending on the database workload, the database assistant might take some time 
 |  | Show scaling resources | Get information about how system resources are configured for scaling | 	- Show me the system scaling settings</br> - What is the scaling configuration?</br> - Display compute scaling settings |
 |  | Show system settings | Get a summary of the host names and endpoints configured in your system | - Show my system settings</br> - Display database endpoint settings</br> - Describe db connection details |
 |  | Show users | Get a list of all users from the console | - Display users in the console.</br> - Get me a list of users</br> - Who is using the console? |
+|  | Open a specific console page | Navigate directly to a specific page within the Db2 web console | - Take me to the monitoring profile settings</br> - Open my authorization settings</br> - Show me the locking event monitor page</br> - Take me to the SQL editor page |
 | **Workload information** | Show active connections | Get a list of all current connections to the system | - Show me all connections</br> - Display inflight connections</br> - List the current applications |
 |  | Show running queries | Get a list of all currently running SQL queries and in-flight executions in the system | - Show me current SQL queries</br> - Get all current queries</br> - Show me in-progress SQL |
+|  | Show response times | Get a summary of query response times in the system | - Show me query response times</br> - Query response times from 1pm to 4pm</br> - Query response time summary |
+|  | Show query throughput | Get information about query processing rates and throughput | - Get query throughput</br> - What is the query processing rate from the last 2 hours?<br/> - How many rows have been read in the last hour? |
 | **Storage information** | Show table spaces | Get a list of table spaces in the system and their storage utilization | - Obtain the table spaces list</br> - List all tablespace names</br> - Show table spaces |
 |  | Show total storage | Get storage details about the system | - Display my storage utilization statistics</br> - How much disk storage capacity have I used?</br> - Report on my storage consumption |
 | **Resource utilization** | Show CPU usage summary | Get a summary of how much CPU the system is using | - Show me CPU usage for the past 3 days</br> - What was the system CPU load between August 14 and 15 2024?</br> - Analyze processor utilization from the last 24 hours |
 |  | Show IO usage summary | Get a summary of disk usage over a specified period | - Analyze IO usage from the last 48 hours</br> - Display IO utilization for the last 7 days</br> - Show me I/O usage  |
 |  | Show memory usage summary | Get a summary of how much memory was used by the system over a specified period | - Analyze memory usage for the last 15 days</br> - Get a summary of memory details</br> - Show me memory usage from 6 September 2024 |
+|  | Show database performance | Get information about how your database is being used, including performance statistics | - Get database performance from 8 Jan 2025 to  10 Jan 2025</br> - How is my database performing today?</br> - Show me database performance stats for the past week |
 | **Database objects** | Show indexes for a specified schema | Get a list of indexes for a given schema | - Get index details</br> - Show indexes for the schema schema-name-1</br> - Fetch indexes |
 |  | Show largest tables by rows | Get a ranked list of the largest tables in the system based on row count | - Get the largest 10 tables</br> - Display the 3 largest tables by row count</br> - What is my largest table? |
 |  | Show largest tables by rows for a specified schema | Get a ranked list of the largest tables in a given schema | - What are the top 3 tables for the schema "schema-name"?</br> - Get the largest tables by row count from the schemas "schema-name-1" and "schema-name-2"</br> - Show me the 3 biggest tables by rows from schema-name-1, schema-name-2 schemas |
@@ -85,11 +89,12 @@ Depending on the database workload, the database assistant might take some time 
 |  | Show schemas | Get a list of schemas in the system | - Display all schemas</br> - Provide a list of schemas</br> - Fetch me a list of schemas in the database |
 |  | Show tables | Get a list of tables in the system | - View the tables in the schema "schema-name-1"</br> - Get a tables list from the schema-name-1, schema-name-2, and schema-name-3 schemas</br> - List my tables |
 |  | Show views | Get a list of views in the system | - List my views</br> - Display the views for the schema-name-1 schema</br> - Collect all views |
+|  | Show outdated statistics | Get information about tables or schemas that have outdated statistics | - Get a list of list of tables in the schema schema-name-1 that have outdated stats</br> - Get the outdated stats for the schema schema-name-1 with at least 30% row changes</br> - Give me list of tables that have outdated stats in the last 2 hours</br> |
+|  | Get updated statistics | Get information about tables or schemas that have updated statistics | - Get updated statistics</br> - Show me updated stats for the schema schema-name-1 with at least 30% row changes</br> - Get updated stats for the schema schema-name-1 with row changes of 20% or more in the last 5 hours</br> |
 | **Troubleshooting** | Show most active connections | Get details about the most active connections | - What are the top 5 active connections</br> - Display the top 8 connections in the database</br> - Get the most active connections |
 |  | Show how time is spent | Get details about how much time was spent by the system on various tasks | - List wait times and bottlenecks</br> - How is time being spent in my database?</br> - Get time spent details |
 |  | Show lock waits | Get a list of blocking and waiting connections in the system | - Troubleshoot lock waits and deadlocks</br> - Report all lock waits</br> - Show me lock waits from the last two hours |
 |  | Show longest running queries | Get information about the top queries in the system ranked by how long they have been running | - Display the longest running SQL queries</br> - What are the top 5 queries?</br> - Show long running SQL statements |
-
 {: caption="Db2 database assistant skills" caption-side="top"}
 
 ## Troubleshooting the Db2 database assistant
