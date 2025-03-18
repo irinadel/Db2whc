@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2024-08-06"
+lastupdated: "2025-03-18"
 
 keywords:
 
@@ -144,17 +144,17 @@ After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will
 
 ![Public network access to {{site.data.keyword.cloud_notm}} through a VPN](images/public_connection_vpn.png "Graphical representation of user to cloud connection"){: caption="Figure 2. Public network access to {{site.data.keyword.cloud_notm}} through a VPN" caption-side="bottom"}
 
-## Connecting to Db2 Warehouse on Cloud with Private Link
+## Connecting to {{site.data.keyword.dashdblong}} with Private Link
 
 IBM Cloud private link gives you the ability to securely and privately connect to a {{site.data.keyword.dashdblong}} instance from your own IBM Cloud VPCs. With the IBM Cloud Private Link, traffic between Db2 Warehouse on Cloud and your IBM Cloud VPCs, it does not traverse the public internet.
 
 Complete the following steps to connect {{site.data.keyword.dashdblong}} with  private link:
 
-1. Create an access to Db2 Warehouse on Cloud console. The Db2 Warehouse on Cloud console can be accessed with IAM users, or IAM roles.
+1. Create an access to {{site.data.keyword.dashdbshort_notm}} console. The {{site.data.keyword.dashdbshort_notm}} console can be accessed with IAM users, or IAM roles.
 
 2. In the console, navigate to the **Settings** --> **Access restriction** panel then enable private endpoints. You can optionally also disable public endpoints.
 
-3. Navigate to the **Connections** tab in Db2 Warehouse on Cloud console to get private endpoint service name and its details. Connect to DB using the connection details present in the connection’s private tab after creating ‘Virtual Private Endpoint Gateway’.
+3. Navigate to the **Connections** tab in {{site.data.keyword.dashdblong}} console to get private endpoint service name and its details. Connect to DB using the connection details present in the connection’s private tab after creating ‘Virtual Private Endpoint Gateway’.
 
 4. Create ‘Virtual Private Endpoint Gateway’ , navigate to **VPC Infrastructure** -> **Virtual Private Endpoint Gateway** then click on **Create**:
 
@@ -165,14 +165,14 @@ Complete the following steps to connect {{site.data.keyword.dashdblong}} with  p
 - Cloud service offerings - “VPE Cloud service Offering“ from console Connections tab.
 - Ensure that TCP traffic is allowed through port on the VPC
 
-Once the [VPE-endpoint-gateway](https://cloud.ibm.com/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=ui){:external} is created successfully, you can connect to the Db2 database using the private connections details given in the Db2 Warehouse on Cloud console.
+Once the [VPE-endpoint-gateway](https://cloud.ibm.com/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=ui){:external} is created successfully, you can connect to the Db2 database using the private connections details given in the {{site.data.keyword.dashdbshort_notm}} console.
 
 ### Consideration and Limitations
 
 
 
-- You must create the Virtual private endpoint gateway for accessing Db2 Warehouse on Cloud thru private connectivity.
+- You must create the Virtual private endpoint gateway for accessing {{site.data.keyword.dashdbshort_notm}} thru private connectivity.
 
-- The details required for creating Virtual private endpoint gateway will be available on private connections details present in the Db2 Warehouse on Cloud console.
+- The details required for creating Virtual private endpoint gateway will be available on private connections details present in the {{site.data.keyword.dashdbshort_notm}} console.
 
-- You must create the Virtual private endpoint gateway in the same region where the Db2 Warehouse on Cloud instance is deployed. To access your instance from other regions, you may have to setup VPN network.
+- You must create the Virtual private endpoint gateway in the same region where the {{site.data.keyword.dashdbshort_notm}} instance is deployed. To access your instance from other regions, you may have to setup VPN network.
