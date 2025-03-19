@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2025-03-18"
+lastupdated: "2025-03-19"
 
 keywords:
 
@@ -146,7 +146,7 @@ After receipt of your request, {{site.data.keyword.cloud_notm}} technicians will
 
 ## Connecting to {{site.data.keyword.dashdblong}} with Private Link
 
-IBM Cloud private link gives you the ability to securely and privately connect to a {{site.data.keyword.dashdblong}} instance from your own IBM Cloud VPCs. With the IBM Cloud Private Link, traffic between Db2 Warehouse on Cloud and your IBM Cloud VPCs, it does not traverse the public internet.
+IBM Cloud private link gives you the ability to securely and privately connect to a {{site.data.keyword.dashdblong}} instance from your own IBM Cloud VPCs. With the IBM Cloud Private Link, traffic between {{site.data.keyword.dashdblong}} and your IBM Cloud VPCs, it does not traverse the public internet.
 
 Complete the following steps to connect {{site.data.keyword.dashdblong}} with  private link:
 
@@ -162,8 +162,9 @@ Complete the following steps to connect {{site.data.keyword.dashdblong}} with  p
 - Region - select the same region in which the VPC is created
 - Name - Unique name for the VPE gateway
 - Virtual private cloud - The VPC in which the gateway is to be created
-- Cloud service offerings - “VPE Cloud service Offering“ from console Connections tab.
+- Cloud service offerings - Select “Db2 Warehouse” then opt the endpoint matching with the hostname present in “Private endpoints” tab from db2wh-console connections pages
 - Ensure that TCP traffic is allowed through port on the VPC
+- When you disable private connectivity, make sure to delete the VPE gateway
 
 Once the [VPE-endpoint-gateway](https://cloud.ibm.com/docs/vpc?topic=vpc-ordering-endpoint-gateway&interface=ui){:external} is created successfully, you can connect to the Db2 database using the private connections details given in the {{site.data.keyword.dashdbshort_notm}} console.
 
@@ -171,7 +172,7 @@ Once the [VPE-endpoint-gateway](https://cloud.ibm.com/docs/vpc?topic=vpc-orderin
 
 
 
-- You must create the Virtual private endpoint gateway for accessing {{site.data.keyword.dashdbshort_notm}} thru private connectivity.
+- You must create the Virtual private endpoint gateway for accessing {{site.data.keyword.dashdbshort_notm}} through private connectivity.
 
 - The details required for creating Virtual private endpoint gateway will be available on private connections details present in the {{site.data.keyword.dashdbshort_notm}} console.
 
