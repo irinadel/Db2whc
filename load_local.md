@@ -33,6 +33,6 @@ When loading data through the web console, {{site.data.keyword.dashdbshort_notm}
 
 <!-- <iframe class="embed-responsive-item" id="youtubeplayer1" title="Loading data into IBM Db2 Warehouse on Cloud" type="text/html" width="640" height="390" src="//www.youtube.com/embed/7wufZd_Lw9w?rel=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen> </iframe> -->
 
-If you want to load larger CSV files on the gigabyte or terabyte scale into {{site.data.keyword.dashdbshort_notm}} on IBM Cloud, we recommend using [IBM Lift CLI](https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=1120&tabId=5230&p=1&h=null){: external}, a free ground-to-cloud data migration tool.
+If you want to load larger CSV files on the gigabyte or terabyte scale into {{site.data.keyword.dashdbshort_notm}} on IBM Cloud, we recommend using [IBM Lift CLI](https://www.ibm.com/products/lift){: external}, a free ground-to-cloud data migration tool.
 
 
