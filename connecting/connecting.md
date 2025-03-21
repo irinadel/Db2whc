@@ -119,7 +119,7 @@ You can also connect external applications and tools to {{site.data.keyword.dash
 - Connect your {{site.data.keyword.Bluemix_short}} applications that need an analytics database.
 - [DataStage](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#datastage)
 - [Informatica](/docs/Db2whc/connecting?topic=Db2whc-connect_3rd_party#informatica)
-- [Lift](https://www.lift-cli.cloud.ibm.com/#docs){:external}
+- [Lift](https://www.ibm.com/products/lift){:external}
 - [InfoSphere Data Replication](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#idr)
 - [Segment](https://segment.com/docs/destinations/db2/){:external}
 - [Data Studio](/docs/Db2whc/connecting?topic=Db2whc-connect_ibm#data_studio)
